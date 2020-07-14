@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Lotus <declininglotus@gmail.com>",
   "license": "MIT",
-  "description": "",
+  "description": "A metadata generator for Google Fonts.",
   "main": "./data/google-fonts.json",
   "scripts": {
     "parser": "node ./scripts/api-parser.js"
