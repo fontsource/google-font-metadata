@@ -1,0 +1,25 @@
+{
+  "name": "google-font-metadata",
+  "version": "1.0.0",
+  "author": "Lotus <declininglotus@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "main": "google-fonts.json",
+  "scripts": {
+    "parser": "node api-parser.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.19.2",
+    "jsonfile": "^6.0.1",
+    "lodash": "^4.17.19",
+    "postcss": "^7.0.32",
+    "retry-axios": "^2.2.1"
+  }
+}
