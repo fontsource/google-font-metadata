@@ -4,9 +4,9 @@
   "author": "Lotus <declininglotus@gmail.com>",
   "license": "MIT",
   "description": "",
-  "main": "google-fonts.json",
+  "main": "./data/google-fonts.json",
   "scripts": {
-    "parser": "node api-parser.js"
+    "parser": "node ./scripts/api-parser.js"
   },
   "devDependencies": {
     "eslint": "^7.4.0",

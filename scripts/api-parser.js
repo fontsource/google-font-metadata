@@ -5,8 +5,8 @@ const jsonfile = require(`jsonfile`)
 const postcss = require(`postcss`)
 const rax = require(`retry-axios`)
 
-const fonts = require(`./api-response.json`)
-const userAgents = require(`./user-agents.json`)
+const fonts = require(`../data/api-response.json`)
+const userAgents = require(`../data/user-agents.json`)
 const baseurl = "https://fonts.googleapis.com/css?subset="
 
 const interceptorId = rax.attach()
@@ -150,10 +150,7 @@ queue.error((err, font) => {
 
 queue.drain(() => {
   jsonfile
-    .writeFile(
-      "./scripts/google/api/google-fonts.json",
-      Object.assign({}, ...results)
-    )
+    .writeFile("../data/google-fonts.json", Object.assign({}, ...results))
     .then(res => {
       console.log("All font datapoints have been generated.")
     })
