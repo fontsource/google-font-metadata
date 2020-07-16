@@ -1,0 +1,47 @@
+name: Build and Release [Weekly]
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    if: github.actor == github.event.repository.owner.login
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "0"
+
+      - name: Configure CI Git User
+        run: |
+          git config --global user.name 'DecliningLotus'
+          git config --global user.email 'DecliningLotus@users.noreply.github.com'
+
+      - name: Install packages
+        run: yarn
+
+      - name: Query API
+        run: node ./scripts/api-gen.js $GOOGLE_API_KEY
+
+      - name: Parse APIv1
+        run: yarn parser:v1
+
+      - name: Parse APIv2
+        run: yarn parser:v2
+
+      - name: Stage changes
+        run: git add --all
+
+      - name: Commit files
+        run: >-
+          git commit -m "chore(build): update API [Weekly $GITHUB_RUN_NUMBER]"
+        continue-on-error: true
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
