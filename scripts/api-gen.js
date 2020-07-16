@@ -10,7 +10,7 @@ const fetchAPI = async url => {
   try {
     const response = await axios.get(url)
     jsonfile
-      .writeFile("../data/api-response.json", response.data.items)
+      .writeFile("./data/api-response.json", response.data.items)
       .then(res => {
         console.log("Successful Google Font API fetch.")
       })

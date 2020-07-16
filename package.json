@@ -4,9 +4,14 @@
   "author": "Lotus <declininglotus@gmail.com>",
   "license": "MIT",
   "description": "A metadata generator for Google Fonts.",
-  "main": "./data/google-fonts.json",
+  "main": "./data/google-fonts-v2.json",
   "scripts": {
-    "parser": "node ./scripts/api-parser.js"
+    "parser:v1": "node ./scripts/api-parser-v1.js",
+    "parser:v2": "node ./scripts/api-parser-v2.js",
+    "format": "yarn format:scripts && yarn format:eslint",
+    "format:scripts": "prettier --write ./scripts/*.{js,jsx,json,md}",
+    "format:eslint": "eslint **/*.{js,jsx} --fix",
+    "format:prettier": "prettier --write **/*.{js,jsx,json,md}"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
