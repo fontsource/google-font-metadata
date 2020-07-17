@@ -79,6 +79,7 @@ const processCSS = (css, font) => {
       styles: [],
       unicodeRange: {},
       variants: {},
+      defSubset: _.includes(font.subsets, "latin") ? "latin" : font.subsets[0],
       lastModified: font.lastModified,
       version: font.version,
       category: font.category,
