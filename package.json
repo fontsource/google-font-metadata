@@ -5,15 +5,8 @@
   "license": "MIT",
   "description": "A metadata generator for Google Fonts.",
   "main": "./data/google-fonts-v2.json",
-  "scripts": {
-    "parser:v1": "node ./scripts/api-parser-v1.js",
-    "parser:v2": "node ./scripts/api-parser-v2.js",
-    "format": "yarn format:scripts && yarn format:eslint",
-    "format:scripts": "prettier --write ./scripts/*.{js,jsx,json,md}",
-    "format:eslint": "eslint **/*.{js,jsx} --fix",
-    "format:prettier": "prettier --write **/*.{js,jsx,json,md}"
-  },
   "devDependencies": {
+    "conventional-changelog-cli": "^2.0.34",
     "eslint": "^7.4.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
@@ -26,5 +19,18 @@
     "lodash": "^4.17.19",
     "postcss": "^7.0.32",
     "retry-axios": "^2.2.1"
+  },
+  "scripts": {
+    "parser:v1": "node ./scripts/api-parser-v1.js",
+    "parser:v2": "node ./scripts/api-parser-v2.js",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "format": "yarn format:scripts && yarn format:eslint",
+    "format:scripts": "prettier --write ./scripts/*.{js,jsx,json,md}",
+    "format:eslint": "eslint **/*.{js,jsx} --fix",
+    "format:prettier": "prettier --write **/*.{js,jsx,json,md}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DecliningLotus/google-font-metadata"
   }
 }
