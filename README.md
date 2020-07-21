@@ -1,6 +1,6 @@
 # Google Font Metadata
 
-[![License](https://badgen.net/badge/license/MIT/green)](https://github.com/DecliningLotus/fontsource/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/DecliningLotus/google-font-metadata.svg?style=social&label=Star)](https://github.com/DecliningLotus/google-font-metadata/stargazers)
+[![npm version](https://badge.fury.io/js/google-font-metadata.svg)](https://badge.fury.io/js/google-font-metadata) [![License](https://badgen.net/badge/license/MIT/green)](https://github.com/DecliningLotus/google-font-metadata/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/DecliningLotus/google-font-metadata.svg?style=social&label=Star)](https://github.com/DecliningLotus/google-font-metadata/stargazers)
 
 A metadata generator that fetches and parses the Google Fonts API to be primarily used for the [Fontsource monorepo](https://github.com/DecliningLotus/fontsource).
 
@@ -52,6 +52,7 @@ Returns an object list containing metadata of every available Google Font:
         }
       }
     },
+    "defSubset":"latin",
     "lastModified": "2019-07-16",
     "version": "v9",
     "category": "sans-serif"
@@ -60,7 +61,10 @@ Returns an object list containing metadata of every available Google Font:
 }
 ```
 
-Note that some fonts such as Noto Sans JP are divided into many smaller subsets that utilize the unicode-range @fontface selector such as subset `[118]` in APIv2.
+### Things to note:
+
+- APIv1 does not have the unicodeRange key.
+- Fonts such as Noto Sans JP, typically for large fontsets such as Japanese, Korean or Chinese, are divided into many smaller subsets that utilize the unicode-range @fontface selector such as subset `[118]` in APIv2.
 
 ## Update API files
 
@@ -68,7 +72,7 @@ Initially run `node ./scripts/api-gen.js $KEY` within the main directory to fetc
 
 Run `npm run parse:v1` or `npm run parse:v2` to parse through all the fonts to generate the metadata for each of the respective CSS APIs.
 
-`npm explore` is a handy tool to update the generated files yourself when using this repository as a dependency.
+To update the API while using this as a dependency, it is recommended you use `npm explore google-font-metadata -- <run script command>` to run the neccesary commands. Note everytime you update or change your dependencies, the files will be reset to its older state, therefore it's recommended to integrate this into your CI/CD process.
 
 ## Other Notes
 
