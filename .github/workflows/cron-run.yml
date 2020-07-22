@@ -8,8 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    if: github.actor == github.event.repository.owner.login
-
     steps:
       - name: checkout
         uses: actions/checkout@v2
