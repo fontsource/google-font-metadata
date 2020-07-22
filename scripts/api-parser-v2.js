@@ -177,7 +177,7 @@ const processQueue = async (font, cb) => {
 }
 
 require("events").EventEmitter.defaultMaxListeners = 0
-const queue = async.queue(processQueue, 24)
+const queue = async.queue(processQueue, 18)
 
 queue.error((err, font) => {
   console.error(`${font.family} experienced an error.`, err)
