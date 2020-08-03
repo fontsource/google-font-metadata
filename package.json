@@ -24,7 +24,7 @@
     "parser:v1": "node ./scripts/api-parser-v1.js",
     "parser:v2": "node ./scripts/api-parser-v2.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "format": "yarn format:scripts && yarn format:eslint",
+    "format": "yarn format:prettier && yarn format:eslint",
     "format:scripts": "prettier --write ./scripts/*.{js,jsx,json,md}",
     "format:eslint": "eslint **/*.{js,jsx} --fix",
     "format:prettier": "prettier --write **/*.{js,jsx,json,md}"
