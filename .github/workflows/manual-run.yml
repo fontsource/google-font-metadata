@@ -35,6 +35,9 @@ jobs:
       - name: Parse APIv2
         run: yarn parser:v2
 
+      - name: Format files
+        run: yarn format
+
       - name: Stage changes
         run: git add --all
 
