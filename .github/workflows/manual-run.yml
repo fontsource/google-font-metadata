@@ -1,8 +1,6 @@
 name: Build and Release [Manual]
 
-on:
-  watch:
-    types: [started]
+on: [workflow_dispatch]
 
 jobs:
   build:
