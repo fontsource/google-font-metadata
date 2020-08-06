@@ -6,6 +6,7 @@ const postcss = require(`postcss`)
 const rax = require(`retry-axios`)
 
 const fonts = require(`../data/api-response.json`)
+const existingFonts = require(`../data/google-fonts-v2.json`)
 const userAgents = require(`../data/user-agents.json`)
 const baseurl = "https://fonts.googleapis.com/css2?family="
 
@@ -170,10 +171,19 @@ const processCSS = (css, font) => {
 let results = []
 
 const processQueue = async (font, cb) => {
-  const css = await fetchCSS(font)
-  const fontObject = processCSS(css, font)
-  results.push(fontObject)
-  console.log(`Parsed ${font.family}`)
+  const id = font.family.replace(/\s/g, "-").toLowerCase()
+  if (
+    id in existingFonts &&
+    font.lastModified === existingFonts[id].lastModified
+  ) {
+    results.push({ [id]: existingFonts[id] })
+  } else {
+    const css = await fetchCSS(font)
+    const fontObject = processCSS(css, font)
+    results.push(fontObject)
+    console.log(`Updated ${id}`)
+  }
+  console.log(`Parsed ${id}`)
 }
 
 require("events").EventEmitter.defaultMaxListeners = 0
