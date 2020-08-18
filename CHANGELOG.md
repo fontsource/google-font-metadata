@@ -1,3 +1,27 @@
+# Changelog
+
+google-font-metadata will log all notable changes within this file.
+
+## [1.3.1](https://github.com/DecliningLotus/google-font-metadata/compare/v1.3.0...v1.3.1) (2020-08-18)
+
+- update dependencies
+
+# [1.3.0](https://github.com/DecliningLotus/google-font-metadata/compare/v1.2.2...v1.3.0) (2020-08-06)
+
+### Features
+
+- add update checker to prevent unnecessary fetches ([4545640](https://github.com/DecliningLotus/google-font-metadata/commit/4545640ca0b4765f238f69de455368c5c53bde73))
+
+## [1.2.2](https://github.com/DecliningLotus/google-font-metadata/compare/v1.2.1...v1.2.2) (2020-08-03)
+
+- run prettier on data for better public formatting
+
+## [1.2.1](https://github.com/DecliningLotus/google-font-metadata/compare/v1.2.0...v1.2.1) (2020-07-22)
+
+### Performance Improvements
+
+- reduce number of concurrent threads to prevent hanging in ci ([9e59e9f](https://github.com/DecliningLotus/google-font-metadata/commit/9e59e9f490ffe510e7ca87ec3741f3781aa3b7e2))
+
 # [1.2.0](https://github.com/DecliningLotus/google-font-metadata/compare/v1.1.0...v1.2.0) (2020-07-20)
 
 ### Features
@@ -12,4 +36,4 @@
 
 ## 1.0.1 (2020-07-14)
 
-- Initial release.
+- Initial release
