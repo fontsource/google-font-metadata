@@ -6,8 +6,8 @@
   "description": "A metadata generator for Google Fonts.",
   "main": "./data/google-fonts-v2.json",
   "devDependencies": {
-    "conventional-changelog-cli": "^2.0.34",
-    "eslint": "^7.5.0",
+    "conventional-changelog-cli": "^2.1.0",
+    "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.0.5"
@@ -16,7 +16,7 @@
     "async": "^3.2.0",
     "axios": "^0.19.2",
     "jsonfile": "^6.0.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.20",
     "postcss": "^7.0.32",
     "retry-axios": "^2.2.1"
   },
