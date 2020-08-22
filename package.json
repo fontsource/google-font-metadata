@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "async": "^3.2.0",
-    "axios": "^0.19.2",
+    "axios": "^0.20.0",
     "jsonfile": "^6.0.1",
     "lodash": "^4.17.20",
     "postcss": "^7.0.32",
