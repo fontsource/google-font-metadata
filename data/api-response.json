@@ -1897,10 +1897,10 @@
   },
   {
     "family": "Cinzel",
-    "variants": ["regular", "700", "900"],
+    "variants": ["regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v9",
-    "lastModified": "2019-07-17",
+    "version": "v10",
+    "lastModified": "2020-08-20",
     "category": "serif"
   },
   {
@@ -5719,17 +5719,21 @@
     "family": "Merriweather Sans",
     "variants": [
       "300",
-      "300italic",
       "regular",
-      "italic",
+      "500",
+      "600",
       "700",
-      "700italic",
       "800",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
       "800italic"
     ],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2019-07-17",
+    "subsets": ["cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+    "version": "v13",
+    "lastModified": "2020-08-21",
     "category": "sans-serif"
   },
   {
@@ -7890,19 +7894,23 @@
     "family": "Rubik",
     "variants": [
       "300",
-      "300italic",
       "regular",
-      "italic",
       "500",
-      "500italic",
+      "600",
       "700",
-      "700italic",
+      "800",
       "900",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
       "900italic"
     ],
-    "subsets": ["cyrillic", "hebrew", "latin", "latin-ext"],
-    "version": "v9",
-    "lastModified": "2019-07-22",
+    "subsets": ["cyrillic", "cyrillic-ext", "hebrew", "latin", "latin-ext"],
+    "version": "v10",
+    "lastModified": "2020-08-20",
     "category": "sans-serif"
   },
   {
