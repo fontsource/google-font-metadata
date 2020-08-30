@@ -6355,8 +6355,8 @@
     "family": "Noto Sans JP",
     "variants": ["100", "300", "regular", "500", "700", "900"],
     "subsets": ["japanese", "latin"],
-    "version": "v25",
-    "lastModified": "2020-03-05",
+    "version": "v27",
+    "lastModified": "2020-08-26",
     "category": "sans-serif"
   },
   {
@@ -9450,8 +9450,8 @@
     "family": "Vibes",
     "variants": ["regular"],
     "subsets": ["arabic", "latin"],
-    "version": "v2",
-    "lastModified": "2020-07-23",
+    "version": "v3",
+    "lastModified": "2020-08-24",
     "category": "display"
   },
   {
