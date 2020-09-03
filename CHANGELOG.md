@@ -2,6 +2,11 @@
 
 google-font-metadata will log all notable changes within this file.
 
+## [1.3.2](https://github.com/DecliningLotus/google-font-metadata/compare/v1.3.1...v1.3.2) (2020-09-03)
+
+- update dependencies
+- improve package.json for NPM discoverability
+
 ## [1.3.1](https://github.com/DecliningLotus/google-font-metadata/compare/v1.3.0...v1.3.1) (2020-08-18)
 
 - update dependencies
