@@ -4,6 +4,15 @@
   "author": "Lotus <declininglotus@gmail.com>",
   "license": "MIT",
   "description": "A metadata generator for Google Fonts.",
+  "keywords": [
+    "fontsource",
+    "font",
+    "font family",
+    "google fonts",
+    "metadata",
+    "fonts api",
+    "unicode range"
+  ],
   "main": "./data/google-fonts-v2.json",
   "devDependencies": {
     "conventional-changelog-cli": "^2.1.0",
@@ -29,6 +38,7 @@
     "format:eslint": "eslint **/*.{js,jsx} --fix",
     "format:prettier": "prettier --write **/*.{js,jsx,json,md}"
   },
+  "homepage": "https://github.com/DecliningLotus/google-font-metadata",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DecliningLotus/google-font-metadata"
