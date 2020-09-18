@@ -4967,8 +4967,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v16",
-    "lastModified": "2019-07-23",
+    "version": "v17",
+    "lastModified": "2020-09-15",
     "category": "sans-serif"
   },
   {
@@ -6024,8 +6024,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v14",
-    "lastModified": "2019-07-23",
+    "version": "v15",
+    "lastModified": "2020-09-15",
     "category": "sans-serif"
   },
   {
@@ -6404,8 +6404,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v9",
-    "lastModified": "2019-07-22",
+    "version": "v10",
+    "lastModified": "2020-09-15",
     "category": "sans-serif"
   },
   {
@@ -6693,8 +6693,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v17",
-    "lastModified": "2019-07-23",
+    "version": "v18",
+    "lastModified": "2020-09-15",
     "category": "sans-serif"
   },
   {
@@ -6862,8 +6862,8 @@
     "family": "PT Sans",
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2019-07-22",
+    "version": "v12",
+    "lastModified": "2020-09-15",
     "category": "sans-serif"
   },
   {
@@ -7256,8 +7256,8 @@
       "900italic"
     ],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v12",
-    "lastModified": "2020-07-20",
+    "version": "v13",
+    "lastModified": "2020-09-15",
     "category": "sans-serif"
   },
   {
@@ -7794,8 +7794,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v18",
-    "lastModified": "2019-07-23",
+    "version": "v19",
+    "lastModified": "2020-09-15",
     "category": "sans-serif"
   },
   {
@@ -8691,8 +8691,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v13",
-    "lastModified": "2019-07-23",
+    "version": "v14",
+    "lastModified": "2020-09-15",
     "category": "sans-serif"
   },
   {
