@@ -10,8 +10,10 @@ const existingFonts = require(`../data/google-fonts-v2.json`)
 const userAgents = require(`../data/user-agents.json`)
 const baseurl = "https://fonts.googleapis.com/css2?family="
 
-const interceptorId = rax.attach()
+// eslint-disable-next-line no-unused-vars
+const interceptorId = rax.attach() // Add retry-axios interceptor
 const api = async (fontFamily, variants, userAgent) => {
+  // Download CSS stylesheets with specific user-agent Google Fonts APIv2
   const url = baseurl + fontFamily + ":ital,wght@" + variants
   try {
     const response = await axios.get(url, {
@@ -27,6 +29,7 @@ const api = async (fontFamily, variants, userAgent) => {
 
 const fetchCSS = async font => {
   const fontFamily = font.family.replace(/\s/g, "+")
+  // Ensure weights are readable from the generated API.
   const weightsNormal = font.variants
     .map(variant => variant.replace("regular", "400"))
     .filter(variant => {
@@ -45,10 +48,10 @@ const fetchCSS = async font => {
 
   let variants = []
 
-  if (weightsNormal.length != 0) {
+  if (weightsNormal.length !== 0) {
     variants.push(weightsNormal.join(";"))
   }
-  if (weightsItalic.length != 0) {
+  if (weightsItalic.length !== 0) {
     variants.push(weightsItalic.join(";"))
   }
   variants = variants.join(";")
@@ -60,9 +63,10 @@ const fetchCSS = async font => {
   ])
 }
 
+// Convert CSS stylesheets to objects
 const processCSS = (css, font) => {
   const id = font.family.replace(/\s/g, "-").toLowerCase()
-  let fontObject = {
+  const fontObject = {
     [id]: {
       family: font.family,
       id,
@@ -88,6 +92,7 @@ const processCSS = (css, font) => {
   }
   css.forEach(extension => {
     const root = postcss.parse(extension)
+    let subset
     root.each(rule => {
       if (rule.type === "comment") {
         subset = rule.text
@@ -114,6 +119,7 @@ const processCSS = (css, font) => {
           }
         })
 
+        // Build nested font object
         fontObject[id].variants[fontWeight] =
           fontObject[id].variants[fontWeight] || {}
         fontObject[id].variants[fontWeight][fontStyle] =
@@ -130,6 +136,7 @@ const processCSS = (css, font) => {
             -2
           )
 
+          // Determine if local name or URL to font source
           postcss.list.comma(decl.value).forEach(value => {
             value.replace(/(local|url)\((.+?)\)/g, (match, type, path) => {
               if (type === "local") {
@@ -147,7 +154,7 @@ const processCSS = (css, font) => {
                 fontObject[id].variants[fontWeight][fontStyle][subset].url[
                   format
                 ] = path
-                if (format != "woff2") {
+                if (format !== "woff2") {
                   const keys = Object.keys(
                     fontObject[id].variants[fontWeight][fontStyle]
                   )
@@ -168,10 +175,11 @@ const processCSS = (css, font) => {
   return fontObject
 }
 
-let results = []
+const results = []
 
 const processQueue = async (font, cb) => {
   const id = font.family.replace(/\s/g, "-").toLowerCase()
+  // If last-modified matches latest API gen, skip fetch and process.
   if (
     id in existingFonts &&
     font.lastModified === existingFonts[id].lastModified
@@ -186,6 +194,7 @@ const processQueue = async (font, cb) => {
   console.log(`Parsed ${id}`)
 }
 
+// Default listener count is limited to 10. Removing limit.
 require("events").EventEmitter.defaultMaxListeners = 0
 const queue = async.queue(processQueue, 18)
 
