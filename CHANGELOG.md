@@ -2,7 +2,7 @@
 
 google-font-metadata will log all notable changes within this file.
 
-## [1.3.4](https://github.com/fontsource/google-font-metadata/releases/tag/v1.3.4) (2020-09-18)
+## [1.3.4](https://github.com/fontsource/google-font-metadata/releases/tag/v1.3.4) (2020-09-23)
 
 - add ESLint Standard formatting and applied relevant fixes
 - update dependencies
