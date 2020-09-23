@@ -31,7 +31,7 @@
     "axios": "^0.20.0",
     "jsonfile": "^6.0.1",
     "lodash": "^4.17.20",
-    "postcss": "^8.0.5",
+    "postcss": "^8.0.7",
     "retry-axios": "^2.2.1"
   },
   "scripts": {
