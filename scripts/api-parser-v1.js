@@ -10,8 +10,10 @@ const existingFonts = require(`../data/google-fonts-v1.json`)
 const userAgents = require(`../data/user-agents.json`)
 const baseurl = "https://fonts.googleapis.com/css?subset="
 
-const interceptorId = rax.attach()
+// eslint-disable-next-line no-unused-vars
+const interceptorId = rax.attach() // Add retry-axios interceptor
 const api = async (subsets, fontFamily, weights, userAgent) => {
+  // Get all CSS variants for specified user-agent using Google Fonts APIv1
   return await Promise.all(
     subsets.map(async subset => {
       const url = baseurl + subset + "&family=" + fontFamily + ":" + weights
@@ -35,6 +37,7 @@ const fetchCSS = async font => {
     .map(variant => variant.replace("regular", "400"))
     .join(",")
 
+  // Download CSS stylesheets
   return Promise.all([
     (await api(font.subsets, fontFamily, weights, userAgents.woff2)).join(""),
     (await api(font.subsets, fontFamily, weights, userAgents.woff)).join(""),
@@ -42,9 +45,10 @@ const fetchCSS = async font => {
   ])
 }
 
+// Convert CSS stylesheets to objects
 const processCSS = (css, font) => {
   const id = font.family.replace(/\s/g, "-").toLowerCase()
-  let fontObject = {
+  const fontObject = {
     [id]: {
       family: font.family,
       id,
@@ -63,6 +67,7 @@ const processCSS = (css, font) => {
   css.forEach(extension => {
     const root = postcss.parse(extension)
     root.each(rule => {
+      let subset
       if (rule.type === "comment") {
         subset = rule.text
       }
@@ -81,6 +86,7 @@ const processCSS = (css, font) => {
           }
         })
 
+        // Build nested object structure
         fontObject[id].variants[fontWeight] =
           fontObject[id].variants[fontWeight] || {}
         fontObject[id].variants[fontWeight][fontStyle] =
@@ -97,6 +103,7 @@ const processCSS = (css, font) => {
             -2
           )
 
+          // Determine whether it is a local name or URL for font
           postcss.list.comma(decl.value).forEach(value => {
             value.replace(/(local|url)\((.+?)\)/g, (match, type, path) => {
               if (type === "local") {
@@ -124,10 +131,11 @@ const processCSS = (css, font) => {
   return fontObject
 }
 
-let results = []
+const results = []
 
 const processQueue = async (font, cb) => {
   const id = font.family.replace(/\s/g, "-").toLowerCase()
+  // If last-modified matches latest API, skip fetching CSS and processing.
   if (
     id in existingFonts &&
     font.lastModified === existingFonts[id].lastModified

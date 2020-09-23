@@ -5,7 +5,8 @@ const rax = require("retry-axios")
 const url =
   "https://www.googleapis.com/webfonts/v1/webfonts?fields=items(category%2Cfamily%2ClastModified%2Csubsets%2Cvariants%2Cversion)&key="
 
-const interceptorId = rax.attach()
+// eslint-disable-next-line no-unused-vars
+const interceptorId = rax.attach() // Attach retry axios timeout.
 const fetchAPI = async url => {
   try {
     const response = await axios.get(url)
@@ -24,7 +25,6 @@ const key = process.argv[2]
 
 if (key === undefined) {
   console.log("\x1b[31m", "The API Key is required!")
-  return false
+} else {
+  fetchAPI(url + key)
 }
-
-fetchAPI(url + key)
