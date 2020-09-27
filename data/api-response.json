@@ -150,8 +150,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v14",
-    "lastModified": "2020-09-02",
+    "version": "v15",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -177,8 +177,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v12",
-    "lastModified": "2020-09-02",
+    "version": "v13",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -208,8 +208,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v11",
-    "lastModified": "2020-09-02",
+    "version": "v12",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -239,8 +239,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v10",
-    "lastModified": "2020-09-02",
+    "version": "v11",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -327,8 +327,8 @@
     "family": "Almarai",
     "variants": ["300", "regular", "700", "800"],
     "subsets": ["arabic"],
-    "version": "v3",
-    "lastModified": "2020-09-02",
+    "version": "v4",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -375,8 +375,8 @@
     "family": "Amatic SC",
     "variants": ["regular", "700"],
     "subsets": ["cyrillic", "hebrew", "latin", "latin-ext", "vietnamese"],
-    "version": "v14",
-    "lastModified": "2020-09-02",
+    "version": "v15",
+    "lastModified": "2020-09-25",
     "category": "handwriting"
   },
   {
@@ -399,16 +399,16 @@
     "family": "Amiri",
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v15",
-    "lastModified": "2020-09-02",
+    "version": "v16",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
     "family": "Amita",
     "variants": ["regular", "700"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2020-07-23",
+    "version": "v7",
+    "lastModified": "2020-09-25",
     "category": "handwriting"
   },
   {
@@ -569,8 +569,8 @@
     "family": "Aref Ruqaa",
     "variants": ["regular", "700"],
     "subsets": ["arabic", "latin"],
-    "version": "v9",
-    "lastModified": "2020-07-23",
+    "version": "v10",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -594,8 +594,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v14",
-    "lastModified": "2020-09-10",
+    "version": "v15",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -659,8 +659,8 @@
       "700italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v12",
-    "lastModified": "2020-09-02",
+    "version": "v13",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -676,8 +676,8 @@
       "700italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v6",
-    "lastModified": "2020-09-02",
+    "version": "v7",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -1082,8 +1082,8 @@
     "family": "Baskervville",
     "variants": ["regular", "italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2020-09-02",
+    "version": "v4",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -1549,8 +1549,8 @@
     "family": "Cairo",
     "variants": ["200", "300", "regular", "600", "700", "900"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2020-09-10",
+    "version": "v9",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -1637,8 +1637,8 @@
     "family": "Cardo",
     "variants": ["regular", "italic", "700"],
     "subsets": ["greek", "greek-ext", "latin", "latin-ext"],
-    "version": "v12",
-    "lastModified": "2020-09-02",
+    "version": "v13",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -1786,8 +1786,8 @@
     "family": "Charmonman",
     "variants": ["regular", "700"],
     "subsets": ["latin", "latin-ext", "thai", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2020-09-02",
+    "version": "v5",
+    "lastModified": "2020-09-25",
     "category": "handwriting"
   },
   {
@@ -2069,8 +2069,8 @@
       "700italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v9",
-    "lastModified": "2020-09-02",
+    "version": "v10",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -2088,8 +2088,8 @@
       "700italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v8",
-    "lastModified": "2020-09-02",
+    "version": "v9",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -2107,32 +2107,32 @@
       "700italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v9",
-    "lastModified": "2020-09-02",
+    "version": "v10",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
     "family": "Cormorant SC",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v9",
-    "lastModified": "2020-09-02",
+    "version": "v10",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
     "family": "Cormorant Unicase",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v9",
-    "lastModified": "2020-09-02",
+    "version": "v10",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
     "family": "Cormorant Upright",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v7",
-    "lastModified": "2020-09-02",
+    "version": "v8",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -2164,8 +2164,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v15",
-    "lastModified": "2020-09-02",
+    "version": "v16",
+    "lastModified": "2020-09-25",
     "category": "monospace"
   },
   {
@@ -2623,8 +2623,8 @@
     "family": "El Messiri",
     "variants": ["regular", "500", "600", "700"],
     "subsets": ["arabic", "cyrillic", "latin"],
-    "version": "v7",
-    "lastModified": "2020-09-02",
+    "version": "v8",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -3417,8 +3417,8 @@
       "700italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -3473,8 +3473,8 @@
     "family": "Gidugu",
     "variants": ["regular"],
     "subsets": ["latin", "telugu"],
-    "version": "v7",
-    "lastModified": "2020-07-23",
+    "version": "v8",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -3489,8 +3489,8 @@
     "family": "Girassol",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2020-07-23",
+    "version": "v3",
+    "lastModified": "2020-09-25",
     "category": "display"
   },
   {
@@ -3731,8 +3731,8 @@
     "family": "Gurajada",
     "variants": ["regular"],
     "subsets": ["latin", "telugu"],
-    "version": "v8",
-    "lastModified": "2020-07-23",
+    "version": "v9",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -4122,8 +4122,8 @@
     "family": "Ibarra Real Nova",
     "variants": ["regular", "italic", "600", "600italic", "700", "700italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2020-09-02",
+    "version": "v4",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -4324,8 +4324,8 @@
     "family": "Jomhuria",
     "variants": ["regular"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2020-07-23",
+    "version": "v9",
+    "lastModified": "2020-09-25",
     "category": "display"
   },
   {
@@ -4589,8 +4589,8 @@
     "family": "Katibeh",
     "variants": ["regular"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2020-09-02",
+    "version": "v9",
+    "lastModified": "2020-09-25",
     "category": "display"
   },
   {
@@ -4932,8 +4932,8 @@
     "family": "Lalezar",
     "variants": ["regular"],
     "subsets": ["arabic", "latin", "latin-ext", "vietnamese"],
-    "version": "v7",
-    "lastModified": "2020-09-02",
+    "version": "v8",
+    "lastModified": "2020-09-25",
     "category": "display"
   },
   {
@@ -5023,56 +5023,56 @@
     "family": "Lexend Deca",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Exa",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Giga",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Mega",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Peta",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Tera",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Zetta",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -5276,8 +5276,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2020-09-02",
+    "version": "v5",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -5893,8 +5893,8 @@
     "family": "Mirza",
     "variants": ["regular", "500", "600", "700"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2020-09-02",
+    "version": "v9",
+    "lastModified": "2020-09-25",
     "category": "display"
   },
   {
@@ -6147,8 +6147,8 @@
     "family": "Mukta Mahee",
     "variants": ["200", "300", "regular", "500", "600", "700", "800"],
     "subsets": ["gurmukhi", "latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2020-07-23",
+    "version": "v7",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -6222,8 +6222,8 @@
     "family": "NTR",
     "variants": ["regular"],
     "subsets": ["latin", "telugu"],
-    "version": "v8",
-    "lastModified": "2020-07-23",
+    "version": "v9",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -6371,8 +6371,8 @@
     "family": "Notable",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v5",
-    "lastModified": "2020-07-23",
+    "version": "v6",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -6404,8 +6404,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v10",
-    "lastModified": "2020-09-15",
+    "version": "v11",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -7280,8 +7280,8 @@
     "family": "Pragati Narrow",
     "variants": ["regular", "700"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2020-09-02",
+    "version": "v7",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -7465,8 +7465,8 @@
     "family": "Questrial",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v11",
-    "lastModified": "2020-09-02",
+    "version": "v12",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -7521,8 +7521,8 @@
     "family": "Rakkas",
     "variants": ["regular"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2020-09-02",
+    "version": "v9",
+    "lastModified": "2020-09-25",
     "category": "display"
   },
   {
@@ -7693,8 +7693,8 @@
     "family": "Reem Kufi",
     "variants": ["regular"],
     "subsets": ["arabic", "latin"],
-    "version": "v8",
-    "lastModified": "2020-09-02",
+    "version": "v9",
+    "lastModified": "2020-09-25",
     "category": "sans-serif"
   },
   {
@@ -8288,8 +8288,8 @@
     "family": "Scheherazade",
     "variants": ["regular", "700"],
     "subsets": ["arabic", "latin"],
-    "version": "v18",
-    "lastModified": "2020-09-02",
+    "version": "v19",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -8662,8 +8662,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v12",
-    "lastModified": "2020-09-10",
+    "version": "v13",
+    "lastModified": "2020-09-25",
     "category": "monospace"
   },
   {
@@ -8719,8 +8719,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v9",
-    "lastModified": "2020-09-10",
+    "version": "v10",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -8863,8 +8863,8 @@
     "family": "Staatliches",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2020-09-02",
+    "version": "v5",
+    "lastModified": "2020-09-25",
     "category": "display"
   },
   {
@@ -9007,8 +9007,8 @@
     "family": "Suravaram",
     "variants": ["regular"],
     "subsets": ["latin", "telugu"],
-    "version": "v7",
-    "lastModified": "2020-07-23",
+    "version": "v8",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -9195,8 +9195,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v14",
-    "lastModified": "2020-09-02",
+    "version": "v15",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -9451,8 +9451,8 @@
     "family": "Unna",
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v14",
-    "lastModified": "2020-09-02",
+    "version": "v15",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
@@ -9507,8 +9507,8 @@
     "family": "Vesper Libre",
     "variants": ["regular", "500", "700", "900"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v12",
-    "lastModified": "2020-07-23",
+    "version": "v13",
+    "lastModified": "2020-09-25",
     "category": "serif"
   },
   {
