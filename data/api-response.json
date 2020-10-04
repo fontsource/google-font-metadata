@@ -1509,8 +1509,8 @@
       "700italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v15",
-    "lastModified": "2020-09-02",
+    "version": "v17",
+    "lastModified": "2020-09-29",
     "category": "sans-serif"
   },
   {
@@ -1518,7 +1518,7 @@
     "variants": ["regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
     "version": "v14",
-    "lastModified": "2020-09-02",
+    "lastModified": "2020-09-29",
     "category": "sans-serif"
   },
   {
@@ -2490,10 +2490,10 @@
   },
   {
     "family": "Domine",
-    "variants": ["regular", "700"],
+    "variants": ["regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v7",
-    "lastModified": "2019-07-17",
+    "version": "v10",
+    "lastModified": "2020-09-29",
     "category": "serif"
   },
   {
@@ -4401,8 +4401,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2020-06-26",
+    "version": "v4",
+    "lastModified": "2020-09-29",
     "category": "sans-serif"
   },
   {
@@ -7081,8 +7081,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v10",
-    "lastModified": "2020-07-29",
+    "version": "v11",
+    "lastModified": "2020-09-29",
     "category": "serif"
   },
   {
@@ -7092,6 +7092,41 @@
     "version": "v14",
     "lastModified": "2020-09-02",
     "category": "sans-serif"
+  },
+  {
+    "family": "Piazzolla",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "version": "v2",
+    "lastModified": "2020-09-29",
+    "category": "serif"
   },
   {
     "family": "Piedra",
@@ -7548,8 +7583,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v17",
-    "lastModified": "2020-07-15",
+    "version": "v18",
+    "lastModified": "2020-09-30",
     "category": "sans-serif"
   },
   {
@@ -7974,8 +8009,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "hebrew", "latin", "latin-ext"],
-    "version": "v10",
-    "lastModified": "2020-08-20",
+    "version": "v11",
+    "lastModified": "2020-09-29",
     "category": "sans-serif"
   },
   {
@@ -8202,6 +8237,14 @@
     "version": "v5",
     "lastModified": "2020-07-23",
     "category": "sans-serif"
+  },
+  {
+    "family": "Sansita Swashed",
+    "variants": ["300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2020-09-29",
+    "category": "display"
   },
   {
     "family": "Sarabun",
