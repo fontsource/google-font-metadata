@@ -1991,6 +1991,31 @@
     "category": "handwriting"
   },
   {
+    "family": "Commissioner",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "version": "v1",
+    "lastModified": "2020-10-08",
+    "category": "sans-serif"
+  },
+  {
     "family": "Concert One",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -2259,10 +2284,19 @@
   },
   {
     "family": "Cuprum",
-    "variants": ["regular", "italic", "700", "700italic"],
+    "variants": [
+      "regular",
+      "500",
+      "600",
+      "700",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v12",
-    "lastModified": "2020-09-02",
+    "version": "v13",
+    "lastModified": "2020-10-08",
     "category": "sans-serif"
   },
   {
@@ -4565,8 +4599,8 @@
     "family": "Kantumruy",
     "variants": ["300", "regular", "700"],
     "subsets": ["khmer"],
-    "version": "v8",
-    "lastModified": "2020-07-23",
+    "version": "v9",
+    "lastModified": "2020-10-08",
     "category": "sans-serif"
   },
   {
@@ -4621,8 +4655,8 @@
     "family": "Kdam Thmor",
     "variants": ["regular"],
     "subsets": ["khmer"],
-    "version": "v8",
-    "lastModified": "2020-07-23",
+    "version": "v9",
+    "lastModified": "2020-10-08",
     "category": "display"
   },
   {
@@ -7124,8 +7158,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v2",
-    "lastModified": "2020-09-29",
+    "version": "v3",
+    "lastModified": "2020-10-08",
     "category": "serif"
   },
   {
@@ -7710,10 +7744,10 @@
   },
   {
     "family": "Red Rose",
-    "variants": ["300", "regular", "700"],
+    "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2020-10-08",
     "category": "display"
   },
   {
