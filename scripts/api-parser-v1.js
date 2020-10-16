@@ -66,8 +66,9 @@ const processCSS = (css, font) => {
   }
   css.forEach(extension => {
     const root = postcss.parse(extension)
+
+    let subset
     root.each(rule => {
-      let subset
       if (rule.type === "comment") {
         subset = rule.text
       }
