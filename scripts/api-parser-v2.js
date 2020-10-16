@@ -92,6 +92,7 @@ const processCSS = (css, font) => {
   }
   css.forEach(extension => {
     const root = postcss.parse(extension)
+
     let subset
     root.each(rule => {
       if (rule.type === "comment") {
@@ -99,8 +100,8 @@ const processCSS = (css, font) => {
       }
 
       if (rule.type === "atrule" && rule.name === "font-face") {
-        let fontStyle = ""
-        let fontWeight = ""
+        let fontStyle
+        let fontWeight
 
         rule.walkDecls("font-weight", decl => {
           fontWeight = decl.value
@@ -119,15 +120,19 @@ const processCSS = (css, font) => {
           }
         })
 
-        // Build nested font object
-        fontObject[id].variants[fontWeight] =
-          fontObject[id].variants[fontWeight] || {}
-        fontObject[id].variants[fontWeight][fontStyle] =
-          fontObject[id].variants[fontWeight][fontStyle] || {}
-        fontObject[id].variants[fontWeight][fontStyle][subset] = fontObject[id]
-          .variants[fontWeight][fontStyle][subset] || {
-          local: [],
-          url: {},
+        // Subset is only defined when not searching for WOFF2. Other formats break the system.
+        if (subset !== undefined) {
+          // Build nested font object
+          fontObject[id].variants[fontWeight] =
+            fontObject[id].variants[fontWeight] || {}
+          fontObject[id].variants[fontWeight][fontStyle] =
+            fontObject[id].variants[fontWeight][fontStyle] || {}
+          fontObject[id].variants[fontWeight][fontStyle][subset] = fontObject[
+            id
+          ].variants[fontWeight][fontStyle][subset] || {
+            local: [],
+            url: {},
+          }
         }
 
         rule.walkDecls("src", decl => {
@@ -141,19 +146,24 @@ const processCSS = (css, font) => {
             value.replace(/(local|url)\((.+?)\)/g, (match, type, path) => {
               if (type === "local") {
                 path = path.replace(/'/g, "")
-                if (
-                  !fontObject[id].variants[fontWeight][fontStyle][
-                    subset
-                  ].local.includes(path)
-                ) {
-                  fontObject[id].variants[fontWeight][fontStyle][
-                    subset
-                  ].local.push(path)
+                // Subset is only defined when not searching for WOFF2. Other formats break the system.
+                if (subset !== undefined) {
+                  if (
+                    !fontObject[id].variants[fontWeight][fontStyle][
+                      subset
+                    ].local.includes(path)
+                  ) {
+                    fontObject[id].variants[fontWeight][fontStyle][
+                      subset
+                    ].local.push(path)
+                  }
                 }
               } else if (type === "url") {
-                fontObject[id].variants[fontWeight][fontStyle][subset].url[
-                  format
-                ] = path
+                if (subset !== undefined) {
+                  fontObject[id].variants[fontWeight][fontStyle][subset].url[
+                    format
+                  ] = path
+                }
                 if (format !== "woff2") {
                   const keys = Object.keys(
                     fontObject[id].variants[fontWeight][fontStyle]

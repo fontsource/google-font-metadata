@@ -5,6 +5,7 @@ google-font-metadata will log all notable changes within this file.
 ## [1.4.0](https://github.com/fontsource/google-font-metadata/releases/tag/v1.4.0) (2020-10-16)
 
 - Added variable font support (found in data/variable.json)
+- fixed undefined subset values being generated
 - update dependencies
 - update datasets
 
