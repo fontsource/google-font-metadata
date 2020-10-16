@@ -33,6 +33,12 @@ jobs:
       - name: Parse APIv2
         run: yarn parser:v2
 
+      - name: Scrape variable fonts
+        run: yarn variable:gen
+
+      - name: Parse variable fonts
+        run: yarn variable:parse
+
       - name: Format files
         run: yarn format
 
