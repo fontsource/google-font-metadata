@@ -1,13 +1,16 @@
 {
-  "env": {
-    "commonjs": true,
-    "es2021": true,
-    "node": true
-  },
-  "extends": ["standard", "plugin:prettier/recommended", "prettier/standard"],
+  "root": true,
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 12
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2020
   },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "standard-with-typescript",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
     "prettier/prettier": "warn"
   }

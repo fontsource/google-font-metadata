@@ -13,18 +13,28 @@
     "fonts api",
     "unicode range"
   ],
-  "main": "./data/google-fonts-v2.json",
+  "main": "./lib/index",
+  "types": "./lib/index",
   "devDependencies": {
+    "@types/async": "^3.2.3",
+    "@types/cheerio": "^0.22.22",
+    "@types/jsonfile": "^6.0.0",
+    "@types/lodash": "^4.14.162",
+    "@types/node": "^14.14.0",
+    "@types/puppeteer": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "3",
+    "@typescript-eslint/parser": "^4.5.0",
     "conventional-changelog-cli": "^2.1.0",
-    "eslint": "^7.9.0",
+    "eslint": "7",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0",
+    "eslint-config-standard-with-typescript": "^19.0.1",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-node": "11",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "prettier": "^2.1.2"
+    "eslint-plugin-promise": "4",
+    "eslint-plugin-standard": "4",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
   },
   "dependencies": {
     "async": "^3.2.0",
@@ -37,15 +47,16 @@
     "retry-axios": "^2.2.1"
   },
   "scripts": {
+    "compile": "tsc",
     "parser:v1": "node ./scripts/api-parser-v1.js",
     "parser:v2": "node ./scripts/api-parser-v2.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "variable:gen": "node ./scripts/variable-gen.js",
     "variable:parse": "node ./scripts/variable-parser.js",
     "format": "yarn format:prettier && yarn format:eslint",
-    "format:scripts": "prettier --write ./scripts/*.{js,jsx,json,md}",
-    "format:eslint": "eslint **/*.{js,jsx} --fix",
-    "format:prettier": "prettier --write **/*.{js,jsx,json,md}"
+    "format:scripts": "prettier --write ./scripts/*.{js,ts,json,md}",
+    "format:eslint": "eslint **/*.{js,ts} --fix",
+    "format:prettier": "prettier --write **/*.{js,ts,json,md}"
   },
   "homepage": "https://github.com/DecliningLotus/google-font-metadata",
   "repository": {
