@@ -48,13 +48,13 @@
   },
   "scripts": {
     "compile": "tsc",
-    "parser:v1": "node ./scripts/api-parser-v1.js",
-    "parser:v2": "node ./scripts/api-parser-v2.js",
+    "parser:v1": "node ./src/api-parser-v1.js",
+    "parser:v2": "node ./src/api-parser-v2.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "variable:gen": "node ./scripts/variable-gen.js",
-    "variable:parse": "node ./scripts/variable-parser.js",
+    "variable:gen": "node ./src/variable-gen.js",
+    "variable:parse": "node ./src/variable-parser.js",
     "format": "yarn format:prettier && yarn format:eslint",
-    "format:scripts": "prettier --write ./scripts/*.{js,ts,json,md}",
+    "format:src": "prettier --write ./src/*.{js,ts,json,md}",
     "format:eslint": "eslint **/*.{js,ts} --fix",
     "format:prettier": "prettier --write **/*.{js,ts,json,md}"
   },
