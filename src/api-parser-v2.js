@@ -14,7 +14,7 @@ const baseurl = "https://fonts.googleapis.com/css2?family="
 const interceptorId = rax.attach() // Add retry-axios interceptor
 const api = async (fontFamily, variants, userAgent) => {
   // Download CSS stylesheets with specific user-agent Google Fonts APIv2
-  const url = baseurl + fontFamily + ":ital,wght@" + variants
+  const url = `${baseurl + fontFamily  }:ital,wght@${  variants}`
   try {
     const response = await axios.get(url, {
       headers: {
@@ -35,7 +35,7 @@ const fetchCSS = async font => {
     .filter(variant => {
       return !isNaN(variant)
     })
-    .map(variant => "0," + variant)
+    .map(variant => `0,${  variant}`)
 
   const weightsItalic = font.variants
     .map(variant =>
@@ -44,7 +44,7 @@ const fetchCSS = async font => {
         .replace("regular", "400")
     )
     .filter(variant => isNaN(variant))
-    .map(variant => "1," + variant.replace(/\D/g, ""))
+    .map(variant => `1,${  variant.replace(/\D/g, "")}`)
 
   let variants = []
 
@@ -206,6 +206,7 @@ const processQueue = async (font, cb) => {
 
 // Default listener count is limited to 10. Removing limit.
 require("events").EventEmitter.defaultMaxListeners = 0
+
 const queue = async.queue(processQueue, 18)
 
 queue.error((err, font) => {

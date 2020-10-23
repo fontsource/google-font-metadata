@@ -21,7 +21,7 @@ const fetchCSSLinks = (fontId, data) => {
     if (axes === "ital") {
       axesItal = true
     } else {
-      const range = axesData[axes].min + ".." + axesData[axes].max
+      const range = `${axesData[axes].min  }..${  axesData[axes].max}`
       axesRange.push(range)
     }
   })
@@ -39,15 +39,15 @@ const fetchCSSLinks = (fontId, data) => {
 
     // Ital specific properties
     links.wghtOnlyItalic =
-      baseurl + fontFamily + ":ital,wght@1," + axesRange[wghtIndex]
+      `${baseurl + fontFamily  }:ital,wght@1,${  axesRange[wghtIndex]}`
     links.fullItalic =
-      baseurl + fontFamily + ":ital," + axesNames.join(",") + "@1," + axesRange
+      `${baseurl + fontFamily  }:ital,${  axesNames.join(",")  }@1,${  axesRange}`
   }
 
   // Non-ital specific properties
-  links.wghtOnly = baseurl + fontFamily + ":wght@" + axesRange[wghtIndex]
+  links.wghtOnly = `${baseurl + fontFamily  }:wght@${  axesRange[wghtIndex]}`
   links.full =
-    baseurl + fontFamily + ":" + axesNames.join(",") + "@" + axesRange
+    `${baseurl + fontFamily  }:${  axesNames.join(",")  }@${  axesRange}`
 
   return [links, axesItal]
 }
@@ -76,12 +76,12 @@ const fetchAllCSS = async (links, ifItal) => {
       await fetchCSS(links.fullItalic),
       await fetchCSS(links.wghtOnlyItalic),
     ])
-  } else {
+  } 
     return Promise.all([
       await fetchCSS(links.full),
       await fetchCSS(links.wghtOnly),
     ])
-  }
+  
 }
 
 const parseCSS = (css, font) => {
@@ -156,6 +156,7 @@ const processQueue = async (font, cb) => {
 
 // Default listener count is limited to 10. Removing limit.
 require("events").EventEmitter.defaultMaxListeners = 0
+
 const queue = async.queue(processQueue, 10)
 
 queue.error((err, font) => {
