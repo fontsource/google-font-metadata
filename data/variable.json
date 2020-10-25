@@ -1,4 +1,19 @@
 {
+  "assistant": {
+    "family": "Assistant",
+    "axes": {
+      "wght": { "default": "400", "min": "200", "max": "800", "step": "1" }
+    },
+    "variants": {
+      "wghtOnly": {
+        "normal": {
+          "hebrew": "https://fonts.gstatic.com/s/assistant/v6/2sDcZGJYnIjSi6H75xkzamW5O7w.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/assistant/v6/2sDcZGJYnIjSi6H75xkzZmW5O7w.woff2",
+          "latin": "https://fonts.gstatic.com/s/assistant/v6/2sDcZGJYnIjSi6H75xkzaGW5.woff2"
+        }
+      }
+    }
+  },
   "bitter": {
     "family": "Bitter",
     "axes": {
@@ -851,6 +866,20 @@
       }
     }
   },
+  "oxanium": {
+    "family": "Oxanium",
+    "axes": {
+      "wght": { "default": "400", "min": "200", "max": "800", "step": "1" }
+    },
+    "variants": {
+      "wghtOnly": {
+        "normal": {
+          "latin-ext": "https://fonts.gstatic.com/s/oxanium/v3/RrQQboN_4yJ0JmiMe2zE0YBB.woff2",
+          "latin": "https://fonts.gstatic.com/s/oxanium/v3/RrQQboN_4yJ0JmiMe2LE0Q.woff2"
+        }
+      }
+    }
+  },
   "petrona": {
     "family": "Petrona",
     "axes": {
@@ -1251,6 +1280,29 @@
         "normal": {
           "latin-ext": "https://fonts.gstatic.com/s/syne/v1/8vIH7w4qzmVxm25L9Hz_.woff2",
           "latin": "https://fonts.gstatic.com/s/syne/v1/8vIH7w4qzmVxm2BL9A.woff2"
+        }
+      }
+    }
+  },
+  "trispace": {
+    "family": "Trispace",
+    "axes": {
+      "wdth": { "default": "100", "min": "75", "max": "125", "step": "0.1" },
+      "wght": { "default": "400", "min": "100", "max": "800", "step": "1" }
+    },
+    "variants": {
+      "full": {
+        "normal": {
+          "vietnamese": "https://fonts.gstatic.com/s/trispace/v1/Yq6X-LKSQC3o56Lxxi5onONilg.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/trispace/v1/Yq6X-LKSQC3o56Lxxi5pnONilg.woff2",
+          "latin": "https://fonts.gstatic.com/s/trispace/v1/Yq6X-LKSQC3o56Lxxi5nnOM.woff2"
+        }
+      },
+      "wghtOnly": {
+        "normal": {
+          "vietnamese": "https://fonts.gstatic.com/s/trispace/v1/Yq6K-LKSQC3o56LxxgRrtA6yBqsrXL5GI5Ki-63ovPc.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/trispace/v1/Yq6K-LKSQC3o56LxxgRrtA6yBqsrXL5GI5Ki-q3ovPc.woff2",
+          "latin": "https://fonts.gstatic.com/s/trispace/v1/Yq6K-LKSQC3o56LxxgRrtA6yBqsrXL5GI5Ki9K3o.woff2"
         }
       }
     }

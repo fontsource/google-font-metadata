@@ -43,8 +43,8 @@
     "family": "Acme",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v10",
-    "lastModified": "2020-09-02",
+    "version": "v11",
+    "lastModified": "2020-10-22",
     "category": "sans-serif"
   },
   {
@@ -150,8 +150,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v15",
-    "lastModified": "2020-09-25",
+    "version": "v16",
+    "lastModified": "2020-10-22",
     "category": "serif"
   },
   {
@@ -177,8 +177,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v13",
-    "lastModified": "2020-09-25",
+    "version": "v14",
+    "lastModified": "2020-10-22",
     "category": "serif"
   },
   {
@@ -208,8 +208,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v12",
-    "lastModified": "2020-09-25",
+    "version": "v13",
+    "lastModified": "2020-10-22",
     "category": "sans-serif"
   },
   {
@@ -239,8 +239,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v11",
-    "lastModified": "2020-09-25",
+    "version": "v12",
+    "lastModified": "2020-10-22",
     "category": "sans-serif"
   },
   {
@@ -698,10 +698,10 @@
   },
   {
     "family": "Assistant",
-    "variants": ["200", "300", "regular", "600", "700", "800"],
-    "subsets": ["hebrew", "latin"],
-    "version": "v5",
-    "lastModified": "2020-09-02",
+    "variants": ["200", "300", "regular", "500", "600", "700", "800"],
+    "subsets": ["hebrew", "latin", "latin-ext"],
+    "version": "v6",
+    "lastModified": "2020-10-22",
     "category": "sans-serif"
   },
   {
@@ -6864,8 +6864,8 @@
     "family": "Oxanium",
     "variants": ["200", "300", "regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2020-07-23",
+    "version": "v3",
+    "lastModified": "2020-10-22",
     "category": "display"
   },
   {
@@ -9117,8 +9117,24 @@
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext"],
     "version": "v1",
-    "lastModified": "2020-09-02",
+    "lastModified": "2020-10-22",
     "category": "sans-serif"
+  },
+  {
+    "family": "Syne Mono",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2020-10-22",
+    "category": "monospace"
+  },
+  {
+    "family": "Syne Tactile",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2020-10-22",
+    "category": "display"
   },
   {
     "family": "Tajawal",
@@ -9365,6 +9381,14 @@
     "version": "v6",
     "lastModified": "2020-09-02",
     "category": "serif"
+  },
+  {
+    "family": "Trispace",
+    "variants": ["100", "200", "300", "regular", "500", "600", "700", "800"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2020-10-22",
+    "category": "sans-serif"
   },
   {
     "family": "Trocchi",
