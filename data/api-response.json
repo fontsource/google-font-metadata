@@ -568,9 +568,9 @@
   {
     "family": "Aref Ruqaa",
     "variants": ["regular", "700"],
-    "subsets": ["arabic", "latin"],
-    "version": "v10",
-    "lastModified": "2020-09-25",
+    "subsets": ["arabic", "latin", "latin-ext"],
+    "version": "v12",
+    "lastModified": "2020-11-06",
     "category": "serif"
   },
   {
@@ -1225,16 +1225,48 @@
     "family": "Big Shoulders Display",
     "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-09-02",
+    "version": "v4",
+    "lastModified": "2020-11-06",
+    "category": "display"
+  },
+  {
+    "family": "Big Shoulders Inline Display",
+    "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2020-11-06",
+    "category": "display"
+  },
+  {
+    "family": "Big Shoulders Inline Text",
+    "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2020-11-06",
+    "category": "display"
+  },
+  {
+    "family": "Big Shoulders Stencil Display",
+    "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2020-11-06",
+    "category": "display"
+  },
+  {
+    "family": "Big Shoulders Stencil Text",
+    "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2020-11-06",
     "category": "display"
   },
   {
     "family": "Big Shoulders Text",
     "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-09-02",
+    "version": "v4",
+    "lastModified": "2020-11-06",
     "category": "display"
   },
   {
@@ -1701,10 +1733,10 @@
   },
   {
     "family": "Caveat",
-    "variants": ["regular", "700"],
+    "variants": ["regular", "500", "600", "700"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2020-09-02",
+    "version": "v9",
+    "lastModified": "2020-11-06",
     "category": "handwriting"
   },
   {
@@ -2335,8 +2367,8 @@
     "family": "DM Sans",
     "variants": ["regular", "italic", "500", "500italic", "700", "700italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v5",
-    "lastModified": "2020-09-02",
+    "version": "v6",
+    "lastModified": "2020-11-06",
     "category": "sans-serif"
   },
   {
@@ -3576,6 +3608,14 @@
     "category": "handwriting"
   },
   {
+    "family": "Goldman",
+    "variants": ["regular", "700"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2020-11-06",
+    "category": "display"
+  },
+  {
     "family": "Gorditas",
     "variants": ["regular", "700"],
     "subsets": ["latin"],
@@ -3789,8 +3829,8 @@
     "family": "Hammersmith One",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2020-09-02",
+    "version": "v12",
+    "lastModified": "2020-11-06",
     "category": "sans-serif"
   },
   {
@@ -3921,8 +3961,8 @@
     "family": "Hind Guntur",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "telugu"],
-    "version": "v6",
-    "lastModified": "2020-09-02",
+    "version": "v7",
+    "lastModified": "2020-11-06",
     "category": "sans-serif"
   },
   {
@@ -4154,10 +4194,19 @@
   },
   {
     "family": "Ibarra Real Nova",
-    "variants": ["regular", "italic", "600", "600italic", "700", "700italic"],
+    "variants": [
+      "regular",
+      "500",
+      "600",
+      "700",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2020-09-25",
+    "version": "v5",
+    "lastModified": "2020-11-06",
     "category": "serif"
   },
   {
@@ -4220,8 +4269,8 @@
     "family": "Inknut Antiqua",
     "variants": ["300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2020-07-23",
+    "version": "v7",
+    "lastModified": "2020-11-06",
     "category": "serif"
   },
   {
@@ -4703,8 +4752,8 @@
     "family": "Khula",
     "variants": ["300", "regular", "600", "700", "800"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2020-09-02",
+    "version": "v7",
+    "lastModified": "2020-11-06",
     "category": "sans-serif"
   },
   {
@@ -5158,6 +5207,14 @@
     "category": "display"
   },
   {
+    "family": "Libre Barcode EAN13 Text",
+    "variants": ["regular"],
+    "subsets": ["latin"],
+    "version": "v1",
+    "lastModified": "2020-11-03",
+    "category": "display"
+  },
+  {
     "family": "Libre Baskerville",
     "variants": ["regular", "italic", "700"],
     "subsets": ["latin", "latin-ext"],
@@ -5185,27 +5242,27 @@
     "family": "Libre Franklin",
     "variants": [
       "100",
-      "100italic",
       "200",
-      "200italic",
       "300",
-      "300italic",
       "regular",
-      "italic",
       "500",
-      "500italic",
       "600",
-      "600italic",
       "700",
-      "700italic",
       "800",
-      "800italic",
       "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
       "900italic"
     ],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v5",
-    "lastModified": "2020-09-10",
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v6",
+    "lastModified": "2020-11-06",
     "category": "sans-serif"
   },
   {
@@ -6944,8 +7001,8 @@
     "family": "Padauk",
     "variants": ["regular", "700"],
     "subsets": ["latin", "myanmar"],
-    "version": "v6",
-    "lastModified": "2019-07-16",
+    "version": "v7",
+    "lastModified": "2020-11-06",
     "category": "sans-serif"
   },
   {
@@ -7325,8 +7382,8 @@
       "900italic"
     ],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v13",
-    "lastModified": "2020-09-15",
+    "version": "v15",
+    "lastModified": "2020-11-06",
     "category": "sans-serif"
   },
   {
@@ -8801,6 +8858,14 @@
     "category": "serif"
   },
   {
+    "family": "Space Grotesk",
+    "variants": ["300", "regular", "500", "600", "700"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2020-11-03",
+    "category": "sans-serif"
+  },
+  {
     "family": "Space Mono",
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
@@ -9794,6 +9859,14 @@
     "version": "v8",
     "lastModified": "2020-06-26",
     "category": "sans-serif"
+  },
+  {
+    "family": "Xanh Mono",
+    "variants": ["regular", "italic"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2020-11-06",
+    "category": "monospace"
   },
   {
     "family": "Yanone Kaffeesatz",

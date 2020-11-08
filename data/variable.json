@@ -51,6 +51,17 @@
       }
     }
   },
+  "-caveat-": {
+    "family": " Caveat ",
+    "axes": {
+      " wght ": {
+        "default": " 400 ",
+        "min": " 400 ",
+        "max": " 700 ",
+        "step": " 1 "
+      }
+    }
+  },
   "-changa-": {
     "family": " Changa ",
     "axes": {
@@ -285,6 +296,18 @@
       }
     }
   },
+  "-ibarra-real-nova-": {
+    "family": " Ibarra Real Nova ",
+    "axes": {
+      " ital ": { "default": " 0 ", "min": " 0 ", "max": " 1 ", "step": " 1 " },
+      " wght ": {
+        "default": " 400 ",
+        "min": " 400 ",
+        "max": " 700 ",
+        "step": " 1 "
+      }
+    }
+  },
   "-inconsolata-": {
     "family": " Inconsolata ",
     "axes": {
@@ -384,6 +407,18 @@
         "default": " 400 ",
         "min": " 300 ",
         "max": " 700 ",
+        "step": " 1 "
+      }
+    }
+  },
+  "-libre-franklin-": {
+    "family": " Libre Franklin ",
+    "axes": {
+      " ital ": { "default": " 0 ", "min": " 0 ", "max": " 1 ", "step": " 1 " },
+      " wght ": {
+        "default": " 400 ",
+        "min": " 100 ",
+        "max": " 900 ",
         "step": " 1 "
       }
     }
@@ -763,6 +798,17 @@
         "default": " 400 ",
         "min": " 100 ",
         "max": " 800 ",
+        "step": " 1 "
+      }
+    }
+  },
+  "-space-grotesk-": {
+    "family": " Space Grotesk ",
+    "axes": {
+      " wght ": {
+        "default": " 400 ",
+        "min": " 300 ",
+        "max": " 700 ",
         "step": " 1 "
       }
     }
