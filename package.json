@@ -13,18 +13,24 @@
     "fonts api",
     "unicode range"
   ],
-  "main": "./data/google-fonts-v2.json",
+  "main": "./lib/index",
   "devDependencies": {
+    "@types/async": "^3.2.3",
+    "@types/cheerio": "^0.22.22",
+    "@types/jsonfile": "^6.0.0",
+    "@types/lodash": "^4.14.162",
+    "@types/node": "^14.14.0",
+    "@types/puppeteer": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "4.4.1",
+    "@typescript-eslint/parser": "^4.5.0",
     "conventional-changelog-cli": "^2.1.0",
-    "eslint": "^7.9.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-import": "2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
   },
   "dependencies": {
     "async": "^3.2.0",
@@ -37,19 +43,20 @@
     "retry-axios": "^2.2.1"
   },
   "scripts": {
-    "parser:v1": "node ./scripts/api-parser-v1.js",
-    "parser:v2": "node ./scripts/api-parser-v2.js",
+    "parser:gen": "node ./lib/api-gen.js",
+    "parser:v1": "node ./lib/api-parser-v1.js",
+    "parser:v2": "node ./lib/api-parser-v2.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "variable:gen": "node ./scripts/variable-gen.js",
-    "variable:parse": "node ./scripts/variable-parser.js",
+    "variable:gen": "node ./lib/variable-gen.js",
+    "variable:parse": "node ./lib/variable-parser.js",
     "format": "yarn format:prettier && yarn format:eslint",
-    "format:scripts": "prettier --write ./scripts/*.{js,jsx,json,md}",
-    "format:eslint": "eslint **/*.{js,jsx} --fix",
-    "format:prettier": "prettier --write **/*.{js,jsx,json,md}"
+    "format:src": "prettier --write ./src/*.{ts,js,json,md}",
+    "format:eslint": "eslint ./src/*.{js,ts} --fix",
+    "format:prettier": "prettier --write **/*.{ts,json,md}"
   },
-  "homepage": "https://github.com/DecliningLotus/google-font-metadata",
+  "homepage": "https://github.com/fontsource/google-font-metadata",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DecliningLotus/google-font-metadata"
+    "url": "git+https://github.com/fontsource/google-font-metadata"
   }
 }

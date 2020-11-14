@@ -1,14 +1,17 @@
 {
-  "env": {
-    "commonjs": true,
-    "es2021": true,
-    "node": true
-  },
-  "extends": ["standard", "plugin:prettier/recommended", "prettier/standard"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 12
+    "project": "./tsconfig.json"
   },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
-    "prettier/prettier": "warn"
+    "no-console": "off"
   }
 }

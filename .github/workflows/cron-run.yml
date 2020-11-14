@@ -23,7 +23,7 @@ jobs:
         run: yarn
 
       - name: Query API
-        run: node ./scripts/api-gen.js $GOOGLE_API_KEY
+        run: yarn parser:gen $GOOGLE_API_KEY
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
