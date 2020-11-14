@@ -220,8 +220,18 @@ queue.error((err, font) => {
 });
 
 queue.drain(() => {
+  // Order the font objects alphabetically for consistency and not create huge diffs
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const unordered: FontObjectExport = Object.assign({}, ...results);
+  const ordered: FontObjectExport = {};
+  Object.keys(unordered)
+    .sort()
+    .forEach(key => {
+      ordered[key] = unordered[key];
+    });
+
   jsonfile
-    .writeFile("./lib/data/google-fonts-v1.json", Object.assign({}, ...results))
+    .writeFile("./lib/data/google-fonts-v1.json", ordered)
     .then(() => {
       console.log(
         `All ${results.length} font datapoints using CSS APIv1 have been generated.`
