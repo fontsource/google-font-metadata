@@ -15,7 +15,7 @@ const fetchAPI = async (url: string) => {
   try {
     const response: Response = await axios.get(url);
     jsonfile
-      .writeFile("./data/api-response.json", response.data.items)
+      .writeFile("./lib/data/api-response.json", response.data.items)
       .then(() => {
         console.log("Successful Google Font API fetch.");
       })

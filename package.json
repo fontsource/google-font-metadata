@@ -44,20 +44,20 @@
     "retry-axios": "^2.2.1"
   },
   "scripts": {
-    "compile": "tsc",
-    "parser:v1": "node ./src/api-parser-v1.js",
-    "parser:v2": "node ./src/api-parser-v2.js",
+    "parser:gen": "node ./lib/api-gen.js",
+    "parser:v1": "node ./lib/api-parser-v1.js",
+    "parser:v2": "node ./lib/api-parser-v2.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "variable:gen": "node ./src/variable-gen.js",
-    "variable:parse": "node ./src/variable-parser.js",
+    "variable:gen": "node ./lib/variable-gen.js",
+    "variable:parse": "node ./lib/variable-parser.js",
     "format": "yarn format:prettier && yarn format:eslint",
-    "format:src": "prettier --write ./src/*.{js,ts,json,md}",
-    "format:eslint": "eslint **/*.{js,ts} --fix",
-    "format:prettier": "prettier --write **/*.{js,ts,json,md}"
+    "format:src": "prettier --write ./src/*.{ts,js,json,md}",
+    "format:eslint": "eslint ./src/*.{js,ts} --fix",
+    "format:prettier": "prettier --write **/*.{ts,json,md}"
   },
-  "homepage": "https://github.com/DecliningLotus/google-font-metadata",
+  "homepage": "https://github.com/fontsource/google-font-metadata",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DecliningLotus/google-font-metadata"
+    "url": "git+https://github.com/fontsource/google-font-metadata"
   }
 }

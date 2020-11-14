@@ -19,10 +19,10 @@ yarn add google-font-metadata // npm install google-font-metadata
 ## Usage
 
 ```js
-const API = require("google-font-metadata") // Default leads to APIv2.
+const API = require("google-font-metadata"); // Default leads to APIv2.
 // const API = require("google-font-metadata/data/google-fonts-v1.json")
 
-console.dir(API)
+console.dir(API);
 ```
 
 Returns an object list containing metadata of every available Google Font:
@@ -71,9 +71,9 @@ Returns an object list containing metadata of every available Google Font:
 We support fetching additional information on variable fonts.
 
 ```js
-const variableAPI = require("google-font-metadata/data/variable.json")
+const variableAPI = require("google-font-metadata/data/variable.json");
 
-console.dir(variableAPI)
+console.dir(variableAPI);
 ```
 
 Returns an object that provides axes details and download links.
