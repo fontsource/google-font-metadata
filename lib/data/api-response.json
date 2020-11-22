@@ -583,7 +583,16 @@
   },
   {
     "family": "Arimo",
-    "variants": ["regular", "italic", "700", "700italic"],
+    "variants": [
+      "regular",
+      "500",
+      "600",
+      "700",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
     "subsets": [
       "cyrillic",
       "cyrillic-ext",
@@ -594,8 +603,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v15",
-    "lastModified": "2020-09-25",
+    "version": "v16",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
@@ -1706,6 +1715,14 @@
     "category": "display"
   },
   {
+    "family": "Castoro",
+    "variants": ["regular", "italic"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2020-11-20",
+    "category": "serif"
+  },
+  {
     "family": "Catamaran",
     "variants": [
       "100",
@@ -2705,8 +2722,8 @@
     "family": "Elsie",
     "variants": ["regular", "900"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v10",
-    "lastModified": "2020-07-23",
+    "version": "v11",
+    "lastModified": "2020-11-20",
     "category": "display"
   },
   {
@@ -4446,19 +4463,23 @@
     "family": "Josefin Slab",
     "variants": [
       "100",
-      "100italic",
+      "200",
       "300",
-      "300italic",
       "regular",
-      "italic",
+      "500",
       "600",
-      "600italic",
       "700",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
       "700italic"
     ],
     "subsets": ["latin"],
-    "version": "v11",
-    "lastModified": "2020-09-02",
+    "version": "v12",
+    "lastModified": "2020-11-20",
     "category": "serif"
   },
   {
@@ -4654,10 +4675,25 @@
   },
   {
     "family": "Karla",
-    "variants": ["regular", "italic", "700", "700italic"],
+    "variants": [
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic"
+    ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v13",
-    "lastModified": "2019-12-08",
+    "version": "v14",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
@@ -5106,56 +5142,56 @@
     "family": "Lexend Deca",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-09-25",
+    "version": "v4",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Exa",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-09-25",
+    "version": "v4",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Giga",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-09-25",
+    "version": "v4",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Mega",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-09-25",
+    "version": "v4",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Peta",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-09-25",
+    "version": "v4",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Tera",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-09-25",
+    "version": "v4",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Zetta",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-09-25",
+    "version": "v4",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
@@ -5334,8 +5370,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v17",
-    "lastModified": "2020-09-02",
+    "version": "v18",
+    "lastModified": "2020-11-20",
     "category": "serif"
   },
   {
@@ -6358,6 +6394,14 @@
     "category": "handwriting"
   },
   {
+    "family": "Nerko One",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2020-11-20",
+    "category": "handwriting"
+  },
+  {
     "family": "Neucha",
     "variants": ["regular"],
     "subsets": ["cyrillic", "latin"],
@@ -6678,8 +6722,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v14",
-    "lastModified": "2020-09-10",
+    "version": "v15",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
@@ -7215,8 +7259,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v3",
-    "lastModified": "2020-10-08",
+    "version": "v4",
+    "lastModified": "2020-11-20",
     "category": "serif"
   },
   {
@@ -7770,8 +7814,8 @@
     "family": "Recursive",
     "variants": ["300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "vietnamese"],
-    "version": "v21",
-    "lastModified": "2020-09-02",
+    "version": "v22",
+    "lastModified": "2020-11-20",
     "category": "sans-serif"
   },
   {
@@ -9299,6 +9343,33 @@
     "version": "v8",
     "lastModified": "2020-07-23",
     "category": "sans-serif"
+  },
+  {
+    "family": "Texturina",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v2",
+    "lastModified": "2020-11-20",
+    "category": "serif"
   },
   {
     "family": "Thasadith",
