@@ -3895,7 +3895,7 @@
     "variants": ["regular", "700"],
     "subsets": ["arabic", "latin", "latin-ext"],
     "version": "v9",
-    "lastModified": "2020-09-02",
+    "lastModified": "2020-12-02",
     "category": "sans-serif"
   },
   {
@@ -4395,6 +4395,38 @@
     "version": "v7",
     "lastModified": "2020-09-02",
     "category": "sans-serif"
+  },
+  {
+    "family": "JetBrains Mono",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic"
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "version": "v1",
+    "lastModified": "2020-12-02",
+    "category": "monospace"
   },
   {
     "family": "Jim Nightshade",
