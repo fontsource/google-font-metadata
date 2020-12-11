@@ -2,6 +2,13 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [2.0.1](https://github.com/fontsource/google-font-metadata/releases/tag/v2.0.1)
+
+### Fixes
+
+- Fixed oblique xdeg xdeg from mistakenly getting written to file. [#34](https://github.com/fontsource/google-font-metadata/pull/34)
+- Update dependencies and datasets [#31](https://github.com/fontsource/google-font-metadata/pull/31) [#32](https://github.com/fontsource/google-font-metadata/pull/32) [#36](https://github.com/fontsource/google-font-metadata/pull/36)
+
 # [2.0.0](https://github.com/fontsource/google-font-metadata/releases/tag/v2.0.0)
 
 ## Breaking changes
