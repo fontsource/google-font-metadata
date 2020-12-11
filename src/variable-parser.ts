@@ -128,6 +128,8 @@ const fetchAllCSS = async (links: Links, ifItal: boolean) => {
 };
 
 const parseCSS = (css: string[], fontId: string) => {
+  const axesData = data[fontId].axes;
+
   const fontObject: FontVariants = {
     full: {},
     wghtOnly: {},
@@ -146,6 +148,14 @@ const parseCSS = (css: string[], fontId: string) => {
       if (rule.type === "atrule" && rule.name === "font-face") {
         rule.walkDecls("font-style", decl => {
           fontStyle = decl.value;
+          // Removes any oblique xdeg xdeg from being written to file
+          if (
+            "slnt" in axesData &&
+            fontStyle !== "normal" &&
+            fontStyle !== "italic"
+          ) {
+            fontStyle = "normal";
+          }
         });
 
         if (index === 0 || index === 2) {
