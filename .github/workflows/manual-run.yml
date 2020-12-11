@@ -40,7 +40,7 @@ jobs:
         run: yarn variable:parse
 
       - name: Format files
-        run: yarn format
+        run: yarn format:prettier
 
       - name: Stage changes
         run: git add --all
