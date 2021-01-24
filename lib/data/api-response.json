@@ -439,8 +439,8 @@
     "family": "Andika New Basic",
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-12-08",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -970,8 +970,8 @@
     "family": "Balsamiq Sans",
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -1250,32 +1250,32 @@
     "family": "Big Shoulders Inline Display",
     "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-11-06",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
     "family": "Big Shoulders Inline Text",
     "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-11-06",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
     "family": "Big Shoulders Stencil Display",
     "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-11-06",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
     "family": "Big Shoulders Stencil Text",
     "variants": ["100", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-11-06",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -1747,8 +1747,8 @@
     "family": "Castoro",
     "variants": ["regular", "italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2020-11-20",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "serif"
   },
   {
@@ -2089,8 +2089,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v1",
-    "lastModified": "2020-10-08",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -2405,8 +2405,8 @@
     "family": "DM Mono",
     "variants": ["300", "300italic", "regular", "italic", "500", "500italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2020-07-23",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "monospace"
   },
   {
@@ -2916,8 +2916,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v4",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -3395,8 +3395,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2021-01-08",
+    "version": "v5",
+    "lastModified": "2021-01-21",
     "category": "serif"
   },
   {
@@ -3684,8 +3684,8 @@
     "family": "Goldman",
     "variants": ["regular", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-11-06",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -3769,8 +3769,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v4",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -3830,8 +3830,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-07-08",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -3894,8 +3894,8 @@
     "family": "Hachi Maru Pop",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2021-01-08",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "handwriting"
   },
   {
@@ -3958,8 +3958,8 @@
     "family": "Harmattan",
     "variants": ["regular", "700"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v9",
-    "lastModified": "2020-12-02",
+    "version": "v10",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -4506,8 +4506,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v1",
-    "lastModified": "2020-12-02",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "monospace"
   },
   {
@@ -4619,8 +4619,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2020-09-29",
+    "version": "v6",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -5074,8 +5074,8 @@
       "900italic"
     ],
     "subsets": ["arabic", "latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v4",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -5117,8 +5117,8 @@
     "family": "Kumbh Sans",
     "variants": ["300", "regular", "700"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2020-09-02",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -5181,16 +5181,16 @@
     "family": "Langar",
     "variants": ["regular"],
     "subsets": ["gurmukhi", "latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2020-12-08",
+    "version": "v12",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
     "family": "Lateef",
     "variants": ["regular"],
     "subsets": ["arabic", "latin"],
-    "version": "v16",
-    "lastModified": "2020-09-02",
+    "version": "v17",
+    "lastModified": "2021-01-21",
     "category": "handwriting"
   },
   {
@@ -5714,8 +5714,8 @@
     "family": "Mada",
     "variants": ["200", "300", "regular", "500", "600", "700", "900"],
     "subsets": ["arabic", "latin"],
-    "version": "v9",
-    "lastModified": "2020-09-02",
+    "version": "v10",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -6437,8 +6437,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-07-13",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -6455,8 +6455,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-06-26",
+    "version": "v4",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -6519,8 +6519,8 @@
     "family": "Nerko One",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2020-11-20",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "handwriting"
   },
   {
@@ -7381,8 +7381,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v4",
-    "lastModified": "2020-11-20",
+    "version": "v6",
+    "lastModified": "2021-01-21",
     "category": "serif"
   },
   {
@@ -7572,8 +7572,8 @@
     "family": "Potta One",
     "variants": ["regular"],
     "subsets": ["japanese", "latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2021-01-08",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -7977,8 +7977,8 @@
     "family": "Red Rose",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-10-08",
+    "version": "v5",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -8243,8 +8243,8 @@
     "family": "Rowdies",
     "variants": ["300", "regular", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-09-02",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -8516,8 +8516,8 @@
     "family": "Sansita Swashed",
     "variants": ["300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-09-29",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -8797,8 +8797,8 @@
     "family": "Single Day",
     "variants": ["regular"],
     "subsets": ["korean"],
-    "version": "v2",
-    "lastModified": "2020-07-23",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -8941,8 +8941,8 @@
     "family": "Sora",
     "variants": ["100", "200", "300", "regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2020-07-13",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -9044,8 +9044,8 @@
     "family": "Space Grotesk",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-11-03",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -9364,24 +9364,24 @@
     "family": "Syne",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2020-10-22",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
     "family": "Syne Mono",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2020-10-22",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "monospace"
   },
   {
     "family": "Syne Tactile",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2020-10-22",
+    "version": "v2",
+    "lastModified": "2021-01-21",
     "category": "display"
   },
   {
@@ -9661,8 +9661,8 @@
     "family": "Trispace",
     "variants": ["100", "200", "300", "regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-10-22",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -9867,8 +9867,8 @@
     "family": "Varta",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-07-13",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
@@ -10074,8 +10074,8 @@
     "family": "Xanh Mono",
     "variants": ["regular", "italic"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2020-12-08",
+    "version": "v4",
+    "lastModified": "2021-01-21",
     "category": "monospace"
   },
   {
@@ -10146,8 +10146,8 @@
     "family": "Yusei Magic",
     "variants": ["regular"],
     "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2021-01-08",
+    "version": "v3",
+    "lastModified": "2021-01-21",
     "category": "sans-serif"
   },
   {
