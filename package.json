@@ -39,7 +39,7 @@
     "jsonfile": "^6.1.0",
     "lodash": "^4.17.20",
     "postcss": "^8.2.3",
-    "puppeteer": "^5.5.0",
+    "puppeteer": "^7.0.1",
     "retry-axios": "^2.4.0"
   },
   "scripts": {
