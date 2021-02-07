@@ -440,7 +440,7 @@
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
     "version": "v2",
-    "lastModified": "2021-01-21",
+    "lastModified": "2021-02-02",
     "category": "sans-serif"
   },
   {
@@ -5368,8 +5368,8 @@
     "family": "Libre Barcode EAN13 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2020-11-03",
+    "version": "v4",
+    "lastModified": "2021-02-03",
     "category": "display"
   },
   {
