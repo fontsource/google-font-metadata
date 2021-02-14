@@ -1,4 +1,33 @@
 {
+  "alegreya": {
+    "family": "Alegreya",
+    "axes": {
+      "ital": { "default": "0", "min": "0", "max": "1", "step": "1" },
+      "wght": { "default": "400", "min": "400", "max": "900", "step": "1" }
+    },
+    "variants": {
+      "wghtOnly": {
+        "normal": {
+          "cyrillic-ext": "https://fonts.gstatic.com/s/alegreya/v19/4UaBrEBBsBhlBjvfkSLsx6jx4w.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/alegreya/v19/4UaBrEBBsBhlBjvfkSLlx6jx4w.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/alegreya/v19/4UaBrEBBsBhlBjvfkSLtx6jx4w.woff2",
+          "greek": "https://fonts.gstatic.com/s/alegreya/v19/4UaBrEBBsBhlBjvfkSLix6jx4w.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/alegreya/v19/4UaBrEBBsBhlBjvfkSLux6jx4w.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/alegreya/v19/4UaBrEBBsBhlBjvfkSLvx6jx4w.woff2",
+          "latin": "https://fonts.gstatic.com/s/alegreya/v19/4UaBrEBBsBhlBjvfkSLhx6g.woff2"
+        },
+        "italic": {
+          "cyrillic-ext": "https://fonts.gstatic.com/s/alegreya/v19/4UaHrEBBsBhlBjvfkSLk96fp56N1.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/alegreya/v19/4UaHrEBBsBhlBjvfkSLk967p56N1.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/alegreya/v19/4UaHrEBBsBhlBjvfkSLk96bp56N1.woff2",
+          "greek": "https://fonts.gstatic.com/s/alegreya/v19/4UaHrEBBsBhlBjvfkSLk96np56N1.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/alegreya/v19/4UaHrEBBsBhlBjvfkSLk96Xp56N1.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/alegreya/v19/4UaHrEBBsBhlBjvfkSLk96Tp56N1.woff2",
+          "latin": "https://fonts.gstatic.com/s/alegreya/v19/4UaHrEBBsBhlBjvfkSLk96rp5w.woff2"
+        }
+      }
+    }
+  },
   "arimo": {
     "family": "Arimo",
     "axes": {
@@ -96,6 +125,24 @@
         "italic": {
           "latin-ext": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTB7PxzY382XsXX63LUYJSPUqb0pL6OQqxrZLnVbtxcXgOFEw.woff2",
           "latin": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTB7PxzY382XsXX63LUYJSPUqb0pL6OQqxrZLnVbtxSXgM.woff2"
+        }
+      }
+    }
+  },
+  "brygada-1918": {
+    "family": "Brygada 1918",
+    "axes": {
+      "wght": { "default": "400", "min": "400", "max": "700", "step": "1" }
+    },
+    "variants": {
+      "wghtOnly": {
+        "normal": {
+          "cyrillic-ext": "https://fonts.gstatic.com/s/brygada1918/v1/pe0pMI6eKpdGqlF5LANrM--qCf5vS1U.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/brygada1918/v1/pe0pMI6eKpdGqlF5LANrM--qAP5vS1U.woff2",
+          "greek": "https://fonts.gstatic.com/s/brygada1918/v1/pe0pMI6eKpdGqlF5LANrM--qB_5vS1U.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/brygada1918/v1/pe0pMI6eKpdGqlF5LANrM--qC_5vS1U.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/brygada1918/v1/pe0pMI6eKpdGqlF5LANrM--qCv5vS1U.woff2",
+          "latin": "https://fonts.gstatic.com/s/brygada1918/v1/pe0pMI6eKpdGqlF5LANrM--qBP5v.woff2"
         }
       }
     }
@@ -1075,6 +1122,40 @@
       }
     }
   },
+  "newsreader": {
+    "family": "Newsreader",
+    "axes": {
+      "ital": { "default": "0", "min": "0", "max": "1", "step": "1" },
+      "opsz": { "default": "14", "min": "6", "max": "72", "step": "0.1" },
+      "wght": { "default": "400", "min": "200", "max": "800", "step": "1" }
+    },
+    "variants": {
+      "full": {
+        "normal": {
+          "vietnamese": "https://fonts.gstatic.com/s/newsreader/v2/cY9AfjOCX1hbuyalUrK439HyjJBG.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/newsreader/v2/cY9AfjOCX1hbuyalUrK439DyjJBG.woff2",
+          "latin": "https://fonts.gstatic.com/s/newsreader/v2/cY9AfjOCX1hbuyalUrK4397yjA.woff2"
+        },
+        "italic": {
+          "vietnamese": "https://fonts.gstatic.com/s/newsreader/v2/cY9CfjOCX1hbuyalUrK439vCgYhCFpY.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/newsreader/v2/cY9CfjOCX1hbuyalUrK439vCgIhCFpY.woff2",
+          "latin": "https://fonts.gstatic.com/s/newsreader/v2/cY9CfjOCX1hbuyalUrK439vCjohC.woff2"
+        }
+      },
+      "wghtOnly": {
+        "normal": {
+          "vietnamese": "https://fonts.gstatic.com/s/newsreader/v2/cY9VfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBAbCJYQraA.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/newsreader/v2/cY9VfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBAbDJYQraA.woff2",
+          "latin": "https://fonts.gstatic.com/s/newsreader/v2/cY9VfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBAbNJYQ.woff2"
+        },
+        "italic": {
+          "vietnamese": "https://fonts.gstatic.com/s/newsreader/v2/cY9XfjOCX1hbuyalUrK439vogqC9yFZCYg7oRZaLFYkzbBZD.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/newsreader/v2/cY9XfjOCX1hbuyalUrK439vogqC9yFZCYg7oRZaLFYgzbBZD.woff2",
+          "latin": "https://fonts.gstatic.com/s/newsreader/v2/cY9XfjOCX1hbuyalUrK439vogqC9yFZCYg7oRZaLFYYzbA.woff2"
+        }
+      }
+    }
+  },
   "orbitron": {
     "family": "Orbitron",
     "axes": {
@@ -1625,6 +1706,30 @@
           "vietnamese": "https://fonts.gstatic.com/s/trispace/v3/Yq6K-LKSQC3o56LxxgRrtA6yBqsrXL5GI5Ki-63ovPc.woff2",
           "latin-ext": "https://fonts.gstatic.com/s/trispace/v3/Yq6K-LKSQC3o56LxxgRrtA6yBqsrXL5GI5Ki-q3ovPc.woff2",
           "latin": "https://fonts.gstatic.com/s/trispace/v3/Yq6K-LKSQC3o56LxxgRrtA6yBqsrXL5GI5Ki9K3o.woff2"
+        }
+      }
+    }
+  },
+  "truculenta": {
+    "family": "Truculenta",
+    "axes": {
+      "opsz": { "default": "14", "min": "12", "max": "72", "step": "0.1" },
+      "wdth": { "default": "100", "min": "75", "max": "125", "step": "0.1" },
+      "wght": { "default": "400", "min": "100", "max": "900", "step": "1" }
+    },
+    "variants": {
+      "full": {
+        "normal": {
+          "vietnamese": "https://fonts.gstatic.com/s/truculenta/v1/LhWgMVvBKusVIfNYGi1-cPd9N-mZ.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/truculenta/v1/LhWgMVvBKusVIfNYGi1-cPZ9N-mZ.woff2",
+          "latin": "https://fonts.gstatic.com/s/truculenta/v1/LhWgMVvBKusVIfNYGi1-cPh9Nw.woff2"
+        }
+      },
+      "wghtOnly": {
+        "normal": {
+          "vietnamese": "https://fonts.gstatic.com/s/truculenta/v1/LhWKMVvBKusVIfNYGi1-WvRVyDdZeeiySNppcu32Mb2f06y6Oa21F6XtiG2p5eM.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/truculenta/v1/LhWKMVvBKusVIfNYGi1-WvRVyDdZeeiySNppcu32Mb2f06y6Oa21F6XtiW2p5eM.woff2",
+          "latin": "https://fonts.gstatic.com/s/truculenta/v1/LhWKMVvBKusVIfNYGi1-WvRVyDdZeeiySNppcu32Mb2f06y6Oa21F6Xth22p.woff2"
         }
       }
     }

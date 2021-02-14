@@ -131,14 +131,16 @@
     "family": "Alegreya",
     "variants": [
       "regular",
-      "italic",
       "500",
-      "500italic",
+      "600",
       "700",
-      "700italic",
       "800",
-      "800italic",
       "900",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
       "900italic"
     ],
     "subsets": [
@@ -150,8 +152,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v16",
-    "lastModified": "2020-10-22",
+    "version": "v19",
+    "lastModified": "2021-02-12",
     "category": "serif"
   },
   {
@@ -495,8 +497,8 @@
     "family": "Anton",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v12",
-    "lastModified": "2020-09-10",
+    "version": "v15",
+    "lastModified": "2021-02-12",
     "category": "sans-serif"
   },
   {
@@ -895,6 +897,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Ballet",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-02-12",
+    "category": "handwriting"
+  },
+  {
     "family": "Baloo 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["devanagari", "latin", "latin-ext", "vietnamese"],
@@ -1207,6 +1217,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Benne",
+    "variants": ["regular"],
+    "subsets": ["kannada", "latin", "latin-ext"],
+    "version": "v8",
+    "lastModified": "2021-02-10",
+    "category": "serif"
+  },
+  {
     "family": "Bentham",
     "variants": ["regular"],
     "subsets": ["latin"],
@@ -1479,6 +1497,21 @@
     "category": "serif"
   },
   {
+    "family": "Brygada 1918",
+    "variants": ["regular", "500", "600", "700"],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "version": "v1",
+    "lastModified": "2021-02-12",
+    "category": "serif"
+  },
+  {
     "family": "Bubblegum Sans",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -1747,8 +1780,8 @@
     "family": "Castoro",
     "variants": ["regular", "italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2021-01-21",
+    "version": "v5",
+    "lastModified": "2021-02-12",
     "category": "serif"
   },
   {
@@ -5149,9 +5182,9 @@
     "family": "Laila",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v7",
-    "lastModified": "2020-07-23",
-    "category": "serif"
+    "version": "v8",
+    "lastModified": "2021-02-10",
+    "category": "sans-serif"
   },
   {
     "family": "Lakki Reddy",
@@ -5264,56 +5297,56 @@
     "family": "Lexend Deca",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2020-11-20",
+    "version": "v7",
+    "lastModified": "2021-02-12",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Exa",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2020-11-20",
+    "version": "v7",
+    "lastModified": "2021-02-12",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Giga",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2020-11-20",
+    "version": "v7",
+    "lastModified": "2021-02-12",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Mega",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2020-11-20",
+    "version": "v7",
+    "lastModified": "2021-02-12",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Peta",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2020-11-20",
+    "version": "v7",
+    "lastModified": "2021-02-12",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Tera",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2020-11-20",
+    "version": "v7",
+    "lastModified": "2021-02-12",
     "category": "sans-serif"
   },
   {
     "family": "Lexend Zetta",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2020-11-20",
+    "version": "v7",
+    "lastModified": "2021-02-12",
     "category": "sans-serif"
   },
   {
@@ -5368,8 +5401,8 @@
     "family": "Libre Barcode EAN13 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2021-02-03",
+    "version": "v6",
+    "lastModified": "2021-02-10",
     "category": "display"
   },
   {
@@ -6554,6 +6587,29 @@
     "version": "v17",
     "lastModified": "2020-09-02",
     "category": "sans-serif"
+  },
+  {
+    "family": "Newsreader",
+    "variants": [
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v2",
+    "lastModified": "2021-02-12",
+    "category": "serif"
   },
   {
     "family": "Niconne",
@@ -8004,6 +8060,14 @@
     "version": "v11",
     "lastModified": "2020-09-02",
     "category": "handwriting"
+  },
+  {
+    "family": "Reggae One",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-02-12",
+    "category": "display"
   },
   {
     "family": "Revalia",
@@ -9680,6 +9744,24 @@
     "version": "v8",
     "lastModified": "2020-07-23",
     "category": "display"
+  },
+  {
+    "family": "Truculenta",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-02-12",
+    "category": "sans-serif"
   },
   {
     "family": "Trykker",
