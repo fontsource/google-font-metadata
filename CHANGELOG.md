@@ -2,6 +2,13 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [2.0.2](https://github.com/fontsource/google-font-metadata/releases/tag/v2.0.2)
+
+### Fixes
+
+- Exported declaration files with lib to fix types [#51](https://github.com/fontsource/google-font-metadata/pull/51)
+- Updated dependencies and datasets
+
 # [2.0.1](https://github.com/fontsource/google-font-metadata/releases/tag/v2.0.1)
 
 ### Fixes
