@@ -25,7 +25,7 @@ interface FontObjectAPI {
   category: string;
 }
 
-interface FontObjectExport {
+export interface FontObjectv1 {
   [id: string]: {
     family: string;
     id: string;
@@ -98,7 +98,7 @@ const fetchCSS = async (font: FontObjectAPI) => {
 const processCSS = (css: string[], font: FontObjectAPI) => {
   const id = font.family.replace(/\s/g, "-").toLowerCase();
 
-  const fontObject: FontObjectExport = {
+  const fontObject: FontObjectv1 = {
     [id]: {
       family: font.family,
       id,
@@ -193,7 +193,7 @@ const processQueue = async (font: FontObjectAPI) => {
   const id = font.family.replace(/\s/g, "-").toLowerCase();
 
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const existingFonts: FontObjectExport = existingFontsRaw;
+  const existingFonts: FontObjectv1 = existingFontsRaw;
 
   // If last-modified matches latest API, skip fetching CSS and processing.
   if (
@@ -222,8 +222,8 @@ queue.error((err, font) => {
 queue.drain(() => {
   // Order the font objects alphabetically for consistency and not create huge diffs
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const unordered: FontObjectExport = Object.assign({}, ...results);
-  const ordered: FontObjectExport = {};
+  const unordered: FontObjectv1 = Object.assign({}, ...results);
+  const ordered: FontObjectv1 = {};
   Object.keys(unordered)
     .sort()
     .forEach(key => {
