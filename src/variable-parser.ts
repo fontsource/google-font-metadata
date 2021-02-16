@@ -9,7 +9,7 @@ import { EventEmitter } from "events";
 import userAgents from "./data/user-agents.json";
 import dataRaw from "./data/variable.json";
 
-interface VariableObject {
+export interface FontObjectVariable {
   [id: string]: {
     family: string;
     axes: {
@@ -40,7 +40,7 @@ interface Response {
   data: string;
 }
 
-const data: VariableObject = dataRaw;
+const data: FontObjectVariable = dataRaw;
 
 const fetchCSSLinks = (fontId: string) => {
   const baseurl = "https://fonts.googleapis.com/css2?family=";

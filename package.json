@@ -14,6 +14,7 @@
     "unicode range"
   ],
   "main": "./lib/index",
+  "types": "./lib/index.d.ts",
   "devDependencies": {
     "@types/async": "^3.2.5",
     "@types/cheerio": "^0.22.23",
