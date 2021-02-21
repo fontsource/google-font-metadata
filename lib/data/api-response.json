@@ -80,6 +80,22 @@
     "category": "handwriting"
   },
   {
+    "family": "Akaya Kanadaka",
+    "variants": ["regular"],
+    "subsets": ["kannada", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-02-18",
+    "category": "display"
+  },
+  {
+    "family": "Akaya Telivigala",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "telugu"],
+    "version": "v9",
+    "lastModified": "2021-02-18",
+    "category": "display"
+  },
+  {
     "family": "Akronim",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -1436,8 +1452,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2021-01-30",
+    "version": "v3",
+    "lastModified": "2021-02-17",
     "category": "serif"
   },
   {
@@ -2674,6 +2690,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "DotGothic16",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-02-18",
+    "category": "sans-serif"
+  },
+  {
     "family": "Dr Sugiyama",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -3428,8 +3452,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v5",
-    "lastModified": "2021-01-21",
+    "version": "v6",
+    "lastModified": "2021-02-17",
     "category": "serif"
   },
   {
@@ -4353,8 +4377,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2021-01-30",
+    "version": "v3",
+    "lastModified": "2021-02-17",
     "category": "serif"
   },
   {
@@ -5353,48 +5377,48 @@
     "family": "Libre Barcode 128",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v10",
-    "lastModified": "2020-07-23",
+    "version": "v14",
+    "lastModified": "2021-02-18",
     "category": "display"
   },
   {
     "family": "Libre Barcode 128 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v10",
-    "lastModified": "2020-07-23",
+    "version": "v14",
+    "lastModified": "2021-02-18",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v10",
-    "lastModified": "2020-07-23",
+    "version": "v14",
+    "lastModified": "2021-02-18",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39 Extended",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v9",
-    "lastModified": "2020-07-23",
+    "version": "v13",
+    "lastModified": "2021-02-18",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39 Extended Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v9",
-    "lastModified": "2020-07-23",
+    "version": "v13",
+    "lastModified": "2021-02-18",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v10",
-    "lastModified": "2020-07-23",
+    "version": "v14",
+    "lastModified": "2021-02-18",
     "category": "display"
   },
   {
@@ -5525,8 +5549,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v19",
-    "lastModified": "2021-01-30",
+    "version": "v21",
+    "lastModified": "2021-02-17",
     "category": "serif"
   },
   {
@@ -6952,6 +6976,14 @@
     "category": "display"
   },
   {
+    "family": "Oi",
+    "variants": ["regular"],
+    "subsets": ["greek", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-02-18",
+    "category": "display"
+  },
+  {
     "family": "Old Standard TT",
     "variants": ["regular", "italic", "700"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
@@ -7437,8 +7469,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v6",
-    "lastModified": "2021-01-21",
+    "version": "v7",
+    "lastModified": "2021-02-17",
     "category": "serif"
   },
   {
@@ -8235,6 +8267,14 @@
     "category": "handwriting"
   },
   {
+    "family": "RocknRoll One",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-02-18",
+    "category": "sans-serif"
+  },
+  {
     "family": "Rokkitt",
     "variants": [
       "100",
@@ -8794,6 +8834,22 @@
     "category": "monospace"
   },
   {
+    "family": "Shippori Mincho",
+    "variants": ["regular", "500", "600", "700", "800"],
+    "subsets": ["japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-02-18",
+    "category": "serif"
+  },
+  {
+    "family": "Shippori Mincho B1",
+    "variants": ["regular", "500", "600", "700", "800"],
+    "subsets": ["japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-02-18",
+    "category": "serif"
+  },
+  {
     "family": "Shojumaru",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -9281,6 +9337,14 @@
     "category": "display"
   },
   {
+    "family": "Stick",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-02-18",
+    "category": "sans-serif"
+  },
+  {
     "family": "Stint Ultra Condensed",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -9570,8 +9634,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2021-01-30",
+    "version": "v5",
+    "lastModified": "2021-02-17",
     "category": "serif"
   },
   {

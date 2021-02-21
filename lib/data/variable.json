@@ -109,22 +109,22 @@
     "variants": {
       "full": {
         "normal": {
-          "latin-ext": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTQ7PxzY382XsXX63LUYJSESKjEXw.woff2",
-          "latin": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTQ7PxzY382XsXX63LUYJSKSKg.woff2"
+          "latin-ext": "https://fonts.gstatic.com/s/bodonimoda/v3/aFTQ7PxzY382XsXX63LUYJSESKjEXw.woff2",
+          "latin": "https://fonts.gstatic.com/s/bodonimoda/v3/aFTQ7PxzY382XsXX63LUYJSKSKg.woff2"
         },
         "italic": {
-          "latin-ext": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTS7PxzY382XsXX63LUYJSPeKTcW2BO.woff2",
-          "latin": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTS7PxzY382XsXX63LUYJSPeKrcWw.woff2"
+          "latin-ext": "https://fonts.gstatic.com/s/bodonimoda/v3/aFTS7PxzY382XsXX63LUYJSPeKTcW2BO.woff2",
+          "latin": "https://fonts.gstatic.com/s/bodonimoda/v3/aFTS7PxzY382XsXX63LUYJSPeKrcWw.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "latin-ext": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTH7PxzY382XsXX63LUYL6GYFcan6NJrKp-VPj1JuxQRgc.woff2",
-          "latin": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTH7PxzY382XsXX63LUYL6GYFcan6NJrKp-VPj1KOxQ.woff2"
+          "latin-ext": "https://fonts.gstatic.com/s/bodonimoda/v3/aFTH7PxzY382XsXX63LUYL6GYFcan6NJrKp-VPj1JuxQRgc.woff2",
+          "latin": "https://fonts.gstatic.com/s/bodonimoda/v3/aFTH7PxzY382XsXX63LUYL6GYFcan6NJrKp-VPj1KOxQ.woff2"
         },
         "italic": {
-          "latin-ext": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTB7PxzY382XsXX63LUYJSPUqb0pL6OQqxrZLnVbtxcXgOFEw.woff2",
-          "latin": "https://fonts.gstatic.com/s/bodonimoda/v2/aFTB7PxzY382XsXX63LUYJSPUqb0pL6OQqxrZLnVbtxSXgM.woff2"
+          "latin-ext": "https://fonts.gstatic.com/s/bodonimoda/v3/aFTB7PxzY382XsXX63LUYJSPUqb0pL6OQqxrZLnVbtxcXgOFEw.woff2",
+          "latin": "https://fonts.gstatic.com/s/bodonimoda/v3/aFTB7PxzY382XsXX63LUYJSPUqb0pL6OQqxrZLnVbtxSXgM.woff2"
         }
       }
     }
@@ -537,26 +537,26 @@
     "variants": {
       "full": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/fraunces/v5/6NUV8FyLNQOQZAnv9ZwHlOk8yA.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/fraunces/v5/6NUV8FyLNQOQZAnv9ZwGlOk8yA.woff2",
-          "latin": "https://fonts.gstatic.com/s/fraunces/v5/6NUV8FyLNQOQZAnv9ZwIlOk.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/fraunces/v6/6NUV8FyLNQOQZAnv9ZwHlOk8yA.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/fraunces/v6/6NUV8FyLNQOQZAnv9ZwGlOk8yA.woff2",
+          "latin": "https://fonts.gstatic.com/s/fraunces/v6/6NUV8FyLNQOQZAnv9ZwIlOk.woff2"
         },
         "italic": {
-          "vietnamese": "https://fonts.gstatic.com/s/fraunces/v5/6NUT8FyLNQOQZAnv9ZwNpOQkzO1A.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/fraunces/v5/6NUT8FyLNQOQZAnv9ZwNpOUkzO1A.woff2",
-          "latin": "https://fonts.gstatic.com/s/fraunces/v5/6NUT8FyLNQOQZAnv9ZwNpOskzA.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/fraunces/v6/6NUT8FyLNQOQZAnv9ZwNpOQkzO1A.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/fraunces/v6/6NUT8FyLNQOQZAnv9ZwNpOUkzO1A.woff2",
+          "latin": "https://fonts.gstatic.com/s/fraunces/v6/6NUT8FyLNQOQZAnv9ZwNpOskzA.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/fraunces/v5/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c0qv86Rg.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/fraunces/v5/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c1qv86Rg.woff2",
-          "latin": "https://fonts.gstatic.com/s/fraunces/v5/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c7qv8.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/fraunces/v6/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c0qv86Rg.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/fraunces/v6/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c1qv86Rg.woff2",
+          "latin": "https://fonts.gstatic.com/s/fraunces/v6/6NUu8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c7qv8.woff2"
         },
         "italic": {
-          "vietnamese": "https://fonts.gstatic.com/s/fraunces/v5/6NUs8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9vIVYX9G37lvd9mvIiQvTm.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/fraunces/v5/6NUs8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9vIVYX9G37lvd9mvMiQvTm.woff2",
-          "latin": "https://fonts.gstatic.com/s/fraunces/v5/6NUs8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9vIVYX9G37lvd9mv0iQg.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/fraunces/v6/6NUs8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9vIVYX9G37lvd9mvIiQvTm.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/fraunces/v6/6NUs8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9vIVYX9G37lvd9mvMiQvTm.woff2",
+          "latin": "https://fonts.gstatic.com/s/fraunces/v6/6NUs8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9vIVYX9G37lvd9mv0iQg.woff2"
         }
       }
     }
@@ -654,16 +654,16 @@
     "variants": {
       "full": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/imbue/v2/RLpxK5P16Ki3fVJgzTQYbg.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/imbue/v2/RLpxK5P16Ki3fVJhzTQYbg.woff2",
-          "latin": "https://fonts.gstatic.com/s/imbue/v2/RLpxK5P16Ki3fVJvzTQ.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/imbue/v3/RLpxK5P16Ki3fVJgzTQYbg.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/imbue/v3/RLpxK5P16Ki3fVJhzTQYbg.woff2",
+          "latin": "https://fonts.gstatic.com/s/imbue/v3/RLpxK5P16Ki3fVJvzTQ.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/imbue/v2/RLpiK5P16Ki3fXhj5cvGrqjocPk4n-g_XFvMNaU.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/imbue/v2/RLpiK5P16Ki3fXhj5cvGrqjocPk4n-g_XVvMNaU.woff2",
-          "latin": "https://fonts.gstatic.com/s/imbue/v2/RLpiK5P16Ki3fXhj5cvGrqjocPk4n-g_U1vM.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/imbue/v3/RLpiK5P16Ki3fXhj5cvGrqjocPk4n-g_XFvMNaU.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/imbue/v3/RLpiK5P16Ki3fXhj5cvGrqjocPk4n-g_XVvMNaU.woff2",
+          "latin": "https://fonts.gstatic.com/s/imbue/v3/RLpiK5P16Ki3fXhj5cvGrqjocPk4n-g_U1vM.woff2"
         }
       }
     }
@@ -930,42 +930,42 @@
     "variants": {
       "full": {
         "normal": {
-          "cyrillic-ext": "https://fonts.gstatic.com/s/literata/v19/or3hQ6P12-iJxAIgLYT9JrUFng.woff2",
-          "cyrillic": "https://fonts.gstatic.com/s/literata/v19/or3hQ6P12-iJxAIgLYT0JrUFng.woff2",
-          "greek-ext": "https://fonts.gstatic.com/s/literata/v19/or3hQ6P12-iJxAIgLYT8JrUFng.woff2",
-          "greek": "https://fonts.gstatic.com/s/literata/v19/or3hQ6P12-iJxAIgLYTzJrUFng.woff2",
-          "vietnamese": "https://fonts.gstatic.com/s/literata/v19/or3hQ6P12-iJxAIgLYT_JrUFng.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/literata/v19/or3hQ6P12-iJxAIgLYT-JrUFng.woff2",
-          "latin": "https://fonts.gstatic.com/s/literata/v19/or3hQ6P12-iJxAIgLYTwJrU.woff2"
+          "cyrillic-ext": "https://fonts.gstatic.com/s/literata/v21/or3hQ6P12-iJxAIgLYT9JrUFng.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/literata/v21/or3hQ6P12-iJxAIgLYT0JrUFng.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/literata/v21/or3hQ6P12-iJxAIgLYT8JrUFng.woff2",
+          "greek": "https://fonts.gstatic.com/s/literata/v21/or3hQ6P12-iJxAIgLYTzJrUFng.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/literata/v21/or3hQ6P12-iJxAIgLYT_JrUFng.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/literata/v21/or3hQ6P12-iJxAIgLYT-JrUFng.woff2",
+          "latin": "https://fonts.gstatic.com/s/literata/v21/or3hQ6P12-iJxAIgLYTwJrU.woff2"
         },
         "italic": {
-          "cyrillic-ext": "https://fonts.gstatic.com/s/literata/v19/or3nQ6P12-iJxAIgLYT1FrodmgPn.woff2",
-          "cyrillic": "https://fonts.gstatic.com/s/literata/v19/or3nQ6P12-iJxAIgLYT1FrMdmgPn.woff2",
-          "greek-ext": "https://fonts.gstatic.com/s/literata/v19/or3nQ6P12-iJxAIgLYT1FrsdmgPn.woff2",
-          "greek": "https://fonts.gstatic.com/s/literata/v19/or3nQ6P12-iJxAIgLYT1FrQdmgPn.woff2",
-          "vietnamese": "https://fonts.gstatic.com/s/literata/v19/or3nQ6P12-iJxAIgLYT1FrgdmgPn.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/literata/v19/or3nQ6P12-iJxAIgLYT1FrkdmgPn.woff2",
-          "latin": "https://fonts.gstatic.com/s/literata/v19/or3nQ6P12-iJxAIgLYT1Frcdmg.woff2"
+          "cyrillic-ext": "https://fonts.gstatic.com/s/literata/v21/or3nQ6P12-iJxAIgLYT1FrodmgPn.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/literata/v21/or3nQ6P12-iJxAIgLYT1FrMdmgPn.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/literata/v21/or3nQ6P12-iJxAIgLYT1FrsdmgPn.woff2",
+          "greek": "https://fonts.gstatic.com/s/literata/v21/or3nQ6P12-iJxAIgLYT1FrQdmgPn.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/literata/v21/or3nQ6P12-iJxAIgLYT1FrgdmgPn.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/literata/v21/or3nQ6P12-iJxAIgLYT1FrkdmgPn.woff2",
+          "latin": "https://fonts.gstatic.com/s/literata/v21/or3nQ6P12-iJxAIgLYT1Frcdmg.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "cyrillic-ext": "https://fonts.gstatic.com/s/literata/v19/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlYZ5W_C0.woff2",
-          "cyrillic": "https://fonts.gstatic.com/s/literata/v19/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlaJ5W_C0.woff2",
-          "greek-ext": "https://fonts.gstatic.com/s/literata/v19/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlYJ5W_C0.woff2",
-          "greek": "https://fonts.gstatic.com/s/literata/v19/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlb55W_C0.woff2",
-          "vietnamese": "https://fonts.gstatic.com/s/literata/v19/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlY55W_C0.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/literata/v19/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlYp5W_C0.woff2",
-          "latin": "https://fonts.gstatic.com/s/literata/v19/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlbJ5W.woff2"
+          "cyrillic-ext": "https://fonts.gstatic.com/s/literata/v21/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlYZ5W_C0.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/literata/v21/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlaJ5W_C0.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/literata/v21/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlYJ5W_C0.woff2",
+          "greek": "https://fonts.gstatic.com/s/literata/v21/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlb55W_C0.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/literata/v21/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlY55W_C0.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/literata/v21/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlYp5W_C0.woff2",
+          "latin": "https://fonts.gstatic.com/s/literata/v21/or38Q6P12-iJxAIgLa78DkrbXsDgk0oVDaDlbJ5W.woff2"
         },
         "italic": {
-          "cyrillic-ext": "https://fonts.gstatic.com/s/literata/v19/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5Z5ClqOw.woff2",
-          "cyrillic": "https://fonts.gstatic.com/s/literata/v19/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5Q5ClqOw.woff2",
-          "greek-ext": "https://fonts.gstatic.com/s/literata/v19/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5Y5ClqOw.woff2",
-          "greek": "https://fonts.gstatic.com/s/literata/v19/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5X5ClqOw.woff2",
-          "vietnamese": "https://fonts.gstatic.com/s/literata/v19/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5b5ClqOw.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/literata/v19/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5a5ClqOw.woff2",
-          "latin": "https://fonts.gstatic.com/s/literata/v19/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5U5Ck.woff2"
+          "cyrillic-ext": "https://fonts.gstatic.com/s/literata/v21/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5Z5ClqOw.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/literata/v21/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5Q5ClqOw.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/literata/v21/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5Y5ClqOw.woff2",
+          "greek": "https://fonts.gstatic.com/s/literata/v21/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5X5ClqOw.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/literata/v21/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5b5ClqOw.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/literata/v21/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5a5ClqOw.woff2",
+          "latin": "https://fonts.gstatic.com/s/literata/v21/or3yQ6P12-iJxAIgLYT1PLs1Zd0nfUwAbeGVKq5U5Ck.woff2"
         }
       }
     }
@@ -1231,42 +1231,42 @@
     "variants": {
       "full": {
         "normal": {
-          "cyrillic-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bX2SlTPu5rIkWIZjVgK_7SodY.woff2",
-          "cyrillic": "https://fonts.gstatic.com/s/piazzolla/v6/N0bX2SlTPu5rIkWIZjVgIv7SodY.woff2",
-          "greek-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bX2SlTPu5rIkWIZjVgKv7SodY.woff2",
-          "greek": "https://fonts.gstatic.com/s/piazzolla/v6/N0bX2SlTPu5rIkWIZjVgJf7SodY.woff2",
-          "vietnamese": "https://fonts.gstatic.com/s/piazzolla/v6/N0bX2SlTPu5rIkWIZjVgKf7SodY.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bX2SlTPu5rIkWIZjVgKP7SodY.woff2",
-          "latin": "https://fonts.gstatic.com/s/piazzolla/v6/N0bX2SlTPu5rIkWIZjVgJv7S.woff2"
+          "cyrillic-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bX2SlTPu5rIkWIZjVgK_7SodY.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/piazzolla/v7/N0bX2SlTPu5rIkWIZjVgIv7SodY.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bX2SlTPu5rIkWIZjVgKv7SodY.woff2",
+          "greek": "https://fonts.gstatic.com/s/piazzolla/v7/N0bX2SlTPu5rIkWIZjVgJf7SodY.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/piazzolla/v7/N0bX2SlTPu5rIkWIZjVgKf7SodY.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bX2SlTPu5rIkWIZjVgKP7SodY.woff2",
+          "latin": "https://fonts.gstatic.com/s/piazzolla/v7/N0bX2SlTPu5rIkWIZjVgJv7S.woff2"
         },
         "italic": {
-          "cyrillic-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bR2SlTPu5rIkWIZjVgI87dudLpYA.woff2",
-          "cyrillic": "https://fonts.gstatic.com/s/piazzolla/v6/N0bR2SlTPu5rIkWIZjVgI87UudLpYA.woff2",
-          "greek-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bR2SlTPu5rIkWIZjVgI87cudLpYA.woff2",
-          "greek": "https://fonts.gstatic.com/s/piazzolla/v6/N0bR2SlTPu5rIkWIZjVgI87TudLpYA.woff2",
-          "vietnamese": "https://fonts.gstatic.com/s/piazzolla/v6/N0bR2SlTPu5rIkWIZjVgI87fudLpYA.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bR2SlTPu5rIkWIZjVgI87eudLpYA.woff2",
-          "latin": "https://fonts.gstatic.com/s/piazzolla/v6/N0bR2SlTPu5rIkWIZjVgI87QudI.woff2"
+          "cyrillic-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bR2SlTPu5rIkWIZjVgI87dudLpYA.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/piazzolla/v7/N0bR2SlTPu5rIkWIZjVgI87UudLpYA.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bR2SlTPu5rIkWIZjVgI87cudLpYA.woff2",
+          "greek": "https://fonts.gstatic.com/s/piazzolla/v7/N0bR2SlTPu5rIkWIZjVgI87TudLpYA.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/piazzolla/v7/N0bR2SlTPu5rIkWIZjVgI87fudLpYA.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bR2SlTPu5rIkWIZjVgI87eudLpYA.woff2",
+          "latin": "https://fonts.gstatic.com/s/piazzolla/v7/N0bR2SlTPu5rIkWIZjVgI87QudI.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "cyrillic-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4QLYMhB.woff2",
-          "cyrillic": "https://fonts.gstatic.com/s/piazzolla/v6/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV40LYMhB.woff2",
-          "greek-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4ULYMhB.woff2",
-          "greek": "https://fonts.gstatic.com/s/piazzolla/v6/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4oLYMhB.woff2",
-          "vietnamese": "https://fonts.gstatic.com/s/piazzolla/v6/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4YLYMhB.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4cLYMhB.woff2",
-          "latin": "https://fonts.gstatic.com/s/piazzolla/v6/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4kLYA.woff2"
+          "cyrillic-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4QLYMhB.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/piazzolla/v7/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV40LYMhB.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4ULYMhB.woff2",
+          "greek": "https://fonts.gstatic.com/s/piazzolla/v7/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4oLYMhB.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/piazzolla/v7/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4YLYMhB.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4cLYMhB.woff2",
+          "latin": "https://fonts.gstatic.com/s/piazzolla/v7/N0bE2SlTPu5rIkWIZjVKKtYtfxYqZ4RJBFzFV4kLYA.woff2"
         },
         "italic": {
-          "cyrillic-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887b9BFFaA.woff2",
-          "cyrillic": "https://fonts.gstatic.com/s/piazzolla/v6/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887ZtBFFaA.woff2",
-          "greek-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887btBFFaA.woff2",
-          "greek": "https://fonts.gstatic.com/s/piazzolla/v6/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887YdBFFaA.woff2",
-          "vietnamese": "https://fonts.gstatic.com/s/piazzolla/v6/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887bdBFFaA.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/piazzolla/v6/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887bNBFFaA.woff2",
-          "latin": "https://fonts.gstatic.com/s/piazzolla/v6/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887YtBF.woff2"
+          "cyrillic-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887b9BFFaA.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/piazzolla/v7/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887ZtBFFaA.woff2",
+          "greek-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887btBFFaA.woff2",
+          "greek": "https://fonts.gstatic.com/s/piazzolla/v7/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887YdBFFaA.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/piazzolla/v7/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887bdBFFaA.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/piazzolla/v7/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887bNBFFaA.woff2",
+          "latin": "https://fonts.gstatic.com/s/piazzolla/v7/N0bG2SlTPu5rIkWIZjVgI-TckS03oGpPETyEJ887YtBF.woff2"
         }
       }
     }
@@ -1663,26 +1663,26 @@
     "variants": {
       "full": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/texturina/v3/c4mi1nxpEtL3pXiAulR5kqd4xKM.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/texturina/v3/c4mi1nxpEtL3pXiAulR5k6d4xKM.woff2",
-          "latin": "https://fonts.gstatic.com/s/texturina/v3/c4mi1nxpEtL3pXiAulR5nad4.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/texturina/v5/c4mi1nxpEtL3pXiAulR5kqd4xKM.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/texturina/v5/c4mi1nxpEtL3pXiAulR5k6d4xKM.woff2",
+          "latin": "https://fonts.gstatic.com/s/texturina/v5/c4mi1nxpEtL3pXiAulR5nad4.woff2"
         },
         "italic": {
-          "vietnamese": "https://fonts.gstatic.com/s/texturina/v3/c4mk1nxpEtL3pXiAulR5mJd13KeHWA.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/texturina/v3/c4mk1nxpEtL3pXiAulR5mJd03KeHWA.woff2",
-          "latin": "https://fonts.gstatic.com/s/texturina/v3/c4mk1nxpEtL3pXiAulR5mJd63Kc.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/texturina/v5/c4mk1nxpEtL3pXiAulR5mJd13KeHWA.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/texturina/v5/c4mk1nxpEtL3pXiAulR5mJd03KeHWA.woff2",
+          "latin": "https://fonts.gstatic.com/s/texturina/v5/c4mk1nxpEtL3pXiAulR5mJd63Kc.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/texturina/v3/c4mx1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjGQtoc7Ab.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/texturina/v3/c4mx1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjGQpoc7Ab.woff2",
-          "latin": "https://fonts.gstatic.com/s/texturina/v3/c4mx1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjGQRocw.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/texturina/v5/c4mx1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjGQtoc7Ab.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/texturina/v5/c4mx1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjGQpoc7Ab.woff2",
+          "latin": "https://fonts.gstatic.com/s/texturina/v5/c4mx1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjGQRocw.woff2"
         },
         "italic": {
-          "vietnamese": "https://fonts.gstatic.com/s/texturina/v3/c4mz1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJYfqgfBlw.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/texturina/v3/c4mz1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJYf6gfBlw.woff2",
-          "latin": "https://fonts.gstatic.com/s/texturina/v3/c4mz1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJYcagf.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/texturina/v5/c4mz1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJYfqgfBlw.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/texturina/v5/c4mz1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJYf6gfBlw.woff2",
+          "latin": "https://fonts.gstatic.com/s/texturina/v5/c4mz1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJYcagf.woff2"
         }
       }
     }
