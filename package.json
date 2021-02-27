@@ -40,7 +40,7 @@
     "jsonfile": "^6.1.0",
     "lodash": "^4.17.20",
     "postcss": "^8.2.6",
-    "puppeteer": "^7.1.0",
+    "puppeteer": "^8.0.0",
     "retry-axios": "^2.4.0"
   },
   "scripts": {
