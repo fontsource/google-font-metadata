@@ -916,8 +916,8 @@
     "family": "Ballet",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2021-02-25",
+    "version": "v4",
+    "lastModified": "2021-03-11",
     "category": "handwriting"
   },
   {
@@ -1452,8 +1452,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2021-02-25",
+    "version": "v5",
+    "lastModified": "2021-03-11",
     "category": "serif"
   },
   {
@@ -3452,8 +3452,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v7",
-    "lastModified": "2021-02-25",
+    "version": "v8",
+    "lastModified": "2021-03-11",
     "category": "serif"
   },
   {
@@ -4377,8 +4377,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v6",
-    "lastModified": "2021-02-25",
+    "version": "v7",
+    "lastModified": "2021-03-11",
     "category": "serif"
   },
   {
@@ -5549,8 +5549,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v22",
-    "lastModified": "2021-02-25",
+    "version": "v23",
+    "lastModified": "2021-03-11",
     "category": "serif"
   },
   {
@@ -6631,8 +6631,8 @@
       "800italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2021-02-25",
+    "version": "v5",
+    "lastModified": "2021-03-11",
     "category": "serif"
   },
   {
@@ -7469,8 +7469,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v8",
-    "lastModified": "2021-02-25",
+    "version": "v9",
+    "lastModified": "2021-03-11",
     "category": "serif"
   },
   {
@@ -9634,8 +9634,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v6",
-    "lastModified": "2021-02-25",
+    "version": "v7",
+    "lastModified": "2021-03-11",
     "category": "serif"
   },
   {
@@ -9823,8 +9823,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2021-02-25",
+    "version": "v4",
+    "lastModified": "2021-03-11",
     "category": "sans-serif"
   },
   {
