@@ -934,72 +934,72 @@
     "family": "Baloo 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["devanagari", "latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-03-06",
+    "version": "v2",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
     "family": "Baloo Bhai 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["gujarati", "latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2021-03-19",
+    "version": "v4",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
     "family": "Baloo Bhaina 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext", "oriya", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2021-03-19",
+    "version": "v4",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
     "family": "Baloo Chettan 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext", "malayalam", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-03-06",
+    "version": "v2",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
     "family": "Baloo Da 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["bengali", "latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-03-06",
+    "version": "v2",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
     "family": "Baloo Paaji 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["gurmukhi", "latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2021-03-19",
+    "version": "v4",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
     "family": "Baloo Tamma 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["kannada", "latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-03-06",
+    "version": "v2",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
     "family": "Baloo Tammudu 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext", "telugu", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2021-03-19",
+    "version": "v4",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
     "family": "Baloo Thambi 2",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext", "tamil", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2020-03-06",
+    "version": "v2",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
@@ -2489,16 +2489,16 @@
     "family": "DM Serif Display",
     "variants": ["regular", "italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2019-11-19",
+    "version": "v5",
+    "lastModified": "2021-04-01",
     "category": "serif"
   },
   {
     "family": "DM Serif Text",
     "variants": ["regular", "italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2019-11-19",
+    "version": "v5",
+    "lastModified": "2021-04-01",
     "category": "serif"
   },
   {
@@ -3317,8 +3317,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v10",
-    "lastModified": "2019-07-22",
+    "version": "v11",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -3352,8 +3352,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v4",
-    "lastModified": "2019-07-17",
+    "version": "v5",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -3387,8 +3387,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v4",
-    "lastModified": "2019-07-17",
+    "version": "v5",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -3809,8 +3809,8 @@
     "family": "Gotu",
     "variants": ["regular"],
     "subsets": ["devanagari", "latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2021-03-19",
+    "version": "v4",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -4049,8 +4049,8 @@
     "family": "Harmattan",
     "variants": ["regular", "700"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v10",
-    "lastModified": "2021-01-21",
+    "version": "v11",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -4541,8 +4541,8 @@
     "family": "Itim",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "thai", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2019-07-16",
+    "version": "v5",
+    "lastModified": "2021-04-01",
     "category": "handwriting"
   },
   {
@@ -4823,8 +4823,8 @@
     "family": "Kadwa",
     "variants": ["regular", "700"],
     "subsets": ["devanagari", "latin"],
-    "version": "v4",
-    "lastModified": "2019-07-16",
+    "version": "v5",
+    "lastModified": "2021-04-01",
     "category": "serif"
   },
   {
@@ -6265,16 +6265,16 @@
     "family": "Mitr",
     "variants": ["200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "thai", "vietnamese"],
-    "version": "v5",
-    "lastModified": "2019-07-16",
+    "version": "v6",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
     "family": "Modak",
     "variants": ["regular"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v7",
-    "lastModified": "2021-03-19",
+    "version": "v8",
+    "lastModified": "2021-04-01",
     "category": "display"
   },
   {
@@ -6495,8 +6495,8 @@
     "family": "Mukta",
     "variants": ["200", "300", "regular", "500", "600", "700", "800"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v7",
-    "lastModified": "2019-07-17",
+    "version": "v8",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -6519,8 +6519,8 @@
     "family": "Mukta Vaani",
     "variants": ["200", "300", "regular", "500", "600", "700", "800"],
     "subsets": ["gujarati", "latin", "latin-ext"],
-    "version": "v7",
-    "lastModified": "2019-07-16",
+    "version": "v8",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -7313,8 +7313,8 @@
     "family": "Padauk",
     "variants": ["regular", "700"],
     "subsets": ["latin", "myanmar"],
-    "version": "v7",
-    "lastModified": "2020-11-06",
+    "version": "v8",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -7801,8 +7801,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "thai", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2019-07-17",
+    "version": "v5",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -8711,8 +8711,8 @@
     "family": "Sarala",
     "variants": ["regular", "700"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2019-07-16",
+    "version": "v5",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
@@ -9279,8 +9279,8 @@
       "800italic"
     ],
     "subsets": ["cyrillic", "latin", "latin-ext", "vietnamese"],
-    "version": "v6",
-    "lastModified": "2019-07-16",
+    "version": "v7",
+    "lastModified": "2021-04-01",
     "category": "serif"
   },
   {
@@ -9302,8 +9302,8 @@
       "800italic"
     ],
     "subsets": ["cyrillic", "latin", "latin-ext", "vietnamese"],
-    "version": "v5",
-    "lastModified": "2019-07-16",
+    "version": "v6",
+    "lastModified": "2021-04-01",
     "category": "serif"
   },
   {
@@ -9350,8 +9350,8 @@
     "family": "Sriracha",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "thai", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2019-07-16",
+    "version": "v5",
+    "lastModified": "2021-04-01",
     "category": "handwriting"
   },
   {
@@ -9574,8 +9574,8 @@
     "family": "Tajawal",
     "variants": ["200", "300", "regular", "500", "700", "800", "900"],
     "subsets": ["arabic", "latin"],
-    "version": "v3",
-    "lastModified": "2019-07-16",
+    "version": "v4",
+    "lastModified": "2021-04-01",
     "category": "sans-serif"
   },
   {
