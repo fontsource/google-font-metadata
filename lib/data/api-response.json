@@ -518,6 +518,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Antonio",
+    "variants": ["100", "200", "300", "regular", "500", "600", "700"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-04-12",
+    "category": "sans-serif"
+  },
+  {
     "family": "Arapey",
     "variants": ["regular", "italic"],
     "subsets": ["latin"],
@@ -613,8 +621,8 @@
     "family": "Arima Madurai",
     "variants": ["100", "200", "300", "regular", "500", "700", "800", "900"],
     "subsets": ["latin", "latin-ext", "tamil", "vietnamese"],
-    "version": "v6",
-    "lastModified": "2020-09-02",
+    "version": "v7",
+    "lastModified": "2021-04-12",
     "category": "display"
   },
   {
@@ -1940,8 +1948,8 @@
     "family": "Chathura",
     "variants": ["100", "300", "regular", "700", "800"],
     "subsets": ["latin", "telugu"],
-    "version": "v9",
-    "lastModified": "2021-03-19",
+    "version": "v10",
+    "lastModified": "2021-04-12",
     "category": "sans-serif"
   },
   {
@@ -3630,8 +3638,8 @@
     "family": "Gayathri",
     "variants": ["100", "regular", "700"],
     "subsets": ["latin", "malayalam"],
-    "version": "v5",
-    "lastModified": "2021-03-19",
+    "version": "v6",
+    "lastModified": "2021-04-12",
     "category": "sans-serif"
   },
   {
@@ -4877,6 +4885,14 @@
     "version": "v11",
     "lastModified": "2021-03-19",
     "category": "sans-serif"
+  },
+  {
+    "family": "Karantina",
+    "variants": ["300", "regular", "700"],
+    "subsets": ["hebrew", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-04-12",
+    "category": "display"
   },
   {
     "family": "Karla",
@@ -6312,9 +6328,9 @@
   {
     "family": "Monda",
     "variants": ["regular", "700"],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v10",
-    "lastModified": "2020-09-02",
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v11",
+    "lastModified": "2021-04-12",
     "category": "sans-serif"
   },
   {
@@ -7138,6 +7154,14 @@
     "subsets": ["latin", "latin-ext"],
     "version": "v8",
     "lastModified": "2020-07-23",
+    "category": "display"
+  },
+  {
+    "family": "Orelega One",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-04-12",
     "category": "display"
   },
   {
@@ -10385,6 +10409,14 @@
     "version": "v5",
     "lastModified": "2019-11-05",
     "category": "serif"
+  },
+  {
+    "family": "Zen Dots",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-04-12",
+    "category": "display"
   },
   {
     "family": "Zeyada",

@@ -28,6 +28,20 @@
       }
     }
   },
+  "antonio": {
+    "family": "Antonio",
+    "axes": {
+      "wght": { "default": "400", "min": "100", "max": "700", "step": "1" }
+    },
+    "variants": {
+      "wghtOnly": {
+        "normal": {
+          "latin-ext": "https://fonts.gstatic.com/s/antonio/v1/gNMEW3NwSYq_9WD3yHoiFbez.woff2",
+          "latin": "https://fonts.gstatic.com/s/antonio/v1/gNMEW3NwSYq_9WD3yHQiFQ.woff2"
+        }
+      }
+    }
+  },
   "archivo": {
     "family": "Archivo",
     "axes": {
