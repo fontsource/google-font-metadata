@@ -2584,8 +2584,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v1",
-    "lastModified": "2021-03-22",
+    "version": "v4",
+    "lastModified": "2021-04-20",
     "category": "display"
   },
   {
@@ -5033,8 +5033,8 @@
     "family": "Kiwi Maru",
     "variants": ["300", "regular", "500"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2021-03-22",
+    "version": "v4",
+    "lastModified": "2021-04-20",
     "category": "serif"
   },
   {
@@ -5379,8 +5379,8 @@
     "family": "Lexend",
     "variants": ["100", "300", "regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2021-03-22",
+    "version": "v5",
+    "lastModified": "2021-04-20",
     "category": "sans-serif"
   },
   {
@@ -6674,8 +6674,8 @@
     "family": "New Tegomin",
     "variants": ["regular"],
     "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2021-03-22",
+    "version": "v5",
+    "lastModified": "2021-04-20",
     "category": "serif"
   },
   {
@@ -9844,8 +9844,8 @@
     "family": "Train One",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2021-03-22",
+    "version": "v4",
+    "lastModified": "2021-04-20",
     "category": "display"
   },
   {
