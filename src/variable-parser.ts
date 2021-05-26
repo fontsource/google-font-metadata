@@ -1,7 +1,7 @@
 import async from "async";
-import got from "got"
+import got from "got";
 import jsonfile from "jsonfile";
-import  postcss from "postcss";
+import postcss from "postcss";
 
 import { EventEmitter } from "events";
 import userAgents from "./data/user-agents.json";
@@ -28,7 +28,7 @@ export interface FontVariantsVariable {
       [subset: string]: string;
     };
   };
-};
+}
 
 interface Links {
   [type: string]: string;
@@ -102,8 +102,6 @@ const fetchCSS = async (url: string) => {
     return "";
   }
 };
-
-
 
 const fetchAllCSS = async (links: Links, ifItal: boolean) => {
   if (ifItal) {

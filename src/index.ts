@@ -6,7 +6,10 @@ import APIVariableImport from "./data/variable.json";
 import type { APIResponse } from "./api-gen";
 import type { FontObjectV1 } from "./api-parser-v1";
 import type { FontObjectV2 } from "./api-parser-v2";
-import type { FontObjectVariable, FontVariantsVariable } from "./variable-parser";
+import type {
+  FontObjectVariable,
+  FontVariantsVariable,
+} from "./variable-parser";
 
 export const APIDirect: APIResponse[] = APIDirectImport;
 export const APIv1: FontObjectV1 = APIv1Import;
@@ -29,4 +32,10 @@ export interface FontVariants {
   };
 }
 
-export { APIResponse, FontObjectV1, FontObjectV2, FontObjectVariable, FontVariantsVariable };
+export {
+  APIResponse,
+  FontObjectV1,
+  FontObjectV2,
+  FontObjectVariable,
+  FontVariantsVariable,
+};

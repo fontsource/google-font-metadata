@@ -88,11 +88,13 @@ const processTable = (tableHTML: string) => {
     results = merge(results, variableObject);
   });
 
-  jsonfile.writeFileSync("./lib/data/variable.json", results)
-  
-  console.log(`All ${Object.keys(results).length} variable font datapoints have been fetched.`
-  )
-  
+  jsonfile.writeFileSync("./lib/data/variable.json", results);
+
+  console.log(
+    `All ${
+      Object.keys(results).length
+    } variable font datapoints have been fetched.`
+  );
 };
 
 // Need to use Puppeteer to let JavaScript load page elements fully
