@@ -1,25 +1,23 @@
-import axios from "axios";
-import * as jsonfile from "jsonfile";
-import * as rax from "retry-axios";
+import jsonfile from "jsonfile";
+import got from "got";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const interceptorId = rax.attach(); // Attach retry axios timeout.
-
-interface Response {
-  data: {
-    items: string;
-  };
+export interface APIResponse {
+  family: string;
+  variants: string[];
+  subsets: string[];
+  version: string;
+  lastModified: string;
+  category: string;
+}
+export interface GotResponse {
+  items: APIResponse[];
 }
 
-const fetchAPI = async (url: string) => {
+export const fetchAPI = async (url: string): Promise<void> => {
   try {
-    const response: Response = await axios.get(url);
-    jsonfile
-      .writeFile("./lib/data/api-response.json", response.data.items)
-      .then(() => {
-        console.log("Successful Google Font API fetch.");
-      })
-      .catch(error => console.error(error));
+    const response: GotResponse = await got(url).json();
+    await jsonfile.writeFile("./lib/data/api-response.json", response.items);
+    console.log("Successful Google Font API fetch.");
   } catch (error) {
     console.error(error);
   }
@@ -30,7 +28,9 @@ const url =
   "https://www.googleapis.com/webfonts/v1/webfonts?fields=items(category%2Cfamily%2ClastModified%2Csubsets%2Cvariants%2Cversion)&key=";
 
 if (key === undefined) {
-  console.log("\x1b[31m", "The API Key is required!");
+  console.log("\u001B[31m", "The API Key is required!");
 } else {
-  fetchAPI(url + key).catch((err: string) => console.log(`Error: ${err}`));
+  fetchAPI(url + key).catch((error: string) =>
+    console.error(`API fetch error: ${error}`)
+  );
 }

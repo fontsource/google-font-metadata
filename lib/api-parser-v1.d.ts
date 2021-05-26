@@ -1,27 +1,18 @@
-export interface FontObjectv1 {
-  [id: string]: {
-    family: string;
-    id: string;
-    subsets: string[];
-    weights: string[];
-    styles: string[];
-    variants: FontVariants;
-    defSubset: string;
-    lastModified: string;
-    version: string;
-    category: string;
-  };
-}
-interface FontVariants {
-  [weight: string]: {
-    [style: string]: {
-      [subset: string]: {
-        local: string[];
-        url: {
-          [type: string]: string;
-        };
-      };
+import type { FontVariants, APIResponse } from "./index";
+export interface FontObjectV1 {
+    [id: string]: {
+        family: string;
+        id: string;
+        subsets: string[];
+        weights: number[];
+        styles: string[];
+        variants: FontVariants;
+        defSubset: string;
+        lastModified: string;
+        version: string;
+        category: string;
     };
-  };
 }
-export {};
+export declare const fetchCSS: (font: APIResponse, userAgent: string) => Promise<string>;
+export declare const fetchAllCSS: (font: APIResponse) => Promise<[string, string, string]>;
+export declare const processCSS: (css: [string, string, string], font: APIResponse) => FontObjectV1;
