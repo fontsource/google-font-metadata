@@ -2,6 +2,29 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [3.0.0](https://github.com/fontsource/google-font-metadata/releases/tag/v3.0.0)
+
+### Breaking
+
+- Weights in both APIv1 and APIv2 have switched from string arrays to number arrays (["400"] --> [400]).
+
+This was done to better represent the type of the array which in turn should help downstream Typescript projects to better understand the contents.
+
+- Local font variants have been removed. Only URLs remain for each font in variants of each API.
+
+Google themselves have been removing the local names for fonts in their CSS since different OS' may have different installed fonts leading to inconsistencies. e.g. abeezee.variants.400.italic.latin.local no longer exists.
+
+### Features
+
+- Improved Typescript typings and exported more types for users to use. This might be breaking in some aspects for users downstream.
+
+### Fixes:
+
+- Use WOFF2 user-agent in `api-parser-v2.ts` instead of the variable user-agent. This resolves the issue of serving the same variable font to different weights, often leading to duplication of fonts, especially downstream in Fontsource.
+- Updated dependencies
+
+[#73](https://github.com/fontsource/google-font-metadata/pull/73)
+
 # [2.0.2](https://github.com/fontsource/google-font-metadata/releases/tag/v2.0.2)
 
 ### Fixes

@@ -32,7 +32,7 @@ Returns an object list containing metadata of every available Google Font:
     "family": "Actor",
     "id": "actor",
     "subsets": ["latin"],
-    "weights": ["400"],
+    "weights": [400],
     "styles": ["normal"],
     "unicodeRange": {
       "latin": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
@@ -41,7 +41,6 @@ Returns an object list containing metadata of every available Google Font:
       "400": {
         "normal": {
           "latin": {
-            "local": ["Actor Regular", "Actor-Regular"],
             "url": {
               "woff2": "https://fonts.gstatic.com/s/actor/v9/wEOzEBbCkc5cO0ejVSk.woff2",
               "woff": "https://fonts.gstatic.com/s/actor/v9/wEOzEBbCkc5cO3en.woff",
