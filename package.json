@@ -59,9 +59,8 @@
     "lib/*",
     "data/*"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "homepage": "https://github.com/fontsource/google-font-metadata",
   "repository": {
     "type": "git",
