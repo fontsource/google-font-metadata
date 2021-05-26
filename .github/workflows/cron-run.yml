@@ -36,12 +36,12 @@ jobs:
 
       - name: Format files
         run: yarn format:prettier
-        
+
       - name: Stage, commit and push files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_user_name: "fontsource-bot"
           commit_user_email: "83556432+fontsource-bot@users.noreply.github.com"
-          commit_author: "fontsource-bot <83556432+fontsource-bot@users.noreply.github.com>" 
-          commit_message: "chore(build): update API [Weekly $GITHUB_RUN_NUMBER]"
+          commit_author: "fontsource-bot <83556432+fontsource-bot@users.noreply.github.com>"
+          commit_message: "chore(build): update API [Weekly]"
         continue-on-error: true
