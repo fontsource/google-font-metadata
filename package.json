@@ -1,6 +1,6 @@
 {
   "name": "google-font-metadata",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "author": "Lotus <declininglotus@gmail.com>",
   "license": "MIT",
   "description": "A metadata generator for Google Fonts.",
