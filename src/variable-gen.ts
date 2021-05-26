@@ -1,7 +1,7 @@
-import * as _ from "lodash";
 import cheerio from "cheerio";
+import jsonfile from "jsonfile";
+import merge from "lodash/merge";
 import puppeteer from "puppeteer";
-import * as jsonfile from "jsonfile";
 
 const url = "https://fonts.google.com/variablefonts#font-families";
 
@@ -85,19 +85,14 @@ const processTable = (tableHTML: string) => {
 
     // Different types of axes for the same font would generate duplicate font objects.
     // This merges a bitter.axes.ital and bitter.axes.wght into the same object when previously they were in separate 'bitter' objects.
-    results = _.merge(results, variableObject);
+    results = merge(results, variableObject);
   });
 
-  jsonfile
-    .writeFile("./lib/data/variable.json", results)
-    .then(() => {
-      console.log(
-        `All ${
-          Object.keys(results).length
-        } variable font datapoints have been fetched.`
-      );
-    })
-    .catch(err => console.error(err));
+  jsonfile.writeFileSync("./lib/data/variable.json", results)
+  
+  console.log(`All ${Object.keys(results).length} variable font datapoints have been fetched.`
+  )
+  
 };
 
 // Need to use Puppeteer to let JavaScript load page elements fully
@@ -105,9 +100,10 @@ const fetchPage = async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: "networkidle0" });
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+
   const tableHTML = await page.evaluate(
     () =>
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       document.querySelector("#font-families > gf-font-families > table")!
         .outerHTML
   );
@@ -116,5 +112,4 @@ const fetchPage = async () => {
   processTable(tableHTML);
 };
 
-// eslint-disable-next-line @typescript-eslint/no-floating-promises
 fetchPage();

@@ -1,9 +1,7 @@
-import * as _ from "lodash";
 import async from "async";
-import axios from "axios";
-import * as jsonfile from "jsonfile";
-import * as postcss from "postcss";
-import * as rax from "retry-axios";
+import got from "got"
+import jsonfile from "jsonfile";
+import  postcss from "postcss";
 
 import { EventEmitter } from "events";
 import userAgents from "./data/user-agents.json";
@@ -20,26 +18,21 @@ export interface FontObjectVariable {
         step: string;
       };
     };
-    variants: FontVariants;
+    variants: FontVariantsVariable;
   };
 }
 
-interface FontVariants {
+export interface FontVariantsVariable {
   [type: string]: {
     [style: string]: {
       [subset: string]: string;
     };
   };
-}
+};
 
 interface Links {
-  [link: string]: string;
+  [type: string]: string;
 }
-
-interface Response {
-  data: string;
-}
-
 const data: FontObjectVariable = dataRaw;
 
 const fetchCSSLinks = (fontId: string) => {
@@ -95,22 +88,22 @@ const fetchCSSLinks = (fontId: string) => {
   return group;
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const interceptorId = rax.attach(); // Add retry-axios interceptor
 const fetchCSS = async (url: string) => {
   // Download CSS stylesheets using Google Fonts APIv2
   try {
-    const response: Response = await axios.get(url, {
+    const response = await got(url, {
       headers: {
         "User-Agent": userAgents.variable,
       },
-    });
-    return response.data;
+    }).text();
+    return response;
   } catch (error) {
     console.error(error);
     return "";
   }
 };
+
+
 
 const fetchAllCSS = async (links: Links, ifItal: boolean) => {
   if (ifItal) {
@@ -130,7 +123,7 @@ const fetchAllCSS = async (links: Links, ifItal: boolean) => {
 const parseCSS = (css: string[], fontId: string) => {
   const axesData = data[fontId].axes;
 
-  const fontObject: FontVariants = {
+  const fontObject: FontVariantsVariable = {
     full: {},
     wghtOnly: {},
   };
@@ -237,7 +230,7 @@ queue.drain(() => {
 const production = () => {
   const fonts = Object.keys(data);
 
-  _.forEach(fonts, fontId => {
+  fonts.forEach(fontId => {
     queue.push(fontId);
   });
 };
