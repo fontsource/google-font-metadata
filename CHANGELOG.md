@@ -2,6 +2,12 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [3.0.1](https://github.com/fontsource/google-font-metadata/releases/tag/v3.0.1)
+
+# Fixes
+
+- Resolve package.json main and types paths. You could not load the modules in the previous version. [#74](https://github.com/fontsource/google-font-metadata/pull/74)
+
 # [3.0.0](https://github.com/fontsource/google-font-metadata/releases/tag/v3.0.0)
 
 ### Breaking
