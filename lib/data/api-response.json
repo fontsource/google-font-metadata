@@ -8919,16 +8919,16 @@
     "family": "Shippori Mincho",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2021-03-24",
+    "version": "v6",
+    "lastModified": "2021-06-15",
     "category": "serif"
   },
   {
     "family": "Shippori Mincho B1",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2021-03-24",
+    "version": "v9",
+    "lastModified": "2021-06-15",
     "category": "serif"
   },
   {
