@@ -5171,8 +5171,8 @@
     "family": "Kiwi Maru",
     "variants": ["300", "regular", "500"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2021-04-20",
+    "version": "v6",
+    "lastModified": "2021-08-04",
     "category": "serif"
   },
   {
@@ -5461,8 +5461,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v17",
-    "lastModified": "2020-09-15",
+    "version": "v19",
+    "lastModified": "2021-08-06",
     "category": "sans-serif"
   },
   {
@@ -6286,8 +6286,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v22",
-    "lastModified": "2020-09-10",
+    "version": "v24",
+    "lastModified": "2021-08-06",
     "category": "serif"
   },
   {
@@ -6542,8 +6542,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v15",
-    "lastModified": "2020-09-15",
+    "version": "v17",
+    "lastModified": "2021-08-06",
     "category": "sans-serif"
   },
   {
@@ -7258,8 +7258,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v20",
-    "lastModified": "2021-05-19",
+    "version": "v22",
+    "lastModified": "2021-08-06",
     "category": "sans-serif"
   },
   {
@@ -7330,8 +7330,8 @@
     "family": "Oswald",
     "variants": ["200", "300", "regular", "500", "600", "700"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v36",
-    "lastModified": "2021-01-30",
+    "version": "v39",
+    "lastModified": "2021-08-06",
     "category": "sans-serif"
   },
   {

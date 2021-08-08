@@ -1434,11 +1434,11 @@
     "variants": {
       "wghtOnly": {
         "normal": {
-          "cyrillic-ext": "https://fonts.gstatic.com/s/oswald/v36/TK3iWkUHHAIjg752FD8Ghe4.woff2",
-          "cyrillic": "https://fonts.gstatic.com/s/oswald/v36/TK3iWkUHHAIjg752HT8Ghe4.woff2",
-          "vietnamese": "https://fonts.gstatic.com/s/oswald/v36/TK3iWkUHHAIjg752Fj8Ghe4.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/oswald/v36/TK3iWkUHHAIjg752Fz8Ghe4.woff2",
-          "latin": "https://fonts.gstatic.com/s/oswald/v36/TK3iWkUHHAIjg752GT8G.woff2"
+          "cyrillic-ext": "https://fonts.gstatic.com/s/oswald/v39/TK3iWkUHHAIjg752FD8Ghe4.woff2",
+          "cyrillic": "https://fonts.gstatic.com/s/oswald/v39/TK3iWkUHHAIjg752HT8Ghe4.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/oswald/v39/TK3iWkUHHAIjg752Fj8Ghe4.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/oswald/v39/TK3iWkUHHAIjg752Fz8Ghe4.woff2",
+          "latin": "https://fonts.gstatic.com/s/oswald/v39/TK3iWkUHHAIjg752GT8G.woff2"
         }
       }
     }
