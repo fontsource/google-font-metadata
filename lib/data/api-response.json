@@ -9028,21 +9028,6 @@
     "category": "display"
   },
   {
-    "family": "STIX Two Math",
-    "variants": ["regular"],
-    "subsets": [
-      "cyrillic",
-      "cyrillic-ext",
-      "greek",
-      "latin",
-      "latin-ext",
-      "vietnamese"
-    ],
-    "version": "v1",
-    "lastModified": "2021-07-01",
-    "category": "serif"
-  },
-  {
     "family": "STIX Two Text",
     "variants": [
       "regular",
