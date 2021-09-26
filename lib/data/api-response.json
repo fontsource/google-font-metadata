@@ -9633,14 +9633,16 @@
     "family": "Open Sans",
     "variants": [
       "300",
-      "300italic",
       "regular",
-      "italic",
+      "500",
       "600",
-      "600italic",
       "700",
-      "700italic",
       "800",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
       "800italic"
     ],
     "subsets": [
@@ -9648,12 +9650,13 @@
       "cyrillic-ext",
       "greek",
       "greek-ext",
+      "hebrew",
       "latin",
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v23",
-    "lastModified": "2021-08-10",
+    "version": "v26",
+    "lastModified": "2021-09-23",
     "category": "sans-serif"
   },
   {
@@ -10856,8 +10859,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v27",
-    "lastModified": "2021-04-05",
+    "version": "v29",
+    "lastModified": "2021-09-22",
     "category": "sans-serif"
   },
   {
