@@ -93,7 +93,7 @@ const fetchCSS = async (url: string) => {
   try {
     const response = await got(url, {
       headers: {
-        "User-Agent": userAgents.variable,
+        "User-Agent": userAgents.apiv2.variable,
       },
     }).text();
     return response;
