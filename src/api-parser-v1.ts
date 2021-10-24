@@ -62,9 +62,9 @@ export const fetchAllCSS = async (
 ): Promise<[string, string, string]> => {
   // Download CSS stylesheets for each file format
   return Promise.all([
-    await fetchCSS(font, userAgents.woff2),
-    await fetchCSS(font, userAgents.woff),
-    await fetchCSS(font, userAgents.ttf),
+    await fetchCSS(font, userAgents.apiv1.woff2),
+    await fetchCSS(font, userAgents.apiv1.woff),
+    await fetchCSS(font, userAgents.apiv1.ttf),
   ]);
 };
 

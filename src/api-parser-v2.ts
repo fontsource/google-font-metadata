@@ -94,9 +94,9 @@ export const fetchAllCSS = async (
   const variantsList = variantsListGen(font.variants);
 
   return Promise.all([
-    await fetchCSS(fontFamily, variantsList, userAgents.woff2),
-    await fetchCSS(fontFamily, variantsList, userAgents.woff),
-    await fetchCSS(fontFamily, variantsList, userAgents.ttf),
+    await fetchCSS(fontFamily, variantsList, userAgents.apiv2.woff2),
+    await fetchCSS(fontFamily, variantsList, userAgents.apiv2.woff),
+    await fetchCSS(fontFamily, variantsList, userAgents.apiv2.ttf),
   ]);
 };
 
