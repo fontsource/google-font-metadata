@@ -13167,6 +13167,22 @@
     "category": "serif"
   },
   {
+    "family": "Zen Antique",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "greek", "japanese", "latin"],
+    "version": "v3",
+    "lastModified": "2021-10-21",
+    "category": "serif"
+  },
+  {
+    "family": "Zen Antique Soft",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "greek", "japanese", "latin"],
+    "version": "v3",
+    "lastModified": "2021-10-21",
+    "category": "serif"
+  },
+  {
     "family": "Zen Dots",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -13175,12 +13191,52 @@
     "category": "display"
   },
   {
+    "family": "Zen Kaku Gothic Antique",
+    "variants": ["300", "regular", "500", "700", "900"],
+    "subsets": ["cyrillic", "japanese", "latin"],
+    "version": "v3",
+    "lastModified": "2021-10-21",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Zen Kaku Gothic New",
+    "variants": ["300", "regular", "500", "700", "900"],
+    "subsets": ["cyrillic", "japanese", "latin"],
+    "version": "v3",
+    "lastModified": "2021-10-21",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Zen Kurenaido",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "greek", "japanese", "latin"],
+    "version": "v3",
+    "lastModified": "2021-10-21",
+    "category": "sans-serif"
+  },
+  {
     "family": "Zen Loop",
     "variants": ["regular", "italic"],
     "subsets": ["latin", "latin-ext"],
     "version": "v1",
     "lastModified": "2021-07-01",
     "category": "display"
+  },
+  {
+    "family": "Zen Maru Gothic",
+    "variants": ["300", "regular", "500", "700", "900"],
+    "subsets": ["cyrillic", "greek", "japanese", "latin"],
+    "version": "v3",
+    "lastModified": "2021-10-21",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Zen Old Mincho",
+    "variants": ["regular", "700", "900"],
+    "subsets": ["cyrillic", "greek", "japanese", "latin"],
+    "version": "v3",
+    "lastModified": "2021-10-21",
+    "category": "serif"
   },
   {
     "family": "Zen Tokyo Zoo",
