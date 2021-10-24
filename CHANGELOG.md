@@ -2,6 +2,12 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [3.0.2](https://github.com/fontsource/google-font-metadata/releases/tag/v3.0.1)
+
+# Fixes
+
+- Fix user agents for APIv1 metadata generation. [#98](https://github.com/fontsource/google-font-metadata/pull/74)
+
 # [3.0.1](https://github.com/fontsource/google-font-metadata/releases/tag/v3.0.1)
 
 # Fixes
