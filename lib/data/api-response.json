@@ -9206,8 +9206,8 @@
     "family": "Noto Serif KR",
     "variants": ["200", "300", "regular", "500", "600", "700", "900"],
     "subsets": ["korean", "latin"],
-    "version": "v13",
-    "lastModified": "2021-09-14",
+    "version": "v15",
+    "lastModified": "2021-10-28",
     "category": "serif"
   },
   {
@@ -9655,8 +9655,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v26",
-    "lastModified": "2021-09-23",
+    "version": "v27",
+    "lastModified": "2021-10-28",
     "category": "sans-serif"
   },
   {
