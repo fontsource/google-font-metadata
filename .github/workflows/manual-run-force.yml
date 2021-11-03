@@ -1,4 +1,4 @@
-name: Build and Release [Manual]
+name: Build and Release [Manual Force]
 
 on: [workflow_dispatch]
 
