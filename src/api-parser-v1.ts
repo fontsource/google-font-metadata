@@ -13,6 +13,7 @@ import userAgents from "./data/user-agents.json";
 import type { FontVariants, APIResponse } from "./index";
 
 const baseurl = "https://fonts.googleapis.com/css?subset=";
+const forceFlag = process.argv.includes("--force");
 
 export interface FontObjectV1 {
   [id: string]: {
@@ -164,7 +165,11 @@ const processQueue = async (font: APIResponse) => {
   const id = font.family.replace(/\s/g, "-").toLowerCase();
 
   // If last-modified matches latest API, skip fetching CSS and processing.
-  if (APIv1[id] !== undefined && font.lastModified === APIv1[id].lastModified) {
+  if (
+    APIv1[id] !== undefined &&
+    font.lastModified === APIv1[id].lastModified &&
+    !forceFlag
+  ) {
     results.push({ [id]: APIv1[id] });
   } else {
     const css = await fetchAllCSS(font);

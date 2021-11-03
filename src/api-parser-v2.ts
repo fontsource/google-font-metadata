@@ -15,6 +15,7 @@ import type { FontVariants } from "./index";
 import type { APIResponse } from "./api-gen";
 
 const baseurl = "https://fonts.googleapis.com/css2?family=";
+const forceFlag = process.argv.includes("--force");
 
 export interface FontObjectV2 {
   [id: string]: {
@@ -212,7 +213,11 @@ const processQueue = async (font: APIResponse) => {
   const id = font.family.replace(/\s/g, "-").toLowerCase();
 
   // If last-modified matches latest API, skip fetching CSS and processing.
-  if (APIv2[id] !== undefined && font.lastModified === APIv2[id].lastModified) {
+  if (
+    APIv2[id] !== undefined &&
+    font.lastModified === APIv2[id].lastModified &&
+    !forceFlag
+  ) {
     results.push({ [id]: APIv2[id] });
   } else {
     const css = await fetchAllCSS(font);

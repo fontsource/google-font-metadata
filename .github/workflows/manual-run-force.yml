@@ -1,0 +1,47 @@
+name: Build and Release [Manual Force]
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    if: github.actor == 'DecliningLotus'
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: "0"
+
+      - name: Install packages
+        run: yarn
+
+      - name: Query API
+        run: yarn parser:gen $GOOGLE_API_KEY
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      - name: Parse APIv1
+        run: yarn parser:v1 --force
+
+      - name: Parse APIv2
+        run: yarn parser:v2 --force
+
+      - name: Scrape variable fonts
+        run: yarn variable:gen
+
+      - name: Parse variable fonts
+        run: yarn variable:parse
+
+      - name: Format files
+        run: yarn format:prettier
+
+      - name: Stage, commit and push files
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_user_name: "fontsource-bot"
+          commit_user_email: "83556432+fontsource-bot@users.noreply.github.com"
+          commit_author: "fontsource-bot <83556432+fontsource-bot@users.noreply.github.com>"
+          commit_message: "chore(build): update API [Manual]"
+        continue-on-error: true
