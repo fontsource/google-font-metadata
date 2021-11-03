@@ -43,5 +43,5 @@ jobs:
           commit_user_name: "fontsource-bot"
           commit_user_email: "83556432+fontsource-bot@users.noreply.github.com"
           commit_author: "fontsource-bot <83556432+fontsource-bot@users.noreply.github.com>"
-          commit_message: "chore(build): update API [Manual]"
+          commit_message: "chore(build): update API [Manual Force]"
         continue-on-error: true
