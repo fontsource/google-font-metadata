@@ -345,8 +345,8 @@
     "family": "Allura",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v10",
-    "lastModified": "2021-08-18",
+    "version": "v15",
+    "lastModified": "2021-11-04",
     "category": "handwriting"
   },
   {
@@ -659,8 +659,8 @@
     "family": "Are You Serious",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2021-09-16",
+    "version": "v6",
+    "lastModified": "2021-11-04",
     "category": "handwriting"
   },
   {
@@ -2385,8 +2385,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v30",
-    "lastModified": "2021-01-30",
+    "version": "v34",
+    "lastModified": "2021-11-04",
     "category": "display"
   },
   {
@@ -2669,8 +2669,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v14",
-    "lastModified": "2021-01-30",
+    "version": "v17",
+    "lastModified": "2021-11-04",
     "category": "serif"
   },
   {
@@ -2845,8 +2845,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v4",
-    "lastModified": "2021-04-20",
+    "version": "v8",
+    "lastModified": "2021-11-04",
     "category": "display"
   },
   {
@@ -2969,6 +2969,14 @@
     "category": "serif"
   },
   {
+    "family": "Dongle",
+    "variants": ["300", "regular", "700"],
+    "subsets": ["korean", "latin", "latin-ext", "vietnamese"],
+    "version": "v4",
+    "lastModified": "2021-11-04",
+    "category": "sans-serif"
+  },
+  {
     "family": "Doppio One",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -2988,16 +2996,16 @@
     "family": "Dosis",
     "variants": ["200", "300", "regular", "500", "600", "700", "800"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v19",
-    "lastModified": "2021-01-30",
+    "version": "v22",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
     "family": "DotGothic16",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2021-03-24",
+    "version": "v10",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -3361,8 +3369,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v12",
-    "lastModified": "2021-01-30",
+    "version": "v15",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -3388,8 +3396,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v10",
-    "lastModified": "2021-01-30",
+    "version": "v15",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -3505,18 +3513,22 @@
   {
     "family": "Faustina",
     "variants": [
+      "300",
       "regular",
       "500",
       "600",
       "700",
+      "800",
+      "300italic",
       "italic",
       "500italic",
       "600italic",
-      "700italic"
+      "700italic",
+      "800italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v8",
-    "lastModified": "2021-01-30",
+    "version": "v11",
+    "lastModified": "2021-11-04",
     "category": "serif"
   },
   {
@@ -3578,8 +3590,8 @@
       "latin",
       "latin-ext"
     ],
-    "version": "v12",
-    "lastModified": "2021-08-18",
+    "version": "v14",
+    "lastModified": "2021-11-04",
     "category": "monospace"
   },
   {
@@ -4448,8 +4460,8 @@
       "900"
     ],
     "subsets": ["korean", "latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2021-07-26",
+    "version": "v3",
+    "lastModified": "2021-11-04",
     "category": "serif"
   },
   {
@@ -5179,8 +5191,8 @@
       "700italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v17",
-    "lastModified": "2021-01-30",
+    "version": "v20",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -5229,8 +5241,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2021-01-21",
+    "version": "v9",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -5289,12 +5301,13 @@
       "cyrillic-ext",
       "greek",
       "greek-ext",
+      "kayah-li",
       "latin",
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v16",
-    "lastModified": "2021-01-30",
+    "version": "v19",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -5690,8 +5703,8 @@
     "family": "Kreon",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v24",
-    "lastModified": "2021-01-30",
+    "version": "v27",
+    "lastModified": "2021-11-04",
     "category": "serif"
   },
   {
@@ -6578,9 +6591,16 @@
   {
     "family": "Manrope",
     "variants": ["200", "300", "regular", "500", "600", "700", "800"],
-    "subsets": ["cyrillic", "greek", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2021-01-30",
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "version": "v8",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -6712,8 +6732,8 @@
     "family": "Maven Pro",
     "variants": ["regular", "500", "600", "700", "800", "900"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v22",
-    "lastModified": "2021-01-30",
+    "version": "v25",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -6939,6 +6959,22 @@
     "category": "sans-serif"
   },
   {
+    "family": "Mochiy Pop One",
+    "variants": ["regular"],
+    "subsets": ["japanese", "latin"],
+    "version": "v3",
+    "lastModified": "2021-11-04",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Mochiy Pop P One",
+    "variants": ["regular"],
+    "subsets": ["japanese", "latin"],
+    "version": "v3",
+    "lastModified": "2021-11-04",
+    "category": "sans-serif"
+  },
+  {
     "family": "Modak",
     "variants": ["regular"],
     "subsets": ["devanagari", "latin", "latin-ext"],
@@ -6961,6 +6997,25 @@
     "version": "v9",
     "lastModified": "2021-03-19",
     "category": "display"
+  },
+  {
+    "family": "Mohave",
+    "variants": [
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2021-11-04",
+    "category": "sans-serif"
   },
   {
     "family": "Molengo",
@@ -7239,8 +7294,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v7",
-    "lastModified": "2021-03-19",
+    "version": "v14",
+    "lastModified": "2021-11-04",
     "category": "display"
   },
   {
@@ -8307,6 +8362,24 @@
     "subsets": ["medefaidrin"],
     "version": "v10",
     "lastModified": "2021-09-14",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Noto Sans Meetei Mayek",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": ["meetei-mayek"],
+    "version": "v3",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -10728,6 +10801,25 @@
     "category": "sans-serif"
   },
   {
+    "family": "Red Hat Mono",
+    "variants": [
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v3",
+    "lastModified": "2021-11-04",
+    "category": "monospace"
+  },
+  {
     "family": "Red Hat Text",
     "variants": [
       "300",
@@ -10766,8 +10858,8 @@
     "family": "Reem Kufi",
     "variants": ["regular", "500", "600", "700"],
     "subsets": ["arabic", "latin"],
-    "version": "v11",
-    "lastModified": "2021-07-01",
+    "version": "v13",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -10782,8 +10874,8 @@
     "family": "Reggae One",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2021-03-19",
+    "version": "v9",
+    "lastModified": "2021-11-04",
     "category": "display"
   },
   {
@@ -10955,8 +11047,8 @@
     "family": "RocknRoll One",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2021-03-24",
+    "version": "v7",
+    "lastModified": "2021-11-04",
     "category": "sans-serif"
   },
   {
@@ -10973,8 +11065,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v20",
-    "lastModified": "2021-01-30",
+    "version": "v24",
+    "lastModified": "2021-11-04",
     "category": "serif"
   },
   {
@@ -11562,16 +11654,16 @@
     "family": "Shippori Mincho",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v7",
-    "lastModified": "2021-06-23",
+    "version": "v11",
+    "lastModified": "2021-11-04",
     "category": "serif"
   },
   {
     "family": "Shippori Mincho B1",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v10",
-    "lastModified": "2021-06-23",
+    "version": "v14",
+    "lastModified": "2021-11-04",
     "category": "serif"
   },
   {
