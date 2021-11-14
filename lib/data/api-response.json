@@ -642,17 +642,17 @@
     "family": "Archivo Narrow",
     "variants": [
       "regular",
-      "italic",
       "500",
-      "500italic",
       "600",
-      "600italic",
       "700",
+      "italic",
+      "500italic",
+      "600italic",
       "700italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v12",
-    "lastModified": "2020-09-02",
+    "version": "v18",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -1930,10 +1930,10 @@
   },
   {
     "family": "Cairo",
-    "variants": ["200", "300", "regular", "600", "700", "900"],
+    "variants": ["200", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v10",
-    "lastModified": "2021-03-24",
+    "version": "v12",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -2161,8 +2161,8 @@
     "family": "Changa",
     "variants": ["200", "300", "regular", "500", "600", "700", "800"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2021-01-30",
+    "version": "v14",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -2388,6 +2388,22 @@
     "version": "v34",
     "lastModified": "2021-11-04",
     "category": "display"
+  },
+  {
+    "family": "Comforter",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
+  },
+  {
+    "family": "Comforter Brush",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
   },
   {
     "family": "Comic Neue",
@@ -2782,8 +2798,8 @@
     "family": "Dancing Script",
     "variants": ["regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v16",
-    "lastModified": "2021-01-30",
+    "version": "v19",
+    "lastModified": "2021-11-10",
     "category": "handwriting"
   },
   {
@@ -3055,8 +3071,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v15",
-    "lastModified": "2021-01-30",
+    "version": "v19",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
@@ -3329,6 +3345,14 @@
     "version": "v9",
     "lastModified": "2020-07-23",
     "category": "serif"
+  },
+  {
+    "family": "Estonia",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v5",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
   },
   {
     "family": "Euphoria Script",
@@ -3755,6 +3779,30 @@
     "category": "handwriting"
   },
   {
+    "family": "Flow Block",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "display"
+  },
+  {
+    "family": "Flow Circular",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "display"
+  },
+  {
+    "family": "Flow Rounded",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "display"
+  },
+  {
     "family": "Fondamento",
     "variants": ["regular", "italic"],
     "subsets": ["latin", "latin-ext"],
@@ -3996,6 +4044,33 @@
     "subsets": ["latin", "latin-ext", "sinhala"],
     "version": "v1",
     "lastModified": "2021-09-16",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Genos",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["cherokee", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -4576,8 +4651,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v9",
-    "lastModified": "2021-01-30",
+    "version": "v12",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
@@ -4667,6 +4742,14 @@
     "version": "v11",
     "lastModified": "2021-07-01",
     "category": "sans-serif"
+  },
+  {
+    "family": "Hurricane",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
   },
   {
     "family": "IBM Plex Mono",
@@ -5032,8 +5115,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v3",
-    "lastModified": "2021-01-30",
+    "version": "v7",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -5363,32 +5446,32 @@
     "family": "Kaisei Decol",
     "variants": ["regular", "500", "700"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2021-08-18",
+    "version": "v4",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
     "family": "Kaisei HarunoUmi",
     "variants": ["regular", "500", "700"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2021-08-18",
+    "version": "v4",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
     "family": "Kaisei Opti",
     "variants": ["regular", "500", "700"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2021-08-18",
+    "version": "v4",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
     "family": "Kaisei Tokumin",
     "variants": ["regular", "500", "700", "800"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2021-08-18",
+    "version": "v4",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
@@ -5570,6 +5653,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Kings",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
+  },
+  {
     "family": "Kirang Haerang",
     "variants": ["regular"],
     "subsets": ["korean", "latin"],
@@ -5662,17 +5753,17 @@
   {
     "family": "Kosugi",
     "variants": ["regular"],
-    "subsets": ["cyrillic", "japanese", "latin"],
-    "version": "v6",
-    "lastModified": "2020-03-03",
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v11",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
     "family": "Kosugi Maru",
     "variants": ["regular"],
-    "subsets": ["cyrillic", "japanese", "latin"],
-    "version": "v6",
-    "lastModified": "2020-03-03",
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v11",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -6285,8 +6376,8 @@
     "family": "Liu Jian Mao Cao",
     "variants": ["regular"],
     "subsets": ["chinese-simplified", "latin"],
-    "version": "v7",
-    "lastModified": "2021-03-19",
+    "version": "v13",
+    "lastModified": "2021-11-10",
     "category": "handwriting"
   },
   {
@@ -6383,8 +6474,8 @@
       "700italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v17",
-    "lastModified": "2021-01-30",
+    "version": "v20",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
@@ -6436,6 +6527,32 @@
     "category": "serif"
   },
   {
+    "family": "M PLUS 1",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": ["japanese", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "sans-serif"
+  },
+  {
+    "family": "M PLUS 1 Code",
+    "variants": ["100", "200", "300", "regular", "500", "600", "700"],
+    "subsets": ["japanese", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "sans-serif"
+  },
+  {
     "family": "M PLUS 1p",
     "variants": ["100", "300", "regular", "500", "700", "800", "900"],
     "subsets": [
@@ -6451,6 +6568,32 @@
     ],
     "version": "v19",
     "lastModified": "2020-03-03",
+    "category": "sans-serif"
+  },
+  {
+    "family": "M PLUS 2",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": ["japanese", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "sans-serif"
+  },
+  {
+    "family": "M PLUS Code Latin",
+    "variants": ["100", "200", "300", "regular", "500", "600", "700"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -7074,6 +7217,14 @@
     "category": "serif"
   },
   {
+    "family": "Montagu Slab",
+    "variants": ["100", "200", "300", "regular", "500", "600", "700"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "serif"
+  },
+  {
     "family": "MonteCarlo",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
@@ -7276,8 +7427,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v5",
-    "lastModified": "2021-08-18",
+    "version": "v7",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -9813,6 +9964,24 @@
     "category": "sans-serif"
   },
   {
+    "family": "Outfit",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": ["latin"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "sans-serif"
+  },
+  {
     "family": "Over the Rainbow",
     "variants": ["regular"],
     "subsets": ["latin"],
@@ -9840,33 +10009,35 @@
     "family": "Overpass",
     "variants": [
       "100",
-      "100italic",
       "200",
-      "200italic",
       "300",
-      "300italic",
       "regular",
-      "italic",
+      "500",
       "600",
-      "600italic",
       "700",
-      "700italic",
       "800",
-      "800italic",
       "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
       "900italic"
     ],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v5",
-    "lastModified": "2020-09-10",
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+    "version": "v7",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
     "family": "Overpass Mono",
-    "variants": ["300", "regular", "600", "700"],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2020-09-02",
+    "variants": ["300", "regular", "500", "600", "700"],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+    "version": "v10",
+    "lastModified": "2021-11-10",
     "category": "monospace"
   },
   {
@@ -10030,6 +10201,14 @@
     "category": "display"
   },
   {
+    "family": "Passions Conflict",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
+  },
+  {
     "family": "Pathway Gothic One",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -10107,6 +10286,14 @@
     "subsets": ["latin"],
     "version": "v10",
     "lastModified": "2020-09-02",
+    "category": "handwriting"
+  },
+  {
+    "family": "Petemoss",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
     "category": "handwriting"
   },
   {
@@ -10259,8 +10446,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "latin", "latin-ext", "vietnamese"],
-    "version": "v22",
-    "lastModified": "2021-01-30",
+    "version": "v25",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
@@ -10385,6 +10572,14 @@
     "version": "v8",
     "lastModified": "2021-03-24",
     "category": "sans-serif"
+  },
+  {
+    "family": "Praise",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
   },
   {
     "family": "Prata",
@@ -10514,6 +10709,14 @@
     "version": "v7",
     "lastModified": "2021-08-18",
     "category": "sans-serif"
+  },
+  {
+    "family": "Puppies Play",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
   },
   {
     "family": "Puritan",
@@ -10927,6 +11130,14 @@
     "category": "display"
   },
   {
+    "family": "Road Rage",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "display"
+  },
+  {
     "family": "Roboto",
     "variants": [
       "100",
@@ -11100,8 +11311,8 @@
       "700italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v19",
-    "lastModified": "2021-01-30",
+    "version": "v22",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -11483,6 +11694,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Sassy Frass",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
+  },
+  {
     "family": "Satisfy",
     "variants": ["regular"],
     "subsets": ["latin"],
@@ -11619,6 +11838,14 @@
     "category": "handwriting"
   },
   {
+    "family": "Shalimar",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "handwriting"
+  },
+  {
     "family": "Shanti",
     "variants": ["regular"],
     "subsets": ["latin"],
@@ -11649,6 +11876,22 @@
     "version": "v10",
     "lastModified": "2020-09-02",
     "category": "monospace"
+  },
+  {
+    "family": "Shippori Antique",
+    "variants": ["regular"],
+    "subsets": ["japanese", "latin", "latin-ext"],
+    "version": "v3",
+    "lastModified": "2021-11-10",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Shippori Antique B1",
+    "variants": ["regular"],
+    "subsets": ["japanese", "latin", "latin-ext"],
+    "version": "v4",
+    "lastModified": "2021-11-10",
+    "category": "sans-serif"
   },
   {
     "family": "Shippori Mincho",
@@ -11710,16 +11953,16 @@
     "family": "Signika",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v12",
-    "lastModified": "2021-01-30",
+    "version": "v15",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
     "family": "Signika Negative",
-    "variants": ["300", "regular", "600", "700"],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2020-09-02",
+    "variants": ["300", "regular", "500", "600", "700"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v15",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -11945,8 +12188,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v14",
-    "lastModified": "2020-09-15",
+    "version": "v18",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -12007,8 +12250,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2021-01-30",
+    "version": "v7",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -13123,8 +13366,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v11",
-    "lastModified": "2021-08-18",
+    "version": "v13",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -13227,6 +13470,30 @@
     "category": "serif"
   },
   {
+    "family": "Yuji Boku",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "serif"
+  },
+  {
+    "family": "Yuji Mai",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "serif"
+  },
+  {
+    "family": "Yuji Syuku",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2021-11-10",
+    "category": "serif"
+  },
+  {
     "family": "Yusei Magic",
     "variants": ["regular"],
     "subsets": ["japanese", "latin", "latin-ext"],
@@ -13261,17 +13528,17 @@
   {
     "family": "Zen Antique",
     "variants": ["regular"],
-    "subsets": ["cyrillic", "greek", "japanese", "latin"],
-    "version": "v3",
-    "lastModified": "2021-10-21",
+    "subsets": ["cyrillic", "greek", "japanese", "latin", "latin-ext"],
+    "version": "v5",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
     "family": "Zen Antique Soft",
     "variants": ["regular"],
-    "subsets": ["cyrillic", "greek", "japanese", "latin"],
-    "version": "v3",
-    "lastModified": "2021-10-21",
+    "subsets": ["cyrillic", "greek", "japanese", "latin", "latin-ext"],
+    "version": "v5",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
@@ -13285,25 +13552,25 @@
   {
     "family": "Zen Kaku Gothic Antique",
     "variants": ["300", "regular", "500", "700", "900"],
-    "subsets": ["cyrillic", "japanese", "latin"],
-    "version": "v3",
-    "lastModified": "2021-10-21",
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v5",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
     "family": "Zen Kaku Gothic New",
     "variants": ["300", "regular", "500", "700", "900"],
-    "subsets": ["cyrillic", "japanese", "latin"],
-    "version": "v3",
-    "lastModified": "2021-10-21",
+    "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
+    "version": "v5",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
     "family": "Zen Kurenaido",
     "variants": ["regular"],
-    "subsets": ["cyrillic", "greek", "japanese", "latin"],
-    "version": "v3",
-    "lastModified": "2021-10-21",
+    "subsets": ["cyrillic", "greek", "japanese", "latin", "latin-ext"],
+    "version": "v5",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
@@ -13317,17 +13584,17 @@
   {
     "family": "Zen Maru Gothic",
     "variants": ["300", "regular", "500", "700", "900"],
-    "subsets": ["cyrillic", "greek", "japanese", "latin"],
-    "version": "v3",
-    "lastModified": "2021-10-21",
+    "subsets": ["cyrillic", "greek", "japanese", "latin", "latin-ext"],
+    "version": "v4",
+    "lastModified": "2021-11-10",
     "category": "sans-serif"
   },
   {
     "family": "Zen Old Mincho",
     "variants": ["regular", "700", "900"],
-    "subsets": ["cyrillic", "greek", "japanese", "latin"],
-    "version": "v3",
-    "lastModified": "2021-10-21",
+    "subsets": ["cyrillic", "greek", "japanese", "latin", "latin-ext"],
+    "version": "v5",
+    "lastModified": "2021-11-10",
     "category": "serif"
   },
   {
