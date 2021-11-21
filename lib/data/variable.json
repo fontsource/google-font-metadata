@@ -462,9 +462,9 @@
     "variants": {
       "wghtOnly": {
         "normal": {
-          "arabic": "https://fonts.gstatic.com/s/cairo/v12/SLXGc1nY6HkvalIkTpu0xg.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/cairo/v12/SLXGc1nY6HkvalIvTpu0xg.woff2",
-          "latin": "https://fonts.gstatic.com/s/cairo/v12/SLXGc1nY6HkvalIhTps.woff2"
+          "arabic": "https://fonts.gstatic.com/s/cairo/v14/SLXGc1nY6HkvalIkTpu0xg.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/cairo/v14/SLXGc1nY6HkvalIvTpu0xg.woff2",
+          "latin": "https://fonts.gstatic.com/s/cairo/v14/SLXGc1nY6HkvalIhTps.woff2"
         }
       }
     }

@@ -1261,29 +1261,6 @@
     "category": "sans-serif"
   },
   {
-    "family": "Be Vietnam",
-    "variants": [
-      "100",
-      "100italic",
-      "300",
-      "300italic",
-      "regular",
-      "italic",
-      "500",
-      "500italic",
-      "600",
-      "600italic",
-      "700",
-      "700italic",
-      "800",
-      "800italic"
-    ],
-    "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2020-07-23",
-    "category": "sans-serif"
-  },
-  {
     "family": "Be Vietnam Pro",
     "variants": [
       "100",
@@ -1932,8 +1909,8 @@
     "family": "Cairo",
     "variants": ["200", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v12",
-    "lastModified": "2021-11-10",
+    "version": "v14",
+    "lastModified": "2021-11-15",
     "category": "sans-serif"
   },
   {
@@ -2687,14 +2664,6 @@
     "subsets": ["latin", "latin-ext", "vietnamese"],
     "version": "v17",
     "lastModified": "2021-11-04",
-    "category": "serif"
-  },
-  {
-    "family": "Crimson Text",
-    "variants": ["regular", "italic", "600", "600italic", "700", "700italic"],
-    "subsets": ["latin"],
-    "version": "v11",
-    "lastModified": "2020-09-10",
     "category": "serif"
   },
   {
@@ -3782,24 +3751,24 @@
     "family": "Flow Block",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2021-11-10",
+    "version": "v3",
+    "lastModified": "2021-11-18",
     "category": "display"
   },
   {
     "family": "Flow Circular",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2021-11-10",
+    "version": "v3",
+    "lastModified": "2021-11-18",
     "category": "display"
   },
   {
     "family": "Flow Rounded",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2021-11-10",
+    "version": "v3",
+    "lastModified": "2021-11-18",
     "category": "display"
   },
   {
@@ -7623,11 +7592,11 @@
   },
   {
     "family": "Nokora",
-    "variants": ["regular", "700"],
-    "subsets": ["khmer"],
-    "version": "v16",
-    "lastModified": "2021-03-19",
-    "category": "serif"
+    "variants": ["100", "300", "regular", "700", "900"],
+    "subsets": ["khmer", "latin"],
+    "version": "v25",
+    "lastModified": "2021-11-18",
+    "category": "sans-serif"
   },
   {
     "family": "Norican",
@@ -11732,14 +11701,6 @@
     "version": "v9",
     "lastModified": "2020-09-02",
     "category": "sans-serif"
-  },
-  {
-    "family": "Scheherazade",
-    "variants": ["regular", "700"],
-    "subsets": ["arabic", "latin"],
-    "version": "v20",
-    "lastModified": "2021-03-24",
-    "category": "serif"
   },
   {
     "family": "Scheherazade New",
