@@ -2633,7 +2633,7 @@
     "variants": {
       "wghtOnly": {
         "normal": {
-          "arabic": "https://fonts.gstatic.com/s/notonaskharabic/v13/RrQKbpV-9Dd1b1OAGA6M9PkyDuVBeN2DHV0.woff2"
+          "arabic": "https://fonts.gstatic.com/s/notonaskharabic/v14/RrQKbpV-9Dd1b1OAGA6M9PkyDuVBeN2DHV0.woff2"
         }
       }
     }
@@ -2646,7 +2646,7 @@
     "variants": {
       "wghtOnly": {
         "normal": {
-          "hebrew": "https://fonts.gstatic.com/s/notorashihebrew/v13/EJRMQh82XsIK-QFmqXk4zvLwFVya0ttF0Ig.woff2"
+          "hebrew": "https://fonts.gstatic.com/s/notorashihebrew/v14/EJRMQh82XsIK-QFmqXk4zvLwFVya0ttF0Ig.woff2"
         }
       }
     }
@@ -2686,12 +2686,12 @@
     "variants": {
       "full": {
         "normal": {
-          "arabic": "https://fonts.gstatic.com/s/notosansarabic/v13/nwpPtLGrOAZMl5nJ_wfgRg3DrWFZcMD96Q.woff2"
+          "arabic": "https://fonts.gstatic.com/s/notosansarabic/v14/nwpPtLGrOAZMl5nJ_wfgRg3DrWFZcMD96Q.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "arabic": "https://fonts.gstatic.com/s/notosansarabic/v13/nwpCtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlj4wv4o.woff2"
+          "arabic": "https://fonts.gstatic.com/s/notosansarabic/v14/nwpCtLGrOAZMl5nJ_wfgRg3DrWFZWsnVBJ_sS6tlqHHFlj4wv4o.woff2"
         }
       }
     }
@@ -2750,12 +2750,12 @@
     "variants": {
       "full": {
         "normal": {
-          "bengali": "https://fonts.gstatic.com/s/notosansbengali/v13/Cn-sJsCGWQxOjaGwMQ6fIiMywrNJImaktho.woff2"
+          "bengali": "https://fonts.gstatic.com/s/notosansbengali/v14/Cn-sJsCGWQxOjaGwMQ6fIiMywrNJImaktho.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "bengali": "https://fonts.gstatic.com/s/notosansbengali/v13/Cn-fJsCGWQxOjaGwMQ6fIiMywrNJIky6nvd8BjzVMvJx2mc4I3mY.woff2"
+          "bengali": "https://fonts.gstatic.com/s/notosansbengali/v14/Cn-fJsCGWQxOjaGwMQ6fIiMywrNJIky6nvd8BjzVMvJx2mc4I3mY.woff2"
         }
       }
     }
@@ -2877,12 +2877,12 @@
     "variants": {
       "full": {
         "normal": {
-          "gurmukhi": "https://fonts.gstatic.com/s/notosansgurmukhi/v13/w8gHH3EvQP81sInb43inmyN9zZ7hb7A5Qg1F.woff2"
+          "gurmukhi": "https://fonts.gstatic.com/s/notosansgurmukhi/v14/w8gHH3EvQP81sInb43inmyN9zZ7hb7A5Qg1F.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "gurmukhi": "https://fonts.gstatic.com/s/notosansgurmukhi/v13/w8gyH3EvQP81sInb43inmyN9zZ7hb7ATbSWo4q8dJ74a3cVrSnsXnw.woff2"
+          "gurmukhi": "https://fonts.gstatic.com/s/notosansgurmukhi/v14/w8gyH3EvQP81sInb43inmyN9zZ7hb7ATbSWo4q8dJ74a3cVrSnsXnw.woff2"
         }
       }
     }
@@ -2909,12 +2909,12 @@
     "variants": {
       "full": {
         "normal": {
-          "hebrew": "https://fonts.gstatic.com/s/notosanshebrew/v30/or35Q7v33eiDljA1IufXTtVf7V6Rlk81aA.woff2"
+          "hebrew": "https://fonts.gstatic.com/s/notosanshebrew/v31/or35Q7v33eiDljA1IufXTtVf7V6Rlk81aA.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "hebrew": "https://fonts.gstatic.com/s/notosanshebrew/v30/or30Q7v33eiDljA1IufXTtVf7V6RvEEdhQlk0LlGxCyaePiWTNw.woff2"
+          "hebrew": "https://fonts.gstatic.com/s/notosanshebrew/v31/or30Q7v33eiDljA1IufXTtVf7V6RvEEdhQlk0LlGxCyaePiWTNw.woff2"
         }
       }
     }
@@ -2928,12 +2928,12 @@
     "variants": {
       "full": {
         "normal": {
-          "kannada": "https://fonts.gstatic.com/s/notosanskannada/v12/8vIS7xs32H97qzQKnzfeXycxXZyUmw65TY8.woff2"
+          "kannada": "https://fonts.gstatic.com/s/notosanskannada/v13/8vIS7xs32H97qzQKnzfeXycxXZyUmw65TY8.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "kannada": "https://fonts.gstatic.com/s/notosanskannada/v12/8vIh7xs32H97qzQKnzfeXycxXZyUmySvZWItmf1fe6TVmgoD4F-Y.woff2"
+          "kannada": "https://fonts.gstatic.com/s/notosanskannada/v13/8vIh7xs32H97qzQKnzfeXycxXZyUmySvZWItmf1fe6TVmgoD4F-Y.woff2"
         }
       }
     }
@@ -3100,12 +3100,12 @@
     "variants": {
       "full": {
         "normal": {
-          "sinhala": "https://fonts.gstatic.com/s/notosanssinhala/v20/yMJIMJBya43H0SUF_WmcBEEf4rQVO0no82g.woff2"
+          "sinhala": "https://fonts.gstatic.com/s/notosanssinhala/v21/yMJIMJBya43H0SUF_WmcBEEf4rQVO0no82g.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "sinhala": "https://fonts.gstatic.com/s/notosanssinhala/v20/yMJ7MJBya43H0SUF_WmcBEEf4rQVO2P524V5N_MxQzQtb-t19Pqq.woff2"
+          "sinhala": "https://fonts.gstatic.com/s/notosanssinhala/v21/yMJ7MJBya43H0SUF_WmcBEEf4rQVO2P524V5N_MxQzQtb-t19Pqq.woff2"
         }
       }
     }
@@ -3171,12 +3171,12 @@
     "variants": {
       "full": {
         "normal": {
-          "tamil": "https://fonts.gstatic.com/s/notosanstamil/v13/ieVm2YdFI3GCY6SyQy1KfStzYKZK1vWe.woff2"
+          "tamil": "https://fonts.gstatic.com/s/notosanstamil/v14/ieVm2YdFI3GCY6SyQy1KfStzYKZK1vWe.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "tamil": "https://fonts.gstatic.com/s/notosanstamil/v13/ieVp2YdFI3GCY6SyQy1KfStzYKZgzN1z4LKDbeZce-048cFpwA.woff2"
+          "tamil": "https://fonts.gstatic.com/s/notosanstamil/v14/ieVp2YdFI3GCY6SyQy1KfStzYKZgzN1z4LKDbeZce-048cFpwA.woff2"
         }
       }
     }
@@ -3222,12 +3222,12 @@
     "variants": {
       "full": {
         "normal": {
-          "thai": "https://fonts.gstatic.com/s/notosansthai/v13/iJWdBXeUZi_OHPqn4wq6hQ2_hZht784.woff2"
+          "thai": "https://fonts.gstatic.com/s/notosansthai/v14/iJWdBXeUZi_OHPqn4wq6hQ2_hZht784.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "thai": "https://fonts.gstatic.com/s/notosansthai/v13/iJWQBXeUZi_OHPqn4wq6hQ2_hbJ1xyN9wd43SofNWcdfKI2h.woff2"
+          "thai": "https://fonts.gstatic.com/s/notosansthai/v14/iJWQBXeUZi_OHPqn4wq6hQ2_hbJ1xyN9wd43SofNWcdfKI2h.woff2"
         }
       }
     }
@@ -3260,12 +3260,12 @@
     "variants": {
       "full": {
         "normal": {
-          "bengali": "https://fonts.gstatic.com/s/notoserifbengali/v12/hYkUPvggTvnzO14VSXltirUdnnkt1pwMRJKG.woff2"
+          "bengali": "https://fonts.gstatic.com/s/notoserifbengali/v13/hYkUPvggTvnzO14VSXltirUdnnkt1pwMRJKG.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "bengali": "https://fonts.gstatic.com/s/notoserifbengali/v12/hYkhPvggTvnzO14VSXltirUdnnkt1pwmWrprmO7RjE0a5BtdKyg8JA.woff2"
+          "bengali": "https://fonts.gstatic.com/s/notoserifbengali/v13/hYkhPvggTvnzO14VSXltirUdnnkt1pwmWrprmO7RjE0a5BtdKyg8JA.woff2"
         }
       }
     }
@@ -3279,12 +3279,12 @@
     "variants": {
       "full": {
         "normal": {
-          "devanagari": "https://fonts.gstatic.com/s/notoserifdevanagari/v12/x3d-cl3IZKmUqiMk48ZHXJ5jwU-DZGRSaQ4tik-r.woff2"
+          "devanagari": "https://fonts.gstatic.com/s/notoserifdevanagari/v13/x3d-cl3IZKmUqiMk48ZHXJ5jwU-DZGRSaQ4tik-r.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "devanagari": "https://fonts.gstatic.com/s/notoserifdevanagari/v12/x3dNcl3IZKmUqiMk48ZHXJ5jwU-DZGRSaQ4Hh2dGyFzPLcQPVbnRH-xEMg.woff2"
+          "devanagari": "https://fonts.gstatic.com/s/notoserifdevanagari/v13/x3dNcl3IZKmUqiMk48ZHXJ5jwU-DZGRSaQ4Hh2dGyFzPLcQPVbnRH-xEMg.woff2"
         }
       }
     }
@@ -3385,7 +3385,7 @@
     "variants": {
       "wghtOnly": {
         "normal": {
-          "gujarati": "https://fonts.gstatic.com/s/notoserifgujarati/v12/hESt6WBlOixO-3OJ1FTmTsmqlBRUJBVkWBRjVA.woff2"
+          "gujarati": "https://fonts.gstatic.com/s/notoserifgujarati/v13/hESt6WBlOixO-3OJ1FTmTsmqlBRUJBVkWBRjVA.woff2"
         }
       }
     }
@@ -3412,12 +3412,12 @@
     "variants": {
       "full": {
         "normal": {
-          "hebrew": "https://fonts.gstatic.com/s/notoserifhebrew/v12/k3kKo9MMPvpLmixYH7euCwmkS9Dohh_70qk.woff2"
+          "hebrew": "https://fonts.gstatic.com/s/notoserifhebrew/v13/k3kKo9MMPvpLmixYH7euCwmkS9Dohh_70qk.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "hebrew": "https://fonts.gstatic.com/s/notoserifhebrew/v12/k3k5o9MMPvpLmixYH7euCwmkS9DohjX1-kRyiqyBqIxnoLbD-VBM.woff2"
+          "hebrew": "https://fonts.gstatic.com/s/notoserifhebrew/v13/k3k5o9MMPvpLmixYH7euCwmkS9DohjX1-kRyiqyBqIxnoLbD-VBM.woff2"
         }
       }
     }
@@ -3430,7 +3430,7 @@
     "variants": {
       "wghtOnly": {
         "normal": {
-          "kannada": "https://fonts.gstatic.com/s/notoserifkannada/v12/v6-JGZHLJFKIhClqUYqXDiWqpxQxWSPCTY4C.woff2"
+          "kannada": "https://fonts.gstatic.com/s/notoserifkannada/v13/v6-JGZHLJFKIhClqUYqXDiWqpxQxWSPCTY4C.woff2"
         }
       }
     }
@@ -3508,12 +3508,12 @@
     "variants": {
       "full": {
         "normal": {
-          "sinhala": "https://fonts.gstatic.com/s/notoserifsinhala/v12/DtV-JwinQqclnZE2CnsPug9lgGC3y2FcjMC9.woff2"
+          "sinhala": "https://fonts.gstatic.com/s/notoserifsinhala/v13/DtV-JwinQqclnZE2CnsPug9lgGC3y2FcjMC9.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "sinhala": "https://fonts.gstatic.com/s/notoserifsinhala/v12/DtVLJwinQqclnZE2CnsPug9lgGC3y2F2nehQ7Eg4EdBKWxPiJQIKTQ.woff2"
+          "sinhala": "https://fonts.gstatic.com/s/notoserifsinhala/v13/DtVLJwinQqclnZE2CnsPug9lgGC3y2F2nehQ7Eg4EdBKWxPiJQIKTQ.woff2"
         }
       }
     }
@@ -3528,18 +3528,18 @@
     "variants": {
       "full": {
         "normal": {
-          "tamil": "https://fonts.gstatic.com/s/notoseriftamil/v13/LYjZdHr-klIgTfc40komjQ5OObazSIWS8g.woff2"
+          "tamil": "https://fonts.gstatic.com/s/notoseriftamil/v14/LYjZdHr-klIgTfc40komjQ5OObazSIWS8g.woff2"
         },
         "italic": {
-          "tamil": "https://fonts.gstatic.com/s/notoseriftamil/v13/LYjfdHr-klIgTfc40komjQ5OObazSJai5haJ.woff2"
+          "tamil": "https://fonts.gstatic.com/s/notoseriftamil/v14/LYjfdHr-klIgTfc40komjQ5OObazSJai5haJ.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "tamil": "https://fonts.gstatic.com/s/notoseriftamil/v13/LYjUdHr-klIgTfc40komjQ5OObazYp-6H94dBF-RX6nNRL340JY.woff2"
+          "tamil": "https://fonts.gstatic.com/s/notoseriftamil/v14/LYjUdHr-klIgTfc40komjQ5OObazYp-6H94dBF-RX6nNRL340JY.woff2"
         },
         "italic": {
-          "tamil": "https://fonts.gstatic.com/s/notoseriftamil/v13/LYjqdHr-klIgTfc40komjQ5OObazSJaI_D5kV8k_WLwFBmWr4IIJfA.woff2"
+          "tamil": "https://fonts.gstatic.com/s/notoseriftamil/v14/LYjqdHr-klIgTfc40komjQ5OObazSJaI_D5kV8k_WLwFBmWr4IIJfA.woff2"
         }
       }
     }
@@ -3566,12 +3566,12 @@
     "variants": {
       "full": {
         "normal": {
-          "thai": "https://fonts.gstatic.com/s/notoserifthai/v12/k3kIo80MPvpLmixYH7euCxWpSMud4i_7.woff2"
+          "thai": "https://fonts.gstatic.com/s/notoserifthai/v13/k3kIo80MPvpLmixYH7euCxWpSMud4i_7.woff2"
         }
       },
       "wghtOnly": {
         "normal": {
-          "thai": "https://fonts.gstatic.com/s/notoserifthai/v12/k3kHo80MPvpLmixYH7euCxWpSMu3-gcWGj0hHAKGvUQleOfz-Q.woff2"
+          "thai": "https://fonts.gstatic.com/s/notoserifthai/v13/k3kHo80MPvpLmixYH7euCxWpSMu3-gcWGj0hHAKGvUQleOfz-Q.woff2"
         }
       }
     }
