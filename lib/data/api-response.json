@@ -11409,6 +11409,33 @@
     "category": "monospace"
   },
   {
+    "family": "Roboto Serif",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v5",
+    "lastModified": "2022-02-12",
+    "category": "sans-serif"
+  },
+  {
     "family": "Roboto Slab",
     "variants": [
       "100",

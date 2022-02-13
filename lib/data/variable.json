@@ -4130,6 +4130,42 @@
       }
     }
   },
+  "roboto-serif": {
+    "family": "Roboto Serif",
+    "axes": {
+      "ital": { "default": "0", "min": "0", "max": "1", "step": "1" },
+      "opsz": { "default": "14", "min": "8", "max": "144", "step": "0.1" },
+      "wdth": { "default": "100", "min": "50", "max": "150", "step": "0.1" },
+      "wght": { "default": "400", "min": "100", "max": "900", "step": "1" },
+      "GRAD": { "default": "0", "min": "-50", "max": "100", "step": "1" }
+    },
+    "variants": {
+      "full": {
+        "normal": {
+          "vietnamese": "https://fonts.gstatic.com/s/robotoserif/v5/R70djywflP6FLr3gZx7K8UyEXxP8d5Q.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/robotoserif/v5/R70djywflP6FLr3gZx7K8UyEXhP8d5Q.woff2",
+          "latin": "https://fonts.gstatic.com/s/robotoserif/v5/R70djywflP6FLr3gZx7K8UyEUBP8.woff2"
+        },
+        "italic": {
+          "vietnamese": "https://fonts.gstatic.com/s/robotoserif/v5/R70DjywflP6FLr3gZx7K8UyEVSPxb5CBnA.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/robotoserif/v5/R70DjywflP6FLr3gZx7K8UyEVSPwb5CBnA.woff2",
+          "latin": "https://fonts.gstatic.com/s/robotoserif/v5/R70DjywflP6FLr3gZx7K8UyEVSP-b5A.woff2"
+        }
+      },
+      "wghtOnly": {
+        "normal": {
+          "vietnamese": "https://fonts.gstatic.com/s/robotoserif/v5/R70mjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEX5Jih0xOI.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/robotoserif/v5/R70mjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEX5Jyh0xOI.woff2",
+          "latin": "https://fonts.gstatic.com/s/robotoserif/v5/R70mjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEX5KSh0.woff2"
+        },
+        "italic": {
+          "vietnamese": "https://fonts.gstatic.com/s/robotoserif/v5/R70kjywflP6FLr3gZx7K8UyEVQnyR1E7VN-f51xYuGCQepOvB0KLc2v0wKKB0Q4MSZxyqf2CgAchbBh53Ob9-w.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/robotoserif/v5/R70kjywflP6FLr3gZx7K8UyEVQnyR1E7VN-f51xYuGCQepOvB0KLc2v0wKKB0Q4MSZxyqf2CgAchbBh43Ob9-w.woff2",
+          "latin": "https://fonts.gstatic.com/s/robotoserif/v5/R70kjywflP6FLr3gZx7K8UyEVQnyR1E7VN-f51xYuGCQepOvB0KLc2v0wKKB0Q4MSZxyqf2CgAchbBh23OY.woff2"
+        }
+      }
+    }
+  },
   "roboto-slab": {
     "family": "Roboto Slab",
     "axes": {
