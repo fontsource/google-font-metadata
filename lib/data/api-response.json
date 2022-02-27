@@ -345,8 +345,8 @@
     "family": "Allura",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v15",
-    "lastModified": "2021-11-04",
+    "version": "v16",
+    "lastModified": "2022-02-23",
     "category": "handwriting"
   },
   {
@@ -404,8 +404,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v8",
-    "lastModified": "2022-02-03",
+    "version": "v9",
+    "lastModified": "2022-02-25",
     "category": "sans-serif"
   },
   {
@@ -863,8 +863,8 @@
     "family": "Aubrey",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v25",
-    "lastModified": "2022-01-05",
+    "version": "v27",
+    "lastModified": "2022-02-25",
     "category": "display"
   },
   {
@@ -1022,9 +1022,9 @@
   {
     "family": "Bakbak One",
     "variants": ["regular"],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2021-12-09",
+    "subsets": ["devanagari", "latin", "latin-ext"],
+    "version": "v5",
+    "lastModified": "2022-02-25",
     "category": "display"
   },
   {
@@ -1421,6 +1421,14 @@
     "category": "display"
   },
   {
+    "family": "BhuTuka Expanded One",
+    "variants": ["regular"],
+    "subsets": ["gurmukhi", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2022-02-25",
+    "category": "display"
+  },
+  {
     "family": "Big Shoulders Display",
     "variants": [
       "100",
@@ -1746,10 +1754,10 @@
   },
   {
     "family": "Brawler",
-    "variants": ["regular"],
+    "variants": ["regular", "700"],
     "subsets": ["latin"],
-    "version": "v16",
-    "lastModified": "2022-01-13",
+    "version": "v18",
+    "lastModified": "2022-02-25",
     "category": "serif"
   },
   {
@@ -2854,8 +2862,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v8",
-    "lastModified": "2021-11-04",
+    "version": "v9",
+    "lastModified": "2022-02-23",
     "category": "display"
   },
   {
@@ -3013,8 +3021,8 @@
     "family": "DotGothic16",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v10",
-    "lastModified": "2021-11-04",
+    "version": "v11",
+    "lastModified": "2022-02-23",
     "category": "sans-serif"
   },
   {
@@ -3877,6 +3885,14 @@
     "version": "v13",
     "lastModified": "2022-01-25",
     "category": "display"
+  },
+  {
+    "family": "Fredoka",
+    "variants": ["300", "regular", "500", "600", "700"],
+    "subsets": ["hebrew", "latin", "latin-ext"],
+    "version": "v5",
+    "lastModified": "2022-02-25",
+    "category": "sans-serif"
   },
   {
     "family": "Fredoka One",
@@ -4753,6 +4769,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Hubballi",
+    "variants": ["regular"],
+    "subsets": ["kannada", "latin", "latin-ext"],
+    "version": "v3",
+    "lastModified": "2022-02-25",
+    "category": "display"
+  },
+  {
     "family": "Hurricane",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
@@ -5140,8 +5164,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v7",
-    "lastModified": "2021-11-10",
+    "version": "v8",
+    "lastModified": "2022-02-23",
     "category": "sans-serif"
   },
   {
@@ -5795,16 +5819,16 @@
     "family": "Kosugi",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2021-11-10",
+    "version": "v12",
+    "lastModified": "2022-02-23",
     "category": "sans-serif"
   },
   {
     "family": "Kosugi Maru",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2021-11-10",
+    "version": "v12",
+    "lastModified": "2022-02-23",
     "category": "sans-serif"
   },
   {
@@ -6042,12 +6066,38 @@
     "category": "sans-serif"
   },
   {
+    "family": "League Gothic",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v4",
+    "lastModified": "2022-02-25",
+    "category": "sans-serif"
+  },
+  {
     "family": "League Script",
     "variants": ["regular"],
     "subsets": ["latin"],
     "version": "v22",
     "lastModified": "2022-01-11",
     "category": "handwriting"
+  },
+  {
+    "family": "League Spartan",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v4",
+    "lastModified": "2022-02-25",
+    "category": "sans-serif"
   },
   {
     "family": "Leckerli One",
@@ -6425,8 +6475,8 @@
     "family": "Liu Jian Mao Cao",
     "variants": ["regular"],
     "subsets": ["chinese-simplified", "latin"],
-    "version": "v13",
-    "lastModified": "2021-11-10",
+    "version": "v14",
+    "lastModified": "2022-02-23",
     "category": "handwriting"
   },
   {
@@ -7763,8 +7813,8 @@
     "family": "Nokora",
     "variants": ["100", "300", "regular", "700", "900"],
     "subsets": ["khmer", "latin"],
-    "version": "v25",
-    "lastModified": "2021-11-18",
+    "version": "v26",
+    "lastModified": "2022-02-23",
     "category": "sans-serif"
   },
   {
@@ -8361,8 +8411,8 @@
       "900"
     ],
     "subsets": ["hebrew"],
-    "version": "v31",
-    "lastModified": "2022-01-25",
+    "version": "v34",
+    "lastModified": "2022-02-23",
     "category": "sans-serif"
   },
   {
@@ -10115,8 +10165,8 @@
     "family": "Oswald",
     "variants": ["200", "300", "regular", "500", "600", "700"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v41",
-    "lastModified": "2022-02-03",
+    "version": "v47",
+    "lastModified": "2022-02-25",
     "category": "sans-serif"
   },
   {
@@ -10534,8 +10584,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v16",
-    "lastModified": "2021-09-16",
+    "version": "v23",
+    "lastModified": "2022-02-25",
     "category": "serif"
   },
   {
@@ -11273,8 +11323,8 @@
     "family": "Reggae One",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v9",
-    "lastModified": "2021-11-04",
+    "version": "v10",
+    "lastModified": "2022-02-23",
     "category": "display"
   },
   {
@@ -11489,8 +11539,8 @@
     "family": "RocknRoll One",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v7",
-    "lastModified": "2021-11-04",
+    "version": "v8",
+    "lastModified": "2022-02-23",
     "category": "sans-serif"
   },
   {
@@ -11709,8 +11759,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v7",
-    "lastModified": "2022-02-03",
+    "version": "v8",
+    "lastModified": "2022-02-25",
     "category": "serif"
   },
   {
@@ -12120,16 +12170,16 @@
     "family": "Shippori Mincho",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2021-11-04",
+    "version": "v12",
+    "lastModified": "2022-02-23",
     "category": "serif"
   },
   {
     "family": "Shippori Mincho B1",
     "variants": ["regular", "500", "600", "700", "800"],
     "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v14",
-    "lastModified": "2021-11-04",
+    "version": "v15",
+    "lastModified": "2022-02-23",
     "category": "serif"
   },
   {
@@ -12283,6 +12333,24 @@
     "version": "v3",
     "lastModified": "2021-12-17",
     "category": "handwriting"
+  },
+  {
+    "family": "Smooch Sans",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v4",
+    "lastModified": "2022-02-25",
+    "category": "sans-serif"
   },
   {
     "family": "Smythe",
@@ -12463,8 +12531,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v18",
-    "lastModified": "2021-11-10",
+    "version": "v19",
+    "lastModified": "2022-02-23",
     "category": "sans-serif"
   },
   {
@@ -13686,8 +13754,8 @@
     "family": "Wire One",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v21",
-    "lastModified": "2022-01-11",
+    "version": "v23",
+    "lastModified": "2022-02-25",
     "category": "sans-serif"
   },
   {
