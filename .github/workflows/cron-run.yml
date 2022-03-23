@@ -1,8 +1,8 @@
-name: Build and Release [Weekly]
+name: Build and Release [Monthly]
 
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "0 0 1 * *"
 
 jobs:
   build:
@@ -45,3 +45,13 @@ jobs:
           commit_author: "fontsource-bot <83556432+fontsource-bot@users.noreply.github.com>"
           commit_message: "chore(build): update API [Weekly]"
         continue-on-error: true
+
+      - name: Publish to NPM
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm ci
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
