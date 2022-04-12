@@ -35,7 +35,7 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
-    "async": "^3.2.0",
+    "async": "^3.2.3",
     "cheerio": "^1.0.0-rc.9",
     "got": "^11.8.2",
     "jsonfile": "^6.1.0",
