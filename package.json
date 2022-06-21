@@ -37,7 +37,7 @@
   "dependencies": {
     "async": "^3.2.0",
     "cheerio": "^1.0.0-rc.9",
-    "got": "^11.8.2",
+    "got": "^11.8.5",
     "jsonfile": "^6.1.0",
     "lodash": "^4.17.21",
     "postcss": "^8.3.0",
