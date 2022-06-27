@@ -1,5 +1,6 @@
-import jsonfile from "jsonfile";
+import consola from "consola";
 import got from "got";
+import * as fs from "node:fs/promises";
 
 export interface APIResponse {
   family: string;
@@ -13,24 +14,28 @@ export interface GotResponse {
   items: APIResponse[];
 }
 
-export const fetchAPI = async (url: string): Promise<void> => {
-  try {
-    const response: GotResponse = await got(url).json();
-    await jsonfile.writeFile("./lib/data/api-response.json", response.items);
-    console.log("Successful Google Font API fetch.");
-  } catch (error) {
-    console.error(error);
-  }
+const fetchURL = async (url: string): Promise<void> => {
+  // Have to double assert to please esbuild
+  const response = (await got(url).json()) as unknown as GotResponse;
+
+  await fs.writeFile(
+    "./data/api-response.json",
+    JSON.stringify(response.items)
+  );
 };
 
-const key: string = process.argv[2];
-const url =
+const baseurl =
   "https://www.googleapis.com/webfonts/v1/webfonts?fields=items(category%2Cfamily%2ClastModified%2Csubsets%2Cvariants%2Cversion)&key=";
 
-if (key === undefined) {
-  console.log("\u001B[31m", "The API Key is required!");
-} else {
-  fetchAPI(url + key).catch((error: string) =>
-    console.error(`API fetch error: ${error}`)
-  );
-}
+export const fetchAPI = async (key: string): Promise<void> => {
+  if (key) {
+    try {
+      await fetchURL(baseurl + key);
+      consola.success("Successful Google Font API fetch.");
+    } catch (error) {
+      throw new Error(`API fetch error: ${error}`);
+    }
+  } else {
+    throw new Error("The API Key is required!");
+  }
+};

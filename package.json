@@ -1,9 +1,18 @@
 {
   "name": "google-font-metadata",
-  "version": "3.1.1",
-  "author": "Lotus <declininglotus@gmail.com>",
-  "license": "MIT",
   "description": "A metadata generator for Google Fonts.",
+  "version": "3.1.1",
+  "author": "Ayuhito <declininglotus@gmail.com>",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs",
+    "types": "./dist/index.d.ts"
+  },
+  "bin": "./dist/cli.js",
+  "license": "MIT",
   "keywords": [
     "fontsource",
     "font",
@@ -13,38 +22,31 @@
     "fonts api",
     "unicode range"
   ],
-  "devDependencies": {
-    "@types/async": "^3.2.6",
-    "@types/cheerio": "^0.22.29",
-    "@types/jest": "^26.0.23",
-    "@types/jsonfile": "^6.0.0",
-    "@types/lodash": "^4.14.170",
-    "@types/node": "^16.3.3",
-    "@types/puppeteer": "^5.4.3",
-    "@typescript-eslint/eslint-plugin": "^4.25.0",
-    "@typescript-eslint/parser": "^4.25.0",
-    "eslint": "^7.27.0",
-    "eslint-config-airbnb-typescript": "^12.3.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.3",
-    "eslint-plugin-jest": "^24.3.6",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-unicorn": "^34.0.1",
-    "prettier": "^2.3.0",
-    "typescript": "^4.3.2"
-  },
   "dependencies": {
-    "async": "^3.2.0",
-    "cheerio": "^1.0.0-rc.9",
-    "got": "^11.8.2",
-    "jsonfile": "^6.1.0",
-    "lodash": "^4.17.21",
-    "postcss": "^8.3.0",
-    "puppeteer": "^10.1.0"
+    "cac": "^6.7.12",
+    "consola": "^2.15.3",
+    "deepmerge": "^4.2.2",
+    "destr": "^1.1.1",
+    "dotenv": "^16.0.1",
+    "execa": "^6.1.0",
+    "got": "^12.1.0",
+    "linkedom": "^0.14.12",
+    "pathe": "^0.3.0",
+    "puppeteer": "^15.1.1"
+  },
+  "devDependencies": {
+    "@lotusdevshack/eslint-config": "^0.1.2",
+    "@types/node": "^18.0.0",
+    "eslint": "^8.18.0",
+    "pkgroll": "^1.3.1",
+    "prettier": "^2.7.1",
+    "tsx": "^3.6.0",
+    "typescript": "^4.7.4",
+    "vitest": "^0.16.0"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "pkgroll --target=node14",
+    "testcli": "node ./dist/cli.js",
     "parser:gen": "node ./lib/api-gen.js",
     "parser:v1": "node ./lib/api-parser-v1.js",
     "parser:v2": "node ./lib/api-parser-v2.js",
@@ -56,14 +58,21 @@
     "format:prettier": "prettier --write **/*.{ts,json,md}"
   },
   "files": [
-    "lib/*",
+    "bin/*",
+    "dist/*",
     "data/*"
   ],
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "homepage": "https://github.com/fontsource/google-font-metadata",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fontsource/google-font-metadata"
+  },
+  "packageManager": "pnpm@7.3.0",
+  "unbuild": {
+    "entries": [
+      "./src/index",
+      "./src/cli"
+    ],
+    "declarations": true
   }
 }

@@ -1,20 +1,14 @@
-import APIDirectImport from "./data/api-response.json";
-import APIv1Import from "./data/google-fonts-v1.json";
-import APIv2Import from "./data/google-fonts-v2.json";
-import APIVariableImport from "./data/variable.json";
+import destr from "destr";
+import * as fs from "node:fs/promises";
 
 import type { APIResponse } from "./api-gen";
-import type { FontObjectV1 } from "./api-parser-v1";
-import type { FontObjectV2 } from "./api-parser-v2";
-import type {
-  FontObjectVariable,
-  FontVariantsVariable,
-} from "./variable-parser";
 
-export const APIDirect: APIResponse[] = APIDirectImport;
-export const APIv1: FontObjectV1 = APIv1Import;
-export const APIv2: FontObjectV2 = APIv2Import;
-export const APIVariable: FontObjectVariable = APIVariableImport;
+const getJSON = async (path: string) => {
+  const file = await fs.readFile(path);
+  return destr(file);
+};
+
+const APIDirect: Promise<APIResponse[]> = getJSON("../data/api-response.json");
 
 // All the types that are used across all parsers
 export interface FontVariants {
@@ -32,10 +26,6 @@ export interface FontVariants {
   };
 }
 
-export {
-  APIResponse,
-  FontObjectV1,
-  FontObjectV2,
-  FontObjectVariable,
-  FontVariantsVariable,
-};
+export { APIDirect };
+
+export { type APIResponse } from "./api-gen";
