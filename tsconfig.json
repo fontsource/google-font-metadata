@@ -16,14 +16,9 @@
     "useDefineForClassFields": true,
 
     /* Modules */
-    "module": "es2020",
+    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-
-    /* Emit */
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "outDir": "./types",
 
     /* Interop Constraints */
     "allowSyntheticDefaultImports": true,
@@ -33,7 +28,7 @@
     /* Type Checking */
     "strict": true,
     "types": ["vitest/importMeta"],
-    "isolatedModules": true, // Uncomment if you're running into an esbuild transform error
+    "isolatedModules": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,

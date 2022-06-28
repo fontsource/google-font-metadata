@@ -1,10 +1,11 @@
-import "dotenv/config";
+// import "dotenv/config";
 
 import { cac } from "cac";
 import consola from "consola";
 
 import { version } from "../package.json";
 import { fetchAPI } from "./api-gen";
+import { parsev1 } from "./api-parser-v1";
 import { updateDb } from "./update-db";
 import { fetchVariable } from "./variable-gen";
 
@@ -32,6 +33,24 @@ cli
   .command("update-db", "Update metadata db by updating lockfile")
   .action(async () => {
     await updateDb();
+  });
+
+cli
+  .command("parse", "Process metadata for v1 and v2 from gfm generate")
+  .option("-1, --v1-only", "Only parse v1")
+  .option("-2, --v2-only", "Only parse v2")
+  .option("-f, --force", "Skip cache and force parse all metadata")
+  .action(async (options) => {
+    if (options["v1-only"]) {
+      consola.info("Parsing v1 metadata...");
+      await parsev1(options.force);
+    } else if (options["v2-only"]) {
+      consola.info("Parsing v2 metadata...");
+      await parsev1(options.force);
+    } else {
+      consola.info("Parsing all metadata...");
+      await parsev1(options.force);
+    }
   });
 
 cli.help();
