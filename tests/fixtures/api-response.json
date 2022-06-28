@@ -1,0 +1,85 @@
+[
+  {
+    "family": "Abel",
+    "variants": ["regular"],
+    "subsets": ["latin"],
+    "version": "v18",
+    "lastModified": "2022-04-20",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Cardo",
+    "variants": ["regular", "italic", "700"],
+    "subsets": ["greek", "greek-ext", "latin", "latin-ext"],
+    "version": "v19",
+    "lastModified": "2022-04-21",
+    "category": "serif"
+  },
+  {
+    "family": "Noto Emoji",
+    "variants": ["300", "regular", "500", "600", "700"],
+    "subsets": ["emoji"],
+    "version": "v24",
+    "lastModified": "2022-05-02",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Noto Sans JP",
+    "variants": ["100", "300", "regular", "500", "700", "900"],
+    "subsets": ["japanese", "latin"],
+    "version": "v42",
+    "lastModified": "2022-05-10",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Noto Sans SC",
+    "variants": ["100", "300", "regular", "500", "700", "900"],
+    "subsets": ["chinese-simplified", "latin"],
+    "version": "v26",
+    "lastModified": "2022-05-10",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Recursive",
+    "variants": ["300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+    "version": "v34",
+    "lastModified": "2022-06-01",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Texturina",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v20",
+    "lastModified": "2022-04-27",
+    "category": "serif"
+  },
+  {
+    "family": "Zilla Slab Highlight",
+    "variants": ["regular", "700"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v17",
+    "lastModified": "2022-04-27",
+    "category": "display"
+  }
+]

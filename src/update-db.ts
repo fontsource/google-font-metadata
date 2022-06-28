@@ -1,3 +1,4 @@
+import consola from "consola";
 import { execa } from "execa";
 import * as fs from "node:fs/promises";
 import { resolve } from "pathe";
@@ -41,6 +42,9 @@ const detectLockfile = async (): Promise<Lockfiles> => {
 
 export const updateDb = async () => {
   const packager = await detectLockfile();
+  consola.info(
+    `${packager} detected. Running upgrade using package manager...`
+  );
   switch (packager) {
     case "pnpm": {
       try {

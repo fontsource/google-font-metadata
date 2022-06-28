@@ -7,7 +7,7 @@ import { compile } from "stylis";
 
 import userAgents from "../data/user-agents.json";
 import type { APIResponse, FontVariants } from "./index";
-import { APIDirect, APIv1 } from "./index";
+import { APIDirectUnbundled, APIv1Unbundled } from "./index";
 import { orderObject, weightListGen } from "./utils";
 
 const baseurl = "https://fonts.googleapis.com/css?subset=";
@@ -134,24 +134,6 @@ export const processCSS = (
             fontWeight = subrule.children;
           }
 
-          // Build nested object structure
-          if (fontWeight) {
-            fontObject[id].variants[fontWeight] =
-              fontObject[id].variants[fontWeight] || {};
-
-            if (fontStyle) {
-              fontObject[id].variants[fontWeight][fontStyle] =
-                fontObject[id].variants[fontWeight][fontStyle] || {};
-
-              if (subset) {
-                fontObject[id].variants[fontWeight][fontStyle][subset] =
-                  fontObject[id].variants[fontWeight][fontStyle][subset] || {
-                    url: {},
-                  };
-              }
-            }
-          }
-
           // Define src props
           if (subrule.props === "src") {
             if (typeof subrule.children !== "string")
@@ -170,10 +152,24 @@ export const processCSS = (
             const type: string = match[0][1];
             const path: string = match[0][2];
 
-            if (fontWeight && fontStyle && subset && type === "url") {
-              fontObject[id].variants[fontWeight][fontStyle][subset].url[
-                format
-              ] = path;
+            // Build nested data structure
+            if (fontWeight) {
+              fontObject[id].variants[fontWeight] =
+                fontObject[id].variants[fontWeight] || {};
+
+              if (fontStyle && subset && type === "url") {
+                fontObject[id].variants[fontWeight][fontStyle] =
+                  fontObject[id].variants[fontWeight][fontStyle] || {};
+
+                fontObject[id].variants[fontWeight][fontStyle][subset] =
+                  fontObject[id].variants[fontWeight][fontStyle][subset] || {
+                    url: {},
+                  };
+
+                fontObject[id].variants[fontWeight][fontStyle][subset].url[
+                  format
+                ] = path;
+              }
             }
           }
         }
@@ -190,11 +186,11 @@ const processQueue = async (font: APIResponse, force: boolean) => {
 
   // If last-modified matches latest API, skip fetching CSS and processing.
   if (
-    APIv1[id] !== undefined &&
-    font.lastModified === APIv1[id].lastModified &&
+    APIv1Unbundled[id] !== undefined &&
+    font.lastModified === APIv1Unbundled[id].lastModified &&
     !force
   ) {
-    results.push({ [id]: APIv1[id] });
+    results.push({ [id]: APIv1Unbundled[id] });
   } else {
     const css = await fetchAllCSS(font);
     const fontObject = processCSS(css, font);
@@ -215,7 +211,7 @@ queue.on("error", (error: Error) => {
 });
 
 export const parsev1 = async (force: boolean) => {
-  for (const font of APIDirect) {
+  for (const font of APIDirectUnbundled) {
     try {
       queue.add(() => processQueue(font, force));
     } catch (error) {
