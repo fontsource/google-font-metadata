@@ -41,15 +41,16 @@ cli
   .option("-2, --v2-only", "Only parse v2")
   .option("-f, --force", "Skip cache and force parse all metadata")
   .action(async (options) => {
+    const force = options.force ?? false;
     if (options["v1-only"]) {
       consola.info("Parsing v1 metadata...");
-      await parsev1(options.force);
+      await parsev1(force);
     } else if (options["v2-only"]) {
       consola.info("Parsing v2 metadata...");
-      await parsev1(options.force);
+      await parsev1(force);
     } else {
       consola.info("Parsing all metadata...");
-      await parsev1(options.force);
+      await parsev1(force);
     }
   });
 

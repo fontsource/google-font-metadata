@@ -1,5 +1,6 @@
 import consola from "consola";
 import merge from "deepmerge";
+import stringify from "json-stringify-pretty-compact";
 import { parseHTML } from "linkedom";
 import * as fs from "node:fs";
 import puppeteer from "puppeteer";
@@ -65,7 +66,7 @@ const processTable = (tableHTML: string) => {
     results = merge(results, variableObject);
   }
 
-  fs.writeFileSync("./data/variable.json", JSON.stringify(results));
+  fs.writeFileSync("./data/variable.json", stringify(results));
 
   consola.success(
     `All ${

@@ -1,5 +1,6 @@
 import consola from "consola";
 import got from "got";
+import stringify from "json-stringify-pretty-compact";
 import * as fs from "node:fs/promises";
 import PQueue from "p-queue";
 import { compile } from "stylis";
@@ -206,21 +207,7 @@ const processQueue = async (font: APIResponse, force: boolean) => {
 // Queue control
 const queue = new PQueue({ concurrency: 18 });
 
-// @ts-ignore - rollup-plugin-dts being too strict
-queue.on("completed", async () => {
-  // Order the font objects alphabetically for consistency and not create huge diffs
-  const unordered: FontObjectV1 = Object.assign({}, ...results);
-  const ordered = orderObject(unordered);
-
-  await fs.writeFile(
-    "./data/google-fonts-v1.json",
-    JSON.stringify(ordered, undefined, 2)
-  );
-
-  consola.success(
-    `All ${results.length} font datapoints using CSS APIv1 have been generated.`
-  );
-});
+queue.onIdle();
 
 // @ts-ignore - rollup-plugin-dts being too strict
 queue.on("error", (error: Error) => {
@@ -235,4 +222,15 @@ export const parsev1 = async (force: boolean) => {
       throw new Error(`${font.family} experienced an error. ${error}`);
     }
   }
+  await queue.onIdle().then(async () => {
+    // Order the font objects alphabetically for consistency and not create huge diffs
+    const unordered: FontObjectV1 = Object.assign({}, ...results);
+    const ordered = orderObject(unordered);
+
+    await fs.writeFile("./data/google-fonts-v1.json", stringify(ordered));
+
+    return consola.success(
+      `All ${results.length} font datapoints using CSS APIv1 have been generated.`
+    );
+  });
 };
