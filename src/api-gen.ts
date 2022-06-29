@@ -11,7 +11,7 @@ export interface APIResponse {
   lastModified: string;
   category: string;
 }
-export interface GotResponse {
+interface GotResponse {
   items: APIResponse[];
 }
 

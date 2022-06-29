@@ -32,12 +32,12 @@
     "json-stringify-pretty-compact": "^4.0.0",
     "linkedom": "^0.14.12",
     "p-queue": "^7.2.0",
-    "pathe": "^0.3.1",
-    "puppeteer": "^15.1.1",
+    "pathe": "^0.3.2",
+    "puppeteer": "^15.2.0",
     "stylis": "^4.1.1"
   },
   "devDependencies": {
-    "@lotusdevshack/eslint-config": "^0.1.4",
+    "@lotusdevshack/eslint-config": "^0.1.6",
     "@types/node": "^18.0.0",
     "@types/stylis": "^4.0.2",
     "eslint": "^8.18.0",
