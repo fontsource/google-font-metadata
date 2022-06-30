@@ -33,6 +33,7 @@
     "linkedom": "^0.14.12",
     "p-queue": "^7.2.0",
     "pathe": "^0.3.2",
+    "picocolors": "^1.0.0",
     "puppeteer": "^15.2.0",
     "stylis": "^4.1.1"
   },
@@ -50,7 +51,7 @@
   "scripts": {
     "build": "pkgroll --target=node14 --minify",
     "dev": "pkgroll --target=node14",
-    "testcli": "node ./dist/cli.mjs",
+    "cli": "node ./dist/cli.mjs",
     "parser:gen": "node ./lib/api-gen.js",
     "parser:v1": "node ./lib/api-parser-v1.js",
     "parser:v2": "node ./lib/api-parser-v2.js",
@@ -71,5 +72,5 @@
     "type": "git",
     "url": "git+https://github.com/fontsource/google-font-metadata"
   },
-  "packageManager": "pnpm@7.3.0"
+  "packageManager": "pnpm@7.4.1"
 }

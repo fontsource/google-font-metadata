@@ -7,7 +7,7 @@ import { compile } from "stylis";
 
 import { apiv2 as userAgents } from "../data/user-agents.json";
 import type { APIResponse, FontVariants } from "./index";
-import { APIDirectUnbundled, APIv2Unbundled } from "./index";
+import { APIDirect, APIv2 } from "./index";
 import { orderObject, weightListGen } from "./utils";
 
 const baseurl = "https://fonts.googleapis.com/css2?family=";
@@ -206,18 +206,18 @@ const processCSS = (css: [string, string, string], font: APIResponse) => {
                 fontObject[id].variants[fontWeight][fontStyle][subset].url[
                   format
                 ] = path;
+              }
 
-
-                // APIv2 uses one woff to support all subsets instead of splitting them
-                if (format !== "woff2") {
-                  const keys = Object.keys(
-                    fontObject[id].variants[fontWeight][fontStyle]
-                  );
-                  for (const key of keys) {
-                    fontObject[id].variants[fontWeight][fontStyle][key].url[
-                      format
-                    ] = path;
-                  }
+              // APIv2 uses one woff to support all subsets instead of splitting them
+              // These don't have a subset
+              if (fontStyle && type === "url" && format !== "woff2") {
+                const keys = Object.keys(
+                  fontObject[id].variants[fontWeight][fontStyle]
+                );
+                for (const key of keys) {
+                  fontObject[id].variants[fontWeight][fontStyle][key].url[
+                    format
+                  ] = path;
                 }
               }
             }
@@ -237,11 +237,11 @@ const processQueue = async (font: APIResponse, force: boolean) => {
 
   // If last-modified matches latest API, skip fetching CSS and processing.
   if (
-    APIv2Unbundled[id] !== undefined &&
-    font.lastModified === APIv2Unbundled[id].lastModified &&
+    APIv2[id] !== undefined &&
+    font.lastModified === APIv2[id].lastModified &&
     !force
   ) {
-    results.push({ [id]: APIv2Unbundled[id] });
+    results.push({ [id]: APIv2[id] });
   } else {
     const css = await fetchAllCSS(font);
     const fontObject = processCSS(css, font);
@@ -260,7 +260,7 @@ queue.on("error", (error: Error) => {
 });
 
 export const parsev2 = async (force: boolean) => {
-  for (const font of APIDirectUnbundled) {
+  for (const font of APIDirect) {
     try {
       queue.add(() => processQueue(font, force));
     } catch (error) {

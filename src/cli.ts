@@ -1,11 +1,13 @@
-// import "dotenv/config";
+import "dotenv/config";
 
 import { cac } from "cac";
 import consola from "consola";
+import colors from "picocolors"
 
 import { version } from "../package.json";
 import { fetchAPI } from "./api-gen";
 import { parsev1 } from "./api-parser-v1";
+import { parsev2 } from "./api-parser-v2";
 import { updateDb } from "./update-db";
 import { fetchVariable } from "./variable-gen";
 
@@ -43,14 +45,28 @@ cli
   .action(async (options) => {
     const force = options.force ?? false;
     if (options["v1-only"]) {
-      consola.info("Parsing v1 metadata...");
+      if (options.force) {
+        consola.info(`Parsing v1 metadata... ${colors.bold(colors.red("[FORCE]"))}`);
+      } else {
+        consola.info("Parsing v1 metadata...");
+      }
       await parsev1(force);
     } else if (options["v2-only"]) {
-      consola.info("Parsing v2 metadata...");
-      await parsev1(force);
+      if (options.force) {
+        consola.info(`Parsing v2 metadata... ${colors.bold(colors.red("[FORCE]"))}`);
+      } else {
+        consola.info("Parsing v2 metadata...");
+      }
+      await parsev2(force);
     } else {
-      consola.info("Parsing all metadata...");
+      if (options.force) {
+        consola.info(`Parsing all metadata... ${colors.bold(colors.red("[FORCE]"))}`);
+      } else {
+        consola.info("Parsing all metadata...");
+      }
+
       await parsev1(force);
+      await parsev2(force);
     }
   });
 
