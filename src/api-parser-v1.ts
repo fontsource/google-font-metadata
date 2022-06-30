@@ -5,7 +5,7 @@ import * as fs from "node:fs/promises";
 import PQueue from "p-queue";
 import { compile } from "stylis";
 
-import userAgents from "../data/user-agents.json";
+import { apiv1 as userAgents } from "../data/user-agents.json";
 import type { APIResponse, FontVariants } from "./index";
 import { APIDirectUnbundled, APIv1Unbundled } from "./index";
 import { orderObject, weightListGen } from "./utils";
@@ -61,9 +61,9 @@ export const fetchAllCSS = async (
 ): Promise<[string, string, string]> =>
   // Download CSS stylesheets for each file format
   Promise.all([
-    fetchCSS(font, userAgents.apiv1.woff2),
-    fetchCSS(font, userAgents.apiv1.woff),
-    fetchCSS(font, userAgents.apiv1.ttf),
+    fetchCSS(font, userAgents.woff2),
+    fetchCSS(font, userAgents.woff),
+    fetchCSS(font, userAgents.ttf),
   ]);
 
 // Convert CSS stylesheets to objects
@@ -202,8 +202,6 @@ const processQueue = async (font: APIResponse, force: boolean) => {
 
 // Queue control
 const queue = new PQueue({ concurrency: 18 });
-
-queue.onIdle();
 
 // @ts-ignore - rollup-plugin-dts being too strict
 queue.on("error", (error: Error) => {

@@ -48,7 +48,8 @@
     "vitest": "^0.16.0"
   },
   "scripts": {
-    "build": "pkgroll --target=node14",
+    "build": "pkgroll --target=node14 --minify",
+    "dev": "pkgroll --target=node14",
     "testcli": "node ./dist/cli.mjs",
     "parser:gen": "node ./lib/api-gen.js",
     "parser:v1": "node ./lib/api-parser-v1.js",
