@@ -35,7 +35,8 @@
     "pathe": "^0.3.2",
     "picocolors": "^1.0.0",
     "puppeteer": "^15.2.0",
-    "stylis": "^4.1.1"
+    "stylis": "^4.1.1",
+    "zod": "^3.17.3"
   },
   "devDependencies": {
     "@lotusdevshack/eslint-config": "^0.1.6",

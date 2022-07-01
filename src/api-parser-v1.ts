@@ -1,3 +1,4 @@
+
 import consola from "consola";
 import got from "got";
 import stringify from "json-stringify-pretty-compact";
@@ -6,26 +7,13 @@ import PQueue from "p-queue";
 import { compile } from "stylis";
 
 import { apiv1 as userAgents } from "../data/user-agents.json";
-import type { APIResponse, FontVariants } from "./index";
+import type { APIResponse } from "./index";
 import { APIDirect, APIv1 } from "./index";
+import type { FontObjectV1 } from "./schema";
 import { orderObject, weightListGen } from "./utils";
+import { validate } from './validate';
 
 const baseurl = "https://fonts.googleapis.com/css?subset=";
-
-export interface FontObjectV1 {
-  [id: string]: {
-    family: string;
-    id: string;
-    subsets: string[];
-    weights: number[];
-    styles: string[];
-    variants: FontVariants;
-    defSubset: string;
-    lastModified: string;
-    version: string;
-    category: string;
-  };
-}
 
 export const fetchCSS = async (
   font: APIResponse,
@@ -208,7 +196,7 @@ queue.on("error", (error: Error) => {
   consola.error(error);
 });
 
-export const parsev1 = async (force: boolean) => {
+export const parsev1 = async (force: boolean, noValidate: boolean) => {
   for (const font of APIDirect) {
     try {
       queue.add(() => processQueue(font, force));
@@ -220,6 +208,10 @@ export const parsev1 = async (force: boolean) => {
     // Order the font objects alphabetically for consistency and not create huge diffs
     const unordered: FontObjectV1 = Object.assign({}, ...results);
     const ordered = orderObject(unordered);
+
+    if (!noValidate) {
+      validate(1, ordered);
+    }
 
     await fs.writeFile("./data/google-fonts-v1.json", stringify(ordered));
 

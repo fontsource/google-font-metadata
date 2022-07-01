@@ -6,29 +6,13 @@ import PQueue from "p-queue";
 import { compile } from "stylis";
 
 import { apiv2 as userAgents } from "../data/user-agents.json";
-import type { APIResponse, FontVariants } from "./index";
+import type { APIResponse } from "./index";
 import { APIDirect, APIv2 } from "./index";
+import type { FontObjectV2 } from "./schema";
 import { orderObject, weightListGen } from "./utils";
+import { validate } from './validate';
 
 const baseurl = "https://fonts.googleapis.com/css2?family=";
-
-export interface FontObjectV2 {
-  [id: string]: {
-    family: string;
-    id: string;
-    subsets: string[];
-    weights: number[];
-    styles: string[];
-    unicodeRange: {
-      [subset: string]: string;
-    };
-    variants: FontVariants;
-    defSubset: string;
-    lastModified: string;
-    version: string;
-    category: string;
-  };
-}
 
 export const fetchCSS = async (
   fontFamily: string,
@@ -259,7 +243,7 @@ queue.on("error", (error: Error) => {
   consola.error(error);
 });
 
-export const parsev2 = async (force: boolean) => {
+export const parsev2 = async (force: boolean, noValidate: boolean) => {
   for (const font of APIDirect) {
     try {
       queue.add(() => processQueue(font, force));
@@ -271,6 +255,10 @@ export const parsev2 = async (force: boolean) => {
     // Order the font objects alphabetically for consistency and not create huge diffs
     const unordered: FontObjectV2 = Object.assign({}, ...results);
     const ordered = orderObject(unordered);
+
+    if (!noValidate) {
+      validate(2, ordered);
+    }
 
     await fs.writeFile("./data/google-fonts-v2.json", stringify(ordered));
 
