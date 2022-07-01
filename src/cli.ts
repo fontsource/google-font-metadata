@@ -82,20 +82,24 @@ cli.command("validate", "Validate stored metadata with schema.")
   .option("-2, --v2-only", "Only validate APIv2 metadata")
   .option("--variable", "Only validate variable metadata")
   .action((options) => {
-    if (options["v1-only"]) validateCLI("v1");
-    else if (options["v2-only"]) validateCLI("v2");
-    else if (options.variable) validateCLI("variable");
-    else {
-      validateCLI("v1");
-      validateCLI("v2");
-      validateCLI("variable");
-    }
+    try {
+      if (options["v1-only"]) validateCLI("v1");
+      else if (options["v2-only"]) validateCLI("v2");
+      else if (options.variable) validateCLI("variable");
+      else {
+        validateCLI("v1");
+        validateCLI("v2");
+        validateCLI("variable");
+      }
+    } catch (error) { consola.error(error) }
   })
 
 cli
   .command("update-db", "Update metadata db by updating lockfile")
   .action(async () => {
-    await updateDb();
+    try {
+      await updateDb();
+    } catch (error) { consola.error(error) }
   });
 
 cli.help();

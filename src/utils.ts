@@ -1,6 +1,5 @@
-import type { FontObjectV1, FontObjectV2 } from "./index";
+import type { FontObject } from "./index";
 
-type FontObject = FontObjectV1 | FontObjectV2;
 
 // Alphabetically order the generated font object lists
 export const orderObject = (unordered: FontObject): FontObject => {

@@ -51,7 +51,7 @@ export const updateDb = async () => {
         await execa("pnpm", [
           "--recursive",
           "update",
-          "google-font-metadata@4",
+          "google-font-metadata",
         ]);
       } catch {
         throw new Error(
