@@ -3,6 +3,8 @@ import merge from "deepmerge";
 import stringify from "json-stringify-pretty-compact";
 import { parseHTML } from "linkedom";
 import * as fs from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "pathe"
 import puppeteer from "puppeteer";
 
 const url = "https://fonts.google.com/variablefonts#font-families";
@@ -66,11 +68,10 @@ const processTable = (tableHTML: string) => {
     results = merge(results, variableObject);
   }
 
-  fs.writeFileSync("./data/variable.json", stringify(results));
+  fs.writeFileSync(join(dirname(fileURLToPath(import.meta.url)), "../data/variable-response.json"), stringify(results));
 
   consola.success(
-    `All ${
-      Object.keys(results).length
+    `All ${Object.keys(results).length
     } variable font datapoints have been fetched.`
   );
 };

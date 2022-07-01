@@ -107,8 +107,8 @@
     "family": "Akshar",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2022-06-27",
+    "version": "v5",
+    "lastModified": "2022-06-28",
     "category": "sans-serif"
   },
   {
@@ -793,6 +793,22 @@
     "version": "v23",
     "lastModified": "2022-04-20",
     "category": "serif"
+  },
+  {
+    "family": "Arima",
+    "variants": ["100", "200", "300", "regular", "500", "600", "700"],
+    "subsets": [
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "malayalam",
+      "tamil",
+      "vietnamese"
+    ],
+    "version": "v1",
+    "lastModified": "2022-06-28",
+    "category": "display"
   },
   {
     "family": "Arima Madurai",
@@ -2718,19 +2734,19 @@
     "family": "Cormorant",
     "variants": [
       "300",
-      "300italic",
       "regular",
-      "italic",
       "500",
-      "500italic",
       "600",
-      "600italic",
       "700",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
       "700italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v16",
-    "lastModified": "2022-04-21",
+    "version": "v18",
+    "lastModified": "2022-06-28",
     "category": "serif"
   },
   {
@@ -3687,8 +3703,8 @@
       "700italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2022-04-21",
+    "version": "v4",
+    "lastModified": "2022-06-28",
     "category": "sans-serif"
   },
   {
@@ -3823,6 +3839,23 @@
     "version": "v15",
     "lastModified": "2022-04-21",
     "category": "display"
+  },
+  {
+    "family": "Finlandica",
+    "variants": [
+      "regular",
+      "500",
+      "600",
+      "700",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
+    "version": "v3",
+    "lastModified": "2022-06-28",
+    "category": "sans-serif"
   },
   {
     "family": "Fira Code",
@@ -4251,6 +4284,33 @@
     "category": "handwriting"
   },
   {
+    "family": "Gantari",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2022-06-28",
+    "category": "sans-serif"
+  },
+  {
     "family": "Gayathri",
     "variants": ["100", "regular", "700"],
     "subsets": ["latin", "malayalam"],
@@ -4324,6 +4384,22 @@
     "subsets": ["latin", "latin-ext"],
     "version": "v16",
     "lastModified": "2022-04-21",
+    "category": "serif"
+  },
+  {
+    "family": "Gentium Book Plus",
+    "variants": ["regular", "italic", "700", "700italic"],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "version": "v1",
+    "lastModified": "2022-06-28",
     "category": "serif"
   },
   {
@@ -4504,8 +4580,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v7",
-    "lastModified": "2022-04-21",
+    "version": "v9",
+    "lastModified": "2022-06-28",
     "category": "display"
   },
   {
@@ -4749,6 +4825,14 @@
     "version": "v13",
     "lastModified": "2022-04-21",
     "category": "display"
+  },
+  {
+    "family": "Gulzar",
+    "variants": ["regular"],
+    "subsets": ["arabic", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2022-06-28",
+    "category": "serif"
   },
   {
     "family": "Gupter",
@@ -5840,6 +5924,29 @@
     "subsets": ["khmer"],
     "version": "v21",
     "lastModified": "2022-04-26",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Kantumruy Pro",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
+    "subsets": ["khmer", "latin", "latin-ext"],
+    "version": "v3",
+    "lastModified": "2022-06-28",
     "category": "sans-serif"
   },
   {
@@ -7491,6 +7598,14 @@
     "subsets": ["bengali", "latin", "latin-ext"],
     "version": "v11",
     "lastModified": "2022-04-26",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Mingzat",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "lepcha"],
+    "version": "v1",
+    "lastModified": "2022-06-28",
     "category": "sans-serif"
   },
   {
@@ -10498,14 +10613,6 @@
     "category": "sans-serif"
   },
   {
-    "family": "Otomanopee One",
-    "variants": ["regular"],
-    "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2022-05-10",
-    "category": "sans-serif"
-  },
-  {
     "family": "Outfit",
     "variants": [
       "100",
@@ -10693,14 +10800,6 @@
     "version": "v12",
     "lastModified": "2022-05-10",
     "category": "sans-serif"
-  },
-  {
-    "family": "Palette Mosaic",
-    "variants": ["regular"],
-    "subsets": ["japanese", "latin"],
-    "version": "v7",
-    "lastModified": "2022-05-10",
-    "category": "display"
   },
   {
     "family": "Pangolin",
@@ -11905,14 +12004,6 @@
     "category": "handwriting"
   },
   {
-    "family": "Rock 3D",
-    "variants": ["regular"],
-    "subsets": ["japanese", "latin"],
-    "version": "v7",
-    "lastModified": "2022-04-27",
-    "category": "display"
-  },
-  {
     "family": "Rock Salt",
     "variants": ["regular"],
     "subsets": ["latin"],
@@ -12624,14 +12715,6 @@
     "category": "serif"
   },
   {
-    "family": "Shizuru",
-    "variants": ["regular"],
-    "subsets": ["japanese", "latin"],
-    "version": "v7",
-    "lastModified": "2022-04-27",
-    "category": "display"
-  },
-  {
     "family": "Shojumaru",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -13131,6 +13214,14 @@
     "category": "display"
   },
   {
+    "family": "Splash",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2022-06-28",
+    "category": "handwriting"
+  },
+  {
     "family": "Spline Sans",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext"],
@@ -13140,10 +13231,21 @@
   },
   {
     "family": "Spline Sans Mono",
-    "variants": ["300", "regular", "500", "600", "700"],
+    "variants": [
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2022-05-24",
+    "version": "v4",
+    "lastModified": "2022-06-28",
     "category": "monospace"
   },
   {
@@ -14452,22 +14554,6 @@
     "version": "v5",
     "lastModified": "2022-04-27",
     "category": "serif"
-  },
-  {
-    "family": "Yuji Hentaigana Akari",
-    "variants": ["regular"],
-    "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2022-04-27",
-    "category": "handwriting"
-  },
-  {
-    "family": "Yuji Hentaigana Akebono",
-    "variants": ["regular"],
-    "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2022-04-27",
-    "category": "handwriting"
   },
   {
     "family": "Yuji Mai",

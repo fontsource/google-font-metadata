@@ -2,7 +2,9 @@ import consola from "consola";
 import got from "got";
 import stringify from "json-stringify-pretty-compact";
 import * as fs from "node:fs/promises";
+import { fileURLToPath } from "node:url";
 import PQueue from "p-queue";
+import { dirname, join } from "pathe"
 import { compile } from "stylis";
 
 import { apiv2 as userAgents } from "../data/user-agents.json";
@@ -257,10 +259,10 @@ export const parsev2 = async (force: boolean, noValidate: boolean) => {
     const ordered = orderObject(unordered);
 
     if (!noValidate) {
-      validate(2, ordered);
+      validate("v2", ordered);
     }
 
-    await fs.writeFile("./data/google-fonts-v2.json", stringify(ordered));
+    await fs.writeFile(join(dirname(fileURLToPath(import.meta.url)), "../data/google-fonts-v2.json"), stringify(ordered));
 
     return consola.success(
       `All ${results.length} font datapoints using CSS APIv2 have been generated.`

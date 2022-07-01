@@ -1,8 +1,8 @@
 import { z } from "zod";
 
-const fontVariantsSchema = z.record(
-    z.record(
-        z.record(
+const fontVariantsSchema = z.record( // [weight: string]
+    z.record( // [style: string]
+        z.record( // [subset: string]
             z.object({
                 url: z.object({
                     woff2: z.string(),
@@ -17,36 +17,66 @@ const fontVariantsSchema = z.record(
 
 type FontVariants = z.infer<typeof fontVariantsSchema>
 
-const fontObjectV1Schema = z.record(z.object({
-    family: z.string(),
-    id: z.string(),
-    subsets: z.array(z.string()),
-    weights: z.array(z.number().int()),
-    styles: z.array(z.string()),
-    variants: fontVariantsSchema,
-    defSubset: z.string(),
-    lastModified: z.string(),
-    version: z.string(),
-    category: z.string(),
-}).strict())
+const fontObjectV1Schema = z.record(// [id: string]
+    z.object({
+        family: z.string(),
+        id: z.string(),
+        subsets: z.array(z.string()),
+        weights: z.array(z.number().int()),
+        styles: z.array(z.string()),
+        variants: fontVariantsSchema,
+        defSubset: z.string(),
+        lastModified: z.string(),
+        version: z.string(),
+        category: z.string(),
+    }).strict())
 
 type FontObjectV1 = z.infer<typeof fontObjectV1Schema>
 
-const fontObjectV2Schema = z.record(z.object({
-    family: z.string(),
-    id: z.string(),
-    subsets: z.array(z.string()),
-    weights: z.array(z.number().int()),
-    styles: z.array(z.string()),
-    unicodeRange: z.record(z.string()),
-    variants: fontVariantsSchema,
-    defSubset: z.string(),
-    lastModified: z.string(),
-    version: z.string(),
-    category: z.string(),
-}).strict())
+const fontObjectV2Schema = z.record( // [id: string]
+    z.object({
+        family: z.string(),
+        id: z.string(),
+        subsets: z.array(z.string()),
+        weights: z.array(z.number().int()),
+        styles: z.array(z.string()),
+        unicodeRange: z.record(z.string()),
+        variants: fontVariantsSchema,
+        defSubset: z.string(),
+        lastModified: z.string(),
+        version: z.string(),
+        category: z.string(),
+    }).strict())
 
 type FontObjectV2 = z.infer<typeof fontObjectV2Schema>
 
-export { fontObjectV1Schema, fontObjectV2Schema, fontVariantsSchema }
-export type { FontObjectV1, FontObjectV2, FontVariants }
+const fontVariantsVariableSchema = z.record(// [type: string]
+    z.record(// [style: string]
+        z.record(// [subset: string]
+            z.string() // url
+        )
+    )
+);
+
+type FontVariantsVariable = z.infer<typeof fontVariantsVariableSchema>
+
+const fontObjectVariableSchema = z.record( // [id: string]
+    z.object({
+        family: z.string(),
+        axes:
+            z.record( // axesType: string
+                z.object({
+                    default: z.string(),
+                    min: z.string(),
+                    max: z.string(),
+                    step: z.string()
+                }).strict()
+            ),
+        variants: fontVariantsVariableSchema,
+    })
+)
+
+type FontObjectVariable = z.infer<typeof fontObjectVariableSchema>
+
+export { fontObjectV1Schema, fontObjectV2Schema, fontObjectVariableSchema }
+export type { FontObjectV1, FontObjectV2, FontObjectVariable, FontVariants, FontVariantsVariable }
