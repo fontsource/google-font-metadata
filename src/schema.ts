@@ -76,6 +76,24 @@ const fontVariantsVariableSchema = z.record(
 
 type FontVariantsVariable = z.infer<typeof fontVariantsVariableSchema>;
 
+const fontObjectVariableDirectSchema = z.record(
+  // [id: string]
+  z.object({
+    family: z.string(),
+    axes: z.record(
+      // axesType: string
+      z
+        .object({
+          default: z.string(),
+          min: z.string(),
+          max: z.string(),
+          step: z.string(),
+        })
+        .strict()
+    ),
+  })
+);
+
 const fontObjectVariableSchema = z.record(
   // [id: string]
   z.object({
@@ -96,12 +114,14 @@ const fontObjectVariableSchema = z.record(
 );
 
 type FontObjectVariable = z.infer<typeof fontObjectVariableSchema>;
+type FontObjectVariableDirect = z.infer<typeof fontObjectVariableDirectSchema>;
 
 export { fontObjectV1Schema, fontObjectV2Schema, fontObjectVariableSchema };
 export type {
   FontObjectV1,
   FontObjectV2,
   FontObjectVariable,
+  FontObjectVariableDirect,
   FontVariants,
   FontVariantsVariable,
 };
