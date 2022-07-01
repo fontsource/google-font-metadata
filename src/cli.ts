@@ -112,6 +112,7 @@ cli
   .action(async () => {
     try {
       await updateDb();
+      consola.success("Metadata updated!")
     } catch (error) {
       consola.error(error);
     }
