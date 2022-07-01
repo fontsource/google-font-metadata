@@ -2,7 +2,7 @@ import "dotenv/config";
 
 import { cac } from "cac";
 import consola from "consola";
-import colors from "picocolors"
+import colors from "picocolors";
 
 import { version } from "../package.json";
 import { fetchAPI } from "./api-gen";
@@ -32,7 +32,9 @@ cli
         consola.info("Fetching all Google Fonts Data...");
         await Promise.all([fetchAPI(finalKey), fetchVariable()]);
       }
-    } catch (error) { consola.error(error) };
+    } catch (error) {
+      consola.error(error);
+    }
   });
 
 cli
@@ -44,18 +46,22 @@ cli
   .option("--no-validate", "Skip validating metadata result with schema")
   .action(async (options) => {
     try {
-      const force = options.force as boolean ?? false;
-      const noValidate = options["no-validate"] as boolean ?? false;
+      const force = (options.force as boolean) ?? false;
+      const noValidate = (options["no-validate"] as boolean) ?? false;
       if (options["v1-only"]) {
         if (options.force) {
-          consola.info(`Parsing v1 metadata... ${colors.bold(colors.red("[FORCE]"))}`);
+          consola.info(
+            `Parsing v1 metadata... ${colors.bold(colors.red("[FORCE]"))}`
+          );
         } else {
           consola.info("Parsing v1 metadata...");
         }
         await parsev1(force, noValidate);
       } else if (options["v2-only"]) {
         if (options.force) {
-          consola.info(`Parsing v2 metadata... ${colors.bold(colors.red("[FORCE]"))}`);
+          consola.info(
+            `Parsing v2 metadata... ${colors.bold(colors.red("[FORCE]"))}`
+          );
         } else {
           consola.info("Parsing v2 metadata...");
         }
@@ -65,7 +71,9 @@ cli
         await parseVariable(noValidate);
       } else {
         if (options.force) {
-          consola.info(`Parsing all metadata... ${colors.bold(colors.red("[FORCE]"))}`);
+          consola.info(
+            `Parsing all metadata... ${colors.bold(colors.red("[FORCE]"))}`
+          );
         } else {
           consola.info("Parsing all metadata...");
         }
@@ -74,10 +82,13 @@ cli
         await parsev2(force, noValidate);
         await parseVariable(noValidate);
       }
-    } catch (error) { consola.error(error) }
+    } catch (error) {
+      consola.error(error);
+    }
   });
 
-cli.command("validate", "Validate stored metadata with schema.")
+cli
+  .command("validate", "Validate stored metadata with schema.")
   .option("-1, --v1-only", "Only validate APIv1 metadata")
   .option("-2, --v2-only", "Only validate APIv2 metadata")
   .option("--variable", "Only validate variable metadata")
@@ -91,20 +102,22 @@ cli.command("validate", "Validate stored metadata with schema.")
         validateCLI("v2");
         validateCLI("variable");
       }
-    } catch (error) { consola.error(error) }
-  })
+    } catch (error) {
+      consola.error(error);
+    }
+  });
 
 cli
   .command("update-db", "Update metadata db by updating lockfile")
   .action(async () => {
     try {
       await updateDb();
-    } catch (error) { consola.error(error) }
+    } catch (error) {
+      consola.error(error);
+    }
   });
 
 cli.help();
 cli.version(version);
 
 cli.parse();
-
-

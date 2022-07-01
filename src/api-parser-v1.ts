@@ -1,11 +1,10 @@
-
 import consola from "consola";
 import got from "got";
 import stringify from "json-stringify-pretty-compact";
 import * as fs from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import PQueue from "p-queue";
-import { dirname, join } from "pathe"
+import { dirname, join } from "pathe";
 import { compile } from "stylis";
 
 import { apiv1 as userAgents } from "../data/user-agents.json";
@@ -13,7 +12,7 @@ import type { APIResponse } from "./index";
 import { APIDirect, APIv1 } from "./index";
 import type { FontObjectV1 } from "./schema";
 import { orderObject, weightListGen } from "./utils";
-import { validate } from './validate';
+import { validate } from "./validate";
 
 const baseurl = "https://fonts.googleapis.com/css?subset=";
 
@@ -215,7 +214,13 @@ export const parsev1 = async (force: boolean, noValidate: boolean) => {
       validate("v1", ordered);
     }
 
-    await fs.writeFile(join(dirname(fileURLToPath(import.meta.url)), "../data/google-fonts-v1.json"), stringify(ordered));
+    await fs.writeFile(
+      join(
+        dirname(fileURLToPath(import.meta.url)),
+        "../data/google-fonts-v1.json"
+      ),
+      stringify(ordered)
+    );
 
     return consola.success(
       `All ${results.length} font datapoints using CSS APIv1 have been generated.`

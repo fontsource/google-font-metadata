@@ -48,11 +48,7 @@ export const updateDb = async () => {
   switch (packager) {
     case "pnpm": {
       try {
-        await execa("pnpm", [
-          "--recursive",
-          "update",
-          "google-font-metadata",
-        ]);
+        await execa("pnpm", ["--recursive", "update", "google-font-metadata"]);
       } catch {
         throw new Error(
           "Unable to upgrade using pnpm. Try manually updating using 'pnpm update google-font-metadata'"
