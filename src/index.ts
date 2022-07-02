@@ -1,6 +1,4 @@
 import * as fs from "node:fs";
-import { fileURLToPath } from "node:url";
-import { dirname, join } from "pathe";
 
 import type { APIResponse } from "./api-gen";
 import type {
@@ -20,11 +18,7 @@ type FontObject = FontObjectV1 | FontObjectV2 | FontObjectVariable;
  * Alternatively, the slower `npx gfm generate <key>` command can be used.
  */
 const APIDirect = JSON.parse(
-  fs
-    .readFileSync(
-      join(dirname(fileURLToPath(import.meta.url)), "../data/api-response.json")
-    )
-    .toString()
+  fs.readFileSync("../data/api-response.json").toString()
 ) as APIResponse[];
 
 /**
@@ -35,14 +29,7 @@ const APIDirect = JSON.parse(
  * Alternatively, the slower `npx gfm parse --v1-only` command can be used.
  */
 const APIv1 = JSON.parse(
-  fs
-    .readFileSync(
-      join(
-        dirname(fileURLToPath(import.meta.url)),
-        "../data/google-fonts-v1.json"
-      )
-    )
-    .toString()
+  fs.readFileSync("../data/google-fonts-v1.json").toString()
 ) as FontObjectV1;
 
 /**
@@ -53,14 +40,7 @@ const APIv1 = JSON.parse(
  * Alternatively, the slower `npx gfm parse --v2-only` command can be used.
  */
 const APIv2 = JSON.parse(
-  fs
-    .readFileSync(
-      join(
-        dirname(fileURLToPath(import.meta.url)),
-        "../data/google-fonts-v2.json"
-      )
-    )
-    .toString()
+  fs.readFileSync("../data/google-fonts-v2.json").toString()
 ) as FontObjectV2;
 
 /**
@@ -71,14 +51,7 @@ const APIv2 = JSON.parse(
  * Alternatively, the slower `npx gfm parse --variable` command can be used.
  */
 const APIVariableDirect = JSON.parse(
-  fs
-    .readFileSync(
-      join(
-        dirname(fileURLToPath(import.meta.url)),
-        "../data/variable-response.json"
-      )
-    )
-    .toString()
+  fs.readFileSync("../data/variable-response.json").toString()
 ) as FontObjectVariableDirect;
 
 /**
@@ -89,11 +62,7 @@ const APIVariableDirect = JSON.parse(
  * Alternatively, the slower `npx gfm parse --variable` command can be used.
  */
 const APIVariable = JSON.parse(
-  fs
-    .readFileSync(
-      join(dirname(fileURLToPath(import.meta.url)), "../data/variable.json")
-    )
-    .toString()
+  fs.readFileSync("../data/variable.json").toString()
 ) as FontObjectVariable;
 
 export { APIDirect, APIv1, APIv2, APIVariable, APIVariableDirect };

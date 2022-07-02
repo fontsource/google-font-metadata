@@ -2,21 +2,19 @@ import consola from "consola";
 import got from "got";
 import stringify from "json-stringify-pretty-compact";
 import * as fs from "node:fs/promises";
-import { fileURLToPath } from "node:url";
 import PQueue from "p-queue";
-import { dirname, join } from "pathe";
 import { compile } from "stylis";
 
 import { apiv2 as userAgents } from "../data/user-agents.json";
 import { APIVariableDirect } from "./index";
-import type { FontVariantsVariable } from "./schema";
+import type { FontObjectVariable, FontVariantsVariable } from "./schema";
 import { validate } from "./validate";
 
 interface Links {
   [type: string]: string;
 }
 
-const data = APIVariableDirect;
+const data = APIVariableDirect as FontObjectVariable;
 
 const fetchCSSLinks = (fontId: string) => {
   const baseurl = "https://fonts.googleapis.com/css2?family=";
@@ -224,10 +222,7 @@ export const parseVariable = async (noValidate: boolean) => {
       validate("variable", data);
     }
 
-    await fs.writeFile(
-      join(dirname(fileURLToPath(import.meta.url)), "../data/variable.json"),
-      stringify(data)
-    );
+    await fs.writeFile("../data/variable.json", stringify(data));
 
     return consola.success(
       `All ${
