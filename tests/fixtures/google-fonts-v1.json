@@ -122,11 +122,6 @@
               "truetype": "https://fonts.gstatic.com/s/cardo/v19/wlpygwjKBV1pqhND-ZQY-WY.ttf"
             }
           }
-        },
-        "italic": {
-          "greek-ext": { "url": {} },
-          "latin": { "url": {} },
-          "latin-ext": { "url": {} }
         }
       }
     },

@@ -2,6 +2,12 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [4.0.0](https://github.com/fontsource/google-font-metadata/releases/tag/v4.0.0)
+
+### Breaking
+
+The project is now CLI based!
+
 # [3.1.0](https://github.com/fontsource/google-font-metadata/releases/tag/v3.1.0)
 
 # Features
