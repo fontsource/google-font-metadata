@@ -4,7 +4,8 @@
     "src/**/*.ts",
     "src/**/*.json",
     "tests/**/*.ts",
-    "tests/**/*.json"
+    "tests/**/*.json",
+    "vitest.config.ts"
   ],
   "exclude": [".eslintrc.cjs"],
   "compilerOptions": {

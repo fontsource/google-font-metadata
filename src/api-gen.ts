@@ -15,11 +15,10 @@ interface GotResponse {
   items: APIResponse[];
 }
 
-export const fetchURL = async (url: string): Promise<void> => {
+const fetchURL = async (url: string): Promise<void> => {
   // Have to double assert to please esbuild
   const response = (await got(url).json()) as unknown as GotResponse;
-
-  await fs.writeFile("../data/api-response.json", stringify(response.items));
+  await fs.writeFile("./data/api-response.json", stringify(response.items));
 };
 
 const baseurl =
@@ -34,6 +33,6 @@ export const fetchAPI = async (key: string): Promise<void> => {
       throw new Error(`API fetch error: ${error}`);
     }
   } else {
-    throw new Error("The API Key is required!");
+    throw new Error("The API key is required!");
   }
 };
