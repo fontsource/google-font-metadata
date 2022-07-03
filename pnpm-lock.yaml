@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@lotusdevshack/eslint-config': ^0.1.6
+  '@ayuhito/eslint-config': ^0.1.8
   '@types/mock-fs': ^4.13.1
   '@types/node': ^18.0.0
   '@types/stylis': ^4.0.2
@@ -45,7 +45,7 @@ dependencies:
   zod: 3.17.3
 
 devDependencies:
-  '@lotusdevshack/eslint-config': 0.1.6_4x5o4skxv6sl53vpwefgt23khm
+  '@ayuhito/eslint-config': 0.1.8_4x5o4skxv6sl53vpwefgt23khm
   '@types/mock-fs': 4.13.1
   '@types/node': 18.0.0
   '@types/stylis': 4.0.2
@@ -59,6 +59,29 @@ devDependencies:
   vitest: 0.16.0
 
 packages:
+
+  /@ayuhito/eslint-config/0.1.8_4x5o4skxv6sl53vpwefgt23khm:
+    resolution: {integrity: sha512-6gnBeZ590A3KqRvHHdWixbmMtJ+gZYtCsw+pJFtEZZcPVEIkHSyZ2vwU4Cnzy8tqByCjrp4NhV27L0FvrziQrw==}
+    dependencies:
+      '@rushstack/eslint-patch': 1.1.4
+      '@typescript-eslint/eslint-plugin': 5.30.0_ppqciyaexhetens5nxv2w2zeb4
+      '@typescript-eslint/parser': 5.30.0_4x5o4skxv6sl53vpwefgt23khm
+      eslint-config-airbnb-base: 15.0.0_q2xwze32dd33a2fc2qubwr4ie4
+      eslint-config-airbnb-typescript: 17.0.0_w5ipmol4ywqiqlurny6naw3uhq
+      eslint-config-prettier: 8.5.0_eslint@8.19.0
+      eslint-plugin-import: 2.26.0_mo5qedgscka3ifvgcvi5ads44e
+      eslint-plugin-json: 3.1.0
+      eslint-plugin-promise: 6.0.0_eslint@8.19.0
+      eslint-plugin-simple-import-sort: 7.0.0_eslint@8.19.0
+      eslint-plugin-unicorn: 43.0.0_eslint@8.19.0
+      eslint-plugin-vitest: 0.0.8_4x5o4skxv6sl53vpwefgt23khm
+    transitivePeerDependencies:
+      - eslint
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
+      - typescript
+    dev: true
 
   /@babel/code-frame/7.18.6:
     resolution: {integrity: sha512-TDCmlK5eOvH+eH7cdAFlNXeVJqWIQ7gW9tY1GJIpUtFb6CmjVyq2VM3u71bOyR8CRihcCgMUYoDNyLXao3+70Q==}
@@ -132,29 +155,6 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
-    dev: true
-
-  /@lotusdevshack/eslint-config/0.1.6_4x5o4skxv6sl53vpwefgt23khm:
-    resolution: {integrity: sha512-bsJeVOIHu31HdV3TTVP0oZW/PKwuEScsiyOgl3r4TFi1HK6Jao09ECyZWJ2zry4Ell1nCuGmVPuwX0LjYvh0lw==}
-    dependencies:
-      '@rushstack/eslint-patch': 1.1.4
-      '@typescript-eslint/eslint-plugin': 5.30.0_ppqciyaexhetens5nxv2w2zeb4
-      '@typescript-eslint/parser': 5.30.0_4x5o4skxv6sl53vpwefgt23khm
-      eslint-config-airbnb-base: 15.0.0_q2xwze32dd33a2fc2qubwr4ie4
-      eslint-config-airbnb-typescript: 17.0.0_w5ipmol4ywqiqlurny6naw3uhq
-      eslint-config-prettier: 8.5.0_eslint@8.19.0
-      eslint-plugin-import: 2.26.0_mo5qedgscka3ifvgcvi5ads44e
-      eslint-plugin-json: 3.1.0
-      eslint-plugin-promise: 6.0.0_eslint@8.19.0
-      eslint-plugin-simple-import-sort: 7.0.0_eslint@8.19.0
-      eslint-plugin-unicorn: 42.0.0_eslint@8.19.0
-      eslint-plugin-vitest: 0.0.8_4x5o4skxv6sl53vpwefgt23khm
-    transitivePeerDependencies:
-      - eslint
-      - eslint-import-resolver-typescript
-      - eslint-import-resolver-webpack
-      - supports-color
-      - typescript
     dev: true
 
   /@mswjs/cookies/0.2.1:
@@ -1476,11 +1476,11 @@ packages:
       eslint: 8.19.0
     dev: true
 
-  /eslint-plugin-unicorn/42.0.0_eslint@8.19.0:
-    resolution: {integrity: sha512-ixBsbhgWuxVaNlPTT8AyfJMlhyC5flCJFjyK3oKE8TRrwBnaHvUbuIkCM1lqg8ryYrFStL/T557zfKzX4GKSlg==}
-    engines: {node: '>=12'}
+  /eslint-plugin-unicorn/43.0.0_eslint@8.19.0:
+    resolution: {integrity: sha512-Z/6HX8yry+zAjo4jHHTAbe1rfniox7qgmCReGBfTc/CVgotfScaMCc4dtSSTHlJ+7Yix5o6LPXzwwpuGGFricg==}
+    engines: {node: '>=14.18'}
     peerDependencies:
-      eslint: '>=8.8.0'
+      eslint: '>=8.18.0'
     dependencies:
       '@babel/helper-validator-identifier': 7.18.6
       ci-info: 3.3.2

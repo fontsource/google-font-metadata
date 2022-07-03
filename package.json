@@ -41,7 +41,7 @@
     "zod": "^3.17.3"
   },
   "devDependencies": {
-    "@lotusdevshack/eslint-config": "^0.1.6",
+    "@ayuhito/eslint-config": "^0.1.8",
     "@types/mock-fs": "^4.13.1",
     "@types/node": "^18.0.0",
     "@types/stylis": "^4.0.2",

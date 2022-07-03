@@ -27,7 +27,12 @@ export const weightListGen = (variants: string[]): number[] => {
   );
 
   // Convert from string to number
-  const numberList = cleanedList.map(Number);
+  const numberList = cleanedList.map((val) => {
+    const newVal = Number(val);
+    if (Number.isNaN(newVal)) { throw new TypeError(`Invalid value: ${val}`) };
+    return newVal;
+  });
+
   const numberListWithoutDuplicates = [...new Set(numberList)];
 
   return numberListWithoutDuplicates;
