@@ -77,7 +77,7 @@ export const fetchAllCSS = async (
 };
 
 // Convert CSS stylesheets to objects
-const processCSS = (css: [string, string, string], font: APIResponse) => {
+export const processCSS = (css: [string, string, string], font: APIResponse) => {
   const id = font.family.replace(/\s/g, "-").toLowerCase();
 
   const fontObject: FontObjectV2 = {

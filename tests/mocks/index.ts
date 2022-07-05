@@ -1,2 +1,2 @@
-export { apiGenHandlers, apiParseV1Handlers } from "./handlers";
+export { apiGenHandlers, apiParseV1Handlers, apiParseV2Handlers } from "./handlers";
 export { setupAPIServer } from "./server";

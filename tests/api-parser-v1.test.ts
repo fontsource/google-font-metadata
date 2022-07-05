@@ -21,19 +21,19 @@ describe("API Parser v1", () => {
 
       // WOFF2 Tuple
       expect(test[0]).toContain(
-        cssFixture("texturina", "latin", "woff2", "v1")
+        cssFixture("texturina", "woff2", "v1", "latin")
       );
       expect(test[0]).toContain("/*latin*/");
 
       // WOFF Tuple
       expect(test[1]).toContain(
-        cssFixture("texturina", "latin-ext", "woff", "v1")
+        cssFixture("texturina", "woff", "v1", "latin-ext")
       );
       expect(test[1]).toContain("/*latin-ext*/");
 
       // TTF Tuple
       expect(test[2]).toContain(
-        cssFixture("texturina", "vietnamese", "ttf", "v1")
+        cssFixture("texturina", "ttf", "v1", "vietnamese")
       );
       expect(test[2]).toContain("/*vietnamese*/");
     });
