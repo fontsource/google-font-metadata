@@ -39,8 +39,8 @@ cli
 
 cli
   .command("parse", "Process metadata for v1 and v2 from gfm generate")
-  .option("-1, --v1-only", "Only parse v1 metadata")
-  .option("-2, --v2-only", "Only parse v2 metadata")
+  .option("-1, --v1", "Only parse v1 metadata")
+  .option("-2, --v2", "Only parse v2 metadata")
   .option("-v, --variable", "Only parse variable metadata")
   .option("-f, --force", "Skip cache and force parse all metadata")
   .option("--no-validate", "Skip validating metadata result with schema")
@@ -48,7 +48,7 @@ cli
     try {
       const force = (options.force as boolean) ?? false;
       const noValidate = (options["no-validate"] as boolean) ?? false;
-      if (options["v1-only"]) {
+      if (options.v1) {
         if (options.force) {
           consola.info(
             `Parsing v1 metadata... ${colors.bold(colors.red("[FORCE]"))}`
@@ -57,7 +57,9 @@ cli
           consola.info("Parsing v1 metadata...");
         }
         await parsev1(force, noValidate);
-      } else if (options["v2-only"]) {
+      }
+
+      if (options.v2) {
         if (options.force) {
           consola.info(
             `Parsing v2 metadata... ${colors.bold(colors.red("[FORCE]"))}`
@@ -66,10 +68,14 @@ cli
           consola.info("Parsing v2 metadata...");
         }
         await parsev2(force, noValidate);
-      } else if (options.variable) {
+      }
+
+      if (options.variable) {
         consola.info("Parsing variable metadata...");
         await parseVariable(noValidate);
-      } else {
+      }
+
+      if (!options.v1 && !options.v2 && !options.variable) {
         if (options.force) {
           consola.info(
             `Parsing all metadata... ${colors.bold(colors.red("[FORCE]"))}`
@@ -89,15 +95,15 @@ cli
 
 cli
   .command("validate", "Validate stored metadata with schema.")
-  .option("-1, --v1-only", "Only validate APIv1 metadata")
-  .option("-2, --v2-only", "Only validate APIv2 metadata")
+  .option("-1, --v1", "Only validate APIv1 metadata")
+  .option("-2, --v2", "Only validate APIv2 metadata")
   .option("--variable", "Only validate variable metadata")
   .action((options) => {
     try {
-      if (options["v1-only"]) validateCLI("v1");
-      else if (options["v2-only"]) validateCLI("v2");
-      else if (options.variable) validateCLI("variable");
-      else {
+      if (options.v1) validateCLI("v1");
+      if (options.v2) validateCLI("v2");
+      if (options.variable) validateCLI("variable");
+      if (!options.v1 && !options.v2 && !options.variable) {
         validateCLI("v1");
         validateCLI("v2");
         validateCLI("variable");
