@@ -28,6 +28,12 @@ describe("API Gen", () => {
     await expect(fetchAPI("")).rejects.toThrow("API key is required");
   });
 
+  it("errors due to bad request", async () => {
+    await expect(fetchAPI("fail")).rejects.toThrow(
+      "API fetch error: HTTPError: Response code 400 (Bad Request)"
+    );
+  });
+
   afterEach(() => {
     mock.restore();
   });

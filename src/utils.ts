@@ -29,7 +29,9 @@ export const weightListGen = (variants: string[]): number[] => {
   // Convert from string to number
   const numberList = cleanedList.map((val) => {
     const newVal = Number(val);
-    if (Number.isNaN(newVal)) { throw new TypeError(`Invalid value: ${val}`) };
+    if (Number.isNaN(newVal)) {
+      throw new TypeError(`Invalid value: ${val}`);
+    }
     return newVal;
   });
 

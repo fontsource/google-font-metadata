@@ -2,7 +2,9 @@ import consola from "consola";
 import got from "got";
 import stringify from "json-stringify-pretty-compact";
 import * as fs from "node:fs/promises";
+import { fileURLToPath } from "node:url";
 import PQueue from "p-queue";
+import { dirname, join } from "pathe";
 import { compile } from "stylis";
 
 import { apiv2 as userAgents } from "../data/user-agents.json";
@@ -222,7 +224,10 @@ export const parseVariable = async (noValidate: boolean) => {
       validate("variable", data);
     }
 
-    await fs.writeFile("../data/variable.json", stringify(data));
+    await fs.writeFile(
+      join(dirname(fileURLToPath(import.meta.url)), "../data/variable.json"),
+      stringify(data)
+    );
 
     return consola.success(
       `All ${

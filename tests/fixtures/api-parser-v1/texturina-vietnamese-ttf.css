@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1i4ZbKWg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1j4ZbKWg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWUNj4ZbKWg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1j4ZbKWg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWS9j4ZbKWg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWcNk4ZbKWg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWfpk4ZbKWg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1k4ZbKWg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWbRk4ZbKWg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYG8Uo0Z4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYGsUo0Z4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2fGGsUo0Z4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYGsUo0Z4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eqGsUo0Z4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2dGHcUo0Z4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2d_HcUo0Z4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYHcUo0Z4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cxHcUo0Z4.ttf) format('truetype');
+}

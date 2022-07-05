@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Noto Emoji';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v24/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob_10gyNYMVO.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Emoji';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v24/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0gyNYMVO.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Emoji';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v24/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-Z0gyNYMVO.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Emoji';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v24/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob911QyNYMVO.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Emoji';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/notoemoji/v24/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob9M1QyNYMVO.ttf) format('truetype');
+}

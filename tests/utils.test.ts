@@ -39,8 +39,10 @@ describe("Utils", () => {
     });
 
     it("Throws for unexpected values", () => {
-      expect(() => weightListGen(["500i"])).toThrow('Invalid value: 500i');
-      expect(() => weightListGen(["badvalue"])).toThrow('Invalid value: badvalue');
+      expect(() => weightListGen(["500i"])).toThrow("Invalid value: 500i");
+      expect(() => weightListGen(["badvalue"])).toThrow(
+        "Invalid value: badvalue"
+      );
     });
   });
 });

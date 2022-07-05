@@ -2,7 +2,9 @@ import consola from "consola";
 import got from "got";
 import stringify from "json-stringify-pretty-compact";
 import * as fs from "node:fs/promises";
+import { fileURLToPath } from "node:url";
 import PQueue from "p-queue";
+import { dirname, join } from "pathe";
 import { compile } from "stylis";
 
 import { apiv1 as userAgents } from "../data/user-agents.json";
@@ -32,10 +34,10 @@ export const fetchCSS = async (
           "user-agent": userAgent,
         },
       }).text();
+      // APIv1 does not return subset on top of response
       return `/*${subset}*/\n${response}`;
     } catch (error) {
-      consola.error(error);
-      return "";
+      throw new Error(`CSS fetch error (v1): ${error}\nURL: ${url}`);
     }
   });
 
@@ -130,10 +132,8 @@ export const processCSS = (
               subrule.children.match(/(format)\((.+?)\)/g)
             ).slice(8, -2) as "woff2" | "woff" | "truetype" | "opentype";
 
-            // Determine whether it is a local name or URL for font
-            const typeMatch = /(local|url)\((.+?)\)/g;
-
             // Finds all groups that match the regex using the string.matchAll function
+            const typeMatch = /(url)\((.+?)\)/g;
             const match: string[][] = [...subrule.children.matchAll(typeMatch)];
 
             const type: string = match[0][1];
@@ -212,7 +212,13 @@ export const parsev1 = async (force: boolean, noValidate: boolean) => {
       validate("v1", ordered);
     }
 
-    await fs.writeFile("../data/google-fonts-v1.json", stringify(ordered));
+    await fs.writeFile(
+      join(
+        dirname(fileURLToPath(import.meta.url)),
+        "../data/google-fonts-v1.json"
+      ),
+      stringify(ordered)
+    );
 
     return consola.success(
       `All ${results.length} font datapoints using CSS APIv1 have been generated.`
