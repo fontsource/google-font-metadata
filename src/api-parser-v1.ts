@@ -35,7 +35,7 @@ export const fetchCSS = async (
         },
       }).text();
       // APIv1 does not return subset on top of response
-      return `/*${subset}*/\n${response}`;
+      return `/* ${subset} */\n${response}`;
     } catch (error) {
       throw new Error(`CSS fetch error (v1): ${error}\nURL: ${url}`);
     }

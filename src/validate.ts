@@ -4,9 +4,10 @@ import colors from "picocolors";
 import type { FontObject } from "./index";
 import { APIv1, APIv2, APIVariable } from "./index";
 import {
-  fontObjectV1Schema,
+  fontObjectV1Validate,
   fontObjectV2Schema,
   fontObjectVariableSchema,
+  ValidationError
 } from "./schema";
 
 type Version = "v1" | "v2" | "variable";
@@ -19,28 +20,14 @@ const validate = (version: Version, data: FontObject) => {
   );
   switch (version) {
     case "v1": {
-      const valid = fontObjectV1Schema.safeParse(data);
-      if (!valid.success) {
-        throw new Error(
-          `Invalid parse for v1! Try running ${colors.yellow(
-            "npx gfm parse -f"
-          )}. If the problem still persists, Google may have tweaked their API. Please make an issue on google-font-metadata.\n${
-            valid.error
-          }`
-        );
-      }
-
+      fontObjectV1Validate(data)
       break;
     }
     case "v2": {
       const valid = fontObjectV2Schema.safeParse(data);
       if (!valid.success) {
-        throw new Error(
-          `Invalid parse for v2! Try running ${colors.yellow(
-            "npx gfm parse -f"
-          )}. If the problem still persists, Google may have tweaked their API. Please make an issue on google-font-metadata.\n${
-            valid.error
-          }`
+        throw new ValidationError(
+          valid.error.toString(), "v2"
         );
       }
 
@@ -49,15 +36,10 @@ const validate = (version: Version, data: FontObject) => {
     case "variable": {
       const valid = fontObjectVariableSchema.safeParse(data);
       if (!valid.success) {
-        throw new Error(
-          `Invalid parse for variable! Try running ${colors.yellow(
-            "npx gfm generate --variable && npx gfm parse --variable"
-          )}. If the problem still persists, Google may have tweaked their API. Please make an issue on google-font-metadata.\n${
-            valid.error
-          }`
+        throw new ValidationError(
+          valid.error.toString(), "variable"
         );
       }
-
       break;
     }
     default: {
