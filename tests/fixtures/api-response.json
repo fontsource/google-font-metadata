@@ -8,6 +8,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Ballet",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v21",
+    "lastModified": "2022-06-27",
+    "category": "handwriting"
+  },
+  {
     "family": "Cardo",
     "variants": ["regular", "italic", "700"],
     "subsets": ["greek", "greek-ext", "latin", "latin-ext"],
