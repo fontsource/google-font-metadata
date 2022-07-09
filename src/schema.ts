@@ -121,14 +121,7 @@ const fontObjectV2Schema = z
 interface FontVariantsVariable {
   [type: string]: {
     [style: string]: {
-      [subset: string]: {
-        url: {
-          woff2: string;
-          woff: string;
-          truetype?: string;
-          opentype?: string;
-        }
-      }
+      [subset: string]: string
     }
   }
 }

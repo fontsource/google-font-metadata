@@ -9,16 +9,17 @@ import { compile } from "stylis";
 
 import { apiv2 as userAgents } from "../data/user-agents.json";
 import { APIVariableDirect } from "./index";
-import type { FontObjectVariable, FontVariantsVariable } from "./schema";
+import type { FontObjectVariable, FontObjectVariableDirect, FontVariantsVariable } from "./schema";
 import { validate } from "./validate";
 
-interface Links {
+export interface Links {
   [type: string]: string;
 }
 
-const data = APIVariableDirect as FontObjectVariable;
+let data = APIVariableDirect as FontObjectVariable;
 
-const fetchCSSLinks = (fontId: string) => {
+export const fetchCSSLinks = (fontId: string, newData?: FontObjectVariableDirect) => {
+  data = newData ?? data;
   const baseurl = "https://fonts.googleapis.com/css2?family=";
   const axesData = data[fontId].axes;
   const axesNames = Object.keys(axesData);
@@ -81,7 +82,7 @@ const fetchCSSLinks = (fontId: string) => {
   return group;
 };
 
-const fetchCSS = async (url: string) => {
+export const fetchCSS = async (url: string) => {
   // Download CSS stylesheets using Google Fonts APIv2
   try {
     const response = await got(url, {
@@ -91,12 +92,11 @@ const fetchCSS = async (url: string) => {
     }).text();
     return response;
   } catch (error) {
-    consola.error(url, error);
-    return "";
+    throw new Error(`CSS fetch error (variable): ${error}\nURL: ${url}`);
   }
 };
 
-const fetchAllCSS = async (links: Links, ifItal: boolean) => {
+export const fetchAllCSS = async (links: Links, ifItal: boolean) => {
   if (ifItal) {
     return Promise.all([
       fetchCSS(links.full),
@@ -108,7 +108,7 @@ const fetchAllCSS = async (links: Links, ifItal: boolean) => {
   return Promise.all([fetchCSS(links.full), fetchCSS(links.wghtOnly)]);
 };
 
-const parseCSS = (css: string[], fontId: string) => {
+export const parseCSS = (css: string[], fontId: string) => {
   const axesData = data[fontId].axes;
 
   const fontObject: FontVariantsVariable = {
@@ -230,8 +230,7 @@ export const parseVariable = async (noValidate: boolean) => {
     );
 
     return consola.success(
-      `All ${
-        Object.keys(data).length
+      `All ${Object.keys(data).length
       } variable font datapoints have been generated.`
     );
   });

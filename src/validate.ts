@@ -6,7 +6,6 @@ import { APIv1, APIv2, APIVariable } from "./index";
 import {
   fontObjectValidate,
   fontObjectVariableValidate,
-  ValidationError,
 } from "./schema";
 
 type Version = "v1" | "v2" | "variable";

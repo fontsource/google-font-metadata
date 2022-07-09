@@ -4,6 +4,5 @@ export default defineConfig({
   test: {
     setupFiles: ["./tests/utils/setup-tests.ts"],
     outputDiffLines: 250,
-    outputTruncateLength: 250,
   },
 });

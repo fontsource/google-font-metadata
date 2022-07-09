@@ -5,8 +5,12 @@ import { join } from "pathe";
 
 import type { APIResponse } from "../../src";
 import { variantsListGen } from "../../src/api-parser-v2";
+import type { Links } from "../../src/variable-parser";
+import { fetchCSSLinks } from "../../src/variable-parser";
 import APIDirect from "../fixtures/api-response.json";
 import userAgents from "../fixtures/user-agents.json";
+import APIVariableDirect from "../fixtures/variable-response.json"
+import { dataFixture } from './helpers';
 
 // Modified from api-parser-v1.ts
 type Extension = "woff2" | "woff" | "ttf";
@@ -76,6 +80,7 @@ const writeFixtures1 = async () => {
   }
 };
 
+// Modified from api-parser-v2.ts
 const fetchCSS2 = async (
   font: APIResponse,
   userAgent: string,
@@ -132,10 +137,64 @@ const writeFixtures2 = async () => {
   }
 };
 
+// Modified from variable-parser.ts
+type LinksType = "full" | "wghtOnly"
+type Style = "normal" | "italic"
+const fetchCSSVariable = async (url: string, type: LinksType, style: Style) => {
+  // Download CSS stylesheets using Google Fonts APIv2
+  try {
+    const response = await got(url, {
+      headers: {
+        "User-Agent": userAgents.apiv2.variable,
+      },
+    }).text();
+    return { response, type, style };
+  } catch (error) {
+    throw new Error(`CSS fetch error (variable): ${error}\nURL: ${url}`);
+  }
+};
+
+const fetchAllCSSVariable = async (links: Links, ifItal: boolean) => {
+  if (ifItal) {
+    return Promise.all([
+      fetchCSSVariable(links.full, "full", "normal"),
+      fetchCSSVariable(links.wghtOnly, "wghtOnly", "normal"),
+      fetchCSSVariable(links.fullItalic, "full", "italic"),
+      fetchCSSVariable(links.wghtOnlyItalic, "wghtOnly", "italic"),
+    ]);
+  }
+  return Promise.all([fetchCSSVariable(links.full, "full", "normal"), fetchCSSVariable(links.wghtOnly, "wghtOnly", "normal")]);
+};
+
+const writeFixturesVariable = async () => {
+  // Clear existing fixtures
+  const fixtureDir = join(process.cwd(), "tests/fixtures/variable-parser")
+  await fs.rm(fixtureDir, { recursive: true });
+  await fs.mkdir(fixtureDir)
+
+  for (const font of Object.keys(APIVariableDirect)) {
+    const cssLinks = fetchCSSLinks(font, dataFixture("variable-response"));
+    // eslint-disable-next-line no-await-in-loop
+    const cssAll = await fetchAllCSSVariable(cssLinks.links, cssLinks.ifItal);
+    for (const css of cssAll) {
+      // eslint-disable-next-line no-await-in-loop
+      await fs.writeFile(
+        join(
+          fixtureDir,
+          `${font}-${css.type}-${css.style}.css`
+        ),
+        css.response
+      );
+    }
+  }
+};
+
 // eslint-disable-next-line unicorn/prefer-top-level-await
 (async () => {
   await writeFixtures1();
   consola.success("Fixtures generated for APIv1");
   await writeFixtures2();
   consola.success("Fixtures generated for APIv2");
+  await writeFixturesVariable();
+  consola.success("Fixtures generated for APIVariable");
 })();
