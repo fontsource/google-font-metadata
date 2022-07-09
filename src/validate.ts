@@ -4,10 +4,9 @@ import colors from "picocolors";
 import type { FontObject } from "./index";
 import { APIv1, APIv2, APIVariable } from "./index";
 import {
-  fontObjectV1Validate,
-  fontObjectV2Schema,
-  fontObjectVariableSchema,
-  ValidationError
+  fontObjectValidate,
+  fontObjectVariableValidate,
+  ValidationError,
 } from "./schema";
 
 type Version = "v1" | "v2" | "variable";
@@ -15,31 +14,20 @@ type Version = "v1" | "v2" | "variable";
 const validate = (version: Version, data: FontObject) => {
   consola.info(
     `Validating metadata... ${colors.bold(
-      colors.yellow(`[API ${version.toUpperCase()}]`)
+      colors.yellow(`[API ${version.toUpperCase}]`)
     )}`
   );
   switch (version) {
     case "v1": {
-      fontObjectV1Validate(data)
+      fontObjectValidate(data, "v1");
       break;
     }
     case "v2": {
-      const valid = fontObjectV2Schema.safeParse(data);
-      if (!valid.success) {
-        throw new ValidationError(
-          valid.error.toString(), "v2"
-        );
-      }
-
+      fontObjectValidate(data, "v2");
       break;
     }
     case "variable": {
-      const valid = fontObjectVariableSchema.safeParse(data);
-      if (!valid.success) {
-        throw new ValidationError(
-          valid.error.toString(), "variable"
-        );
-      }
+      fontObjectVariableValidate(data);
       break;
     }
     default: {

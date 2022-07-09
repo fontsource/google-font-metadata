@@ -1,5 +1,5 @@
 import { rest } from "msw";
-import * as fs from "node:fs";
+import fs from "node:fs";
 
 import APIResponse from "../fixtures/api-response.json";
 import userAgent from "../fixtures/user-agents.json";

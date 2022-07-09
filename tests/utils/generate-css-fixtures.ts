@@ -55,6 +55,11 @@ const fetchAllCSS1 = async (font: APIResponse): Promise<CSS[]> =>
   ]);
 
 const writeFixtures1 = async () => {
+  // Clear existing fixtures
+  const fixtureDir = join(process.cwd(), "tests/fixtures/api-parser-v1")
+  await fs.rm(fixtureDir, { recursive: true });
+  await fs.mkdir(fixtureDir)
+
   for (const font of APIDirect) {
     // eslint-disable-next-line no-await-in-loop
     const cssAll = await fetchAllCSS1(font);
@@ -62,8 +67,7 @@ const writeFixtures1 = async () => {
       // eslint-disable-next-line no-await-in-loop
       await fs.writeFile(
         join(
-          process.cwd(),
-          `tests/fixtures/api-parser-v1`,
+          fixtureDir,
           `${css.id}-${css.subset}-${css.extension}.css`
         ),
         css.response
@@ -104,9 +108,14 @@ const fetchAllCSS2 = async (font: APIResponse): Promise<CSS[]> => {
     await fetchCSS2(font, userAgents.apiv2.woff, variants, "woff"),
     await fetchCSS2(font, userAgents.apiv2.ttf, variants, "ttf"),
   ]);
-}
+};
 
 const writeFixtures2 = async () => {
+  // Clear existing fixtures
+  const fixtureDir = join(process.cwd(), "tests/fixtures/api-parser-v2")
+  await fs.rm(fixtureDir, { recursive: true });
+  await fs.mkdir(fixtureDir)
+
   for (const font of APIDirect) {
     // eslint-disable-next-line no-await-in-loop
     const cssAll = await fetchAllCSS2(font);
@@ -114,8 +123,7 @@ const writeFixtures2 = async () => {
       // eslint-disable-next-line no-await-in-loop
       await fs.writeFile(
         join(
-          process.cwd(),
-          `tests/fixtures/api-parser-v2`,
+          fixtureDir,
           `${css.id}-${css.extension}.css`
         ),
         css.response
