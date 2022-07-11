@@ -13,42 +13,15 @@ import type {
   FontObjectVariable,
   FontObjectVariableDirect,
   FontVariantsVariable,
+  SupportedAxes
 } from "./types";
+import { isAxesKey, isStandardAxesKey } from "./types";
 import { orderObject } from "./utils";
-// eslint-disable-next-line import/no-cycle
 import { validate } from "./validate";
 
 export interface Links {
   [axes: string]: string;
 }
-
-// We manually add support for new axes to ensure they aren't breaking since Google likes to introduce new ways to use them
-const SUPPORTED_AXES_UPPER = [
-  "CASL",
-  "CRSV",
-  "FILL",
-  "GRAD",
-  "MONO",
-  "SOFT",
-  "WONK",
-  "XOPQ",
-  "XTRA",
-  "YOPQ",
-  "YTAS",
-  "YTDE",
-  "YTFI",
-  "YTLC",
-  "YTUC",
-] as const;
-const SUPPORTED_AXES_LOWER = ["ital", "opsz", "slnt", "wdth", "wght"] as const;
-export const SUPPORTED_AXES = [
-  ...SUPPORTED_AXES_LOWER,
-  ...SUPPORTED_AXES_UPPER,
-] as const;
-type SupportedAxes = typeof SUPPORTED_AXES[number];
-
-const STANDARD_AXES = ["opsz", "slnt", "wdth", "wght"] as const;
-type StandardAxes = typeof STANDARD_AXES[number];
 
 // CSS API needs axes to given in alphabetical order or request throws e.g. (a,b,c,A,B,C)
 export const sortAxes = (axesArr: string[]) => {
@@ -83,11 +56,6 @@ export const addAndMergeAxesRange = (
 
   return [mergedAxes, mergedRange];
 };
-
-export const isAxesKey = (axesKey: string): axesKey is SupportedAxes =>
-  SUPPORTED_AXES.includes(axesKey as SupportedAxes);
-const isStandardAxesKey = (axesKey: string): axesKey is StandardAxes =>
-  STANDARD_AXES.includes(axesKey as StandardAxes);
 
 export const generateCSSLinks = (font: FontObjectVariableDirect) => {
   const baseurl = "https://fonts.googleapis.com/css2?family=";
@@ -311,8 +279,7 @@ export const parseVariable = async (noValidate: boolean) => {
     );
 
     return consola.success(
-      `All ${
-        Object.keys(results).length
+      `All ${Object.keys(results).length
       } variable font datapoints have been generated.`
     );
   });

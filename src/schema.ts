@@ -3,19 +3,17 @@ import colors from "picocolors";
 import { z, ZodError } from "zod";
 
 import type { FontObject, FontObjectV2, FontObjectVariable } from "./types";
-// eslint-disable-next-line import/no-cycle
-import { isAxesKey } from "./variable-parser";
+import { isAxesKey } from "./types";
 
 type Version = "v1" | "v2" | "variable";
 export class ValidationError extends Error {
   constructor(message: string | ZodError, version: Version, id?: string) {
-    const shell = `Invalid parse for ${version}${
-      id ? ` ${id}` : ""
-    }! Try running ${colors.yellow(
-      version !== "variable"
-        ? "npx gfm parse -f"
-        : "npx gfm generate --variable && npx gfm parse --variable"
-    )}.\nIf the problem still persists, Google may have tweaked their API. Please make an issue on google-font-metadata.\n`;
+    const shell = `Invalid parse for ${version}${id ? ` ${id}` : ""
+      }! Try running ${colors.yellow(
+        version !== "variable"
+          ? "npx gfm parse -f"
+          : "npx gfm generate --variable && npx gfm parse --variable"
+      )}.\nIf the problem still persists, Google may have tweaked their API. Please make an issue on google-font-metadata.\n`;
     super(shell + message);
     this.name = "ValidationError";
   }
