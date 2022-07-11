@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/recursive/v34/8vJN7wMr0mhh-RQChyHEH06TlXhq_gukbYrFMk1QuAIcyEwG_X-dpEfaE5YaERmK-CImKsvxvU-MXGX2fSqasNfUvz2xbXfn1uEQadDck317tQs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/recursive/v34/8vJN7wMr0mhh-RQChyHEH06TlXhq_gukbYrFMk1QuAIcyEwG_X-dpEfaE5YaERmK-CImKsvxvU-MXGX2fSqasNfUvz2xbXfn1uEQadCCk317tQs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/recursive/v34/8vJN7wMr0mhh-RQChyHEH06TlXhq_gukbYrFMk1QuAIcyEwG_X-dpEfaE5YaERmK-CImKsvxvU-MXGX2fSqasNfUvz2xbXfn1uEQadCwk317tQs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/recursive/v34/8vJN7wMr0mhh-RQChyHEH06TlXhq_gukbYrFMk1QuAIcyEwG_X-dpEfaE5YaERmK-CImKsvxvU-MXGX2fSqasNfUvz2xbXfn1uEQadBclH17tQs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/recursive/v34/8vJN7wMr0mhh-RQChyHEH06TlXhq_gukbYrFMk1QuAIcyEwG_X-dpEfaE5YaERmK-CImKsvxvU-MXGX2fSqasNfUvz2xbXfn1uEQadBllH17tQs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/recursive/v34/8vJN7wMr0mhh-RQChyHEH06TlXhq_gukbYrFMk1QuAIcyEwG_X-dpEfaE5YaERmK-CImKsvxvU-MXGX2fSqasNfUvz2xbXfn1uEQadAClH17tQs.woff) format('woff');
+}
+@font-face {
+  font-family: 'Recursive';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/recursive/v34/8vJN7wMr0mhh-RQChyHEH06TlXhq_gukbYrFMk1QuAIcyEwG_X-dpEfaE5YaERmK-CImKsvxvU-MXGX2fSqasNfUvz2xbXfn1uEQadArlH17tQs.woff) format('woff');
+}

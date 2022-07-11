@@ -4,119 +4,241 @@
 
 A metadata generator that fetches and parses the Google Fonts API to be primarily used for the [Fontsource monorepo](https://github.com/fontsource/fontsource).
 
-`APIv1` uses the Google Fonts CSS APIv1 that includes different font files for every subset, but does NOT include unicode-range values.
-
-`APIv2` uses CSS APIv2 and includes unicode-range values for every subset. However, the API serves `woff/ttf` files with **ALL** subsets included in one file and therefore all links for those file types in the same subset lead to the same link for each weight and style. `woff2` files are individually split per subset.
-
 ## Installation
 
-Download via NPM
+Install the package from `npm`:
 
-```js
-yarn add google-font-metadata // npm install google-font-metadata
+```shell
+npm install google-font-metadata
 ```
 
 ## Usage
 
-```js
-const { APIv1, APIv2 } = require("google-font-metadata");
+The project exports the following data:
+
+```ts
+import { APIv1, APIv2, APIVariable } from "google-font-metadata";
+const { APIv1, APIv2, APIVariable } = require("google-font-metadata");
 
 console.dir(APIv2);
 ```
 
-Returns an object list containing metadata of every available Google Font:
+## APIv1
+
+Uses the Google Fonts CSS APIv1 that includes different font files for each subset, but does NOT include unicode-range values. This isn't usually recommended.
+
+It exports [`data/google-fonts-v1.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/google-fonts-v1.json).
 
 ```json
 {
-  "actor": {
-    "family": "Actor",
-    "id": "actor",
+...
+"abel": {
+    "family": "Abel",
+    "id": "abel",
+    "subsets": ["latin"],
+    "weights": [400],
+    "styles": ["normal"],
+    "variants": {
+      "400": {
+        "normal": {
+          "latin": {
+            "url": {
+              "woff2": "https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE2V9BPQ.woff2",
+              "woff": "https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE2V9BOw.woff",
+              "truetype": "https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE2V9BOA.ttf"
+            }
+          }
+        }
+      }
+    },
+    "defSubset": "latin",
+    "lastModified": "2022-04-20",
+    "version": "v18",
+    "category": "sans-serif"
+  },
+...
+}
+```
+
+## APIv2
+
+Uses the Google Fonts CSS APIv2 and includes the unicode-range values for every subset. However, the API serves `woff/ttf` files with **ALL** subsets included in one file and therefore all links for those file types in the same subset lead to the same link for each weight and style. `woff2` files are individually split per subset.
+
+Exports [`data/google-fonts-v2.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/google-fonts-v2.json).
+
+```json
+{
+...
+"abel": {
+    "family": "Abel",
+    "id": "abel",
     "subsets": ["latin"],
     "weights": [400],
     "styles": ["normal"],
     "unicodeRange": {
-      "latin": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+      "latin": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
     },
     "variants": {
       "400": {
         "normal": {
           "latin": {
             "url": {
-              "woff2": "https://fonts.gstatic.com/s/actor/v9/wEOzEBbCkc5cO0ejVSk.woff2",
-              "woff": "https://fonts.gstatic.com/s/actor/v9/wEOzEBbCkc5cO3en.woff",
-              "truetype": "https://fonts.gstatic.com/s/actor/v9/wEOzEBbCkc5cO3ek.ttf"
+              "woff2": "https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE2V9BPQ.woff2",
+              "woff": "https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE6Vs.woff",
+              "truetype": "https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE6Vg.ttf"
             }
           }
         }
       }
     },
-    "defSubset":"latin",
-    "lastModified": "2019-07-16",
-    "version": "v9",
+    "defSubset": "latin",
+    "lastModified": "2022-04-20",
+    "version": "v18",
     "category": "sans-serif"
   },
-  ...
+...
 }
 ```
 
-### Things to note:
-
-- APIv1 does not have the unicodeRange key.
-- Fonts such as Noto Sans JP, typically for large fontsets such as Japanese, Korean or Chinese, are divided into many smaller subsets that utilize the unicode-range @fontface selector such as subset `[118]` in APIv2.
-
-## Variable Fonts
-
-We support fetching additional information on variable fonts.
-
-```js
-const { APIVariable } = require("google-font-metadata");
-
-console.dir(APIVariable);
-```
-
-Returns an object that provides axes details and download links.
+Note that fonts with large glyphsets such as the Japanese, Korean or Chinese language, are divided into many smaller **numbered** subsets that utilize the unicode-range @fontface selector. An example is Noto Sans JP which returns the following:
 
 ```json
-"encode-sans": {
-    "family": "Encode Sans",
+{
+...
+ "noto-sans-jp": {
+    "family": "Noto Sans JP",
+    "id": "noto-sans-jp",
+    "subsets": ["japanese", "latin"],
+    "weights": [100, 300, 400, 500, 700, 900],
+    "styles": ["normal"],
+    "unicodeRange": {
+      "[0]": "U+25ee8,...,U+2f9f4",
+      "[1]": "U+1f235-1f23b,...,U+25ed8",
+      ...
+      "[119]": "U+20,...,U+ff0e"
+      },
+    "variants": {
+      "100": {
+        "normal": {
+          "[0]": {
+            "url": {
+              "woff2": "https://fonts.gstatic.com/s/notosansjp/v42/-F6ofjtqLzI2JPCgQBnw7HFQoggPkENvl4B0ZLgOquiXidBa3qHiDcp2RQ.0.woff2",
+              "woff": "https://fonts.gstatic.com/s/notosansjp/v42/-F6ofjtqLzI2JPCgQBnw7HFQoggJ.woff",
+              "opentype": "https://fonts.gstatic.com/s/notosansjp/v42/-F6ofjtqLzI2JPCgQBnw7HFQoggM.otf"
+            }
+          },
+          ...,
+        },
+        ...,
+      }
+    }
+  }
+...
+}
+```
+
+## APIVariable
+
+Scrapes the Google Fonts directory and uses the Google Fonts API to generate all the relevant axis definitions and download variant metadata. You can learn more variable font axis' [here](https://fonts.google.com/variablefonts).
+
+There are 3 default variants:
+
+- `wght` - Only links to font files that only have the `wght` axis.
+- `standard` - A default set of fonts that includes `wght, wdth, slnt, opsz` axis' if available.
+- `full` - Links to font files that have all the axis' included within them.
+
+Furthermore, a variant is generated for each unique axis in the font, e.g. if `wdth` exists, `variants.wdth.normal.latin` will exist. Note that the `wght` axis is also included in each unique custom variant.
+
+Exports [`data/variable.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/variable.json).
+
+```json
+{
+...
+"akshar": {
+    "family": "Akshar",
+    "id": "akshar",
     "axes": {
-      "wdth": { "default": "100", "min": "75", "max": "125", "step": "0.1" },
-      "wght": { "default": "400", "min": "100", "max": "900", "step": "1" }
+      "wght": { "default": "400", "min": "300", "max": "700", "step": "1" }
     },
     "variants": {
-      "full": {
+      "wght": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/encodesans/v7/LDI2apOFNxEwR-Bd1O9uYPOkeef2kg.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/encodesans/v7/LDI2apOFNxEwR-Bd1O9uYPOleef2kg.woff2",
-          "latin": "https://fonts.gstatic.com/s/encodesans/v7/LDI2apOFNxEwR-Bd1O9uYPOreec.woff2"
+          "devanagari": "https://fonts.gstatic.com/s/akshar/v5/Yq6V-LyHWTfz9rGCpR5lhOc.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/akshar/v5/Yq6V-LyHWTfz9rGCqh5lhOc.woff2",
+          "latin": "https://fonts.gstatic.com/s/akshar/v5/Yq6V-LyHWTfz9rGCpB5l.woff2"
         }
       },
-      "wghtOnly": {
+      "full": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/encodesans/v7/LDIhapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHLR8A6WQw.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/encodesans/v7/LDIhapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHLRsA6WQw.woff2",
-          "latin": "https://fonts.gstatic.com/s/encodesans/v7/LDIhapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHLSMA6.woff2"
+          "devanagari": "https://fonts.gstatic.com/s/akshar/v5/Yq6V-LyHWTfz9rGCpR5lhOc.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/akshar/v5/Yq6V-LyHWTfz9rGCqh5lhOc.woff2",
+          "latin": "https://fonts.gstatic.com/s/akshar/v5/Yq6V-LyHWTfz9rGCpB5l.woff2"
+        }
+      },
+      "standard": {
+        "normal": {
+          "devanagari": "https://fonts.gstatic.com/s/akshar/v5/Yq6V-LyHWTfz9rGCpR5lhOc.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/akshar/v5/Yq6V-LyHWTfz9rGCqh5lhOc.woff2",
+          "latin": "https://fonts.gstatic.com/s/akshar/v5/Yq6V-LyHWTfz9rGCpB5l.woff2"
         }
       }
     }
   },
-  ...
+...
+}
 ```
 
-### Things to Note
+Note that certain fonts such as Inter or Recursive have the SLNT axis, meaning their `font-style` in CSS won't be `normal` or `italic` on property `full` but `oblique x deg x deg`. Refer to the [CSS test fixture](https://github.com/fontsource/google-font-metadata/blob/v4/tests/fixtures/variable-parser/recursive-slnt-normal.css) for Recursive. While still showing as `normal` in metadata, it is up to the developer to include the `oblique` style if they are generating CSS using the `min` and `max` values from `recursive.axes.slnt` property.
 
-- Certain fonts such as Inter or Recursive have the SLNT axis, meaning their style won't be "normal" on property 'full' but "oblique x deg x deg".
-- You can learn more about all variable font axis date [here](https://fonts.google.com/variablefonts).
+### APIDirect and APIVariableDirect
 
-## Update API files
+These are arrays of generated objects from the `npx gfm generate [key]` command. It is unlikely you will use this.
 
-Initially run `npm run parser:gen $KEY` or `yarn parser:gen $KEY` within the main directory to fetch basic details from Google's servers. `$KEY` must be substituted with a Google Fonts API Key that can be created [here](https://console.developers.google.com/apis/credentials).
+```ts
+import { APIDirect, APIVariableDirect } from "google-font-metadata";
+const { APIDirect, APIVariableDirect } = require("google-font-metadata");
+```
 
-Run `npm run parser:v1` or `npm run parser:v2` to parse through all the fonts to generate the metadata for each of the respective CSS APIs.
+Exports [`data/api-response.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/api-response.json) and [`data/variable-response.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/variable-response.json) respectively.
 
-The additional commands for variable fonts are `npm run variable:gen` and `npm run variable:parse`.
+## Updating API Files
 
-To update the API while using this as a dependency, it is recommended you use `npm explore google-font-metadata -- <run script command>` to run the neccesary commands. Note everytime you update or change your dependencies, the files will be reset to its older state, therefore it's recommended to integrate this into your CI/CD process.
+You can use the `gfm` CLI tool to update the metadata with fresh results from the Google APIs.
+
+`npx gfm generate [key]` - Fetches the default Google Fonts API which can be used for parsing later. This has to be called before `npx gfm parse`.
+
+Flags:
+
+- `-n, --normal` - Only fetch the normal Google Developer API for APIv1 and APIv2.
+- `-v, --variable` - Only scrape the variable axis page for APIVariable. Note `key` does not need to be given if this option is passed.
+
+You are able to get a Google Fonts API `key` value from [here](https://console.developers.google.com/apis/credentials).
+
+##
+
+`npx gfm parse` - Parses through the Google Fonts CSS API and generate full metadata using the `generate` command data.
+
+Flags:
+
+- `-1, --v1` - Only parse and update APIv1.
+- `-2, --v2` - Only parse and update APIv2.
+- `-v, --variable` - Only parse and update APIVariable.
+- `-f, --force` - This skips the cache and force parses every font.
+- `--no-validate` - This skips invoking `npx gfm validate` after finishing parsing.
+
+##
+
+`npx gfm validate` - Helper command to validate your existing metadata with a schema. This is automatically invoked with `npx gfm parse`.
+
+Flags:
+
+- `-1, --v1` - Only validate APIv1.
+- `-2, --v2` - Only validate APIv2.
+- `-v, --variable` - Only validate APIVariable.
+
+##
+
+`npx gfm update-db` - [EXPERIMENTAL] This aims to move parsing away from the client and instead push updates to NPM as new versions, similar to [caniuse-lite](https://github.com/browserslist/caniuse-lite). It will soon be the preferred way to update the metadata as it removes the need to setup Google Credentials and skip the wait-time of long parses.
 
 ## Other Notes
 

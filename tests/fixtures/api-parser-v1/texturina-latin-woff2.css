@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1i4ZnKXw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1j4ZnKXw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWUNj4ZnKXw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1j4ZnKXw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWS9j4ZnKXw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWcNk4ZnKXw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWfpk4ZnKXw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1k4ZnKXw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWbRk4ZnKXw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYG8Un0Zs.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYGsUn0Zs.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2fGGsUn0Zs.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYGsUn0Zs.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eqGsUn0Zs.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2dGHcUn0Zs.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2d_HcUn0Zs.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYHcUn0Zs.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cxHcUn0Zs.woff2) format('woff2');
+}

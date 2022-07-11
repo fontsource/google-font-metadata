@@ -1,236 +1,286 @@
-import async from "async";
+import consola from "consola";
 import got from "got";
-import jsonfile from "jsonfile";
-import postcss from "postcss";
+import stringify from "json-stringify-pretty-compact";
+import * as fs from "node:fs/promises";
+import { fileURLToPath } from "node:url";
+import PQueue from "p-queue";
+import { dirname, join } from "pathe";
+import { compile } from "stylis";
 
-import { EventEmitter } from "events";
-import userAgents from "./data/user-agents.json";
-import dataRaw from "./data/variable.json";
+import { apiv2 as userAgents } from "../data/user-agents.json";
+import { APIVariableDirect } from "./index";
+import type {
+  FontObjectVariable,
+  FontObjectVariableDirect,
+  FontVariantsVariable,
+  SupportedAxes
+} from "./types";
+import { isAxesKey, isStandardAxesKey } from "./types";
+import { orderObject } from "./utils";
+import { validate } from "./validate";
 
-export interface FontObjectVariable {
-  [id: string]: {
-    family: string;
-    axes: {
-      [axesType: string]: {
-        default: string;
-        min: string;
-        max: string;
-        step: string;
-      };
-    };
-    variants: FontVariantsVariable;
-  };
+export interface Links {
+  [axes: string]: string;
 }
 
-export interface FontVariantsVariable {
-  [type: string]: {
-    [style: string]: {
-      [subset: string]: string;
-    };
-  };
-}
-
-interface Links {
-  [type: string]: string;
-}
-const data: FontObjectVariable = dataRaw;
-
-const fetchCSSLinks = (fontId: string) => {
-  const baseurl = "https://fonts.googleapis.com/css2?family=";
-  const axesData = data[fontId].axes;
-  const axesNames = Object.keys(axesData);
-  const axesRange: string[] = [];
-  const fontFamily = data[fontId].family.replace(/\s/g, "+");
-  let axesItal = false;
-
-  // Loop through each axes type and create relevant ranges
-  axesNames.forEach(axes => {
-    // Google API does not support range for ital, only integer. Set flag instead.
-    if (axes === "ital") {
-      axesItal = true;
-    } else {
-      const range = `${axesData[axes].min}..${axesData[axes].max}`;
-      axesRange.push(range);
-    }
-  });
-
-  // Set properties for each link to the CSS
-  const links: Links = {};
-  let wghtIndex = axesNames.indexOf("wght");
-
-  if (axesItal) {
-    // Remove ital from axesNames array
-    const italIndex = axesNames.indexOf("ital");
-    axesNames.splice(italIndex, 1);
-    // Index changed since ital is removed
-    wghtIndex = axesNames.indexOf("wght");
-
-    // Ital specific properties
-    links.wghtOnlyItalic = `${baseurl + fontFamily}:ital,wght@1,${
-      axesRange[wghtIndex]
-    }`;
-    links.fullItalic = `${baseurl + fontFamily}:ital,${axesNames.join(
-      ","
-    )}@1,${axesRange.join(",")}`;
-  }
-
-  // Non-ital specific properties
-  links.wghtOnly = `${baseurl + fontFamily}:wght@${axesRange[wghtIndex]}`;
-  links.full = `${baseurl + fontFamily}:${axesNames.join(",")}@${axesRange.join(
-    ","
-  )}`;
-
-  const group = {
-    links,
-    ifItal: axesItal,
-  };
-
-  return group;
+// CSS API needs axes to given in alphabetical order or request throws e.g. (a,b,c,A,B,C)
+export const sortAxes = (axesArr: string[]) => {
+  const upper = axesArr
+    .filter((axes) => axes === axes.toUpperCase())
+    .sort((a, b) => a.localeCompare(b));
+  const lower = axesArr
+    .filter((axes) => axes === axes.toLowerCase())
+    .sort((a, b) => a.localeCompare(b));
+  return [...lower, ...upper];
 };
 
-const fetchCSS = async (url: string) => {
+type MergedAxesTuple = [MergedAxes: string, MergedRange: string];
+export const addAndMergeAxesRange = (
+  font: FontObjectVariableDirect,
+  axesArr: string[],
+  newAxes: SupportedAxes[]
+): MergedAxesTuple => {
+  for (const axes of newAxes) {
+    if (!axesArr.includes(axes)) {
+      axesArr.push(axes);
+    }
+  }
+  const newAxesArr = sortAxes(axesArr);
+  const mergedAxes = newAxesArr.join(",");
+  // If ital, don't put in normal range and instead use toggle
+  const mergeRange = (mappedAxes: string) =>
+    mappedAxes !== "ital"
+      ? `${font.axes[mappedAxes].min}..${font.axes[mappedAxes].max}`
+      : "1";
+  const mergedRange = newAxesArr.map((axes) => mergeRange(axes)).join(",");
+
+  return [mergedAxes, mergedRange];
+};
+
+export const generateCSSLinks = (font: FontObjectVariableDirect) => {
+  const baseurl = "https://fonts.googleapis.com/css2?family=";
+  const family = font.family.replace(/\s/g, "+");
+
+  const links = {} as Links;
+  let axesKeys = sortAxes(Object.keys(font.axes));
+
+  // ital can't be a range xx..xx and instead acts like a toggle e.g. 0 or 1
+  const hasItal = axesKeys.includes("ital");
+  // wght is technically supposed to be a mandatory axis... but extremely rarely it's not e.g. Ballet
+  const hasWght = axesKeys.includes("wght");
+  // Remove wght and ital from axesKeys as we infer through hasItal and hasWght
+  axesKeys = axesKeys.filter((axis) => !["ital", "wght"].includes(axis));
+
+  const fullAxes: SupportedAxes[] = [];
+  const standardAxes: SupportedAxes[] = [];
+
+  for (const axesKey of axesKeys) {
+    // We manually add support for new axes as they may have different rules to add to link
+    if (isAxesKey(axesKey)) {
+      const axes = font.axes[axesKey];
+      const range = `${axes.min}..${axes.max}`;
+
+      // Have full param arr instead of Object.keys() just in case there is unsupported axes
+      fullAxes.push(axesKey);
+      if (isStandardAxesKey(axesKey)) {
+        standardAxes.push(axesKey);
+      }
+
+      if (hasWght) {
+        const mergedTuple = addAndMergeAxesRange(font, [axesKey], ["wght"]);
+        links[
+          `${axesKey}.normal`
+        ] = `${baseurl}${family}:${mergedTuple[0]}@${mergedTuple[1]}`;
+        if (hasItal) {
+          const italTuple = addAndMergeAxesRange(
+            font,
+            [axesKey],
+            ["ital", "wght"]
+          );
+          links[
+            `${axesKey}.italic`
+          ] = `${baseurl}${family}:${italTuple[0]}@${italTuple[1]}`;
+        }
+      } else {
+        links[`${axesKey}.normal`] = `${baseurl}${family}:${axesKey}@${range}`;
+        if (hasItal) {
+          const italTuple = addAndMergeAxesRange(font, [axesKey], ["ital"]);
+          links[
+            `${axesKey}.italic`
+          ] = `${baseurl}${family}:${italTuple[0]}@${italTuple[1]}`;
+        }
+      }
+    } else {
+      consola.error(
+        `Unsupported axis: ${axesKey}\n Please make an issue on google-font-metadata to add support.`
+      );
+    }
+  }
+
+  // Add just wght and ital variants
+  if (hasWght) {
+    let wghtTuple = addAndMergeAxesRange(font, ["wght"], []);
+    links[
+      "wght.normal"
+    ] = `${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
+    if (hasItal) {
+      wghtTuple = addAndMergeAxesRange(font, ["wght"], ["ital"]);
+      links[
+        "wght.italic"
+      ] = `${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
+    }
+  }
+
+  // Full variant
+  let fullTuple = addAndMergeAxesRange(font, fullAxes, []);
+  if (hasWght) fullTuple = addAndMergeAxesRange(font, fullAxes, ["wght"]);
+  links["full.normal"] = `${baseurl}${family}:${fullTuple[0]}@${fullTuple[1]}`;
+
+  if (hasItal) {
+    let fullItalTuple = addAndMergeAxesRange(font, fullAxes, ["ital"]);
+    if (hasWght)
+      fullItalTuple = addAndMergeAxesRange(font, fullAxes, ["ital", "wght"]);
+
+    links[
+      "full.italic"
+    ] = `${baseurl}${family}:${fullItalTuple[0]}@${fullItalTuple[1]}`;
+  }
+
+  // Standard variant
+  let standardTuple = addAndMergeAxesRange(font, standardAxes, []);
+  if (hasWght)
+    standardTuple = addAndMergeAxesRange(font, standardAxes, ["wght"]);
+  links[
+    "standard.normal"
+  ] = `${baseurl}${family}:${standardTuple[0]}@${standardTuple[1]}`;
+
+  if (hasItal) {
+    let standardItalTuple = addAndMergeAxesRange(font, standardAxes, ["ital"]);
+    if (hasWght)
+      standardItalTuple = addAndMergeAxesRange(font, standardAxes, [
+        "ital",
+        "wght",
+      ]);
+
+    links[
+      "standard.italic"
+    ] = `${baseurl}${family}:${standardItalTuple[0]}@${standardItalTuple[1]}`;
+  }
+
+  return links;
+};
+
+export const fetchCSS = async (url: string) => {
   // Download CSS stylesheets using Google Fonts APIv2
   try {
     const response = await got(url, {
       headers: {
-        "User-Agent": userAgents.apiv2.variable,
+        "User-Agent": userAgents.variable,
       },
     }).text();
     return response;
   } catch (error) {
-    console.error(error);
-    return "";
+    throw new Error(`CSS fetch error (variable): ${error}\nURL: ${url}`);
   }
 };
 
-const fetchAllCSS = async (links: Links, ifItal: boolean) => {
-  if (ifItal) {
-    return Promise.all([
-      await fetchCSS(links.full),
-      await fetchCSS(links.wghtOnly),
-      await fetchCSS(links.fullItalic),
-      await fetchCSS(links.wghtOnlyItalic),
-    ]);
-  }
-  return Promise.all([
-    await fetchCSS(links.full),
-    await fetchCSS(links.wghtOnly),
-  ]);
-};
+// [key, css]
+export const fetchAllCSS = async (links: Links) =>
+  Promise.all(
+    Object.keys(links).map(async (key) => [key, await fetchCSS(links[key])])
+  );
 
-const parseCSS = (css: string[], fontId: string) => {
-  const axesData = data[fontId].axes;
-
-  const fontObject: FontVariantsVariable = {
-    full: {},
-    wghtOnly: {},
-  };
+export const parseCSS = (cssTuple: string[][]) => {
+  const fontVariants: FontVariantsVariable = {};
 
   let subset = "";
-  let fontStyle = "";
-  css.forEach((extension: string, index: number) => {
-    const root = postcss.parse(extension);
+  for (const [key, cssVariant] of cssTuple) {
+    const [fontType, fontStyle] = key.split(".");
+    const rules = compile(cssVariant);
 
-    root.each(rule => {
-      if (rule.type === "comment") {
-        subset = rule.text;
+    for (const rule of rules) {
+      if (rule.type === "comm") {
+        if (typeof rule.children !== "string")
+          throw new TypeError(`Unknown child of comment: ${rule.children}`);
+
+        subset = rule.children.trim();
       }
 
-      if (rule.type === "atrule" && rule.name === "font-face") {
-        rule.walkDecls("font-style", decl => {
-          fontStyle = decl.value;
-          // Removes any oblique xdeg xdeg from being written to file
-          if (
-            "slnt" in axesData &&
-            fontStyle !== "normal" &&
-            fontStyle !== "italic"
-          ) {
-            fontStyle = "normal";
-          }
-        });
+      if (rule.type === "@font-face") {
+        for (const subrule of rule.children) {
+          // Type guard to ensure there are children in font-face rules
+          if (typeof subrule === "string")
+            throw new TypeError(`Unknown subrule: ${subrule}`);
 
-        if (index === 0 || index === 2) {
-          fontObject.full[fontStyle] = fontObject.full[fontStyle] || {};
-        }
-        if (index === 1 || index === 3) {
-          fontObject.wghtOnly[fontStyle] = fontObject.wghtOnly[fontStyle] || {};
-        }
+          // Build out nested objects
+          fontVariants[fontType] = fontVariants[fontType] || {};
+          fontVariants[fontType][fontStyle] =
+            fontVariants[fontType][fontStyle] || {};
 
-        rule.walkDecls("src", decl => {
-          postcss.list.comma(decl.value).forEach(value => {
+          // Define src props
+          if (subrule.props === "src") {
+            if (typeof subrule.children !== "string")
+              throw new TypeError(`Unknown src child: ${subrule.children}`);
+
             const typeMatch = /(url)\((.+?)\)/g;
 
             // Finds all groups that match the regex using the string.matchAll function
-            const match: string[][] = [...value.matchAll(typeMatch)];
+            const match: string[][] = [...subrule.children.matchAll(typeMatch)];
 
             const type: string = match[0][1];
             const path: string = match[0][2];
 
-            if (type === "url") {
-              if (index === 0 || index === 2) {
-                fontObject.full[fontStyle][subset] = path;
-              }
-              if (index === 1 || index === 3) {
-                fontObject.wghtOnly[fontStyle][subset] = path;
-              }
-            }
-          });
-        });
+            if (type === "url")
+              fontVariants[fontType][fontStyle][subset] = path;
+          }
+        }
       }
-    });
-  });
-  // If the object has no extra axes values other than wght and ital, delete full.
-  // Skip if font has SLNT axis as the comparison will not work due to oblique not matching normal
-  if (!Object.keys(data[fontId].axes).includes("slnt")) {
-    if (
-      fontObject.full[fontStyle][subset] ===
-      fontObject.wghtOnly[fontStyle][subset]
-    ) {
-      delete fontObject.full;
     }
   }
 
-  return fontObject;
+  return fontVariants;
 };
 
-const processQueue = async (fontId: string) => {
-  const cssLinks = fetchCSSLinks(fontId);
-  const css = await fetchAllCSS(cssLinks.links, cssLinks.ifItal); // [0] = Actual links, [1] = IfItal
-  const variableObject = parseCSS(css, fontId);
-  data[fontId].variants = variableObject;
+const results: FontObjectVariable = {};
 
-  console.log(`Parsed ${fontId}`);
+const processQueue = async (font: FontObjectVariableDirect) => {
+  const cssLinks = generateCSSLinks(font);
+  const cssTuple = await fetchAllCSS(cssLinks);
+  const variantsObject = parseCSS(cssTuple);
+  results[font.id] = { ...font, variants: variantsObject };
+  consola.success(`Parsed ${font.id}`);
 };
 
-// Default listener count is limited to 10. Removing limit.
-EventEmitter.defaultMaxListeners = 0;
+// Queue control
+const queue = new PQueue({ concurrency: 10 });
 
-// eslint-disable-next-line @typescript-eslint/no-misused-promises
-const queue = async.queue(processQueue, 10);
-
-queue.error((err, fontId) => {
-  console.error(`${fontId} experienced an error.`, err);
+// @ts-ignore - rollup-plugin-dts being too strict
+queue.on("error", (error: Error) => {
+  consola.error(error);
 });
 
-queue.drain(() => {
-  jsonfile
-    .writeFile("./lib/data/variable.json", data)
-    .then(() => {
-      console.log(
-        `All ${
-          Object.keys(data).length
-        } variable font datapoints have been generated.`
-      );
-    })
-    .catch(error => console.error(error));
-});
+export const parseVariable = async (noValidate: boolean) => {
+  for (const font of APIVariableDirect) {
+    try {
+      queue.add(() => processQueue(font));
+    } catch (error) {
+      throw new Error(`${font.family} experienced an error. ${error}`);
+    }
+  }
+  await queue.onIdle().then(async () => {
+    if (!noValidate) {
+      validate("variable", results);
+    }
 
-const production = () => {
-  const fonts = Object.keys(data);
+    const ordered = orderObject(results);
+    await fs.writeFile(
+      join(dirname(fileURLToPath(import.meta.url)), "../data/variable.json"),
+      stringify(ordered)
+    );
 
-  fonts.forEach(fontId => {
-    queue.push(fontId);
+    return consola.success(
+      `All ${Object.keys(results).length
+      } variable font datapoints have been generated.`
+    );
   });
 };
-
-production();

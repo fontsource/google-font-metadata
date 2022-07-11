@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Zilla Slab Highlight';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/zillaslabhighlight/v17/gNMbW2BrTpK8-inLtBJgMMfbm6uNVDvRxhtI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Zilla Slab Highlight';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/zillaslabhighlight/v17/gNMUW2BrTpK8-inLtBJgMMfbm6uNVDvRxiP0TET4.ttf) format('truetype');
+}

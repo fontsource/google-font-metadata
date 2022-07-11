@@ -1,0 +1,1937 @@
+[
+  {
+    "family": "Akshar",
+    "id": "akshar",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Albert Sans",
+    "id": "albert-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Alegreya",
+    "id": "alegreya",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Alumni Sans",
+    "id": "alumni-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Andada Pro",
+    "id": "andada-pro",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "840", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Bangla",
+    "id": "anek-bangla",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Devanagari",
+    "id": "anek-devanagari",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Gujarati",
+    "id": "anek-gujarati",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Gurmukhi",
+    "id": "anek-gurmukhi",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Kannada",
+    "id": "anek-kannada",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Latin",
+    "id": "anek-latin",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Malayalam",
+    "id": "anek-malayalam",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Odia",
+    "id": "anek-odia",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Tamil",
+    "id": "anek-tamil",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Anek Telugu",
+    "id": "anek-telugu",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Antonio",
+    "id": "antonio",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Anybody",
+    "id": "anybody",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "50", "max": "150", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Archivo",
+    "id": "archivo",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "62", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Archivo Narrow",
+    "id": "archivo-narrow",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Arima",
+    "id": "arima",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Arimo",
+    "id": "arimo",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Asap",
+    "id": "asap",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Assistant",
+    "id": "assistant",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Azeret Mono",
+    "id": "azeret-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Ballet",
+    "id": "ballet",
+    "axes": {"opsz": {"default": "16", "min": "16", "max": "72", "step": "0.1"}}
+  },
+  {
+    "family": "Baloo 2",
+    "id": "baloo-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Baloo Bhai 2",
+    "id": "baloo-bhai-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Baloo Bhaijaan 2",
+    "id": "baloo-bhaijaan-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Baloo Bhaina 2",
+    "id": "baloo-bhaina-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Baloo Chettan 2",
+    "id": "baloo-chettan-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Baloo Da 2",
+    "id": "baloo-da-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Baloo Paaji 2",
+    "id": "baloo-paaji-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Baloo Tamma 2",
+    "id": "baloo-tamma-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Baloo Tammudu 2",
+    "id": "baloo-tammudu-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Baloo Thambi 2",
+    "id": "baloo-thambi-2",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Besley",
+    "id": "besley",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Big Shoulders Display",
+    "id": "big-shoulders-display",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Big Shoulders Inline Display",
+    "id": "big-shoulders-inline-display",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Big Shoulders Inline Text",
+    "id": "big-shoulders-inline-text",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Big Shoulders Stencil Display",
+    "id": "big-shoulders-stencil-display",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Big Shoulders Stencil Text",
+    "id": "big-shoulders-stencil-text",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Big Shoulders Text",
+    "id": "big-shoulders-text",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitter",
+    "id": "bitter",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Bodoni Moda",
+    "id": "bodoni-moda",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "11", "min": "6", "max": "96", "step": "0.1"},
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Brygada 1918",
+    "id": "brygada-1918",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Cabin",
+    "id": "cabin",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Cairo",
+    "id": "cairo",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "1000", "step": "1"}
+    }
+  },
+  {
+    "family": "Catamaran",
+    "id": "catamaran",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Caveat",
+    "id": "caveat",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Changa",
+    "id": "changa",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Cinzel",
+    "id": "cinzel",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Comfortaa",
+    "id": "comfortaa",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Commissioner",
+    "id": "commissioner",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Cormorant",
+    "id": "cormorant",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Crimson Pro",
+    "id": "crimson-pro",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Cuprum",
+    "id": "cuprum",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Dancing Script",
+    "id": "dancing-script",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Domine",
+    "id": "domine",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Dosis",
+    "id": "dosis",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "EB Garamond",
+    "id": "eb-garamond",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Eczar",
+    "id": "eczar",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu NSW ACT Foundation",
+    "id": "edu-nsw-act-foundation",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu QLD Beginner",
+    "id": "edu-qld-beginner",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu SA Beginner",
+    "id": "edu-sa-beginner",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu TAS Beginner",
+    "id": "edu-tas-beginner",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu VIC WA NT Beginner",
+    "id": "edu-vic-wa-nt-beginner",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "El Messiri",
+    "id": "el-messiri",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Encode Sans",
+    "id": "encode-sans",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Encode Sans SC",
+    "id": "encode-sans-sc",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Epilogue",
+    "id": "epilogue",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Exo",
+    "id": "exo",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Exo 2",
+    "id": "exo-2",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Expletus Sans",
+    "id": "expletus-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Familjen Grotesk",
+    "id": "familjen-grotesk",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Faustina",
+    "id": "faustina",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Finlandica",
+    "id": "finlandica",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Fira Code",
+    "id": "fira-code",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Fraunces",
+    "id": "fraunces",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "14", "min": "9", "max": "144", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "SOFT": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "WONK": {"default": "0", "min": "0", "max": "1", "step": "1"}
+    }
+  },
+  {
+    "family": "Fredoka",
+    "id": "fredoka",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Gantari",
+    "id": "gantari",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Gemunu Libre",
+    "id": "gemunu-libre",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Genos",
+    "id": "genos",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Georama",
+    "id": "georama",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "62.5", "max": "150", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Glory",
+    "id": "glory",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Gluten",
+    "id": "gluten",
+    "axes": {
+      "slnt": {"default": "0", "min": "-13", "max": "13", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Grandstander",
+    "id": "grandstander",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Grenze Gotisch",
+    "id": "grenze-gotisch",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Hahmlet",
+    "id": "hahmlet",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Heebo",
+    "id": "heebo",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Hepta Slab",
+    "id": "hepta-slab",
+    "axes": {"wght": {"default": "400", "min": "1", "max": "900", "step": "1"}}
+  },
+  {
+    "family": "Ibarra Real Nova",
+    "id": "ibarra-real-nova",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Imbue",
+    "id": "imbue",
+    "axes": {
+      "opsz": {"default": "10", "min": "10", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Inconsolata",
+    "id": "inconsolata",
+    "axes": {
+      "wdth": {"default": "100", "min": "50", "max": "200", "step": "0.1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Inter",
+    "id": "inter",
+    "axes": {
+      "slnt": {"default": "0", "min": "-10", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "JetBrains Mono",
+    "id": "jetbrains-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Josefin Sans",
+    "id": "josefin-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Josefin Slab",
+    "id": "josefin-slab",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Jost",
+    "id": "jost",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Jura",
+    "id": "jura",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Kantumruy Pro",
+    "id": "kantumruy-pro",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Karla",
+    "id": "karla",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Kreon",
+    "id": "kreon",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Kufam",
+    "id": "kufam",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Kumbh Sans",
+    "id": "kumbh-sans",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "League Gothic",
+    "id": "league-gothic",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"}
+    }
+  },
+  {
+    "family": "League Spartan",
+    "id": "league-spartan",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Lemonada",
+    "id": "lemonada",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Lexend",
+    "id": "lexend",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Lexend Deca",
+    "id": "lexend-deca",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Lexend Exa",
+    "id": "lexend-exa",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Lexend Giga",
+    "id": "lexend-giga",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Lexend Mega",
+    "id": "lexend-mega",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Lexend Peta",
+    "id": "lexend-peta",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Lexend Tera",
+    "id": "lexend-tera",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Lexend Zetta",
+    "id": "lexend-zetta",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Libre Bodoni",
+    "id": "libre-bodoni",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Libre Franklin",
+    "id": "libre-franklin",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Literata",
+    "id": "literata",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "14", "min": "7", "max": "72", "step": "0.1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Lora",
+    "id": "lora",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "M PLUS 1",
+    "id": "m-plus-1",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "M PLUS 1 Code",
+    "id": "m-plus-1-code",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "M PLUS 2",
+    "id": "m-plus-2",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "M PLUS Code Latin",
+    "id": "m-plus-code-latin",
+    "axes": {
+      "wdth": {"default": "100", "min": "100", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Manrope",
+    "id": "manrope",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Manuale",
+    "id": "manuale",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Markazi Text",
+    "id": "markazi-text",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Maven Pro",
+    "id": "maven-pro",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Merriweather Sans",
+    "id": "merriweather-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Mohave",
+    "id": "mohave",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Montagu Slab",
+    "id": "montagu-slab",
+    "axes": {
+      "opsz": {"default": "144", "min": "16", "max": "144", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Montserrat",
+    "id": "montserrat",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Mulish",
+    "id": "mulish",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "1000", "step": "1"}
+    }
+  },
+  {
+    "family": "Murecho",
+    "id": "murecho",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "MuseoModerno",
+    "id": "museomoderno",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Newsreader",
+    "id": "newsreader",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "16", "min": "6", "max": "72", "step": "0.1"},
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Emoji",
+    "id": "noto-emoji",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Kufi Arabic",
+    "id": "noto-kufi-arabic",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Naskh Arabic",
+    "id": "noto-naskh-arabic",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Rashi Hebrew",
+    "id": "noto-rashi-hebrew",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Adlam",
+    "id": "noto-sans-adlam",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Adlam Unjoined",
+    "id": "noto-sans-adlam-unjoined",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Arabic",
+    "id": "noto-sans-arabic",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Armenian",
+    "id": "noto-sans-armenian",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Balinese",
+    "id": "noto-sans-balinese",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Bamum",
+    "id": "noto-sans-bamum",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Bengali",
+    "id": "noto-sans-bengali",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Canadian Aboriginal",
+    "id": "noto-sans-canadian-aboriginal",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Cham",
+    "id": "noto-sans-cham",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Cherokee",
+    "id": "noto-sans-cherokee",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Display",
+    "id": "noto-sans-display",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Georgian",
+    "id": "noto-sans-georgian",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Gurmukhi",
+    "id": "noto-sans-gurmukhi",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Hanifi Rohingya",
+    "id": "noto-sans-hanifi-rohingya",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Hebrew",
+    "id": "noto-sans-hebrew",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Kannada",
+    "id": "noto-sans-kannada",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Kayah Li",
+    "id": "noto-sans-kayah-li",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Khmer",
+    "id": "noto-sans-khmer",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Lao",
+    "id": "noto-sans-lao",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Lisu",
+    "id": "noto-sans-lisu",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Malayalam",
+    "id": "noto-sans-malayalam",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Medefaidrin",
+    "id": "noto-sans-medefaidrin",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Meetei Mayek",
+    "id": "noto-sans-meetei-mayek",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Mono",
+    "id": "noto-sans-mono",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Ol Chiki",
+    "id": "noto-sans-ol-chiki",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Sinhala",
+    "id": "noto-sans-sinhala",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Sora Sompeng",
+    "id": "noto-sans-sora-sompeng",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Sundanese",
+    "id": "noto-sans-sundanese",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Symbols",
+    "id": "noto-sans-symbols",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Tai Tham",
+    "id": "noto-sans-tai-tham",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Tamil",
+    "id": "noto-sans-tamil",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Telugu",
+    "id": "noto-sans-telugu",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Thaana",
+    "id": "noto-sans-thaana",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Thai",
+    "id": "noto-sans-thai",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Armenian",
+    "id": "noto-serif-armenian",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Bengali",
+    "id": "noto-serif-bengali",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Devanagari",
+    "id": "noto-serif-devanagari",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Display",
+    "id": "noto-serif-display",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Ethiopic",
+    "id": "noto-serif-ethiopic",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Georgian",
+    "id": "noto-serif-georgian",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Gujarati",
+    "id": "noto-serif-gujarati",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Gurmukhi",
+    "id": "noto-serif-gurmukhi",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Hebrew",
+    "id": "noto-serif-hebrew",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Kannada",
+    "id": "noto-serif-kannada",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Khmer",
+    "id": "noto-serif-khmer",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Lao",
+    "id": "noto-serif-lao",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Malayalam",
+    "id": "noto-serif-malayalam",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Nyiakeng Puachue Hmong",
+    "id": "noto-serif-nyiakeng-puachue-hmong",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Sinhala",
+    "id": "noto-serif-sinhala",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Tamil",
+    "id": "noto-serif-tamil",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Telugu",
+    "id": "noto-serif-telugu",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Thai",
+    "id": "noto-serif-thai",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Tibetan",
+    "id": "noto-serif-tibetan",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif Yezidi",
+    "id": "noto-serif-yezidi",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Nunito",
+    "id": "nunito",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "1000", "step": "1"}
+    }
+  },
+  {
+    "family": "Open Sans",
+    "id": "open-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Orbitron",
+    "id": "orbitron",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Oswald",
+    "id": "oswald",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Outfit",
+    "id": "outfit",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Overpass",
+    "id": "overpass",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Overpass Mono",
+    "id": "overpass-mono",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Oxanium",
+    "id": "oxanium",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Petrona",
+    "id": "petrona",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Piazzolla",
+    "id": "piazzolla",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "14", "min": "8", "max": "30", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Playfair Display",
+    "id": "playfair-display",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Plus Jakarta Sans",
+    "id": "plus-jakarta-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Podkova",
+    "id": "podkova",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Public Sans",
+    "id": "public-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Quicksand",
+    "id": "quicksand",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Radio Canada",
+    "id": "radio-canada",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Raleway",
+    "id": "raleway",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Rasa",
+    "id": "rasa",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Readex Pro",
+    "id": "readex-pro",
+    "axes": {
+      "wght": {"default": "400", "min": "160", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Recursive",
+    "id": "recursive",
+    "axes": {
+      "slnt": {"default": "0", "min": "-15", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "1000", "step": "1"},
+      "CASL": {"default": "0", "min": "0", "max": "1", "step": "0.01"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "MONO": {"default": "0", "min": "0", "max": "1", "step": "0.01"}
+    }
+  },
+  {
+    "family": "Red Hat Display",
+    "id": "red-hat-display",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Red Hat Mono",
+    "id": "red-hat-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Red Hat Text",
+    "id": "red-hat-text",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Red Rose",
+    "id": "red-rose",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Reem Kufi",
+    "id": "reem-kufi",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Roboto Flex",
+    "id": "roboto-flex",
+    "axes": {
+      "opsz": {"default": "14", "min": "8", "max": "144", "step": "0.1"},
+      "slnt": {"default": "0", "min": "-10", "max": "0", "step": "1"},
+      "wdth": {"default": "100", "min": "25", "max": "151", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "1000", "step": "1"},
+      "GRAD": {"default": "0", "min": "-200", "max": "150", "step": "1"},
+      "XTRA": {"default": "468", "min": "323", "max": "603", "step": "1"},
+      "YOPQ": {"default": "79", "min": "25", "max": "135", "step": "1"},
+      "YTAS": {"default": "750", "min": "649", "max": "854", "step": "1"},
+      "YTDE": {"default": "-203", "min": "-305", "max": "-98", "step": "1"},
+      "YTFI": {"default": "738", "min": "560", "max": "788", "step": "1"},
+      "YTLC": {"default": "514", "min": "416", "max": "570", "step": "1"},
+      "YTUC": {"default": "712", "min": "528", "max": "760", "step": "1"}
+    }
+  },
+  {
+    "family": "Roboto Mono",
+    "id": "roboto-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Roboto Serif",
+    "id": "roboto-serif",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "14", "min": "8", "max": "144", "step": "0.1"},
+      "wdth": {"default": "100", "min": "50", "max": "150", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "GRAD": {"default": "0", "min": "-50", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Roboto Slab",
+    "id": "roboto-slab",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Rokkitt",
+    "id": "rokkitt",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Rosario",
+    "id": "rosario",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Rubik",
+    "id": "rubik",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Ruda",
+    "id": "ruda",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "STIX Two Text",
+    "id": "stix-two-text",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Saira",
+    "id": "saira",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "50", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Sansita Swashed",
+    "id": "sansita-swashed",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Signika",
+    "id": "signika",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Signika Negative",
+    "id": "signika-negative",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Smooch Sans",
+    "id": "smooch-sans",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Sora",
+    "id": "sora",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Source Code Pro",
+    "id": "source-code-pro",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Source Sans 3",
+    "id": "source-sans-3",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Source Serif 4",
+    "id": "source-serif-4",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "14", "min": "8", "max": "60", "step": "0.1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Space Grotesk",
+    "id": "space-grotesk",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Spline Sans",
+    "id": "spline-sans",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Spline Sans Mono",
+    "id": "spline-sans-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Stick No Bills",
+    "id": "stick-no-bills",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Syne",
+    "id": "syne",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Texturina",
+    "id": "texturina",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "12", "min": "12", "max": "72", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Tourney",
+    "id": "tourney",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Trispace",
+    "id": "trispace",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Truculenta",
+    "id": "truculenta",
+    "axes": {
+      "opsz": {"default": "14", "min": "12", "max": "72", "step": "0.1"},
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Urbanist",
+    "id": "urbanist",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Varta",
+    "id": "varta",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Vazirmatn",
+    "id": "vazirmatn",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Vollkorn",
+    "id": "vollkorn",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Work Sans",
+    "id": "work-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Yaldevi",
+    "id": "yaldevi",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Yanone Kaffeesatz",
+    "id": "yanone-kaffeesatz",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Yrsa",
+    "id": "yrsa",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  }
+]

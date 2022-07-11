@@ -1,77 +1,61 @@
-import cheerio from "cheerio";
-import jsonfile from "jsonfile";
-import merge from "lodash/merge";
+import consola from "consola";
+import merge from "deepmerge";
+import stringify from "json-stringify-pretty-compact";
+import { parseHTML } from "linkedom";
+import * as fs from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "pathe";
 import puppeteer from "puppeteer";
+
+import type { FontObjectVariableDirect } from "./types";
 
 const url = "https://fonts.google.com/variablefonts#font-families";
 
-// Google made some design changes which added spaces around each element e.g. " Assistant "
-const stripSpaces = (element: string) => {
-  let newElement = element;
-
-  if (element[0] === " " && element[element.length - 1] === " ") {
-    newElement = element.slice(1).slice(0, -1);
+export const scrapeSelector = (
+  selector: string,
+  document: Document
+): string[] => {
+  const arr = [];
+  // Scrape section using classnames
+  for (const [index, element] of document
+    .querySelectorAll(selector)
+    .entries()) {
+    const value = element.textContent?.trim();
+    if (index !== 0 && value) {
+      arr.push(value);
+    }
   }
-
-  return newElement;
+  return arr;
 };
 
 const processTable = (tableHTML: string) => {
-  const $ = cheerio.load(tableHTML);
+  const { document } = parseHTML(tableHTML);
 
-  // Use Cheerio to store all relevant values in matching index arrays
-  const fontIds: string[] = [];
-  const fontNames: string[] = [];
-  const axes: string[] = [];
-  const defaults: string[] = [];
-  const min: string[] = [];
-  const max: string[] = [];
-  const step: string[] = [];
-
-  // Scrape each section using classnames
-  $(".cdk-column-fontFamily.mat-column-fontFamily").each((index, element) => {
-    // Remove first index which is table title
-    if (index !== 0) {
-      const value = stripSpaces($(element).text());
-      fontNames.push(value);
-      const id = value.replace(/\s/g, "-").toLowerCase();
-      fontIds.push(id);
-    }
-  });
-  $(".cdk-column-axes.mat-column-axes").each((index, element) => {
-    if (index !== 0) {
-      axes.push(stripSpaces($(element).text()));
-    }
-  });
-  $(".cdk-column-defaultValue.mat-column-defaultValue").each(
-    (index, element) => {
-      if (index !== 0) {
-        defaults.push(stripSpaces($(element).text()));
-      }
-    }
+  // Use linkedom to store all relevant values in matching index arrays
+  const fontNames = scrapeSelector(
+    ".cdk-column-fontFamily.mat-column-fontFamily",
+    document
   );
-  $(".cdk-column-min.mat-column-min").each((index, element) => {
-    if (index !== 0) {
-      min.push(stripSpaces($(element).text()));
-    }
-  });
-  $(".cdk-column-max.mat-column-max").each((index, element) => {
-    if (index !== 0) {
-      max.push(stripSpaces($(element).text()));
-    }
-  });
-  $(".cdk-column-step.mat-column-step").each((index, element) => {
-    if (index !== 0) {
-      step.push(stripSpaces($(element).text()));
-    }
-  });
+  // Hello World => hello-world
+  const fontIds = fontNames.map((val) => val.replace(/\s/g, "-").toLowerCase());
+
+  const axes = scrapeSelector(".cdk-column-axes.mat-column-axes", document);
+  const defaults = scrapeSelector(
+    ".cdk-column-defaultValue.mat-column-defaultValue",
+    document
+  );
+  const min = scrapeSelector(".cdk-column-min.mat-column-min", document);
+  const max = scrapeSelector(".cdk-column-max.mat-column-max", document);
+  const step = scrapeSelector(".cdk-column-step.mat-column-step", document);
 
   // Build variable font object
-  let results = {};
-  fontIds.forEach((id, index) => {
+  type ResultsObject = { [id: string]: FontObjectVariableDirect };
+  let results = {} as ResultsObject;
+  for (const [index, id] of fontIds.entries()) {
     const variableObject = {
       [id]: {
         family: fontNames[index],
+        id,
         axes: {
           [axes[index]]: {
             default: defaults[index],
@@ -86,19 +70,28 @@ const processTable = (tableHTML: string) => {
     // Different types of axes for the same font would generate duplicate font objects.
     // This merges a bitter.axes.ital and bitter.axes.wght into the same object when previously they were in separate 'bitter' objects.
     results = merge(results, variableObject);
-  });
+  }
 
-  jsonfile.writeFileSync("./lib/data/variable.json", results);
+  const writeArray = [];
+  for (const key of Object.keys(results)) {
+    writeArray.push(results[key]);
+  }
 
-  console.log(
-    `All ${
-      Object.keys(results).length
-    } variable font datapoints have been fetched.`
+  fs.writeFileSync(
+    join(
+      dirname(fileURLToPath(import.meta.url)),
+      "../data/variable-response.json"
+    ),
+    stringify(writeArray)
+  );
+
+  consola.success(
+    `All ${writeArray.length} variable font datapoints have been fetched.`
   );
 };
 
 // Need to use Puppeteer to let JavaScript load page elements fully
-const fetchPage = async () => {
+export const fetchVariable = async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: "networkidle0" });
@@ -113,5 +106,3 @@ const fetchPage = async () => {
 
   processTable(tableHTML);
 };
-
-fetchPage();

@@ -2,6 +2,59 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [4.0.0](https://github.com/fontsource/google-font-metadata/releases/tag/v4.0.0)
+
+This update is a major release that aims to speed up parsing, make the functions easier to use and ensure generated outputs are more strict with better error handling and validation.
+
+Furthermore, as Google has embraced variable fonts and become more creative about it, the entire variable API output has been changed to better support the future of the ecosystem.
+
+## Breaking
+
+### CLI
+
+The project is now CLI based! All previous scripts to interact with the generators and parsers have now been removed in favour of the following commands:
+
+- `npx gfm generate [key]` - Replaces the NPM explore scripts to gather the initial metadata for parsing.
+- `npx gfm parse` - Replaces the NPM explore scripts to parse the previous metadata into the usable metadata.
+- `npx gfm validate` - Helper command to validate your existing metadata with a schema. This is automatically invoked with `npx gfm parse`.
+- `npx gfm update-db` - [EXPERIMENTAL] This aims to move parsing away from the client and instead push updates to NPM as new versions, similar to [caniuse-lite](https://github.com/browserslist/caniuse-lite). It will soon be the preferred way to update the metadata as it removes the need to setup Google Credentials and skip the wait-time of long parses.
+
+Check out the main documentation to see related flags for each command.
+
+### Variable Parser
+
+A brand new parser outputs a completely new format that supports new axis and weight combinations that wasn't generated previously.
+
+This introduces changed default variants:
+
+- `wght` - Only links to downloads that only have the `wght` axis.
+- `standard` - A default set of fonts that includes `wght, wdth, slnt, opsz` axis' if available.
+- `full` - Links to font files that have all the axis' included within them.
+
+Furthermore, a variant is generated for each unique axis in the font, e.g. if `slnt` exists, `slnt.normal.latin` will exist. Note that the `wght` axis is also included in each unique custom variant.
+
+This is in preparation of [fontsource/fontsource#388](https://github.com/fontsource/fontsource/issues/388) which aims to include more variable font file combinations to the end user.
+
+You can checkout the new generated output in the README.
+
+### Other
+
+- As the project aims to be more terse, all errors will now throw and exit the program midway, rather than the previous behaviour where errors only outputted to console and rarely threw.
+
+## Features
+
+- Expose APIDirect and APIVariableDirect to the end user, which are the results from `npx gfm generate`.
+- Add validators to run at the end of each `parse` command. This verifies against a schema to ensure any changes Google API's make are not breaking and affect downstream project. This can be disabled when calling the flag `--no-validate` with `parse` commands.
+
+## Fixes
+
+- Various undocumented bugs were fixed as a result of adding tests and validators to the project. Oops! :sweat_smile:
+- Types are properly rolled up and exported using [`rollup-plugin-dts`](https://github.com/Swatinem/rollup-plugin-dts).
+
+## Performance
+
+- Removed [PostCSS](https://github.com/postcss/postcss) and [Cheerio](https://github.com/cheeriojs/cheerio) dependency in favour of [stylis](https://github.com/thysultan/stylis) and [linkedom](https://github.com/WebReflection/linkedom), which significantly improved parsing speed by roughly 2-3x.
+
 # [3.1.0](https://github.com/fontsource/google-font-metadata/releases/tag/v3.1.0)
 
 # Features
