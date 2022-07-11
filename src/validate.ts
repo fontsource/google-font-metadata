@@ -3,6 +3,7 @@ import colors from "picocolors";
 
 import type { FontObject } from "./index";
 import { APIv1, APIv2, APIVariable } from "./index";
+// eslint-disable-next-line import/no-cycle
 import { fontObjectValidate, fontObjectVariableValidate } from "./schema";
 
 type Version = "v1" | "v2" | "variable";

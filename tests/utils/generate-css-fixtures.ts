@@ -145,13 +145,18 @@ const fetchCSSVariable = async (url: string) => {
   }
 };
 
-
 export const fetchAllCSSVariable = async (links: Links) =>
-  Promise.all(Object.keys(links).map(async (key) => {
-    type KeyTypes = [ExportedType: string, Style: string]
-    const types = key.split(".") as KeyTypes;
-    return { type: types[0], response: await fetchCSSVariable(links[key]), style: types[1] }
-  }));
+  Promise.all(
+    Object.keys(links).map(async (key) => {
+      type KeyTypes = [ExportedType: string, Style: string];
+      const types = key.split(".") as KeyTypes;
+      return {
+        type: types[0],
+        response: await fetchCSSVariable(links[key]),
+        style: types[1],
+      };
+    })
+  );
 
 const writeFixturesVariable = async () => {
   // Clear existing fixtures

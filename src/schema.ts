@@ -3,6 +3,8 @@ import colors from "picocolors";
 import { z, ZodError } from "zod";
 
 import type { FontObject, FontObjectV2, FontObjectVariable } from "./types";
+// eslint-disable-next-line import/no-cycle
+import { isAxesKey } from "./variable-parser";
 
 type Version = "v1" | "v2" | "variable";
 export class ValidationError extends Error {
@@ -77,6 +79,7 @@ const fontObjectV2Schema = z
 const fontObjectVariableSchema = z
   .object({
     family: z.string().min(1),
+    id: z.string().min(1),
     axes: z.record(
       // axesType: string
       z
@@ -219,6 +222,14 @@ const fontObjectVariableValidate = (newData: FontObject) => {
     // Iterate over [type: string]
     for (const variant of variantsKeys) {
       const styleKeys = Object.keys(dataId.variants[variant]);
+      // Check if valid axes key types are present
+      if (!isAxesKey(variant) && variant !== "full" && variant !== "standard")
+        throw new ValidationError(
+          `${variant} is not a valid axis!`,
+          "variable",
+          id
+        );
+
       checkKeys(dataId, styleKeys, `styles for variant ${variant}`, "variable");
 
       // Iterate over [style: string]

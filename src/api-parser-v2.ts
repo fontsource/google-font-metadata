@@ -10,7 +10,7 @@ import { compile } from "stylis";
 import { apiv2 as userAgents } from "../data/user-agents.json";
 import type { APIResponse } from "./index";
 import { APIDirect, APIv2 } from "./index";
-import type { FontObjectV2 } from "./schema";
+import type { FontObjectV2 } from "./types";
 import { orderObject, weightListGen } from "./utils";
 import { validate } from "./validate";
 

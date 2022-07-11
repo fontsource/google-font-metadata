@@ -86,8 +86,7 @@ const processTable = (tableHTML: string) => {
   );
 
   consola.success(
-    `All ${writeArray.length
-    } variable font datapoints have been fetched.`
+    `All ${writeArray.length} variable font datapoints have been fetched.`
   );
 };
 

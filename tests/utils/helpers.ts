@@ -1,8 +1,8 @@
 import * as fs from "node:fs";
 import { join } from "pathe";
 
-import { APIResponse } from '../../src/api-gen';
-import { FontObjectVariableDirect } from "../../src/types"
+import { APIResponse } from "../../src/api-gen";
+import { FontObjectVariableDirect } from "../../src/types";
 
 // Have to clone because Vitest doesn't seem to isolate object reads properly
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -32,17 +32,6 @@ export const cssFixturePath = (
   throw new Error(`Bad fixture path: ${id + type + version + subset}`);
 };
 
-export const cssFixtureVariablePath = (
-  id: string,
-  type: string,
-  style: string
-) =>
-  join(
-    process.cwd(),
-    `tests/fixtures/variable-parser`,
-    `${id}-${type}-${style}.css`
-  );
-
 export const cssFixture = (
   id: string,
   type: string,
@@ -61,11 +50,19 @@ export const cssFixture = (
   throw new Error(`Bad fixture read ${id + type + version + subset}`);
 };
 
-export const cssFixtureVariable = (
+export const cssFixtureVariablePath = (
   id: string,
   type: string,
   style: string
-) => fs.readFileSync(cssFixtureVariablePath(id, type, style)).toString();
+) =>
+  join(
+    process.cwd(),
+    `tests/fixtures/variable-parser`,
+    `${id}-${type}-${style}.css`
+  );
+
+export const cssFixtureVariable = (id: string, type: string, style: string) =>
+  fs.readFileSync(cssFixtureVariablePath(id, type, style)).toString();
 
 type DataFixture =
   | "api-response"
@@ -88,7 +85,9 @@ export const dataFixture = (type: DataFixture) => {
   if (type === "variable") return readParse("tests/fixtures/variable.json");
 
   if (type === "variable-response")
-    return readParse("tests/fixtures/variable-response.json") as FontObjectVariableDirect[];
+    return readParse(
+      "tests/fixtures/variable-response.json"
+    ) as FontObjectVariableDirect[];
 
   if (type === "user-agent")
     return readParse("tests/fixtures/user-agents.json");
@@ -99,12 +98,12 @@ export const dataFixture = (type: DataFixture) => {
 export const idGen = (family: string) =>
   family.replace(/\s/g, "-").toLowerCase();
 
-export const getFontResponse = (fonts: FontObjectVariableDirect[] | APIResponse[], fontId: string) => {
+export const getFontResponse = (
+  fonts: FontObjectVariableDirect[] | APIResponse[],
+  fontId: string
+) => {
   for (const font of fonts) {
-    if (idGen(font.family) === fontId)
-      return font;
+    if (idGen(font.family) === fontId) return font;
   }
   throw new Error(`Font not found: ${fontId}`);
-}
-
-
+};

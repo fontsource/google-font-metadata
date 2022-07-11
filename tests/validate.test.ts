@@ -266,19 +266,27 @@ describe("Validate", () => {
         );
       });
 
+      it("Catches incorrect axes", () => {
+        const axesObj = clone(validObj);
+        axesObj.akshar.variants.wghtOnly = axesObj.akshar.variants.wght;
+        expect(() => validate("variable", axesObj)).toThrow(
+          "wghtOnly is not a valid axis"
+        );
+      });
+
       it("Catches incorrect styles", () => {
         const styleObj = clone(validObj);
-        styleObj.akshar.variants.wghtOnly.normal = "test";
+        styleObj.akshar.variants.wght.normal = "test";
         expect(() => validate("variable", styleObj)).toThrow(
           "Expected object, received string"
         );
-        styleObj.akshar.variants.wghtOnly.normal = {};
+        styleObj.akshar.variants.wght.normal = {};
         expect(() => validate("variable", styleObj)).toThrow(
           "No subsets for style normal variants found"
         );
         const invalidStyleObj = clone(validObj);
-        invalidStyleObj.akshar.variants.wghtOnly.notstyle =
-          invalidStyleObj.akshar.variants.wghtOnly.normal; // Add invalid style
+        invalidStyleObj.akshar.variants.wght.notstyle =
+          invalidStyleObj.akshar.variants.wght.normal; // Add invalid style
         expect(() => validate("variable", invalidStyleObj)).toThrow(
           "Style notstyle is not a valid style"
         );
@@ -286,9 +294,9 @@ describe("Validate", () => {
 
       it("Catches incorrect urls", () => {
         const urlObj = clone(validObj);
-        urlObj.akshar.variants.wghtOnly.normal.latin = "";
+        urlObj.akshar.variants.wght.normal.latin = "";
         expect(() => validate("variable", urlObj)).toThrow("too_small");
-        urlObj.akshar.variants.wghtOnly.normal.latin = "badurl";
+        urlObj.akshar.variants.wght.normal.latin = "badurl";
         expect(() => validate("variable", urlObj)).toThrow("Invalid url");
       });
     });
