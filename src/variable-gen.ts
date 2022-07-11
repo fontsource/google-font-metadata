@@ -82,12 +82,11 @@ const processTable = (tableHTML: string) => {
       dirname(fileURLToPath(import.meta.url)),
       "../data/variable-response.json"
     ),
-    stringify(results)
+    stringify(writeArray)
   );
 
   consola.success(
-    `All ${
-      Object.keys(results).length
+    `All ${writeArray.length
     } variable font datapoints have been fetched.`
   );
 };
