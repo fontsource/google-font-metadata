@@ -136,6 +136,33 @@
     "category": "sans-serif"
   },
   {
+    "family": "Albert Sans",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2022-07-06",
+    "category": "sans-serif"
+  },
+  {
     "family": "Aldrich",
     "variants": ["regular"],
     "subsets": ["latin"],
@@ -3334,6 +3361,46 @@
     "version": "v16",
     "lastModified": "2022-04-21",
     "category": "serif"
+  },
+  {
+    "family": "Edu NSW ACT Foundation",
+    "variants": ["regular", "500", "600", "700"],
+    "subsets": ["latin"],
+    "version": "v1",
+    "lastModified": "2022-07-06",
+    "category": "handwriting"
+  },
+  {
+    "family": "Edu QLD Beginner",
+    "variants": ["regular", "500", "600", "700"],
+    "subsets": ["latin"],
+    "version": "v1",
+    "lastModified": "2022-07-06",
+    "category": "handwriting"
+  },
+  {
+    "family": "Edu SA Beginner",
+    "variants": ["regular", "500", "600", "700"],
+    "subsets": ["latin"],
+    "version": "v1",
+    "lastModified": "2022-07-06",
+    "category": "handwriting"
+  },
+  {
+    "family": "Edu TAS Beginner",
+    "variants": ["regular", "500", "600", "700"],
+    "subsets": ["latin"],
+    "version": "v1",
+    "lastModified": "2022-07-06",
+    "category": "handwriting"
+  },
+  {
+    "family": "Edu VIC WA NT Beginner",
+    "variants": ["regular", "500", "600", "700"],
+    "subsets": ["latin"],
+    "version": "v1",
+    "lastModified": "2022-07-06",
+    "category": "handwriting"
   },
   {
     "family": "El Messiri",
