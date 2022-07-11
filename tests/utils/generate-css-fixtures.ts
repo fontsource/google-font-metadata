@@ -6,10 +6,9 @@ import { join } from "pathe";
 import type { APIResponse } from "../../src";
 import { variantsListGen } from "../../src/api-parser-v2";
 import type { Links } from "../../src/variable-parser";
-import { fetchCSSLinks } from "../../src/variable-parser";
+import { generateCSSLinks } from "../../src/variable-parser";
 import APIDirect from "../fixtures/api-response.json";
 import userAgents from "../fixtures/user-agents.json";
-import APIVariableDirect from "../fixtures/variable-response.json";
 import { dataFixture } from "./helpers";
 
 // Modified from api-parser-v1.ts
@@ -132,9 +131,7 @@ const writeFixtures2 = async () => {
 };
 
 // Modified from variable-parser.ts
-type LinksType = "full" | "wghtOnly";
-type Style = "normal" | "italic";
-const fetchCSSVariable = async (url: string, type: LinksType, style: Style) => {
+const fetchCSSVariable = async (url: string) => {
   // Download CSS stylesheets using Google Fonts APIv2
   try {
     const response = await got(url, {
@@ -142,26 +139,19 @@ const fetchCSSVariable = async (url: string, type: LinksType, style: Style) => {
         "User-Agent": userAgents.apiv2.variable,
       },
     }).text();
-    return { response, type, style };
+    return response;
   } catch (error) {
     throw new Error(`CSS fetch error (variable): ${error}\nURL: ${url}`);
   }
 };
 
-const fetchAllCSSVariable = async (links: Links, ifItal: boolean) => {
-  if (ifItal) {
-    return Promise.all([
-      fetchCSSVariable(links.full, "full", "normal"),
-      fetchCSSVariable(links.wghtOnly, "wghtOnly", "normal"),
-      fetchCSSVariable(links.fullItalic, "full", "italic"),
-      fetchCSSVariable(links.wghtOnlyItalic, "wghtOnly", "italic"),
-    ]);
-  }
-  return Promise.all([
-    fetchCSSVariable(links.full, "full", "normal"),
-    fetchCSSVariable(links.wghtOnly, "wghtOnly", "normal"),
-  ]);
-};
+
+export const fetchAllCSSVariable = async (links: Links) =>
+  Promise.all(Object.keys(links).map(async (key) => {
+    type KeyTypes = [ExportedType: string, Style: string]
+    const types = key.split(".") as KeyTypes;
+    return { type: types[0], response: await fetchCSSVariable(links[key]), style: types[1] }
+  }));
 
 const writeFixturesVariable = async () => {
   // Clear existing fixtures
@@ -169,14 +159,14 @@ const writeFixturesVariable = async () => {
   await fs.rm(fixtureDir, { recursive: true });
   await fs.mkdir(fixtureDir);
 
-  for (const font of Object.keys(APIVariableDirect)) {
-    const cssLinks = fetchCSSLinks(font, dataFixture("variable-response"));
+  for (const font of dataFixture("variable-response")) {
+    const cssLinks = generateCSSLinks(font);
     // eslint-disable-next-line no-await-in-loop
-    const cssAll = await fetchAllCSSVariable(cssLinks.links, cssLinks.ifItal);
+    const cssAll = await fetchAllCSSVariable(cssLinks);
     for (const css of cssAll) {
       // eslint-disable-next-line no-await-in-loop
       await fs.writeFile(
-        join(fixtureDir, `${font}-${css.type}-${css.style}.css`),
+        join(fixtureDir, `${font.id}-${css.type}-${css.style}.css`),
         css.response
       );
     }

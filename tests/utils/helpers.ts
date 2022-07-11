@@ -32,12 +32,10 @@ export const cssFixturePath = (
   throw new Error(`Bad fixture path: ${id + type + version + subset}`);
 };
 
-type VariableType = "wghtOnly" | "full";
-type Style = "normal" | "italic";
 export const cssFixtureVariablePath = (
   id: string,
-  type: VariableType,
-  style: Style
+  type: string,
+  style: string
 ) =>
   join(
     process.cwd(),
@@ -65,8 +63,8 @@ export const cssFixture = (
 
 export const cssFixtureVariable = (
   id: string,
-  type: VariableType,
-  style: Style
+  type: string,
+  style: string
 ) => fs.readFileSync(cssFixtureVariablePath(id, type, style)).toString();
 
 type DataFixture =

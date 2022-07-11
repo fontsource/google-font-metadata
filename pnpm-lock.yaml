@@ -23,7 +23,6 @@ specifiers:
   puppeteer: ^15.3.2
   stylis: ^4.1.1
   tsx: ^3.7.1
-  type-fest: ^2.16.0
   typescript: ^4.7.4
   vitest: ^0.18.0
   zod: ^3.17.3
@@ -54,7 +53,6 @@ devDependencies:
   pkgroll: 1.3.1_typescript@4.7.4
   prettier: 2.7.1
   tsx: 3.7.1
-  type-fest: 2.16.0
   typescript: 4.7.4
   vitest: 0.18.0_c8@7.11.3
 
@@ -3654,11 +3652,6 @@ packages:
   /type-fest/1.4.0:
     resolution: {integrity: sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==}
     engines: {node: '>=10'}
-    dev: true
-
-  /type-fest/2.16.0:
-    resolution: {integrity: sha512-qpaThT2HQkFb83gMOrdKVsfCN7LKxP26Yq+smPzY1FqoHRjqmjqHXA7n5Gkxi8efirtbeEUxzfEdePthQWCuHw==}
-    engines: {node: '>=12.20'}
     dev: true
 
   /typescript/4.7.4:

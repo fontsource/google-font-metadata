@@ -1,6 +1,8 @@
 import { rest } from "msw";
 import fs from "node:fs";
 
+import { FontObjectVariableDirect } from "../../src/types";
+import { generateCSSLinks } from '../../src/variable-parser';
 import APIResponse from "../fixtures/api-response.json";
 import userAgent from "../fixtures/user-agents.json";
 import {
@@ -8,8 +10,9 @@ import {
   cssFixturePath,
   cssFixtureVariable,
   cssFixtureVariablePath,
+  dataFixture, getFontResponse,
   idGen,
-} from "../utils/helpers";
+} from '../utils/helpers';
 
 export const apiGenHandlers = [
   rest.get(
@@ -67,9 +70,10 @@ export const apiParseVariableHandlers = [
       req.url.searchParams.get("family")?.split(":")[0] ?? "test"
     );
 
-    const style = req.url.toString().includes("ital") ? "italic" : "normal";
-    const type = "wghtOnly";
-    console.log(req.url.toString());
+    const links = generateCSSLinks(getFontResponse(dataFixture("variable-response"), id) as FontObjectVariableDirect)
+    const key = Object.keys(links).find(keyValue => links[keyValue] === req.url.toString())?.split(".");
+    const type = key ? key[0] : "test";
+    const style = key ? key[1] : "test";
 
     if (fs.existsSync(cssFixtureVariablePath(id, type, style))) {
       return res(

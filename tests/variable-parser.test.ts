@@ -72,7 +72,7 @@ describe("Variable Parser", () => {
         "full.normal": "https://fonts.googleapis.com/css2?family=Alegreya:wght@400..900",
         "standard.italic": "https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400..900",
         "standard.normal": "https://fonts.googleapis.com/css2?family=Alegreya:wght@400..900",
-        "wght.italic": "https://fonts.googleapis.com/css2?family=Alegreya:wght,ital@400..900,1",
+        "wght.italic": "https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400..900",
         "wght.normal": "https://fonts.googleapis.com/css2?family=Alegreya:wght@400..900",
       });
     });
@@ -137,7 +137,7 @@ describe("Variable Parser", () => {
         "opsz.normal": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900",
         "standard.italic": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,100..900",
         "standard.normal": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100..900",
-        "wght.italic": "https://fonts.googleapis.com/css2?family=Fraunces:wght,ital@100..900,1",
+        "wght.italic": "https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,100..900",
         "wght.normal": "https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900",
       })
     });

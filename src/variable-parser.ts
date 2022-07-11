@@ -6,7 +6,6 @@ import { fileURLToPath } from "node:url";
 import PQueue from "p-queue";
 import { dirname, join } from "pathe";
 import { compile } from "stylis";
-import type { LiteralUnion } from "type-fest";
 
 import { apiv2 as userAgents } from "../data/user-agents.json";
 import { APIVariableDirect } from "./index";
@@ -17,10 +16,6 @@ import type {
 } from "./types";
 import { validate } from "./validate";
 
-type ExportedVariants = LiteralUnion<
-  "full" | "standard" | "wght" | "wdth" | "slnt" | "opsz" | "ital",
-  string
->;
 export interface Links {
   [axes: string]: string;
 }
@@ -139,10 +134,12 @@ export const generateCSSLinks = (font: FontObjectVariableDirect) => {
 
   // Add just wght and ital variants
   if (hasWght) {
-    const wghtRange = `${font.axes.wght.min}..${font.axes.wght.max}`;
-    links["wght.normal"] = `${baseurl}${family}:wght@${wghtRange}`;
-    if (hasItal)
-      links["wght.italic"] = `${baseurl}${family}:wght,ital@${wghtRange},1`;
+    let wghtTuple = addAndMergeAxesRange(font, ["wght"], []);
+    links["wght.normal"] = `${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
+    if (hasItal) {
+      wghtTuple = addAndMergeAxesRange(font, ["wght"], ["ital"]);
+      links["wght.italic"] = `${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
+    }
   }
 
   // Full variant
