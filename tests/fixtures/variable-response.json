@@ -1,33 +1,38 @@
-{
-  "akshar": {
+[
+  {
     "family": "Akshar",
+    "id": "akshar",
     "axes": {
       "wght": { "default": "400", "min": "300", "max": "700", "step": "1" }
     }
   },
-  "alegreya": {
+  {
     "family": "Alegreya",
+    "id": "alegreya",
     "axes": {
       "ital": { "default": "0", "min": "0", "max": "1", "step": "1" },
       "wght": { "default": "400", "min": "400", "max": "900", "step": "1" }
     }
   },
-  "archivo": {
+  {
     "family": "Archivo",
+    "id": "archivo",
     "axes": {
       "ital": { "default": "0", "min": "0", "max": "1", "step": "1" },
       "wdth": { "default": "100", "min": "62", "max": "125", "step": "0.1" },
       "wght": { "default": "400", "min": "100", "max": "900", "step": "1" }
     }
   },
-  "ballet": {
+  {
     "family": "Ballet",
+    "id": "ballet",
     "axes": {
       "opsz": { "default": "16", "min": "16", "max": "72", "step": "0.1" }
     }
   },
-  "fraunces": {
+  {
     "family": "Fraunces",
+    "id": "fraunces",
     "axes": {
       "ital": { "default": "0", "min": "0", "max": "1", "step": "1" },
       "opsz": { "default": "14", "min": "9", "max": "144", "step": "0.1" },
@@ -36,8 +41,9 @@
       "WONK": { "default": "0", "min": "0", "max": "1", "step": "1" }
     }
   },
-  "recursive": {
+  {
     "family": "Recursive",
+    "id": "recursive",
     "axes": {
       "slnt": { "default": "0", "min": "-15", "max": "0", "step": "1" },
       "wght": { "default": "400", "min": "300", "max": "1000", "step": "1" },
@@ -46,8 +52,9 @@
       "MONO": { "default": "0", "min": "0", "max": "1", "step": "0.01" }
     }
   },
-  "roboto-flex": {
+  {
     "family": "Roboto Flex",
+    "id": "roboto-flex",
     "axes": {
       "opsz": { "default": "14", "min": "8", "max": "144", "step": "0.1" },
       "slnt": { "default": "0", "min": "-10", "max": "0", "step": "1" },
@@ -63,4 +70,4 @@
       "YTUC": { "default": "712", "min": "528", "max": "760", "step": "1" }
     }
   }
-}
+]

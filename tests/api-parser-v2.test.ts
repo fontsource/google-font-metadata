@@ -15,64 +15,64 @@ vi.mock("node:fs/promises");
 vi.mock("../src/index");
 
 describe("API Parser v2", () => {
-    setupAPIServer(apiParseV2Handlers);
+  setupAPIServer(apiParseV2Handlers);
 
-    describe("Fetch CSS", () => {
-        it("Returns all subsets of CSS together", async () => {
-            const texturinaFont = APIResponse[7];
-            const test = await fetchAllCSS(texturinaFont);
+  describe("Fetch CSS", () => {
+    it("Returns all subsets of CSS together", async () => {
+      const texturinaFont = APIResponse[7];
+      const test = await fetchAllCSS(texturinaFont);
 
-            // WOFF2 Tuple
-            expect(test[0]).toContain(cssFixture("texturina", "woff2", "v2"));
+      // WOFF2 Tuple
+      expect(test[0]).toContain(cssFixture("texturina", "woff2", "v2"));
 
-            // WOFF Tuple
-            expect(test[1]).toContain(cssFixture("texturina", "woff", "v2"));
+      // WOFF Tuple
+      expect(test[1]).toContain(cssFixture("texturina", "woff", "v2"));
 
-            // TTF Tuple
-            expect(test[2]).toContain(cssFixture("texturina", "ttf", "v2"));
-        });
-
-        it("Throws with bad request", async () => {
-            const texturinaFont = { ...APIResponse[7] }; // Vitest gimmick where modifying obj directly affects all other tests
-            texturinaFont.family = "test"; // False family
-            await expect(async () => fetchAllCSS(texturinaFont)).rejects.toThrow(
-                "CSS fetch error (v2): HTTPError: Response code 400 (Bad Request)"
-            );
-        });
+      // TTF Tuple
+      expect(test[2]).toContain(cssFixture("texturina", "ttf", "v2"));
     });
 
-    describe("Process CSS", () => {
-        it("Returns valid font object", async () => {
-            const newAPIv2 = APIv2 as FontObjectV2; // Need to type assert as a more generic obj else we can't pick using id var
+    it("Throws with bad request", async () => {
+      const texturinaFont = { ...APIResponse[7] }; // Vitest gimmick where modifying obj directly affects all other tests
+      texturinaFont.family = "test"; // False family
+      await expect(async () => fetchAllCSS(texturinaFont)).rejects.toThrow(
+        "CSS fetch error (v2): HTTPError: Response code 400 (Bad Request)"
+      );
+    });
+  });
 
-            for (const font of APIResponse) {
-                const id = idGen(font.family);
-                const validFontObj = { [id]: newAPIv2[id] };
+  describe("Process CSS", () => {
+    it("Returns valid font object", async () => {
+      const newAPIv2 = APIv2 as FontObjectV2; // Need to type assert as a more generic obj else we can't pick using id var
 
-                const css = await fetchAllCSS(font);
-                expect(processCSS(css, font)).toMatchObject(validFontObj);
-            }
-        });
+      for (const font of APIResponse) {
+        const id = idGen(font.family);
+        const validFontObj = { [id]: newAPIv2[id] };
+
+        const css = await fetchAllCSS(font);
+        expect(processCSS(css, font)).toMatchObject(validFontObj);
+      }
+    });
+  });
+
+  describe("Full parse and order", () => {
+    vi.spyOn(index, "APIv2", "get").mockReturnValue(APIv2);
+    vi.spyOn(index, "APIDirect", "get").mockReturnValue(APIResponse);
+
+    it("Copies APIv2 as a cache since force flag is false", async () => {
+      await parsev2(false, false);
+      expect(vi.mocked(fs.writeFile)).toHaveBeenCalledWith(
+        expect.anything(),
+        stringify(APIv2)
+      );
     });
 
-    describe("Full parse and order", () => {
-        vi.spyOn(index, "APIv2", "get").mockReturnValue(APIv2);
-        vi.spyOn(index, "APIDirect", "get").mockReturnValue(APIResponse);
-
-        it("Copies APIv2 as a cache since force flag is false", async () => {
-            await parsev2(false, false);
-            expect(vi.mocked(fs.writeFile)).toHaveBeenCalledWith(
-                expect.anything(),
-                stringify(APIv2)
-            );
-        });
-
-        it("Force parses mock API and writes correct metadata", async () => {
-            await parsev2(true, false);
-            expect(vi.mocked(fs.writeFile)).toHaveBeenCalledWith(
-                expect.anything(),
-                stringify(APIv2)
-            );
-        });
+    it("Force parses mock API and writes correct metadata", async () => {
+      await parsev2(true, false);
+      expect(vi.mocked(fs.writeFile)).toHaveBeenCalledWith(
+        expect.anything(),
+        stringify(APIv2)
+      );
     });
+  });
 });

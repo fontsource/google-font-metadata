@@ -3,7 +3,13 @@ import fs from "node:fs";
 
 import APIResponse from "../fixtures/api-response.json";
 import userAgent from "../fixtures/user-agents.json";
-import { cssFixture, cssFixturePath, idGen } from "../utils/helpers";
+import {
+  cssFixture,
+  cssFixturePath,
+  cssFixtureVariable,
+  cssFixtureVariablePath,
+  idGen,
+} from "../utils/helpers";
 
 export const apiGenHandlers = [
   rest.get(
@@ -49,6 +55,27 @@ export const apiParseV2Handlers = [
 
     if (fs.existsSync(cssFixturePath(id, type, "v2"))) {
       return res(ctx.status(200), ctx.body(cssFixture(id, type, "v2")));
+    }
+
+    return res(ctx.status(400));
+  }),
+];
+
+export const apiParseVariableHandlers = [
+  rest.get("https://fonts.googleapis.com/css2", (req, res, ctx) => {
+    const id = idGen(
+      req.url.searchParams.get("family")?.split(":")[0] ?? "test"
+    );
+
+    const style = req.url.toString().includes("ital") ? "italic" : "normal";
+    const type = "wghtOnly";
+    console.log(req.url.toString());
+
+    if (fs.existsSync(cssFixtureVariablePath(id, type, style))) {
+      return res(
+        ctx.status(200),
+        ctx.body(cssFixtureVariable(id, type, style))
+      );
     }
 
     return res(ctx.status(400));

@@ -3,17 +3,14 @@ import colors from "picocolors";
 
 import type { FontObject } from "./index";
 import { APIv1, APIv2, APIVariable } from "./index";
-import {
-  fontObjectValidate,
-  fontObjectVariableValidate,
-} from "./schema";
+import { fontObjectValidate, fontObjectVariableValidate } from "./schema";
 
 type Version = "v1" | "v2" | "variable";
 
 const validate = (version: Version, data: FontObject) => {
   consola.info(
     `Validating metadata... ${colors.bold(
-      colors.yellow(`[API ${version.toUpperCase}]`)
+      colors.yellow(`[API ${version.toUpperCase()}]`)
     )}`
   );
   switch (version) {

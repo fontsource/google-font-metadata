@@ -7,6 +7,8 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "pathe";
 import puppeteer from "puppeteer";
 
+import type { FontObjectVariableDirect } from "./types";
+
 const url = "https://fonts.google.com/variablefonts#font-families";
 
 export const scrapeSelector = (
@@ -47,11 +49,13 @@ const processTable = (tableHTML: string) => {
   const step = scrapeSelector(".cdk-column-step.mat-column-step", document);
 
   // Build variable font object
-  let results = {};
+  type ResultsObject = { [id: string]: FontObjectVariableDirect };
+  let results = {} as ResultsObject;
   for (const [index, id] of fontIds.entries()) {
     const variableObject = {
       [id]: {
         family: fontNames[index],
+        id,
         axes: {
           [axes[index]]: {
             default: defaults[index],
@@ -66,6 +70,11 @@ const processTable = (tableHTML: string) => {
     // Different types of axes for the same font would generate duplicate font objects.
     // This merges a bitter.axes.ital and bitter.axes.wght into the same object when previously they were in separate 'bitter' objects.
     results = merge(results, variableObject);
+  }
+
+  const writeArray = [];
+  for (const key of Object.keys(results)) {
+    writeArray.push(results[key]);
   }
 
   fs.writeFileSync(

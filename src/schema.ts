@@ -2,12 +2,14 @@ import stringify from "json-stringify-pretty-compact";
 import colors from "picocolors";
 import { z, ZodError } from "zod";
 
-import type { FontObject } from "./index";
+import type { FontObject, FontObjectV2, FontObjectVariable } from "./types";
 
 type Version = "v1" | "v2" | "variable";
 export class ValidationError extends Error {
   constructor(message: string | ZodError, version: Version, id?: string) {
-    const shell = `Invalid parse for ${version}${id ? ` ${id}` : ""}! Try running ${colors.yellow(
+    const shell = `Invalid parse for ${version}${
+      id ? ` ${id}` : ""
+    }! Try running ${colors.yellow(
       version !== "variable"
         ? "npx gfm parse -f"
         : "npx gfm generate --variable && npx gfm parse --variable"
@@ -19,57 +21,27 @@ export class ValidationError extends Error {
 
 // Refactoring this to @deepkit/type when it stablises in the future will hugely reduce complexity
 
-interface FontVariants {
-  [weight: string]: {
-    [style: string]: {
-      [subset: string]: {
-        url: {
-          woff2: string;
-          woff: string;
-          truetype?: string;
-          opentype?: string;
-        };
-      };
-    };
-  };
-}
-
 // [weight: string]
 const fontVariantsSchema = z.record(
   // [style: string]
   z.record(
     // [subset: string]
-    z.record(z
-      .object({
-        url: z
-          .object({
-            woff2: z.string().url().min(1),
-            woff: z.string().url().min(1),
-            truetype: z.string().url().min(1).optional(),
-            opentype: z.string().url().min(1).optional(),
-          })
-          .strict(),
-      })
-      .strict()
+    z.record(
+      z
+        .object({
+          url: z
+            .object({
+              woff2: z.string().url().min(1),
+              woff: z.string().url().min(1),
+              truetype: z.string().url().min(1).optional(),
+              opentype: z.string().url().min(1).optional(),
+            })
+            .strict(),
+        })
+        .strict()
     )
   )
-)
-
-
-interface FontObjectV1 {
-  [id: string]: {
-    family: string;
-    id: string;
-    subsets: string[];
-    weights: number[];
-    styles: string[];
-    variants: FontVariants;
-    defSubset: string;
-    lastModified: string;
-    version: string;
-    category: string;
-  };
-}
+);
 
 const fontObjectV1Schema = z
   .object({
@@ -85,22 +57,6 @@ const fontObjectV1Schema = z
     category: z.string().min(1),
   })
   .strict();
-
-interface FontObjectV2 {
-  [id: string]: {
-    family: string;
-    id: string;
-    subsets: string[];
-    weights: number[];
-    styles: string[];
-    unicodeRange: { [subset: string]: string };
-    variants: FontVariants;
-    defSubset: string;
-    lastModified: string;
-    version: string;
-    category: string;
-  };
-}
 
 const fontObjectV2Schema = z
   .object({
@@ -118,62 +74,44 @@ const fontObjectV2Schema = z
   })
   .strict();
 
-interface FontVariantsVariable {
-  [type: string]: {
-    [style: string]: {
-      [subset: string]: string
-    }
-  }
-}
-
-interface FontObjectVariable {
-  [id: string]: {
-    family: string;
-    axes: {
-      [axes: string]: {
-        default: string;
-        min: string;
-        max: string;
-        step: string;
-      }
-    }
-    variants: FontVariantsVariable;
-  }
-}
-
-type FontObjectVariableDirect = Omit<FontObjectVariable, "variants">;
-
-const fontObjectVariableSchema = z.object({
-  family: z.string().min(1),
-  axes: z.record(
-    // axesType: string
-    z
-      .object({
-        default: z.string().min(1),
-        min: z.string().min(1),
-        max: z.string().min(1),
-        step: z.string().min(1),
-      })
-      .strict()
-  ),
-  variants: z.record(
-    // [type: string]
-    z.record(
-      // [style: string]
+const fontObjectVariableSchema = z
+  .object({
+    family: z.string().min(1),
+    axes: z.record(
+      // axesType: string
+      z
+        .object({
+          default: z.string().min(1),
+          min: z.string().min(1),
+          max: z.string().min(1),
+          step: z.string().min(1),
+        })
+        .strict()
+    ),
+    variants: z.record(
+      // [type: string]
       z.record(
-        // [subset: string]
-        z.string().url().min(1) // url
+        // [style: string]
+        z.record(
+          // [subset: string]
+          z.string().url().min(1) // url
+        )
       )
-    )
-  )
-}).strict();
+    ),
+  })
+  .strict();
 
 /* Using z.record is really bad for validation since it isn't strict enough, so we do additional record validation */
 interface FontObjDirect {
   family: string;
 }
 
-const checkKeys = (dataId: FontObjDirect, keys: string[], type: string, version: Version) => {
+const checkKeys = (
+  dataId: FontObjDirect,
+  keys: string[],
+  type: string,
+  version: Version
+) => {
   if (keys.length === 0)
     throw new ValidationError(
       `No ${type} variants found for ${dataId.family}\nData: ${stringify(
@@ -183,7 +121,10 @@ const checkKeys = (dataId: FontObjDirect, keys: string[], type: string, version:
     );
 };
 
-const fontObjectValidate = (data: FontObject, version: Exclude<Version, "variable">) => {
+const fontObjectValidate = (
+  data: FontObject,
+  version: Exclude<Version, "variable">
+) => {
   const dataKeys = Object.keys(data);
   if (dataKeys.length === 0)
     throw new ValidationError(
@@ -234,7 +175,12 @@ const fontObjectValidate = (data: FontObject, version: Exclude<Version, "variabl
             throw new TypeError(`URL for ${subset} is not an object!`);
 
           const newObj = obj.url;
-          checkKeys(dataId, Object.keys(newObj), `urls for subset ${subset}`, version);
+          checkKeys(
+            dataId,
+            Object.keys(newObj),
+            `urls for subset ${subset}`,
+            version
+          );
         }
       }
     }
@@ -254,7 +200,8 @@ const fontObjectVariableValidate = (newData: FontObject) => {
   const dataKeys = Object.keys(data);
   if (dataKeys.length === 0)
     throw new ValidationError(
-      `Empty APIVariable Object!\nData: ${stringify(data)}`, "variable"
+      `Empty APIVariable Object!\nData: ${stringify(data)}`,
+      "variable"
     );
 
   for (const id of dataKeys) {
@@ -277,26 +224,17 @@ const fontObjectVariableValidate = (newData: FontObject) => {
       // Iterate over [style: string]
       for (const style of styleKeys) {
         if (style !== "normal" && style !== "italic")
-          throw new ValidationError(`Style ${style} is not a valid style!`, "variable", id);
+          throw new ValidationError(
+            `Style ${style} is not a valid style!`,
+            "variable",
+            id
+          );
 
         const subsetKeys = Object.keys(dataId.variants[variant][style]);
         checkKeys(dataId, subsetKeys, `subsets for style ${style}`, "variable");
       }
     }
   }
-}
-
-
-
-export {
-  fontObjectValidate,
-  fontObjectVariableValidate,
 };
-export type {
-  FontObjectV1,
-  FontObjectV2,
-  FontObjectVariable,
-  FontObjectVariableDirect,
-  FontVariants,
-  FontVariantsVariable,
-};
+
+export { fontObjectValidate, fontObjectVariableValidate };

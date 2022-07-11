@@ -4,13 +4,12 @@ import { dirname, join } from "pathe";
 
 import type { APIResponse } from "./api-gen";
 import type {
+  FontObject,
   FontObjectV1,
   FontObjectV2,
   FontObjectVariable,
   FontObjectVariableDirect,
-} from "./schema";
-
-type FontObject = FontObjectV1 | FontObjectV2 | FontObjectVariable;
+} from "./types";
 
 /**
  * This returns a version of the Google Fonts Developer API.
@@ -79,7 +78,7 @@ const APIVariableDirect = JSON.parse(
       )
     )
     .toString()
-) as FontObjectVariableDirect;
+) as FontObjectVariableDirect[];
 
 /**
  * This returns a parsed version of the Google Fonts CSS API (Variable) for all Google Fonts.
