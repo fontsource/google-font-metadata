@@ -16,14 +16,14 @@ npm install google-font-metadata
 
 The project exports the following data:
 
-```
-import { APIv1, APIv2, APIVariable, APIDirect, APIVariableDirect } from 'google-font-metadata'
-const { APIv1, APIv2, APIVariable, APIDirect, APIVariableDirect } = require('google-font-metadata')
+```ts
+import { APIv1, APIv2, APIVariable } from "google-font-metadata";
+const { APIv1, APIv2, APIVariable } = require("google-font-metadata");
 
-console.dir(APIv1)
+console.dir(APIv2);
 ```
 
-### APIv1
+## APIv1
 
 Uses the Google Fonts CSS APIv1 that includes different font files for each subset, but does NOT include unicode-range values. This isn't usually recommended.
 
@@ -60,7 +60,7 @@ It exports [`data/google-fonts-v1.json`](https://github.com/fontsource/google-fo
 }
 ```
 
-### APIv2
+## APIv2
 
 Uses the Google Fonts CSS APIv2 and includes the unicode-range values for every subset. However, the API serves `woff/ttf` files with **ALL** subsets included in one file and therefore all links for those file types in the same subset lead to the same link for each weight and style. `woff2` files are individually split per subset.
 
@@ -137,7 +137,7 @@ Note that fonts with large glyphsets such as the Japanese, Korean or Chinese lan
 }
 ```
 
-### APIVariable
+## APIVariable
 
 Scrapes the Google Fonts directory and uses the Google Fonts API to generate all the relevant axis definitions and download variant metadata. You can learn more variable font axis' [here](https://fonts.google.com/variablefonts).
 
@@ -194,6 +194,11 @@ Note that certain fonts such as Inter or Recursive have the SLNT axis, meaning t
 
 These are arrays of generated objects from the `npx gfm generate [key]` command. It is unlikely you will use this.
 
+```ts
+import { APIDirect, APIVariableDirect } from "google-font-metadata";
+const { APIDirect, APIVariableDirect } = require("google-font-metadata");
+```
+
 Exports [`data/api-response.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/api-response.json) and [`data/variable-response.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/variable-response.json) respectively.
 
 ## Updating API Files
@@ -209,7 +214,7 @@ Flags:
 
 You are able to get a Google Fonts API `key` value from [here](https://console.developers.google.com/apis/credentials).
 
-###
+##
 
 `npx gfm parse` - Parses through the Google Fonts CSS API and generate full metadata using the `generate` command data.
 
@@ -221,7 +226,7 @@ Flags:
 - `-f, --force` - This skips the cache and force parses every font.
 - `--no-validate` - This skips invoking `npx gfm validate` after finishing parsing.
 
-###
+##
 
 `npx gfm validate` - Helper command to validate your existing metadata with a schema. This is automatically invoked with `npx gfm parse`.
 
@@ -231,7 +236,7 @@ Flags:
 - `-2, --v2` - Only validate APIv2.
 - `-v, --variable` - Only validate APIVariable.
 
-###
+##
 
 `npx gfm update-db` - [EXPERIMENTAL] This aims to move parsing away from the client and instead push updates to NPM as new versions, similar to [caniuse-lite](https://github.com/browserslist/caniuse-lite). It will soon be the preferred way to update the metadata as it removes the need to setup Google Credentials and skip the wait-time of long parses.
 
