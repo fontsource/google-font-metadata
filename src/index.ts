@@ -9,6 +9,8 @@ import type {
   FontObjectV2,
   FontObjectVariable,
   FontObjectVariableDirect,
+  FontVariants,
+  FontVariantsVariable,
 } from "./types";
 
 /**
@@ -104,4 +106,6 @@ export type {
   FontObjectV2,
   FontObjectVariable,
   FontObjectVariableDirect,
+  FontVariants,
+  FontVariantsVariable,
 };

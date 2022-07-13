@@ -13,7 +13,7 @@ import type {
   FontObjectVariable,
   FontObjectVariableDirect,
   FontVariantsVariable,
-  SupportedAxes
+  SupportedAxes,
 } from "./types";
 import { isAxesKey, isStandardAxesKey } from "./types";
 import { orderObject } from "./utils";
@@ -279,7 +279,8 @@ export const parseVariable = async (noValidate: boolean) => {
     );
 
     return consola.success(
-      `All ${Object.keys(results).length
+      `All ${
+        Object.keys(results).length
       } variable font datapoints have been generated.`
     );
   });

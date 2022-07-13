@@ -109,7 +109,7 @@ const isAxesKey = (axesKey: string): axesKey is SupportedAxes =>
 const isStandardAxesKey = (axesKey: string): axesKey is StandardAxes =>
   STANDARD_AXES.includes(axesKey as StandardAxes);
 
-export { isAxesKey, isStandardAxesKey, STANDARD_AXES, SUPPORTED_AXES }
+export { isAxesKey, isStandardAxesKey, STANDARD_AXES, SUPPORTED_AXES };
 
 export type {
   FontObject,
@@ -120,5 +120,5 @@ export type {
   FontVariants,
   FontVariantsVariable,
   StandardAxes,
-  SupportedAxes
+  SupportedAxes,
 };
