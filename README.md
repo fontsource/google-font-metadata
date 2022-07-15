@@ -212,7 +212,7 @@ Flags:
 - `-n, --normal` - Only fetch the normal Google Developer API for APIv1 and APIv2.
 - `-v, --variable` - Only scrape the variable axis page for APIVariable. Note `key` does not need to be given if this option is passed.
 
-You are able to get a Google Fonts API `key` value from [here](https://console.developers.google.com/apis/credentials).
+You are able to get a Google Fonts API `key` value from [here](https://console.developers.google.com/apis/credentials). Alternatively, you can use a `.env` file with `API_KEY=keyvalue` instead of providing a key argument in the command.
 
 ##
 

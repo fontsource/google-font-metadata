@@ -2,6 +2,12 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [4.0.2](https://github.com/fontsource/google-font-metadata/releases/tag/v4.0.2)
+
+## Fixes
+
+- Actually export FontVariants and FontVariantsVariable type from before.
+
 # [4.0.1](https://github.com/fontsource/google-font-metadata/releases/tag/v4.0.1)
 
 ## Fixes

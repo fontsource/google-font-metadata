@@ -97,10 +97,13 @@ const APIVariable = JSON.parse(
     .toString()
 ) as FontObjectVariable;
 
-export { APIDirect, APIv1, APIv2, APIVariable, APIVariableDirect };
-
-export type {
+export {
+  APIDirect,
   APIResponse,
+  APIv1,
+  APIv2,
+  APIVariable,
+  APIVariableDirect,
   FontObject,
   FontObjectV1,
   FontObjectV2,
