@@ -443,6 +443,14 @@
     }
   },
   {
+    "family": "DynaPuff",
+    "id": "dynapuff",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "EB Garamond",
     "id": "eb-garamond",
     "axes": {
@@ -561,6 +569,13 @@
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Figtree",
+    "id": "figtree",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
     }
   },
   {
@@ -1007,6 +1022,7 @@
     "family": "MuseoModerno",
     "id": "museomoderno",
     "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
@@ -1121,6 +1137,14 @@
     }
   },
   {
+    "family": "Noto Sans Devanagari",
+    "id": "noto-sans-devanagari",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Sans Display",
     "id": "noto-sans-display",
     "axes": {
@@ -1132,6 +1156,14 @@
   {
     "family": "Noto Sans Georgian",
     "id": "noto-sans-georgian",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Gujarati",
+    "id": "noto-sans-gujarati",
     "axes": {
       "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
@@ -1363,6 +1395,13 @@
     "id": "noto-serif-gurmukhi",
     "axes": {
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif HK",
+    "id": "noto-serif-hk",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
     }
   },
   {
