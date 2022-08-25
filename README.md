@@ -149,6 +149,8 @@ There are 3 default variants:
 
 Furthermore, a variant is generated for each unique axis in the font, e.g. if `wdth` exists, `variants.wdth.normal.latin` will exist. Note that the `wght` axis is also included in each unique custom variant.
 
+Note that `standard` or `full` variants may not exist if there are no relevant axes in the font for that classification. This is to prevent duplicate variants with different names.
+
 Exports [`data/variable.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/variable.json).
 
 ```json
