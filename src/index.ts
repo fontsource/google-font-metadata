@@ -4,14 +4,14 @@ import { dirname, join } from 'pathe';
 
 import type { APIResponse } from './api-gen';
 import type {
-  FontObject,
-  FontObjectV1,
-  FontObjectV2,
-  FontObjectVariable,
-  FontObjectVariableDirect,
-  FontVariants,
-  FontVariantsVariable,
-  Licenses,
+	FontObject,
+	FontObjectV1,
+	FontObjectV2,
+	FontObjectVariable,
+	FontObjectVariableDirect,
+	FontVariants,
+	FontVariantsVariable,
+	Licenses,
 } from './types';
 
 /**
@@ -22,10 +22,10 @@ import type {
  * Alternatively, the slower `npx gfm generate <key>` command can be used.
  */
 const APIDirect = JSON.parse(
-  fs
-    .readFileSync(
-      join(dirname(fileURLToPath(import.meta.url)), '../data/api-response.json'), 'utf8'
-    )
+	fs.readFileSync(
+		join(dirname(fileURLToPath(import.meta.url)), '../data/api-response.json'),
+		'utf8'
+	)
 ) as APIResponse[];
 
 /**
@@ -36,13 +36,13 @@ const APIDirect = JSON.parse(
  * Alternatively, the slower `npx gfm parse --v1-only` command can be used.
  */
 const APIv1 = JSON.parse(
-  fs
-    .readFileSync(
-      join(
-        dirname(fileURLToPath(import.meta.url)),
-        '../data/google-fonts-v1.json'
-      ), 'utf8'
-    )
+	fs.readFileSync(
+		join(
+			dirname(fileURLToPath(import.meta.url)),
+			'../data/google-fonts-v1.json'
+		),
+		'utf8'
+	)
 ) as FontObjectV1;
 
 /**
@@ -53,13 +53,13 @@ const APIv1 = JSON.parse(
  * Alternatively, the slower `npx gfm parse --v2-only` command can be used.
  */
 const APIv2 = JSON.parse(
-  fs
-    .readFileSync(
-      join(
-        dirname(fileURLToPath(import.meta.url)),
-        '../data/google-fonts-v2.json'
-      ), 'utf8'
-    )
+	fs.readFileSync(
+		join(
+			dirname(fileURLToPath(import.meta.url)),
+			'../data/google-fonts-v2.json'
+		),
+		'utf8'
+	)
 ) as FontObjectV2;
 
 /**
@@ -70,14 +70,13 @@ const APIv2 = JSON.parse(
  * Alternatively, the slower `npx gfm parse --variable` command can be used.
  */
 const APIVariableDirect = JSON.parse(
-  fs
-    .readFileSync(
-      join(
-        dirname(fileURLToPath(import.meta.url)),
-        '../data/variable-response.json'
-      ), 'utf8'
-    )
-
+	fs.readFileSync(
+		join(
+			dirname(fileURLToPath(import.meta.url)),
+			'../data/variable-response.json'
+		),
+		'utf8'
+	)
 ) as FontObjectVariableDirect[];
 
 /**
@@ -88,10 +87,10 @@ const APIVariableDirect = JSON.parse(
  * Alternatively, the slower `npx gfm parse --variable` command can be used.
  */
 const APIVariable = JSON.parse(
-  fs
-    .readFileSync(
-      join(dirname(fileURLToPath(import.meta.url)), '../data/variable.json'), 'utf8'
-    )
+	fs.readFileSync(
+		join(dirname(fileURLToPath(import.meta.url)), '../data/variable.json'),
+		'utf8'
+	)
 ) as FontObjectVariable;
 
 /**
@@ -100,24 +99,27 @@ const APIVariable = JSON.parse(
  *
  * @remarks This can be updated using `npx gfm parse --license`.
  */
-const APILicense = JSON.parse(fs.
-  readFileSync(join(dirname(fileURLToPath(import.meta.url)), '../data/licenses.json'), 'utf8')
+const APILicense = JSON.parse(
+	fs.readFileSync(
+		join(dirname(fileURLToPath(import.meta.url)), '../data/licenses.json'),
+		'utf8'
+	)
 ) as Licenses;
 
 export {
-  APIDirect,
-  APILicense,
-  APIResponse,
-  APIv1,
-  APIv2,
-  APIVariable,
-  APIVariableDirect,
-  FontObject,
-  FontObjectV1,
-  FontObjectV2,
-  FontObjectVariable,
-  FontObjectVariableDirect,
-  FontVariants,
-  FontVariantsVariable,
-  Licenses,
+	APIDirect,
+	APILicense,
+	APIResponse,
+	APIv1,
+	APIv2,
+	APIVariable,
+	APIVariableDirect,
+	FontObject,
+	FontObjectV1,
+	FontObjectV2,
+	FontObjectVariable,
+	FontObjectVariableDirect,
+	FontVariants,
+	FontVariantsVariable,
+	Licenses,
 };
