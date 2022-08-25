@@ -2,6 +2,16 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [4.1.0](https://github.com/fontsource/google-font-metadata/releases/tag/v4.1.0)
+
+## Features
+
+- Add license scraper. [#107](https://github.com/fontsource/google-font-metadata/pull/107)
+
+## Fixes
+
+- Remove duplicate variants if axes are not applicable. [#106](https://github.com/fontsource/google-font-metadata/pull/106)
+
 # [4.0.2](https://github.com/fontsource/google-font-metadata/releases/tag/v4.0.2)
 
 ## Fixes

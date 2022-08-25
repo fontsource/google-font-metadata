@@ -41,11 +41,11 @@
     "zod": "^3.17.3"
   },
   "devDependencies": {
-    "@ayuhito/eslint-config": "^0.1.9",
+    "@ayuhito/eslint-config": "^0.2.4",
     "@types/node": "^18.0.3",
     "@types/stylis": "^4.0.2",
     "c8": "^7.11.3",
-    "eslint": "^8.19.0",
+    "eslint": "^8.22.0",
     "magic-string": "^0.26.2",
     "msw": "^0.43.1",
     "pkgroll": "^1.3.1",

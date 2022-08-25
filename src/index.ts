@@ -1,8 +1,8 @@
-import * as fs from "node:fs";
-import { fileURLToPath } from "node:url";
-import { dirname, join } from "pathe";
+import * as fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'pathe';
 
-import type { APIResponse } from "./api-gen";
+import type { APIResponse } from './api-gen';
 import type {
   FontObject,
   FontObjectV1,
@@ -11,7 +11,8 @@ import type {
   FontObjectVariableDirect,
   FontVariants,
   FontVariantsVariable,
-} from "./types";
+  Licenses,
+} from './types';
 
 /**
  * This returns a version of the Google Fonts Developer API.
@@ -23,9 +24,8 @@ import type {
 const APIDirect = JSON.parse(
   fs
     .readFileSync(
-      join(dirname(fileURLToPath(import.meta.url)), "../data/api-response.json")
+      join(dirname(fileURLToPath(import.meta.url)), '../data/api-response.json'), 'utf8'
     )
-    .toString()
 ) as APIResponse[];
 
 /**
@@ -40,10 +40,9 @@ const APIv1 = JSON.parse(
     .readFileSync(
       join(
         dirname(fileURLToPath(import.meta.url)),
-        "../data/google-fonts-v1.json"
-      )
+        '../data/google-fonts-v1.json'
+      ), 'utf8'
     )
-    .toString()
 ) as FontObjectV1;
 
 /**
@@ -58,10 +57,9 @@ const APIv2 = JSON.parse(
     .readFileSync(
       join(
         dirname(fileURLToPath(import.meta.url)),
-        "../data/google-fonts-v2.json"
-      )
+        '../data/google-fonts-v2.json'
+      ), 'utf8'
     )
-    .toString()
 ) as FontObjectV2;
 
 /**
@@ -76,10 +74,10 @@ const APIVariableDirect = JSON.parse(
     .readFileSync(
       join(
         dirname(fileURLToPath(import.meta.url)),
-        "../data/variable-response.json"
-      )
+        '../data/variable-response.json'
+      ), 'utf8'
     )
-    .toString()
+
 ) as FontObjectVariableDirect[];
 
 /**
@@ -92,13 +90,23 @@ const APIVariableDirect = JSON.parse(
 const APIVariable = JSON.parse(
   fs
     .readFileSync(
-      join(dirname(fileURLToPath(import.meta.url)), "../data/variable.json")
+      join(dirname(fileURLToPath(import.meta.url)), '../data/variable.json'), 'utf8'
     )
-    .toString()
 ) as FontObjectVariable;
+
+/**
+ * This returns a parsed version of the Google Fonts Attribution page.
+ * {@link https://fonts.google.com/attribution}
+ *
+ * @remarks This can be updated using `npx gfm parse --license`.
+ */
+const APILicense = JSON.parse(fs.
+  readFileSync(join(dirname(fileURLToPath(import.meta.url)), '../data/licenses.json'), 'utf8')
+) as Licenses;
 
 export {
   APIDirect,
+  APILicense,
   APIResponse,
   APIv1,
   APIv2,
@@ -111,4 +119,5 @@ export {
   FontObjectVariableDirect,
   FontVariants,
   FontVariantsVariable,
+  Licenses,
 };

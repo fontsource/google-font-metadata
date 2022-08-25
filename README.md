@@ -203,6 +203,32 @@ const { APIDirect, APIVariableDirect } = require("google-font-metadata");
 
 Exports [`data/api-response.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/api-response.json) and [`data/variable-response.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/variable-response.json) respectively.
 
+## APILicense
+
+Scrapes the [Google Fonts Attribution](https://fonts.google.com/attribution) page and returns a readable object.
+
+```json
+{
+...
+  "abel": {
+    "id": "abel",
+    "authors": {
+      "copyright": "Copyright 2011, Matthew Desmond with Reserved Font Name Abel.",
+      "website": "http://www.madtype.com",
+      "email": "mattdesmond@gmail.com"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright (c) 2011, Matthew Desmond (http://www.madtype.com | mattdesmond@gmail.com), with Reserved Font Name Abel."
+  },
+...
+}
+```
+
+Exports [`data/licenses.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/licenses.json)
+
 ## Updating API Files
 
 You can use the `gfm` CLI tool to update the metadata with fresh results from the Google APIs.
@@ -225,6 +251,7 @@ Flags:
 - `-1, --v1` - Only parse and update APIv1.
 - `-2, --v2` - Only parse and update APIv2.
 - `-v, --variable` - Only parse and update APIVariable.
+- `-l, --license` - Only parse and update APILicense.
 - `-f, --force` - This skips the cache and force parses every font.
 - `--no-validate` - This skips invoking `npx gfm validate` after finishing parsing.
 
