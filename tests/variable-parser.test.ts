@@ -91,10 +91,6 @@ describe("Variable Parser", () => {
         "akshar"
       ) as FontObjectVariableDirect;
       expect(generateCSSLinks(akshar)).toEqual({
-        "full.normal":
-          "https://fonts.googleapis.com/css2?family=Akshar:wght@300..700",
-        "standard.normal":
-          "https://fonts.googleapis.com/css2?family=Akshar:wght@300..700",
         "wght.normal":
           "https://fonts.googleapis.com/css2?family=Akshar:wght@300..700",
       });
@@ -106,14 +102,6 @@ describe("Variable Parser", () => {
         "alegreya"
       ) as FontObjectVariableDirect;
       expect(generateCSSLinks(alegreya)).toEqual({
-        "full.italic":
-          "https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400..900",
-        "full.normal":
-          "https://fonts.googleapis.com/css2?family=Alegreya:wght@400..900",
-        "standard.italic":
-          "https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400..900",
-        "standard.normal":
-          "https://fonts.googleapis.com/css2?family=Alegreya:wght@400..900",
         "wght.italic":
           "https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,400..900",
         "wght.normal":
@@ -128,8 +116,6 @@ describe("Variable Parser", () => {
         "ballet"
       ) as FontObjectVariableDirect;
       expect(generateCSSLinks(ballet)).toEqual({
-        "full.normal":
-          "https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72",
         "opsz.normal":
           "https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72",
         "standard.normal":
