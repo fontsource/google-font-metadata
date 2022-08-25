@@ -1,79 +1,79 @@
 {
-  "name": "google-font-metadata",
-  "description": "A metadata generator for Google Fonts.",
-  "version": "4.0.2",
-  "author": "Ayuhito <declininglotus@gmail.com>",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    "types": "./dist/index.d.ts",
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
-  },
-  "bin": {
-    "gfm": "./dist/cli.mjs"
-  },
-  "license": "MIT",
-  "keywords": [
-    "fontsource",
-    "font",
-    "font family",
-    "google fonts",
-    "metadata",
-    "fonts api",
-    "unicode range"
-  ],
-  "dependencies": {
-    "cac": "^6.7.12",
-    "consola": "^2.15.3",
-    "deepmerge": "^4.2.2",
-    "dotenv": "^16.0.1",
-    "execa": "^6.1.0",
-    "got": "^12.3.1",
-    "json-stringify-pretty-compact": "^4.0.0",
-    "linkedom": "^0.14.12",
-    "p-queue": "^7.3.0",
-    "pathe": "^0.3.5",
-    "picocolors": "^1.0.0",
-    "puppeteer": "^16.2.0",
-    "stylis": "^4.1.1",
-    "zod": "^3.18.0"
-  },
-  "devDependencies": {
-    "@ayuhito/eslint-config": "^0.2.4",
-    "@types/node": "^18.7.13",
-    "@types/stylis": "^4.0.2",
-    "c8": "^7.12.0",
-    "eslint": "^8.22.0",
-    "magic-string": "^0.26.2",
-    "msw": "^0.45.0",
-    "pkgroll": "^1.4.0",
-    "prettier": "^2.7.1",
-    "tsx": "^3.8.2",
-    "typescript": "^4.7.4",
-    "vitest": "^0.22.1"
-  },
-  "scripts": {
-    "build": "pkgroll --target=node14 --minify && tsx ./scripts/addHashbang.ts",
-    "dev": "pkgroll --target=node14",
-    "cli": "node ./dist/cli.mjs",
-    "test": "vitest",
-    "test:generate-fixtures": "tsx ./tests/utils/generate-css-fixtures",
-    "coverage": "vitest --coverage",
-    "format": "prettier --write **/*.{ts,md}",
-    "lint": "eslint **/*.ts --fix",
-    "lint:src": "eslint ./src/*.ts --fix",
-    "prepublish": "npm run format && npm run build"
-  },
-  "files": [
-    "dist/*",
-    "data/*"
-  ],
-  "homepage": "https://github.com/fontsource/google-font-metadata",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fontsource/google-font-metadata"
-  },
-  "packageManager": "pnpm@7.5.0"
+	"name": "google-font-metadata",
+	"description": "A metadata generator for Google Fonts.",
+	"version": "4.1.0",
+	"author": "Ayuhito <declininglotus@gmail.com>",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		"types": "./dist/index.d.ts",
+		"require": "./dist/index.js",
+		"import": "./dist/index.mjs"
+	},
+	"bin": {
+		"gfm": "./dist/cli.mjs"
+	},
+	"license": "MIT",
+	"keywords": [
+		"fontsource",
+		"font",
+		"font family",
+		"google fonts",
+		"metadata",
+		"fonts api",
+		"unicode range"
+	],
+	"dependencies": {
+		"cac": "^6.7.12",
+		"consola": "^2.15.3",
+		"deepmerge": "^4.2.2",
+		"dotenv": "^16.0.1",
+		"execa": "^6.1.0",
+		"got": "^12.3.1",
+		"json-stringify-pretty-compact": "^4.0.0",
+		"linkedom": "^0.14.12",
+		"p-queue": "^7.3.0",
+		"pathe": "^0.3.5",
+		"picocolors": "^1.0.0",
+		"puppeteer": "^16.2.0",
+		"stylis": "^4.1.1",
+		"zod": "^3.18.0"
+	},
+	"devDependencies": {
+		"@ayuhito/eslint-config": "^0.2.4",
+		"@types/node": "^18.7.13",
+		"@types/stylis": "^4.0.2",
+		"c8": "^7.12.0",
+		"eslint": "^8.22.0",
+		"magic-string": "^0.26.2",
+		"msw": "^0.45.0",
+		"pkgroll": "^1.4.0",
+		"prettier": "^2.7.1",
+		"tsx": "^3.8.2",
+		"typescript": "^4.7.4",
+		"vitest": "^0.22.1"
+	},
+	"scripts": {
+		"build": "pkgroll --target=node14 --minify && tsx ./scripts/addHashbang.ts",
+		"dev": "pkgroll --target=node14",
+		"cli": "node ./dist/cli.mjs",
+		"test": "vitest",
+		"test:generate-fixtures": "tsx ./tests/utils/generate-css-fixtures",
+		"coverage": "vitest --coverage",
+		"format": "prettier --write **/*.{ts,md}",
+		"lint": "eslint **/*.ts --fix",
+		"lint:src": "eslint ./src/*.ts --fix",
+		"prepublish": "npm run format && npm run build"
+	},
+	"files": [
+		"dist/*",
+		"data/*"
+	],
+	"homepage": "https://github.com/fontsource/google-font-metadata",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/fontsource/google-font-metadata"
+	},
+	"packageManager": "pnpm@7.5.0"
 }

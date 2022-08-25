@@ -11,6 +11,7 @@ Google Font Metadata will log all notable changes within this file.
 ## Fixes
 
 - Remove duplicate variants if axes are not applicable. [#106](https://github.com/fontsource/google-font-metadata/pull/106)
+- Update dependencies and change default to tabs and single quotes for format. [#108](https://github.com/fontsource/google-font-metadata/pull/108)
 
 # [4.0.2](https://github.com/fontsource/google-font-metadata/releases/tag/v4.0.2)
 
