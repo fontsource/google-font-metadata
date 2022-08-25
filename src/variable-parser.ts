@@ -57,7 +57,7 @@ export const addAndMergeAxesRange = (
   return [mergedAxes, mergedRange];
 };
 
-export const generateCSSLinks = (font: FontObjectVariableDirect) => {
+export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
   const baseurl = "https://fonts.googleapis.com/css2?family=";
   const family = font.family.replace(/\s/g, "+");
 
@@ -70,6 +70,10 @@ export const generateCSSLinks = (font: FontObjectVariableDirect) => {
   const hasWght = axesKeys.includes("wght");
   // Remove wght and ital from axesKeys as we infer through hasItal and hasWght
   axesKeys = axesKeys.filter((axis) => !["ital", "wght"].includes(axis));
+
+  const isStandard = axesKeys.some((axis) => isStandardAxesKey(axis));
+  // Remove all standard axes and check for any non-standard keys
+  const isFull = axesKeys.filter((axis) => !isStandardAxesKey(axis)).length > 1
 
   const fullAxes: SupportedAxes[] = [];
   const standardAxes: SupportedAxes[] = [];
@@ -132,39 +136,43 @@ export const generateCSSLinks = (font: FontObjectVariableDirect) => {
   }
 
   // Full variant
-  let fullTuple = addAndMergeAxesRange(font, fullAxes, []);
-  if (hasWght) fullTuple = addAndMergeAxesRange(font, fullAxes, ["wght"]);
-  links["full.normal"] = `${baseurl}${family}:${fullTuple[0]}@${fullTuple[1]}`;
+  if (isFull) {
+    let fullTuple = addAndMergeAxesRange(font, fullAxes, []);
+    if (hasWght) fullTuple = addAndMergeAxesRange(font, fullAxes, ["wght"]);
+    links["full.normal"] = `${baseurl}${family}:${fullTuple[0]}@${fullTuple[1]}`;
 
-  if (hasItal) {
-    let fullItalTuple = addAndMergeAxesRange(font, fullAxes, ["ital"]);
-    if (hasWght)
-      fullItalTuple = addAndMergeAxesRange(font, fullAxes, ["ital", "wght"]);
+    if (hasItal) {
+      let fullItalTuple = addAndMergeAxesRange(font, fullAxes, ["ital"]);
+      if (hasWght)
+        fullItalTuple = addAndMergeAxesRange(font, fullAxes, ["ital", "wght"]);
 
-    links[
-      "full.italic"
-    ] = `${baseurl}${family}:${fullItalTuple[0]}@${fullItalTuple[1]}`;
+      links[
+        "full.italic"
+      ] = `${baseurl}${family}:${fullItalTuple[0]}@${fullItalTuple[1]}`;
+    }
   }
 
   // Standard variant
-  let standardTuple = addAndMergeAxesRange(font, standardAxes, []);
-  if (hasWght)
-    standardTuple = addAndMergeAxesRange(font, standardAxes, ["wght"]);
-  links[
-    "standard.normal"
-  ] = `${baseurl}${family}:${standardTuple[0]}@${standardTuple[1]}`;
-
-  if (hasItal) {
-    let standardItalTuple = addAndMergeAxesRange(font, standardAxes, ["ital"]);
+  if (isStandard) {
+    let standardTuple = addAndMergeAxesRange(font, standardAxes, []);
     if (hasWght)
-      standardItalTuple = addAndMergeAxesRange(font, standardAxes, [
-        "ital",
-        "wght",
-      ]);
-
+      standardTuple = addAndMergeAxesRange(font, standardAxes, ["wght"]);
     links[
-      "standard.italic"
-    ] = `${baseurl}${family}:${standardItalTuple[0]}@${standardItalTuple[1]}`;
+      "standard.normal"
+    ] = `${baseurl}${family}:${standardTuple[0]}@${standardTuple[1]}`;
+
+    if (hasItal) {
+      let standardItalTuple = addAndMergeAxesRange(font, standardAxes, ["ital"]);
+      if (hasWght)
+        standardItalTuple = addAndMergeAxesRange(font, standardAxes, [
+          "ital",
+          "wght",
+        ]);
+
+      links[
+        "standard.italic"
+      ] = `${baseurl}${family}:${standardItalTuple[0]}@${standardItalTuple[1]}`;
+    }
   }
 
   return links;
@@ -279,8 +287,7 @@ export const parseVariable = async (noValidate: boolean) => {
     );
 
     return consola.success(
-      `All ${
-        Object.keys(results).length
+      `All ${Object.keys(results).length
       } variable font datapoints have been generated.`
     );
   });
