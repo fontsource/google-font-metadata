@@ -2,6 +2,12 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [4.1.2](https://github.com/fontsource/google-font-metadata/releases/tag/v4.1.2)
+
+## Fixes
+
+- Remove hashbang generator script. [#111](https://github.com/fontsource/google-font-metadata/pull/111)
+
 # [4.1.1](https://github.com/fontsource/google-font-metadata/releases/tag/v4.1.1)
 
 ## Fixes
