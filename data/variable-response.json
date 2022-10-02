@@ -356,6 +356,14 @@
     }
   },
   {
+    "family": "Cairo Play",
+    "id": "cairo-play",
+    "axes": {
+      "slnt": {"default": "0", "min": "-11", "max": "11", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "1000", "step": "1"}
+    }
+  },
+  {
     "family": "Catamaran",
     "id": "catamaran",
     "axes": {
@@ -727,6 +735,14 @@
     }
   },
   {
+    "family": "Inter Tight",
+    "id": "inter-tight",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "JetBrains Mono",
     "id": "jetbrains-mono",
     "axes": {
@@ -1027,6 +1043,14 @@
     }
   },
   {
+    "family": "Nabla",
+    "id": "nabla",
+    "axes": {
+      "EDPT": {"default": "100", "min": "0", "max": "200", "step": "1"},
+      "EHLT": {"default": "12", "min": "0", "max": "24", "step": "1"}
+    }
+  },
+  {
     "family": "Newsreader",
     "id": "newsreader",
     "axes": {
@@ -1052,6 +1076,13 @@
   {
     "family": "Noto Naskh Arabic",
     "id": "noto-naskh-arabic",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Nastaliq Urdu",
+    "id": "noto-nastaliq-urdu",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
@@ -1154,6 +1185,14 @@
     }
   },
   {
+    "family": "Noto Sans Ethiopic",
+    "id": "noto-sans-ethiopic",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Sans Georgian",
     "id": "noto-sans-georgian",
     "axes": {
@@ -1190,6 +1229,13 @@
     "axes": {
       "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Javanese",
+    "id": "noto-sans-javanese",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
   },
   {
@@ -1265,6 +1311,14 @@
     "id": "noto-sans-ol-chiki",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Oriya",
+    "id": "noto-sans-oriya",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
   {
@@ -1687,6 +1741,13 @@
   {
     "family": "Reem Kufi",
     "id": "reem-kufi",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Reem Kufi Fun",
+    "id": "reem-kufi-fun",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
