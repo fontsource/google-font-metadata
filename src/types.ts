@@ -79,6 +79,8 @@ type FontObject = FontObjectV1 | FontObjectV2 | FontObjectVariable;
 const SUPPORTED_AXES_UPPER = [
 	'CASL',
 	'CRSV',
+	'EDPT',
+	'EHLT',
 	'FILL',
 	'GRAD',
 	'MONO',
