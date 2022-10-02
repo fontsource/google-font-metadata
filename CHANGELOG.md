@@ -2,6 +2,12 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [4.1.1](https://github.com/fontsource/google-font-metadata/releases/tag/v4.1.1)
+
+## Fixes
+
+- Add EDPT and EHLT variable axis. [#110](https://github.com/fontsource/google-font-metadata/pull/110)
+
 # [4.1.0](https://github.com/fontsource/google-font-metadata/releases/tag/v4.1.0)
 
 ## Features
