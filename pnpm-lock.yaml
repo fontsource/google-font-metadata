@@ -14,7 +14,6 @@ specifiers:
   got: ^12.3.1
   json-stringify-pretty-compact: ^4.0.0
   linkedom: ^0.14.12
-  magic-string: ^0.26.2
   msw: ^0.45.0
   p-queue: ^7.3.0
   pathe: ^0.3.5
@@ -50,7 +49,6 @@ devDependencies:
   '@types/stylis': 4.0.2
   c8: 7.12.0
   eslint: 8.22.0
-  magic-string: 0.26.2
   msw: 0.45.0_typescript@4.7.4
   pkgroll: 1.4.0_typescript@4.7.4
   prettier: 2.7.1

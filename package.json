@@ -1,8 +1,8 @@
 {
 	"name": "google-font-metadata",
 	"description": "A metadata generator for Google Fonts.",
-	"version": "4.1.1",
-	"author": "Ayuhito <declininglotus@gmail.com>",
+	"version": "4.1.2",
+	"author": "Ayuhito <hello@ayuhito.com>",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
@@ -46,7 +46,6 @@
 		"@types/stylis": "^4.0.2",
 		"c8": "^7.12.0",
 		"eslint": "^8.22.0",
-		"magic-string": "^0.26.2",
 		"msw": "^0.45.0",
 		"pkgroll": "^1.4.0",
 		"prettier": "^2.7.1",
@@ -55,8 +54,8 @@
 		"vitest": "^0.22.1"
 	},
 	"scripts": {
-		"build": "pkgroll --target=node14 --minify && tsx ./scripts/addHashbang.ts",
-		"dev": "pkgroll --target=node14",
+		"build": "pkgroll --target=node14",
+		"dev": "pkgroll --target=node14 --watch",
 		"cli": "node ./dist/cli.mjs",
 		"test": "vitest",
 		"test:generate-fixtures": "tsx ./tests/utils/generate-css-fixtures",
