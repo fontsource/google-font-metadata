@@ -66,7 +66,7 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 
 	// ital can't be a range xx..xx and instead acts like a toggle e.g. 0 or 1
 	const hasItal = axesKeys.includes('ital');
-	// wght is technically supposed to be a mandatory axis... but extremely rarely it's not e.g. Ballet
+	// wght is technically supposed to be a mandatory axis... but extremely rarely it's not e.g. Ballet, Nabla
 	const hasWght = axesKeys.includes('wght');
 	// Remove wght and ital from axesKeys as we infer through hasItal and hasWght
 	axesKeys = axesKeys.filter((axis) => !['ital', 'wght'].includes(axis));
@@ -291,8 +291,7 @@ export const parseVariable = async (noValidate: boolean) => {
 		);
 
 		return consola.success(
-			`All ${
-				Object.keys(results).length
+			`All ${Object.keys(results).length
 			} variable font datapoints have been generated.`
 		);
 	});
