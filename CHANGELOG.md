@@ -2,6 +2,12 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [4.1.3](https://github.com/fontsource/google-font-metadata/releases/tag/v4.1.3)
+
+## Fixes
+
+- Add programmatic API. [#112](https://github.com/fontsource/google-font-metadata/pull/112)
+
 # [4.1.2](https://github.com/fontsource/google-font-metadata/releases/tag/v4.1.2)
 
 ## Fixes
