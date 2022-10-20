@@ -2,6 +2,7 @@ import consola from 'consola';
 import colors from 'picocolors';
 
 import type { FontObject } from './index';
+// eslint-disable-next-line import/no-cycle
 import { APIv1, APIv2, APIVariable } from './index';
 import { fontObjectValidate, fontObjectVariableValidate } from './schema';
 

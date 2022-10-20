@@ -90,8 +90,13 @@ const processTable = (tableHTML: string) => {
 	);
 };
 
-// Need to use Puppeteer to let JavaScript load page elements fully
+/**
+ * This scrapes the Google Fonts Variable Font page for all the basic metadata available.
+ *
+ * {@link https://fonts.google.com/variablefonts}
+ */
 export const fetchVariable = async () => {
+	// Need to use Puppeteer to let JavaScript load page elements fully
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
 	await page.goto(url, { waitUntil: 'networkidle0' });

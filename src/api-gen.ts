@@ -29,6 +29,12 @@ const fetchURL = async (url: string): Promise<void> => {
 const baseurl =
 	'https://www.googleapis.com/webfonts/v1/webfonts?fields=items(category%2Cfamily%2ClastModified%2Csubsets%2Cvariants%2Cversion)&key=';
 
+/**
+ * This fetches the Google Fonts Developer API for all the basic metadata available.
+ *
+ * {@link https://developers.google.com/fonts/docs/developer_api}
+ * @param key Google API key
+ */
 export const fetchAPI = async (key: string): Promise<void> => {
 	if (key) {
 		try {

@@ -195,6 +195,11 @@ queue.on('error', (error: Error) => {
 	consola.error(error);
 });
 
+/**
+ * Parses the fetched API data and writes it to the APIv1 JSON dataset.
+ * @param force - Force update all fonts without using cache.
+ * @param noValidate - Skip automatic validation of generated data.
+ */
 export const parsev1 = async (force: boolean, noValidate: boolean) => {
 	for (const font of APIDirect) {
 		try {

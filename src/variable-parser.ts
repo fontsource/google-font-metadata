@@ -271,6 +271,10 @@ queue.on('error', (error: Error) => {
 	consola.error(error);
 });
 
+/**
+ * Parses the scraped variable font data into a usable APIVariable dataset,
+ * @param noValidate - Skip automatic validation of parsed dataset.
+ */
 export const parseVariable = async (noValidate: boolean) => {
 	for (const font of APIVariableDirect) {
 		try {
@@ -291,7 +295,8 @@ export const parseVariable = async (noValidate: boolean) => {
 		);
 
 		return consola.success(
-			`All ${Object.keys(results).length
+			`All ${
+				Object.keys(results).length
 			} variable font datapoints have been generated.`
 		);
 	});

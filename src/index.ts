@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import * as fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'pathe';
@@ -123,3 +124,10 @@ export {
 	FontVariantsVariable,
 	Licenses,
 };
+
+export { fetchAPI } from './api-gen';
+export { parsev1 } from './api-parser-v1';
+export { parsev2 } from './api-parser-v2';
+export { parseLicenses } from './license';
+export { fetchVariable } from './variable-gen';
+export { parseVariable } from './variable-parser';
