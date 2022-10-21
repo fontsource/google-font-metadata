@@ -200,7 +200,7 @@ export const fetchCSS = async (url: string) => {
 export const fetchAllCSS = async (links: Links) =>
 	Promise.all(
 		Object.keys(links).map(async (key) => [key, await fetchCSS(links[key])])
-	);
+	) as Promise<string[][]>; // Additional type assertion needed for pkgroll dts plugin
 
 export const parseCSS = (cssTuple: string[][]) => {
 	const fontVariants: FontVariantsVariable = {};
