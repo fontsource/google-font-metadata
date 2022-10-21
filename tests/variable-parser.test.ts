@@ -2,7 +2,7 @@ import stringify from 'json-stringify-pretty-compact';
 import * as fs from 'node:fs/promises';
 import { describe, expect, it, vi } from 'vitest';
 
-import * as index from '../src/index';
+import * as data from '../src/data';
 import { FontObjectVariableDirect } from '../src/types';
 import {
 	addAndMergeAxesRange,
@@ -19,12 +19,12 @@ import {
 } from './utils/helpers';
 
 vi.mock('node:fs/promises');
-vi.mock('../src/index');
+vi.mock('../src/data');
 
 describe('Variable Parser', () => {
 	setupAPIServer(apiParseVariableHandlers);
 	const response = dataFixture('variable-response');
-	vi.spyOn(index, 'APIVariableDirect', 'get').mockReturnValue(response);
+	vi.spyOn(data, 'APIVariableDirect', 'get').mockReturnValue(response);
 
 	describe('Sort axes in alphabetic order', () => {
 		it('should sort lowercase', () => {

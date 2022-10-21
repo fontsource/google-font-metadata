@@ -8,9 +8,9 @@ import { dirname, join } from 'pathe';
 import { compile } from 'stylis';
 
 import { apiv2 as userAgents } from '../data/user-agents.json';
-import type { APIResponse } from './index';
-import { APIDirect, APIv2 } from './index';
-import type { FontObjectV2 } from './types';
+import type { } from './api-gen';
+import { APIDirect, APIv2 } from './data';
+import type { APIResponse, FontObjectV2 } from './types';
 import { orderObject, weightListGen } from './utils';
 import { validate } from './validate';
 
@@ -244,6 +244,11 @@ queue.on('error', (error: Error) => {
 	consola.error(error);
 });
 
+/**
+ * Parses the fetched API and writes it to the APIv2 dataset.
+ * @param force - Force update all fonts without using cache.
+ * @param noValidate - Skip automatic validation of generated data.
+ */
 export const parsev2 = async (force: boolean, noValidate: boolean) => {
 	for (const font of APIDirect) {
 		try {

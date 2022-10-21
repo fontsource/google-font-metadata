@@ -4,15 +4,15 @@ import * as fs from 'node:fs/promises';
 import { describe, expect, it, vi } from 'vitest';
 
 import type { FontObjectV2 } from '../src';
-import * as index from '../src';
 import { fetchAllCSS, parsev2, processCSS } from '../src/api-parser-v2';
+import * as data from '../src/data';
 import APIResponse from './fixtures/api-response.json';
 import APIv2 from './fixtures/google-fonts-v2.json';
 import { apiParseV2Handlers, setupAPIServer } from './mocks/index';
 import { cssFixture, idGen } from './utils/helpers';
 
 vi.mock('node:fs/promises');
-vi.mock('../src/index');
+vi.mock('../src/data');
 
 describe('API Parser v2', () => {
 	setupAPIServer(apiParseV2Handlers);
@@ -56,8 +56,8 @@ describe('API Parser v2', () => {
 	});
 
 	describe('Full parse and order', () => {
-		vi.spyOn(index, 'APIv2', 'get').mockReturnValue(APIv2);
-		vi.spyOn(index, 'APIDirect', 'get').mockReturnValue(APIResponse);
+		vi.spyOn(data, 'APIv2', 'get').mockReturnValue(APIv2);
+		vi.spyOn(data, 'APIDirect', 'get').mockReturnValue(APIResponse);
 
 		it('Copies APIv2 as a cache since force flag is false', async () => {
 			await parsev2(false, false);

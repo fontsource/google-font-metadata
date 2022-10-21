@@ -28,7 +28,6 @@
 
     /* Type Checking */
     "strict": true,
-    "types": ["vitest/importMeta"],
     "isolatedModules": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

@@ -8,9 +8,8 @@ import { dirname, join } from 'pathe';
 import { compile } from 'stylis';
 
 import { apiv1 as userAgents } from '../data/user-agents.json';
-import type { APIResponse } from './index';
-import { APIDirect, APIv1 } from './index';
-import type { FontObjectV1 } from './types';
+import { APIDirect, APIv1 } from './data';
+import type { APIResponse, FontObjectV1 } from './types';
 import { orderObject, weightListGen } from './utils';
 import { validate } from './validate';
 
@@ -195,6 +194,11 @@ queue.on('error', (error: Error) => {
 	consola.error(error);
 });
 
+/**
+ * Parses the fetched API data and writes it to the APIv1 JSON dataset.
+ * @param force - Force update all fonts without using cache.
+ * @param noValidate - Skip automatic validation of generated data.
+ */
 export const parsev1 = async (force: boolean, noValidate: boolean) => {
 	for (const font of APIDirect) {
 		try {

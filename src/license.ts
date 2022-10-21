@@ -106,6 +106,11 @@ const processTable = (tableHTML: string) => {
 	);
 };
 
+/**
+ * Fetches the attribution data from Google Fonts and writes it to the APILicense dataset.
+ *
+ * {@link https://fonts.google.com/attribution}
+ */
 export const parseLicenses = async () => {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
