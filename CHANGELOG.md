@@ -6,7 +6,7 @@ Google Font Metadata will log all notable changes within this file.
 
 ## Fixes
 
-- Add additional type assertion to please `pkgroll dts`. [#114](https://github.com/fontsource/google-font-metadata/pull/112)
+- Add additional type assertion to please `pkgroll dts`. [#114](https://github.com/fontsource/google-font-metadata/pull/114)
 - Republish with updated dist files.
 
 # [4.1.3](https://github.com/fontsource/google-font-metadata/releases/tag/v4.1.3)
