@@ -5,14 +5,8 @@ import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'pathe';
 
-export interface APIResponse {
-	family: string;
-	variants: string[];
-	subsets: string[];
-	version: string;
-	lastModified: string;
-	category: string;
-}
+import { APIResponse } from './types';
+
 interface GotResponse {
 	items: APIResponse[];
 }

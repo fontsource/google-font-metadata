@@ -1,4 +1,4 @@
-import type { FontObject } from './index';
+import type { FontObject } from './types';
 
 // Alphabetically order the generated font object lists
 export const orderObject = (unordered: FontObject): FontObject => {

@@ -1,3 +1,11 @@
+interface APIResponse {
+	family: string;
+	variants: string[];
+	subsets: string[];
+	version: string;
+	lastModified: string;
+	category: string;
+}
 interface FontVariants {
 	[weight: string]: {
 		[style: string]: {
@@ -133,6 +141,7 @@ interface Licenses {
 export { isAxesKey, isStandardAxesKey, STANDARD_AXES, SUPPORTED_AXES };
 
 export type {
+	APIResponse,
 	Authors,
 	FontObject,
 	FontObjectV1,

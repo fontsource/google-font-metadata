@@ -8,7 +8,7 @@ import { dirname, join } from 'pathe';
 import { compile } from 'stylis';
 
 import { apiv2 as userAgents } from '../data/user-agents.json';
-import { APIVariableDirect } from './index';
+import { APIVariableDirect } from './data';
 import type {
 	FontObjectVariable,
 	FontObjectVariableDirect,
