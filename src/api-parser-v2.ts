@@ -194,9 +194,9 @@ export const processCSS = (
 								] = path;
 							}
 
-							// APIv2 uses one woff to support all subsets instead of splitting them
+							// APIv2 splits woff/woff2 files by subset, but uses one combined file for other formats
 							// These don't have a subset
-							if (fontStyle && type === 'url' && format !== 'woff2') {
+							if (fontStyle && type === 'url' && !format.startsWith('woff')) {
 								const keys = Object.keys(
 									fontObject[id].variants[fontWeight][fontStyle]
 								);
