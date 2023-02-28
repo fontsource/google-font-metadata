@@ -25,6 +25,7 @@
 		"unicode range"
 	],
 	"dependencies": {
+		"@octokit/core": "^4.2.0",
 		"cac": "^6.7.14",
 		"consola": "^2.15.3",
 		"deepmerge": "^4.2.2",

@@ -8,6 +8,7 @@ import { version } from '../package.json';
 import { fetchAPI } from './api-gen';
 import { parsev1 } from './api-parser-v1';
 import { parsev2 } from './api-parser-v2';
+import { generateAxis } from './axis-gen';
 import { parseLicenses } from './license';
 import { updateDb } from './update-db';
 import { validateCLI } from './validate';
@@ -39,14 +40,15 @@ cli
 	});
 
 cli
-	.command('parse', 'Process metadata for v1 and v2 from gfm generate')
+	.command('parse [key]', 'Process metadata for v1 and v2 from gfm generate')
 	.option('-1, --v1', 'Only parse v1 metadata')
 	.option('-2, --v2', 'Only parse v2 metadata')
+	.option('-r, --axis-registry', 'Only parse axis registry metadata')
 	.option('-v, --variable', 'Only parse variable metadata')
 	.option('-l, --license', 'Only parse license metadata')
 	.option('-f, --force', 'Skip cache and force parse all metadata')
 	.option('--no-validate', 'Skip validating metadata result with schema')
-	.action(async (options) => {
+	.action(async (key: string, options) => {
 		try {
 			const force = (options.force as boolean) ?? false;
 			const noValidate = (options['no-validate'] as boolean) ?? false;
@@ -72,6 +74,11 @@ cli
 				await parsev2(force, noValidate);
 			}
 
+			if (options.axisRegistry) {
+				consola.info('Parsing axis registry metadata...');
+				await generateAxis(key);
+			}
+
 			if (options.variable) {
 				consola.info('Parsing variable metadata...');
 				await parseVariable(noValidate);
@@ -82,7 +89,7 @@ cli
 				await parseLicenses();
 			}
 
-			if (!options.v1 && !options.v2 && !options.variable && !options.license) {
+			if (!options.v1 && !options.v2 && !options.variable && !options.license && !options.axisRegistry) {
 				if (options.force) {
 					consola.info(
 						`Parsing all metadata... ${colors.bold(colors.red('[FORCE]'))}`
@@ -94,6 +101,7 @@ cli
 				await parsev1(force, noValidate);
 				await parsev2(force, noValidate);
 				await parseVariable(noValidate);
+				await generateAxis(key);
 				await parseLicenses();
 			}
 		} catch (error) {
