@@ -100,8 +100,8 @@ cli
 
 				await parsev1(force, noValidate);
 				await parsev2(force, noValidate);
-				await parseVariable(noValidate);
 				await generateAxis(key);
+				await parseVariable(noValidate);
 				await parseLicenses();
 			}
 		} catch (error) {
