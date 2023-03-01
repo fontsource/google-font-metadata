@@ -229,6 +229,25 @@ Scrapes the [Google Fonts Attribution](https://fonts.google.com/attribution) pag
 
 Exports [`data/licenses.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/licenses.json)
 
+## Axis Registry
+
+```json
+{
+...
+  {
+    "name": "Thick Stroke",
+    "tag": "XOPQ",
+    "min": -1000,
+    "max": 2000,
+    "default": 88,
+    "precision": 0
+  },
+...
+}
+```
+
+Exports [`data/licenses.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/axis-registry.json)
+
 ## Updating API Files
 
 You can use the `gfm` CLI tool to update the metadata with fresh results from the Google APIs.

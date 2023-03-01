@@ -13,7 +13,6 @@ import type {
 	FontObjectVariable,
 	FontObjectVariableDirect,
 	FontVariantsVariable,
-	SupportedAxes,
 } from './types';
 import { isAxesKey, isStandardAxesKey } from './types';
 import { orderObject } from './utils';
@@ -38,7 +37,7 @@ type MergedAxesTuple = [MergedAxes: string, MergedRange: string];
 export const addAndMergeAxesRange = (
 	font: FontObjectVariableDirect,
 	axesArr: string[],
-	newAxes: SupportedAxes[]
+	newAxes: string[]
 ): MergedAxesTuple => {
 	for (const axes of newAxes) {
 		if (!axesArr.includes(axes)) {
@@ -75,8 +74,8 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 	// Remove all standard axes and check for any non-standard keys
 	const isFull = axesKeys.filter((axis) => !isStandardAxesKey(axis)).length > 1;
 
-	const fullAxes: SupportedAxes[] = [];
-	const standardAxes: SupportedAxes[] = [];
+	const fullAxes = [];
+	const standardAxes = [];
 
 	for (const axesKey of axesKeys) {
 		// We manually add support for new axes as they may have different rules to add to link
