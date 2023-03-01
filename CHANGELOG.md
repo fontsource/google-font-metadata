@@ -2,6 +2,12 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [5.0.0](https://github.com/fontsource/google-font-metadata/releases/tag/v5.0.0)
+
+## BREAKING CHANGES
+
+- APIv2 woff files are now split by unicode-range subset. [#116](https://github.com/fontsource/google-font-metadata/pull/116)
+
 # [4.2.1](https://github.com/fontsource/google-font-metadata/releases/tag/v4.2.1)
 
 ## Fixes
