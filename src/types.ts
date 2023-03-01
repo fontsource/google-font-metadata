@@ -1,3 +1,7 @@
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'pathe';
+
 interface APIResponse {
 	family: string;
 	variants: string[];
@@ -83,41 +87,34 @@ interface FontObjectVariable {
 type FontObject = FontObjectV1 | FontObjectV2 | FontObjectVariable;
 
 // Variable axes - have to put here to prevent circular dependency
-// We manually add support for new axes to ensure they aren't breaking since Google likes to introduce new ways to use them
-const SUPPORTED_AXES_UPPER = [
-	'CASL',
-	'CRSV',
-	'EDPT',
-	'EHLT',
-	'FILL',
-	'GRAD',
-	'MONO',
-	'SOFT',
-	'WONK',
-	'XOPQ',
-	'XTRA',
-	'YOPQ',
-	'YTAS',
-	'YTDE',
-	'YTFI',
-	'YTLC',
-	'YTUC',
-] as const;
-const SUPPORTED_AXES_LOWER = ['ital', 'opsz', 'slnt', 'wdth', 'wght'] as const;
-const SUPPORTED_AXES = [
-	...SUPPORTED_AXES_LOWER,
-	...SUPPORTED_AXES_UPPER,
-] as const;
-
-type SupportedAxes = typeof SUPPORTED_AXES[number];
-
+const BASE_AXES = ['ital', 'opsz', 'slnt', 'wdth', 'wght'] as const;
 const STANDARD_AXES = ['opsz', 'slnt', 'wdth', 'wght'] as const;
 type StandardAxes = typeof STANDARD_AXES[number];
 
-const isAxesKey = (axesKey: string): axesKey is SupportedAxes =>
-	SUPPORTED_AXES.includes(axesKey as SupportedAxes);
 const isStandardAxesKey = (axesKey: string): axesKey is StandardAxes =>
 	STANDARD_AXES.includes(axesKey as StandardAxes);
+export interface AxesObject {
+	name: string;
+	tag: string;
+	min: number;
+	max: number;
+	default: number;
+	precision: number;
+}
+export const getAxes = () => {
+	const data = JSON.parse(
+		fs.readFileSync(
+			join(dirname(fileURLToPath(import.meta.url)), '../data/axis-registry.json'),
+			'utf8'
+		)
+	) as AxesObject[];
+	return data.map((axis) => axis.tag);
+};
+
+export const isAxesKey = (key: string) => {
+	const axes = getAxes();
+	return axes.includes(key);
+};
 
 // License
 
@@ -138,7 +135,7 @@ interface Licenses {
 	};
 }
 
-export { isAxesKey, isStandardAxesKey, STANDARD_AXES, SUPPORTED_AXES };
+export { BASE_AXES, isStandardAxesKey, STANDARD_AXES };
 
 export type {
 	APIResponse,
@@ -152,5 +149,4 @@ export type {
 	FontVariantsVariable,
 	Licenses,
 	StandardAxes,
-	SupportedAxes,
 };

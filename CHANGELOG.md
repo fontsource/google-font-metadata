@@ -2,6 +2,18 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [4.2.1](https://github.com/fontsource/google-font-metadata/releases/tag/v4.2.1)
+
+## Fixes
+
+- Expose axis registry functions. [#118](https://github.com/fontsource/google-font-metadata/pull/118)
+
+# [4.2.0](https://github.com/fontsource/google-font-metadata/releases/tag/v4.2.0)
+
+## Features
+
+- Automatically update axis registry. [#117](https://github.com/fontsource/google-font-metadata/pull/117)
+
 # [4.1.4](https://github.com/fontsource/google-font-metadata/releases/tag/v4.1.4)
 
 ## Fixes
