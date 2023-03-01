@@ -4,6 +4,7 @@ import { dirname, join } from 'pathe';
 
 import type {
 	APIResponse,
+	AxesObject,
 	FontObjectV1,
 	FontObjectV2,
 	FontObjectVariable,
@@ -103,4 +104,17 @@ const APILicense = JSON.parse(
 	)
 ) as Licenses;
 
-export { APIDirect, APILicense, APIv1, APIv2, APIVariable, APIVariableDirect };
+/**
+	* This returns the axis registry of the supported Google Font variable axes.
+	* {@link https://github.com/googlefonts/axisregistry}
+	*
+	* @remarks This can be updated using `npx gfm parse --registry`.
+*/
+const APIRegistry = JSON.parse(
+	fs.readFileSync(
+		join(dirname(fileURLToPath(import.meta.url)), '../data/axis-registry.json'),
+		'utf8'
+	)
+) as AxesObject[];
+
+export { APIDirect, APILicense, APIRegistry,APIv1, APIv2, APIVariable, APIVariableDirect };

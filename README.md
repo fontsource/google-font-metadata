@@ -17,8 +17,20 @@ npm install google-font-metadata
 The project exports the following data:
 
 ```ts
-import { APIv1, APIv2, APIVariable } from "google-font-metadata";
-const { APIv1, APIv2, APIVariable } = require("google-font-metadata");
+import {
+	APIv1,
+	APIv2,
+	APIVariable,
+	APILicense,
+	APIRegistry,
+} from "google-font-metadata";
+const {
+	APIv1,
+	APIv2,
+	APIVariable,
+	APILicense,
+	APIRegistry,
+} = require("google-font-metadata");
 
 console.dir(APIv2);
 ```
@@ -229,7 +241,7 @@ Scrapes the [Google Fonts Attribution](https://fonts.google.com/attribution) pag
 
 Exports [`data/licenses.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/licenses.json)
 
-## Axis Registry
+## APIRegistry
 
 ```json
 {

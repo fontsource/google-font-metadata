@@ -93,7 +93,7 @@ type StandardAxes = typeof STANDARD_AXES[number];
 
 const isStandardAxesKey = (axesKey: string): axesKey is StandardAxes =>
 	STANDARD_AXES.includes(axesKey as StandardAxes);
-interface AxesObject {
+export interface AxesObject {
 	name: string;
 	tag: string;
 	min: number;
