@@ -9,7 +9,7 @@ import * as data from '../src/data';
 import APIResponse from './fixtures/api-response.json';
 import APIv2 from './fixtures/google-fonts-v2.json';
 import { apiParseV2Handlers, setupAPIServer } from './mocks/index';
-import { cssFixture, idGen } from './utils/helpers';
+import { cssFixture } from './utils/helpers';
 
 vi.mock('node:fs/promises');
 vi.mock('../src/data');
@@ -43,20 +43,16 @@ describe('API Parser v2', () => {
 
 	describe('Process CSS', () => {
 		it('Returns valid font object', async () => {
-			const newAPIv2 = APIv2 as FontObjectV2; // Need to type assert as a more generic obj else we can't pick using id var
-
 			for (const font of APIResponse) {
-				const id = idGen(font.family);
-				const validFontObj = { [id]: newAPIv2[id] };
 
 				const css = await fetchAllCSS(font);
-				expect(processCSS(css, font)).toMatchObject(validFontObj);
+				expect(processCSS(css, font)).toMatchSnapshot();
 			}
 		});
 	});
 
 	describe('Full parse and order', () => {
-		vi.spyOn(data, 'APIv2', 'get').mockReturnValue(APIv2);
+		vi.spyOn(data, 'APIv2', 'get').mockReturnValue(APIv2 as FontObjectV2);
 		vi.spyOn(data, 'APIDirect', 'get').mockReturnValue(APIResponse);
 
 		it('Copies APIv2 as a cache since force flag is false', async () => {
