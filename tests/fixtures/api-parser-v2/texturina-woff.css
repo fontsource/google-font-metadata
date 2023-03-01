@@ -1,108 +1,432 @@
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: italic;
   font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1i0Z0.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1i4ZbKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1i4ZfKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1i4ZnKWWGGJ9_3oA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: italic;
   font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1j0Z0.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1j4ZbKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1j4ZfKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1j4ZnKWWGGJ9_3oA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: italic;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWUNj0Z0.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWUNj4ZbKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWUNj4ZfKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWUNj4ZnKWWGGJ9_3oA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1j0Z0.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1j4ZbKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1j4ZfKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWR1j4ZnKWWGGJ9_3oA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: italic;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWS9j0Z0.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWS9j4ZbKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWS9j4ZfKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWS9j4ZnKWWGGJ9_3oA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: italic;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWcNk0Z0.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWcNk4ZbKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWcNk4ZfKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWcNk4ZnKWWGGJ9_3oA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: italic;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWfpk0Z0.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWfpk4ZbKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWfpk4ZfKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWfpk4ZnKWWGGJ9_3oA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: italic;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1k0Z0.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1k4ZbKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1k4ZfKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWZ1k4ZnKWWGGJ9_3oA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: italic;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWbRk0Z0.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWbRk4ZbKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWbRk4ZfKWWGGJ9_3oKmz.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mO1nxpEtL3pXiAulR5mL129FhZmLj7I4oiSUJyfYDu7sB5zHJQWbRk4ZnKWWGGJ9_3oA.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: normal;
   font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYG_Uj.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYG8Uo0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYG8Up0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYG8Un0Z3AXkOCD90.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: normal;
   font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYGvUj.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYGsUo0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYGsUp0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYGsUn0Z3AXkOCD90.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2fGGvUj.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2fGGsUo0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2fGGsUp0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2fGGsUn0Z3AXkOCD90.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYGvUj.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYGsUo0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYGsUp0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eYGsUn0Z3AXkOCD90.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: normal;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eqGvUj.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eqGsUo0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eqGsUp0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2eqGsUn0Z3AXkOCD90.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2dGHfUj.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2dGHcUo0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2dGHcUp0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2dGHcUn0Z3AXkOCD90.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2d_HfUj.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2d_HcUo0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2d_HcUp0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2d_HcUn0Z3AXkOCD90.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: normal;
   font-weight: 800;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYHfUj.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYHcUo0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYHcUp0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cYHcUn0Z3AXkOCD90.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
 @font-face {
   font-family: 'Texturina';
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/texturina/v20/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cxHfUj.woff) format('woff');
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cxHcUo0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cxHcUp0Z3AXkOCD93vow.woff) format('woff');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Texturina';
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://fonts.gstatic.com/s/texturina/v21/c4mM1nxpEtL3pXiAulRTkY-HGmNEX1b9NspjMwhAgliHhVrXy2cxHcUn0Z3AXkOCD90.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

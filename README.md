@@ -74,7 +74,7 @@ It exports [`data/google-fonts-v1.json`](https://github.com/fontsource/google-fo
 
 ## APIv2
 
-Uses the Google Fonts CSS APIv2 and includes the unicode-range values for every subset. However, the API serves `woff/ttf` files with **ALL** subsets included in one file and therefore all links for those file types in the same subset lead to the same link for each weight and style. `woff2` files are individually split per subset.
+Uses the Google Fonts CSS APIv2 and includes the unicode-range values for every subset. However, the API serves `ttf` files with **ALL** subsets included in one file and therefore all links for those file types in the same subset lead to the same link for each weight and style. `woff2` and `woff` files are individually split per subset.
 
 Exports [`data/google-fonts-v2.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/google-fonts-v2.json).
 
@@ -135,7 +135,7 @@ Note that fonts with large glyphsets such as the Japanese, Korean or Chinese lan
           "[0]": {
             "url": {
               "woff2": "https://fonts.gstatic.com/s/notosansjp/v42/-F6ofjtqLzI2JPCgQBnw7HFQoggPkENvl4B0ZLgOquiXidBa3qHiDcp2RQ.0.woff2",
-              "woff": "https://fonts.gstatic.com/s/notosansjp/v42/-F6ofjtqLzI2JPCgQBnw7HFQoggJ.woff",
+              "woff": "https://fonts.gstatic.com/s/notosansjp/v42/-F62fjtqLzI2JPCgQBnw7HFoxQII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.0.woff",
               "opentype": "https://fonts.gstatic.com/s/notosansjp/v42/-F6ofjtqLzI2JPCgQBnw7HFQoggM.otf"
             }
           },
