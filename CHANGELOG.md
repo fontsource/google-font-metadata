@@ -2,6 +2,12 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [5.0.1](https://github.com/fontsource/google-font-metadata/releases/tag/v4.2.1)
+
+## Fixes
+
+- Fix missing full variants in dataset. [#119](https://github.com/fontsource/google-font-metadata/pull/119)
+
 # [5.0.0](https://github.com/fontsource/google-font-metadata/releases/tag/v5.0.0)
 
 ## BREAKING CHANGES
