@@ -72,7 +72,7 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 
 	const isStandard = axesKeys.some((axis) => isStandardAxesKey(axis));
 	// Remove all standard axes and check for any non-standard keys
-	const isFull = axesKeys.filter((axis) => !isStandardAxesKey(axis)).length > 1;
+	const isFull = axesKeys.some((axis) => !isStandardAxesKey(axis));
 
 	const fullAxes = [];
 	const standardAxes = [];

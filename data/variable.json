@@ -1398,6 +1398,12 @@
           "latin-ext": "https://fonts.gstatic.com/s/climatecrisis/v3/wEOkEB3AntNeKCPBVW9XOKlmp1oWqbb3QA.woff2",
           "latin": "https://fonts.gstatic.com/s/climatecrisis/v3/wEOkEB3AntNeKCPBVW9XOKlmp1oYqbY.woff2"
         }
+      },
+      "full": {
+        "normal": {
+          "latin-ext": "https://fonts.gstatic.com/s/climatecrisis/v3/wEOkEB3AntNeKCPBVW9XOKlmp1oWqbb3QA.woff2",
+          "latin": "https://fonts.gstatic.com/s/climatecrisis/v3/wEOkEB3AntNeKCPBVW9XOKlmp1oYqbY.woff2"
+        }
       }
     }
   },
@@ -4296,9 +4302,9 @@
     "variants": {
       "wght": {
         "normal": {
-          "balinese": "https://fonts.gstatic.com/s/notosansbalinese/v18/NaPFcYvSBuhTirw6IaFn6UrRDaqje-lDRpyciWM.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/notosansbalinese/v18/NaPFcYvSBuhTirw6IaFn6UrRDaqje-lDb5yciWM.woff2",
-          "latin": "https://fonts.gstatic.com/s/notosansbalinese/v18/NaPFcYvSBuhTirw6IaFn6UrRDaqje-lDYZyc.woff2"
+          "balinese": "https://fonts.gstatic.com/s/notosansbalinese/v23/NaPFcYvSBuhTirw6IaFn6UrRDaqje-lDRpyciWM.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/notosansbalinese/v23/NaPFcYvSBuhTirw6IaFn6UrRDaqje-lDb5yciWM.woff2",
+          "latin": "https://fonts.gstatic.com/s/notosansbalinese/v23/NaPFcYvSBuhTirw6IaFn6UrRDaqje-lDYZyc.woff2"
         }
       }
     }
@@ -4649,9 +4655,9 @@
     "variants": {
       "wght": {
         "normal": {
-          "hanifi-rohingya": "https://fonts.gstatic.com/s/notosanshanifirohingya/v22/5h1IiYsoOmIC3Yu3MDXLDw3UZCgghyOEBBY7hhLN4OnFeEAy.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/notosanshanifirohingya/v22/5h1IiYsoOmIC3Yu3MDXLDw3UZCgghyOEBBY7hhLN4I_FeEAy.woff2",
-          "latin": "https://fonts.gstatic.com/s/notosanshanifirohingya/v22/5h1IiYsoOmIC3Yu3MDXLDw3UZCgghyOEBBY7hhLN4IHFeA.woff2"
+          "hanifi-rohingya": "https://fonts.gstatic.com/s/notosanshanifirohingya/v26/5h1IiYsoOmIC3Yu3MDXLDw3UZCgghyOEBBY7hhLN4OnFeEAy.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/notosanshanifirohingya/v26/5h1IiYsoOmIC3Yu3MDXLDw3UZCgghyOEBBY7hhLN4I_FeEAy.woff2",
+          "latin": "https://fonts.gstatic.com/s/notosanshanifirohingya/v26/5h1IiYsoOmIC3Yu3MDXLDw3UZCgghyOEBBY7hhLN4IHFeA.woff2"
         }
       }
     }
@@ -4974,9 +4980,9 @@
     "variants": {
       "wght": {
         "normal": {
-          "new-tai-lue": "https://fonts.gstatic.com/s/notosansnewtailue/v17/H4c5BW-Pl9DZ0Xe_nHUapt7PovLXAhAnY7wAVpRP0AQ.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/notosansnewtailue/v17/H4c5BW-Pl9DZ0Xe_nHUapt7PovLXAhAnY7wAapRP0AQ.woff2",
-          "latin": "https://fonts.gstatic.com/s/notosansnewtailue/v17/H4c5BW-Pl9DZ0Xe_nHUapt7PovLXAhAnY7wAZJRP.woff2"
+          "new-tai-lue": "https://fonts.gstatic.com/s/notosansnewtailue/v19/H4c5BW-Pl9DZ0Xe_nHUapt7PovLXAhAnY7wAVpRP0AQ.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/notosansnewtailue/v19/H4c5BW-Pl9DZ0Xe_nHUapt7PovLXAhAnY7wAapRP0AQ.woff2",
+          "latin": "https://fonts.gstatic.com/s/notosansnewtailue/v19/H4c5BW-Pl9DZ0Xe_nHUapt7PovLXAhAnY7wAZJRP.woff2"
         }
       }
     }
@@ -5084,9 +5090,9 @@
     "variants": {
       "wght": {
         "normal": {
-          "sundanese": "https://fonts.gstatic.com/s/notosanssundanese/v19/FwZH7_84xUkosG2xJo2gm7nFwSLQkdymgViMPpkv.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/notosanssundanese/v19/FwZH7_84xUkosG2xJo2gm7nFwSLQkdymgWuMPpkv.woff2",
-          "latin": "https://fonts.gstatic.com/s/notosanssundanese/v19/FwZH7_84xUkosG2xJo2gm7nFwSLQkdymgWWMPg.woff2"
+          "sundanese": "https://fonts.gstatic.com/s/notosanssundanese/v24/FwZH7_84xUkosG2xJo2gm7nFwSLQkdymgViMPpkv.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/notosanssundanese/v24/FwZH7_84xUkosG2xJo2gm7nFwSLQkdymgWuMPpkv.woff2",
+          "latin": "https://fonts.gstatic.com/s/notosanssundanese/v24/FwZH7_84xUkosG2xJo2gm7nFwSLQkdymgWWMPg.woff2"
         }
       }
     }
@@ -5499,9 +5505,9 @@
     "variants": {
       "wght": {
         "normal": {
-          "gurmukhi": "https://fonts.gstatic.com/s/notoserifgurmukhi/v14/92zJtA9LNqsg7tCYlXdCV1VPnAEeDU0vBKkknsHL.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/notoserifgurmukhi/v14/92zJtA9LNqsg7tCYlXdCV1VPnAEeDU0vBIQknsHL.woff2",
-          "latin": "https://fonts.gstatic.com/s/notoserifgurmukhi/v14/92zJtA9LNqsg7tCYlXdCV1VPnAEeDU0vBIokng.woff2"
+          "gurmukhi": "https://fonts.gstatic.com/s/notoserifgurmukhi/v19/92zJtA9LNqsg7tCYlXdCV1VPnAEeDU0vBKkknsHL.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/notoserifgurmukhi/v19/92zJtA9LNqsg7tCYlXdCV1VPnAEeDU0vBIQknsHL.woff2",
+          "latin": "https://fonts.gstatic.com/s/notoserifgurmukhi/v19/92zJtA9LNqsg7tCYlXdCV1VPnAEeDU0vBIokng.woff2"
         }
       }
     }
@@ -6406,38 +6412,38 @@
     "variants": {
       "wdth": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v16/XRXT3ISXn0dBMcibU6jlAqrdeRoCNHI.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v16/XRXT3ISXn0dBMcibU6jlAqrdeBoCNHI.woff2",
-          "latin": "https://fonts.gstatic.com/s/radiocanada/v16/XRXT3ISXn0dBMcibU6jlAqrddhoC.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v19/XRXT3ISXn0dBMcibU6jlAqrdeRoCNHI.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v19/XRXT3ISXn0dBMcibU6jlAqrdeBoCNHI.woff2",
+          "latin": "https://fonts.gstatic.com/s/radiocanada/v19/XRXT3ISXn0dBMcibU6jlAqrddhoC.woff2"
         },
         "italic": {
-          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v16/XRXN3ISXn0dBMcibU6jlAqrdcyoPLHZaZA.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v16/XRXN3ISXn0dBMcibU6jlAqrdcyoOLHZaZA.woff2",
-          "latin": "https://fonts.gstatic.com/s/radiocanada/v16/XRXN3ISXn0dBMcibU6jlAqrdcyoALHY.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v19/XRXN3ISXn0dBMcibU6jlAqrdcyoPLHZaZA.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v19/XRXN3ISXn0dBMcibU6jlAqrdcyoOLHZaZA.woff2",
+          "latin": "https://fonts.gstatic.com/s/radiocanada/v19/XRXN3ISXn0dBMcibU6jlAqrdcyoALHY.woff2"
         }
       },
       "wght": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v16/XRXG3ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6dRWDQfvT5.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v16/XRXG3ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6dRWHQfvT5.woff2",
-          "latin": "https://fonts.gstatic.com/s/radiocanada/v16/XRXG3ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6dRW_Qfg.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v19/XRXG3ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6dRWDQfvT5.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v19/XRXG3ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6dRWHQfvT5.woff2",
+          "latin": "https://fonts.gstatic.com/s/radiocanada/v19/XRXG3ISXn0dBMcibU6jlAqr3ejLv5OLZYiYXik6dRW_Qfg.woff2"
         },
         "italic": {
-          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v16/XRXA3ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrgc-z9MV0.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v16/XRXA3ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrgcuz9MV0.woff2",
-          "latin": "https://fonts.gstatic.com/s/radiocanada/v16/XRXA3ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrgfOz9.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v19/XRXA3ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrgc-z9MV0.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v19/XRXA3ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrgcuz9MV0.woff2",
+          "latin": "https://fonts.gstatic.com/s/radiocanada/v19/XRXA3ISXn0dBMcibU6jlAqrdcwAMBJuK9IgQn4bfnSrgfOz9.woff2"
         }
       },
       "standard": {
         "normal": {
-          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v16/XRXT3ISXn0dBMcibU6jlAqrdeRoCNHI.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v16/XRXT3ISXn0dBMcibU6jlAqrdeBoCNHI.woff2",
-          "latin": "https://fonts.gstatic.com/s/radiocanada/v16/XRXT3ISXn0dBMcibU6jlAqrddhoC.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v19/XRXT3ISXn0dBMcibU6jlAqrdeRoCNHI.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v19/XRXT3ISXn0dBMcibU6jlAqrdeBoCNHI.woff2",
+          "latin": "https://fonts.gstatic.com/s/radiocanada/v19/XRXT3ISXn0dBMcibU6jlAqrddhoC.woff2"
         },
         "italic": {
-          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v16/XRXN3ISXn0dBMcibU6jlAqrdcyoPLHZaZA.woff2",
-          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v16/XRXN3ISXn0dBMcibU6jlAqrdcyoOLHZaZA.woff2",
-          "latin": "https://fonts.gstatic.com/s/radiocanada/v16/XRXN3ISXn0dBMcibU6jlAqrdcyoALHY.woff2"
+          "vietnamese": "https://fonts.gstatic.com/s/radiocanada/v19/XRXN3ISXn0dBMcibU6jlAqrdcyoPLHZaZA.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/radiocanada/v19/XRXN3ISXn0dBMcibU6jlAqrdcyoOLHZaZA.woff2",
+          "latin": "https://fonts.gstatic.com/s/radiocanada/v19/XRXN3ISXn0dBMcibU6jlAqrdcyoALHY.woff2"
         }
       }
     }
@@ -6514,6 +6520,14 @@
           "vietnamese": "https://fonts.gstatic.com/s/readexpro/v15/SLXYc1bJ7HE5YDoGPuzj_dh8uc7wUy8ZQQyX2Iw_ZEzMhQ.woff2",
           "latin-ext": "https://fonts.gstatic.com/s/readexpro/v15/SLXYc1bJ7HE5YDoGPuzj_dh8uc7wUy8ZQQyX2Iw-ZEzMhQ.woff2",
           "latin": "https://fonts.gstatic.com/s/readexpro/v15/SLXYc1bJ7HE5YDoGPuzj_dh8uc7wUy8ZQQyX2IwwZEw.woff2"
+        }
+      },
+      "full": {
+        "normal": {
+          "arabic": "https://fonts.gstatic.com/s/readexpro/v15/SLXNc1bJ7HE5YDoGPuzj19FUbEZk.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/readexpro/v15/SLXNc1bJ7HE5YDoGPuzj19tUbEZk.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/readexpro/v15/SLXNc1bJ7HE5YDoGPuzj19pUbEZk.woff2",
+          "latin": "https://fonts.gstatic.com/s/readexpro/v15/SLXNc1bJ7HE5YDoGPuzj19RUbA.woff2"
         }
       }
     }
@@ -6950,6 +6964,20 @@
           "vietnamese": "https://fonts.gstatic.com/s/robotoserif/v8/R70kjywflP6FLr3gZx7K8UyEVQnyR1E7VN-f51xYuGCQepOvB0KLc2v0wKKB0Q4MSZxyqf2CgAchbBh53Ob9-w.woff2",
           "latin-ext": "https://fonts.gstatic.com/s/robotoserif/v8/R70kjywflP6FLr3gZx7K8UyEVQnyR1E7VN-f51xYuGCQepOvB0KLc2v0wKKB0Q4MSZxyqf2CgAchbBh43Ob9-w.woff2",
           "latin": "https://fonts.gstatic.com/s/robotoserif/v8/R70kjywflP6FLr3gZx7K8UyEVQnyR1E7VN-f51xYuGCQepOvB0KLc2v0wKKB0Q4MSZxyqf2CgAchbBh23OY.woff2"
+        }
+      },
+      "full": {
+        "normal": {
+          "cyrillic-ext": "https://fonts.gstatic.com/s/robotoserif/v8/R70djywflP6FLr3gZx7K8UyEXRP8d5Q.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/robotoserif/v8/R70djywflP6FLr3gZx7K8UyEXxP8d5Q.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/robotoserif/v8/R70djywflP6FLr3gZx7K8UyEXhP8d5Q.woff2",
+          "latin": "https://fonts.gstatic.com/s/robotoserif/v8/R70djywflP6FLr3gZx7K8UyEUBP8.woff2"
+        },
+        "italic": {
+          "cyrillic-ext": "https://fonts.gstatic.com/s/robotoserif/v8/R70DjywflP6FLr3gZx7K8UyEVSPzb5CBnA.woff2",
+          "vietnamese": "https://fonts.gstatic.com/s/robotoserif/v8/R70DjywflP6FLr3gZx7K8UyEVSPxb5CBnA.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/robotoserif/v8/R70DjywflP6FLr3gZx7K8UyEVSPwb5CBnA.woff2",
+          "latin": "https://fonts.gstatic.com/s/robotoserif/v8/R70DjywflP6FLr3gZx7K8UyEVSP-b5A.woff2"
         }
       },
       "standard": {
@@ -7403,6 +7431,13 @@
           "vietnamese": "https://fonts.gstatic.com/s/sono/v1/aFTO7PNiY3U2Cqf_aYEN64CYaK18YUhHma9GZQ.woff2",
           "latin-ext": "https://fonts.gstatic.com/s/sono/v1/aFTO7PNiY3U2Cqf_aYEN64CYaK18YUhGma9GZQ.woff2",
           "latin": "https://fonts.gstatic.com/s/sono/v1/aFTO7PNiY3U2Cqf_aYEN64CYaK18YUhIma8.woff2"
+        }
+      },
+      "full": {
+        "normal": {
+          "vietnamese": "https://fonts.gstatic.com/s/sono/v1/aFTb7PNiY3U2IKTXoyWx.woff2",
+          "latin-ext": "https://fonts.gstatic.com/s/sono/v1/aFTb7PNiY3U2IKXXoyWx.woff2",
+          "latin": "https://fonts.gstatic.com/s/sono/v1/aFTb7PNiY3U2IKvXow.woff2"
         }
       }
     }
