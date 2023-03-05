@@ -104,7 +104,10 @@ export interface AxesObject {
 export const getAxes = () => {
 	const data = JSON.parse(
 		fs.readFileSync(
-			join(dirname(fileURLToPath(import.meta.url)), '../data/axis-registry.json'),
+			join(
+				dirname(fileURLToPath(import.meta.url)),
+				'../data/axis-registry.json'
+			),
 			'utf8'
 		)
 	) as AxesObject[];

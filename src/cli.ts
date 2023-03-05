@@ -89,7 +89,13 @@ cli
 				await parseLicenses();
 			}
 
-			if (!options.v1 && !options.v2 && !options.variable && !options.license && !options.axisRegistry) {
+			if (
+				!options.v1 &&
+				!options.v2 &&
+				!options.variable &&
+				!options.license &&
+				!options.axisRegistry
+			) {
 				if (options.force) {
 					consola.info(
 						`Parsing all metadata... ${colors.bold(colors.red('[FORCE]'))}`

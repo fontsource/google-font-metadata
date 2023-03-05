@@ -5,7 +5,7 @@ import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
 import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import {dirname,join} from 'pathe';
+import { dirname, join } from 'pathe';
 
 interface AxisProto {
 	name: string;
@@ -59,7 +59,14 @@ const getDirectory = async (key?: string) => {
 const downloadAxis = async (axis: AxisProto): Promise<AxisObject> => {
 	const response = await got(axis.download_url).text();
 
-	const acceptedTags = new Set(['tag', 'display_name', 'min_value', 'max_value', 'default_value', 'precision']);
+	const acceptedTags = new Set([
+		'tag',
+		'display_name',
+		'min_value',
+		'max_value',
+		'default_value',
+		'precision',
+	]);
 
 	const lines = response.split('\n').filter((line) => {
 		const tag = line.split(':')[0].trim();

@@ -44,7 +44,6 @@ describe('API Parser v2', () => {
 	describe('Process CSS', () => {
 		it('Returns valid font object', async () => {
 			for (const font of APIResponse) {
-
 				const css = await fetchAllCSS(font);
 				expect(processCSS(css, font)).toMatchSnapshot();
 			}

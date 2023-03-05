@@ -105,11 +105,11 @@ const APILicense = JSON.parse(
 ) as Licenses;
 
 /**
-	* This returns the axis registry of the supported Google Font variable axes.
-	* {@link https://github.com/googlefonts/axisregistry}
-	*
-	* @remarks This can be updated using `npx gfm parse --registry`.
-*/
+ * This returns the axis registry of the supported Google Font variable axes.
+ * {@link https://github.com/googlefonts/axisregistry}
+ *
+ * @remarks This can be updated using `npx gfm parse --registry`.
+ */
 const APIRegistry = JSON.parse(
 	fs.readFileSync(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/axis-registry.json'),
@@ -117,4 +117,12 @@ const APIRegistry = JSON.parse(
 	)
 ) as AxesObject[];
 
-export { APIDirect, APILicense, APIRegistry,APIv1, APIv2, APIVariable, APIVariableDirect };
+export {
+	APIDirect,
+	APILicense,
+	APIRegistry,
+	APIv1,
+	APIv2,
+	APIVariable,
+	APIVariableDirect,
+};

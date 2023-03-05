@@ -8,7 +8,6 @@ import { dirname, join } from 'pathe';
 import { compile } from 'stylis';
 
 import { apiv2 as userAgents } from '../data/user-agents.json';
-import type { } from './api-gen';
 import { APIDirect, APIv2 } from './data';
 import type { APIResponse, FontObjectV2 } from './types';
 import { orderObject, weightListGen } from './utils';
