@@ -1,4 +1,4 @@
-import consola from 'consola';
+import { consola } from 'consola';
 import { execa } from 'execa';
 import * as fs from 'node:fs/promises';
 import { resolve } from 'pathe';

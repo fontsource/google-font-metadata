@@ -1,4 +1,4 @@
-import consola from 'consola';
+import { consola } from 'consola';
 import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
 import * as fs from 'node:fs/promises';
