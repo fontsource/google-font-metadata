@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: "0"
 
- 			- name: Enable PNPM
+      - name: Enable PNPM
         uses: pnpm/action-setup@v2
 
       - name: Set node version to 18
@@ -29,7 +29,7 @@ jobs:
       - name: Build project
 				run: pnpm run build
 
-			- name: Generate API
+      - name: Generate API
         run: pnpm run cli generate $GOOGLE_API_KEY
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
