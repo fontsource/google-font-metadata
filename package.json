@@ -76,5 +76,5 @@
 		"type": "git",
 		"url": "git+https://github.com/fontsource/google-font-metadata"
 	},
-	"packageManager": "pnpm@7.5.0"
+	"packageManager": "pnpm@8.3.1"
 }
