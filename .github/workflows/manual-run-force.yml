@@ -6,8 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    if: github.actor == 'ayuhito' || github.actor == 'jwr12135'
-
     steps:
       - name: checkout
         uses: actions/checkout@v3
