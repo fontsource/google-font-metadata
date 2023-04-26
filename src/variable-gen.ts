@@ -97,7 +97,7 @@ const processTable = (tableHTML: string) => {
  */
 export const fetchVariable = async () => {
 	// Need to use Puppeteer to let JavaScript load page elements fully
-	const browser = await puppeteer.launch();
+	const browser = await puppeteer.launch({ headless: 'new' });
 	const page = await browser.newPage();
 	await page.goto(url, { waitUntil: 'networkidle0' });
 
