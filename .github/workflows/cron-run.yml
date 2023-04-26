@@ -1,4 +1,4 @@
-name: Build and Release [Monthly]
+name: Update Metadata [Monthly]
 
 on:
   schedule:
