@@ -2,6 +2,14 @@
 
 Google Font Metadata will log all notable changes within this file.
 
+# [5.0.2](https://github.com/fontsource/google-font-metadata/releases/tag/v4.2.1)
+
+## Fixes
+
+- Add hashbang if it does not exist in final build. [#121](https://github.com/fontsource/google-font-metadata/pull/121)
+- Update workflows [#122](https://github.com/fontsource/google-font-metadata/pull/122)
+- Upgrade dependencies [#123](https://github.com/fontsource/google-font-metadata/pull/123)
+
 # [5.0.1](https://github.com/fontsource/google-font-metadata/releases/tag/v4.2.1)
 
 ## Fixes
