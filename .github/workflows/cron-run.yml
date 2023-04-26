@@ -10,32 +10,32 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: "0"
 
-      - name: Install packages
-        run: yarn
+ 			- name: Enable PNPM
+        uses: pnpm/action-setup@v2
 
-      - name: Query API
-        run: yarn parser:gen $GOOGLE_API_KEY
+      - name: Set node version to 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "pnpm"
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Build project
+				run: pnpm run build
+
+			- name: Generate API
+        run: pnpm run cli generate $GOOGLE_API_KEY
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
-      - name: Parse APIv1
-        run: yarn parser:v1
-
-      - name: Parse APIv2
-        run: yarn parser:v2
-
-      - name: Scrape variable fonts
-        run: yarn variable:gen
-
-      - name: Parse variable fonts
-        run: yarn variable:parse
-
-      - name: Format files
-        run: yarn format:prettier
+      - name: Parse API
+        run: pnpm run cli parse
 
       - name: Stage, commit and push files
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -45,13 +45,3 @@ jobs:
           commit_author: "fontsource-bot <83556432+fontsource-bot@users.noreply.github.com>"
           commit_message: "chore(build): update API [Weekly]"
         continue-on-error: true
-
-      - name: Publish to NPM
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16.x'
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
