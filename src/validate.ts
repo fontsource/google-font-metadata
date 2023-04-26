@@ -1,4 +1,4 @@
-import consola from 'consola';
+import { consola } from 'consola';
 import colors from 'picocolors';
 
 import { APIv1, APIv2, APIVariable } from './data';

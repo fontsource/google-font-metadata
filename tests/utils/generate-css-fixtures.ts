@@ -1,4 +1,4 @@
-import consola from 'consola';
+import { consola } from 'consola';
 import got from 'got';
 import * as fs from 'node:fs/promises';
 import { join } from 'pathe';

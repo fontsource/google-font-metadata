@@ -1,4 +1,4 @@
-import consola from 'consola';
+import { consola } from 'consola';
 import merge from 'deepmerge';
 import stringify from 'json-stringify-pretty-compact';
 import { parseHTML } from 'linkedom';

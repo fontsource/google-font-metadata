@@ -1,4 +1,4 @@
-import consola from 'consola';
+import { consola } from 'consola';
 import stringify from 'json-stringify-pretty-compact';
 import { parseHTML } from 'linkedom';
 import * as fs from 'node:fs';

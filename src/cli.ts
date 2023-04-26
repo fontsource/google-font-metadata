@@ -1,7 +1,7 @@
 import 'dotenv/config';
 
 import { cac } from 'cac';
-import consola from 'consola';
+import { consola } from 'consola';
 import colors from 'picocolors';
 
 import { version } from '../package.json';
