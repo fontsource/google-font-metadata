@@ -5,6 +5,7 @@ import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'pathe';
 
+import { stripIconsApiGen } from './icons-gen';
 import { APIResponse } from './types';
 
 interface GotResponse {
@@ -14,9 +15,12 @@ interface GotResponse {
 const fetchURL = async (url: string): Promise<void> => {
 	// Have to double assert to please esbuild
 	const response = (await got(url).json()) as unknown as GotResponse;
+	// Google ships icons into the API, so we have to separate them
+	const stripped = await stripIconsApiGen(response.items);
+
 	await fs.writeFile(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/api-response.json'),
-		stringify(response.items)
+		stringify(stripped)
 	);
 };
 

@@ -25,6 +25,15 @@ interface FontVariants {
 	};
 }
 
+interface AxesFontObject {
+	[axes: string]: {
+		default: string;
+		min: string;
+		max: string;
+		step: string;
+	};
+}
+
 interface FontObjectV1 {
 	[id: string]: {
 		family: string;
@@ -60,14 +69,7 @@ interface FontObjectV2 {
 interface FontObjectVariableDirect {
 	family: string;
 	id: string;
-	axes: {
-		[axes: string]: {
-			default: string;
-			min: string;
-			max: string;
-			step: string;
-		};
-	};
+	axes: AxesFontObject;
 }
 
 interface FontVariantsVariable {
@@ -89,7 +91,7 @@ type FontObject = FontObjectV1 | FontObjectV2 | FontObjectVariable;
 // Variable axes - have to put here to prevent circular dependency
 const BASE_AXES = ['ital', 'opsz', 'slnt', 'wdth', 'wght'] as const;
 const STANDARD_AXES = ['opsz', 'slnt', 'wdth', 'wght'] as const;
-type StandardAxes = typeof STANDARD_AXES[number];
+type StandardAxes = (typeof STANDARD_AXES)[number];
 
 const isStandardAxesKey = (axesKey: string): axesKey is StandardAxes =>
 	STANDARD_AXES.includes(axesKey as StandardAxes);
@@ -143,6 +145,7 @@ export { BASE_AXES, isStandardAxesKey, STANDARD_AXES };
 export type {
 	APIResponse,
 	Authors,
+	AxesFontObject,
 	FontObject,
 	FontObjectV1,
 	FontObjectV2,
