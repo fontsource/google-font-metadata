@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-process-exit */
 import 'dotenv/config';
 
 import { cac } from 'cac';
@@ -36,6 +37,7 @@ cli
 			}
 		} catch (error) {
 			consola.error(error);
+			process.exit(1);
 		}
 	});
 
@@ -112,6 +114,7 @@ cli
 			}
 		} catch (error) {
 			consola.error(error);
+			process.exit(1);
 		}
 	});
 
@@ -132,6 +135,7 @@ cli
 			}
 		} catch (error) {
 			consola.error(error);
+			process.exit(1);
 		}
 	});
 
@@ -143,6 +147,7 @@ cli
 			consola.success('Metadata updated!');
 		} catch (error) {
 			consola.error(error);
+			process.exit(1);
 		}
 	});
 
