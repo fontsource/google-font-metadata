@@ -47,6 +47,7 @@
 		"@types/stylis": "^4.0.2",
 		"c8": "^7.12.0",
 		"eslint": "^8.26.0",
+		"magic-string": "^0.30.0",
 		"msw": "^0.47.4",
 		"pkgroll": "^1.4.0",
 		"prettier": "^2.7.1",
@@ -55,7 +56,7 @@
 		"vitest": "^0.24.3"
 	},
 	"scripts": {
-		"build": "pkgroll --target=node14",
+		"build": "pkgroll --target=node14 && tsx ./scripts/add-hashbang.ts",
 		"dev": "pkgroll --target=node14 --watch",
 		"cli": "node ./dist/cli.mjs",
 		"test": "vitest",
