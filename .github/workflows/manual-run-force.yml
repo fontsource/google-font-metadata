@@ -22,9 +22,6 @@ jobs:
       - name: Install
         run: pnpm install --frozen-lockfile
 
-      - name: Build project
-        run: pnpm run build
-
       - name: Generate API
         run: pnpm run cli generate $GOOGLE_API_KEY
         env:
