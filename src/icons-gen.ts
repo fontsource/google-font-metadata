@@ -66,7 +66,10 @@ export const stripIconsApiGen = async (
 
 	// Write the icon families to a separate file
 	await fs.writeFile(
-		join(dirname(fileURLToPath(import.meta.url)), '../data/icon-response.json'),
+		join(
+			dirname(fileURLToPath(import.meta.url)),
+			'../data/icons-response.json'
+		),
 		stringify(icons)
 	);
 
