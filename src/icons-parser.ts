@@ -29,6 +29,9 @@ const resultsVariable: FontObjectVariable = {};
 const processQueue = async (icon: APIIconResponse, force: boolean) => {
 	const id = icon.family.replace(/\s/g, '-').toLowerCase();
 
+	// We need to get defSubset to parse out the fallback subset
+	let defSubset: string | undefined;
+
 	// If last-modified matches latest API, skip fetching CSS and processing.
 	if (
 		APIIconStatic[id] !== undefined &&
@@ -36,10 +39,12 @@ const processQueue = async (icon: APIIconResponse, force: boolean) => {
 		!force
 	) {
 		resultsStatic.push({ [id]: APIIconStatic[id] });
+		defSubset = APIIconStatic[id].defSubset;
 	} else {
 		const css = await fetchAllV2CSS(icon);
 		const iconObject = processV2CSS(css, icon);
 		resultsStatic.push(iconObject);
+		defSubset = iconObject[id].defSubset;
 		consola.info(`Updated static ${id}`);
 	}
 
@@ -60,7 +65,7 @@ const processQueue = async (icon: APIIconResponse, force: boolean) => {
 
 			const cssLinks = generateCSSLinks(obj);
 			const cssTuple = await fetchAllVariableCSS(cssLinks);
-			const variantsObject = parseVariableCSS(cssTuple);
+			const variantsObject = parseVariableCSS(cssTuple, defSubset);
 			resultsVariable[id] = { ...obj, variants: variantsObject };
 			consola.info(`Updated variable ${id}`);
 		}

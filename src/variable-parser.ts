@@ -201,7 +201,7 @@ export const fetchAllCSS = async (links: Links) =>
 		Object.keys(links).map(async (key) => [key, await fetchCSS(links[key])])
 	) as Promise<string[][]>; // Additional type assertion needed for pkgroll dts plugin
 
-export const parseCSS = (cssTuple: string[][]) => {
+export const parseCSS = (cssTuple: string[][], defSubset?: string) => {
 	const fontVariants: FontVariantsVariable = {};
 
 	let subset = '';
@@ -215,6 +215,9 @@ export const parseCSS = (cssTuple: string[][]) => {
 					throw new TypeError(`Unknown child of comment: ${rule.children}`);
 
 				subset = rule.children.trim();
+				// If subset is fallback, rename it to defSubset
+				if (defSubset !== undefined && subset === 'fallback')
+					subset = defSubset;
 			}
 
 			if (rule.type === '@font-face') {
