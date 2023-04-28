@@ -21,6 +21,8 @@ import {
 	APIv1,
 	APIv2,
 	APIVariable,
+	APIIconStatic,
+	APIIconVariable,
 	APILicense,
 	APIRegistry,
 } from "google-font-metadata";
@@ -28,6 +30,8 @@ const {
 	APIv1,
 	APIv2,
 	APIVariable,
+	APIIconStatic,
+	APIIconVariable,
 	APILicense,
 	APIRegistry,
 } = require("google-font-metadata");
@@ -260,6 +264,8 @@ Exports [`data/licenses.json`](https://github.com/fontsource/google-font-metadat
 
 Exports [`data/licenses.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/axis-registry.json)
 
+You can refer to [`src/index.ts`](https://github.com/fontsource/google-font-metadata/blob/main/src/index.ts) and [`src/data.ts`](https://github.com/fontsource/google-font-metadata/blob/main/src/data.ts) to see all exports.
+
 ## Updating API Files
 
 You can use the `gfm` CLI tool to update the metadata with fresh results from the Google APIs.
@@ -295,11 +301,3 @@ Flags:
 - `-1, --v1` - Only validate APIv1.
 - `-2, --v2` - Only validate APIv2.
 - `-v, --variable` - Only validate APIVariable.
-
-##
-
-`npx gfm update-db` - [EXPERIMENTAL] This aims to move parsing away from the client and instead push updates to NPM as new versions, similar to [caniuse-lite](https://github.com/browserslist/caniuse-lite). It will soon be the preferred way to update the metadata as it removes the need to setup Google Credentials and skip the wait-time of long parses.
-
-## Other Notes
-
-Feel free to star and contribute new ideas that aim to improve the repository. Any suggestions or ideas can be voiced via an [issue](https://github.com/fontsource/google-font-metadata/issues).
