@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'pathe';
 
 import type {
+	APIIconResponse,
 	APIResponse,
 	AxesObject,
 	FontObjectV1,
@@ -15,9 +16,6 @@ import type {
 /**
  * This returns a version of the Google Fonts Developer API.
  * {@link https://developers.google.com/fonts/docs/developer_api}
- *
- * @remarks This can be updated using `npx gfm update-db`.
- * Alternatively, the slower `npx gfm generate <key>` command can be used.
  */
 const APIDirect = JSON.parse(
 	fs.readFileSync(
@@ -29,9 +27,6 @@ const APIDirect = JSON.parse(
 /**
  * This returns a parsed version of the Google Fonts CSS API (v1) for all Google Fonts.
  * {@link https://developers.google.com/fonts/docs/getting_started}
- *
- * @remarks This can be updated using `npx gfm update-db`.
- * Alternatively, the slower `npx gfm parse --v1-only` command can be used.
  */
 const APIv1 = JSON.parse(
 	fs.readFileSync(
@@ -46,9 +41,6 @@ const APIv1 = JSON.parse(
 /**
  * This returns a parsed version of the Google Fonts CSS API (v1) for all Google Fonts.
  * {@link https://developers.google.com/fonts/docs/css2}
- *
- * @remarks This can be updated using `npx gfm update-db`.
- * Alternatively, the slower `npx gfm parse --v2-only` command can be used.
  */
 const APIv2 = JSON.parse(
 	fs.readFileSync(
@@ -61,11 +53,47 @@ const APIv2 = JSON.parse(
 ) as FontObjectV2;
 
 /**
+ * This returns a response from the Google Fonts API for all icons.
+ * {@link https://fonts.google.com/icons}
+ */
+const APIIconDirect = JSON.parse(
+	fs.readFileSync(
+		join(
+			dirname(fileURLToPath(import.meta.url)),
+			'../data/icons-response.json'
+		),
+		'utf8'
+	)
+) as APIIconResponse[];
+
+/**
+ * This returns a parsed version of the Google Fonts API for icons using the CSS API v2.
+ * {@link https://fonts.google.com/icons}
+ */
+const APIIconStatic = JSON.parse(
+	fs.readFileSync(
+		join(dirname(fileURLToPath(import.meta.url)), '../data/icons-static.json'),
+		'utf8'
+	)
+) as FontObjectV1;
+
+/**
+ * This returns a parsed version of the Google Fonts API for icons that are variable.
+ * {@link https://fonts.google.com/icons}
+ */
+const APIIconVariable = JSON.parse(
+	fs.readFileSync(
+		join(
+			dirname(fileURLToPath(import.meta.url)),
+			'../data/icons-variable.json'
+		),
+		'utf8'
+	)
+) as FontObjectVariable;
+
+/**
  * This returns a scraped version of the Google Fonts Variable Fonts page.
  * {@link https://fonts.google.com/variablefonts}
- *
- * @remarks This can be updated using `npx gfm update-db`.
- * Alternatively, the slower `npx gfm parse --variable` command can be used.
  */
 const APIVariableDirect = JSON.parse(
 	fs.readFileSync(
@@ -80,9 +108,6 @@ const APIVariableDirect = JSON.parse(
 /**
  * This returns a parsed version of the Google Fonts CSS API (Variable) for all Google Fonts.
  * {@link https://fonts.google.com/variablefonts}
- *
- * @remarks This can be updated using `npx gfm update-db`.
- * Alternatively, the slower `npx gfm parse --variable` command can be used.
  */
 const APIVariable = JSON.parse(
 	fs.readFileSync(
@@ -94,8 +119,6 @@ const APIVariable = JSON.parse(
 /**
  * This returns a parsed version of the Google Fonts Attribution page.
  * {@link https://fonts.google.com/attribution}
- *
- * @remarks This can be updated using `npx gfm parse --license`.
  */
 const APILicense = JSON.parse(
 	fs.readFileSync(
@@ -107,8 +130,6 @@ const APILicense = JSON.parse(
 /**
  * This returns the axis registry of the supported Google Font variable axes.
  * {@link https://github.com/googlefonts/axisregistry}
- *
- * @remarks This can be updated using `npx gfm parse --registry`.
  */
 const APIRegistry = JSON.parse(
 	fs.readFileSync(
@@ -119,6 +140,9 @@ const APIRegistry = JSON.parse(
 
 export {
 	APIDirect,
+	APIIconDirect,
+	APIIconStatic,
+	APIIconVariable,
 	APILicense,
 	APIRegistry,
 	APIv1,

@@ -10,6 +10,7 @@ interface APIResponse {
 	lastModified: string;
 	category: string;
 }
+
 interface FontVariants {
 	[weight: string]: {
 		[style: string]: {
@@ -86,6 +87,10 @@ interface FontObjectVariable {
 	};
 }
 
+interface APIIconResponse extends APIResponse {
+	axes?: AxesFontObject;
+}
+
 type FontObject = FontObjectV1 | FontObjectV2 | FontObjectVariable;
 
 // Variable axes - have to put here to prevent circular dependency
@@ -143,6 +148,7 @@ interface Licenses {
 export { BASE_AXES, isStandardAxesKey, STANDARD_AXES };
 
 export type {
+	APIIconResponse,
 	APIResponse,
 	Authors,
 	AxesFontObject,

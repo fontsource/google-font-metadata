@@ -4,6 +4,9 @@ export { parsev2 } from './api-parser-v2';
 export { generateAxis } from './axis-gen';
 export {
 	APIDirect,
+	APIIconDirect,
+	APIIconStatic,
+	APIIconVariable,
 	APILicense,
 	APIRegistry,
 	APIv1,
@@ -11,8 +14,10 @@ export {
 	APIVariable,
 	APIVariableDirect,
 } from './data';
+export { parseIcons } from './icons-parser';
 export { parseLicenses } from './license';
 export type {
+	APIIconResponse,
 	APIResponse,
 	AxesObject,
 	FontObject,
