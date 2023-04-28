@@ -20,7 +20,7 @@ jobs:
           cache: "pnpm"
 
       - name: Install
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       - name: Generate API
         run: pnpm run cli generate $GOOGLE_API_KEY
