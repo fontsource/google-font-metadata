@@ -10,6 +10,7 @@ interface APIResponse {
 	lastModified: string;
 	category: string;
 }
+
 interface FontVariants {
 	[weight: string]: {
 		[style: string]: {
@@ -22,6 +23,15 @@ interface FontVariants {
 				};
 			};
 		};
+	};
+}
+
+interface AxesFontObject {
+	[axes: string]: {
+		default: string;
+		min: string;
+		max: string;
+		step: string;
 	};
 }
 
@@ -60,14 +70,7 @@ interface FontObjectV2 {
 interface FontObjectVariableDirect {
 	family: string;
 	id: string;
-	axes: {
-		[axes: string]: {
-			default: string;
-			min: string;
-			max: string;
-			step: string;
-		};
-	};
+	axes: AxesFontObject;
 }
 
 interface FontVariantsVariable {
@@ -84,12 +87,16 @@ interface FontObjectVariable {
 	};
 }
 
+interface APIIconResponse extends APIResponse {
+	axes?: AxesFontObject;
+}
+
 type FontObject = FontObjectV1 | FontObjectV2 | FontObjectVariable;
 
 // Variable axes - have to put here to prevent circular dependency
 const BASE_AXES = ['ital', 'opsz', 'slnt', 'wdth', 'wght'] as const;
 const STANDARD_AXES = ['opsz', 'slnt', 'wdth', 'wght'] as const;
-type StandardAxes = typeof STANDARD_AXES[number];
+type StandardAxes = (typeof STANDARD_AXES)[number];
 
 const isStandardAxesKey = (axesKey: string): axesKey is StandardAxes =>
 	STANDARD_AXES.includes(axesKey as StandardAxes);
@@ -141,8 +148,10 @@ interface Licenses {
 export { BASE_AXES, isStandardAxesKey, STANDARD_AXES };
 
 export type {
+	APIIconResponse,
 	APIResponse,
 	Authors,
+	AxesFontObject,
 	FontObject,
 	FontObjectV1,
 	FontObjectV2,

@@ -112,7 +112,7 @@ const processTable = (tableHTML: string) => {
  * {@link https://fonts.google.com/attribution}
  */
 export const parseLicenses = async () => {
-	const browser = await puppeteer.launch();
+	const browser = await puppeteer.launch({ headless: 'new' });
 	const page = await browser.newPage();
 	// We only need html, skip css and font downloads
 	await page.setRequestInterception(true);

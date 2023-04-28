@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-process-exit */
 import 'dotenv/config';
 
 import { cac } from 'cac';
@@ -9,6 +10,7 @@ import { fetchAPI } from './api-gen';
 import { parsev1 } from './api-parser-v1';
 import { parsev2 } from './api-parser-v2';
 import { generateAxis } from './axis-gen';
+import { parseIcons } from './icons-parser';
 import { parseLicenses } from './license';
 import { updateDb } from './update-db';
 import { validateCLI } from './validate';
@@ -36,6 +38,7 @@ cli
 			}
 		} catch (error) {
 			consola.error(error);
+			process.exit(1);
 		}
 	});
 
@@ -45,6 +48,7 @@ cli
 	.option('-2, --v2', 'Only parse v2 metadata')
 	.option('-r, --axis-registry', 'Only parse axis registry metadata')
 	.option('-v, --variable', 'Only parse variable metadata')
+	.option('-i, --icon', 'Only parse icon metadata')
 	.option('-l, --license', 'Only parse license metadata')
 	.option('-f, --force', 'Skip cache and force parse all metadata')
 	.option('--no-validate', 'Skip validating metadata result with schema')
@@ -84,6 +88,17 @@ cli
 				await parseVariable(noValidate);
 			}
 
+			if (options.icon) {
+				if (options.force) {
+					consola.info(
+						`Parsing icon metadata... ${colors.bold(colors.red('[FORCE]'))}`
+					);
+				} else {
+					consola.info('Parsing icon metadata...');
+				}
+				await parseIcons(force);
+			}
+
 			if (options.license) {
 				consola.info('Parsing license metadata...');
 				await parseLicenses();
@@ -93,6 +108,7 @@ cli
 				!options.v1 &&
 				!options.v2 &&
 				!options.variable &&
+				!options.icon &&
 				!options.license &&
 				!options.axisRegistry
 			) {
@@ -108,10 +124,12 @@ cli
 				await parsev2(force, noValidate);
 				await generateAxis(key);
 				await parseVariable(noValidate);
+				await parseIcons(force);
 				await parseLicenses();
 			}
 		} catch (error) {
 			consola.error(error);
+			process.exit(1);
 		}
 	});
 
@@ -132,6 +150,7 @@ cli
 			}
 		} catch (error) {
 			consola.error(error);
+			process.exit(1);
 		}
 	});
 
@@ -143,6 +162,7 @@ cli
 			consola.success('Metadata updated!');
 		} catch (error) {
 			consola.error(error);
+			process.exit(1);
 		}
 	});
 

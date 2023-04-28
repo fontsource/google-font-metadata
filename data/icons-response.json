@@ -1,0 +1,84 @@
+[
+  {
+    "family": "Material Icons",
+    "variants": ["regular"],
+    "subsets": ["latin"],
+    "version": "v140",
+    "lastModified": "2023-03-08",
+    "category": "icons"
+  },
+  {
+    "family": "Material Icons Outlined",
+    "variants": ["regular"],
+    "subsets": ["latin"],
+    "version": "v109",
+    "lastModified": "2023-03-08",
+    "category": "icons"
+  },
+  {
+    "family": "Material Icons Round",
+    "variants": ["regular"],
+    "subsets": ["latin"],
+    "version": "v108",
+    "lastModified": "2023-03-21",
+    "category": "icons"
+  },
+  {
+    "family": "Material Icons Sharp",
+    "variants": ["regular"],
+    "subsets": ["latin"],
+    "version": "v109",
+    "lastModified": "2023-03-08",
+    "category": "icons"
+  },
+  {
+    "family": "Material Icons Two Tone",
+    "variants": ["regular"],
+    "subsets": ["latin"],
+    "version": "v112",
+    "lastModified": "2023-03-08",
+    "category": "icons"
+  },
+  {
+    "family": "Material Symbols Outlined",
+    "variants": ["100", "200", "300", "regular", "500", "600", "700"],
+    "subsets": ["latin"],
+    "version": "v107",
+    "lastModified": "2023-04-20",
+    "category": "icons",
+    "axes": {
+      "FILL": {"min": "0", "max": "1", "default": "0", "step": "1"},
+      "wght": {"min": "100", "max": "700", "default": "400", "step": "1"},
+      "GRAD": {"min": "-25", "max": "200", "default": "0", "step": "1"},
+      "opsz": {"default": "48", "min": "30", "max": "48", "step": "0.1"}
+    }
+  },
+  {
+    "family": "Material Symbols Rounded",
+    "variants": ["100", "200", "300", "regular", "500", "600", "700"],
+    "subsets": ["latin"],
+    "version": "v106",
+    "lastModified": "2023-04-20",
+    "category": "icons",
+    "axes": {
+      "FILL": {"min": "0", "max": "1", "default": "0", "step": "1"},
+      "wght": {"min": "100", "max": "700", "default": "400", "step": "1"},
+      "GRAD": {"min": "-25", "max": "200", "default": "0", "step": "1"},
+      "opsz": {"default": "48", "min": "30", "max": "48", "step": "0.1"}
+    }
+  },
+  {
+    "family": "Material Symbols Sharp",
+    "variants": ["100", "200", "300", "regular", "500", "600", "700"],
+    "subsets": ["latin"],
+    "version": "v103",
+    "lastModified": "2023-04-20",
+    "category": "icons",
+    "axes": {
+      "FILL": {"min": "0", "max": "1", "default": "0", "step": "1"},
+      "wght": {"min": "100", "max": "700", "default": "400", "step": "1"},
+      "GRAD": {"min": "-25", "max": "200", "default": "0", "step": "1"},
+      "opsz": {"default": "48", "min": "30", "max": "48", "step": "0.1"}
+    }
+  }
+]
