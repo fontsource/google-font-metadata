@@ -110,6 +110,8 @@ export const processCSS = (
 					throw new TypeError(`Unknown child of comment: ${rule.children}`);
 
 				subset = rule.children.trim();
+				// If subset is fallback, rename it to defSubset
+				if (subset === 'fallback') subset = fontObject[id].defSubset;
 			}
 
 			if (rule.type === '@font-face') {
