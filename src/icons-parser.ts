@@ -12,7 +12,6 @@ import {
 import { APIIconDirect, APIIconStatic, APIIconVariable } from './data';
 import type {
 	APIIconResponse,
-	FontObjectV1,
 	FontObjectV2,
 	FontObjectVariable,
 } from './types';
@@ -23,7 +22,7 @@ import {
 	parseCSS as parseVariableCSS,
 } from './variable-parser';
 
-const resultsStatic: FontObjectV1[] = [];
+const resultsStatic: FontObjectV2[] = [];
 const resultsVariable: FontObjectVariable = {};
 
 const processQueue = async (icon: APIIconResponse, force: boolean) => {

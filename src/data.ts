@@ -75,7 +75,7 @@ const APIIconStatic = JSON.parse(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/icons-static.json'),
 		'utf8'
 	)
-) as FontObjectV1;
+) as FontObjectV2;
 
 /**
  * This returns a parsed version of the Google Fonts API for icons that are variable.
