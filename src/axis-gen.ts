@@ -78,7 +78,7 @@ const downloadAxis = async (axis: AxisProto): Promise<AxisObject> => {
 	for (const line of lines) {
 		const [key, value] = line.split(':');
 		// @ts-ignore - these are known tags
-		data[key.trim()] = value.trim().replace(/"/g, '');
+		data[key.trim()] = value.split('#')[0].trim().replace(/"/g, ''); // remove comments and quotes
 	}
 
 	const result = {
