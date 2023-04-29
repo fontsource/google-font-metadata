@@ -15,15 +15,17 @@ interface AxisProto {
 interface AxisDecode {
 	display_name: string;
 	tag: string;
-	min_value: number;
-	max_value: number;
-	default_value: number;
-	precision: number;
+	description: string;
+	min_value: string;
+	max_value: string;
+	default_value: string;
+	precision: string;
 }
 
 interface AxisObject {
 	name: string;
 	tag: string;
+	description: string;
 	min: number;
 	max: number;
 	default: number;
@@ -55,10 +57,25 @@ const getDirectory = async (key?: string) => {
 	return axisData;
 };
 
-// Download the textproto file and parse it
-const downloadAxis = async (axis: AxisProto): Promise<AxisObject> => {
-	const response = await got(axis.download_url).text();
+// Description in textproto uses a multiline string, so we need to parse it differently
+const getDescription = (textproto: string): string => {
+	let result = '';
+	const afterTag = textproto.split('description:')[1];
+	const lines = afterTag.split('\n').filter((line) => line.trim() !== '');
 
+	for (const line of lines) {
+		if (line.trim().startsWith('"')) {
+			result += line.split('"')[1];
+		} else {
+			break;
+		}
+	}
+
+	return result;
+};
+
+// Parse textproto file
+export const parseProto = (textproto: string): AxisDecode => {
 	const acceptedTags = new Set([
 		'tag',
 		'display_name',
@@ -68,7 +85,7 @@ const downloadAxis = async (axis: AxisProto): Promise<AxisObject> => {
 		'precision',
 	]);
 
-	const lines = response.split('\n').filter((line) => {
+	const lines = textproto.split('\n').filter((line) => {
 		const tag = line.split(':')[0].trim();
 		return acceptedTags.has(tag);
 	});
@@ -81,9 +98,20 @@ const downloadAxis = async (axis: AxisProto): Promise<AxisObject> => {
 		data[key.trim()] = value.split('#')[0].trim().replace(/"/g, ''); // remove comments and quotes
 	}
 
+	data.description = getDescription(textproto);
+
+	return data;
+};
+
+// Download the textproto file and parse it
+const downloadAxis = async (axis: AxisProto): Promise<AxisObject> => {
+	const response = await got(axis.download_url).text();
+	const data = parseProto(response.trim());
+
 	const result = {
 		name: data.display_name,
 		tag: data.tag,
+		description: data.description,
 		min: Number(data.min_value),
 		max: Number(data.max_value),
 		default: Number(data.default_value),
