@@ -4,7 +4,7 @@ import { beforeAll, beforeEach, vi } from 'vitest';
 beforeAll(() => {
 	// Redirect std and console to consola too
 	// Calling this once is sufficient
-	consola.wrapAll();
+	consola.wrapStd();
 });
 
 beforeEach(() => {
