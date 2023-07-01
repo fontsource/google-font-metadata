@@ -32,6 +32,14 @@
     }
   },
   {
+    "family": "Aleo",
+    "id": "aleo",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Alexandria",
     "id": "alexandria",
     "axes": {
@@ -466,7 +474,7 @@
     "axes": {
       "slnt": {"default": "0", "min": "-12", "max": "0", "step": "1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
-      "FLAR": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "FLAR": {"default": "0", "min": "0", "max": "100", "step": "1"},
       "VOLM": {"default": "0", "min": "0", "max": "100", "step": "1"}
     }
   },
@@ -499,6 +507,13 @@
     "id": "dancing-script",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Darker Grotesque",
+    "id": "darker-grotesque",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
     }
   },
   {
@@ -724,6 +739,16 @@
     }
   },
   {
+    "family": "Geologica",
+    "id": "geologica",
+    "axes": {
+      "slnt": {"default": "0", "min": "-12", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0", "min": "0", "max": "1", "step": "0.1"},
+      "SHRP": {"default": "0", "min": "0", "max": "100", "step": "1"}
+    }
+  },
+  {
     "family": "Georama",
     "id": "georama",
     "axes": {
@@ -822,6 +847,15 @@
     }
   },
   {
+    "family": "Instrument Sans",
+    "id": "instrument-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Inter",
     "id": "inter",
     "axes": {
@@ -875,6 +909,11 @@
     "axes": {
       "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
     }
+  },
+  {
+    "family": "Kablammo",
+    "id": "kablammo",
+    "axes": {"MORF": {"default": "0", "min": "0", "max": "60", "step": "1"}}
   },
   {
     "family": "Kantumruy Pro",
@@ -1060,6 +1099,13 @@
     "axes": {
       "wdth": {"default": "100", "min": "100", "max": "125", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Mada",
+    "id": "mada",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
     }
   },
   {
@@ -1455,6 +1501,13 @@
     }
   },
   {
+    "family": "Noto Sans Nag Mundari",
+    "id": "noto-sans-nag-mundari",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Sans New Tai Lue",
     "id": "noto-sans-new-tai-lue",
     "axes": {
@@ -1553,6 +1606,15 @@
     "family": "Noto Sans Thai",
     "id": "noto-sans-thai",
     "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif",
+    "id": "noto-serif",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
@@ -1740,6 +1802,13 @@
     }
   },
   {
+    "family": "Noto Traditional Nushu",
+    "id": "noto-traditional-nushu",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Nunito",
     "id": "nunito",
     "axes": {
@@ -1842,6 +1911,16 @@
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "opsz": {"default": "14", "min": "8", "max": "30", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Playfair",
+    "id": "playfair",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "14", "min": "5", "max": "1200", "step": "0.1"},
+      "wdth": {"default": "100", "min": "87.5", "max": "112.5", "step": "0.1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
     }
   },
   {
@@ -2330,6 +2409,21 @@
     }
   },
   {
+    "family": "Wix Madefor Display",
+    "id": "wix-madefor-display",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Wix Madefor Text",
+    "id": "wix-madefor-text",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
     "family": "Work Sans",
     "id": "work-sans",
     "axes": {
@@ -2366,5 +2460,26 @@
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "1", "max": "1000", "step": "1"}
     }
+  },
+  {
+    "family": "Ysabeau Infant",
+    "id": "ysabeau-infant",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "1", "max": "1000", "step": "1"}
+    }
+  },
+  {
+    "family": "Ysabeau Office",
+    "id": "ysabeau-office",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "1", "max": "1000", "step": "1"}
+    }
+  },
+  {
+    "family": "Ysabeau SC",
+    "id": "ysabeau-sc",
+    "axes": {"wght": {"default": "400", "min": "1", "max": "1000", "step": "1"}}
   }
 ]
