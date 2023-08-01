@@ -503,6 +503,15 @@
     }
   },
   {
+    "family": "DM Sans",
+    "id": "dm-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "14", "min": "9", "max": "40", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "1000", "step": "1"}
+    }
+  },
+  {
     "family": "Dancing Script",
     "id": "dancing-script",
     "axes": {
@@ -800,6 +809,15 @@
     "id": "hahmlet",
     "axes": {
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Handjet",
+    "id": "handjet",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "ELGR": {"default": "1", "min": "1", "max": "2", "step": "0.1"},
+      "ELSH": {"default": "2", "min": "0", "max": "16", "step": "0.1"}
     }
   },
   {
@@ -1566,6 +1584,13 @@
     }
   },
   {
+    "family": "Noto Sans Syriac Eastern",
+    "id": "noto-sans-syriac-eastern",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Sans Tai Tham",
     "id": "noto-sans-tai-tham",
     "axes": {
@@ -1608,6 +1633,13 @@
     "axes": {
       "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans Vithkuqi",
+    "id": "noto-sans-vithkuqi",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
   },
   {
@@ -1795,6 +1827,13 @@
     }
   },
   {
+    "family": "Noto Serif Vithkuqi",
+    "id": "noto-serif-vithkuqi",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Serif Yezidi",
     "id": "noto-serif-yezidi",
     "axes": {
@@ -1974,6 +2013,14 @@
     "id": "quicksand",
     "axes": {
       "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "REM",
+    "id": "rem",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
   {
@@ -2173,6 +2220,13 @@
     }
   },
   {
+    "family": "Sen",
+    "id": "sen",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
     "family": "Shantell Sans",
     "id": "shantell-sans",
     "axes": {
@@ -2187,7 +2241,8 @@
     "family": "Signika",
     "id": "signika",
     "axes": {
-      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"},
+      "GRAD": {"default": "0", "min": "-30", "max": "0", "step": "1"}
     }
   },
   {
@@ -2313,6 +2368,14 @@
     }
   },
   {
+    "family": "Tektur",
+    "id": "tektur",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Texturina",
     "id": "texturina",
     "axes": {
@@ -2398,6 +2461,14 @@
     "id": "vazirmatn",
     "axes": {
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Victor Mono",
+    "id": "victor-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
     }
   },
   {
