@@ -1,6 +1,7 @@
 /* eslint-disable no-await-in-loop */
-import stringify from 'json-stringify-pretty-compact';
 import * as fs from 'node:fs/promises';
+
+import stringify from 'json-stringify-pretty-compact';
 import { describe, expect, it, vi } from 'vitest';
 
 import type { FontObjectV1 } from '../src';
@@ -24,19 +25,19 @@ describe('API Parser v1', () => {
 
 			// WOFF2 Tuple
 			expect(test[0]).toContain(
-				cssFixture('texturina', 'woff2', 'v1', 'latin')
+				cssFixture('texturina', 'woff2', 'v1', 'latin'),
 			);
 			expect(test[0]).toContain('/* latin */');
 
 			// WOFF Tuple
 			expect(test[1]).toContain(
-				cssFixture('texturina', 'woff', 'v1', 'latin-ext')
+				cssFixture('texturina', 'woff', 'v1', 'latin-ext'),
 			);
 			expect(test[1]).toContain('/* latin-ext */');
 
 			// TTF Tuple
 			expect(test[2]).toContain(
-				cssFixture('texturina', 'ttf', 'v1', 'vietnamese')
+				cssFixture('texturina', 'ttf', 'v1', 'vietnamese'),
 			);
 			expect(test[2]).toContain('/* vietnamese */');
 		});
@@ -44,8 +45,10 @@ describe('API Parser v1', () => {
 		it('Throws with bad request', async () => {
 			const texturinaFont = { ...APIResponse[7] }; // Vitest gimmick where modifying obj directly affects all other tests
 			texturinaFont.subsets = ['test']; // False subset
-			await expect(async () => fetchAllCSS(texturinaFont)).rejects.toThrow(
-				'CSS fetch error (v1): HTTPError: Response code 400 (Bad Request)'
+			await expect(
+				async () => await fetchAllCSS(texturinaFont),
+			).rejects.toThrow(
+				'CSS fetch error (v1): HTTPError: Response code 400 (Bad Request)',
 			);
 		});
 	});
@@ -72,7 +75,7 @@ describe('API Parser v1', () => {
 			await parsev1(false, false);
 			expect(vi.mocked(fs.writeFile)).toHaveBeenCalledWith(
 				expect.anything(),
-				stringify(APIv1)
+				stringify(APIv1),
 			);
 		});
 
@@ -80,7 +83,7 @@ describe('API Parser v1', () => {
 			await parsev1(true, false);
 			expect(vi.mocked(fs.writeFile)).toHaveBeenCalledWith(
 				expect.anything(),
-				stringify(APIv1)
+				stringify(APIv1),
 			);
 		});
 	});

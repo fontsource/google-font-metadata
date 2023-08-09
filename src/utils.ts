@@ -23,7 +23,7 @@ export const weightListGen = (variants: string[]): number[] => {
 	});
 	// Remove variants like 700italic to become 700
 	const cleanedList = replacedList.map((variant) =>
-		variant.replace(/italic/g, '')
+		variant.replaceAll('italic', ''),
 	);
 
 	// Convert from string to number

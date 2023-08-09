@@ -59,7 +59,7 @@ cli
 			if (options.v1) {
 				if (options.force) {
 					consola.info(
-						`Parsing v1 metadata... ${colors.bold(colors.red('[FORCE]'))}`
+						`Parsing v1 metadata... ${colors.bold(colors.red('[FORCE]'))}`,
 					);
 				} else {
 					consola.info('Parsing v1 metadata...');
@@ -70,7 +70,7 @@ cli
 			if (options.v2) {
 				if (options.force) {
 					consola.info(
-						`Parsing v2 metadata... ${colors.bold(colors.red('[FORCE]'))}`
+						`Parsing v2 metadata... ${colors.bold(colors.red('[FORCE]'))}`,
 					);
 				} else {
 					consola.info('Parsing v2 metadata...');
@@ -91,7 +91,7 @@ cli
 			if (options.icon) {
 				if (options.force) {
 					consola.info(
-						`Parsing icon metadata... ${colors.bold(colors.red('[FORCE]'))}`
+						`Parsing icon metadata... ${colors.bold(colors.red('[FORCE]'))}`,
 					);
 				} else {
 					consola.info('Parsing icon metadata...');
@@ -114,7 +114,7 @@ cli
 			) {
 				if (options.force) {
 					consola.info(
-						`Parsing all metadata... ${colors.bold(colors.red('[FORCE]'))}`
+						`Parsing all metadata... ${colors.bold(colors.red('[FORCE]'))}`,
 					);
 				} else {
 					consola.info('Parsing all metadata...');

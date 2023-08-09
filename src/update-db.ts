@@ -1,6 +1,7 @@
+import * as fs from 'node:fs/promises';
+
 import { consola } from 'consola';
 import { execa } from 'execa';
-import * as fs from 'node:fs/promises';
 import { resolve } from 'pathe';
 
 const fileExists = async (path: string): Promise<boolean> => {
@@ -36,14 +37,14 @@ const detectLockfile = async (): Promise<Lockfiles> => {
 	}
 
 	throw new Error(
-		'No lockfile found. Run "npm install", "yarn install" or "pnpm install"'
+		'No lockfile found. Run "npm install", "yarn install" or "pnpm install"',
 	);
 };
 
 export const updateDb = async () => {
 	const packager = await detectLockfile();
 	consola.info(
-		`${packager} detected. Running upgrade using package manager...`
+		`${packager} detected. Running upgrade using package manager...`,
 	);
 	switch (packager) {
 		case 'pnpm': {
@@ -51,7 +52,7 @@ export const updateDb = async () => {
 				await execa('pnpm', ['--recursive', 'update', 'google-font-metadata']);
 			} catch {
 				throw new Error(
-					"Unable to upgrade using pnpm. Try manually updating using 'pnpm update google-font-metadata'"
+					"Unable to upgrade using pnpm. Try manually updating using 'pnpm update google-font-metadata'",
 				);
 			}
 
@@ -67,7 +68,7 @@ export const updateDb = async () => {
 				]);
 			} catch {
 				throw new Error(
-					"Unable to upgrade using npm. Try manually updating using 'npm update google-font-metadata'"
+					"Unable to upgrade using npm. Try manually updating using 'npm update google-font-metadata'",
 				);
 			}
 
@@ -78,7 +79,7 @@ export const updateDb = async () => {
 				await execa('yarn', ['upgrade', 'google-font-metadata']);
 			} catch {
 				throw new Error(
-					"Unable to upgrade using yarn. Try manually updating using 'yarn upgrade google-font-metadata'"
+					"Unable to upgrade using yarn. Try manually updating using 'yarn upgrade google-font-metadata'",
 				);
 			}
 

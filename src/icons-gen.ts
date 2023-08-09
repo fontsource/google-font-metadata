@@ -1,6 +1,7 @@
-import stringify from 'json-stringify-pretty-compact';
 import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+
+import stringify from 'json-stringify-pretty-compact';
 import { dirname, join } from 'pathe';
 
 import type { APIResponse, AxesFontObject } from './types';
@@ -49,7 +50,7 @@ const iconAxes: AxesFontObject = {
 
 // Remove all icon families from the API and save those objects into a separate file
 export const stripIconsApiGen = async (
-	api: APIResponse[]
+	api: APIResponse[],
 ): Promise<APIResponse[]> => {
 	const stripped: APIResponse[] = [];
 	const icons = [];
@@ -68,9 +69,9 @@ export const stripIconsApiGen = async (
 	await fs.writeFile(
 		join(
 			dirname(fileURLToPath(import.meta.url)),
-			'../data/icons-response.json'
+			'../data/icons-response.json',
 		),
-		stringify(icons)
+		stringify(icons),
 	);
 
 	return stripped;

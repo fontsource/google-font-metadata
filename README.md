@@ -18,22 +18,22 @@ The project exports the following data:
 
 ```ts
 import {
-	APIv1,
-	APIv2,
-	APIVariable,
-	APIIconStatic,
-	APIIconVariable,
-	APILicense,
-	APIRegistry,
+    APIv1,
+    APIv2,
+    APIVariable,
+    APIIconStatic,
+    APIIconVariable,
+    APILicense,
+    APIRegistry,
 } from "google-font-metadata";
 const {
-	APIv1,
-	APIv2,
-	APIVariable,
-	APIIconStatic,
-	APIIconVariable,
-	APILicense,
-	APIRegistry,
+    APIv1,
+    APIv2,
+    APIVariable,
+    APIIconStatic,
+    APIIconVariable,
+    APILicense,
+    APIRegistry,
 } = require("google-font-metadata");
 
 console.dir(APIv2);
@@ -159,9 +159,9 @@ Scrapes the Google Fonts directory and uses the Google Fonts API to generate all
 
 There are 3 default variants:
 
-- `wght` - Only links to font files that only have the `wght` axis.
-- `standard` - A default set of fonts that includes `wght, wdth, slnt, opsz` axis' if available.
-- `full` - Links to font files that have all the axis' included within them.
+-   `wght` - Only links to font files that only have the `wght` axis.
+-   `standard` - A default set of fonts that includes `wght, wdth, slnt, opsz` axis' if available.
+-   `full` - Links to font files that have all the axis' included within them.
 
 Furthermore, a variant is generated for each unique axis in the font, e.g. if `wdth` exists, `variants.wdth.normal.latin` will exist. Note that the `wght` axis is also included in each unique custom variant.
 
@@ -274,8 +274,8 @@ You can use the `gfm` CLI tool to update the metadata with fresh results from th
 
 Flags:
 
-- `-n, --normal` - Only fetch the normal Google Developer API for APIv1 and APIv2.
-- `-v, --variable` - Only scrape the variable axis page for APIVariable. Note `key` does not need to be given if this option is passed.
+-   `-n, --normal` - Only fetch the normal Google Developer API for APIv1 and APIv2.
+-   `-v, --variable` - Only scrape the variable axis page for APIVariable. Note `key` does not need to be given if this option is passed.
 
 You are able to get a Google Fonts API `key` value from [here](https://console.developers.google.com/apis/credentials). Alternatively, you can use a `.env` file with `API_KEY=keyvalue` instead of providing a key argument in the command.
 
@@ -285,12 +285,12 @@ You are able to get a Google Fonts API `key` value from [here](https://console.d
 
 Flags:
 
-- `-1, --v1` - Only parse and update APIv1.
-- `-2, --v2` - Only parse and update APIv2.
-- `-v, --variable` - Only parse and update APIVariable.
-- `-l, --license` - Only parse and update APILicense.
-- `-f, --force` - This skips the cache and force parses every font.
-- `--no-validate` - This skips invoking `npx gfm validate` after finishing parsing.
+-   `-1, --v1` - Only parse and update APIv1.
+-   `-2, --v2` - Only parse and update APIv2.
+-   `-v, --variable` - Only parse and update APIVariable.
+-   `-l, --license` - Only parse and update APILicense.
+-   `-f, --force` - This skips the cache and force parses every font.
+-   `--no-validate` - This skips invoking `npx gfm validate` after finishing parsing.
 
 ##
 
@@ -298,6 +298,6 @@ Flags:
 
 Flags:
 
-- `-1, --v1` - Only validate APIv1.
-- `-2, --v2` - Only validate APIv2.
-- `-v, --variable` - Only validate APIVariable.
+-   `-1, --v1` - Only validate APIv1.
+-   `-2, --v2` - Only validate APIv2.
+-   `-v, --variable` - Only validate APIVariable.

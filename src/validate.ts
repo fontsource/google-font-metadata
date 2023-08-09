@@ -10,8 +10,8 @@ type Version = 'v1' | 'v2' | 'variable';
 const validate = (version: Version, data: FontObject) => {
 	consola.info(
 		`Validating metadata... ${colors.bold(
-			colors.yellow(`[API ${version.toUpperCase()}]`)
-		)}`
+			colors.yellow(`[API ${version.toUpperCase()}]`),
+		)}`,
 	);
 	switch (version) {
 		case 'v1': {
@@ -48,8 +48,9 @@ const validateCLI = (version: Version) => {
 			data = APIVariable;
 			break;
 		}
-		default:
+		default: {
 			throw new Error('Invalid validation version.');
+		}
 	}
 
 	validate(version, data);

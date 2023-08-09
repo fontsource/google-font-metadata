@@ -1,5 +1,6 @@
 import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+
 import path from 'pathe';
 import { describe, expect, it } from 'vitest';
 
@@ -10,11 +11,11 @@ describe('axis gen', () => {
 		const textproto = await fs.readFile(
 			path.join(
 				path.dirname(fileURLToPath(import.meta.url)),
-				'./fixtures/ital.textproto'
+				'./fixtures/ital.textproto',
 			),
-			'utf8'
+			'utf8',
 		);
-		const result = await parseProto(textproto);
+		const result = parseProto(textproto);
 		expect(result).toEqual({
 			display_name: 'Italic',
 			tag: 'ital',
@@ -31,11 +32,11 @@ describe('axis gen', () => {
 		const textproto = await fs.readFile(
 			path.join(
 				path.dirname(fileURLToPath(import.meta.url)),
-				'./fixtures/year.textproto'
+				'./fixtures/year.textproto',
 			),
-			'utf8'
+			'utf8',
 		);
-		const result = await parseProto(textproto);
+		const result = parseProto(textproto);
 		expect(result).toEqual({
 			display_name: 'Year',
 			tag: 'YEAR',

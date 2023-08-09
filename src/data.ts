@@ -1,5 +1,6 @@
 import * as fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
+
 import { dirname, join } from 'pathe';
 
 import type {
@@ -20,8 +21,8 @@ import type {
 const APIDirect = JSON.parse(
 	fs.readFileSync(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/api-response.json'),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as APIResponse[];
 
 /**
@@ -32,10 +33,10 @@ const APIv1 = JSON.parse(
 	fs.readFileSync(
 		join(
 			dirname(fileURLToPath(import.meta.url)),
-			'../data/google-fonts-v1.json'
+			'../data/google-fonts-v1.json',
 		),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as FontObjectV1;
 
 /**
@@ -46,10 +47,10 @@ const APIv2 = JSON.parse(
 	fs.readFileSync(
 		join(
 			dirname(fileURLToPath(import.meta.url)),
-			'../data/google-fonts-v2.json'
+			'../data/google-fonts-v2.json',
 		),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as FontObjectV2;
 
 /**
@@ -60,10 +61,10 @@ const APIIconDirect = JSON.parse(
 	fs.readFileSync(
 		join(
 			dirname(fileURLToPath(import.meta.url)),
-			'../data/icons-response.json'
+			'../data/icons-response.json',
 		),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as APIIconResponse[];
 
 /**
@@ -73,8 +74,8 @@ const APIIconDirect = JSON.parse(
 const APIIconStatic = JSON.parse(
 	fs.readFileSync(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/icons-static.json'),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as FontObjectV2;
 
 /**
@@ -85,10 +86,10 @@ const APIIconVariable = JSON.parse(
 	fs.readFileSync(
 		join(
 			dirname(fileURLToPath(import.meta.url)),
-			'../data/icons-variable.json'
+			'../data/icons-variable.json',
 		),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as FontObjectVariable;
 
 /**
@@ -99,10 +100,10 @@ const APIVariableDirect = JSON.parse(
 	fs.readFileSync(
 		join(
 			dirname(fileURLToPath(import.meta.url)),
-			'../data/variable-response.json'
+			'../data/variable-response.json',
 		),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as FontObjectVariableDirect[];
 
 /**
@@ -112,8 +113,8 @@ const APIVariableDirect = JSON.parse(
 const APIVariable = JSON.parse(
 	fs.readFileSync(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/variable.json'),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as FontObjectVariable;
 
 /**
@@ -123,8 +124,8 @@ const APIVariable = JSON.parse(
 const APILicense = JSON.parse(
 	fs.readFileSync(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/licenses.json'),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as Licenses;
 
 /**
@@ -134,8 +135,8 @@ const APILicense = JSON.parse(
 const APIRegistry = JSON.parse(
 	fs.readFileSync(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/axis-registry.json'),
-		'utf8'
-	)
+		'utf8',
+	),
 ) as AxesObject[];
 
 export {

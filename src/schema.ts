@@ -1,6 +1,6 @@
 import stringify from 'json-stringify-pretty-compact';
 import colors from 'picocolors';
-import { z, ZodError } from 'zod';
+import { z, type ZodError } from 'zod';
 
 import type { FontObject, FontObjectV2, FontObjectVariable } from './types';
 import { isAxesKey } from './types';
@@ -11,11 +11,11 @@ export class ValidationError extends Error {
 		const shell = `Invalid parse for ${version}${
 			id ? ` ${id}` : ''
 		}! Try running ${colors.yellow(
-			version !== 'variable'
-				? 'npx gfm parse -f'
-				: 'npx gfm generate --variable && npx gfm parse --variable'
+			version === 'variable'
+				? 'npx gfm generate --variable && npx gfm parse --variable'
+				: 'npx gfm parse -f',
 		)}.\nIf the problem still persists, Google may have tweaked their API. Please make an issue on google-font-metadata.\n`;
-		super(shell + message);
+		super(shell + String(message));
 		this.name = 'ValidationError';
 	}
 }
@@ -39,9 +39,9 @@ const fontVariantsSchema = z.record(
 						})
 						.strict(),
 				})
-				.strict()
-		)
-	)
+				.strict(),
+		),
+	),
 );
 
 const fontObjectV1Schema = z
@@ -88,7 +88,7 @@ const fontObjectVariableSchema = z
 					max: z.string().min(1),
 					step: z.string().min(1),
 				})
-				.strict()
+				.strict(),
 		),
 		variants: z.record(
 			// [type: string]
@@ -96,9 +96,9 @@ const fontObjectVariableSchema = z
 				// [style: string]
 				z.record(
 					// [subset: string]
-					z.string().url().min(1) // url
-				)
-			)
+					z.string().url().min(1), // url
+				),
+			),
 		),
 	})
 	.strict();
@@ -112,26 +112,26 @@ const checkKeys = (
 	dataId: FontObjDirect,
 	keys: string[],
 	type: string,
-	version: Version
+	version: Version,
 ) => {
 	if (keys.length === 0)
 		throw new ValidationError(
 			`No ${type} variants found for ${dataId.family}\nData: ${stringify(
-				dataId
+				dataId,
 			)}`,
-			version
+			version,
 		);
 };
 
 const fontObjectValidate = (
 	data: FontObject,
-	version: Exclude<Version, 'variable'>
+	version: Exclude<Version, 'variable'>,
 ) => {
 	const dataKeys = Object.keys(data);
 	if (dataKeys.length === 0)
 		throw new ValidationError(
 			`Empty API${version} Object!\nData: ${stringify(data)}`,
-			version
+			version,
 		);
 
 	// Iterate over [id: string]
@@ -140,7 +140,8 @@ const fontObjectValidate = (
 		let valid;
 		if (version === 'v1') valid = fontObjectV1Schema.safeParse(dataId);
 		else if (version === 'v2') valid = fontObjectV2Schema.safeParse(dataId);
-		else throw new TypeError(`Invalid version for validator: ${version}`);
+		else
+			throw new TypeError(`Invalid version for validator: ${String(version)}`);
 
 		if (!valid.success) throw new ValidationError(valid.error, version, id);
 
@@ -165,7 +166,7 @@ const fontObjectValidate = (
 				if (style !== 'normal' && style !== 'italic')
 					throw new ValidationError(
 						`Style ${style} is not a valid style!`,
-						version
+						version,
 					);
 
 				// Iterate over [subset: string]
@@ -181,7 +182,7 @@ const fontObjectValidate = (
 						dataId,
 						Object.keys(newObj),
 						`urls for subset ${subset}`,
-						version
+						version,
 					);
 				}
 			}
@@ -203,7 +204,7 @@ const fontObjectVariableValidate = (newData: FontObject) => {
 	if (dataKeys.length === 0)
 		throw new ValidationError(
 			`Empty APIVariable Object!\nData: ${stringify(data)}`,
-			'variable'
+			'variable',
 		);
 
 	for (const id of dataKeys) {
@@ -226,7 +227,7 @@ const fontObjectVariableValidate = (newData: FontObject) => {
 				throw new ValidationError(
 					`${variant} is not a valid axis!`,
 					'variable',
-					id
+					id,
 				);
 
 			checkKeys(dataId, styleKeys, `styles for variant ${variant}`, 'variable');
@@ -237,7 +238,7 @@ const fontObjectVariableValidate = (newData: FontObject) => {
 					throw new ValidationError(
 						`Style ${style} is not a valid style!`,
 						'variable',
-						id
+						id,
 					);
 
 				const subsetKeys = Object.keys(dataId.variants[variant][style]);

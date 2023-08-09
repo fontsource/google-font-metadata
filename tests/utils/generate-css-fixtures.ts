@@ -1,6 +1,7 @@
+import * as fs from 'node:fs/promises';
+
 import { consola } from 'consola';
 import got from 'got';
-import * as fs from 'node:fs/promises';
 import { join } from 'pathe';
 
 import type { APIResponse } from '../../src';
@@ -22,11 +23,11 @@ interface CSS {
 const fetchCSS1 = async (
 	font: APIResponse,
 	userAgent: string,
-	extension: Extension
-): Promise<Promise<CSS>[]> => {
+	extension: Extension,
+): Promise<Array<Promise<CSS>>> => {
 	const baseurl = 'https://fonts.googleapis.com/css?subset=';
-	const id = font.family.replace(/\s/g, '-').toLowerCase();
-	const fontFamily = font.family.replace(/\s/g, '+');
+	const id = font.family.replaceAll(/\s/g, '-').toLowerCase();
+	const fontFamily = font.family.replaceAll(/\s/g, '+');
 	const weights = font.variants
 		.map((variant) => variant.replace('regular', '400'))
 		.join(',');
@@ -40,9 +41,11 @@ const fetchCSS1 = async (
 					'user-agent': userAgent,
 				},
 			}).text();
-			return { id, subset, response, extension } as CSS;
+			return { id, subset, response, extension } satisfies CSS;
 		} catch (error) {
-			throw new Error(`Fixture fetch error (v1): ${error}\nURL: ${url}`);
+			throw new Error(
+				`Fixture fetch error (v1): ${String(error)}\nURL: ${url}`,
+			);
 		}
 	});
 
@@ -51,7 +54,7 @@ const fetchCSS1 = async (
 
 const fetchAllCSS1 = async (font: APIResponse): Promise<CSS[]> =>
 	// Download CSS stylesheets for each file format
-	Promise.all([
+	await Promise.all([
 		...(await fetchCSS1(font, userAgents.apiv1.woff2, 'woff2')),
 		...(await fetchCSS1(font, userAgents.apiv1.woff, 'woff')),
 		...(await fetchCSS1(font, userAgents.apiv1.ttf, 'ttf')),
@@ -69,8 +72,11 @@ const writeFixtures1 = async () => {
 		for (const css of cssAll) {
 			// eslint-disable-next-line no-await-in-loop
 			await fs.writeFile(
-				join(fixtureDir, `${css.id}-${css.subset}-${css.extension}.css`),
-				css.response
+				join(
+					fixtureDir,
+					`${css.id}-${String(css.subset)}-${css.extension}.css`,
+				),
+				css.response,
 			);
 		}
 	}
@@ -81,11 +87,11 @@ const fetchCSS2 = async (
 	font: APIResponse,
 	userAgent: string,
 	variantsList: string,
-	extension: Extension
+	extension: Extension,
 ): Promise<CSS> => {
 	const baseurl = 'https://fonts.googleapis.com/css2?family=';
-	const fontFamily = font.family.replace(/\s/g, '+');
-	const id = font.family.replace(/\s/g, '-').toLowerCase();
+	const fontFamily = font.family.replaceAll(/\s/g, '+');
+	const id = font.family.replaceAll(/\s/g, '-').toLowerCase();
 
 	// Download CSS stylesheets with specific user-agent Google Fonts APIv2
 	const url = `${baseurl}${fontFamily}:ital,wght@${variantsList}`;
@@ -97,14 +103,14 @@ const fetchCSS2 = async (
 		}).text()) as unknown as string; // Type assertion as rollup-plugin-dts too strict
 		return { id, response, extension };
 	} catch (error) {
-		throw new Error(`CSS fetch error (v2): ${error}\nURL: ${url}`);
+		throw new Error(`CSS fetch error (v2): ${String(error)}\nURL: ${url}`);
 	}
 };
 
 const fetchAllCSS2 = async (font: APIResponse): Promise<CSS[]> => {
 	const variants = variantsListGen(font.variants);
 	// Download CSS stylesheets for each file format
-	return Promise.all([
+	return await Promise.all([
 		await fetchCSS2(font, userAgents.apiv2.woff2, variants, 'woff2'),
 		await fetchCSS2(font, userAgents.apiv2.woff, variants, 'woff'),
 		await fetchCSS2(font, userAgents.apiv2.ttf, variants, 'ttf'),
@@ -124,7 +130,7 @@ const writeFixtures2 = async () => {
 			// eslint-disable-next-line no-await-in-loop
 			await fs.writeFile(
 				join(fixtureDir, `${css.id}-${css.extension}.css`),
-				css.response
+				css.response,
 			);
 		}
 	}
@@ -141,12 +147,14 @@ const fetchCSSVariable = async (url: string) => {
 		}).text();
 		return response;
 	} catch (error) {
-		throw new Error(`CSS fetch error (variable): ${error}\nURL: ${url}`);
+		throw new Error(
+			`CSS fetch error (variable): ${String(error)}\nURL: ${url}`,
+		);
 	}
 };
 
 export const fetchAllCSSVariable = async (links: Links) =>
-	Promise.all(
+	await Promise.all(
 		Object.keys(links).map(async (key) => {
 			type KeyTypes = [ExportedType: string, Style: string];
 			const types = key.split('.') as KeyTypes;
@@ -155,7 +163,7 @@ export const fetchAllCSSVariable = async (links: Links) =>
 				response: await fetchCSSVariable(links[key]),
 				style: types[1],
 			};
-		})
+		}),
 	);
 
 const writeFixturesVariable = async () => {
@@ -171,8 +179,8 @@ const writeFixturesVariable = async () => {
 		for (const css of cssAll) {
 			// eslint-disable-next-line no-await-in-loop
 			await fs.writeFile(
-				join(fixtureDir, `${font.id}-${css.type}-${css.style}.css`),
-				css.response
+				join(fixtureDir, `${String(font.id)}-${css.type}-${css.style}.css`),
+				css.response,
 			);
 		}
 	}

@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
+
 import { dirname, join } from 'pathe';
 
 interface APIResponse {
@@ -11,32 +12,37 @@ interface APIResponse {
 	category: string;
 }
 
-interface FontVariants {
-	[weight: string]: {
-		[style: string]: {
-			[subset: string]: {
+type FontVariants = Record<
+	string,
+	Record<
+		string,
+		Record<
+			string,
+			{
 				url: {
 					woff2: string;
 					woff: string;
 					truetype?: string;
 					opentype?: string;
 				};
-			};
-		};
-	};
-}
+			}
+		>
+	>
+>;
 
-interface AxesFontObject {
-	[axes: string]: {
+type AxesFontObject = Record<
+	string,
+	{
 		default: string;
 		min: string;
 		max: string;
 		step: string;
-	};
-}
+	}
+>;
 
-interface FontObjectV1 {
-	[id: string]: {
+type FontObjectV1 = Record<
+	string,
+	{
 		family: string;
 		id: string;
 		subsets: string[];
@@ -47,24 +53,25 @@ interface FontObjectV1 {
 		lastModified: string;
 		version: string;
 		category: string;
-	};
-}
+	}
+>;
 
-interface FontObjectV2 {
-	[id: string]: {
+type FontObjectV2 = Record<
+	string,
+	{
 		family: string;
 		id: string;
 		subsets: string[];
 		weights: number[];
 		styles: string[];
-		unicodeRange: { [subset: string]: string };
+		unicodeRange: Record<string, string>;
 		variants: FontVariants;
 		defSubset: string;
 		lastModified: string;
 		version: string;
 		category: string;
-	};
-}
+	}
+>;
 
 // Variable
 interface FontObjectVariableDirect {
@@ -73,19 +80,17 @@ interface FontObjectVariableDirect {
 	axes: AxesFontObject;
 }
 
-interface FontVariantsVariable {
-	[type: string]: {
-		[style: string]: {
-			[subset: string]: string;
-		};
-	};
-}
+type FontVariantsVariable = Record<
+	string,
+	Record<string, Record<string, string>>
+>;
 
-interface FontObjectVariable {
-	[id: string]: FontObjectVariableDirect & {
+type FontObjectVariable = Record<
+	string,
+	FontObjectVariableDirect & {
 		variants: FontVariantsVariable;
-	};
-}
+	}
+>;
 
 interface APIIconResponse extends APIResponse {
 	axes?: AxesFontObject;
@@ -113,10 +118,10 @@ export const getAxes = () => {
 		fs.readFileSync(
 			join(
 				dirname(fileURLToPath(import.meta.url)),
-				'../data/axis-registry.json'
+				'../data/axis-registry.json',
 			),
-			'utf8'
-		)
+			'utf8',
+		),
 	) as AxesObject[];
 	return data.map((axis) => axis.tag);
 };
@@ -133,8 +138,9 @@ interface Authors {
 	website?: string;
 	email?: string;
 }
-interface Licenses {
-	[id: string]: {
+type Licenses = Record<
+	string,
+	{
 		id: string;
 		authors: Authors;
 		license: {
@@ -142,8 +148,8 @@ interface Licenses {
 			url: string;
 		};
 		original: string;
-	};
-}
+	}
+>;
 
 export { BASE_AXES, isStandardAxesKey, STANDARD_AXES };
 

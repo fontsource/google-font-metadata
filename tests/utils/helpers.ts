@@ -1,8 +1,9 @@
 import * as fs from 'node:fs';
+
 import { join } from 'pathe';
 
-import { APIResponse } from '../../src/api-gen';
-import { FontObjectVariableDirect } from '../../src/types';
+import { type APIResponse } from '../../src/api-gen';
+import { type FontObjectVariableDirect } from '../../src/types';
 
 // Have to clone because Vitest doesn't seem to isolate object reads properly
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -12,31 +13,31 @@ export const cssFixturePath = (
 	id: string,
 	type: string,
 	version: string,
-	subset?: string
+	subset?: string,
 ) => {
 	if (version === 'v1') {
 		return join(
 			process.cwd(),
 			`tests/fixtures/api-parser-${version}`,
-			`${id}-${subset}-${type}.css`
+			`${id}-${String(subset)}-${type}.css`,
 		);
 	}
 	if (version === 'v2') {
 		return join(
 			process.cwd(),
 			`tests/fixtures/api-parser-${version}`,
-			`${id}-${type}.css`
+			`${id}-${type}.css`,
 		);
 	}
 
-	throw new Error(`Bad fixture path: ${id + type + version + subset}`);
+	throw new Error(`Bad fixture path: ${id + type + version + String(subset)}`);
 };
 
 export const cssFixture = (
 	id: string,
 	type: string,
 	version: string,
-	subset?: string
+	subset?: string,
 ): string => {
 	if (version === 'v1') {
 		return fs
@@ -47,18 +48,18 @@ export const cssFixture = (
 		return fs.readFileSync(cssFixturePath(id, type, version)).toString();
 	}
 
-	throw new Error(`Bad fixture read ${id + type + version + subset}`);
+	throw new Error(`Bad fixture read ${id + type + version + String(subset)}`);
 };
 
 export const cssFixtureVariablePath = (
 	id: string,
 	type: string,
-	style: string
+	style: string,
 ) =>
 	join(
 		process.cwd(),
 		'tests/fixtures/variable-parser',
-		`${id}-${type}-${style}.css`
+		`${id}-${type}-${style}.css`,
 	);
 
 export const cssFixtureVariable = (id: string, type: string, style: string) =>
@@ -86,21 +87,21 @@ export const dataFixture = (type: DataFixture) => {
 
 	if (type === 'variable-response')
 		return readParse(
-			'tests/fixtures/variable-response.json'
+			'tests/fixtures/variable-response.json',
 		) as FontObjectVariableDirect[];
 
 	if (type === 'user-agent')
 		return readParse('tests/fixtures/user-agents.json');
 
-	throw new Error(`Bad fixture type: ${type}`);
+	throw new Error(`Bad fixture type: ${String(type)}`);
 };
 
 export const idGen = (family: string) =>
-	family.replace(/\s/g, '-').toLowerCase();
+	family.replaceAll(/\s/g, '-').toLowerCase();
 
 export const getFontResponse = (
 	fonts: FontObjectVariableDirect[] | APIResponse[],
-	fontId: string
+	fontId: string,
 ) => {
 	for (const font of fonts) {
 		if (idGen(font.family) === fontId) return font;
