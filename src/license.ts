@@ -43,10 +43,10 @@ const processTable = (tableHTML: string) => {
 			.split(' ');
 		if (id && license && copyrightString) {
 			const emailArr = copyrightString.filter((string) =>
-				EMAIL_REGEX.test(string)
+				EMAIL_REGEX.test(string),
 			);
 			const websiteArr = copyrightString.filter((string) =>
-				URL_REGEX.test(string)
+				URL_REGEX.test(string),
 			);
 			const email =
 				emailArr.length > 0
@@ -67,7 +67,7 @@ const processTable = (tableHTML: string) => {
 					: undefined;
 			const copyright = copyrightString
 				.filter(
-					(string) => !EMAIL_REGEX.test(string) && !URL_REGEX.test(string)
+					(string) => !EMAIL_REGEX.test(string) && !URL_REGEX.test(string),
 				)
 				.join(' ')
 				.replaceAll(BRACKETS_REGEX, '')
@@ -96,13 +96,13 @@ const processTable = (tableHTML: string) => {
 
 	fs.writeFileSync(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/licenses.json'),
-		stringify(results)
+		stringify(results),
 	);
 
 	consola.success(
 		`All ${
 			Object.keys(results).length
-		} license datapoints have been fetched and written.`
+		} license datapoints have been fetched and written.`,
 	);
 };
 

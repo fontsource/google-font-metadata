@@ -1,5 +1,6 @@
-import stringify from 'json-stringify-pretty-compact';
 import * as fs from 'node:fs/promises';
+
+import stringify from 'json-stringify-pretty-compact';
 import { describe, expect, it, vi } from 'vitest';
 
 import { fetchAPI } from '../src/api-gen';
@@ -15,7 +16,7 @@ describe('API Gen', () => {
 		await expect(fetchAPI('testkey')).resolves.not.toThrow();
 		expect(vi.mocked(fs.writeFile)).toHaveBeenCalledWith(
 			expect.anything(),
-			stringify(APIResponse)
+			stringify(APIResponse),
 		);
 	});
 
@@ -25,7 +26,7 @@ describe('API Gen', () => {
 
 	it('errors due to bad request', async () => {
 		await expect(fetchAPI('fail')).rejects.toThrow(
-			'API fetch error: HTTPError: Response code 400 (Bad Request)'
+			'API fetch error: HTTPError: Response code 400 (Bad Request)',
 		);
 	});
 });

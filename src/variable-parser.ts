@@ -1,8 +1,9 @@
+import * as fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+
 import { consola } from 'consola';
 import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
-import * as fs from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
 import PQueue from 'p-queue';
 import { dirname, join } from 'pathe';
 import { compile } from 'stylis';
@@ -18,9 +19,7 @@ import { isAxesKey, isStandardAxesKey } from './types';
 import { orderObject } from './utils';
 import { validate } from './validate';
 
-export interface Links {
-	[axes: string]: string;
-}
+export type Links = Record<string, string>;
 
 // CSS API needs axes to given in alphabetical order or request throws e.g. (a,b,c,A,B,C)
 export const sortAxes = (axesArr: string[]) => {
@@ -37,7 +36,7 @@ type MergedAxesTuple = [MergedAxes: string, MergedRange: string];
 export const addAndMergeAxesRange = (
 	font: FontObjectVariableDirect,
 	axesArr: string[],
-	newAxes: string[]
+	newAxes: string[],
 ): MergedAxesTuple => {
 	for (const axes of newAxes) {
 		if (!axesArr.includes(axes)) {
@@ -48,9 +47,9 @@ export const addAndMergeAxesRange = (
 	const mergedAxes = newAxesArr.join(',');
 	// If ital, don't put in normal range and instead use toggle
 	const mergeRange = (mappedAxes: string) =>
-		mappedAxes !== 'ital'
-			? `${font.axes[mappedAxes].min}..${font.axes[mappedAxes].max}`
-			: '1';
+		mappedAxes === 'ital'
+			? '1'
+			: `${font.axes[mappedAxes].min}..${font.axes[mappedAxes].max}`;
 	const mergedRange = newAxesArr.map((axes) => mergeRange(axes)).join(',');
 
 	return [mergedAxes, mergedRange];
@@ -58,9 +57,9 @@ export const addAndMergeAxesRange = (
 
 export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 	const baseurl = 'https://fonts.googleapis.com/css2?family=';
-	const family = font.family.replace(/\s/g, '+');
+	const family = font.family.replaceAll(/\s/g, '+');
 
-	const links = {} as Links;
+	const links: Links = {};
 	let axesKeys = sortAxes(Object.keys(font.axes));
 
 	// ital can't be a range xx..xx and instead acts like a toggle e.g. 0 or 1
@@ -98,7 +97,7 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 					const italTuple = addAndMergeAxesRange(
 						font,
 						[axesKey],
-						['ital', 'wght']
+						['ital', 'wght'],
 					);
 					links[
 						`${axesKey}.italic`
@@ -115,7 +114,7 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 			}
 		} else {
 			consola.error(
-				`Unsupported axis: ${axesKey}\n Please make an issue on google-font-metadata to add support.`
+				`Unsupported axis: ${axesKey}\n Please make an issue on google-font-metadata to add support.`,
 			);
 		}
 	}
@@ -191,15 +190,17 @@ export const fetchCSS = async (url: string) => {
 		}).text();
 		return response;
 	} catch (error) {
-		throw new Error(`CSS fetch error (variable): ${error}\nURL: ${url}`);
+		throw new Error(
+			`CSS fetch error (variable): ${String(error)}\nURL: ${url}`,
+		);
 	}
 };
 
 // [key, css]
 export const fetchAllCSS = async (links: Links) =>
-	Promise.all(
-		Object.keys(links).map(async (key) => [key, await fetchCSS(links[key])])
-	) as Promise<string[][]>; // Additional type assertion needed for pkgroll dts plugin
+	await (Promise.all(
+		Object.keys(links).map(async (key) => [key, await fetchCSS(links[key])]),
+	) as Promise<string[][]>); // Additional type assertion needed for pkgroll dts plugin
 
 export const parseCSS = (cssTuple: string[][], defSubset?: string) => {
 	const fontVariants: FontVariantsVariable = {};
@@ -212,7 +213,9 @@ export const parseCSS = (cssTuple: string[][], defSubset?: string) => {
 		for (const rule of rules) {
 			if (rule.type === 'comm') {
 				if (typeof rule.children !== 'string')
-					throw new TypeError(`Unknown child of comment: ${rule.children}`);
+					throw new TypeError(
+						`Unknown child of comment: ${String(rule.children)}`,
+					);
 
 				subset = rule.children.trim();
 				// If subset is fallback, rename it to defSubset
@@ -234,7 +237,9 @@ export const parseCSS = (cssTuple: string[][], defSubset?: string) => {
 					// Define src props
 					if (subrule.props === 'src') {
 						if (typeof subrule.children !== 'string')
-							throw new TypeError(`Unknown src child: ${subrule.children}`);
+							throw new TypeError(
+								`Unknown src child: ${String(subrule.children)}`,
+							);
 
 						const typeMatch = /(url)\((.+?)\)/g;
 
@@ -268,7 +273,8 @@ const processQueue = async (font: FontObjectVariableDirect) => {
 // Queue control
 const queue = new PQueue({ concurrency: 10 });
 
-// @ts-ignore - rollup-plugin-dts being too strict
+// eslint-disable-next-line @typescript-eslint/prefer-ts-expect-error
+// @ts-ignore - rollup-plugin-dts fails to compile this typing
 queue.on('error', (error: Error) => {
 	consola.error(error);
 });
@@ -280,9 +286,11 @@ queue.on('error', (error: Error) => {
 export const parseVariable = async (noValidate: boolean) => {
 	for (const font of APIVariableDirect) {
 		try {
-			queue.add(() => processQueue(font));
+			queue.add(async () => {
+				await processQueue(font);
+			});
 		} catch (error) {
-			throw new Error(`${font.family} experienced an error. ${error}`);
+			throw new Error(`${font.family} experienced an error. ${String(error)}`);
 		}
 	}
 	await queue.onIdle().then(async () => {
@@ -293,13 +301,13 @@ export const parseVariable = async (noValidate: boolean) => {
 		const ordered = orderObject(results);
 		await fs.writeFile(
 			join(dirname(fileURLToPath(import.meta.url)), '../data/variable.json'),
-			stringify(ordered)
+			stringify(ordered),
 		);
 
-		return consola.success(
+		consola.success(
 			`All ${
 				Object.keys(results).length
-			} variable font datapoints have been generated.`
+			} variable font datapoints have been generated.`,
 		);
 	});
 };

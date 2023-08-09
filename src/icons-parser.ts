@@ -1,7 +1,8 @@
-import { consola } from 'consola';
-import stringify from 'json-stringify-pretty-compact';
 import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
+
+import { consola } from 'consola';
+import stringify from 'json-stringify-pretty-compact';
 import PQueue from 'p-queue';
 import { dirname, join } from 'pathe';
 
@@ -26,7 +27,7 @@ const resultsStatic: FontObjectV2[] = [];
 const resultsVariable: FontObjectVariable = {};
 
 const processQueue = async (icon: APIIconResponse, force: boolean) => {
-	const id = icon.family.replace(/\s/g, '-').toLowerCase();
+	const id = icon.family.replaceAll(/\s/g, '-').toLowerCase();
 
 	// We need to get defSubset to parse out the fallback subset
 	let defSubset: string | undefined;
@@ -75,7 +76,8 @@ const processQueue = async (icon: APIIconResponse, force: boolean) => {
 // Queue control
 const queue = new PQueue({ concurrency: 18 });
 
-// @ts-ignore - rollup-plugin-dts being too strict
+// eslint-disable-next-line @typescript-eslint/prefer-ts-expect-error
+// @ts-ignore - rollup-plugin-dts fails to compile this typing
 queue.on('error', (error: Error) => {
 	consola.error(error);
 });
@@ -88,9 +90,11 @@ queue.on('error', (error: Error) => {
 export const parseIcons = async (force: boolean) => {
 	for (const icon of APIIconDirect) {
 		try {
-			queue.add(() => processQueue(icon, force));
+			queue.add(async () => {
+				await processQueue(icon, force);
+			});
 		} catch (error) {
-			throw new Error(`${icon.family} experienced an error. ${error}`);
+			throw new Error(`${icon.family} experienced an error. ${String(error)}`);
 		}
 	}
 	await queue.onIdle().then(async () => {
@@ -104,23 +108,23 @@ export const parseIcons = async (force: boolean) => {
 		await fs.writeFile(
 			join(
 				dirname(fileURLToPath(import.meta.url)),
-				'../data/icons-static.json'
+				'../data/icons-static.json',
 			),
-			stringify(orderedStatic)
+			stringify(orderedStatic),
 		);
 
 		await fs.writeFile(
 			join(
 				dirname(fileURLToPath(import.meta.url)),
-				'../data/icons-variable.json'
+				'../data/icons-variable.json',
 			),
-			stringify(orderedVariable)
+			stringify(orderedVariable),
 		);
 
-		return consola.success(
+		consola.success(
 			`All ${resultsStatic.length} static + ${
 				Object.keys(resultsVariable).length
-			} variable icon datapoints have been generated.`
+			} variable icon datapoints have been generated.`,
 		);
 	});
 };

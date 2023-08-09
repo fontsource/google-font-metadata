@@ -1,9 +1,10 @@
-import stringify from 'json-stringify-pretty-compact';
 import * as fs from 'node:fs/promises';
+
+import stringify from 'json-stringify-pretty-compact';
 import { describe, expect, it, vi } from 'vitest';
 
 import * as data from '../src/data';
-import { FontObjectVariableDirect } from '../src/types';
+import { type FontObjectVariableDirect } from '../src/types';
 import {
 	addAndMergeAxesRange,
 	fetchAllCSS,
@@ -57,29 +58,29 @@ describe('Variable Parser', () => {
 	describe('Add, sort and merge axes ranges', () => {
 		const fraunces = getFontResponse(
 			response,
-			'fraunces'
+			'fraunces',
 		) as FontObjectVariableDirect;
 		it('Returns tuple without ital', () => {
 			expect(
-				addAndMergeAxesRange(fraunces, ['wght', 'opsz'], ['SOFT'])
+				addAndMergeAxesRange(fraunces, ['wght', 'opsz'], ['SOFT']),
 			).toEqual(['opsz,wght,SOFT', '9..144,100..900,0..100']);
 		});
 
 		it('Returns tuple with existing ital', () => {
 			expect(
-				addAndMergeAxesRange(fraunces, ['wght', 'opsz', 'ital'], ['SOFT'])
+				addAndMergeAxesRange(fraunces, ['wght', 'opsz', 'ital'], ['SOFT']),
 			).toEqual(['ital,opsz,wght,SOFT', '1,9..144,100..900,0..100']);
 		});
 
 		it('Returns tuple with new ital', () => {
 			expect(
-				addAndMergeAxesRange(fraunces, ['wght', 'opsz', 'SOFT'], ['ital'])
+				addAndMergeAxesRange(fraunces, ['wght', 'opsz', 'SOFT'], ['ital']),
 			).toEqual(['ital,opsz,wght,SOFT', '1,9..144,100..900,0..100']);
 		});
 
 		it('Returns tuple with both wght and ital', () => {
 			expect(
-				addAndMergeAxesRange(fraunces, ['opsz', 'SOFT'], ['wght', 'ital'])
+				addAndMergeAxesRange(fraunces, ['opsz', 'SOFT'], ['wght', 'ital']),
 			).toEqual(['ital,opsz,wght,SOFT', '1,9..144,100..900,0..100']);
 		});
 	});
@@ -88,7 +89,7 @@ describe('Variable Parser', () => {
 		it('Gets valid links only wght, no ital', () => {
 			const akshar = getFontResponse(
 				response,
-				'akshar'
+				'akshar',
 			) as FontObjectVariableDirect;
 			expect(generateCSSLinks(akshar)).toEqual({
 				'wght.normal':
@@ -99,7 +100,7 @@ describe('Variable Parser', () => {
 		it('Gets valid links wght and ital', () => {
 			const alegreya = getFontResponse(
 				response,
-				'alegreya'
+				'alegreya',
 			) as FontObjectVariableDirect;
 			expect(generateCSSLinks(alegreya)).toEqual({
 				'wght.italic':
@@ -113,7 +114,7 @@ describe('Variable Parser', () => {
 		it('Gets valid links with no wght axis', () => {
 			const ballet = getFontResponse(
 				response,
-				'ballet'
+				'ballet',
 			) as FontObjectVariableDirect;
 			expect(generateCSSLinks(ballet)).toEqual({
 				'opsz.normal':
@@ -126,7 +127,7 @@ describe('Variable Parser', () => {
 		it('Gets valid links additional axis GRAD, XTRA, YOPQ, YTAS, YTDE, YTFI, YTLC, YTUC, opsz, slnt, wdth', () => {
 			const robotoflex = getFontResponse(
 				response,
-				'roboto-flex'
+				'roboto-flex',
 			) as FontObjectVariableDirect;
 			expect(generateCSSLinks(robotoflex)).toEqual({
 				'GRAD.normal':
@@ -163,7 +164,7 @@ describe('Variable Parser', () => {
 		it('Gets valid links additional axis CASL, CRSV, MONO, slnt', () => {
 			const recursive = getFontResponse(
 				response,
-				'recursive'
+				'recursive',
 			) as FontObjectVariableDirect;
 			expect(generateCSSLinks(recursive)).toEqual({
 				'CASL.normal':
@@ -186,7 +187,7 @@ describe('Variable Parser', () => {
 		it('Gets valid links additional axis with ital SOFT, WONK', () => {
 			const fraunces = getFontResponse(
 				response,
-				'fraunces'
+				'fraunces',
 			) as FontObjectVariableDirect;
 			expect(generateCSSLinks(fraunces)).toEqual({
 				'SOFT.italic':
@@ -221,7 +222,7 @@ describe('Variable Parser', () => {
 		it('Returns all types of CSS together', async () => {
 			const fraunces = getFontResponse(
 				response,
-				'fraunces'
+				'fraunces',
 			) as FontObjectVariableDirect;
 			const links = generateCSSLinks(fraunces);
 			const cssAll = await fetchAllCSS(links);
@@ -237,7 +238,7 @@ describe('Variable Parser', () => {
 			await parseVariable(false);
 			expect(vi.mocked(fs.writeFile)).toHaveBeenCalledWith(
 				expect.anything(),
-				stringify(dataFixture('variable'))
+				stringify(dataFixture('variable')),
 			);
 		});
 	});

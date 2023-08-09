@@ -1,9 +1,10 @@
+import * as fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
 import { consola } from 'consola';
 import merge from 'deepmerge';
 import stringify from 'json-stringify-pretty-compact';
 import { parseHTML } from 'linkedom';
-import * as fs from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'pathe';
 import puppeteer from 'puppeteer';
 
@@ -13,7 +14,7 @@ const url = 'https://fonts.google.com/variablefonts#font-families';
 
 export const scrapeSelector = (
 	selector: string,
-	document: Document
+	document: Document,
 ): string[] => {
 	const arr = [];
 	// Scrape section using classnames
@@ -34,22 +35,25 @@ const processTable = (tableHTML: string) => {
 	// Use linkedom to store all relevant values in matching index arrays
 	const fontNames = scrapeSelector(
 		'.cdk-column-fontFamily.mat-column-fontFamily',
-		document
+		document,
 	);
 	// Hello World => hello-world
-	const fontIds = fontNames.map((val) => val.replace(/\s/g, '-').toLowerCase());
+	const fontIds = fontNames.map((val) =>
+		val.replaceAll(/\s/g, '-').toLowerCase(),
+	);
 
 	const axes = scrapeSelector('.cdk-column-axes.mat-column-axes', document);
 	const defaults = scrapeSelector(
 		'.cdk-column-defaultValue.mat-column-defaultValue',
-		document
+		document,
 	);
 	const min = scrapeSelector('.cdk-column-min.mat-column-min', document);
 	const max = scrapeSelector('.cdk-column-max.mat-column-max', document);
 	const step = scrapeSelector('.cdk-column-step.mat-column-step', document);
 
 	// Build variable font object
-	type ResultsObject = { [id: string]: FontObjectVariableDirect };
+	type ResultsObject = Record<string, FontObjectVariableDirect>;
+	// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 	let results = {} as ResultsObject;
 	for (const [index, id] of fontIds.entries()) {
 		const variableObject = {
@@ -80,13 +84,13 @@ const processTable = (tableHTML: string) => {
 	fs.writeFileSync(
 		join(
 			dirname(fileURLToPath(import.meta.url)),
-			'../data/variable-response.json'
+			'../data/variable-response.json',
 		),
-		stringify(writeArray)
+		stringify(writeArray),
 	);
 
 	consola.success(
-		`All ${writeArray.length} variable font datapoints have been fetched.`
+		`All ${writeArray.length} variable font datapoints have been fetched.`,
 	);
 };
 
@@ -105,7 +109,7 @@ export const fetchVariable = async () => {
 		() =>
 			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 			document.querySelector('#font-families > gf-font-families > table')!
-				.outerHTML
+				.outerHTML,
 	);
 	await browser.close();
 

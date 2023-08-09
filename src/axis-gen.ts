@@ -1,10 +1,11 @@
 /* eslint-disable no-await-in-loop */
+import * as fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+
 import { Octokit } from '@octokit/core';
 import { consola } from 'consola';
 import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
-import * as fs from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'pathe';
 
 interface AxisProto {
@@ -41,16 +42,20 @@ const getDirectory = async (key?: string) => {
 			owner: 'googlefonts',
 			repo: 'axisregistry',
 			path: '/Lib/axisregistry/data',
-		}
+		},
 	);
 
 	const axisData: AxisProto[] = [];
-	// @ts-ignore - if it is a dir, an array of file objects will be returned instead
+	if (!Array.isArray(data)) {
+		return axisData;
+	}
+
+	// if it is a dir, an array of file objects will be returned instead
 	for (const file of data) {
 		if (file.type === 'file' && file.name.endsWith('.textproto')) {
 			axisData.push({
 				name: file.name,
-				download_url: file.download_url,
+				download_url: String(file.download_url),
 			});
 		}
 	}
@@ -90,12 +95,13 @@ export const parseProto = (textproto: string): AxisDecode => {
 		return acceptedTags.has(tag);
 	});
 
+	// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 	const data = {} as AxisDecode;
 
 	for (const line of lines) {
 		const [key, value] = line.split(':');
-		// @ts-ignore - these are known tags
-		data[key.trim()] = value.split('#')[0].trim().replace(/"/g, ''); // remove comments and quotes
+		// @ts-expect-error - these are known tags
+		data[key.trim()] = value.split('#')[0].trim().replaceAll('"', ''); // remove comments and quotes
 	}
 
 	data.description = getDescription(textproto);
@@ -132,7 +138,7 @@ export const generateAxis = async (key?: string) => {
 
 	await fs.writeFile(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/axis-registry.json'),
-		stringify(finalData)
+		stringify(finalData),
 	);
 
 	consola.success('Axis registry updated');

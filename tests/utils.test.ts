@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { FontObject } from '../src';
+import { type FontObject } from '../src';
 import { orderObject, weightListGen } from '../src/utils';
 
 describe('Utils', () => {
@@ -41,7 +41,7 @@ describe('Utils', () => {
 		it('Throws for unexpected values', () => {
 			expect(() => weightListGen(['500i'])).toThrow('Invalid value: 500i');
 			expect(() => weightListGen(['badvalue'])).toThrow(
-				'Invalid value: badvalue'
+				'Invalid value: badvalue',
 			);
 		});
 	});

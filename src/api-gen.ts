@@ -1,12 +1,13 @@
+import * as fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+
 import { consola } from 'consola';
 import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
-import * as fs from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'pathe';
 
 import { stripIconsApiGen } from './icons-gen';
-import { APIResponse } from './types';
+import { type APIResponse } from './types';
 
 interface GotResponse {
 	items: APIResponse[];
@@ -20,7 +21,7 @@ const fetchURL = async (url: string): Promise<void> => {
 
 	await fs.writeFile(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/api-response.json'),
-		stringify(stripped)
+		stringify(stripped),
 	);
 };
 
@@ -39,7 +40,7 @@ export const fetchAPI = async (key: string): Promise<void> => {
 			await fetchURL(baseurl + key);
 			consola.success('Successful Google Font API fetch.');
 		} catch (error) {
-			throw new Error(`API fetch error: ${error}`);
+			throw new Error(`API fetch error: ${String(error)}`);
 		}
 	} else {
 		throw new Error('The API key is required!');
