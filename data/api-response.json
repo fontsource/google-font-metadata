@@ -2201,6 +2201,14 @@
     "category": "serif"
   },
   {
+    "family": "Bricolage Grotesque",
+    "variants": ["200", "300", "regular", "500", "600", "700", "800"],
+    "subsets": ["cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2023-08-08",
+    "category": "sans-serif"
+  },
+  {
     "family": "Bruno Ace",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -5394,8 +5402,8 @@
     "family": "Gulzar",
     "variants": ["regular"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2023-05-31",
+    "version": "v9",
+    "lastModified": "2023-08-03",
     "category": "serif"
   },
   {
@@ -9740,9 +9748,9 @@
   {
     "family": "Noto Sans Imperial Aramaic",
     "variants": ["regular"],
-    "subsets": ["imperial-aramaic"],
-    "version": "v15",
-    "lastModified": "2022-05-10",
+    "subsets": ["imperial-aramaic", "latin", "latin-ext"],
+    "version": "v16",
+    "lastModified": "2023-08-08",
     "category": "sans-serif"
   },
   {
@@ -10000,9 +10008,9 @@
   {
     "family": "Noto Sans Mandaic",
     "variants": ["regular"],
-    "subsets": ["mandaic"],
-    "version": "v15",
-    "lastModified": "2022-05-10",
+    "subsets": ["latin", "latin-ext", "mandaic"],
+    "version": "v16",
+    "lastModified": "2023-08-08",
     "category": "sans-serif"
   },
   {
@@ -13592,6 +13600,14 @@
     "version": "v24",
     "lastModified": "2022-09-22",
     "category": "handwriting"
+  },
+  {
+    "family": "Ruwudu",
+    "variants": ["regular", "500", "600", "700"],
+    "subsets": ["arabic", "latin", "latin-ext"],
+    "version": "v4",
+    "lastModified": "2023-08-08",
+    "category": "serif"
   },
   {
     "family": "Rye",
