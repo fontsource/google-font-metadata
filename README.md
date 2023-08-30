@@ -262,7 +262,7 @@ Exports [`data/licenses.json`](https://github.com/fontsource/google-font-metadat
 }
 ```
 
-Exports [`data/licenses.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/axis-registry.json)
+Exports [`data/axis-registry.json`](https://github.com/fontsource/google-font-metadata/tree/main/data/axis-registry.json)
 
 You can refer to [`src/index.ts`](https://github.com/fontsource/google-font-metadata/blob/main/src/index.ts) and [`src/data.ts`](https://github.com/fontsource/google-font-metadata/blob/main/src/data.ts) to see all exports.
 
