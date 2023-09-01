@@ -1423,6 +1423,13 @@
     }
   },
   {
+    "family": "Noto Sans HK",
+    "id": "noto-sans-hk",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Sans Hanifi Rohingya",
     "id": "noto-sans-hanifi-rohingya",
     "axes": {
@@ -1449,6 +1456,13 @@
     "id": "noto-sans-javanese",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans KR",
+    "id": "noto-sans-kr",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
   {
@@ -1557,6 +1571,13 @@
     }
   },
   {
+    "family": "Noto Sans SC",
+    "id": "noto-sans-sc",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Sans Sinhala",
     "id": "noto-sans-sinhala",
     "axes": {
@@ -1595,6 +1616,13 @@
   {
     "family": "Noto Sans Syriac Eastern",
     "id": "noto-sans-syriac-eastern",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans TC",
+    "id": "noto-sans-tc",
     "axes": {
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
@@ -2377,6 +2405,13 @@
     }
   },
   {
+    "family": "Teko",
+    "id": "teko",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Tektur",
     "id": "tektur",
     "axes": {
@@ -2486,6 +2521,15 @@
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Wavefont",
+    "id": "wavefont",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "ROND": {"default": "100", "min": "0", "max": "100", "step": "1"},
+      "YELA": {"default": "-100", "min": "-100", "max": "100", "step": "1"}
     }
   },
   {
