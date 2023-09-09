@@ -9082,8 +9082,8 @@
     "family": "Nokora",
     "variants": ["100", "300", "regular", "700", "900"],
     "subsets": ["khmer", "latin"],
-    "version": "v30",
-    "lastModified": "2022-05-10",
+    "version": "v31",
+    "lastModified": "2023-09-06",
     "category": "sans-serif"
   },
   {
@@ -9138,8 +9138,8 @@
     "family": "Noto Emoji",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["emoji"],
-    "version": "v39",
-    "lastModified": "2023-03-21",
+    "version": "v46",
+    "lastModified": "2023-09-07",
     "category": "sans-serif"
   },
   {
@@ -12648,14 +12648,6 @@
     "category": "display"
   },
   {
-    "family": "Pushster",
-    "variants": ["regular"],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v21",
-    "lastModified": "2023-08-25",
-    "category": "display"
-  },
-  {
     "family": "Qahiri",
     "variants": ["regular"],
     "subsets": ["arabic", "latin"],
@@ -13092,8 +13084,8 @@
     "family": "Reggae One",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
-    "version": "v15",
-    "lastModified": "2023-05-02",
+    "version": "v16",
+    "lastModified": "2023-09-06",
     "category": "display"
   },
   {
@@ -13291,8 +13283,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v25",
-    "lastModified": "2023-05-02",
+    "version": "v32",
+    "lastModified": "2023-09-06",
     "category": "serif"
   },
   {
