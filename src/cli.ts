@@ -22,7 +22,7 @@ const cli = cac('google-font-metadata');
 cli
 	.command('generate [key]', 'Fetch parsing metadata for all fonts')
 	.option('-n, --normal', 'Fetch only normal Google Fonts Developer API')
-	.option('-v, --variable', 'Fetch only variabble metadata')
+	.option('-v, --variable', 'Fetch only variable metadata')
 	.action(async (key: string, options) => {
 		try {
 			const finalKey = key ?? process.env.API_KEY;
