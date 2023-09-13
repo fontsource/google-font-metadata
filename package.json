@@ -32,7 +32,7 @@
 		"deepmerge": "^4.3.1",
 		"dotenv": "^16.3.1",
 		"execa": "^8.0.1",
-		"got": "^13.0.0",
+		"got": "^12.6.1",
 		"json-stringify-pretty-compact": "^4.0.0",
 		"linkedom": "^0.15.3",
 		"p-queue": "^7.4.1",
