@@ -1,5 +1,13 @@
 [
   {
+    "family": "AR One Sans",
+    "id": "ar-one-sans",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"},
+      "ARRR": {"default": "10", "min": "10", "max": "60", "step": "1"}
+    }
+  },
+  {
     "family": "Advent Pro",
     "id": "advent-pro",
     "axes": {
@@ -374,7 +382,7 @@
     "family": "Bricolage Grotesque",
     "id": "bricolage-grotesque",
     "axes": {
-      "opsz": {"default": "14", "min": "10", "max": "48", "step": "0.1"},
+      "opsz": {"default": "14", "min": "12", "max": "96", "step": "0.1"},
       "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
       "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
     }
@@ -734,6 +742,13 @@
     }
   },
   {
+    "family": "Gabarito",
+    "id": "gabarito",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Gantari",
     "id": "gantari",
     "axes": {
@@ -941,6 +956,13 @@
     "family": "Kablammo",
     "id": "kablammo",
     "axes": {"MORF": {"default": "0", "min": "0", "max": "60", "step": "1"}}
+  },
+  {
+    "family": "Kameron",
+    "id": "kameron",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
   },
   {
     "family": "Kantumruy Pro",
@@ -1415,6 +1437,13 @@
     }
   },
   {
+    "family": "Noto Sans Gunjala Gondi",
+    "id": "noto-sans-gunjala-gondi",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Sans Gurmukhi",
     "id": "noto-sans-gurmukhi",
     "axes": {
@@ -1539,6 +1568,13 @@
     "axes": {
       "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Sans NKo Unjoined",
+    "id": "noto-sans-nko-unjoined",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
   },
   {
@@ -1904,6 +1940,13 @@
     }
   },
   {
+    "family": "Onest",
+    "id": "onest",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Open Sans",
     "id": "open-sans",
     "axes": {
@@ -1987,6 +2030,13 @@
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "opsz": {"default": "14", "min": "8", "max": "30", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Pixelify Sans",
+    "id": "pixelify-sans",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
   },
   {
