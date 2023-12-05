@@ -15,7 +15,8 @@ interface GotResponse {
 
 const fetchURL = async (url: string): Promise<void> => {
 	// Have to double assert to please esbuild
-	const response = (await got(url).json()) as unknown as GotResponse;
+	// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+	const response = (await got(url).json()) as GotResponse;
 	// Google ships icons into the API, so we have to separate them
 	const stripped = await stripIconsApiGen(response.items);
 
