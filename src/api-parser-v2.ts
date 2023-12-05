@@ -187,20 +187,6 @@ export const processCSS = (
 							fontObject[id].variants[fontWeight] =
 								fontObject[id].variants[fontWeight] || {};
 
-							if (fontStyle && subset && type === 'url') {
-								fontObject[id].variants[fontWeight][fontStyle] =
-									fontObject[id].variants[fontWeight][fontStyle] || {};
-
-								fontObject[id].variants[fontWeight][fontStyle][subset] =
-									fontObject[id].variants[fontWeight][fontStyle][subset] || {
-										url: {},
-									};
-
-								fontObject[id].variants[fontWeight][fontStyle][subset].url[
-									format
-								] = path;
-							}
-
 							// APIv2 splits woff/woff2 files by subset, but uses one combined file for other formats
 							// These don't have a subset
 							if (fontStyle && type === 'url' && !format.startsWith('woff')) {
@@ -212,6 +198,19 @@ export const processCSS = (
 										format
 									] = path;
 								}
+								// We do not want to include local fonts
+							} else if (type === 'url') {
+								fontObject[id].variants[fontWeight][fontStyle] =
+									fontObject[id].variants[fontWeight][fontStyle] || {};
+
+								fontObject[id].variants[fontWeight][fontStyle][subset] =
+									fontObject[id].variants[fontWeight][fontStyle][subset] || {
+										url: {},
+									};
+
+								fontObject[id].variants[fontWeight][fontStyle][subset].url[
+									format
+								] = path;
 							}
 						}
 					}
