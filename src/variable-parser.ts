@@ -198,6 +198,7 @@ export const fetchCSS = async (url: string) => {
 
 // [key, css]
 export const fetchAllCSS = async (links: Links) =>
+	// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
 	await (Promise.all(
 		Object.keys(links).map(async (key) => [key, await fetchCSS(links[key])]),
 	) as Promise<string[][]>); // Additional type assertion needed for pkgroll dts plugin
@@ -205,7 +206,7 @@ export const fetchAllCSS = async (links: Links) =>
 export const parseCSS = (cssTuple: string[][], defSubset?: string) => {
 	const fontVariants: FontVariantsVariable = {};
 
-	let subset = '';
+	let subset = defSubset ?? 'latin';
 	for (const [key, cssVariant] of cssTuple) {
 		const [fontType, fontStyle] = key.split('.');
 		const rules = compile(cssVariant);

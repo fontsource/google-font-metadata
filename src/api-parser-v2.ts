@@ -82,6 +82,7 @@ export const processCSS = (
 	font: APIResponse,
 ) => {
 	const id = font.family.replaceAll(/\s/g, '-').toLowerCase();
+	const defSubset = font.subsets.includes('latin') ? 'latin' : font.subsets[0];
 
 	const fontObject: FontObjectV2 = {
 		[id]: {
@@ -92,7 +93,7 @@ export const processCSS = (
 			styles: [],
 			unicodeRange: {},
 			variants: {},
-			defSubset: font.subsets.includes('latin') ? 'latin' : font.subsets[0],
+			defSubset,
 			lastModified: font.lastModified,
 			version: font.version,
 			category: font.category,
@@ -102,7 +103,7 @@ export const processCSS = (
 	for (const extension of css) {
 		const rules = compile(extension);
 
-		let subset = '';
+		let subset = defSubset ?? 'latin';
 		let fontStyle = '';
 		let fontWeight = '';
 		for (const rule of rules) {
@@ -186,7 +187,19 @@ export const processCSS = (
 							fontObject[id].variants[fontWeight] =
 								fontObject[id].variants[fontWeight] || {};
 
-							if (fontStyle && subset && type === 'url') {
+							// APIv2 splits woff/woff2 files by subset, but uses one combined file for other formats
+							// These don't have a subset
+							if (fontStyle && type === 'url' && !format.startsWith('woff')) {
+								const keys = Object.keys(
+									fontObject[id].variants[fontWeight][fontStyle],
+								);
+								for (const key of keys) {
+									fontObject[id].variants[fontWeight][fontStyle][key].url[
+										format
+									] = path;
+								}
+								// We do not want to include local fonts
+							} else if (type === 'url') {
 								fontObject[id].variants[fontWeight][fontStyle] =
 									fontObject[id].variants[fontWeight][fontStyle] || {};
 
@@ -199,25 +212,22 @@ export const processCSS = (
 									format
 								] = path;
 							}
-
-							// APIv2 splits woff/woff2 files by subset, but uses one combined file for other formats
-							// These don't have a subset
-							if (fontStyle && type === 'url' && !format.startsWith('woff')) {
-								const keys = Object.keys(
-									fontObject[id].variants[fontWeight][fontStyle],
-								);
-								for (const key of keys) {
-									fontObject[id].variants[fontWeight][fontStyle][key].url[
-										format
-									] = path;
-								}
-							}
 						}
 					}
 				}
 			}
 		}
 	}
+
+	// If unicode-range is empty, but the font has a subset, add a fallback range that covers all characters
+	if (
+		Object.keys(fontObject[id].unicodeRange).length === 0 &&
+		fontObject[id].defSubset
+	) {
+		fontObject[id].unicodeRange[fontObject[id].defSubset] =
+			'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD';
+	}
+
 	return fontObject;
 };
 
