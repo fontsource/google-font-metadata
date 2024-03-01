@@ -893,6 +893,15 @@
     },
     "original": "Copyright 2020 The Angkor Project Authors (https://github.com/danhhong/Angkor)"
   },
+  "annapurna-sil": {
+    "id": "annapurna-sil",
+    "authors": {"copyright": "Copyright 2007-2023 by SIL International"},
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright (c) 2007-2023 by SIL International"
+  },
   "annie-use-your-telescope": {
     "id": "annie-use-your-telescope",
     "authors": {
@@ -914,6 +923,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright (c) Mark Simonson 2009-2010. All rights reserved."
+  },
+  "anta": {
+    "id": "anta",
+    "authors": {
+      "copyright": "Copyright 2019 The Anta Project Authors",
+      "website": "https://github.com/Typedesigners/Anta-Regular"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2019 The Anta Project Authors (https://github.com/Typedesigners/Anta-Regular)"
   },
   "antic": {
     "id": "antic",
@@ -1259,14 +1280,14 @@
   "asset": {
     "id": "asset",
     "authors": {
-      "copyright": "Copyright 2011, Sorkin Type Co www.sorkintype.com with Reserved Font Name \"Asset\". This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at",
-      "website": "http://scripts.sil.org/OFL"
+      "copyright": "Copyright 2023 The Asset Project Authors",
+      "website": "https://github.com/SorkinType/Asset"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright (c) 2011, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name \"Asset\".  This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
+    "original": "Copyright 2023 The Asset Project Authors (https://github.com/SorkinType/Asset)"
   },
   "assistant": {
     "id": "assistant",
@@ -7105,6 +7126,18 @@
     },
     "original": "Copyright (c) 2015, Cadson Demak (info@cadsondemak.com), Copyright (c) 2014, Pablo Impallari (www.impallari.com|impallari@gmail.com)"
   },
+  "jacquarda-bastarda-9": {
+    "id": "jacquarda-bastarda-9",
+    "authors": {
+      "copyright": "Copyright 2023 The Soft Type Project Authors",
+      "website": "https://github.com/scfried/soft-type-jacquarda-bastarda"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type-jacquarda-bastarda)"
+  },
   "jacques-francois": {
     "id": "jacques-francois",
     "authors": {
@@ -7781,6 +7814,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright 2018 The Kodchasan Project Authors (https://github.com/cadsondemak/Kodchasan)"
+  },
+  "kode-mono": {
+    "id": "kode-mono",
+    "authors": {
+      "copyright": "Copyright 2023 The Kode Mono Project Authors",
+      "website": "https://github.com/isaozler/kode-mono"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Kode Mono Project Authors (https://github.com/isaozler/kode-mono)"
   },
   "koh-santepheap": {
     "id": "koh-santepheap",
@@ -8947,6 +8992,18 @@
     },
     "original": "Copyright 2015-2022 The Mada Project Authors (https://github.com/aliftype/mada), with Reserved Font Name \"Source\"."
   },
+  "madimi-one": {
+    "id": "madimi-one",
+    "authors": {
+      "copyright": "Copyright 2024 The Madimi One Project Authors",
+      "website": "https://github.com/TaVaTake/madimi"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2024 The Madimi One Project Authors (https://github.com/TaVaTake/madimi)"
+  },
   "magra": {
     "id": "magra",
     "authors": {
@@ -9557,6 +9614,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright 2011 The Michroma Project Authors (https://github.com/googlefonts/Michroma-font)"
+  },
+  "micro-5": {
+    "id": "micro-5",
+    "authors": {
+      "copyright": "Copyright 2023 The Soft Type Project Authors",
+      "website": "https://github.com/scfried/soft-type-micro"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Soft Type Project Authors (https://github.com/scfried/soft-type-micro)"
   },
   "milonga": {
     "id": "milonga",
@@ -10217,6 +10286,18 @@
     },
     "original": "Copyright 2022 The Nabla Project Authors (https://github.com/justvanrossum/nabla)"
   },
+  "namdhinggo": {
+    "id": "namdhinggo",
+    "authors": {
+      "copyright": "Copyright 2002-2022, SIL International Reserved Font Names \"Namdhinggo\" and \"SIL\".",
+      "website": "http://www.sil.org/\nwith"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright (c) 2002-2022, SIL International (http://www.sil.org/),\nwith Reserved Font Names \"Namdhinggo\" and \"SIL\"."
+  },
   "nanum-brush-script": {
     "id": "nanum-brush-script",
     "authors": {
@@ -10524,12 +10605,14 @@
   },
   "noto-kufi-arabic": {
     "id": "noto-kufi-arabic",
-    "authors": {"copyright": "Copyright 2019 Google LLC. All Rights Reserved."},
+    "authors": {
+      "copyright": "Copyright 2019-2022 Google LLC. All Rights Reserved."
+    },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2019 Google LLC. All Rights Reserved."
+    "original": "Copyright 2019-2022 Google LLC. All Rights Reserved."
   },
   "noto-music": {
     "id": "noto-music",
@@ -11591,14 +11674,14 @@
   "noto-sans-mongolian": {
     "id": "noto-sans-mongolian",
     "authors": {
-      "copyright": "Copyright 2022 The Noto Project Authors",
+      "copyright": "Copyright 2023 The Noto Project Authors",
       "website": "https://github.com/notofonts/mongolian"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/mongolian)"
+    "original": "Copyright 2023 The Noto Project Authors (https://github.com/notofonts/mongolian)"
   },
   "noto-sans-mono": {
     "id": "noto-sans-mono",
@@ -13143,6 +13226,18 @@
     },
     "original": "Copyright 2019 The Oi Project Authors (github.com/kosbarts/Oi)"
   },
+  "ojuju": {
+    "id": "ojuju",
+    "authors": {
+      "copyright": "Copyright 2024 The Ojuju Project Authors",
+      "website": "https://github.com/jobosonchisa/ojuju"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2024 The Ojuju Project Authors (https://github.com/jobosonchisa/ojuju)"
+  },
   "old-standard-tt": {
     "id": "old-standard-tt",
     "authors": {
@@ -14272,6 +14367,54 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright (c) 2012, Jovanny Lemonad (http://www.jovanny.ru), Copyright (c) 2012, Pavel Emelyanov (zakachka2006@mail.ru), with Reserved Font Name \"Prosto\" and \"Prosto One\"."
+  },
+  "protest-guerrilla": {
+    "id": "protest-guerrilla",
+    "authors": {
+      "copyright": "Copyright 2020 The Protest Project Authors",
+      "website": "https://github.com/octaviopardo/Protest"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2020 The Protest Project Authors (https://github.com/octaviopardo/Protest)"
+  },
+  "protest-revolution": {
+    "id": "protest-revolution",
+    "authors": {
+      "copyright": "Copyright 2020 The Protest Project Authors",
+      "website": "https://github.com/octaviopardo/Protest"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2020 The Protest Project Authors (https://github.com/octaviopardo/Protest)"
+  },
+  "protest-riot": {
+    "id": "protest-riot",
+    "authors": {
+      "copyright": "Copyright 2020 The Protest Project Authors",
+      "website": "https://github.com/octaviopardo/Protest"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2020 The Protest Project Authors (https://github.com/octaviopardo/Protest)"
+  },
+  "protest-strike": {
+    "id": "protest-strike",
+    "authors": {
+      "copyright": "Copyright 2020 The Protest Project Authors",
+      "website": "https://github.com/octaviopardo/Protest"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2020 The Protest Project Authors (https://github.com/octaviopardo/Protest)"
   },
   "proza-libre": {
     "id": "proza-libre",
@@ -18431,13 +18574,13 @@
     "id": "yanone-kaffeesatz",
     "authors": {
       "copyright": "Copyright 2010 The Yanone Kaffeesatz Project Authors",
-      "website": "https://github.com/alexeiva/yanone-kaffeesatz"
+      "website": "https://github.com/yanone/kaffeesatz"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2010 The Yanone Kaffeesatz Project Authors (https://github.com/alexeiva/yanone-kaffeesatz)"
+    "original": "Copyright 2010 The Yanone Kaffeesatz Project Authors (https://github.com/yanone/kaffeesatz)"
   },
   "yantramanav": {
     "id": "yantramanav",
