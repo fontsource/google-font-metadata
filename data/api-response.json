@@ -2163,9 +2163,9 @@
       "800italic",
       "900italic"
     ],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v23",
-    "lastModified": "2023-03-21",
+    "subsets": ["latin", "latin-ext", "math", "symbols"],
+    "version": "v25",
+    "lastModified": "2024-03-25",
     "category": "serif"
   },
   {
@@ -3441,8 +3441,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v14",
-    "lastModified": "2023-07-13",
+    "version": "v15",
+    "lastModified": "2024-03-25",
     "category": "sans-serif"
   },
   {
@@ -3523,9 +3523,16 @@
   {
     "family": "David Libre",
     "variants": ["regular", "500", "700"],
-    "subsets": ["hebrew", "latin", "latin-ext", "vietnamese"],
-    "version": "v14",
-    "lastModified": "2023-05-02",
+    "subsets": [
+      "hebrew",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ],
+    "version": "v16",
+    "lastModified": "2024-03-25",
     "category": "serif"
   },
   {
@@ -6355,8 +6362,8 @@
     "family": "Jacquarda Bastarda 9",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v1",
-    "lastModified": "2024-02-16",
+    "version": "v4",
+    "lastModified": "2024-03-25",
     "category": "display"
   },
   {
@@ -7295,7 +7302,7 @@
     ],
     "subsets": ["latin", "latin-ext"],
     "version": "v24",
-    "lastModified": "2023-05-02",
+    "lastModified": "2024-03-12",
     "category": "sans-serif"
   },
   {
@@ -10821,8 +10828,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "symbols"],
-    "version": "v41",
-    "lastModified": "2023-09-27",
+    "version": "v42",
+    "lastModified": "2024-03-25",
     "category": "sans-serif"
   },
   {
@@ -12738,9 +12745,9 @@
       "900",
       "900italic"
     ],
-    "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v20",
-    "lastModified": "2022-09-22",
+    "subsets": ["latin", "latin-ext"],
+    "version": "v21",
+    "lastModified": "2024-03-25",
     "category": "sans-serif"
   },
   {
@@ -13362,6 +13369,14 @@
     "category": "display"
   },
   {
+    "family": "Reddit Mono",
+    "variants": ["200", "300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2024-03-25",
+    "category": "monospace"
+  },
+  {
     "family": "Redressed",
     "variants": ["regular"],
     "subsets": ["latin"],
@@ -13424,8 +13439,8 @@
       "800italic"
     ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2023-12-07",
+    "version": "v4",
+    "lastModified": "2024-03-25",
     "category": "sans-serif"
   },
   {
@@ -15570,6 +15585,14 @@
     "category": "display"
   },
   {
+    "family": "Tac One",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "math", "symbols", "vietnamese"],
+    "version": "v2",
+    "lastModified": "2024-03-25",
+    "category": "sans-serif"
+  },
+  {
     "family": "Tai Heritage Pro",
     "variants": ["regular", "700"],
     "subsets": ["latin", "latin-ext", "tai-viet", "vietnamese"],
@@ -16690,6 +16713,38 @@
     "version": "v13",
     "lastModified": "2023-08-25",
     "category": "sans-serif"
+  },
+  {
+    "family": "Yarndings 12",
+    "variants": ["regular"],
+    "subsets": ["latin", "math", "symbols"],
+    "version": "v2",
+    "lastModified": "2024-03-25",
+    "category": "display"
+  },
+  {
+    "family": "Yarndings 12 Charted",
+    "variants": ["regular"],
+    "subsets": ["latin", "math", "symbols"],
+    "version": "v2",
+    "lastModified": "2024-03-25",
+    "category": "display"
+  },
+  {
+    "family": "Yarndings 20",
+    "variants": ["regular"],
+    "subsets": ["latin", "math", "symbols"],
+    "version": "v2",
+    "lastModified": "2024-03-25",
+    "category": "display"
+  },
+  {
+    "family": "Yarndings 20 Charted",
+    "variants": ["regular"],
+    "subsets": ["latin", "math", "symbols"],
+    "version": "v2",
+    "lastModified": "2024-03-25",
+    "category": "display"
   },
   {
     "family": "Yatra One",

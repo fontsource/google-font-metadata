@@ -2268,6 +2268,13 @@
     }
   },
   {
+    "family": "Reddit Mono",
+    "id": "reddit-mono",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Reem Kufi",
     "id": "reem-kufi",
     "axes": {
