@@ -552,6 +552,11 @@
     }
   },
   {
+    "family": "Danfo",
+    "id": "danfo",
+    "axes": {"ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"}}
+  },
+  {
     "family": "Darker Grotesque",
     "id": "darker-grotesque",
     "axes": {
@@ -949,6 +954,11 @@
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
+  },
+  {
+    "family": "Jaro",
+    "id": "jaro",
+    "axes": {"opsz": {"default": "14", "min": "6", "max": "72", "step": "0.1"}}
   },
   {
     "family": "JetBrains Mono",
@@ -1879,6 +1889,20 @@
     }
   },
   {
+    "family": "Noto Serif JP",
+    "id": "noto-serif-jp",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif KR",
+    "id": "noto-serif-kr",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Serif Kannada",
     "id": "noto-serif-kannada",
     "axes": {
@@ -1930,11 +1954,25 @@
     }
   },
   {
+    "family": "Noto Serif SC",
+    "id": "noto-serif-sc",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Serif Sinhala",
     "id": "noto-serif-sinhala",
     "axes": {
       "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Noto Serif TC",
+    "id": "noto-serif-tc",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
     }
   },
   {
@@ -2218,6 +2256,14 @@
     }
   },
   {
+    "family": "Radio Canada Big",
+    "id": "radio-canada-big",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Raleway",
     "id": "raleway",
     "axes": {
@@ -2286,6 +2332,21 @@
   {
     "family": "Reddit Mono",
     "id": "reddit-mono",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Reddit Sans",
+    "id": "reddit-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Reddit Sans Condensed",
+    "id": "reddit-sans-condensed",
     "axes": {
       "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
     }
@@ -2593,6 +2654,14 @@
     }
   },
   {
+    "family": "Teachers",
+    "id": "teachers",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
     "family": "Teko",
     "id": "teko",
     "axes": {
@@ -2664,6 +2733,23 @@
       "opsz": {"default": "14", "min": "12", "max": "72", "step": "0.1"},
       "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Ubuntu Sans",
+    "id": "ubuntu-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Ubuntu Sans Mono",
+    "id": "ubuntu-sans-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
   },
   {
