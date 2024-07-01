@@ -78,6 +78,13 @@
     }
   },
   {
+    "family": "Anaheim",
+    "id": "anaheim",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
     "family": "Andada Pro",
     "id": "andada-pro",
     "axes": {
@@ -1295,6 +1302,13 @@
     }
   },
   {
+    "family": "Monda",
+    "id": "monda",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Montagu Slab",
     "id": "montagu-slab",
     "axes": {
@@ -2191,6 +2205,274 @@
     "id": "playpen-sans",
     "axes": {
       "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite AU NSW",
+    "id": "playwrite-au-nsw",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite AU QLD",
+    "id": "playwrite-au-qld",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite AU SA",
+    "id": "playwrite-au-sa",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite AU TAS",
+    "id": "playwrite-au-tas",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite AU VIC",
+    "id": "playwrite-au-vic",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite BR",
+    "id": "playwrite-br",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite CA",
+    "id": "playwrite-ca",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite CO",
+    "id": "playwrite-co",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite DE Grund",
+    "id": "playwrite-de-grund",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite DE LA",
+    "id": "playwrite-de-la",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite DE SAS",
+    "id": "playwrite-de-sas",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite DE VA",
+    "id": "playwrite-de-va",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite ES",
+    "id": "playwrite-es",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite ES Deco",
+    "id": "playwrite-es-deco",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite FR Moderne",
+    "id": "playwrite-fr-moderne",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite FR Trad",
+    "id": "playwrite-fr-trad",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite GB J",
+    "id": "playwrite-gb-j",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite GB S",
+    "id": "playwrite-gb-s",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite ID",
+    "id": "playwrite-id",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite IE",
+    "id": "playwrite-ie",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite IN",
+    "id": "playwrite-in",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite IS",
+    "id": "playwrite-is",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite IT Moderna",
+    "id": "playwrite-it-moderna",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite IT Trad",
+    "id": "playwrite-it-trad",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite MX",
+    "id": "playwrite-mx",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite NG Modern",
+    "id": "playwrite-ng-modern",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite NL",
+    "id": "playwrite-nl",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite NO",
+    "id": "playwrite-no",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite NZ",
+    "id": "playwrite-nz",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite PL",
+    "id": "playwrite-pl",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite PT",
+    "id": "playwrite-pt",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite RO",
+    "id": "playwrite-ro",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite SK",
+    "id": "playwrite-sk",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite TZ",
+    "id": "playwrite-tz",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite US Modern",
+    "id": "playwrite-us-modern",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite US Trad",
+    "id": "playwrite-us-trad",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite VN",
+    "id": "playwrite-vn",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
+    }
+  },
+  {
+    "family": "Playwrite ZA",
+    "id": "playwrite-za",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "400", "step": "1"}
     }
   },
   {
