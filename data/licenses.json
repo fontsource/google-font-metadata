@@ -984,6 +984,18 @@
     },
     "original": "Copyright 2020 The Anton Project Authors (https://github.com/googlefonts/AntonFont.git)"
   },
+  "anton-sc": {
+    "id": "anton-sc",
+    "authors": {
+      "copyright": "Copyright 2020 The Anton Project Authors",
+      "website": "https://github.com/googlefonts/AntonFont.git"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2020 The Anton Project Authors (https://github.com/googlefonts/AntonFont.git)"
+  },
   "antonio": {
     "id": "antonio",
     "authors": {
@@ -1199,6 +1211,18 @@
   },
   "arsenal": {
     "id": "arsenal",
+    "authors": {
+      "copyright": "Copyright 2012 The Arsenal Project Authors",
+      "email": "andrij.design@gmail.com"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2012 The Arsenal Project Authors (andrij.design@gmail.com)"
+  },
+  "arsenal-sc": {
+    "id": "arsenal-sc",
     "authors": {
       "copyright": "Copyright 2012 The Arsenal Project Authors",
       "email": "andrij.design@gmail.com"
@@ -1905,6 +1929,18 @@
     },
     "original": "Copyright 2018 The Baskervville Project Authors (https://github.com/anrt-type/ANRT-Baskervville)"
   },
+  "baskervville-sc": {
+    "id": "baskervville-sc",
+    "authors": {
+      "copyright": "Copyright 2018 The Baskervville Project Authors",
+      "website": "https://github.com/anrt-type/ANRT-Baskervville"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2018 The Baskervville Project Authors (https://github.com/anrt-type/ANRT-Baskervville)"
+  },
   "battambang": {
     "id": "battambang",
     "authors": {
@@ -1976,6 +2012,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright 2019 The Bebas Neue Project Authors (https://github.com/dharmatype/Bebas-Neue)"
+  },
+  "beiruti": {
+    "id": "beiruti",
+    "authors": {
+      "copyright": "Copyright 2024 The Beiruti Project Authors",
+      "website": "https://github.com/googlefonts/beiruti"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2024 The Beiruti Project Authors (https://github.com/googlefonts/beiruti)"
   },
   "belanosima": {
     "id": "belanosima",
@@ -2427,6 +2475,18 @@
     },
     "original": "Copyright 2020 The Bodoni Moda Project Authors (https://github.com/indestructible-type/Bodoni)"
   },
+  "bodoni-moda-sc": {
+    "id": "bodoni-moda-sc",
+    "authors": {
+      "copyright": "Copyright 2020 The Bodoni Moda Project Authors",
+      "website": "https://github.com/indestructible-type/Bodoni"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2020 The Bodoni Moda Project Authors (https://github.com/indestructible-type/Bodoni)"
+  },
   "bokor": {
     "id": "bokor",
     "authors": {
@@ -2441,6 +2501,18 @@
   },
   "bona-nova": {
     "id": "bona-nova",
+    "authors": {
+      "copyright": "Copyright 2017 The Bona Nova Project Authors",
+      "website": "https://github.com/kosmynkab/Bona-Nova"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2017 The Bona Nova Project Authors (https://github.com/kosmynkab/Bona-Nova)"
+  },
+  "bona-nova-sc": {
+    "id": "bona-nova-sc",
     "authors": {
       "copyright": "Copyright 2017 The Bona Nova Project Authors",
       "website": "https://github.com/kosmynkab/Bona-Nova"
@@ -2658,71 +2730,74 @@
   "bungee": {
     "id": "bungee",
     "authors": {
-      "copyright": "Copyright 2008 The Bungee Project Authors",
-      "email": "david@djr.com"
+      "copyright": "Copyright 2023 The Bungee Project Authors",
+      "website": "https://github.com/djrrb/Bungee"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2008 The Bungee Project Authors (david@djr.com)"
+    "original": "Copyright 2023 The Bungee Project Authors (https://github.com/djrrb/Bungee)"
   },
   "bungee-hairline": {
     "id": "bungee-hairline",
     "authors": {
-      "copyright": "Copyright 2008 The Bungee Project Authors",
-      "email": "david@djr.com"
+      "copyright": "Copyright 2023 The Bungee Project Authors",
+      "website": "https://github.com/djrrb/Bungee"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2008 The Bungee Project Authors (david@djr.com)"
+    "original": "Copyright 2023 The Bungee Project Authors (https://github.com/djrrb/Bungee)"
   },
   "bungee-inline": {
     "id": "bungee-inline",
     "authors": {
-      "copyright": "Copyright 2008 The Bungee Project Authors",
-      "email": "david@djr.com"
+      "copyright": "Copyright 2023 The Bungee Project Authors",
+      "website": "https://github.com/djrrb/Bungee"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2008 The Bungee Project Authors (david@djr.com)"
+    "original": "Copyright 2023 The Bungee Project Authors (https://github.com/djrrb/Bungee)"
   },
   "bungee-outline": {
     "id": "bungee-outline",
     "authors": {
-      "copyright": "Copyright 2008 The Bungee Project Authors",
-      "email": "david@djr.com"
+      "copyright": "Copyright 2023 The Bungee Project Authors",
+      "website": "https://github.com/djrrb/Bungee"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2008 The Bungee Project Authors (david@djr.com)"
+    "original": "Copyright 2023 The Bungee Project Authors (https://github.com/djrrb/Bungee)"
   },
   "bungee-shade": {
     "id": "bungee-shade",
     "authors": {
-      "copyright": "Copyright 2008 The Bungee Project Authors",
-      "email": "david@djr.com"
+      "copyright": "Copyright 2023 The Bungee Project Authors",
+      "website": "https://github.com/djrrb/Bungee"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2008 The Bungee Project Authors (david@djr.com)"
+    "original": "Copyright 2023 The Bungee Project Authors (https://github.com/djrrb/Bungee)"
   },
   "bungee-spice": {
     "id": "bungee-spice",
-    "authors": {"copyright": "Copyright 2021 Roderick Sheeter"},
+    "authors": {
+      "copyright": "Copyright 2023 The Bungee Project Authors",
+      "website": "https://github.com/djrrb/Bungee"
+    },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2021 Roderick Sheeter"
+    "original": "Copyright 2023 The Bungee Project Authors (https://github.com/djrrb/Bungee)"
   },
   "butcherman": {
     "id": "butcherman",
@@ -3959,14 +4034,14 @@
   "cutive": {
     "id": "cutive",
     "authors": {
-      "copyright": "Copyright 2012, vernon adams with Reserved Font Names \"Cutive\"",
-      "email": "vern@newtypography.co.uk"
+      "copyright": "Copyright 2012 The Cutive Project Authors with Reserved Font Names \"Cutive\"",
+      "website": "https://github.com/googlefonts/CutiveFont"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright (c) 2012, vernon adams (vern@newtypography.co.uk), with Reserved Font Names \"Cutive\""
+    "original": "Copyright 2012 The Cutive Project Authors (https://github.com/googlefonts/CutiveFont), with Reserved Font Names \"Cutive\""
   },
   "cutive-mono": {
     "id": "cutive-mono",
@@ -4528,6 +4603,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright 2014 The Eczar Project Authors (https://github.com/rosettatype/eczar)"
+  },
+  "edu-au-vic-wa-nt-hand": {
+    "id": "edu-au-vic-wa-nt-hand",
+    "authors": {
+      "copyright": "Copyright 2023 The VIC WA NT School Hand Australia Project Authors",
+      "website": "https://github.com/SorkinType/VICWANTSchoolhandAustralia"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The VIC WA NT School Hand Australia Project Authors (https://github.com/SorkinType/VICWANTSchoolhandAustralia)"
   },
   "edu-nsw-act-foundation": {
     "id": "edu-nsw-act-foundation",
@@ -5488,6 +5575,18 @@
     },
     "original": "Copyright 2021 The Fuggles Pro Project Authors (https://github.com/googlefonts/fuggles)"
   },
+  "fustat": {
+    "id": "fustat",
+    "authors": {
+      "copyright": "Copyright 2022 The Fustat Project Authors",
+      "website": "https://github.com/Kief-Type-Foundry/Fustat"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2022 The Fustat Project Authors (https://github.com/Kief-Type-Foundry/Fustat)"
+  },
   "fuzzy-bubbles": {
     "id": "fuzzy-bubbles",
     "authors": {
@@ -5522,6 +5621,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright (c) Takis Katsoulidis and George D. Matthiopoulos, 1993-2001. All rights reserved."
+  },
+  "ga-maamli": {
+    "id": "ga-maamli",
+    "authors": {
+      "copyright": "Copyright 2023 The Ga Maamli Project Authors",
+      "website": "https://github.com/SorkinType/GaMaamli"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Ga Maamli Project Authors (https://github.com/SorkinType/GaMaamli)"
   },
   "gabarito": {
     "id": "gabarito",
@@ -7084,14 +7195,14 @@
   "inter": {
     "id": "inter",
     "authors": {
-      "copyright": "Copyright 2020 The Inter Project Authors",
+      "copyright": "Copyright 2016 The Inter Project Authors",
       "website": "https://github.com/rsms/inter"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)"
+    "original": "Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)"
   },
   "inter-tight": {
     "id": "inter-tight",
@@ -7747,6 +7858,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright 2022 The Kalnia Project Authors (https://github.com/fridamedrano/Kalnia-Typeface.git)"
+  },
+  "kalnia-glaze": {
+    "id": "kalnia-glaze",
+    "authors": {
+      "copyright": "Copyright 2022 The Kalnia Glaze Project Authors",
+      "website": "https://github.com/fridamedrano/Kalnia-Glaze"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2022 The Kalnia Glaze Project Authors (https://github.com/fridamedrano/Kalnia-Glaze)"
   },
   "kameron": {
     "id": "kameron",
@@ -8785,14 +8908,14 @@
   "life-savers": {
     "id": "life-savers",
     "authors": {
-      "copyright": "Copyright 2012, Pablo Impallari Copyright 2012, Rodrigo Fuenzalida Copyright 2012, Igino Marini. with Reserved Font Name Life Savers.",
-      "email": "www.impallari.comimpallari@gmail.com, www.rfuenzalida.comhello@rfuenzalida.com, www.ikern.commail@iginomarini.com"
+      "copyright": "Copyright 2012 The Life Savers Project Authors",
+      "website": "https://github.com/googlefonts/life-savers"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright (c) 2012, Pablo Impallari (www.impallari.com|impallari@gmail.com), Copyright (c) 2012, Rodrigo Fuenzalida (www.rfuenzalida.com|hello@rfuenzalida.com),  Copyright (c) 2012, Igino Marini. (www.ikern.com|mail@iginomarini.com), with Reserved Font Name Life Savers."
+    "original": "Copyright 2012 The Life Savers Project Authors (https://github.com/googlefonts/life-savers)"
   },
   "lilita-one": {
     "id": "lilita-one",
@@ -9352,6 +9475,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright (c) 2012 Andhrapradesh Society for Knowledge Networks (fonts.siliconandhra.org). Copyright (c) 2011, Vernon Adams (vern@newtypography.co.uk), with Reserved Font Name Nunito"
+  },
+  "maname": {
+    "id": "maname",
+    "authors": {
+      "copyright": "Copyright 2015-2023 The Maname Project Authors",
+      "website": "https://github.com/mooniak/maname-font"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2015-2023 The Maname Project Authors (https://github.com/mooniak/maname-font)"
   },
   "mandali": {
     "id": "mandali",
@@ -11300,13 +11435,13 @@
   "noto-sans-duployan": {
     "id": "noto-sans-duployan",
     "authors": {
-      "copyright": "Copyright 2018-2019 David Corbett. Copyright 2019-2022 Google LLC. All Rights Reserved."
+      "copyright": "Copyright 2018-2019, 2022-2023 David Corbett. Copyright 2019-2022 Google LLC. All Rights Reserved."
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2018-2019 David Corbett. Copyright 2019-2022 Google LLC. All Rights Reserved."
+    "original": "Copyright 2018-2019, 2022-2023 David Corbett. Copyright 2019-2022 Google LLC. All Rights Reserved."
   },
   "noto-sans-egyptian-hieroglyphs": {
     "id": "noto-sans-egyptian-hieroglyphs",
@@ -11491,14 +11626,14 @@
   "noto-sans-hebrew": {
     "id": "noto-sans-hebrew",
     "authors": {
-      "copyright": "Copyright 2022 The Noto Project Authors",
+      "copyright": "Copyright 2024 The Noto Project Authors",
       "website": "https://github.com/notofonts/hebrew"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/hebrew)"
+    "original": "Copyright 2024 The Noto Project Authors (https://github.com/notofonts/hebrew)"
   },
   "noto-sans-imperial-aramaic": {
     "id": "noto-sans-imperial-aramaic",
@@ -14220,13 +14355,13 @@
     "id": "philosopher",
     "authors": {
       "copyright": "Copyright 2011 The Philosopher Project Authors",
-      "email": "lemonad@jovanny.ru"
+      "website": "https://github.com/alexeiva/philosopher"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2011 The Philosopher Project Authors (lemonad@jovanny.ru)"
+    "original": "Copyright 2011 The Philosopher Project Authors (https://github.com/alexeiva/philosopher)"
   },
   "phudu": {
     "id": "phudu",
@@ -14395,6 +14530,30 @@
     },
     "original": "Copyright 2023 The Playpen Sans Project Authors (https://github.com/TypeTogether/Playpen-Sans)"
   },
+  "playwrite-ar": {
+    "id": "playwrite-ar",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-at": {
+    "id": "playwrite-at",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
   "playwrite-au-nsw": {
     "id": "playwrite-au-nsw",
     "authors": {
@@ -14455,6 +14614,30 @@
     },
     "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
   },
+  "playwrite-be-vlg": {
+    "id": "playwrite-be-vlg",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-be-wal": {
+    "id": "playwrite-be-wal",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
   "playwrite-br": {
     "id": "playwrite-br",
     "authors": {
@@ -14479,8 +14662,44 @@
     },
     "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
   },
+  "playwrite-cl": {
+    "id": "playwrite-cl",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
   "playwrite-co": {
     "id": "playwrite-co",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-cu": {
+    "id": "playwrite-cu",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-cz": {
+    "id": "playwrite-cz",
     "authors": {
       "copyright": "Copyright 2023 The Playwrite Project Authors",
       "website": "https://github.com/TypeTogether/Playwrite"
@@ -14529,6 +14748,30 @@
   },
   "playwrite-de-va": {
     "id": "playwrite-de-va",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-dk-loopet": {
+    "id": "playwrite-dk-loopet",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-dk-uloopet": {
+    "id": "playwrite-dk-uloopet",
     "authors": {
       "copyright": "Copyright 2023 The Playwrite Project Authors",
       "website": "https://github.com/TypeTogether/Playwrite"
@@ -14601,6 +14844,42 @@
   },
   "playwrite-gb-s": {
     "id": "playwrite-gb-s",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-hr": {
+    "id": "playwrite-hr",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-hr-lijeva": {
+    "id": "playwrite-hr-lijeva",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-hu": {
+    "id": "playwrite-hu",
     "authors": {
       "copyright": "Copyright 2023 The Playwrite Project Authors",
       "website": "https://github.com/TypeTogether/Playwrite"
@@ -14733,6 +15012,18 @@
   },
   "playwrite-nz": {
     "id": "playwrite-nz",
+    "authors": {
+      "copyright": "Copyright 2023 The Playwrite Project Authors",
+      "website": "https://github.com/TypeTogether/Playwrite"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Playwrite Project Authors (https://github.com/TypeTogether/Playwrite)"
+  },
+  "playwrite-pe": {
+    "id": "playwrite-pe",
     "authors": {
       "copyright": "Copyright 2023 The Playwrite Project Authors",
       "website": "https://github.com/TypeTogether/Playwrite"
@@ -15513,14 +15804,14 @@
   "rammetto-one": {
     "id": "rammetto-one",
     "authors": {
-      "copyright": "Copyright 2011 by vernon adams with Reserved Font Names \"Rammetto\"",
-      "email": "vern@newtypography.co.uk"
+      "copyright": "Copyright 2011 The Rammetto Project Authors with Reserved Font Name Rammetto.",
+      "website": "https://github.com/googlefonts/RammettoFont"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright (c) 2011 by vernon adams (vern@newtypography.co.uk), with Reserved Font Names \"Rammetto\""
+    "original": "Copyright 2011 The Rammetto Project Authors (https://github.com/googlefonts/RammettoFont), with Reserved Font Name Rammetto."
   },
   "rampart-one": {
     "id": "rampart-one",
@@ -15966,6 +16257,15 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     },
     "original": "Copyright 2018 The Roboto Slab Project Authors (https://github.com/googlefonts/robotoslab)"
+  },
+  "roboto_old": {
+    "id": "roboto_old",
+    "authors": {"copyright": "Copyright 2011 Google Inc. All Rights Reserved."},
+    "license": {
+      "type": "Apache License, version 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "original": "Copyright 2011 Google Inc. All Rights Reserved."
   },
   "rochester": {
     "id": "rochester",
@@ -16705,6 +17005,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright (c) 2011 by vernon adams (vern@newtypography.co.uk), with Reserved Font Names \"Sancreek\""
+  },
+  "sankofa-display": {
+    "id": "sankofa-display",
+    "authors": {
+      "copyright": "Copyright 2024 The Sankofa Display Project Authors",
+      "website": "https://github.com/batsimadz/Sankofa-Display"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2024 The Sankofa Display Project Authors (https://github.com/batsimadz/Sankofa-Display)"
   },
   "sansita": {
     "id": "sansita",
@@ -19399,6 +19711,18 @@
     },
     "original": "Copyright 2011 The Wire One Project Authors (https://github.com/cyrealtype/Wire-One)"
   },
+  "wittgenstein": {
+    "id": "wittgenstein",
+    "authors": {
+      "copyright": "Copyright 2024 The Wittgenstein Project Authors",
+      "website": "https://github.com/jrgdrs/Wittgenstein"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2024 The Wittgenstein Project Authors (https://github.com/jrgdrs/Wittgenstein)"
+  },
   "wix-madefor-display": {
     "id": "wix-madefor-display",
     "authors": {
@@ -19788,6 +20112,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright 2018 The ZCOOL XiaoWei Project Authors (https://www.github.com/googlefonts/xiaowei)"
+  },
+  "zain": {
+    "id": "zain",
+    "authors": {
+      "copyright": "Copyright 2024 The Zain Project Authors",
+      "website": "https://github.com/googlefonts/zain"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2024 The Zain Project Authors (https://github.com/googlefonts/zain)"
   },
   "zen-antique": {
     "id": "zen-antique",
