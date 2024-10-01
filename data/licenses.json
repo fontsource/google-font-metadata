@@ -163,6 +163,18 @@
     },
     "original": "Copyright 2023 The Afacad Project Authors (https://github.com/Dicotype/Afacad)"
   },
+  "afacad-flux": {
+    "id": "afacad-flux",
+    "authors": {
+      "copyright": "Copyright 2023 The Afacad Project Authors",
+      "website": "https://github.com/Dicotype/Afacad"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The Afacad Project Authors (https://github.com/Dicotype/Afacad)"
+  },
   "agbalumo": {
     "id": "agbalumo",
     "authors": {
@@ -4616,6 +4628,30 @@
     },
     "original": "Copyright 2014 The Eczar Project Authors (https://github.com/rosettatype/eczar)"
   },
+  "edu-au-vic-wa-nt-dots": {
+    "id": "edu-au-vic-wa-nt-dots",
+    "authors": {
+      "copyright": "Copyright 2023 The VIC WA NT School Hand Australia Project Authors",
+      "website": "https://github.com/SorkinType/VICWANTSchoolhandAustralia"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The VIC WA NT School Hand Australia Project Authors (https://github.com/SorkinType/VICWANTSchoolhandAustralia)"
+  },
+  "edu-au-vic-wa-nt-guides": {
+    "id": "edu-au-vic-wa-nt-guides",
+    "authors": {
+      "copyright": "Copyright 2023 The VIC WA NT School Hand Australia Project Authors",
+      "website": "https://github.com/SorkinType/VICWANTSchoolhandAustralia"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2023 The VIC WA NT School Hand Australia Project Authors (https://github.com/SorkinType/VICWANTSchoolhandAustralia)"
+  },
   "edu-au-vic-wa-nt-hand": {
     "id": "edu-au-vic-wa-nt-hand",
     "authors": {
@@ -8896,14 +8932,14 @@
   "libre-franklin": {
     "id": "libre-franklin",
     "authors": {
-      "copyright": "Copyright 2020 The LibreFranklin Project Authors",
-      "website": "https://github.com/impallari/Libre-Franklin"
+      "copyright": "Copyright 2020 The Libre Franklin Project Authors",
+      "website": "https://github.com/googlefonts/Libre-Franklin"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2020 The LibreFranklin Project Authors (https://github.com/impallari/Libre-Franklin)"
+    "original": "Copyright 2020 The Libre Franklin Project Authors (https://github.com/googlefonts/Libre-Franklin)"
   },
   "licorice": {
     "id": "licorice",
@@ -11056,14 +11092,12 @@
   },
   "noto-emoji": {
     "id": "noto-emoji",
-    "authors": {
-      "copyright": "Copyright 2013, 2022 Google Inc. All Rights Reserved."
-    },
+    "authors": {"copyright": "Copyright 2013 Google LLC"},
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "Copyright 2013, 2022 Google Inc. All Rights Reserved."
+    "original": "Copyright 2013 Google LLC"
   },
   "noto-kufi-arabic": {
     "id": "noto-kufi-arabic",
@@ -13171,14 +13205,14 @@
   "noto-serif-hk": {
     "id": "noto-serif-hk",
     "authors": {
-      "copyright": "2017-2023 Adobe",
+      "copyright": "2017-2024 Adobe",
       "website": "http://www.adobe.com/."
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "(c) 2017-2023 Adobe (http://www.adobe.com/)."
+    "original": "(c) 2017-2024 Adobe (http://www.adobe.com/)."
   },
   "noto-serif-hebrew": {
     "id": "noto-serif-hebrew",
@@ -13195,26 +13229,26 @@
   "noto-serif-jp": {
     "id": "noto-serif-jp",
     "authors": {
-      "copyright": "2017-2023 Adobe",
+      "copyright": "2017-2024 Adobe",
       "website": "http://www.adobe.com/."
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "(c) 2017-2023 Adobe (http://www.adobe.com/)."
+    "original": "(c) 2017-2024 Adobe (http://www.adobe.com/)."
   },
   "noto-serif-kr": {
     "id": "noto-serif-kr",
     "authors": {
-      "copyright": "2017-2023 Adobe",
+      "copyright": "2017-2024 Adobe",
       "website": "http://www.adobe.com/."
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "(c) 2017-2023 Adobe (http://www.adobe.com/)."
+    "original": "(c) 2017-2024 Adobe (http://www.adobe.com/)."
   },
   "noto-serif-kannada": {
     "id": "noto-serif-kannada",
@@ -13378,14 +13412,14 @@
   "noto-serif-tc": {
     "id": "noto-serif-tc",
     "authors": {
-      "copyright": "2017-2023 Adobe",
+      "copyright": "2017-2024 Adobe",
       "website": "http://www.adobe.com/."
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "http://scripts.sil.org/OFL"
     },
-    "original": "(c) 2017-2023 Adobe (http://www.adobe.com/)."
+    "original": "(c) 2017-2024 Adobe (http://www.adobe.com/)."
   },
   "noto-serif-tamil": {
     "id": "noto-serif-tamil",
@@ -17699,6 +17733,18 @@
       "url": "http://scripts.sil.org/OFL"
     },
     "original": "Copyright 2021 The Sixtyfour Project Authors (https://github.com/jenskutilek/homecomputer-fonts)"
+  },
+  "sixtyfour-convergence": {
+    "id": "sixtyfour-convergence",
+    "authors": {
+      "copyright": "Copyright 2021 The Sixtyfour Convergence Project Authors",
+      "website": "https://github.com/jenskutilek/homecomputer-fonts"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "http://scripts.sil.org/OFL"
+    },
+    "original": "Copyright 2021 The Sixtyfour Convergence Project Authors (https://github.com/jenskutilek/homecomputer-fonts)"
   },
   "skranji": {
     "id": "skranji",

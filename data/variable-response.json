@@ -25,6 +25,14 @@
     }
   },
   {
+    "family": "Afacad Flux",
+    "id": "afacad-flux",
+    "axes": {
+      "slnt": {"default": "0", "min": "-14", "max": "14", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "1000", "step": "1"}
+    }
+  },
+  {
     "family": "Akshar",
     "id": "akshar",
     "axes": {
@@ -621,6 +629,20 @@
     "id": "eczar",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu AU VIC WA NT Dots",
+    "id": "edu-au-vic-wa-nt-dots",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu AU VIC WA NT Guides",
+    "id": "edu-au-vic-wa-nt-guides",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
   },
   {
@@ -2955,6 +2977,16 @@
     "axes": {
       "BLED": {"default": "0", "min": "0", "max": "100", "step": "1"},
       "SCAN": {"default": "0", "min": "-53", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Sixtyfour Convergence",
+    "id": "sixtyfour-convergence",
+    "axes": {
+      "BLED": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SCAN": {"default": "0", "min": "-53", "max": "100", "step": "1"},
+      "XELA": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YELA": {"default": "0", "min": "-100", "max": "100", "step": "1"}
     }
   },
   {
