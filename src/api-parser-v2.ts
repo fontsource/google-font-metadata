@@ -22,17 +22,20 @@ export const fetchCSS = async (
 ): Promise<string> => {
 	// Download CSS stylesheets with specific user-agent Google Fonts APIv2
 	const url = `${baseurl}${fontFamily}:ital,wght@${variantsList}`;
-	try {
-		const response = await fetch(url, {
-			headers: {
-				'user-agent': userAgent,
-			},
-		}).then((res) => res.text());
 
-		return response;
-	} catch (error) {
-		throw new Error(`CSS fetch error (v2): ${String(error)}\nURL: ${url}`);
+	const response = await fetch(url, {
+		headers: {
+			'user-agent': userAgent,
+		},
+	});
+
+	if (!response.ok) {
+		throw new Error(
+			`CSS fetch error (v2): Response code ${response.status} (${response.statusText})\nURL: ${url}`,
+		);
 	}
+
+	return response.text();
 };
 
 export const variantsListGen = (variants: string[]): string => {

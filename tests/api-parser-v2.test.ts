@@ -1,4 +1,3 @@
-/* eslint-disable no-await-in-loop */
 import * as fs from 'node:fs/promises';
 
 import stringify from 'json-stringify-pretty-compact';
@@ -34,12 +33,12 @@ describe('API Parser v2', () => {
 		});
 
 		it('Throws with bad request', async () => {
-			const texturinaFont = { ...APIResponse[7] }; // Vitest gimmick where modifying obj directly affects all other tests
+			const texturinaFont = { ...APIResponse[7] }; // Make deep copy of fixture.
 			texturinaFont.family = 'test'; // False family
 			await expect(
 				async () => await fetchAllCSS(texturinaFont),
 			).rejects.toThrow(
-				'CSS fetch error (v2): HTTPError: Response code 400 (Bad Request)',
+				'CSS fetch error (v2): Response code 400 ()\nURL: https://fonts.googleapis.com/css2?family=test:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900',
 			);
 		});
 	});

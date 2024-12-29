@@ -26,7 +26,7 @@ describe('API Gen', () => {
 
 	it('errors due to bad request', async () => {
 		await expect(fetchAPI('fail')).rejects.toThrow(
-			'API fetch error: HTTPError: Response code 400 (Bad Request)',
+			'API fetch error: Error: Response code 400 ()',
 		);
 	});
 });

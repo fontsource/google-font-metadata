@@ -110,8 +110,14 @@ export const parseProto = (textproto: string): AxisDecode => {
 
 // Download the textproto file and parse it
 const downloadAxis = async (axis: AxisProto): Promise<AxisObject> => {
-	const response = await fetch(axis.download_url).then((res) => res.text());
-	const data = parseProto(response.trim());
+	const response = await fetch(axis.download_url);
+
+	if (!response.ok) {
+		throw new Error(`Failed to download ${axis.name}`);
+	}
+
+	const text = await response.text();
+	const data = parseProto(text.trim());
 
 	const result = {
 		name: data.display_name,

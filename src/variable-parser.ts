@@ -172,19 +172,20 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 
 export const fetchCSS = async (url: string) => {
 	// Download CSS stylesheets using Google Fonts APIv2
-	try {
-		const response = await fetch(url, {
-			headers: {
-				'User-Agent': userAgents.variable,
-			},
-		}).then((res) => res.text());
 
-		return response;
-	} catch (error) {
+	const response = await fetch(url, {
+		headers: {
+			'User-Agent': userAgents.variable,
+		},
+	});
+
+	if (!response.ok) {
 		throw new Error(
-			`CSS fetch error (variable): ${String(error)}\nURL: ${url}`,
+			`CSS fetch error (variable): Response code ${response.status} (${response.statusText})\nURL: ${url}`,
 		);
 	}
+
+	return response.text();
 };
 
 // [key, css]

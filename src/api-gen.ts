@@ -13,12 +13,18 @@ interface APIGenResponse {
 }
 
 const fetchURL = async (url: string): Promise<void> => {
-	const response = (await fetch(url).then((res) =>
-		res.json(),
-	)) as APIGenResponse;
+	const response = await fetch(url);
+
+	if (!response.ok) {
+		throw new Error(
+			`Response code ${response.status} (${response.statusText})`,
+		);
+	}
+
+	const items = (await response.json()) as APIGenResponse;
 
 	// Google ships icons into the API, so we have to separate them
-	const stripped = await stripIconsApiGen(response.items);
+	const stripped = await stripIconsApiGen(items.items);
 
 	await fs.writeFile(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/api-response.json'),

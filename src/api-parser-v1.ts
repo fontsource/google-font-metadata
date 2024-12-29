@@ -27,18 +27,22 @@ export const fetchCSS = async (
 	// Get all CSS variants for specified user-agent using Google Fonts APIv1
 	const subsetMap = font.subsets.map(async (subset) => {
 		const url = `${baseurl + subset}&family=${fontFamily}:${weights}`;
-		try {
-			const response = await fetch(url, {
-				headers: {
-					'user-agent': userAgent,
-				},
-			}).then((res) => res.text());
 
-			// APIv1 does not return subset on top of response
-			return `/* ${subset} */\n${String(response)}`;
-		} catch (error) {
-			throw new Error(`CSS fetch error (v1): ${String(error)}\nURL: ${url}`);
+		const response = await fetch(url, {
+			headers: {
+				'user-agent': userAgent,
+			},
+		});
+
+		if (!response.ok) {
+			throw new Error(
+				`CSS fetch error (v1): Response code ${response.status} (${response.statusText})\nURL: ${url}`,
+			);
 		}
+
+		// APIv1 does not return subset on top of response
+		const content = await response.text();
+		return `/* ${subset} */\n${content}`;
 	});
 
 	const cssMap = await Promise.all(subsetMap);
