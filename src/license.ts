@@ -1,8 +1,8 @@
+import * as fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { consola } from 'consola';
 import stringify from 'json-stringify-pretty-compact';
 import { parseHTML } from 'linkedom';
-import * as fs from 'node:fs';
-import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'pathe';
 import puppeteer from 'puppeteer';
 

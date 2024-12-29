@@ -1,6 +1,6 @@
 import stringify from 'json-stringify-pretty-compact';
 import colors from 'picocolors';
-import { z, type ZodError } from 'zod';
+import { type ZodError, z } from 'zod';
 
 import type { FontObject, FontObjectV2, FontObjectVariable } from './types';
 import { isAxesKey } from './types';

@@ -53,7 +53,7 @@ const processTable = (tableHTML: string) => {
 
 	// Build variable font object
 	type ResultsObject = Record<string, FontObjectVariableDirect>;
-	// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+
 	let results = {} as ResultsObject;
 	for (const [index, id] of fontIds.entries()) {
 		const variableObject = {

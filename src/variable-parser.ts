@@ -190,7 +190,6 @@ export const fetchCSS = async (url: string) => {
 
 // [key, css]
 export const fetchAllCSS = async (links: Links) =>
-	// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
 	await (Promise.all(
 		Object.keys(links).map(async (key) => [key, await fetchCSS(links[key])]),
 	) as Promise<string[][]>); // Additional type assertion needed for pkgroll dts plugin
@@ -266,7 +265,6 @@ const processQueue = async (font: FontObjectVariableDirect) => {
 // Queue control
 const queue = new PQueue({ concurrency: 10 });
 
-// eslint-disable-next-line @typescript-eslint/prefer-ts-expect-error
 // @ts-ignore - rollup-plugin-dts fails to compile this typing
 queue.on('error', (error: Error) => {
 	consola.error(error);

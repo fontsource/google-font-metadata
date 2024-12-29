@@ -2,7 +2,7 @@ import * as fs from 'node:fs';
 
 import { join } from 'pathe';
 
-import type { FontObjectVariableDirect, APIResponse } from '../../src/types';
+import type { APIResponse, FontObjectVariableDirect } from '../../src/types';
 
 // Have to clone because Vitest doesn't seem to isolate object reads properly
 // biome-ignore lint/suspicious/noExplicitAny: <explanation>

@@ -1,4 +1,3 @@
-/* eslint-disable no-await-in-loop */
 import * as fs from 'node:fs/promises';
 
 import stringify from 'json-stringify-pretty-compact';

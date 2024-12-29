@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/no-process-exit */
 import 'dotenv/config';
 
 import { cac } from 'cac';
@@ -12,12 +11,11 @@ import { parsev2 } from './api-parser-v2';
 import { generateAxis } from './axis-gen';
 import { parseIcons } from './icons-parser';
 import { parseLicenses } from './license';
-import { updateDb } from './update-db';
 import { validateCLI } from './validate';
 import { fetchVariable } from './variable-gen';
 import { parseVariable } from './variable-parser';
 
-const cli = cac('google-font-metadata');
+const cli = cac('gfm');
 
 cli
 	.command('generate [key]', 'Fetch parsing metadata for all fonts')
@@ -148,18 +146,6 @@ cli
 				validateCLI('v2');
 				validateCLI('variable');
 			}
-		} catch (error) {
-			consola.error(error);
-			process.exit(1);
-		}
-	});
-
-cli
-	.command('update-db', 'Update metadata db by updating lockfile')
-	.action(async () => {
-		try {
-			await updateDb();
-			consola.success('Metadata updated!');
 		} catch (error) {
 			consola.error(error);
 			process.exit(1);
