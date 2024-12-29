@@ -609,6 +609,14 @@
     }
   },
   {
+    "family": "Doto",
+    "id": "doto",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "ROND": {"default": "0", "min": "0", "max": "100", "step": "1"}
+    }
+  },
+  {
     "family": "DynaPuff",
     "id": "dynapuff",
     "axes": {
@@ -632,6 +640,13 @@
     }
   },
   {
+    "family": "Edu AU VIC WA NT Arrows",
+    "id": "edu-au-vic-wa-nt-arrows",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Edu AU VIC WA NT Dots",
     "id": "edu-au-vic-wa-nt-dots",
     "axes": {
@@ -648,6 +663,13 @@
   {
     "family": "Edu AU VIC WA NT Hand",
     "id": "edu-au-vic-wa-nt-hand",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu AU VIC WA NT Pre",
+    "id": "edu-au-vic-wa-nt-pre",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
@@ -815,6 +837,21 @@
     }
   },
   {
+    "family": "Funnel Display",
+    "id": "funnel-display",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Funnel Sans",
+    "id": "funnel-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
+    }
+  },
+  {
     "family": "Fustat",
     "id": "fustat",
     "axes": {
@@ -833,6 +870,20 @@
     "id": "gantari",
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Geist",
+    "id": "geist",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Geist Mono",
+    "id": "geist-mono",
+    "axes": {
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
@@ -963,6 +1014,23 @@
     "axes": {
       "MORF": {"default": "15", "min": "0", "max": "45", "step": "1"},
       "SHLN": {"default": "50", "min": "0", "max": "100", "step": "0.1"}
+    }
+  },
+  {
+    "family": "Host Grotesk",
+    "id": "host-grotesk",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Hubot Sans",
+    "id": "hubot-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
     }
   },
   {
@@ -1355,6 +1423,13 @@
     }
   },
   {
+    "family": "Miriam Libre",
+    "id": "miriam-libre",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Moderustic",
     "id": "moderustic",
     "axes": {
@@ -1367,6 +1442,15 @@
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Mona Sans",
+    "id": "mona-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
     }
   },
   {
@@ -2199,6 +2283,13 @@
     "id": "oxanium",
     "axes": {
       "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Parkinsans",
+    "id": "parkinsans",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
     }
   },
   {
@@ -3049,6 +3140,15 @@
     "id": "sora",
     "axes": {
       "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Sour Gummy",
+    "id": "sour-gummy",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "100", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
   {
