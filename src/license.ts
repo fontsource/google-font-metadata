@@ -21,8 +21,8 @@ const processTable = (tableHTML: string) => {
 	const results: Licenses = {};
 	let id: string | undefined;
 	let license: License | undefined;
-	for (const element of document.querySelectorAll('tr').values()) {
-		if (element.className === 'header') {
+	for (const element of document.querySelectorAll('td').values()) {
+		if (element.querySelector('.heading') != null) {
 			// Hello World -> hello-world
 			const idQuery = element
 				.querySelector('.family')
@@ -31,14 +31,30 @@ const processTable = (tableHTML: string) => {
 				.toLowerCase();
 			if (idQuery) id = idQuery;
 
-			const licenseQuery = element.querySelector('a')?.textContent?.trim();
-			const licenseHref = element.querySelector('a')?.href;
-			if (licenseQuery && licenseHref)
+			let licenseQuery = element.querySelector('a')?.textContent?.trim();
+			let licenseHref = element.querySelector('a')?.href;
+			if (licenseQuery && licenseHref) {
+				// Google changed their attribution page with shortened names.
+				switch (licenseQuery) {
+					case 'Open Font License':
+						licenseQuery = 'SIL Open Font License, 1.1';
+						break;
+					case 'Ubuntu Font License':
+						licenseQuery = 'Ubuntu Font License, 1.0';
+						break;
+					default:
+						break;
+				}
+				if (licenseHref.includes('scripts.sil.org')) {
+					licenseHref = 'https://openfontlicense.org';
+				}
+
 				license = { type: licenseQuery, url: licenseHref };
+			}
 		}
 
 		const copyrightString = element
-			.querySelector('.copyright')
+			.querySelector('p.ng-star-inserted')
 			?.textContent?.trim()
 			.split(' ');
 		if (id && license && copyrightString) {
@@ -128,7 +144,7 @@ export const parseLicenses = async () => {
 	await page.goto(url, { waitUntil: 'networkidle0' });
 
 	const tableHTML = await page.evaluate(() => {
-		const query = document.querySelector('section > table > tbody');
+		const query = document.querySelector('gf-attribution > section > table');
 		if (query) return query.outerHTML;
 		throw new Error('No table found for license data to parse.');
 	});
