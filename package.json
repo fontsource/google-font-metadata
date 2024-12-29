@@ -1,7 +1,7 @@
 {
 	"name": "google-font-metadata",
 	"description": "A metadata generator for Google Fonts.",
-	"version": "5.2.1",
+	"version": "6.0.0",
 	"author": "Ayuhito <hello@ayuhito.com>",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -67,6 +67,5 @@
 		"type": "git",
 		"url": "git+https://github.com/fontsource/google-font-metadata"
 	},
-	"packageManager": "pnpm@8.3.1",
 	"trustedDependencies": ["@biomejs/biome"]
 }
