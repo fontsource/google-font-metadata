@@ -1,7 +1,6 @@
 import * as fs from 'node:fs/promises';
 
 import { consola } from 'consola';
-import got from 'got';
 import { join } from 'pathe';
 
 import type { APIResponse } from '../../src';
@@ -36,11 +35,12 @@ const fetchCSS1 = async (
 	const subsetMap = font.subsets.map(async (subset) => {
 		const url = `${baseurl + subset}&family=${fontFamily}:${weights}`;
 		try {
-			const response = await got(url, {
+			const response = await fetch(url, {
 				headers: {
 					'user-agent': userAgent,
 				},
-			}).text();
+			}).then((res) => res.text());
+
 			return { id, subset, response, extension } satisfies CSS;
 		} catch (error) {
 			throw new Error(
@@ -96,11 +96,12 @@ const fetchCSS2 = async (
 	// Download CSS stylesheets with specific user-agent Google Fonts APIv2
 	const url = `${baseurl}${fontFamily}:ital,wght@${variantsList}`;
 	try {
-		const response = (await got(url, {
+		const response = await fetch(url, {
 			headers: {
 				'user-agent': userAgent,
 			},
-		}).text()) as unknown as string; // Type assertion as rollup-plugin-dts too strict
+		}).then((res) => res.text());
+
 		return { id, response, extension };
 	} catch (error) {
 		throw new Error(`CSS fetch error (v2): ${String(error)}\nURL: ${url}`);
@@ -140,11 +141,12 @@ const writeFixtures2 = async () => {
 const fetchCSSVariable = async (url: string) => {
 	// Download CSS stylesheets using Google Fonts APIv2
 	try {
-		const response = await got(url, {
+		const response = await fetch(url, {
 			headers: {
 				'User-Agent': userAgents.apiv2.variable,
 			},
-		}).text();
+		}).then((res) => res.text());
+
 		return response;
 	} catch (error) {
 		throw new Error(

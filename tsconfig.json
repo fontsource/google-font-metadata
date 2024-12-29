@@ -6,7 +6,7 @@
 		"scripts/**/*.ts",
 		"tests/**/*.ts",
 		"tests/**/*.json",
-		"vitest.config.ts"
+		"vitest.config.mts"
 	],
 	"compilerOptions": {
 		/* Projects */

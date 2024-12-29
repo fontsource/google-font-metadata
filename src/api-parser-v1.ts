@@ -2,7 +2,6 @@ import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 import { consola } from 'consola';
-import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
 import PQueue from 'p-queue';
 import { dirname, join } from 'pathe';
@@ -29,11 +28,12 @@ export const fetchCSS = async (
 	const subsetMap = font.subsets.map(async (subset) => {
 		const url = `${baseurl + subset}&family=${fontFamily}:${weights}`;
 		try {
-			const response = await got(url, {
+			const response = await fetch(url, {
 				headers: {
 					'user-agent': userAgent,
 				},
-			}).text();
+			}).then((res) => res.text());
+
 			// APIv1 does not return subset on top of response
 			return `/* ${subset} */\n${String(response)}`;
 		} catch (error) {

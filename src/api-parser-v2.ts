@@ -2,7 +2,6 @@ import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 import { consola } from 'consola';
-import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
 import PQueue from 'p-queue';
 import { dirname, join } from 'pathe';
@@ -24,11 +23,12 @@ export const fetchCSS = async (
 	// Download CSS stylesheets with specific user-agent Google Fonts APIv2
 	const url = `${baseurl}${fontFamily}:ital,wght@${variantsList}`;
 	try {
-		const response = (await got(url, {
+		const response = await fetch(url, {
 			headers: {
 				'user-agent': userAgent,
 			},
-		}).text()) as unknown as string; // Type assertion as rollup-plugin-dts too strict
+		}).then((res) => res.text());
+
 		return response;
 	} catch (error) {
 		throw new Error(`CSS fetch error (v2): ${String(error)}\nURL: ${url}`);

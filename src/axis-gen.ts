@@ -4,7 +4,6 @@ import { fileURLToPath } from 'node:url';
 
 import { Octokit } from '@octokit/core';
 import { consola } from 'consola';
-import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
 import { dirname, join } from 'pathe';
 
@@ -111,7 +110,7 @@ export const parseProto = (textproto: string): AxisDecode => {
 
 // Download the textproto file and parse it
 const downloadAxis = async (axis: AxisProto): Promise<AxisObject> => {
-	const response = (await got(axis.download_url).text()) as unknown as string;
+	const response = await fetch(axis.download_url).then((res) => res.text());
 	const data = parseProto(response.trim());
 
 	const result = {
