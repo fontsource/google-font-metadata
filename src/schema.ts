@@ -96,7 +96,10 @@ const fontObjectVariableSchema = z
 				// [style: string]
 				z.record(
 					// [subset: string]
-					z.string().url().min(1), // url
+					z
+						.string()
+						.url()
+						.min(1), // url
 				),
 			),
 		),
@@ -137,7 +140,8 @@ const fontObjectValidate = (
 	// Iterate over [id: string]
 	for (const id of dataKeys) {
 		const dataId = data[id];
-		let valid;
+		// biome-ignore lint/suspicious/noExplicitAny: <explanation>
+		let valid: any;
 		if (version === 'v1') valid = fontObjectV1Schema.safeParse(dataId);
 		else if (version === 'v2') valid = fontObjectV2Schema.safeParse(dataId);
 		else

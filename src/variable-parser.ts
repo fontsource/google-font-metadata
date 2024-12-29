@@ -90,26 +90,23 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 
 			if (hasWght) {
 				const mergedTuple = addAndMergeAxesRange(font, [axesKey], ['wght']);
-				links[
-					`${axesKey}.normal`
-				] = `${baseurl}${family}:${mergedTuple[0]}@${mergedTuple[1]}`;
+				links[`${axesKey}.normal`] =
+					`${baseurl}${family}:${mergedTuple[0]}@${mergedTuple[1]}`;
 				if (hasItal) {
 					const italTuple = addAndMergeAxesRange(
 						font,
 						[axesKey],
 						['ital', 'wght'],
 					);
-					links[
-						`${axesKey}.italic`
-					] = `${baseurl}${family}:${italTuple[0]}@${italTuple[1]}`;
+					links[`${axesKey}.italic`] =
+						`${baseurl}${family}:${italTuple[0]}@${italTuple[1]}`;
 				}
 			} else {
 				links[`${axesKey}.normal`] = `${baseurl}${family}:${axesKey}@${range}`;
 				if (hasItal) {
 					const italTuple = addAndMergeAxesRange(font, [axesKey], ['ital']);
-					links[
-						`${axesKey}.italic`
-					] = `${baseurl}${family}:${italTuple[0]}@${italTuple[1]}`;
+					links[`${axesKey}.italic`] =
+						`${baseurl}${family}:${italTuple[0]}@${italTuple[1]}`;
 				}
 			}
 		} else {
@@ -122,14 +119,12 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 	// Add just wght and ital variants
 	if (hasWght) {
 		let wghtTuple = addAndMergeAxesRange(font, ['wght'], []);
-		links[
-			'wght.normal'
-		] = `${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
+		links['wght.normal'] =
+			`${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
 		if (hasItal) {
 			wghtTuple = addAndMergeAxesRange(font, ['wght'], ['ital']);
-			links[
-				'wght.italic'
-			] = `${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
+			links['wght.italic'] =
+				`${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
 		}
 	}
 
@@ -137,18 +132,16 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 	if (isFull) {
 		let fullTuple = addAndMergeAxesRange(font, fullAxes, []);
 		if (hasWght) fullTuple = addAndMergeAxesRange(font, fullAxes, ['wght']);
-		links[
-			'full.normal'
-		] = `${baseurl}${family}:${fullTuple[0]}@${fullTuple[1]}`;
+		links['full.normal'] =
+			`${baseurl}${family}:${fullTuple[0]}@${fullTuple[1]}`;
 
 		if (hasItal) {
 			let fullItalTuple = addAndMergeAxesRange(font, fullAxes, ['ital']);
 			if (hasWght)
 				fullItalTuple = addAndMergeAxesRange(font, fullAxes, ['ital', 'wght']);
 
-			links[
-				'full.italic'
-			] = `${baseurl}${family}:${fullItalTuple[0]}@${fullItalTuple[1]}`;
+			links['full.italic'] =
+				`${baseurl}${family}:${fullItalTuple[0]}@${fullItalTuple[1]}`;
 		}
 	}
 
@@ -157,9 +150,8 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 		let standardTuple = addAndMergeAxesRange(font, standardAxes, []);
 		if (hasWght)
 			standardTuple = addAndMergeAxesRange(font, standardAxes, ['wght']);
-		links[
-			'standard.normal'
-		] = `${baseurl}${family}:${standardTuple[0]}@${standardTuple[1]}`;
+		links['standard.normal'] =
+			`${baseurl}${family}:${standardTuple[0]}@${standardTuple[1]}`;
 
 		if (hasItal) {
 			let standardItalTuple = addAndMergeAxesRange(font, standardAxes, [
@@ -171,9 +163,8 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 					'wght',
 				]);
 
-			links[
-				'standard.italic'
-			] = `${baseurl}${family}:${standardItalTuple[0]}@${standardItalTuple[1]}`;
+			links['standard.italic'] =
+				`${baseurl}${family}:${standardItalTuple[0]}@${standardItalTuple[1]}`;
 		}
 	}
 

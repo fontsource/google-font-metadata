@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { type FontObject } from '../src';
+import type { FontObject } from '../src';
 import { orderObject, weightListGen } from '../src/utils';
 
 describe('Utils', () => {

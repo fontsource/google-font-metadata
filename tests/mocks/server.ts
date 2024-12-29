@@ -2,7 +2,7 @@ import { setupServer } from 'msw/node';
 import { afterAll, afterEach, beforeAll } from 'vitest';
 
 // Setup Vitest handlers
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export const setupAPIServer = (handler: any) => {
 	const server = setupServer(...handler);
 	// Start server before all tests

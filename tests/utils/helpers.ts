@@ -2,11 +2,10 @@ import * as fs from 'node:fs';
 
 import { join } from 'pathe';
 
-import { type APIResponse } from '../../src/api-gen';
-import { type FontObjectVariableDirect } from '../../src/types';
+import type { FontObjectVariableDirect, APIResponse } from '../../src/types';
 
 // Have to clone because Vitest doesn't seem to isolate object reads properly
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export const clone = (obj: any) => JSON.parse(JSON.stringify(obj));
 
 export const cssFixturePath = (

@@ -138,15 +138,18 @@ interface Authors {
 	website?: string;
 	email?: string;
 }
+
+interface License {
+	type: string;
+	url: string;
+}
+
 type Licenses = Record<
 	string,
 	{
 		id: string;
 		authors: Authors;
-		license: {
-			type: string;
-			url: string;
-		};
+		license: License;
 		original: string;
 	}
 >;
@@ -165,6 +168,7 @@ export type {
 	FontObjectVariableDirect,
 	FontVariants,
 	FontVariantsVariable,
+	License,
 	Licenses,
 	StandardAxes,
 };

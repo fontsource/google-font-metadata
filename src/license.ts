@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'pathe';
 import puppeteer from 'puppeteer';
 
-import type { Authors, Licenses } from './types';
+import type { Authors, License, Licenses } from './types';
 
 const url = 'https://fonts.google.com/attribution';
 
@@ -19,8 +19,8 @@ const processTable = (tableHTML: string) => {
 	const { document } = parseHTML(tableHTML);
 
 	const results: Licenses = {};
-	let id;
-	let license;
+	let id: string | undefined;
+	let license: License | undefined;
 	for (const element of document.querySelectorAll('tr').values()) {
 		if (element.className === 'header') {
 			// Hello World -> hello-world
