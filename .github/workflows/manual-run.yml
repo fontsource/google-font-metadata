@@ -8,26 +8,19 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Enable PNPM
-        uses: pnpm/action-setup@v2
-
-      - name: Set node version to 18
-        uses: actions/setup-node@v3
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: "18"
-
-      - name: Install
-        run: pnpm install
+          bun-version: latest
 
       - name: Generate API
-        run: pnpm run cli generate $GOOGLE_API_KEY
+        run: bun run cli generate $GOOGLE_API_KEY
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
       - name: Parse API
-        run: pnpm run cli parse
+        run: bun run cli parse
 
       - name: Stage, commit and push files
         uses: stefanzweifel/git-auto-commit-action@v4

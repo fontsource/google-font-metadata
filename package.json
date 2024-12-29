@@ -49,16 +49,15 @@
 		"magic-string": "^0.30.3",
 		"msw": "^1.3.0",
 		"pkgroll": "^1.11.0",
-		"tsx": "^3.12.8",
 		"typescript": "^5.2.2",
 		"vitest": "^0.34.4"
 	},
 	"scripts": {
 		"build": "pkgroll --target=node14",
 		"dev": "pkgroll --target=node14 --watch",
-		"cli": "tsx ./src/cli.ts",
+		"cli": "bun run ./src/cli.ts",
 		"test": "vitest",
-		"test:generate-fixtures": "tsx ./tests/utils/generate-css-fixtures",
+		"test:generate-fixtures": "bun run ./tests/utils/generate-css-fixtures",
 		"coverage": "vitest --coverage",
 		"format": "biome format --fix",
 		"lint": "biome lint --fix",
