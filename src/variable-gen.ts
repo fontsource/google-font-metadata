@@ -105,12 +105,17 @@ export const fetchVariable = async () => {
 	const page = await browser.newPage();
 	await page.goto(url, { waitUntil: 'networkidle0' });
 
-	const tableHTML = await page.evaluate(
-		() =>
-			// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-			document.querySelector('#font-families > gf-font-families > table')!
-				.outerHTML,
-	);
+	const tableHTML = await page.evaluate(() => {
+		const selector = document.querySelector(
+			'#font-families > gf-font-families > table',
+		);
+
+		if (!selector) {
+			throw new Error('variable selector not found');
+		}
+
+		return selector.outerHTML;
+	});
 	await browser.close();
 
 	processTable(tableHTML);

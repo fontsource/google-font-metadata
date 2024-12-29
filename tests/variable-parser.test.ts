@@ -4,7 +4,7 @@ import stringify from 'json-stringify-pretty-compact';
 import { describe, expect, it, vi } from 'vitest';
 
 import * as data from '../src/data';
-import { type FontObjectVariableDirect } from '../src/types';
+import type { FontObjectVariableDirect } from '../src/types';
 import {
 	addAndMergeAxesRange,
 	fetchAllCSS,

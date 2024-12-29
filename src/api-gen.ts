@@ -7,7 +7,7 @@ import stringify from 'json-stringify-pretty-compact';
 import { dirname, join } from 'pathe';
 
 import { stripIconsApiGen } from './icons-gen';
-import { type APIResponse } from './types';
+import type { APIResponse } from './types';
 
 interface GotResponse {
 	items: APIResponse[];

@@ -43,14 +43,12 @@
 		"zod": "^3.22.2"
 	},
 	"devDependencies": {
-		"@ayuhito/eslint-config": "^0.4.1",
+		"@biomejs/biome": "1.9.4",
 		"@types/node": "^20.6.0",
 		"c8": "^8.0.1",
-		"eslint": "^8.49.0",
 		"magic-string": "^0.30.3",
 		"msw": "^1.3.0",
 		"pkgroll": "^1.11.0",
-		"prettier": "^3.0.3",
 		"tsx": "^3.12.8",
 		"typescript": "^5.2.2",
 		"vitest": "^0.34.4"
@@ -62,15 +60,11 @@
 		"test": "vitest",
 		"test:generate-fixtures": "tsx ./tests/utils/generate-css-fixtures",
 		"coverage": "vitest --coverage",
-		"format": "prettier --write **/*.{ts,md}",
-		"lint": "eslint **/*.ts --fix",
-		"lint:src": "eslint ./src/*.ts --fix",
+		"format": "biome format --fix",
+		"lint": "biome lint --fix",
 		"prepublish": "npm run format && npm run build"
 	},
-	"files": [
-		"dist/*",
-		"data/*"
-	],
+	"files": ["dist/*", "data/*"],
 	"homepage": "https://github.com/fontsource/google-font-metadata",
 	"repository": {
 		"type": "git",

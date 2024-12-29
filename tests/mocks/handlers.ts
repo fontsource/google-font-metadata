@@ -2,7 +2,7 @@ import fs from 'node:fs';
 
 import { rest } from 'msw';
 
-import { type FontObjectVariableDirect } from '../../src/types';
+import type { FontObjectVariableDirect } from '../../src/types';
 import { generateCSSLinks } from '../../src/variable-parser';
 import APIResponse from '../fixtures/api-response.json';
 import userAgent from '../fixtures/user-agents.json';
