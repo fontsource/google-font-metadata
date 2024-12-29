@@ -2,23 +2,29 @@ import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 import { consola } from 'consola';
-import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
 import { dirname, join } from 'pathe';
 
 import { stripIconsApiGen } from './icons-gen';
 import type { APIResponse } from './types';
 
-interface GotResponse {
+interface APIGenResponse {
 	items: APIResponse[];
 }
 
 const fetchURL = async (url: string): Promise<void> => {
-	// Have to double assert to please esbuild
-	// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-	const response = (await got(url).json()) as GotResponse;
+	const response = await fetch(url);
+
+	if (!response.ok) {
+		throw new Error(
+			`Response code ${response.status} (${response.statusText})`,
+		);
+	}
+
+	const items = (await response.json()) as APIGenResponse;
+
 	// Google ships icons into the API, so we have to separate them
-	const stripped = await stripIconsApiGen(response.items);
+	const stripped = await stripIconsApiGen(items.items);
 
 	await fs.writeFile(
 		join(dirname(fileURLToPath(import.meta.url)), '../data/api-response.json'),

@@ -2,7 +2,6 @@ import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 import { consola } from 'consola';
-import got from 'got';
 import stringify from 'json-stringify-pretty-compact';
 import PQueue from 'p-queue';
 import { dirname, join } from 'pathe';
@@ -173,18 +172,20 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 
 export const fetchCSS = async (url: string) => {
 	// Download CSS stylesheets using Google Fonts APIv2
-	try {
-		const response = await got(url, {
-			headers: {
-				'User-Agent': userAgents.variable,
-			},
-		}).text();
-		return response;
-	} catch (error) {
+
+	const response = await fetch(url, {
+		headers: {
+			'User-Agent': userAgents.variable,
+		},
+	});
+
+	if (!response.ok) {
 		throw new Error(
-			`CSS fetch error (variable): ${String(error)}\nURL: ${url}`,
+			`CSS fetch error (variable): Response code ${response.status} (${response.statusText})\nURL: ${url}`,
 		);
 	}
+
+	return response.text();
 };
 
 // [key, css]

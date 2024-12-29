@@ -1,7 +1,6 @@
 import * as fs from 'node:fs/promises';
 
 import { consola } from 'consola';
-import got from 'got';
 import { join } from 'pathe';
 
 import type { APIResponse } from '../../src';
@@ -35,18 +34,22 @@ const fetchCSS1 = async (
 	// Get all CSS variants for specified user-agent using Google Fonts APIv1
 	const subsetMap = font.subsets.map(async (subset) => {
 		const url = `${baseurl + subset}&family=${fontFamily}:${weights}`;
-		try {
-			const response = await got(url, {
-				headers: {
-					'user-agent': userAgent,
-				},
-			}).text();
-			return { id, subset, response, extension } satisfies CSS;
-		} catch (error) {
+
+		const response = await fetch(url, {
+			headers: {
+				'user-agent': userAgent,
+			},
+		});
+
+		if (!response.ok) {
 			throw new Error(
-				`Fixture fetch error (v1): ${String(error)}\nURL: ${url}`,
+				`CSS fixture fetch error (v1): Response code ${response.status} (${response.statusText})\nURL: ${url}`,
 			);
 		}
+
+		const content = await response.text();
+
+		return { id, subset, response: content, extension } satisfies CSS;
 	});
 
 	return subsetMap;
@@ -95,16 +98,21 @@ const fetchCSS2 = async (
 
 	// Download CSS stylesheets with specific user-agent Google Fonts APIv2
 	const url = `${baseurl}${fontFamily}:ital,wght@${variantsList}`;
-	try {
-		const response = (await got(url, {
-			headers: {
-				'user-agent': userAgent,
-			},
-		}).text()) as unknown as string; // Type assertion as rollup-plugin-dts too strict
-		return { id, response, extension };
-	} catch (error) {
-		throw new Error(`CSS fetch error (v2): ${String(error)}\nURL: ${url}`);
+	const response = await fetch(url, {
+		headers: {
+			'user-agent': userAgent,
+		},
+	});
+
+	if (!response.ok) {
+		throw new Error(
+			`CSS fixture fetch error (v2): Response code ${response.status} (${response.statusText})\nURL: ${url}`,
+		);
 	}
+
+	const content = await response.text();
+
+	return { id, response: content, extension };
 };
 
 const fetchAllCSS2 = async (font: APIResponse): Promise<CSS[]> => {
@@ -139,18 +147,20 @@ const writeFixtures2 = async () => {
 // Modified from variable-parser.ts
 const fetchCSSVariable = async (url: string) => {
 	// Download CSS stylesheets using Google Fonts APIv2
-	try {
-		const response = await got(url, {
-			headers: {
-				'User-Agent': userAgents.apiv2.variable,
-			},
-		}).text();
-		return response;
-	} catch (error) {
+
+	const response = await fetch(url, {
+		headers: {
+			'User-Agent': userAgents.apiv2.variable,
+		},
+	});
+
+	if (!response.ok) {
 		throw new Error(
-			`CSS fetch error (variable): ${String(error)}\nURL: ${url}`,
+			`CSS fetch error (variable): Response code ${response.status} (${response.statusText})\nURL: ${url}`,
 		);
 	}
+
+	return response.text();
 };
 
 export const fetchAllCSSVariable = async (links: Links) =>

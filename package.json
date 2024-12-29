@@ -1,73 +1,75 @@
 {
-	"name": "google-font-metadata",
-	"description": "A metadata generator for Google Fonts.",
-	"version": "5.2.1",
-	"author": "Ayuhito <hello@ayuhito.com>",
-	"main": "./dist/index.js",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
-	"exports": {
-		"types": "./dist/index.d.ts",
-		"require": "./dist/index.js",
-		"import": "./dist/index.mjs"
-	},
-	"bin": {
-		"gfm": "./dist/cli.mjs"
-	},
-	"license": "MIT",
-	"keywords": [
-		"fontsource",
-		"font",
-		"font family",
-		"google fonts",
-		"metadata",
-		"fonts api",
-		"unicode range"
-	],
-	"dependencies": {
-		"@octokit/core": "^5.0.0",
-		"@types/stylis": "^4.2.0",
-		"cac": "^6.7.14",
-		"consola": "^3.2.3",
-		"deepmerge": "^4.3.1",
-		"dotenv": "^16.3.1",
-		"execa": "^8.0.1",
-		"got": "^12.6.1",
-		"json-stringify-pretty-compact": "^4.0.0",
-		"linkedom": "^0.15.3",
-		"p-queue": "^7.4.1",
-		"pathe": "^1.1.1",
-		"picocolors": "^1.0.0",
-		"puppeteer": "^23.11.1",
-		"stylis": "^4.3.0",
-		"zod": "^3.22.2"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"@types/node": "^20.6.0",
-		"c8": "^8.0.1",
-		"magic-string": "^0.30.3",
-		"msw": "^1.3.0",
-		"pkgroll": "^1.11.0",
-		"typescript": "^5.2.2",
-		"vitest": "^0.34.4"
-	},
-	"scripts": {
-		"build": "pkgroll --target=node14",
-		"dev": "pkgroll --target=node14 --watch",
-		"cli": "bun run ./src/cli.ts",
-		"test": "vitest",
-		"test:generate-fixtures": "bun run ./tests/utils/generate-css-fixtures",
-		"coverage": "vitest --coverage",
-		"format": "biome format --fix",
-		"lint": "biome lint --fix",
-		"prepublish": "npm run format && npm run build"
-	},
-	"files": ["dist/*", "data/*"],
-	"homepage": "https://github.com/fontsource/google-font-metadata",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/fontsource/google-font-metadata"
-	},
-	"packageManager": "pnpm@8.3.1"
+  "name": "google-font-metadata",
+  "description": "A metadata generator for Google Fonts.",
+  "version": "5.2.1",
+  "author": "Ayuhito <hello@ayuhito.com>",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "bin": {
+    "gfm": "./dist/cli.mjs"
+  },
+  "license": "MIT",
+  "keywords": [
+    "fontsource",
+    "font",
+    "font family",
+    "google fonts",
+    "metadata",
+    "fonts api",
+    "unicode range"
+  ],
+  "dependencies": {
+    "@octokit/core": "^6.1.2",
+    "@types/stylis": "^4.2.7",
+    "cac": "^6.7.14",
+    "consola": "^3.3.3",
+    "deepmerge": "^4.3.1",
+    "dotenv": "^16.4.7",
+    "execa": "^9.5.2",
+    "json-stringify-pretty-compact": "^4.0.0",
+    "linkedom": "^0.18.6",
+    "p-queue": "^8.0.1",
+    "pathe": "^1.1.2",
+    "picocolors": "^1.1.1",
+    "puppeteer": "^23.11.1",
+    "stylis": "^4.3.4",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.10.2",
+    "c8": "^10.1.3",
+    "magic-string": "^0.30.17",
+    "msw": "^2.7.0",
+    "pkgroll": "^2.6.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "scripts": {
+    "build": "pkgroll --target=node20",
+    "dev": "pkgroll --target=node20 --watch",
+    "cli": "bun run ./src/cli.ts",
+    "test": "vitest",
+    "test:generate-fixtures": "bun run ./tests/utils/generate-css-fixtures",
+    "coverage": "vitest --coverage",
+    "format": "biome format --fix",
+    "lint": "biome lint --fix",
+    "prepublish": "npm run format && npm run build"
+  },
+  "files": ["dist/*", "data/*"],
+  "homepage": "https://github.com/fontsource/google-font-metadata",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fontsource/google-font-metadata"
+  },
+  "packageManager": "pnpm@8.3.1",
+  "trustedDependencies": [
+    "@biomejs/biome"
+  ]
 }

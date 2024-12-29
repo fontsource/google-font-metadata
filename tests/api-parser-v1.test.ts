@@ -48,7 +48,7 @@ describe('API Parser v1', () => {
 			await expect(
 				async () => await fetchAllCSS(texturinaFont),
 			).rejects.toThrow(
-				'CSS fetch error (v1): HTTPError: Response code 400 (Bad Request)',
+				'CSS fetch error (v1): Response code 400 ()\nURL: https://fonts.googleapis.com/css?subset=test&family=Texturina:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic',
 			);
 		});
 	});
