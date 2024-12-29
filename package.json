@@ -38,7 +38,7 @@
 		"p-queue": "^7.4.1",
 		"pathe": "^1.1.1",
 		"picocolors": "^1.0.0",
-		"puppeteer": "^21.1.1",
+		"puppeteer": "^23.11.1",
 		"stylis": "^4.3.0",
 		"zod": "^3.22.2"
 	},
