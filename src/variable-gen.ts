@@ -81,6 +81,10 @@ const processTable = (tableHTML: string) => {
 		writeArray.push(results[key]);
 	}
 
+	if (writeArray.length === 0) {
+		throw new Error('No variable font datapoints found.');
+	}
+
 	fs.writeFileSync(
 		join(
 			dirname(fileURLToPath(import.meta.url)),
@@ -101,7 +105,7 @@ const processTable = (tableHTML: string) => {
  */
 export const fetchVariable = async () => {
 	// Need to use Puppeteer to let JavaScript load page elements fully
-	const browser = await puppeteer.launch({ headless: 'new' });
+	const browser = await puppeteer.launch({ headless: true });
 	const page = await browser.newPage();
 	await page.goto(url, { waitUntil: 'networkidle0' });
 
