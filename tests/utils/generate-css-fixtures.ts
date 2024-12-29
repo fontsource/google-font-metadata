@@ -70,10 +70,8 @@ const writeFixtures1 = async () => {
 	await fs.mkdir(fixtureDir);
 
 	for (const font of APIDirect) {
-		// eslint-disable-next-line no-await-in-loop
 		const cssAll = await fetchAllCSS1(font);
 		for (const css of cssAll) {
-			// eslint-disable-next-line no-await-in-loop
 			await fs.writeFile(
 				join(
 					fixtureDir,
@@ -132,10 +130,8 @@ const writeFixtures2 = async () => {
 	await fs.mkdir(fixtureDir);
 
 	for (const font of APIDirect) {
-		// eslint-disable-next-line no-await-in-loop
 		const cssAll = await fetchAllCSS2(font);
 		for (const css of cssAll) {
-			// eslint-disable-next-line no-await-in-loop
 			await fs.writeFile(
 				join(fixtureDir, `${css.id}-${css.extension}.css`),
 				css.response,
@@ -184,10 +180,8 @@ const writeFixturesVariable = async () => {
 
 	for (const font of dataFixture('variable-response')) {
 		const cssLinks = generateCSSLinks(font);
-		// eslint-disable-next-line no-await-in-loop
 		const cssAll = await fetchAllCSSVariable(cssLinks);
 		for (const css of cssAll) {
-			// eslint-disable-next-line no-await-in-loop
 			await fs.writeFile(
 				join(fixtureDir, `${String(font.id)}-${css.type}-${css.style}.css`),
 				css.response,
@@ -196,7 +190,6 @@ const writeFixturesVariable = async () => {
 	}
 };
 
-// eslint-disable-next-line unicorn/prefer-top-level-await
 (async () => {
 	await writeFixtures1();
 	consola.success('Fixtures generated for APIv1');

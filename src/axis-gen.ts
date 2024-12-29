@@ -1,4 +1,3 @@
-/* eslint-disable no-await-in-loop */
 import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
@@ -94,7 +93,6 @@ export const parseProto = (textproto: string): AxisDecode => {
 		return acceptedTags.has(tag);
 	});
 
-	// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
 	const data = {} as AxisDecode;
 
 	for (const line of lines) {

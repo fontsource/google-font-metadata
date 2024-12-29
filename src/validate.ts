@@ -1,7 +1,7 @@
 import { consola } from 'consola';
 import colors from 'picocolors';
 
-import { APIv1, APIv2, APIVariable } from './data';
+import { APIVariable, APIv1, APIv2 } from './data';
 import { fontObjectValidate, fontObjectVariableValidate } from './schema';
 import type { FontObject } from './types';
 

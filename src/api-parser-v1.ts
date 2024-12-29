@@ -200,7 +200,6 @@ const processQueue = async (font: APIResponse, force: boolean) => {
 // Queue control
 const queue = new PQueue({ concurrency: 18 });
 
-// eslint-disable-next-line @typescript-eslint/prefer-ts-expect-error
 // @ts-ignore - rollup-plugin-dts fails to compile this typing
 queue.on('error', (error: Error) => {
 	consola.error(error);
