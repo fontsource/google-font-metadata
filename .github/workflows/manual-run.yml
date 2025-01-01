@@ -14,8 +14,8 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Puppeteer Setup
-        run: bunx @puppeteer/browsers install chrome@stable
+      - name: PLaywright Setup
+        run: bunx playwright install --with-deps chromium
 
       - name: Generate API
         run: bun run cli generate $GOOGLE_API_KEY

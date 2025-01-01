@@ -4,7 +4,7 @@ import { consola } from 'consola';
 import stringify from 'json-stringify-pretty-compact';
 import { parseHTML } from 'linkedom';
 import { dirname, join } from 'pathe';
-import puppeteer from 'puppeteer';
+import { chromium } from 'playwright';
 
 import type { Authors, License, Licenses } from './types';
 
@@ -128,20 +128,20 @@ const processTable = (tableHTML: string) => {
  * {@link https://fonts.google.com/attribution}
  */
 export const parseLicenses = async () => {
-	const browser = await puppeteer.launch({ headless: true });
+	const browser = await chromium.launch({ headless: true });
 	const page = await browser.newPage();
 	// We only need html, skip css and font downloads
-	await page.setRequestInterception(true);
-	page.on('request', (request) => {
+	await page.route('**/*', (route) => {
+		const request = route.request();
 		if (
 			['image', 'stylesheet', 'font', 'other'].includes(request.resourceType())
 		) {
-			request.abort();
+			route.abort();
 		} else {
-			request.continue();
+			route.continue();
 		}
 	});
-	await page.goto(url, { waitUntil: 'networkidle0' });
+	await page.goto(url, { waitUntil: 'networkidle' });
 
 	const tableHTML = await page.evaluate(() => {
 		const query = document.querySelector('gf-attribution > section > table');

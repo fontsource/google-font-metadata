@@ -6,7 +6,7 @@ import merge from 'deepmerge';
 import stringify from 'json-stringify-pretty-compact';
 import { parseHTML } from 'linkedom';
 import { dirname, join } from 'pathe';
-import puppeteer from 'puppeteer';
+import { chromium } from 'playwright';
 
 import type { FontObjectVariableDirect } from './types';
 
@@ -104,10 +104,10 @@ const processTable = (tableHTML: string) => {
  * {@link https://fonts.google.com/variablefonts}
  */
 export const fetchVariable = async () => {
-	// Need to use Puppeteer to let JavaScript load page elements fully
-	const browser = await puppeteer.launch({ headless: true });
+	// Need to use Playwright to let JavaScript load page elements fully
+	const browser = await chromium.launch({ headless: true });
 	const page = await browser.newPage();
-	await page.goto(url, { waitUntil: 'networkidle0' });
+	await page.goto(url, { waitUntil: 'networkidle' });
 
 	const tableHTML = await page.evaluate(() => {
 		const selector = document.querySelector(
