@@ -17,6 +17,9 @@ jobs:
       - name: Install
         run: bun install
 
+      - name: Puppeteer Setup
+        run: bunx @puppeteer/browsers install chrome@stable
+
       - name: Generate API
         run: bun run cli generate $GOOGLE_API_KEY
         env:
@@ -28,8 +31,8 @@ jobs:
       - name: Stage, commit and push files
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_user_name: "fontsource-bot"
-          commit_user_email: "83556432+fontsource-bot@users.noreply.github.com"
-          commit_author: "fontsource-bot <83556432+fontsource-bot@users.noreply.github.com>"
-          commit_message: "chore(build): update API [Manual Force]"
+          commit_user_name: 'fontsource-bot'
+          commit_user_email: '83556432+fontsource-bot@users.noreply.github.com'
+          commit_author: 'fontsource-bot <83556432+fontsource-bot@users.noreply.github.com>'
+          commit_message: 'chore(build): update API [Manual Force]'
         continue-on-error: true
