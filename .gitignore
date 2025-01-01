@@ -68,3 +68,7 @@ yarn-error.log
 .idea
 
 dist/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
