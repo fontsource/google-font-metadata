@@ -9,6 +9,7 @@ import { compile } from 'stylis';
 
 import { apiv2 as userAgents } from '../data/user-agents.json';
 import { APIVariableDirect } from './data';
+import { LOOP_LIMIT, addError, checkErrors } from './errors';
 import type {
 	FontObjectVariable,
 	FontObjectVariableDirect,
@@ -20,10 +21,9 @@ import { validate } from './validate';
 
 export type Links = Record<string, string>;
 
-const results: FontObjectVariable = {};
-const errs: string[] = [];
-
 const queue = Limiter(10);
+
+const results: FontObjectVariable = {};
 
 // CSS API needs axes to given in alphabetical order or request throws e.g. (a,b,c,A,B,C)
 export const sortAxes = (axesArr: string[]) => {
@@ -264,7 +264,7 @@ const processQueue = async (font: FontObjectVariableDirect) => {
 		results[font.id] = { ...font, variants: variantsObject };
 		consola.success(`Parsed ${font.id}`);
 	} catch (error) {
-		errs.push(`${font.family} experienced an error. ${String(error)}`);
+		addError(`${font.family} experienced an error. ${String(error)}`);
 	}
 };
 
@@ -274,18 +274,12 @@ const processQueue = async (font: FontObjectVariableDirect) => {
  */
 export const parseVariable = async (noValidate: boolean) => {
 	for (const font of APIVariableDirect) {
+		checkErrors(LOOP_LIMIT);
 		queue.add(() => processQueue(font));
 	}
 
 	await queue.flush();
-
-	if (errs.length > 0) {
-		for (const err of errs) {
-			consola.error(err);
-		}
-
-		throw new Error('Some fonts experienced errors during parsing.');
-	}
+	checkErrors();
 
 	if (!noValidate) {
 		validate('variable', results);

@@ -11,6 +11,7 @@ import {
 	processCSS as processV2CSS,
 } from './api-parser-v2';
 import { APIIconDirect, APIIconStatic, APIIconVariable } from './data';
+import { LOOP_LIMIT, addError, checkErrors } from './errors';
 import type {
 	APIIconResponse,
 	FontObjectV2,
@@ -23,11 +24,10 @@ import {
 	parseCSS as parseVariableCSS,
 } from './variable-parser';
 
+const queue = Limiter(18);
+
 const resultsStatic: FontObjectV2[] = [];
 const resultsVariable: FontObjectVariable = {};
-const errs: string[] = [];
-
-const queue = Limiter(18);
 
 const processQueue = async (icon: APIIconResponse, force: boolean) => {
 	try {
@@ -76,7 +76,7 @@ const processQueue = async (icon: APIIconResponse, force: boolean) => {
 		}
 		consola.success(`Parsed ${id}`);
 	} catch (error) {
-		errs.push(`${icon.family} experienced an error. ${String(error)}`);
+		addError(`${icon.family} experienced an error. ${String(error)}`);
 	}
 };
 
@@ -87,18 +87,12 @@ const processQueue = async (icon: APIIconResponse, force: boolean) => {
  */
 export const parseIcons = async (force: boolean) => {
 	for (const icon of APIIconDirect) {
+		checkErrors(LOOP_LIMIT);
 		queue.add(() => processQueue(icon, force));
 	}
 
 	await queue.flush();
-
-	if (errs.length > 0) {
-		for (const err of errs) {
-			consola.error(err);
-		}
-
-		throw new Error('Some icons experienced errors during parsing.');
-	}
+	checkErrors();
 
 	// Order the font objects alphabetically for consistency and not create huge diffs
 	const unorderedStatic: FontObjectV2 = Object.assign({}, ...resultsStatic);

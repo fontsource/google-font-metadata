@@ -9,16 +9,15 @@ import { compile } from 'stylis';
 
 import { apiv2 as userAgents } from '../data/user-agents.json';
 import { APIDirect, APIv2 } from './data';
+import { LOOP_LIMIT, addError, checkErrors } from './errors';
 import type { APIResponse, FontObjectV2 } from './types';
 import { orderObject, weightListGen } from './utils';
 import { validate } from './validate';
 
 const baseurl = 'https://fonts.googleapis.com/css2?family=';
+const queue = Limiter(18);
 
 const results: FontObjectV2[] = [];
-const errs: string[] = [];
-
-const queue = Limiter(18);
 
 export const fetchCSS = async (
 	fontFamily: string,
@@ -261,7 +260,7 @@ const processQueue = async (
 		}
 		consola.success(`Parsed ${id}`);
 	} catch (error) {
-		errs.push(`${font.family} experienced an error. ${String(error)}`);
+		addError(`${font.family} experienced an error. ${String(error)}`);
 	}
 };
 
@@ -272,18 +271,12 @@ const processQueue = async (
  */
 export const parsev2 = async (force: boolean, noValidate: boolean) => {
 	for (const font of APIDirect) {
+		checkErrors(LOOP_LIMIT);
 		queue.add(() => processQueue(font, force));
 	}
 
 	await queue.flush();
-
-	if (errs.length > 0) {
-		for (const err of errs) {
-			consola.error(err);
-		}
-
-		throw new Error('Some fonts experienced errors during parsing.');
-	}
+	checkErrors();
 
 	// Order the font objects alphabetically for consistency and not create huge diffs
 	const unordered: FontObjectV2 = Object.assign({}, ...results);
