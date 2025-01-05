@@ -53,12 +53,13 @@
 	"scripts": {
 		"build": "pkgroll --target=node20",
 		"dev": "pkgroll --target=node20 --watch",
+		"clean": "bun exec 'rm -rf ./dist'",
 		"cli": "bun run ./src/cli.ts",
 		"test": "vitest",
 		"test:generate-fixtures": "bun run ./tests/utils/generate-css-fixtures",
 		"coverage": "vitest --coverage",
 		"lint": "biome check --fix",
-		"prepublishOnly": "bunx biome ci && bun run build"
+		"prepublishOnly": " bunx biome ci && bun run clean && bun run build"
 	},
 	"files": ["dist/*", "data/*"],
 	"homepage": "https://github.com/fontsource/google-font-metadata",
