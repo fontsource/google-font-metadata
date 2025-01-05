@@ -1,9 +1,9 @@
 import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
+import { Limiter } from '@evan/concurrency';
 import { consola } from 'consola';
 import stringify from 'json-stringify-pretty-compact';
-import PQueue from 'p-queue';
 import { dirname, join } from 'pathe';
 import { compile } from 'stylis';
 
@@ -19,6 +19,11 @@ import { orderObject } from './utils';
 import { validate } from './validate';
 
 export type Links = Record<string, string>;
+
+const results: FontObjectVariable = {};
+const errs: string[] = [];
+
+const queue = Limiter(10);
 
 // CSS API needs axes to given in alphabetical order or request throws e.g. (a,b,c,A,B,C)
 export const sortAxes = (axesArr: string[]) => {
@@ -170,9 +175,8 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 	return links;
 };
 
+// Download CSS stylesheets using Google Fonts APIv2
 export const fetchCSS = async (url: string) => {
-	// Download CSS stylesheets using Google Fonts APIv2
-
 	const response = await fetch(url, {
 		headers: {
 			'User-Agent': userAgents.variable,
@@ -252,23 +256,17 @@ export const parseCSS = (cssTuple: string[][], defSubset?: string) => {
 	return fontVariants;
 };
 
-const results: FontObjectVariable = {};
-
 const processQueue = async (font: FontObjectVariableDirect) => {
-	const cssLinks = generateCSSLinks(font);
-	const cssTuple = await fetchAllCSS(cssLinks);
-	const variantsObject = parseCSS(cssTuple);
-	results[font.id] = { ...font, variants: variantsObject };
-	consola.success(`Parsed ${font.id}`);
+	try {
+		const cssLinks = generateCSSLinks(font);
+		const cssTuple = await fetchAllCSS(cssLinks);
+		const variantsObject = parseCSS(cssTuple);
+		results[font.id] = { ...font, variants: variantsObject };
+		consola.success(`Parsed ${font.id}`);
+	} catch (error) {
+		errs.push(`${font.family} experienced an error. ${String(error)}`);
+	}
 };
-
-// Queue control
-const queue = new PQueue({ concurrency: 10 });
-
-// @ts-ignore - rollup-plugin-dts fails to compile this typing
-queue.on('error', (error: Error) => {
-	consola.error(error);
-});
 
 /**
  * Parses the scraped variable font data into a usable APIVariable dataset,
@@ -276,29 +274,32 @@ queue.on('error', (error: Error) => {
  */
 export const parseVariable = async (noValidate: boolean) => {
 	for (const font of APIVariableDirect) {
-		try {
-			queue.add(async () => {
-				await processQueue(font);
-			});
-		} catch (error) {
-			throw new Error(`${font.family} experienced an error. ${String(error)}`);
-		}
+		queue.add(() => processQueue(font));
 	}
-	await queue.onIdle().then(async () => {
-		if (!noValidate) {
-			validate('variable', results);
+
+	await queue.flush();
+
+	if (errs.length > 0) {
+		for (const err of errs) {
+			consola.error(err);
 		}
 
-		const ordered = orderObject(results);
-		await fs.writeFile(
-			join(dirname(fileURLToPath(import.meta.url)), '../data/variable.json'),
-			stringify(ordered),
-		);
+		throw new Error('Some fonts experienced errors during parsing.');
+	}
 
-		consola.success(
-			`All ${
-				Object.keys(results).length
-			} variable font datapoints have been generated.`,
-		);
-	});
+	if (!noValidate) {
+		validate('variable', results);
+	}
+
+	const ordered = orderObject(results);
+	await fs.writeFile(
+		join(dirname(fileURLToPath(import.meta.url)), '../data/variable.json'),
+		stringify(ordered),
+	);
+
+	consola.success(
+		`All ${
+			Object.keys(results).length
+		} variable font datapoints have been generated.`,
+	);
 };
