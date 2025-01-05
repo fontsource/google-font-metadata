@@ -1,5 +1,3 @@
-import 'dotenv/config';
-
 import { cac } from 'cac';
 import { consola } from 'consola';
 import colors from 'picocolors';
