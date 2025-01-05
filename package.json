@@ -1,7 +1,7 @@
 {
 	"name": "google-font-metadata",
 	"description": "A metadata generator for Google Fonts.",
-	"version": "6.0.1",
+	"version": "6.0.2",
 	"author": "Ayuhito <hello@ayuhito.com>",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
@@ -60,7 +60,7 @@
 		"coverage": "vitest --coverage",
 		"format": "biome format --fix",
 		"lint": "biome lint --fix",
-		"prepublish": "npm run format && npm run build"
+		"prepublishOnly": "bunx biome ci && bun run build"
 	},
 	"files": ["dist/*", "data/*"],
 	"homepage": "https://github.com/fontsource/google-font-metadata",
