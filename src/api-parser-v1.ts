@@ -1,19 +1,23 @@
 import * as fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
+import { Limiter } from '@evan/concurrency';
 import { consola } from 'consola';
 import stringify from 'json-stringify-pretty-compact';
-import PQueue from 'p-queue';
 import { dirname, join } from 'pathe';
 import { compile } from 'stylis';
 
 import { apiv1 as userAgents } from '../data/user-agents.json';
 import { APIDirect, APIv1 } from './data';
+import { LOOP_LIMIT, addError, checkErrors } from './errors';
 import type { APIResponse, FontObjectV1 } from './types';
 import { orderObject, weightListGen } from './utils';
 import { validate } from './validate';
 
 const baseurl = 'https://fonts.googleapis.com/css?subset=';
+const queue = Limiter(18);
+
+const results: FontObjectV1[] = [];
 
 export const fetchCSS = async (
 	font: APIResponse,
@@ -49,10 +53,10 @@ export const fetchCSS = async (
 	return cssMap.join('');
 };
 
+// Download CSS stylesheets for each file format
 export const fetchAllCSS = async (
 	font: APIResponse,
 ): Promise<[string, string, string]> =>
-	// Download CSS stylesheets for each file format
 	await Promise.all([
 		fetchCSS(font, userAgents.woff2),
 		fetchCSS(font, userAgents.woff),
@@ -176,34 +180,31 @@ export const processCSS = (
 	return fontObject;
 };
 
-const results: FontObjectV1[] = [];
+const processQueue = async (
+	font: APIResponse,
+	force: boolean,
+): Promise<void> => {
+	try {
+		const id = font.family.replaceAll(/\s/g, '-').toLowerCase();
 
-const processQueue = async (font: APIResponse, force: boolean) => {
-	const id = font.family.replaceAll(/\s/g, '-').toLowerCase();
-
-	// If last-modified matches latest API, skip fetching CSS and processing.
-	if (
-		APIv1[id] !== undefined &&
-		font.lastModified === APIv1[id].lastModified &&
-		!force
-	) {
-		results.push({ [id]: APIv1[id] });
-	} else {
-		const css = await fetchAllCSS(font);
-		const fontObject = processCSS(css, font);
-		results.push(fontObject);
-		consola.info(`Updated ${id}`);
+		// If last-modified matches latest API, skip fetching CSS and processing.
+		if (
+			APIv1[id] !== undefined &&
+			font.lastModified === APIv1[id].lastModified &&
+			!force
+		) {
+			results.push({ [id]: APIv1[id] });
+		} else {
+			const css = await fetchAllCSS(font);
+			const fontObject = processCSS(css, font);
+			results.push(fontObject);
+			consola.info(`Updated ${id}`);
+		}
+		consola.success(`Parsed ${id}`);
+	} catch (error) {
+		addError(`${font.family} experienced an error. ${String(error)}`);
 	}
-	consola.success(`Parsed ${id}`);
 };
-
-// Queue control
-const queue = new PQueue({ concurrency: 18 });
-
-// @ts-ignore - rollup-plugin-dts fails to compile this typing
-queue.on('error', (error: Error) => {
-	consola.error(error);
-});
 
 /**
  * Parses the fetched API data and writes it to the APIv1 JSON dataset.
@@ -212,33 +213,30 @@ queue.on('error', (error: Error) => {
  */
 export const parsev1 = async (force: boolean, noValidate: boolean) => {
 	for (const font of APIDirect) {
-		try {
-			queue.add(async () => {
-				await processQueue(font, force);
-			});
-		} catch (error) {
-			throw new Error(`${font.family} experienced an error. ${String(error)}`);
-		}
+		checkErrors(LOOP_LIMIT);
+		queue.add(() => processQueue(font, force));
 	}
-	await queue.onIdle().then(async () => {
-		// Order the font objects alphabetically for consistency and not create huge diffs
-		const unordered: FontObjectV1 = Object.assign({}, ...results);
-		const ordered = orderObject(unordered);
 
-		if (!noValidate) {
-			validate('v1', ordered);
-		}
+	await queue.flush();
+	checkErrors();
 
-		await fs.writeFile(
-			join(
-				dirname(fileURLToPath(import.meta.url)),
-				'../data/google-fonts-v1.json',
-			),
-			stringify(ordered),
-		);
+	// Order the font objects alphabetically for consistency and not create huge diffs
+	const unordered: FontObjectV1 = Object.assign({}, ...results);
+	const ordered = orderObject(unordered);
 
-		consola.success(
-			`All ${results.length} font datapoints using CSS APIv1 have been generated.`,
-		);
-	});
+	if (!noValidate) {
+		validate('v1', ordered);
+	}
+
+	await fs.writeFile(
+		join(
+			dirname(fileURLToPath(import.meta.url)),
+			'../data/google-fonts-v1.json',
+		),
+		stringify(ordered),
+	);
+
+	consola.success(
+		`All ${results.length} font datapoints using CSS APIv1 have been generated.`,
+	);
 };
