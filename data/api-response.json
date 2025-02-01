@@ -1,5 +1,13 @@
 [
   {
+    "family": "42dot Sans",
+    "variants": ["300", "regular", "500", "600", "700", "800"],
+    "subsets": ["korean", "latin"],
+    "version": "v1",
+    "lastModified": "2025-01-28",
+    "category": "sans-serif"
+  },
+  {
     "family": "ABeeZee",
     "variants": ["regular", "italic"],
     "subsets": ["latin", "latin-ext"],
@@ -1468,8 +1476,8 @@
     "family": "Bagel Fat One",
     "variants": ["regular"],
     "subsets": ["korean", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v2",
+    "lastModified": "2025-01-06",
     "category": "display"
   },
   {
@@ -3804,8 +3812,8 @@
     "family": "Diphylleia",
     "variants": ["regular"],
     "subsets": ["korean", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2024-09-04",
+    "version": "v2",
+    "lastModified": "2025-01-06",
     "category": "serif"
   },
   {
@@ -4825,24 +4833,24 @@
     "family": "Flow Block",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v11",
-    "lastModified": "2024-09-04",
+    "version": "v12",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
     "family": "Flow Circular",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v11",
-    "lastModified": "2024-09-04",
+    "version": "v12",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
     "family": "Flow Rounded",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v11",
-    "lastModified": "2024-09-04",
+    "version": "v12",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
@@ -4934,8 +4942,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v31",
-    "lastModified": "2024-09-04",
+    "version": "v32",
+    "lastModified": "2025-01-06",
     "category": "serif"
   },
   {
@@ -6264,7 +6272,7 @@
       "vietnamese"
     ],
     "version": "v19",
-    "lastModified": "2024-09-04",
+    "lastModified": "2025-01-28",
     "category": "sans-serif"
   },
   {
@@ -6518,10 +6526,21 @@
   },
   {
     "family": "Inclusive Sans",
-    "variants": ["regular", "italic"],
+    "variants": [
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2024-09-04",
+    "version": "v2",
+    "lastModified": "2025-01-28",
     "category": "sans-serif"
   },
   {
@@ -6743,48 +6762,48 @@
     "family": "Jacquard 12",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v6",
-    "lastModified": "2024-09-04",
+    "version": "v7",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jacquard 12 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jacquard 24",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jacquard 24 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2024-09-04",
+    "version": "v4",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jacquarda Bastarda 9",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v4",
-    "lastModified": "2024-09-04",
+    "version": "v5",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jacquarda Bastarda 9 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
@@ -6839,56 +6858,56 @@
     "family": "Jersey 10",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jersey 10 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jersey 15",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jersey 15 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jersey 20",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jersey 20 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Jersey 25",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
@@ -7427,8 +7446,8 @@
     "family": "Khmer",
     "variants": ["regular"],
     "subsets": ["khmer"],
-    "version": "v34",
-    "lastModified": "2024-11-20",
+    "version": "v35",
+    "lastModified": "2025-01-08",
     "category": "sans-serif"
   },
   {
@@ -8104,56 +8123,56 @@
     "family": "Libre Barcode 128",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v28",
-    "lastModified": "2024-08-12",
+    "version": "v29",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
     "family": "Libre Barcode 128 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v28",
-    "lastModified": "2024-08-12",
+    "version": "v29",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v21",
-    "lastModified": "2024-08-12",
+    "version": "v22",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39 Extended",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v27",
-    "lastModified": "2024-08-12",
+    "version": "v28",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39 Extended Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v27",
-    "lastModified": "2024-08-12",
+    "version": "v28",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v28",
-    "lastModified": "2024-08-12",
+    "version": "v29",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
     "family": "Libre Barcode EAN13 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v21",
-    "lastModified": "2024-08-12",
+    "version": "v22",
+    "lastModified": "2025-01-08",
     "category": "display"
   },
   {
@@ -8316,6 +8335,14 @@
     "category": "serif"
   },
   {
+    "family": "Liter",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2025-01-28",
+    "category": "sans-serif"
+  },
+  {
     "family": "Literata",
     "variants": [
       "200",
@@ -8433,8 +8460,8 @@
     "family": "Long Cang",
     "variants": ["regular"],
     "subsets": ["chinese-simplified", "latin"],
-    "version": "v17",
-    "lastModified": "2024-08-12",
+    "version": "v20",
+    "lastModified": "2025-01-06",
     "category": "handwriting"
   },
   {
@@ -8659,8 +8686,8 @@
     "family": "Ma Shan Zheng",
     "variants": ["regular"],
     "subsets": ["chinese-simplified", "latin"],
-    "version": "v10",
-    "lastModified": "2024-08-12",
+    "version": "v13",
+    "lastModified": "2025-01-06",
     "category": "handwriting"
   },
   {
@@ -9082,8 +9109,8 @@
     "family": "Metal",
     "variants": ["regular"],
     "subsets": ["khmer", "latin"],
-    "version": "v30",
-    "lastModified": "2024-08-12",
+    "version": "v31",
+    "lastModified": "2025-01-23",
     "category": "display"
   },
   {
@@ -9122,16 +9149,16 @@
     "family": "Micro 5",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v1",
-    "lastModified": "2024-09-04",
+    "version": "v2",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Micro 5 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v1",
-    "lastModified": "2024-09-04",
+    "version": "v2",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
@@ -9194,8 +9221,8 @@
     "family": "Mirza",
     "variants": ["regular", "500", "600", "700"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v17",
-    "lastModified": "2024-09-04",
+    "version": "v18",
+    "lastModified": "2025-01-23",
     "category": "serif"
   },
   {
@@ -9218,24 +9245,24 @@
     "family": "Mochiy Pop One",
     "variants": ["regular"],
     "subsets": ["japanese", "latin"],
-    "version": "v10",
-    "lastModified": "2024-09-04",
+    "version": "v11",
+    "lastModified": "2025-01-23",
     "category": "sans-serif"
   },
   {
     "family": "Mochiy Pop P One",
     "variants": ["regular"],
     "subsets": ["japanese", "latin"],
-    "version": "v10",
-    "lastModified": "2024-09-04",
+    "version": "v11",
+    "lastModified": "2025-01-23",
     "category": "sans-serif"
   },
   {
     "family": "Modak",
     "variants": ["regular"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v18",
-    "lastModified": "2024-09-04",
+    "version": "v20",
+    "lastModified": "2025-01-23",
     "category": "display"
   },
   {
@@ -9258,8 +9285,8 @@
     "family": "Mogra",
     "variants": ["regular"],
     "subsets": ["gujarati", "latin", "latin-ext"],
-    "version": "v19",
-    "lastModified": "2024-09-04",
+    "version": "v21",
+    "lastModified": "2025-01-23",
     "category": "display"
   },
   {
@@ -12048,6 +12075,14 @@
     "category": "serif"
   },
   {
+    "family": "Noto Serif Hentaigana",
+    "variants": ["200", "300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["kana-extended", "latin", "latin-ext"],
+    "version": "v13",
+    "lastModified": "2025-01-28",
+    "category": "serif"
+  },
+  {
     "family": "Noto Serif JP",
     "variants": ["200", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext", "vietnamese"],
@@ -12342,6 +12377,14 @@
     "subsets": ["latin", "latin-ext", "tibetan"],
     "version": "v22",
     "lastModified": "2023-03-09",
+    "category": "serif"
+  },
+  {
+    "family": "Noto Serif Todhri",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "todhri"],
+    "version": "v3",
+    "lastModified": "2025-01-23",
     "category": "serif"
   },
   {
@@ -13298,8 +13341,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v2",
-    "lastModified": "2024-09-04",
+    "version": "v9",
+    "lastModified": "2025-01-28",
     "category": "serif"
   },
   {
@@ -13343,8 +13386,8 @@
     "family": "Playwrite AR",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v4",
+    "lastModified": "2025-01-28",
     "category": "handwriting"
   },
   {
@@ -13368,8 +13411,8 @@
       "italic"
     ],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v4",
+    "lastModified": "2025-01-28",
     "category": "handwriting"
   },
   {
@@ -13384,8 +13427,8 @@
     "family": "Playwrite AU NSW",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-01-28",
     "category": "handwriting"
   },
   {
@@ -13400,8 +13443,8 @@
     "family": "Playwrite AU QLD",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-01-28",
     "category": "handwriting"
   },
   {
@@ -13416,8 +13459,8 @@
     "family": "Playwrite AU SA",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-01-28",
     "category": "handwriting"
   },
   {
@@ -13432,8 +13475,8 @@
     "family": "Playwrite AU TAS",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-01-28",
     "category": "handwriting"
   },
   {
@@ -13448,8 +13491,8 @@
     "family": "Playwrite AU VIC",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-01-28",
     "category": "handwriting"
   },
   {
@@ -13496,8 +13539,8 @@
     "family": "Playwrite BR",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-01-28",
     "category": "handwriting"
   },
   {
@@ -13512,8 +13555,8 @@
     "family": "Playwrite CA",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-01-28",
     "category": "handwriting"
   },
   {
@@ -14204,6 +14247,14 @@
     "version": "v8",
     "lastModified": "2024-09-04",
     "category": "sans-serif"
+  },
+  {
+    "family": "Pochaevsk",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin"],
+    "version": "v2",
+    "lastModified": "2025-01-28",
+    "category": "display"
   },
   {
     "family": "Podkova",
@@ -15124,16 +15175,22 @@
     "family": "Roboto",
     "variants": [
       "100",
-      "100italic",
+      "200",
       "300",
-      "300italic",
       "regular",
-      "italic",
       "500",
-      "500italic",
+      "600",
       "700",
-      "700italic",
+      "800",
       "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
       "900italic"
     ],
     "subsets": [
@@ -15143,10 +15200,12 @@
       "greek-ext",
       "latin",
       "latin-ext",
+      "math",
+      "symbols",
       "vietnamese"
     ],
-    "version": "v32",
-    "lastModified": "2024-09-04",
+    "version": "v47",
+    "lastModified": "2025-01-08",
     "category": "sans-serif"
   },
   {
@@ -15195,8 +15254,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v26",
-    "lastModified": "2024-09-04",
+    "version": "v27",
+    "lastModified": "2025-01-06",
     "category": "sans-serif"
   },
   {
@@ -16351,8 +16410,8 @@
     "family": "Siemreap",
     "variants": ["regular"],
     "subsets": ["khmer"],
-    "version": "v28",
-    "lastModified": "2023-08-25",
+    "version": "v29",
+    "lastModified": "2025-01-08",
     "category": "sans-serif"
   },
   {
@@ -16717,9 +16776,9 @@
   {
     "family": "Song Myung",
     "variants": ["regular"],
-    "subsets": ["korean", "latin"],
-    "version": "v20",
-    "lastModified": "2024-08-12",
+    "subsets": ["korean"],
+    "version": "v21",
+    "lastModified": "2025-01-06",
     "category": "serif"
   },
   {
@@ -17139,9 +17198,9 @@
   {
     "family": "Stylish",
     "variants": ["regular"],
-    "subsets": ["korean", "latin"],
-    "version": "v22",
-    "lastModified": "2024-08-12",
+    "subsets": ["korean"],
+    "version": "v23",
+    "lastModified": "2025-01-06",
     "category": "sans-serif"
   },
   {
@@ -17713,6 +17772,14 @@
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext"],
     "version": "v14",
     "lastModified": "2024-09-04",
+    "category": "display"
+  },
+  {
+    "family": "Triodion",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin"],
+    "version": "v2",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
@@ -18510,32 +18577,32 @@
     "family": "Yarndings 12",
     "variants": ["regular"],
     "subsets": ["latin", "math", "symbols"],
-    "version": "v2",
-    "lastModified": "2024-08-12",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Yarndings 12 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "math", "symbols"],
-    "version": "v2",
-    "lastModified": "2024-08-12",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Yarndings 20",
     "variants": ["regular"],
     "subsets": ["latin", "math", "symbols"],
-    "version": "v2",
-    "lastModified": "2024-08-12",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
     "family": "Yarndings 20 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "math", "symbols"],
-    "version": "v2",
-    "lastModified": "2024-08-12",
+    "version": "v3",
+    "lastModified": "2025-01-28",
     "category": "display"
   },
   {
@@ -18929,8 +18996,8 @@
     "family": "Zhi Mang Xing",
     "variants": ["regular"],
     "subsets": ["chinese-simplified", "latin"],
-    "version": "v17",
-    "lastModified": "2024-08-12",
+    "version": "v18",
+    "lastModified": "2025-01-06",
     "category": "handwriting"
   },
   {

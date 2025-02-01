@@ -33,6 +33,11 @@
     }
   },
   {
+    "family": "Agu Display",
+    "id": "agu-display",
+    "axes": {"MORF": {"default": "0", "min": "0", "max": "60", "step": "1"}}
+  },
+  {
     "family": "Akshar",
     "id": "akshar",
     "axes": {
@@ -1477,6 +1482,14 @@
     }
   },
   {
+    "family": "Montserrat Underline",
+    "id": "montserrat-underline",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Mulish",
     "id": "mulish",
     "axes": {
@@ -2904,6 +2917,15 @@
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Roboto",
+    "id": "roboto",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
   {

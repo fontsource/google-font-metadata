@@ -3,8 +3,8 @@
     "family": "Material Icons",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v142",
-    "lastModified": "2024-08-12",
+    "version": "v143",
+    "lastModified": "2025-01-08",
     "category": "icons"
   },
   {
@@ -43,8 +43,8 @@
     "family": "Material Symbols Outlined",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v222",
-    "lastModified": "2024-12-04",
+    "version": "v226",
+    "lastModified": "2025-01-28",
     "category": "icons",
     "axes": {
       "FILL": {"min": "0", "max": "1", "default": "0", "step": "1"},
@@ -57,8 +57,8 @@
     "family": "Material Symbols Rounded",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v222",
-    "lastModified": "2024-12-04",
+    "version": "v226",
+    "lastModified": "2025-01-28",
     "category": "icons",
     "axes": {
       "FILL": {"min": "0", "max": "1", "default": "0", "step": "1"},
@@ -71,8 +71,8 @@
     "family": "Material Symbols Sharp",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v218",
-    "lastModified": "2024-12-04",
+    "version": "v222",
+    "lastModified": "2025-01-28",
     "category": "icons",
     "axes": {
       "FILL": {"min": "0", "max": "1", "default": "0", "step": "1"},
