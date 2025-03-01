@@ -6249,18 +6249,18 @@
     "family": "IBM Plex Sans",
     "variants": [
       "100",
-      "100italic",
       "200",
-      "200italic",
       "300",
-      "300italic",
       "regular",
-      "italic",
       "500",
-      "500italic",
       "600",
-      "600italic",
       "700",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
       "700italic"
     ],
     "subsets": [
@@ -6271,8 +6271,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v19",
-    "lastModified": "2025-01-28",
+    "version": "v21",
+    "lastModified": "2025-02-05",
     "category": "sans-serif"
   },
   {
@@ -8795,8 +8795,8 @@
     "family": "Maname",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "sinhala", "vietnamese"],
-    "version": "v1",
-    "lastModified": "2024-09-04",
+    "version": "v2",
+    "lastModified": "2025-02-12",
     "category": "serif"
   },
   {
@@ -9372,6 +9372,14 @@
     "version": "v23",
     "lastModified": "2024-09-04",
     "category": "monospace"
+  },
+  {
+    "family": "Monomakh",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2025-02-12",
+    "category": "display"
   },
   {
     "family": "Monomaniac One",
@@ -12078,8 +12086,8 @@
     "family": "Noto Serif Hentaigana",
     "variants": ["200", "300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["kana-extended", "latin", "latin-ext"],
-    "version": "v13",
-    "lastModified": "2025-01-28",
+    "version": "v14",
+    "lastModified": "2025-02-12",
     "category": "serif"
   },
   {
@@ -13571,8 +13579,8 @@
     "family": "Playwrite CL",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v5",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13587,8 +13595,8 @@
     "family": "Playwrite CO",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v6",
-    "lastModified": "2024-08-12",
+    "version": "v12",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13603,8 +13611,8 @@
     "family": "Playwrite CU",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v5",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13619,8 +13627,8 @@
     "family": "Playwrite CZ",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v5",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13635,8 +13643,8 @@
     "family": "Playwrite DE Grund",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13651,8 +13659,8 @@
     "family": "Playwrite DE LA",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13667,8 +13675,8 @@
     "family": "Playwrite DE SAS",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13683,8 +13691,8 @@
     "family": "Playwrite DE VA",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13699,8 +13707,8 @@
     "family": "Playwrite DK Loopet",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v5",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13715,8 +13723,8 @@
     "family": "Playwrite DK Uloopet",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v5",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13731,16 +13739,16 @@
     "family": "Playwrite ES",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
     "family": "Playwrite ES Deco",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13763,8 +13771,8 @@
     "family": "Playwrite FR Moderne",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13779,8 +13787,8 @@
     "family": "Playwrite FR Trad",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v6",
-    "lastModified": "2024-08-12",
+    "version": "v12",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13804,8 +13812,8 @@
       "italic"
     ],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13829,8 +13837,8 @@
       "italic"
     ],
     "subsets": ["latin"],
-    "version": "v5",
-    "lastModified": "2024-08-12",
+    "version": "v11",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13845,8 +13853,8 @@
     "family": "Playwrite HR",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v5",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13861,8 +13869,8 @@
     "family": "Playwrite HR Lijeva",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v5",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13877,8 +13885,8 @@
     "family": "Playwrite HU",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v5",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13893,8 +13901,8 @@
     "family": "Playwrite ID",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13909,8 +13917,8 @@
     "family": "Playwrite IE",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13925,8 +13933,8 @@
     "family": "Playwrite IN",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13973,8 +13981,8 @@
     "family": "Playwrite IT Trad",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -13989,8 +13997,8 @@
     "family": "Playwrite MX",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v12",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14005,8 +14013,8 @@
     "family": "Playwrite NG Modern",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14021,8 +14029,8 @@
     "family": "Playwrite NL",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v3",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14037,8 +14045,8 @@
     "family": "Playwrite NO",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v3",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14053,8 +14061,8 @@
     "family": "Playwrite NZ",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14069,8 +14077,8 @@
     "family": "Playwrite PE",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2024-08-12",
+    "version": "v5",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14085,8 +14093,8 @@
     "family": "Playwrite PL",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v3",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14101,8 +14109,8 @@
     "family": "Playwrite PT",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v3",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14117,8 +14125,8 @@
     "family": "Playwrite RO",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v3",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14133,8 +14141,8 @@
     "family": "Playwrite SK",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v3",
-    "lastModified": "2024-08-12",
+    "version": "v9",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14149,8 +14157,8 @@
     "family": "Playwrite TZ",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14165,8 +14173,8 @@
     "family": "Playwrite US Modern",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14181,8 +14189,8 @@
     "family": "Playwrite US Trad",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14197,8 +14205,8 @@
     "family": "Playwrite VN",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -14213,8 +14221,8 @@
     "family": "Playwrite ZA",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v4",
-    "lastModified": "2024-08-12",
+    "version": "v10",
+    "lastModified": "2025-02-12",
     "category": "handwriting"
   },
   {
@@ -16282,6 +16290,14 @@
     "category": "handwriting"
   },
   {
+    "family": "Shafarik",
+    "variants": ["regular"],
+    "subsets": ["cyrillic", "cyrillic-ext", "glagolitic", "latin", "latin-ext"],
+    "version": "v3",
+    "lastModified": "2025-02-12",
+    "category": "display"
+  },
+  {
     "family": "Shalimar",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
@@ -16950,8 +16966,8 @@
     "family": "Space Mono",
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v14",
-    "lastModified": "2024-09-30",
+    "version": "v15",
+    "lastModified": "2025-02-12",
     "category": "monospace"
   },
   {
@@ -17778,8 +17794,8 @@
     "family": "Triodion",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin"],
-    "version": "v2",
-    "lastModified": "2025-01-28",
+    "version": "v3",
+    "lastModified": "2025-02-12",
     "category": "display"
   },
   {
