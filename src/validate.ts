@@ -5,7 +5,7 @@ import { APIVariable, APIv1, APIv2 } from './data';
 import { fontObjectValidate, fontObjectVariableValidate } from './schema';
 import type { FontObject } from './types';
 
-type Version = 'v1' | 'v2' | 'variable';
+type Version = 'v1' | 'v2' | 'v2hybrid' | 'variable';
 
 const validate = (version: Version, data: FontObject) => {
 	consola.info(
@@ -20,6 +20,10 @@ const validate = (version: Version, data: FontObject) => {
 		}
 		case 'v2': {
 			fontObjectValidate(data, 'v2');
+			break;
+		}
+		case 'v2hybrid': {
+			fontObjectValidate(data, 'v2hybrid');
 			break;
 		}
 		case 'variable': {

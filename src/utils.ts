@@ -1,4 +1,4 @@
-import type { FontObject } from './types';
+import type {CodepointRange, FontObject} from './types';
 
 // Alphabetically order the generated font object lists
 export const orderObject = (unordered: FontObject): FontObject => {
@@ -39,3 +39,20 @@ export const weightListGen = (variants: string[]): number[] => {
 
 	return numberListWithoutDuplicates;
 };
+
+/**
+ * Normalize font names to match Google Fonts API keys.
+ * Example: "Abyssinica SIL" → "abyssinica-sil"
+ */
+export function getIdForFontFamilyName(fontName: string): string {
+	return fontName.toLowerCase().replace(/\s+/g, "-");
+}
+
+export function parseUnicodeRange(rangeStr: string): CodepointRange[] {
+	return rangeStr.split(',').map(part => {
+		const [start, end] = part.replace(/U\+/, '').split('-');
+		const from = parseInt(start, 16);
+		const to = end ? parseInt(end, 16) : from;
+		return [from, to];
+	});
+}

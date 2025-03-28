@@ -62,25 +62,25 @@ describe('Variable Parser', () => {
 		) as FontObjectVariableDirect;
 		it('Returns tuple without ital', () => {
 			expect(
-				addAndMergeAxesRange(fraunces, ['wght', 'opsz'], ['SOFT']),
+				addAndMergeAxesRange(fraunces.axes, ['wght', 'opsz'], ['SOFT']),
 			).toEqual(['opsz,wght,SOFT', '9..144,100..900,0..100']);
 		});
 
 		it('Returns tuple with existing ital', () => {
 			expect(
-				addAndMergeAxesRange(fraunces, ['wght', 'opsz', 'ital'], ['SOFT']),
+				addAndMergeAxesRange(fraunces.axes, ['wght', 'opsz', 'ital'], ['SOFT']),
 			).toEqual(['ital,opsz,wght,SOFT', '1,9..144,100..900,0..100']);
 		});
 
 		it('Returns tuple with new ital', () => {
 			expect(
-				addAndMergeAxesRange(fraunces, ['wght', 'opsz', 'SOFT'], ['ital']),
+				addAndMergeAxesRange(fraunces.axes, ['wght', 'opsz', 'SOFT'], ['ital']),
 			).toEqual(['ital,opsz,wght,SOFT', '1,9..144,100..900,0..100']);
 		});
 
 		it('Returns tuple with both wght and ital', () => {
 			expect(
-				addAndMergeAxesRange(fraunces, ['opsz', 'SOFT'], ['wght', 'ital']),
+				addAndMergeAxesRange(fraunces.axes, ['opsz', 'SOFT'], ['wght', 'ital']),
 			).toEqual(['ital,opsz,wght,SOFT', '1,9..144,100..900,0..100']);
 		});
 	});

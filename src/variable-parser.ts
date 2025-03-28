@@ -11,6 +11,7 @@ import { apiv2 as userAgents } from '../data/user-agents.json';
 import { APIVariableDirect } from './data';
 import { LOOP_LIMIT, addError, checkErrors } from './errors';
 import type {
+	AxesFontObject,
 	FontObjectVariable,
 	FontObjectVariableDirect,
 	FontVariantsVariable,
@@ -38,9 +39,10 @@ export const sortAxes = (axesArr: string[]) => {
 
 type MergedAxesTuple = [MergedAxes: string, MergedRange: string];
 export const addAndMergeAxesRange = (
-	font: FontObjectVariableDirect,
+	fontAxes: AxesFontObject,
 	axesArr: string[],
 	newAxes: string[],
+	italicValue: number = 1
 ): MergedAxesTuple => {
 	for (const axes of newAxes) {
 		if (!axesArr.includes(axes)) {
@@ -52,8 +54,8 @@ export const addAndMergeAxesRange = (
 	// If ital, don't put in normal range and instead use toggle
 	const mergeRange = (mappedAxes: string) =>
 		mappedAxes === 'ital'
-			? '1'
-			: `${font.axes[mappedAxes].min}..${font.axes[mappedAxes].max}`;
+			? italicValue
+			: `${fontAxes[mappedAxes].min}..${fontAxes[mappedAxes].max}`;
 	const mergedRange = newAxesArr.map((axes) => mergeRange(axes)).join(',');
 
 	return [mergedAxes, mergedRange];
@@ -93,12 +95,12 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 			}
 
 			if (hasWght) {
-				const mergedTuple = addAndMergeAxesRange(font, [axesKey], ['wght']);
+				const mergedTuple = addAndMergeAxesRange(font.axes, [axesKey], ['wght']);
 				links[`${axesKey}.normal`] =
 					`${baseurl}${family}:${mergedTuple[0]}@${mergedTuple[1]}`;
 				if (hasItal) {
 					const italTuple = addAndMergeAxesRange(
-						font,
+						font.axes,
 						[axesKey],
 						['ital', 'wght'],
 					);
@@ -108,7 +110,7 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 			} else {
 				links[`${axesKey}.normal`] = `${baseurl}${family}:${axesKey}@${range}`;
 				if (hasItal) {
-					const italTuple = addAndMergeAxesRange(font, [axesKey], ['ital']);
+					const italTuple = addAndMergeAxesRange(font.axes, [axesKey], ['ital']);
 					links[`${axesKey}.italic`] =
 						`${baseurl}${family}:${italTuple[0]}@${italTuple[1]}`;
 				}
@@ -122,11 +124,11 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 
 	// Add just wght and ital variants
 	if (hasWght) {
-		let wghtTuple = addAndMergeAxesRange(font, ['wght'], []);
+		let wghtTuple = addAndMergeAxesRange(font.axes, ['wght'], []);
 		links['wght.normal'] =
 			`${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
 		if (hasItal) {
-			wghtTuple = addAndMergeAxesRange(font, ['wght'], ['ital']);
+			wghtTuple = addAndMergeAxesRange(font.axes, ['wght'], ['ital']);
 			links['wght.italic'] =
 				`${baseurl}${family}:${wghtTuple[0]}@${wghtTuple[1]}`;
 		}
@@ -134,15 +136,15 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 
 	// Full variant
 	if (isFull) {
-		let fullTuple = addAndMergeAxesRange(font, fullAxes, []);
-		if (hasWght) fullTuple = addAndMergeAxesRange(font, fullAxes, ['wght']);
+		let fullTuple = addAndMergeAxesRange(font.axes, fullAxes, []);
+		if (hasWght) fullTuple = addAndMergeAxesRange(font.axes, fullAxes, ['wght']);
 		links['full.normal'] =
 			`${baseurl}${family}:${fullTuple[0]}@${fullTuple[1]}`;
 
 		if (hasItal) {
-			let fullItalTuple = addAndMergeAxesRange(font, fullAxes, ['ital']);
+			let fullItalTuple = addAndMergeAxesRange(font.axes, fullAxes, ['ital']);
 			if (hasWght)
-				fullItalTuple = addAndMergeAxesRange(font, fullAxes, ['ital', 'wght']);
+				fullItalTuple = addAndMergeAxesRange(font.axes, fullAxes, ['ital', 'wght']);
 
 			links['full.italic'] =
 				`${baseurl}${family}:${fullItalTuple[0]}@${fullItalTuple[1]}`;
@@ -151,18 +153,18 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 
 	// Standard variant
 	if (isStandard) {
-		let standardTuple = addAndMergeAxesRange(font, standardAxes, []);
+		let standardTuple = addAndMergeAxesRange(font.axes, standardAxes, []);
 		if (hasWght)
-			standardTuple = addAndMergeAxesRange(font, standardAxes, ['wght']);
+			standardTuple = addAndMergeAxesRange(font.axes, standardAxes, ['wght']);
 		links['standard.normal'] =
 			`${baseurl}${family}:${standardTuple[0]}@${standardTuple[1]}`;
 
 		if (hasItal) {
-			let standardItalTuple = addAndMergeAxesRange(font, standardAxes, [
+			let standardItalTuple = addAndMergeAxesRange(font.axes, standardAxes, [
 				'ital',
 			]);
 			if (hasWght)
-				standardItalTuple = addAndMergeAxesRange(font, standardAxes, [
+				standardItalTuple = addAndMergeAxesRange(font.axes, standardAxes, [
 					'ital',
 					'wght',
 				]);
@@ -176,10 +178,10 @@ export const generateCSSLinks = (font: FontObjectVariableDirect): Links => {
 };
 
 // Download CSS stylesheets using Google Fonts APIv2
-export const fetchCSS = async (url: string) => {
+export const fetchCSS = async (url: string, userAgent: string = userAgents.variable) => {
 	const response = await fetch(url, {
 		headers: {
-			'User-Agent': userAgents.variable,
+			'User-Agent': userAgent,
 		},
 	});
 
@@ -192,11 +194,26 @@ export const fetchCSS = async (url: string) => {
 	return response.text();
 };
 
-// [key, css]
-export const fetchAllCSS = async (links: Links) =>
-	await (Promise.all(
-		Object.keys(links).map(async (key) => [key, await fetchCSS(links[key])]),
-	) as Promise<string[][]>); // Additional type assertion needed for pkgroll dts plugin
+// userAgents.variable
+// [key, css, ua]
+export async function fetchAllCSS(
+	links: Links,
+	userAgentsOrUndefined?: string[]
+): Promise<[string, string, string][]> {
+	const userAgentsArr = userAgentsOrUndefined ?? [userAgents.variable];
+
+	const results: Promise<[string, string, string]>[] = [];
+
+	for (const key of Object.keys(links)) {
+		for (const ua of userAgentsArr) {
+			results.push(
+				fetchCSS(links[key], ua).then((css) => [key, css, ua])
+			);
+		}
+	}
+
+	return Promise.all(results);
+}
 
 export const parseCSS = (cssTuple: string[][], defSubset?: string) => {
 	const fontVariants: FontVariantsVariable = {};

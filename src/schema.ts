@@ -5,7 +5,7 @@ import { type ZodError, z } from 'zod';
 import type { FontObject, FontObjectV2, FontObjectVariable } from './types';
 import { isAxesKey } from './types';
 
-type Version = 'v1' | 'v2' | 'variable';
+type Version = 'v1' | 'v2' | 'v2hybrid' | 'variable';
 export class ValidationError extends Error {
 	constructor(message: string | ZodError, version: Version, id?: string) {
 		const shell = `Invalid parse for ${version}${
@@ -72,6 +72,25 @@ const fontObjectV2Schema = z
 		lastModified: z.string().min(1),
 		version: z.string().min(1),
 		category: z.string().min(1),
+		axes: z.object({}).optional(),
+	})
+	.strict();
+
+const fontObjectV2HybridSchema = z
+	.object({
+		family: z.string().min(1),
+		id: z.string().min(1),
+		subsets: z.array(z.string().min(1)).min(1),
+		weights: z.array(z.number().int()).min(1),
+		styles: z.array(z.string().min(1)).min(1),
+		unicodeRange: z.record(z.array(z.array(z.number().int()).min(2).max(2))),
+		variants: fontVariantsSchema,
+		defSubset: z.string().min(1),
+		lastModified: z.string().min(1),
+		version: z.string().min(1),
+		category: z.string().min(1),
+		axes: z.object({}).optional(),
+		isVariable: z.boolean().optional(),
 	})
 	.strict();
 
@@ -144,6 +163,7 @@ const fontObjectValidate = (
 		let valid: any;
 		if (version === 'v1') valid = fontObjectV1Schema.safeParse(dataId);
 		else if (version === 'v2') valid = fontObjectV2Schema.safeParse(dataId);
+		else if (version === 'v2hybrid') valid = fontObjectV2HybridSchema.safeParse(dataId);
 		else
 			throw new TypeError(`Invalid version for validator: ${String(version)}`);
 
@@ -151,6 +171,54 @@ const fontObjectValidate = (
 
 		// Variants still use z.record, so we have to iterate over each with a strict obj schema
 		// Refer to JSON objects to understand iterable keys
+
+		// The hybrid version switches styles and weight, since styles are common to static and variable fonts
+		// Therefore we branch here the check:
+		if (version == 'v2hybrid') {
+			const variantKeys = Object.keys(dataId.variants);
+			checkKeys(dataId, variantKeys, 'style', version);
+
+			for (const style of variantKeys) {
+				const styleKeys = Object.keys(dataId.variants[style]);
+				checkKeys(dataId, styleKeys, `weights for style "${style}"`, version);
+
+				if (style !== 'normal' && style !== 'italic')
+					throw new ValidationError(
+						`Style ${style} is not a valid style!`,
+						version,
+					);
+
+				// Iterate over [style: string]
+				for (const weight of styleKeys) {
+
+					// Weights can only be a number or "variable"
+					if (!/^-?\d+$/.test(weight) && weight !== "variable")
+						throw new ValidationError(`Weight ${weight} is not a number or 'variable'!`, version);
+
+					const weightKeys = Object.keys(dataId.variants[style][weight]);
+					checkKeys(dataId, weightKeys, `subsets for weight ${weight}`, version);
+
+					// Iterate over [subset: string]
+					for (const subset of weightKeys) {
+						const obj = dataId.variants[style][weight][subset];
+
+						// Typeguard to please Typescript
+						if (typeof obj === 'string')
+							throw new TypeError(`URL for ${subset} is not an object!`);
+
+						const newObj = obj.url;
+						checkKeys(
+							dataId,
+							Object.keys(newObj),
+							`urls for subset ${subset}`,
+							version,
+						);
+					}
+				}
+			}
+
+		}
+		else {
 		const variantKeys = Object.keys(dataId.variants);
 		checkKeys(dataId, variantKeys, 'weight', version);
 
@@ -191,6 +259,7 @@ const fontObjectValidate = (
 				}
 			}
 		}
+	}
 
 		// V2 has additional unicodeRange records
 		if (version === 'v2') {

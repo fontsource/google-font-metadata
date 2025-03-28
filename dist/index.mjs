@@ -1,0 +1,15 @@
+export { A as APIDirect, c as APIIconDirect, d as APIIconStatic, e as APIIconVariable, h as APILicense, i as APIRegistry, b as APIVFDirect, m as APIVariable, n as APIVariableDirect, j as APIv1, k as APIv2, l as APIv2Hybrid, f as fetchAPI, r as fetchVariable, g as generateAxis, o as parseIcons, q as parseLicenses, s as parseVariable, p as parsev1, a as parsev2 } from './variable-gen-Hzatds50.mjs';
+import 'node:fs/promises';
+import 'node:url';
+import 'consola';
+import 'json-stringify-pretty-compact';
+import 'pathe';
+import '@evan/concurrency';
+import 'stylis';
+import '@octokit/core';
+import 'node:fs';
+import 'picocolors';
+import 'zod';
+import 'linkedom';
+import 'playwright';
+import 'deepmerge';
