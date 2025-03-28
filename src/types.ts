@@ -12,6 +12,17 @@ interface APIResponse {
 	category: string;
 }
 
+interface APIVfResponse extends APIResponse {
+	axes?: AxesResponseObject[]
+	files: Record<string, string>
+}
+
+interface AxesResponseObject {
+	tag: string;
+	start: number;
+	end: number;
+}
+
 type FontVariants = Record<
 	string,
 	Record<
@@ -37,6 +48,7 @@ type AxesFontObject = Record<
 		min: string;
 		max: string;
 		step: string;
+		values?: number[];
 	}
 >;
 
@@ -70,8 +82,32 @@ type FontObjectV2 = Record<
 		lastModified: string;
 		version: string;
 		category: string;
+		axes?: AxesFontObject,
+		isVariable?: boolean
 	}
 >;
+
+type FontObjectV2Hybrid = Record<
+	string,
+	{
+		family: string;
+		id: string;
+		subsets: string[];
+		weights: number[];
+		styles: string[];
+		unicodeRange: SubsetUnicodeRanges;
+		variants: FontVariants;
+		defSubset: string;
+		lastModified: string;
+		version: string;
+		category: string;
+		axes?: AxesFontObject,
+		isVariable?: boolean
+	}
+>;
+
+type CodepointRange = [number, number]; // inclusive
+type SubsetUnicodeRanges = Record<string, CodepointRange[]>;
 
 // Variable
 interface FontObjectVariableDirect {
@@ -159,11 +195,15 @@ export { BASE_AXES, isStandardAxesKey, STANDARD_AXES };
 export type {
 	APIIconResponse,
 	APIResponse,
+	APIVfResponse,
 	Authors,
 	AxesFontObject,
+	AxesResponseObject,
+	CodepointRange,
 	FontObject,
 	FontObjectV1,
 	FontObjectV2,
+	FontObjectV2Hybrid,
 	FontObjectVariable,
 	FontObjectVariableDirect,
 	FontVariants,
@@ -171,4 +211,5 @@ export type {
 	License,
 	Licenses,
 	StandardAxes,
+	SubsetUnicodeRanges
 };

@@ -1,23 +1,26 @@
-import { cac } from 'cac';
-import { consola } from 'consola';
+import {cac} from 'cac';
+import {consola} from 'consola';
 import colors from 'picocolors';
 
-import { version } from '../package.json';
-import { fetchAPI } from './api-gen';
-import { parsev1 } from './api-parser-v1';
-import { parsev2 } from './api-parser-v2';
-import { generateAxis } from './axis-gen';
-import { parseIcons } from './icons-parser';
-import { parseLicenses } from './license';
-import { validateCLI } from './validate';
-import { fetchVariable } from './variable-gen';
-import { parseVariable } from './variable-parser';
+import {version} from '../package.json';
+import {fetchAPI} from './api-gen';
+import {parsev1} from './api-parser-v1';
+import {parsev2} from './api-parser-v2';
+import {generateAxis} from './axis-gen';
+import {parseIcons} from './icons-parser';
+import {parseLicenses} from './license';
+import {validateCLI} from './validate';
+import {fetchVariable} from './variable-gen';
+import {parseVariable} from './variable-parser';
+import {parsev2hybrid} from "./api-parser-v2-hybrid";
+import {fetchAPIvf} from "./api-vf-gen";
 
 const cli = cac('gfm');
 
 cli
 	.command('generate [key]', 'Fetch parsing metadata for all fonts')
 	.option('-n, --normal', 'Fetch only normal Google Fonts Developer API')
+	.option('-x, --vf', 'Fetch only variable from Google Fonts Developer API')
 	.option('-v, --variable', 'Fetch only variable metadata')
 	.action(async (key: string, options) => {
 		try {
@@ -28,9 +31,12 @@ cli
 			} else if (options.variable) {
 				consola.info('Fetching Google Fonts Variable Data...');
 				await fetchVariable();
+			} else if (options.vf) {
+				consola.info('Fetching Google Fonts Hybrid Data...');
+				await fetchAPIvf(finalKey);
 			} else {
 				consola.info('Fetching all Google Fonts Data...');
-				await Promise.all([fetchAPI(finalKey), fetchVariable()]);
+				await Promise.all([fetchAPI(finalKey), fetchVariable(), fetchAPIvf(finalKey)]);
 			}
 		} catch (error) {
 			consola.error(error);
@@ -42,6 +48,7 @@ cli
 	.command('parse [key]', 'Process metadata for v1 and v2 from gfm generate')
 	.option('-1, --v1', 'Only parse v1 metadata')
 	.option('-2, --v2', 'Only parse v2 metadata')
+	.option('-x, --v2hybrid', 'Only parse v2 normal and vf metadata')
 	.option('-r, --axis-registry', 'Only parse axis registry metadata')
 	.option('-v, --variable', 'Only parse variable metadata')
 	.option('-i, --icon', 'Only parse icon metadata')
@@ -74,6 +81,17 @@ cli
 				await parsev2(force, noValidate);
 			}
 
+			if (options.v2hybrid) {
+				if (options.force) {
+					consola.info(
+						`Parsing v2 metadata... ${colors.bold(colors.red('[FORCE]'))}`,
+					);
+				} else {
+					consola.info('Parsing v2 hybrid metadata...');
+				}
+				await parsev2hybrid(force, noValidate);
+			}
+
 			if (options.axisRegistry) {
 				consola.info('Parsing axis registry metadata...');
 				await generateAxis(key);
@@ -103,6 +121,7 @@ cli
 			if (
 				!options.v1 &&
 				!options.v2 &&
+				!options.v2hybrid &&
 				!options.variable &&
 				!options.icon &&
 				!options.license &&
@@ -119,6 +138,7 @@ cli
 				await parsev1(force, noValidate);
 				await parsev2(force, noValidate);
 				await generateAxis(key);
+				await parsev2hybrid(force, noValidate);
 				await parseVariable(noValidate);
 				await parseIcons(force);
 				await parseLicenses();
@@ -133,15 +153,18 @@ cli
 	.command('validate', 'Validate stored metadata with schema.')
 	.option('-1, --v1', 'Only validate APIv1 metadata')
 	.option('-2, --v2', 'Only validate APIv2 metadata')
+	.option('-x, --v2hybrid', 'Only validate APIv2 hybrid metadata')
 	.option('--variable', 'Only validate variable metadata')
 	.action((options) => {
 		try {
 			if (options.v1) validateCLI('v1');
 			if (options.v2) validateCLI('v2');
+			if (options.v2hybrid) validateCLI('v2hybrid');
 			if (options.variable) validateCLI('variable');
 			if (!options.v1 && !options.v2 && !options.variable) {
 				validateCLI('v1');
 				validateCLI('v2');
+				validateCLI('v2hybrid');
 				validateCLI('variable');
 			}
 		} catch (error) {
