@@ -362,48 +362,6 @@
     }
   },
   {
-    "family": "Big Shoulders Display",
-    "id": "big-shoulders-display",
-    "axes": {
-      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
-    }
-  },
-  {
-    "family": "Big Shoulders Inline Display",
-    "id": "big-shoulders-inline-display",
-    "axes": {
-      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
-    }
-  },
-  {
-    "family": "Big Shoulders Inline Text",
-    "id": "big-shoulders-inline-text",
-    "axes": {
-      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
-    }
-  },
-  {
-    "family": "Big Shoulders Stencil Display",
-    "id": "big-shoulders-stencil-display",
-    "axes": {
-      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
-    }
-  },
-  {
-    "family": "Big Shoulders Stencil Text",
-    "id": "big-shoulders-stencil-text",
-    "axes": {
-      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
-    }
-  },
-  {
-    "family": "Big Shoulders Text",
-    "id": "big-shoulders-text",
-    "axes": {
-      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
-    }
-  },
-  {
     "family": "BioRhyme",
     "id": "biorhyme",
     "axes": {
