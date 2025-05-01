@@ -264,6 +264,22 @@
     }
   },
   {
+    "family": "Atkinson Hyperlegible Mono",
+    "id": "atkinson-hyperlegible-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Atkinson Hyperlegible Next",
+    "id": "atkinson-hyperlegible-next",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
     "family": "Azeret Mono",
     "id": "azeret-mono",
     "axes": {
@@ -362,6 +378,30 @@
     }
   },
   {
+    "family": "Big Shoulders",
+    "id": "big-shoulders",
+    "axes": {
+      "opsz": {"default": "14", "min": "10", "max": "72", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Big Shoulders Inline",
+    "id": "big-shoulders-inline",
+    "axes": {
+      "opsz": {"default": "14", "min": "10", "max": "72", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Big Shoulders Stencil",
+    "id": "big-shoulders-stencil",
+    "axes": {
+      "opsz": {"default": "14", "min": "10", "max": "72", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "BioRhyme",
     "id": "biorhyme",
     "axes": {
@@ -409,6 +449,13 @@
     "id": "brygada-1918",
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Buenard",
+    "id": "buenard",
+    "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
   },
@@ -515,6 +562,22 @@
   {
     "family": "Cormorant",
     "id": "cormorant",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Cormorant Garamond",
+    "id": "cormorant-garamond",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Cormorant Infant",
+    "id": "cormorant-infant",
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
@@ -1402,6 +1465,16 @@
     }
   },
   {
+    "family": "Merriweather",
+    "id": "merriweather",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "opsz": {"default": "18", "min": "18", "max": "144", "step": "0.1"},
+      "wdth": {"default": "100", "min": "87", "max": "112", "step": "0.1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Merriweather Sans",
     "id": "merriweather-sans",
     "axes": {
@@ -1500,6 +1573,13 @@
     "axes": {
       "EDPT": {"default": "100", "min": "0", "max": "200", "step": "1"},
       "EHLT": {"default": "12", "min": "0", "max": "24", "step": "1"}
+    }
+  },
+  {
+    "family": "National Park",
+    "id": "national-park",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
     }
   },
   {
@@ -3374,6 +3454,22 @@
       "wght": {"default": "400", "min": "4", "max": "1000", "step": "1"},
       "ROND": {"default": "100", "min": "0", "max": "100", "step": "1"},
       "YELA": {"default": "-100", "min": "-100", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Winky Rough",
+    "id": "winky-rough",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Winky Sans",
+    "id": "winky-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
     }
   },
   {
