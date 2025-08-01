@@ -1,12 +1,5 @@
 [
   {
-    "family": "42dot Sans",
-    "id": "42dot-sans",
-    "axes": {
-      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
-    }
-  },
-  {
     "family": "AR One Sans",
     "id": "ar-one-sans",
     "axes": {
@@ -98,10 +91,34 @@
     }
   },
   {
+    "family": "Alumni Sans SC",
+    "id": "alumni-sans-sc",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Anaheim",
     "id": "anaheim",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Ancizar Sans",
+    "id": "ancizar-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "1000", "step": "1"}
+    }
+  },
+  {
+    "family": "Ancizar Serif",
+    "id": "ancizar-serif",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
     }
   },
   {
@@ -264,6 +281,13 @@
     }
   },
   {
+    "family": "Asta Sans",
+    "id": "asta-sans",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
+    }
+  },
+  {
     "family": "Atkinson Hyperlegible Mono",
     "id": "atkinson-hyperlegible-mono",
     "axes": {
@@ -363,6 +387,21 @@
     }
   },
   {
+    "family": "Baskervville",
+    "id": "baskervville",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Baskervville SC",
+    "id": "baskervville-sc",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Beiruti",
     "id": "beiruti",
     "axes": {
@@ -407,6 +446,72 @@
     "axes": {
       "wdth": {"default": "100", "min": "100", "max": "125", "step": "0.1"},
       "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitcount",
+    "id": "bitcount",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitcount Grid Double",
+    "id": "bitcount-grid-double",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitcount Grid Single",
+    "id": "bitcount-grid-single",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitcount Prop Double",
+    "id": "bitcount-prop-double",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitcount Prop Single",
+    "id": "bitcount-prop-single",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitcount Single",
+    "id": "bitcount-single",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"}
     }
   },
   {
@@ -485,6 +590,22 @@
     }
   },
   {
+    "family": "Cascadia Code",
+    "id": "cascadia-code",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Cascadia Mono",
+    "id": "cascadia-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Catamaran",
     "id": "catamaran",
     "axes": {
@@ -503,6 +624,22 @@
     "id": "changa",
     "axes": {
       "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Chiron Hei HK",
+    "id": "chiron-hei-hk",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Chiron Sung HK",
+    "id": "chiron-sung-hk",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
     }
   },
   {
@@ -708,8 +845,22 @@
     }
   },
   {
+    "family": "Edu NSW ACT Cursive",
+    "id": "edu-nsw-act-cursive",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Edu NSW ACT Foundation",
     "id": "edu-nsw-act-foundation",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu NSW ACT Hand Pre",
+    "id": "edu-nsw-act-hand-pre",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
@@ -722,8 +873,22 @@
     }
   },
   {
+    "family": "Edu QLD Hand",
+    "id": "edu-qld-hand",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Edu SA Beginner",
     "id": "edu-sa-beginner",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu SA Hand",
+    "id": "edu-sa-hand",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
@@ -738,6 +903,20 @@
   {
     "family": "Edu VIC WA NT Beginner",
     "id": "edu-vic-wa-nt-beginner",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu VIC WA NT Hand",
+    "id": "edu-vic-wa-nt-hand",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Edu VIC WA NT Hand Pre",
+    "id": "edu-vic-wa-nt-hand-pre",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
     }
@@ -1025,6 +1204,13 @@
     }
   },
   {
+    "family": "Hanuman",
+    "id": "hanuman",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Hedvig Letters Serif",
     "id": "hedvig-letters-serif",
     "axes": {"opsz": {"default": "24", "min": "12", "max": "24", "step": "0.1"}}
@@ -1114,6 +1300,14 @@
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wdth": {"default": "100", "min": "75", "max": "100", "step": "0.1"},
       "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Intel One Mono",
+    "id": "intel-one-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
     }
   },
   {
@@ -1211,6 +1405,13 @@
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Kapakana",
+    "id": "kapakana",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "400", "step": "1"}
     }
   },
   {
@@ -1451,10 +1652,24 @@
     }
   },
   {
+    "family": "Matangi",
+    "id": "matangi",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Maven Pro",
     "id": "maven-pro",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Menbere",
+    "id": "menbere",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
     }
   },
   {
@@ -1589,6 +1804,13 @@
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "opsz": {"default": "16", "min": "6", "max": "72", "step": "0.1"},
       "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Nokora",
+    "id": "nokora",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
   {
@@ -2036,6 +2258,14 @@
     }
   },
   {
+    "family": "Noto Sans Thai Looped",
+    "id": "noto-sans-thai-looped",
+    "axes": {
+      "wdth": {"default": "100", "min": "62.5", "max": "100", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Noto Sans Vithkuqi",
     "id": "noto-sans-vithkuqi",
     "axes": {
@@ -2368,6 +2598,13 @@
     }
   },
   {
+    "family": "Parastoo",
+    "id": "parastoo",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Parkinsans",
     "id": "parkinsans",
     "axes": {
@@ -2444,6 +2681,34 @@
   {
     "family": "Playpen Sans",
     "id": "playpen-sans",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Playpen Sans Arabic",
+    "id": "playpen-sans-arabic",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Playpen Sans Deva",
+    "id": "playpen-sans-deva",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Playpen Sans Hebrew",
+    "id": "playpen-sans-hebrew",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Playpen Sans Thai",
+    "id": "playpen-sans-thai",
     "axes": {
       "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
     }
@@ -3110,6 +3375,14 @@
     "id": "sansita-swashed",
     "axes": {
       "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Savate",
+    "id": "savate",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
     }
   },
   {
