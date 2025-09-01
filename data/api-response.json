@@ -716,16 +716,16 @@
     "family": "Amiri",
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["arabic", "latin", "latin-ext"],
-    "version": "v27",
-    "lastModified": "2025-05-30",
+    "version": "v30",
+    "lastModified": "2025-08-26",
     "category": "serif"
   },
   {
     "family": "Amiri Quran",
     "variants": ["regular"],
     "subsets": ["arabic", "latin"],
-    "version": "v17",
-    "lastModified": "2025-05-30",
+    "version": "v19",
+    "lastModified": "2025-08-26",
     "category": "serif"
   },
   {
@@ -1297,6 +1297,14 @@
     "version": "v23",
     "lastModified": "2025-05-30",
     "category": "serif"
+  },
+  {
+    "family": "Asimovian",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v2",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
   },
   {
     "family": "Asset",
@@ -3294,6 +3302,21 @@
     "category": "handwriting"
   },
   {
+    "family": "Chiron GoRound TC",
+    "variants": ["200", "300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": [
+      "chinese-traditional",
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "version": "v2",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
+  },
+  {
     "family": "Chiron Hei HK",
     "variants": [
       "200",
@@ -3314,7 +3337,7 @@
       "900italic"
     ],
     "subsets": [
-      "chinese-hongkong",
+      "chinese-traditional",
       "cyrillic",
       "cyrillic-ext",
       "greek",
@@ -3324,8 +3347,8 @@
       "symbols2",
       "vietnamese"
     ],
-    "version": "v1",
-    "lastModified": "2025-06-25",
+    "version": "v3",
+    "lastModified": "2025-08-26",
     "category": "sans-serif"
   },
   {
@@ -3768,6 +3791,22 @@
     "version": "v18",
     "lastModified": "2025-05-30",
     "category": "serif"
+  },
+  {
+    "family": "Cossette Texte",
+    "variants": ["regular", "700"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Cossette Titre",
+    "variants": ["regular", "700"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
   },
   {
     "family": "Courgette",
@@ -4738,6 +4777,52 @@
     "version": "v19",
     "lastModified": "2025-06-02",
     "category": "sans-serif"
+  },
+  {
+    "family": "Epunda Sans",
+    "variants": [
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v4",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Epunda Slab",
+    "variants": [
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2025-08-26",
+    "category": "serif"
   },
   {
     "family": "Erica One",
@@ -8685,6 +8770,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Libertinus Keyboard",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2025-08-26",
+    "category": "display"
+  },
+  {
     "family": "Libertinus Math",
     "variants": ["regular"],
     "subsets": [
@@ -8741,6 +8834,22 @@
     "version": "v1",
     "lastModified": "2025-07-30",
     "category": "serif"
+  },
+  {
+    "family": "Libertinus Serif Display",
+    "variants": ["regular"],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "vietnamese"
+    ],
+    "version": "v2",
+    "lastModified": "2025-08-26",
+    "category": "display"
   },
   {
     "family": "Libre Barcode 128",
@@ -9590,8 +9699,8 @@
     "family": "Matangi",
     "variants": ["300", "regular", "500", "600", "700", "800", "900"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2025-06-12",
+    "version": "v5",
+    "lastModified": "2025-08-26",
     "category": "sans-serif"
   },
   {
@@ -10936,8 +11045,8 @@
     "family": "Noto Sans Batak",
     "variants": ["regular"],
     "subsets": ["batak", "latin", "latin-ext"],
-    "version": "v20",
-    "lastModified": "2024-02-29",
+    "version": "v23",
+    "lastModified": "2025-08-26",
     "category": "sans-serif"
   },
   {
@@ -10954,8 +11063,8 @@
       "900"
     ],
     "subsets": ["bengali", "latin", "latin-ext"],
-    "version": "v28",
-    "lastModified": "2025-06-02",
+    "version": "v30",
+    "lastModified": "2025-08-26",
     "category": "sans-serif"
   },
   {
@@ -12627,8 +12736,8 @@
       "900"
     ],
     "subsets": ["bengali", "latin", "latin-ext"],
-    "version": "v27",
-    "lastModified": "2025-05-29",
+    "version": "v29",
+    "lastModified": "2025-08-26",
     "category": "serif"
   },
   {
@@ -12688,8 +12797,8 @@
     "family": "Noto Serif Dives Akuru",
     "variants": ["regular"],
     "subsets": ["dives-akuru", "latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-06-23",
+    "version": "v8",
+    "lastModified": "2025-08-26",
     "category": "serif"
   },
   {
@@ -13059,8 +13168,8 @@
     "family": "Noto Serif Tangut",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "tangut"],
-    "version": "v16",
-    "lastModified": "2023-05-23",
+    "version": "v19",
+    "lastModified": "2025-08-26",
     "category": "serif"
   },
   {
@@ -15855,8 +15964,8 @@
     "family": "Reem Kufi",
     "variants": ["regular", "500", "600", "700"],
     "subsets": ["arabic", "latin", "latin-ext", "vietnamese"],
-    "version": "v25",
-    "lastModified": "2025-05-30",
+    "version": "v27",
+    "lastModified": "2025-08-26",
     "category": "sans-serif"
   },
   {
@@ -17323,6 +17432,14 @@
     "category": "display"
   },
   {
+    "family": "Sirivennela",
+    "variants": ["regular"],
+    "subsets": ["latin", "telugu"],
+    "version": "v2",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
+  },
+  {
     "family": "Six Caps",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -18040,6 +18157,14 @@
     "category": "serif"
   },
   {
+    "family": "Story Script",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v3",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
+  },
+  {
     "family": "Strait",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -18190,6 +18315,22 @@
     "version": "v15",
     "lastModified": "2025-05-30",
     "category": "display"
+  },
+  {
+    "family": "TASA Explorer",
+    "variants": ["regular", "500", "600", "700", "800"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
+  },
+  {
+    "family": "TASA Orbiter",
+    "variants": ["regular", "500", "600", "700", "800"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
   },
   {
     "family": "Tac One",
@@ -18426,8 +18567,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v4",
-    "lastModified": "2025-07-25",
+    "version": "v6",
+    "lastModified": "2025-08-26",
     "category": "sans-serif"
   },
   {
@@ -18558,6 +18699,14 @@
     "version": "v7",
     "lastModified": "2025-05-30",
     "category": "serif"
+  },
+  {
+    "family": "Tirra",
+    "variants": ["regular", "500", "600", "700", "800", "900"],
+    "subsets": ["latin", "latin-ext", "tifinagh"],
+    "version": "v2",
+    "lastModified": "2025-08-26",
+    "category": "sans-serif"
   },
   {
     "family": "Titan One",
@@ -19095,6 +19244,25 @@
     "subsets": ["arabic", "latin", "latin-ext"],
     "version": "v15",
     "lastModified": "2025-04-23",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Vend Sans",
+    "variants": [
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2025-08-26",
     "category": "sans-serif"
   },
   {
