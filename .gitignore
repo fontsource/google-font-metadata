@@ -72,3 +72,7 @@ dist/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+
+.zed
+.serena
+AGENT.md

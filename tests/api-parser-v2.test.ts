@@ -50,6 +50,232 @@ describe('API Parser v2', () => {
 				expect(processCSS(css, font)).toMatchSnapshot();
 			}
 		});
+
+		it('Handles numbered subsets with comments (old format)', () => {
+			const mockFont = {
+				family: 'Noto Sans JP',
+				lastModified: '2022-04-20',
+				version: 'v55',
+				category: 'sans-serif',
+				variants: [
+					'100',
+					'200',
+					'300',
+					'400',
+					'500',
+					'600',
+					'700',
+					'800',
+					'900',
+				],
+				subsets: ['japanese', 'latin'],
+			};
+
+			const cssWithComments: [string, string, string] = [
+				`/* [0] */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.0.woff2) format('woff2');
+  unicode-range: U+25ee8, U+25f23;
+}
+/* [1] */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.1.woff2) format('woff2');
+  unicode-range: U+1f235-1f23b, U+1f240-1f248;
+}`,
+				'', // woff
+				'', // ttf
+			];
+
+			const result = processCSS(cssWithComments, mockFont);
+			const fontId = 'noto-sans-jp';
+
+			// Should use comment-based subset names [0] and [1]
+			expect(result[fontId].unicodeRange['[0]']).toBe('U+25ee8,U+25f23');
+			expect(result[fontId].unicodeRange['[1]']).toBe(
+				'U+1f235-1f23b,U+1f240-1f248',
+			);
+			expect(result[fontId].variants['100 900'].normal['[0]'].url.woff2).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.0.woff2',
+			);
+			expect(result[fontId].variants['100 900'].normal['[1]'].url.woff2).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.1.woff2',
+			);
+		});
+
+		it('Handles numbered subsets without comments (new format)', () => {
+			const mockFont = {
+				family: 'Noto Sans JP',
+				lastModified: '2022-04-20',
+				version: 'v55',
+				category: 'sans-serif',
+				variants: [
+					'100',
+					'200',
+					'300',
+					'400',
+					'500',
+					'600',
+					'700',
+					'800',
+					'900',
+				],
+				subsets: ['japanese', 'latin'],
+			};
+
+			const cssWithoutComments: [string, string, string] = [
+				`@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.0.woff2) format('woff2');
+  unicode-range: U+25ee8, U+25f23;
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.1.woff2) format('woff2');
+  unicode-range: U+1f235-1f23b, U+1f240-1f248;
+}`,
+				'', // woff
+				'', // ttf
+			];
+
+			const result = processCSS(cssWithoutComments, mockFont);
+			const fontId = 'noto-sans-jp';
+
+			// Should extract subset numbers from URLs: [0] and [1]
+			expect(result[fontId].unicodeRange['[0]']).toBe('U+25ee8,U+25f23');
+			expect(result[fontId].unicodeRange['[1]']).toBe(
+				'U+1f235-1f23b,U+1f240-1f248',
+			);
+			expect(result[fontId].variants['100 900'].normal['[0]'].url.woff2).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.0.woff2',
+			);
+			expect(result[fontId].variants['100 900'].normal['[1]'].url.woff2).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.1.woff2',
+			);
+		});
+
+		it('Falls back to default subset for non-numbered URLs', () => {
+			const mockFont = {
+				family: 'Abel',
+				lastModified: '2022-04-20',
+				version: 'v18',
+				category: 'sans-serif',
+				variants: ['400'],
+				subsets: ['latin'],
+			};
+
+			const cssRegularSubset: [string, string, string] = [
+				`/* latin */
+@font-face {
+  font-family: 'Abel';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE2V9BPQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131;
+}`,
+				'', // woff
+				'', // ttf
+			];
+
+			const result = processCSS(cssRegularSubset, mockFont);
+			const fontId = 'abel';
+
+			// Should use comment-based subset name 'latin'
+			expect(result[fontId].unicodeRange.latin).toBe('U+0000-00FF,U+0131');
+			expect(result[fontId].variants['400'].normal.latin.url.woff2).toBe(
+				'https://fonts.gstatic.com/s/abel/v18/MwQ5bhbm2POE2V9BPQ.woff2',
+			);
+		});
+
+		it('Handles real Noto Sans JP CSS without comments (regression test)', () => {
+			const mockFont = {
+				family: 'Noto Sans JP',
+				lastModified: '2022-04-20',
+				version: 'v55',
+				category: 'sans-serif',
+				variants: ['100', '900'],
+				subsets: ['japanese', 'latin'],
+			};
+
+			// Real CSS from Google Fonts (without comments)
+			const realCSS: [string, string, string] = [
+				`@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.0.woff2) format('woff2');
+  unicode-range: U+25ee8, U+25f23, U+25f5c;
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.1.woff2) format('woff2');
+  unicode-range: U+1f235-1f23b, U+1f240-1f248;
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.119.woff2) format('woff2');
+  unicode-range: U+20, U+2027, U+3001-3002, U+3041-307f;
+}
+/* latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFYwQgP-FVthw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153;
+}`,
+				'', // woff
+				'', // ttf
+			];
+
+			const result = processCSS(realCSS, mockFont);
+			const fontId = 'noto-sans-jp';
+
+			// Should extract numbered subsets from URLs and use comment for latin
+			expect(result[fontId].unicodeRange['[0]']).toBe(
+				'U+25ee8,U+25f23,U+25f5c',
+			);
+			expect(result[fontId].unicodeRange['[1]']).toBe(
+				'U+1f235-1f23b,U+1f240-1f248',
+			);
+			expect(result[fontId].unicodeRange['[119]']).toBe(
+				'U+20,U+2027,U+3001-3002,U+3041-307f',
+			);
+			expect(result[fontId].unicodeRange.latin).toBe(
+				'U+0000-00FF,U+0131,U+0152-0153',
+			);
+
+			// Check URL mapping for numbered subsets
+			expect(result[fontId].variants['100 900'].normal['[0]'].url.woff2).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.0.woff2',
+			);
+			expect(result[fontId].variants['100 900'].normal['[1]'].url.woff2).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.1.woff2',
+			);
+			expect(result[fontId].variants['100 900'].normal['[119]'].url.woff2).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFowwII2lcnk-AFfrgQrvWXpdFg3KXxAMsKMbdN.119.woff2',
+			);
+			expect(result[fontId].variants['100 900'].normal.latin.url.woff2).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFYwQgP-FVthw.woff2',
+			);
+		});
 	});
 
 	describe('Full parse and order', () => {

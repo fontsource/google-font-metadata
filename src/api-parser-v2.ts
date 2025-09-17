@@ -126,6 +126,28 @@ export const processCSS = (
 			}
 
 			if (rule.type === '@font-face') {
+				// For each @font-face rule, we need to determine the actual subset
+				// This could come from a comment (old format) or URL pattern (new format)
+				let actualSubset = subset;
+
+				// First, look for any URL to extract subset from filename if needed.
+				for (const subrule of rule.children) {
+					if (typeof subrule !== 'string' && subrule.props === 'src') {
+						if (typeof subrule.children === 'string') {
+							const typeMatch = /(local|url)\((.+?)\)/g;
+							const match: string[][] = [
+								...subrule.children.matchAll(typeMatch),
+							];
+							if (match.length > 0) {
+								const path: string = match[0][2];
+								actualSubset = extractSubsetFromUrl(path, subset, defSubset);
+								break;
+							}
+						}
+					}
+				}
+
+				// Then try to process all properties with the correct subset
 				for (const subrule of rule.children) {
 					// Type guard to ensure there are children in font-face rules
 					if (typeof subrule === 'string')
@@ -165,7 +187,7 @@ export const processCSS = (
 
 						fontObject[id].unicodeRange = {
 							...fontObject[id].unicodeRange,
-							[subset]: subrule.children,
+							[actualSubset]: subrule.children,
 						};
 					}
 
@@ -210,14 +232,16 @@ export const processCSS = (
 								fontObject[id].variants[fontWeight][fontStyle] =
 									fontObject[id].variants[fontWeight][fontStyle] || {};
 
-								fontObject[id].variants[fontWeight][fontStyle][subset] =
-									fontObject[id].variants[fontWeight][fontStyle][subset] || {
+								fontObject[id].variants[fontWeight][fontStyle][actualSubset] =
+									fontObject[id].variants[fontWeight][fontStyle][
+										actualSubset
+									] || {
 										url: {},
 									};
 
-								fontObject[id].variants[fontWeight][fontStyle][subset].url[
-									format
-								] = path;
+								fontObject[id].variants[fontWeight][fontStyle][
+									actualSubset
+								].url[format] = path;
 							}
 						}
 					}
@@ -297,4 +321,25 @@ export const parsev2 = async (force: boolean, noValidate: boolean) => {
 	consola.success(
 		`All ${results.length} font datapoints using CSS APIv2 have been generated.`,
 	);
+};
+
+/**
+ * Extract subset from URL filename for numbered subsets.
+ * Falls back to current subset if no numbered pattern is found.
+ */
+const extractSubsetFromUrl = (
+	url: string,
+	currentSubset: string,
+	defSubset: string,
+): string => {
+	// If current subset is not the default, it was set by a comment, so use it
+	if (currentSubset !== defSubset) return currentSubset;
+
+	// Extract numbered subset from filename pattern like .123.woff2
+	const match = url.match(/\.(\d+)\.(woff2?|ttf|otf)$/);
+	if (match) {
+		return `[${match[1]}]`;
+	}
+
+	return currentSubset;
 };
