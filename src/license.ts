@@ -53,11 +53,20 @@ const processTable = (tableHTML: string) => {
 			}
 		}
 
-		const copyrightString = element
-			.querySelector('p.ng-star-inserted')
-			?.textContent?.trim()
-			.split(' ');
-		if (id && license && copyrightString) {
+		const copyrightElements = element.querySelectorAll('p:not(.license)');
+		const copyrightTexts = [];
+
+		for (const pElement of copyrightElements) {
+			const text = pElement.textContent?.trim();
+			if (text?.includes('Copyright')) {
+				copyrightTexts.push(text);
+			}
+		}
+
+		if (id && license && copyrightTexts.length > 0) {
+			// Combine all copyright texts and process them
+			const fullCopyrightText = copyrightTexts.join(' ');
+			const copyrightString = fullCopyrightText.split(' ');
 			const emailArr = copyrightString.filter((string) =>
 				EMAIL_REGEX.test(string),
 			);
