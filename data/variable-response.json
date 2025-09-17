@@ -627,6 +627,13 @@
     }
   },
   {
+    "family": "Chiron GoRound TC",
+    "id": "chiron-goround-tc",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Chiron Hei HK",
     "id": "chiron-hei-hk",
     "axes": {
@@ -953,6 +960,22 @@
     }
   },
   {
+    "family": "Epunda Sans",
+    "id": "epunda-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Epunda Slab",
+    "id": "epunda-slab",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Exo",
     "id": "exo",
     "axes": {
@@ -1162,6 +1185,14 @@
     "id": "golos-text",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Google Sans Code",
+    "id": "google-sans-code",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "800", "step": "1"}
     }
   },
   {
@@ -1760,6 +1791,21 @@
     }
   },
   {
+    "family": "Mozilla Headline",
+    "id": "mozilla-headline",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "200", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "Mozilla Text",
+    "id": "mozilla-text",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Mulish",
     "id": "mulish",
     "axes": {
@@ -1788,6 +1834,13 @@
     "axes": {
       "EDPT": {"default": "100", "min": "0", "max": "200", "step": "1"},
       "EHLT": {"default": "12", "min": "0", "max": "24", "step": "1"}
+    }
+  },
+  {
+    "family": "Nata Sans",
+    "id": "nata-sans",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
   {
@@ -3548,6 +3601,14 @@
     }
   },
   {
+    "family": "Special Gothic",
+    "id": "special-gothic",
+    "axes": {
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
+    }
+  },
+  {
     "family": "Spline Sans",
     "id": "spline-sans",
     "axes": {
@@ -3572,6 +3633,20 @@
   {
     "family": "Syne",
     "id": "syne",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "TASA Explorer",
+    "id": "tasa-explorer",
+    "axes": {
+      "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "TASA Orbiter",
+    "id": "tasa-orbiter",
     "axes": {
       "wght": {"default": "400", "min": "400", "max": "800", "step": "1"}
     }
@@ -3606,6 +3681,16 @@
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "opsz": {"default": "12", "min": "12", "max": "72", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "TikTok Sans",
+    "id": "tiktok-sans",
+    "axes": {
+      "opsz": {"default": "14", "min": "12", "max": "36", "step": "0.1"},
+      "slnt": {"default": "0", "min": "-6", "max": "0", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "150", "step": "0.1"},
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
     }
   },
   {
@@ -3702,6 +3787,14 @@
     "id": "vazirmatn",
     "axes": {
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Vend Sans",
+    "id": "vend-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
     }
   },
   {
