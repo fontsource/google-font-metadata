@@ -1,7 +1,7 @@
 {
 	"name": "google-font-metadata",
 	"description": "A metadata generator for Google Fonts.",
-	"version": "6.0.6",
+	"version": "6.0.7",
 	"author": "Ayuhito <hello@ayuhito.com>",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
