@@ -9,6 +9,7 @@ import {
 	addAndMergeAxesRange,
 	fetchAllCSS,
 	generateCSSLinks,
+	parseCSS,
 	parseVariable,
 	sortAxes,
 } from '../src/variable-parser';
@@ -230,6 +231,105 @@ describe('Variable Parser', () => {
 				const [type, style] = key.split('.');
 				expect(css).toEqual(cssFixtureVariable('fraunces', type, style));
 			}
+		});
+	});
+
+	describe('Parse CSS with numbered subsets', () => {
+		it('Handles numbered subsets without comments (new format)', () => {
+			// Mock CSS data that mimics the new Google Fonts format without comments
+			// but with numbered subsets in the URL filenames
+			const cssWithoutComments: string[][] = [
+				[
+					'wght.normal',
+					`@font-face {
+  font-family: 'Noto Sans JP Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/variable-font.0.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans JP Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/variable-font.1.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans JP Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/variable-font.119.woff2) format('woff2');
+}`,
+				],
+			];
+
+			const result = parseCSS(cssWithoutComments);
+
+			// Should extract numbered subsets from URLs: [0], [1], and [119]
+			expect(result.wght.normal['[0]']).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/variable-font.0.woff2',
+			);
+			expect(result.wght.normal['[1]']).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/variable-font.1.woff2',
+			);
+			expect(result.wght.normal['[119]']).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/variable-font.119.woff2',
+			);
+		});
+
+		it('Handles numbered subsets with comments (old format)', () => {
+			// Mock CSS data with comments (old format)
+			const cssWithComments: string[][] = [
+				[
+					'wght.normal',
+					`/* [0] */
+@font-face {
+  font-family: 'Noto Sans JP Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/variable-font.0.woff2) format('woff2');
+}
+/* [1] */
+@font-face {
+  font-family: 'Noto Sans JP Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/notosansjp/v55/variable-font.1.woff2) format('woff2');
+}`,
+				],
+			];
+
+			const result = parseCSS(cssWithComments);
+
+			// Should use comment-based subset names [0] and [1]
+			expect(result.wght.normal['[0]']).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/variable-font.0.woff2',
+			);
+			expect(result.wght.normal['[1]']).toBe(
+				'https://fonts.gstatic.com/s/notosansjp/v55/variable-font.1.woff2',
+			);
+		});
+
+		it('Falls back to default subset for non-numbered URLs', () => {
+			// Mock CSS data with regular URLs (no numbered pattern)
+			const cssRegular: string[][] = [
+				[
+					'wght.normal',
+					`/* latin */
+@font-face {
+  font-family: 'Roboto Flex';
+  font-style: normal;
+  font-weight: 100 1000;
+  src: url(https://fonts.gstatic.com/s/robotoflex/v30/regular.woff2) format('woff2');
+}`,
+				],
+			];
+
+			const result = parseCSS(cssRegular);
+
+			// Should use comment-based subset name 'latin'
+			expect(result.wght.normal.latin).toBe(
+				'https://fonts.gstatic.com/s/robotoflex/v30/regular.woff2',
+			);
 		});
 	});
 

@@ -220,6 +220,32 @@ export const parseCSS = (cssTuple: string[][], defSubset?: string) => {
 			}
 
 			if (rule.type === '@font-face') {
+				// For each @font-face rule, we need to determine the actual subset
+				// This could come from a comment (old format) or URL pattern (new format)
+				let actualSubset = subset;
+
+				// First, look for any URL to extract subset from filename if needed.
+				for (const subrule of rule.children) {
+					if (typeof subrule !== 'string' && subrule.props === 'src') {
+						if (typeof subrule.children === 'string') {
+							const typeMatch = /(url)\((.+?)\)/g;
+							const match: string[][] = [
+								...subrule.children.matchAll(typeMatch),
+							];
+							if (match.length > 0) {
+								const path: string = match[0][2];
+								actualSubset = extractSubsetFromUrl(
+									path,
+									subset,
+									defSubset ?? 'latin',
+								);
+								break;
+							}
+						}
+					}
+				}
+
+				// Then process all properties with the correct subset
 				for (const subrule of rule.children) {
 					// Type guard to ensure there are children in font-face rules
 					if (typeof subrule === 'string')
@@ -246,7 +272,7 @@ export const parseCSS = (cssTuple: string[][], defSubset?: string) => {
 						const path: string = match[0][2];
 
 						if (type === 'url')
-							fontVariants[fontType][fontStyle][subset] = path;
+							fontVariants[fontType][fontStyle][actualSubset] = path;
 					}
 				}
 			}
@@ -296,4 +322,25 @@ export const parseVariable = async (noValidate: boolean) => {
 			Object.keys(results).length
 		} variable font datapoints have been generated.`,
 	);
+};
+
+/**
+ * Extract subset from URL filename for numbered subsets.
+ * Falls back to current subset if no numbered pattern is found.
+ */
+const extractSubsetFromUrl = (
+	url: string,
+	currentSubset: string,
+	defSubset: string,
+): string => {
+	// If current subset is not the default, it was set by a comment, so use it
+	if (currentSubset !== defSubset) return currentSubset;
+
+	// Extract numbered subset from filename pattern like .123.woff2
+	const match = url.match(/\.(\d+)\.(woff2?|ttf|otf)$/);
+	if (match) {
+		return `[${match[1]}]`;
+	}
+
+	return currentSubset;
 };
