@@ -245,6 +245,14 @@
     "category": "display"
   },
   {
+    "family": "Alan Sans",
+    "variants": ["300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2025-09-18",
+    "category": "sans-serif"
+  },
+  {
     "family": "Alata",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
@@ -5459,24 +5467,24 @@
     "family": "Flow Block",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v14",
-    "lastModified": "2025-09-05",
+    "version": "v15",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Flow Circular",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v14",
-    "lastModified": "2025-09-10",
+    "version": "v15",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Flow Rounded",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v14",
-    "lastModified": "2025-09-05",
+    "version": "v15",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
@@ -7480,48 +7488,48 @@
     "family": "Jacquard 12",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v7",
-    "lastModified": "2025-05-30",
+    "version": "v8",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jacquard 12 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jacquard 24",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jacquard 24 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2025-05-30",
+    "version": "v5",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jacquarda Bastarda 9",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v5",
-    "lastModified": "2025-05-30",
+    "version": "v6",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jacquarda Bastarda 9 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
@@ -7576,64 +7584,64 @@
     "family": "Jersey 10",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jersey 10 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jersey 15",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jersey 15 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jersey 20",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jersey 20 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jersey 25",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Jersey 25 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2025-05-30",
+    "version": "v3",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
@@ -8187,8 +8195,8 @@
     "family": "Khmer",
     "variants": ["regular"],
     "subsets": ["khmer"],
-    "version": "v37",
-    "lastModified": "2025-09-08",
+    "version": "v38",
+    "lastModified": "2025-09-17",
     "category": "sans-serif"
   },
   {
@@ -8963,56 +8971,56 @@
     "family": "Libre Barcode 128",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v30",
-    "lastModified": "2025-09-16",
+    "version": "v31",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Libre Barcode 128 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v30",
-    "lastModified": "2025-09-16",
+    "version": "v31",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v24",
-    "lastModified": "2025-09-05",
+    "version": "v25",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39 Extended",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v29",
-    "lastModified": "2025-09-10",
+    "version": "v30",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39 Extended Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v29",
-    "lastModified": "2025-09-05",
+    "version": "v30",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Libre Barcode 39 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v30",
-    "lastModified": "2025-09-05",
+    "version": "v32",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Libre Barcode EAN13 Text",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v24",
-    "lastModified": "2025-09-10",
+    "version": "v25",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
@@ -9145,8 +9153,8 @@
       "900"
     ],
     "subsets": ["latin"],
-    "version": "v9",
-    "lastModified": "2025-09-08",
+    "version": "v10",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
@@ -9839,8 +9847,8 @@
     "family": "Material Symbols",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v7",
-    "lastModified": "2025-09-16",
+    "version": "v10",
+    "lastModified": "2025-09-24",
     "category": "monospace"
   },
   {
@@ -10957,8 +10965,8 @@
     "family": "Noto Emoji",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["emoji"],
-    "version": "v60",
-    "lastModified": "2025-09-11",
+    "version": "v61",
+    "lastModified": "2025-09-17",
     "category": "sans-serif"
   },
   {
@@ -11095,8 +11103,8 @@
       "900"
     ],
     "subsets": ["arabic", "latin", "latin-ext", "math", "symbols"],
-    "version": "v32",
-    "lastModified": "2025-09-06",
+    "version": "v33",
+    "lastModified": "2025-09-17",
     "category": "sans-serif"
   },
   {
@@ -11171,8 +11179,8 @@
       "900"
     ],
     "subsets": ["bengali", "latin", "latin-ext"],
-    "version": "v31",
-    "lastModified": "2025-09-05",
+    "version": "v32",
+    "lastModified": "2025-09-17",
     "category": "sans-serif"
   },
   {
@@ -12389,8 +12397,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "sinhala"],
-    "version": "v35",
-    "lastModified": "2025-09-10",
+    "version": "v36",
+    "lastModified": "2025-09-17",
     "category": "sans-serif"
   },
   {
@@ -12604,8 +12612,8 @@
     "family": "Noto Sans Tamil Supplement",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "tamil-supplement"],
-    "version": "v22",
-    "lastModified": "2025-09-08",
+    "version": "v23",
+    "lastModified": "2025-09-17",
     "category": "sans-serif"
   },
   {
@@ -12844,8 +12852,8 @@
       "900"
     ],
     "subsets": ["bengali", "latin", "latin-ext"],
-    "version": "v30",
-    "lastModified": "2025-09-05",
+    "version": "v31",
+    "lastModified": "2025-09-17",
     "category": "serif"
   },
   {
@@ -14146,8 +14154,8 @@
     "family": "Phetsarath",
     "variants": ["regular", "700"],
     "subsets": ["lao"],
-    "version": "v2",
-    "lastModified": "2025-05-23",
+    "version": "v3",
+    "lastModified": "2025-09-17",
     "category": "sans-serif"
   },
   {
@@ -15329,8 +15337,8 @@
     "family": "Ponnala",
     "variants": ["regular"],
     "subsets": ["latin", "telugu"],
-    "version": "v2",
-    "lastModified": "2024-11-20",
+    "version": "v3",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
@@ -16007,16 +16015,16 @@
     "family": "Redacted",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v9",
-    "lastModified": "2025-09-16",
+    "version": "v11",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Redacted Script",
     "variants": ["300", "regular", "700"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v11",
-    "lastModified": "2025-09-16",
+    "version": "v12",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
@@ -16887,10 +16895,54 @@
   },
   {
     "family": "SUSE",
-    "variants": ["100", "200", "300", "regular", "500", "600", "700", "800"],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-09-08",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v4",
+    "lastModified": "2025-09-18",
+    "category": "sans-serif"
+  },
+  {
+    "family": "SUSE Mono",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2025-09-18",
     "category": "sans-serif"
   },
   {
@@ -17463,8 +17515,8 @@
     "family": "Siemreap",
     "variants": ["regular"],
     "subsets": ["khmer"],
-    "version": "v29",
-    "lastModified": "2025-01-08",
+    "version": "v30",
+    "lastModified": "2025-09-17",
     "category": "sans-serif"
   },
   {
@@ -19625,8 +19677,8 @@
       "900"
     ],
     "subsets": ["latin"],
-    "version": "v18",
-    "lastModified": "2025-09-11",
+    "version": "v19",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
@@ -19842,32 +19894,32 @@
     "family": "Yarndings 12",
     "variants": ["regular"],
     "subsets": ["latin", "math", "symbols"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Yarndings 12 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "math", "symbols"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Yarndings 20",
     "variants": ["regular"],
     "subsets": ["latin", "math", "symbols"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
     "family": "Yarndings 20 Charted",
     "variants": ["regular"],
     "subsets": ["latin", "math", "symbols"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2025-09-17",
     "category": "display"
   },
   {
