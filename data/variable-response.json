@@ -45,6 +45,13 @@
     }
   },
   {
+    "family": "Alan Sans",
+    "id": "alan-sans",
+    "axes": {
+      "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Albert Sans",
     "id": "albert-sans",
     "axes": {
@@ -471,6 +478,23 @@
     }
   },
   {
+    "family": "Bitcount Grid Double Ink",
+    "id": "bitcount-grid-double-ink",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP1": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP2": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "XPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "XPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"}
+    }
+  },
+  {
     "family": "Bitcount Grid Single",
     "id": "bitcount-grid-single",
     "axes": {
@@ -479,6 +503,40 @@
       "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
       "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
       "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitcount Grid Single Ink",
+    "id": "bitcount-grid-single-ink",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP1": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP2": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "XPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "XPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitcount Ink",
+    "id": "bitcount-ink",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP1": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP2": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "XPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "XPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"}
     }
   },
   {
@@ -493,6 +551,23 @@
     }
   },
   {
+    "family": "Bitcount Prop Double Ink",
+    "id": "bitcount-prop-double-ink",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP1": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP2": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "XPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "XPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"}
+    }
+  },
+  {
     "family": "Bitcount Prop Single",
     "id": "bitcount-prop-single",
     "axes": {
@@ -504,6 +579,23 @@
     }
   },
   {
+    "family": "Bitcount Prop Single Ink",
+    "id": "bitcount-prop-single-ink",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP1": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP2": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "XPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "XPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"}
+    }
+  },
+  {
     "family": "Bitcount Single",
     "id": "bitcount-single",
     "axes": {
@@ -512,6 +604,23 @@
       "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
       "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
       "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"}
+    }
+  },
+  {
+    "family": "Bitcount Single Ink",
+    "id": "bitcount-single-ink",
+    "axes": {
+      "slnt": {"default": "0", "min": "-8", "max": "0", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"},
+      "CRSV": {"default": "0.5", "min": "0", "max": "1", "step": "0.1"},
+      "ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"},
+      "ELXP": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP1": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "SZP2": {"default": "0", "min": "0", "max": "100", "step": "1"},
+      "XPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "XPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN1": {"default": "0", "min": "-100", "max": "100", "step": "1"},
+      "YPN2": {"default": "0", "min": "-100", "max": "100", "step": "1"}
     }
   },
   {
@@ -3416,6 +3525,14 @@
     }
   },
   {
+    "family": "SUSE Mono",
+    "id": "suse-mono",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "800", "step": "1"}
+    }
+  },
+  {
     "family": "Saira",
     "id": "saira",
     "axes": {
@@ -3928,5 +4045,30 @@
     "family": "Ysabeau SC",
     "id": "ysabeau-sc",
     "axes": {"wght": {"default": "400", "min": "1", "max": "1000", "step": "1"}}
+  },
+  {
+    "family": "Zalando Sans",
+    "id": "zalando-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Zalando Sans Expanded",
+    "id": "zalando-sans-expanded",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Zalando Sans SemiExpanded",
+    "id": "zalando-sans-semiexpanded",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "900", "step": "1"}
+    }
   }
 ]
