@@ -709,6 +709,18 @@
     },
     "original": "Copyright 2016 The Amaranth Project Authors (https://github.com/googlefonts/amaranth) Amaranth-Italic.ttf: Copyright 2016 The Amaranth Project Authors (https://github.com/googlefonts/amaranth) Amaranth-Bold.ttf: Copyright 2016 The Amaranth Project Authors (https://github.com/googlefonts/amaranth) Amaranth-BoldItalic.ttf: Copyright 2016 The Amaranth Project Authors (https://github.com/googlefonts/amaranth)"
   },
+  "amarna": {
+    "id": "amarna",
+    "authors": {
+      "copyright": "Copyright 2025 The Amarna Project Authors Amarna-Italic[wght].ttf",
+      "website": "https://github.com/ijvanl/Amarna, https://github.com/ijvanl/Amarna"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2025 The Amarna Project Authors (https://github.com/ijvanl/Amarna) Amarna-Italic[wght].ttf: Copyright 2025 The Amarna Project Authors (https://github.com/ijvanl/Amarna)"
+  },
   "amatic-sc": {
     "id": "amatic-sc",
     "authors": {
@@ -1664,41 +1676,41 @@
     },
     "original": "Copyright 2012 The B612 Project Authors (https://github.com/polarsys/b612) B612Mono-Italic.ttf: Copyright 2012 The B612 Project Authors (https://github.com/polarsys/b612) B612Mono-Bold.ttf: Copyright 2012 The B612 Project Authors (https://github.com/polarsys/b612) B612Mono-BoldItalic.ttf: Copyright 2012 The B612 Project Authors (https://github.com/polarsys/b612)"
   },
-  "bbh-sans-bartle": {
-    "id": "bbh-sans-bartle",
+  "bbh-bartle": {
+    "id": "bbh-bartle",
     "authors": {
-      "copyright": "Copyright 2025 The BBHSans Project Authors",
-      "website": "https://github.com/Studio-DRAMA/BBHSans"
+      "copyright": "Copyright 2025 The BBH Project Authors",
+      "website": "https://github.com/Studio-DRAMA/BBH"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Copyright 2025 The BBHSans Project Authors (https://github.com/Studio-DRAMA/BBHSans)"
+    "original": "Copyright 2025 The BBH Project Authors (https://github.com/Studio-DRAMA/BBH)"
   },
-  "bbh-sans-bogle": {
-    "id": "bbh-sans-bogle",
+  "bbh-bogle": {
+    "id": "bbh-bogle",
     "authors": {
-      "copyright": "Copyright 2025 The BBHSans Project Authors",
-      "website": "https://github.com/Studio-DRAMA/BBHSans"
+      "copyright": "Copyright 2025 The BBH Project Authors",
+      "website": "https://github.com/Studio-DRAMA/BBH"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Copyright 2025 The BBHSans Project Authors (https://github.com/Studio-DRAMA/BBHSans)"
+    "original": "Copyright 2025 The BBH Project Authors (https://github.com/Studio-DRAMA/BBH)"
   },
-  "bbh-sans-hegarty": {
-    "id": "bbh-sans-hegarty",
+  "bbh-hegarty": {
+    "id": "bbh-hegarty",
     "authors": {
-      "copyright": "Copyright 2025 The BBHSans Project Authors",
-      "website": "https://github.com/Studio-DRAMA/BBHSans"
+      "copyright": "Copyright 2025 The BBH Project Authors",
+      "website": "https://github.com/Studio-DRAMA/BBH"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Copyright 2025 The BBHSans Project Authors (https://github.com/Studio-DRAMA/BBHSans)"
+    "original": "Copyright 2025 The BBH Project Authors (https://github.com/Studio-DRAMA/BBH)"
   },
   "biz-udgothic": {
     "id": "biz-udgothic",
@@ -3526,6 +3538,18 @@
     },
     "original": "Copyright (c) 2011 Hjort Nidudsson (nidud@users.sourceforge.net) Caudex-Italic.ttf: Copyright (c) 2011 Hjort Nidudsson (nidud@users.sourceforge.net) Caudex-Bold.ttf: Copyright (c) 2011 Hjort Nidudsson (nidud@users.sourceforge.net) Caudex-BoldItalic.ttf: Copyright (c) 2011 Hjort Nidudsson (nidud@users.sourceforge.net)"
   },
+  "cause": {
+    "id": "cause",
+    "authors": {
+      "copyright": "Copyright 2025 The Cause Project Authors",
+      "website": "https://github.com/xconsau/cause"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2025 The Cause Project Authors (https://github.com/xconsau/cause)"
+  },
   "caveat": {
     "id": "caveat",
     "authors": {
@@ -5242,6 +5266,18 @@
     },
     "original": "Copyright (c) 2011, Cyreal (www.cyreal.org a@cyreal.org) with Reserved Font Name \"Electrolize\" This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
   },
+  "elms-sans": {
+    "id": "elms-sans",
+    "authors": {
+      "copyright": "Copyright 2025 The Elms Sans Project Authors ElmsSans-Italic[wght].ttf",
+      "website": "https://github.com/mara-aa/elms-sans.git, https://github.com/mara-aa/elms-sans.git"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2025 The Elms Sans Project Authors (https://github.com/mara-aa/elms-sans.git) ElmsSans-Italic[wght].ttf: Copyright 2025 The Elms Sans Project Authors (https://github.com/mara-aa/elms-sans.git)"
+  },
   "elsie": {
     "id": "elsie",
     "authors": {
@@ -6449,6 +6485,18 @@
     },
     "original": "Copyright 2020 The Geologica Project Authors (https://github.com/googlefonts/geologica)"
   },
+  "geom": {
+    "id": "geom",
+    "authors": {
+      "copyright": "Copyright 2022 The Geom Project Authors Geom-Italic[wght].ttf",
+      "website": "https://github.com/ThanosPoulakidas/Geom, https://github.com/ThanosPoulakidas/Geom"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2022 The Geom Project Authors (https://github.com/ThanosPoulakidas/Geom) Geom-Italic[wght].ttf: Copyright 2022 The Geom Project Authors (https://github.com/ThanosPoulakidas/Geom)"
+  },
   "georama": {
     "id": "georama",
     "authors": {
@@ -6692,6 +6740,17 @@
     },
     "original": "Copyright 2019 The Golos Text Project Authors (https://github.com/googlefonts/golos-text)"
   },
+  "google-sans": {
+    "id": "google-sans",
+    "authors": {
+      "copyright": "Copyright 2017 Google, Inc. All Rights Reserved. GoogleSans-Italic[GRAD,opsz,wght].ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2017 Google, Inc. All Rights Reserved. GoogleSans-Italic[GRAD,opsz,wght].ttf: Copyright 2017 Google, Inc. All Rights Reserved."
+  },
   "google-sans-code": {
     "id": "google-sans-code",
     "authors": {
@@ -6702,6 +6761,15 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2025 The Google Sans Code Project Authors (github.com/googlefonts/googlesans-code) GoogleSansCode-Italic[wght].ttf: Copyright 2025 The Google Sans Code Project Authors (github.com/googlefonts/googlesans-code)"
+  },
+  "google-sans-flex": {
+    "id": "google-sans-flex",
+    "authors": {"copyright": "Copyright 2015 Google LLC. All Rights Reserved."},
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2015 Google LLC. All Rights Reserved."
   },
   "gorditas": {
     "id": "gorditas",
@@ -8679,6 +8747,17 @@
     },
     "original": "Copyright (c) 2012, Julia Petretta (julia.petretta@googlemail.com), with Reserved Font Name 'Keania'"
   },
+  "kedebideri": {
+    "id": "kedebideri",
+    "authors": {
+      "copyright": "Copyright 2007-2025 SIL Global Kedebideri-Medium.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright (c) 2007-2025 SIL Global Kedebideri-Medium.ttf: Copyright (c) 2007-2025 SIL Global Kedebideri-SemiBold.ttf: Copyright (c) 2007-2025 SIL Global Kedebideri-Bold.ttf: Copyright (c) 2007-2025 SIL Global Kedebideri-ExtraBold.ttf: Copyright (c) 2007-2025 SIL Global Kedebideri-Black.ttf: Copyright (c) 2007-2025 SIL Global"
+  },
   "kelly-slab": {
     "id": "kelly-slab",
     "authors": {
@@ -9541,14 +9620,14 @@
   "libre-baskerville": {
     "id": "libre-baskerville",
     "authors": {
-      "copyright": "Copyright 2012 The Libre Baskerville Project Authors LibreBaskerville-Italic.ttf",
-      "website": "https://github.com/impallari/Libre-Baskerville, https://github.com/impallari/Libre-Baskerville, https://github.com/impallari/Libre-Baskerville"
+      "copyright": "Copyright 2012 The Libre Baskerville Project Authors LibreBaskerville-Italic[wght].ttf",
+      "website": "https://github.com/impallari/Libre-Baskerville, https://github.com/impallari/Libre-Baskerville"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Copyright 2012 The Libre Baskerville Project Authors (https://github.com/impallari/Libre-Baskerville) LibreBaskerville-Italic.ttf: Copyright 2012 The Libre Baskerville Project Authors (https://github.com/impallari/Libre-Baskerville) LibreBaskerville-Bold.ttf: Copyright 2012 The Libre Baskerville Project Authors (https://github.com/impallari/Libre-Baskerville)"
+    "original": "Copyright 2012 The Libre Baskerville Project Authors (https://github.com/impallari/Libre-Baskerville) LibreBaskerville-Italic[wght].ttf: Copyright 2012 The Libre Baskerville Project Authors (https://github.com/impallari/Libre-Baskerville)"
   },
   "libre-bodoni": {
     "id": "libre-bodoni",
@@ -9621,6 +9700,18 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2012 The Life Savers Project Authors (https://github.com/googlefonts/life-savers) LifeSavers-Bold.ttf: Copyright 2012 The Life Savers Project Authors (https://github.com/googlefonts/life-savers) LifeSavers-ExtraBold.ttf: Copyright 2012 The Life Savers Project Authors (https://github.com/googlefonts/life-savers)"
+  },
+  "lilex": {
+    "id": "lilex",
+    "authors": {
+      "copyright": "Copyright 2019 The Lilex Project Authors Lilex-Italic[wght].ttf",
+      "website": "https://github.com/mishamyrt/Lilex, https://github.com/mishamyrt/Lilex"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2019 The Lilex Project Authors (https://github.com/mishamyrt/Lilex) Lilex-Italic[wght].ttf: Copyright 2019 The Lilex Project Authors (https://github.com/mishamyrt/Lilex)"
   },
   "lilita-one": {
     "id": "lilita-one",
@@ -18705,6 +18796,18 @@
     },
     "original": "Copyright (c) 2010 by Font Diner, Inc. All rights reserved."
   },
+  "science-gothic": {
+    "id": "science-gothic",
+    "authors": {
+      "copyright": "Copyright © 2025 The Science Gothic Project Authors",
+      "website": "https://github.com/googlefonts/science-gothic/blob/main/AUTHORS.txt"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright © 2025 The Science Gothic Project Authors (https://github.com/googlefonts/science-gothic/blob/main/AUTHORS.txt)"
+  },
   "scope-one": {
     "id": "scope-one",
     "authors": {
@@ -18788,6 +18891,18 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2017 The Sedgwick Ave Project Authors (https://github.com/googlefonts/sedgwickave)"
+  },
+  "sekuya": {
+    "id": "sekuya",
+    "authors": {
+      "copyright": "Copyright 2025 The Sekuya Project Authors",
+      "website": "https://github.com/kevinnseptian/SEKUYA"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2025 The Sekuya Project Authors (https://github.com/kevinnseptian/SEKUYA)"
   },
   "sen": {
     "id": "sen",
@@ -19762,6 +19877,42 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2018 The Staatliches Project Authors (https://github.com/googlefonts/staatliches)"
+  },
+  "stack-sans-headline": {
+    "id": "stack-sans-headline",
+    "authors": {
+      "copyright": "Copyright 2025 The Stack Sans Project Authors",
+      "website": "https://github.com/DylanYoungKoto/Stack-Sans"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2025 The Stack Sans Project Authors (https://github.com/DylanYoungKoto/Stack-Sans)"
+  },
+  "stack-sans-notch": {
+    "id": "stack-sans-notch",
+    "authors": {
+      "copyright": "Copyright 2025 The Stack Sans Project Authors",
+      "website": "https://github.com/DylanYoungKoto/Stack-Sans"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2025 The Stack Sans Project Authors (https://github.com/DylanYoungKoto/Stack-Sans)"
+  },
+  "stack-sans-text": {
+    "id": "stack-sans-text",
+    "authors": {
+      "copyright": "Copyright 2025 The Stack Sans Project Authors",
+      "website": "https://github.com/DylanYoungKoto/Stack-Sans"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2025 The Stack Sans Project Authors (https://github.com/DylanYoungKoto/Stack-Sans)"
   },
   "stalemate": {
     "id": "stalemate",
