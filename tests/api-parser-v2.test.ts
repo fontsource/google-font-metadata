@@ -276,6 +276,43 @@ describe('API Parser v2', () => {
 				'https://fonts.gstatic.com/s/notosansjp/v55/-F62fjtqLzI2JPCgQBnw7HFYwQgP-FVthw.woff2',
 			);
 		});
+
+		it('Maps woff subsets using unicode-range when URLs lack subset hints', () => {
+			const mockFont = {
+				family: 'Aoboshi One',
+				lastModified: '2022-04-20',
+				version: 'v13',
+				category: 'serif',
+				variants: ['400'],
+				subsets: ['latin'],
+			};
+
+			const woff2CSS = `@font-face {
+  font-family: 'Aoboshi One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/aoboshione/v13/Gg8xN5kXaAXtHQrFxwl10ysIBmBX_Bs1hNZRGObPhs6Y4Nxpc3TZcjEKX3o.0.woff2) format('woff2');
+  unicode-range: U+fa10, U+fa12-fa6d;
+}`;
+
+			const woffCSS = `@font-face {
+  font-family: 'Aoboshi One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/l/font?kit=Gg8xN5kXaAXtHQrFxwl10ysIBmBX_Bs1hNZRGObPhs6Y4Nxpc3TZcjEKX3o&skey=8c009af6676f94ef&v=v13) format('woff');
+  unicode-range: U+fa10, U+fa12-fa6d;
+}`;
+
+			const result = processCSS([woff2CSS, woffCSS, ''], mockFont);
+			const fontId = 'aoboshi-one';
+
+			expect(result[fontId].variants['400'].normal['[0]'].url.woff2).toBe(
+				'https://fonts.gstatic.com/s/aoboshione/v13/Gg8xN5kXaAXtHQrFxwl10ysIBmBX_Bs1hNZRGObPhs6Y4Nxpc3TZcjEKX3o.0.woff2',
+			);
+			expect(result[fontId].variants['400'].normal['[0]'].url.woff).toBe(
+				'https://fonts.gstatic.com/l/font?kit=Gg8xN5kXaAXtHQrFxwl10ysIBmBX_Bs1hNZRGObPhs6Y4Nxpc3TZcjEKX3o&skey=8c009af6676f94ef&v=v13',
+			);
+		});
 	});
 
 	describe('Full parse and order', () => {
