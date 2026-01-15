@@ -91,6 +91,22 @@ export const processCSS = (
 	const id = font.family.replaceAll(/\s/g, '-').toLowerCase();
 	const defSubset = font.subsets.includes('latin') ? 'latin' : font.subsets[0];
 
+	const normalizeUnicodeRange = (value: string) =>
+		value.replaceAll(/\s/g, '');
+
+	const findSubsetByUnicodeRange = (
+		unicodeRangeMap: Record<string, string>,
+		value: string,
+	) => {
+		const normalizedValue = normalizeUnicodeRange(value);
+		for (const [key, range] of Object.entries(unicodeRangeMap)) {
+			if (normalizeUnicodeRange(range) === normalizedValue) {
+				return key;
+			}
+		}
+		return undefined;
+	};
+
 	const fontObject: FontObjectV2 = {
 		[id]: {
 			family: font.family,
@@ -129,9 +145,18 @@ export const processCSS = (
 				// For each @font-face rule, we need to determine the actual subset
 				// This could come from a comment (old format) or URL pattern (new format)
 				let actualSubset = subset;
+				let faceUnicodeRange = '';
 
 				// First, look for any URL to extract subset from filename if needed.
 				for (const subrule of rule.children) {
+					if (
+						typeof subrule !== 'string' &&
+						subrule.props === 'unicode-range' &&
+						typeof subrule.children === 'string'
+					) {
+						faceUnicodeRange = subrule.children;
+					}
+
 					if (typeof subrule !== 'string' && subrule.props === 'src') {
 						if (typeof subrule.children === 'string') {
 							const typeMatch = /(local|url)\((.+?)\)/g;
@@ -139,12 +164,25 @@ export const processCSS = (
 								...subrule.children.matchAll(typeMatch),
 							];
 							if (match.length > 0) {
-								const path: string = match[0][2];
+								const urlMatch =
+									match.find((entry) => entry[1] === 'url') ?? match[0];
+								const path: string = urlMatch[2];
 								actualSubset = extractSubsetFromUrl(path, subset, defSubset);
-								break;
 							}
 						}
 					}
+				}
+
+				if (
+					actualSubset === subset &&
+					faceUnicodeRange &&
+					Object.keys(fontObject[id].unicodeRange).length > 0
+				) {
+					const matchedSubset = findSubsetByUnicodeRange(
+						fontObject[id].unicodeRange,
+						faceUnicodeRange,
+					);
+					if (matchedSubset) actualSubset = matchedSubset;
 				}
 
 				// Then try to process all properties with the correct subset
