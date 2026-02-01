@@ -3283,8 +3283,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2025-12-10",
+    "version": "v2",
+    "lastModified": "2026-01-20",
     "category": "handwriting"
   },
   {
@@ -8357,9 +8357,9 @@
   {
     "family": "Kedebideri",
     "variants": ["regular", "500", "600", "700", "800", "900"],
-    "subsets": ["latin"],
-    "version": "v2",
-    "lastModified": "2025-11-20",
+    "subsets": ["beria-erfe", "latin"],
+    "version": "v6",
+    "lastModified": "2026-01-29",
     "category": "sans-serif"
   },
   {
@@ -8690,6 +8690,14 @@
     "version": "v14",
     "lastModified": "2025-09-11",
     "category": "serif"
+  },
+  {
+    "family": "LINE Seed JP",
+    "variants": ["100", "regular", "700", "800"],
+    "subsets": ["cyrillic", "greek-ext", "japanese", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2026-01-22",
+    "category": "sans-serif"
   },
   {
     "family": "LXGW Marker Gothic",
@@ -10082,8 +10090,8 @@
     "family": "Material Symbols",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v35",
-    "lastModified": "2026-01-07",
+    "version": "v39",
+    "lastModified": "2026-01-21",
     "category": "monospace"
   },
   {
@@ -11258,8 +11266,8 @@
     "family": "Noto Naskh Arabic",
     "variants": ["regular", "500", "600", "700"],
     "subsets": ["arabic", "latin", "latin-ext", "math", "symbols"],
-    "version": "v43",
-    "lastModified": "2025-11-20",
+    "version": "v44",
+    "lastModified": "2026-01-28",
     "category": "serif"
   },
   {
@@ -11438,8 +11446,8 @@
       "900"
     ],
     "subsets": ["bengali", "latin", "latin-ext"],
-    "version": "v32",
-    "lastModified": "2025-09-17",
+    "version": "v33",
+    "lastModified": "2026-01-28",
     "category": "sans-serif"
   },
   {
@@ -11462,8 +11470,8 @@
     "family": "Noto Sans Buginese",
     "variants": ["regular"],
     "subsets": ["buginese", "latin", "latin-ext"],
-    "version": "v19",
-    "lastModified": "2025-09-16",
+    "version": "v21",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -11512,8 +11520,8 @@
     "family": "Noto Sans Chakma",
     "variants": ["regular"],
     "subsets": ["chakma", "latin", "latin-ext"],
-    "version": "v18",
-    "lastModified": "2025-09-05",
+    "version": "v19",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -12176,8 +12184,8 @@
     "family": "Noto Sans Masaram Gondi",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "masaram-gondi"],
-    "version": "v18",
-    "lastModified": "2025-09-02",
+    "version": "v19",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -12226,8 +12234,8 @@
     "family": "Noto Sans Mende Kikakui",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "mende-kikakui"],
-    "version": "v29",
-    "lastModified": "2025-09-16",
+    "version": "v30",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -12248,8 +12256,8 @@
     "family": "Noto Sans Miao",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "miao"],
-    "version": "v18",
-    "lastModified": "2025-09-16",
+    "version": "v19",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -12298,16 +12306,16 @@
     "family": "Noto Sans Mro",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "mro"],
-    "version": "v19",
-    "lastModified": "2025-09-10",
+    "version": "v20",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
     "family": "Noto Sans Multani",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "multani"],
-    "version": "v21",
-    "lastModified": "2025-09-11",
+    "version": "v22",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -12323,9 +12331,9 @@
       "800",
       "900"
     ],
-    "subsets": ["myanmar"],
-    "version": "v21",
-    "lastModified": "2025-09-16",
+    "subsets": ["latin", "latin-ext", "myanmar"],
+    "version": "v27",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -12380,8 +12388,8 @@
     "family": "Noto Sans Newa",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "newa"],
-    "version": "v17",
-    "lastModified": "2025-09-08",
+    "version": "v18",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -12494,24 +12502,24 @@
     "family": "Noto Sans Osage",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "osage"],
-    "version": "v19",
-    "lastModified": "2025-09-11",
+    "version": "v20",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
     "family": "Noto Sans Osmanya",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "osmanya"],
-    "version": "v19",
-    "lastModified": "2025-09-11",
+    "version": "v20",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
     "family": "Noto Sans Pahawh Hmong",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "pahawh-hmong"],
-    "version": "v19",
-    "lastModified": "2025-09-10",
+    "version": "v21",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -12614,8 +12622,8 @@
     "family": "Noto Sans Sharada",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "sharada"],
-    "version": "v17",
-    "lastModified": "2025-09-05",
+    "version": "v18",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -12831,16 +12839,16 @@
     "family": "Noto Sans Tagbanwa",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "tagbanwa"],
-    "version": "v19",
-    "lastModified": "2025-09-11",
+    "version": "v21",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
     "family": "Noto Sans Tai Le",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "tai-le"],
-    "version": "v18",
-    "lastModified": "2025-09-11",
+    "version": "v19",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -13001,8 +13009,8 @@
     "family": "Noto Sans Vai",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vai"],
-    "version": "v18",
-    "lastModified": "2025-09-16",
+    "version": "v19",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -13017,24 +13025,24 @@
     "family": "Noto Sans Wancho",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "wancho"],
-    "version": "v18",
-    "lastModified": "2025-09-11",
+    "version": "v19",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
     "family": "Noto Sans Warang Citi",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "warang-citi"],
-    "version": "v18",
-    "lastModified": "2025-09-05",
+    "version": "v19",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
     "family": "Noto Sans Yi",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "yi"],
-    "version": "v20",
-    "lastModified": "2025-09-05",
+    "version": "v22",
+    "lastModified": "2026-01-20",
     "category": "sans-serif"
   },
   {
@@ -15342,16 +15350,32 @@
     "family": "Playwrite NZ",
     "variants": ["100", "200", "300", "regular"],
     "subsets": ["latin"],
-    "version": "v11",
-    "lastModified": "2025-09-08",
+    "version": "v12",
+    "lastModified": "2026-01-28",
+    "category": "handwriting"
+  },
+  {
+    "family": "Playwrite NZ Basic",
+    "variants": ["100", "200", "300", "regular"],
+    "subsets": ["latin"],
+    "version": "v1",
+    "lastModified": "2026-01-28",
+    "category": "handwriting"
+  },
+  {
+    "family": "Playwrite NZ Basic Guides",
+    "variants": ["regular"],
+    "subsets": ["latin"],
+    "version": "v1",
+    "lastModified": "2026-01-28",
     "category": "handwriting"
   },
   {
     "family": "Playwrite NZ Guides",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v1",
-    "lastModified": "2025-05-30",
+    "version": "v2",
+    "lastModified": "2026-01-28",
     "category": "handwriting"
   },
   {
@@ -17145,6 +17169,31 @@
     "version": "v17",
     "lastModified": "2025-09-16",
     "category": "display"
+  },
+  {
+    "family": "SN Pro",
+    "variants": [
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2026-01-28",
+    "category": "sans-serif"
   },
   {
     "family": "STIX Two Text",
