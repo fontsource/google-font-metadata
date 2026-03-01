@@ -563,6 +563,14 @@
     "category": "handwriting"
   },
   {
+    "family": "Allkin",
+    "variants": ["regular"],
+    "subsets": ["latin"],
+    "version": "v5",
+    "lastModified": "2026-02-19",
+    "category": "display"
+  },
+  {
     "family": "Allura",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
@@ -681,6 +689,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Alyamama",
+    "variants": ["300", "regular", "500", "600", "700", "800", "900"],
+    "subsets": ["arabic", "greek", "latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-02-19",
+    "category": "serif"
+  },
+  {
     "family": "Amarante",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -715,8 +731,8 @@
       "700italic"
     ],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2025-12-10",
+    "version": "v2",
+    "lastModified": "2026-02-26",
     "category": "sans-serif"
   },
   {
@@ -2130,6 +2146,38 @@
     "category": "serif"
   },
   {
+    "family": "Betania Patmos",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-02-17",
+    "category": "handwriting"
+  },
+  {
+    "family": "Betania Patmos GDL",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-02-17",
+    "category": "handwriting"
+  },
+  {
+    "family": "Betania Patmos In",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-02-17",
+    "category": "handwriting"
+  },
+  {
+    "family": "Betania Patmos In GDL",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-02-17",
+    "category": "handwriting"
+  },
+  {
     "family": "Beth Ellen",
     "variants": ["regular"],
     "subsets": ["latin"],
@@ -2715,6 +2763,30 @@
     "version": "v27",
     "lastModified": "2025-09-08",
     "category": "display"
+  },
+  {
+    "family": "Bpmf Huninn",
+    "variants": ["regular"],
+    "subsets": ["chinese-traditional", "latin", "latin-ext"],
+    "version": "v4",
+    "lastModified": "2026-02-25",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Bpmf Iansui",
+    "variants": ["regular"],
+    "subsets": ["chinese-traditional", "latin", "latin-ext"],
+    "version": "v4",
+    "lastModified": "2026-02-25",
+    "category": "handwriting"
+  },
+  {
+    "family": "Bpmf Zihi Kai Std",
+    "variants": ["regular"],
+    "subsets": ["chinese-traditional", "latin", "latin-ext"],
+    "version": "v4",
+    "lastModified": "2026-02-25",
+    "category": "sans-serif"
   },
   {
     "family": "Braah One",
@@ -6690,6 +6762,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Gveret Levin",
+    "variants": ["regular"],
+    "subsets": ["hebrew", "latin"],
+    "version": "v4",
+    "lastModified": "2026-02-17",
+    "category": "handwriting"
+  },
+  {
     "family": "Gwendolyn",
     "variants": ["regular", "700"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
@@ -7096,8 +7176,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v2",
-    "lastModified": "2025-06-12",
+    "version": "v6",
+    "lastModified": "2026-02-19",
     "category": "sans-serif"
   },
   {
@@ -7347,8 +7427,8 @@
     "family": "Iansui",
     "variants": ["regular"],
     "subsets": ["chinese-traditional", "latin", "latin-ext", "symbols2"],
-    "version": "v8",
-    "lastModified": "2025-12-10",
+    "version": "v10",
+    "lastModified": "2026-02-19",
     "category": "handwriting"
   },
   {
@@ -7383,6 +7463,14 @@
     "version": "v22",
     "lastModified": "2025-09-02",
     "category": "display"
+  },
+  {
+    "family": "Idiqlat",
+    "variants": ["200", "300", "regular"],
+    "subsets": ["latin", "syriac"],
+    "version": "v2",
+    "lastModified": "2026-02-17",
+    "category": "serif"
   },
   {
     "family": "Imbue",
@@ -9777,8 +9865,8 @@
     "family": "Ma Shan Zheng",
     "variants": ["regular"],
     "subsets": ["chinese-simplified", "latin"],
-    "version": "v14",
-    "lastModified": "2025-09-08",
+    "version": "v17",
+    "lastModified": "2026-02-17",
     "category": "handwriting"
   },
   {
@@ -10090,8 +10178,8 @@
     "family": "Material Symbols",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v39",
-    "lastModified": "2026-01-21",
+    "version": "v44",
+    "lastModified": "2026-02-25",
     "category": "monospace"
   },
   {
@@ -11224,8 +11312,8 @@
     "family": "Noto Color Emoji",
     "variants": ["regular"],
     "subsets": ["emoji"],
-    "version": "v38",
-    "lastModified": "2026-01-07",
+    "version": "v39",
+    "lastModified": "2026-02-17",
     "category": "sans-serif"
   },
   {
@@ -12494,8 +12582,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "oriya"],
-    "version": "v33",
-    "lastModified": "2025-09-02",
+    "version": "v35",
+    "lastModified": "2026-02-19",
     "category": "sans-serif"
   },
   {
@@ -16169,6 +16257,14 @@
     "category": "display"
   },
   {
+    "family": "Ramsina",
+    "variants": ["regular"],
+    "subsets": ["latin", "syriac"],
+    "version": "v2",
+    "lastModified": "2026-02-17",
+    "category": "serif"
+  },
+  {
     "family": "Ranchers",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -16525,8 +16621,8 @@
       "symbols",
       "vietnamese"
     ],
-    "version": "v50",
-    "lastModified": "2025-11-18",
+    "version": "v51",
+    "lastModified": "2026-02-19",
     "category": "sans-serif"
   },
   {
@@ -20560,8 +20656,8 @@
     "family": "ZCOOL KuaiLe",
     "variants": ["regular"],
     "subsets": ["chinese-simplified", "latin"],
-    "version": "v20",
-    "lastModified": "2025-09-16",
+    "version": "v22",
+    "lastModified": "2026-02-17",
     "category": "sans-serif"
   },
   {
