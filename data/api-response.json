@@ -566,8 +566,8 @@
     "family": "Allkin",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v5",
-    "lastModified": "2026-02-19",
+    "version": "v10",
+    "lastModified": "2026-03-11",
     "category": "display"
   },
   {
@@ -2768,24 +2768,24 @@
     "family": "Bpmf Huninn",
     "variants": ["regular"],
     "subsets": ["chinese-traditional", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2026-02-25",
+    "version": "v6",
+    "lastModified": "2026-03-11",
     "category": "sans-serif"
   },
   {
     "family": "Bpmf Iansui",
     "variants": ["regular"],
     "subsets": ["chinese-traditional", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2026-02-25",
+    "version": "v6",
+    "lastModified": "2026-03-11",
     "category": "handwriting"
   },
   {
     "family": "Bpmf Zihi Kai Std",
     "variants": ["regular"],
     "subsets": ["chinese-traditional", "latin", "latin-ext"],
-    "version": "v4",
-    "lastModified": "2026-02-25",
+    "version": "v6",
+    "lastModified": "2026-03-11",
     "category": "sans-serif"
   },
   {
@@ -3015,8 +3015,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v14",
-    "lastModified": "2026-01-07",
+    "version": "v15",
+    "lastModified": "2026-03-11",
     "category": "serif"
   },
   {
@@ -3565,8 +3565,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v3",
-    "lastModified": "2026-01-07",
+    "version": "v4",
+    "lastModified": "2026-03-11",
     "category": "sans-serif"
   },
   {
@@ -3600,8 +3600,8 @@
       "symbols2",
       "vietnamese"
     ],
-    "version": "v4",
-    "lastModified": "2026-01-07",
+    "version": "v5",
+    "lastModified": "2026-03-11",
     "category": "sans-serif"
   },
   {
@@ -3702,8 +3702,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v15",
-    "lastModified": "2026-01-07",
+    "version": "v16",
+    "lastModified": "2026-03-11",
     "category": "sans-serif"
   },
   {
@@ -3749,9 +3749,9 @@
   {
     "family": "Climate Crisis",
     "variants": ["regular"],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v14",
-    "lastModified": "2025-09-02",
+    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
+    "version": "v15",
+    "lastModified": "2026-03-11",
     "category": "display"
   },
   {
@@ -4341,6 +4341,24 @@
     "version": "v14",
     "lastModified": "2025-09-08",
     "category": "display"
+  },
+  {
+    "family": "Datatype",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v3",
+    "lastModified": "2026-03-11",
+    "category": "monospace"
   },
   {
     "family": "David Libre",
@@ -5996,8 +6014,8 @@
     "family": "Gasoek One",
     "variants": ["regular"],
     "subsets": ["korean", "latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2026-03-03",
     "category": "sans-serif"
   },
   {
@@ -6582,8 +6600,8 @@
     "family": "Grandiflora One",
     "variants": ["regular"],
     "subsets": ["korean", "latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2026-03-03",
     "category": "serif"
   },
   {
@@ -7176,8 +7194,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v6",
-    "lastModified": "2026-02-19",
+    "version": "v8",
+    "lastModified": "2026-03-11",
     "category": "sans-serif"
   },
   {
@@ -7245,8 +7263,8 @@
     "family": "IBM Plex Sans Arabic",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["arabic", "cyrillic-ext", "latin", "latin-ext"],
-    "version": "v14",
-    "lastModified": "2025-09-10",
+    "version": "v15",
+    "lastModified": "2026-03-03",
     "category": "sans-serif"
   },
   {
@@ -7427,8 +7445,8 @@
     "family": "Iansui",
     "variants": ["regular"],
     "subsets": ["chinese-traditional", "latin", "latin-ext", "symbols2"],
-    "version": "v10",
-    "lastModified": "2026-02-19",
+    "version": "v13",
+    "lastModified": "2026-03-11",
     "category": "handwriting"
   },
   {
@@ -7710,6 +7728,66 @@
     "version": "v9",
     "lastModified": "2025-09-16",
     "category": "sans-serif"
+  },
+  {
+    "family": "Iosevka Charon",
+    "variants": [
+      "300",
+      "300italic",
+      "regular",
+      "italic",
+      "500",
+      "500italic",
+      "700",
+      "700italic"
+    ],
+    "subsets": [
+      "armenian",
+      "braille",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "symbols2",
+      "vietnamese"
+    ],
+    "version": "v1",
+    "lastModified": "2026-03-11",
+    "category": "monospace"
+  },
+  {
+    "family": "Iosevka Charon Mono",
+    "variants": [
+      "300",
+      "300italic",
+      "regular",
+      "italic",
+      "500",
+      "500italic",
+      "700",
+      "700italic"
+    ],
+    "subsets": [
+      "armenian",
+      "braille",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "symbols2",
+      "vietnamese"
+    ],
+    "version": "v1",
+    "lastModified": "2026-03-11",
+    "category": "monospace"
   },
   {
     "family": "Irish Grover",
@@ -8775,16 +8853,16 @@
     "family": "Kurale",
     "variants": ["regular"],
     "subsets": ["cyrillic", "cyrillic-ext", "devanagari", "latin", "latin-ext"],
-    "version": "v14",
-    "lastModified": "2025-09-11",
+    "version": "v16",
+    "lastModified": "2026-03-11",
     "category": "serif"
   },
   {
     "family": "LINE Seed JP",
     "variants": ["100", "regular", "700", "800"],
     "subsets": ["cyrillic", "greek-ext", "japanese", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2026-01-22",
+    "version": "v3",
+    "lastModified": "2026-03-11",
     "category": "sans-serif"
   },
   {
@@ -8800,8 +8878,8 @@
       "symbols2",
       "vietnamese"
     ],
-    "version": "v1",
-    "lastModified": "2025-06-12",
+    "version": "v3",
+    "lastModified": "2026-03-11",
     "category": "sans-serif"
   },
   {
@@ -8818,8 +8896,8 @@
       "lisu",
       "vietnamese"
     ],
-    "version": "v9",
-    "lastModified": "2025-06-09",
+    "version": "v10",
+    "lastModified": "2026-03-11",
     "category": "monospace"
   },
   {
@@ -8836,8 +8914,8 @@
       "lisu",
       "vietnamese"
     ],
-    "version": "v9",
-    "lastModified": "2025-06-09",
+    "version": "v10",
+    "lastModified": "2026-03-11",
     "category": "handwriting"
   },
   {
@@ -10178,8 +10256,8 @@
     "family": "Material Symbols",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v44",
-    "lastModified": "2026-02-25",
+    "version": "v50",
+    "lastModified": "2026-03-26",
     "category": "monospace"
   },
   {
@@ -10529,8 +10607,8 @@
     "family": "Moirai One",
     "variants": ["regular"],
     "subsets": ["korean", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2025-05-30",
+    "version": "v3",
+    "lastModified": "2026-03-03",
     "category": "display"
   },
   {
@@ -12064,8 +12142,8 @@
       "900"
     ],
     "subsets": ["kannada", "latin", "latin-ext"],
-    "version": "v31",
-    "lastModified": "2025-09-10",
+    "version": "v32",
+    "lastModified": "2026-03-03",
     "category": "sans-serif"
   },
   {
@@ -13622,8 +13700,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v35",
-    "lastModified": "2025-12-10",
+    "version": "v36",
+    "lastModified": "2026-03-11",
     "category": "serif"
   },
   {
@@ -14052,8 +14130,8 @@
     "family": "Orbit",
     "variants": ["regular"],
     "subsets": ["korean", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2025-05-30",
+    "version": "v3",
+    "lastModified": "2026-03-03",
     "category": "sans-serif"
   },
   {
@@ -19773,8 +19851,8 @@
     "family": "UoqMunThenKhung",
     "variants": ["regular"],
     "subsets": ["chinese-traditional", "cyrillic", "latin", "symbols2"],
-    "version": "v1",
-    "lastModified": "2025-06-25",
+    "version": "v3",
+    "lastModified": "2026-03-11",
     "category": "serif"
   },
   {
@@ -20083,8 +20161,8 @@
       "latin-ext",
       "symbols2"
     ],
-    "version": "v5",
-    "lastModified": "2026-01-07",
+    "version": "v6",
+    "lastModified": "2026-03-11",
     "category": "sans-serif"
   },
   {
