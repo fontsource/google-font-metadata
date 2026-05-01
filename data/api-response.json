@@ -1643,6 +1643,14 @@
     "category": "serif"
   },
   {
+    "family": "BJCree",
+    "variants": ["regular", "500", "600", "700"],
+    "subsets": ["canadian-aboriginal", "latin"],
+    "version": "v3",
+    "lastModified": "2026-04-20",
+    "category": "serif"
+  },
+  {
     "family": "Babylonica",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
@@ -4097,9 +4105,9 @@
   {
     "family": "Coustard",
     "variants": ["regular", "900"],
-    "subsets": ["latin"],
-    "version": "v17",
-    "lastModified": "2025-09-08",
+    "subsets": ["latin", "latin-ext"],
+    "version": "v19",
+    "lastModified": "2026-04-02",
     "category": "serif"
   },
   {
@@ -6480,8 +6488,8 @@
       "syriac",
       "vietnamese"
     ],
-    "version": "v14",
-    "lastModified": "2025-09-16",
+    "version": "v17",
+    "lastModified": "2026-04-14",
     "category": "monospace"
   },
   {
@@ -6509,8 +6517,8 @@
       "tifinagh",
       "vietnamese"
     ],
-    "version": "v16",
-    "lastModified": "2025-12-11",
+    "version": "v20",
+    "lastModified": "2026-04-14",
     "category": "sans-serif"
   },
   {
@@ -6674,27 +6682,27 @@
     "family": "Grenze",
     "variants": [
       "100",
-      "100italic",
       "200",
-      "200italic",
       "300",
-      "300italic",
       "regular",
-      "italic",
       "500",
-      "500italic",
       "600",
-      "600italic",
       "700",
-      "700italic",
       "800",
-      "800italic",
       "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v16",
-    "lastModified": "2025-09-08",
+    "version": "v18",
+    "lastModified": "2026-04-02",
     "category": "serif"
   },
   {
@@ -10256,8 +10264,8 @@
     "family": "Material Symbols",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v50",
-    "lastModified": "2026-03-26",
+    "version": "v60",
+    "lastModified": "2026-04-23",
     "category": "monospace"
   },
   {
@@ -10492,8 +10500,8 @@
     "family": "Mingzat",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "lepcha"],
-    "version": "v11",
-    "lastModified": "2025-09-05",
+    "version": "v12",
+    "lastModified": "2026-04-02",
     "category": "sans-serif"
   },
   {
@@ -10503,6 +10511,23 @@
     "version": "v27",
     "lastModified": "2025-09-16",
     "category": "display"
+  },
+  {
+    "family": "Miranda Sans",
+    "variants": [
+      "regular",
+      "500",
+      "600",
+      "700",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v3",
+    "lastModified": "2026-04-02",
+    "category": "sans-serif"
   },
   {
     "family": "Miriam Libre",
@@ -16807,7 +16832,7 @@
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
     "version": "v17",
-    "lastModified": "2025-09-10",
+    "lastModified": "2026-04-14",
     "category": "serif"
   },
   {
@@ -17549,6 +17574,33 @@
     "version": "v15",
     "lastModified": "2025-09-16",
     "category": "sans-serif"
+  },
+  {
+    "family": "Saira Stencil",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v2",
+    "lastModified": "2026-04-02",
+    "category": "display"
   },
   {
     "family": "Saira Stencil One",
@@ -20791,9 +20843,9 @@
       "800italic",
       "900italic"
     ],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2025-09-16",
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v3",
+    "lastModified": "2026-04-02",
     "category": "sans-serif"
   },
   {
@@ -20816,9 +20868,9 @@
       "800italic",
       "900italic"
     ],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2025-09-16",
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v3",
+    "lastModified": "2026-04-02",
     "category": "sans-serif"
   },
   {
@@ -20841,9 +20893,9 @@
       "800italic",
       "900italic"
     ],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v2",
-    "lastModified": "2025-09-16",
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v3",
+    "lastModified": "2026-04-02",
     "category": "sans-serif"
   },
   {
