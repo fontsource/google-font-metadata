@@ -282,6 +282,18 @@
     },
     "original": "Copyright 2020 The Akshar Type Project Authors (https://github.com/tallchai/akshar-type)"
   },
+  "akt": {
+    "id": "akt",
+    "authors": {
+      "copyright": "Copyright 2024 The Akt Project Authors",
+      "website": "https://github.com/dimgrenev/akt"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2024 The Akt Project Authors (https://github.com/dimgrenev/akt)"
+  },
   "aladin": {
     "id": "aladin",
     "authors": {
@@ -1297,8 +1309,8 @@
       "website": "https://github.com/googlefonts/arimo, https://github.com/googlefonts/arimo"
     },
     "license": {
-      "type": "Apache License, Version 2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2020 The Arimo Project Authors (https://github.com/googlefonts/arimo) Arimo-Italic[wght].ttf: Copyright 2020 The Arimo Project Authors (https://github.com/googlefonts/arimo)"
   },
@@ -4463,6 +4475,18 @@
     },
     "original": "Copyright 2015 The Courier Prime Project Authors (https://github.com/quoteunquoteapps/CourierPrime). CourierPrime-Italic.ttf: Copyright 2015 The Courier Prime Project Authors (https://github.com/quoteunquoteapps/CourierPrime). CourierPrime-Bold.ttf: Copyright 2015 The Courier Prime Project Authors (https://github.com/quoteunquoteapps/CourierPrime). CourierPrime-BoldItalic.ttf: Copyright 2015 The Courier Prime Project Authors (https://github.com/quoteunquoteapps/CourierPrime)."
   },
+  "cousine": {
+    "id": "cousine",
+    "authors": {
+      "copyright": "Copyright 2026 The Cousine Project Authors Cousine-Italic.ttf",
+      "website": "https://github.com/googlefonts/cousine, https://github.com/googlefonts/cousine, https://github.com/googlefonts/cousine, https://github.com/googlefonts/cousine"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2026 The Cousine Project Authors (https://github.com/googlefonts/cousine) Cousine-Italic.ttf: Copyright 2026 The Cousine Project Authors (https://github.com/googlefonts/cousine) Cousine-Bold.ttf: Copyright 2026 The Cousine Project Authors (https://github.com/googlefonts/cousine) Cousine-BoldItalic.ttf: Copyright 2026 The Cousine Project Authors (https://github.com/googlefonts/cousine)"
+  },
   "coustard": {
     "id": "coustard",
     "authors": {
@@ -5636,6 +5660,18 @@
     },
     "original": "Copyright (c) 2011, Angelica Diaz Rivera (www.typereview.wordpress.com), with Reserved Font Name \"Esteban\""
   },
+  "estedad": {
+    "id": "estedad",
+    "authors": {
+      "copyright": "Copyright 2026 The Estedad Project Authors",
+      "website": "https://github.com/aminabedi68/Estedad"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2026 The Estedad Project Authors (https://github.com/aminabedi68/Estedad)"
+  },
   "estonia": {
     "id": "estonia",
     "authors": {
@@ -5953,17 +5989,29 @@
     },
     "original": "Copyright (c) 2011 by Ralph du Carrois, with Reserved Font Name 'Finger Paint'"
   },
-  "finlandica": {
-    "id": "finlandica",
+  "finlandica-headline": {
+    "id": "finlandica-headline",
     "authors": {
-      "copyright": "Copyright 2015 The Finlandica Project Authors Finlandica-Italic[wght].ttf",
+      "copyright": "Copyright 2015 The Finlandica Project Authors FinlandicaHeadline-Italic[wght].ttf",
       "website": "https://github.com/HelsinkiTypeStudio/Finlandica, https://github.com/HelsinkiTypeStudio/Finlandica"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Copyright 2015 The Finlandica Project Authors (https://github.com/HelsinkiTypeStudio/Finlandica) Finlandica-Italic[wght].ttf: Copyright 2015 The Finlandica Project Authors (https://github.com/HelsinkiTypeStudio/Finlandica)"
+    "original": "Copyright 2015 The Finlandica Project Authors (https://github.com/HelsinkiTypeStudio/Finlandica) FinlandicaHeadline-Italic[wght].ttf: Copyright 2015 The Finlandica Project Authors (https://github.com/HelsinkiTypeStudio/Finlandica)"
+  },
+  "finlandica-text": {
+    "id": "finlandica-text",
+    "authors": {
+      "copyright": "Copyright 2015 The Finlandica Project Authors FinlandicaText-Italic[wght].ttf",
+      "website": "https://github.com/HelsinkiTypeStudio/Finlandica, https://github.com/HelsinkiTypeStudio/Finlandica"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2015 The Finlandica Project Authors (https://github.com/HelsinkiTypeStudio/Finlandica) FinlandicaText-Italic[wght].ttf: Copyright 2015 The Finlandica Project Authors (https://github.com/HelsinkiTypeStudio/Finlandica)"
   },
   "fira-code": {
     "id": "fira-code",
@@ -6514,26 +6562,26 @@
   "geist": {
     "id": "geist",
     "authors": {
-      "copyright": "Copyright 2024 The Geist Project Authors",
-      "website": "https://github.com/vercel/geist-font.git"
+      "copyright": "Copyright 2024 The Geist Project Authors Geist-Italic[wght].ttf",
+      "website": "https://github.com/vercel/geist-font, https://github.com/vercel/geist-font"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git)"
+    "original": "Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font) Geist-Italic[wght].ttf: Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font)"
   },
   "geist-mono": {
     "id": "geist-mono",
     "authors": {
-      "copyright": "Copyright 2024 The Geist Project Authors",
-      "website": "https://github.com/vercel/geist-font.git"
+      "copyright": "Copyright 2024 The Geist Project Authors GeistMono-Italic[wght].ttf",
+      "website": "https://github.com/vercel/geist-font.git, https://github.com/vercel/geist-font.git"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git)"
+    "original": "Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git) GeistMono-Italic[wght].ttf: Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git)"
   },
   "gelasio": {
     "id": "gelasio",
@@ -7824,14 +7872,14 @@
   "idiqlat": {
     "id": "idiqlat",
     "authors": {
-      "copyright": "Copyright 2025, SIL Global with Reserved Font Names \"Idiqlat\" and \"SIL\". Original fonts copyright 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright 2018 The Crimson Pro Project Authors Idiqlat-Light.ttf",
+      "copyright": "Copyright 2025-2026, SIL Global with Reserved Font Names \"Idiqlat\" and \"SIL\". Original fonts copyright 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright 2018 The Crimson Pro Project Authors Idiqlat-Light.ttf",
       "website": "https://www.sil.org/, https://github.com/Fonthausen/CrimsonPro., https://www.sil.org/, https://github.com/Fonthausen/CrimsonPro., https://www.sil.org/, https://github.com/Fonthausen/CrimsonPro."
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Copyright (c) 2025, SIL Global (https://www.sil.org/), with Reserved Font Names \"Idiqlat\" and \"SIL\". Original fonts copyright (c) 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright (c) 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro). Idiqlat-Light.ttf: Copyright (c) 2025, SIL Global (https://www.sil.org/), with Reserved Font Names \"Idiqlat\" and \"SIL\". Original fonts copyright (c) 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright (c) 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro). Idiqlat-Regular.ttf: Copyright (c) 2025, SIL Global (https://www.sil.org/), with Reserved Font Names \"Idiqlat\" and \"SIL\". Original fonts copyright (c) 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright (c) 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro)."
+    "original": "Copyright (c) 2025-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Idiqlat\" and \"SIL\". Original fonts copyright (c) 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright (c) 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro). Idiqlat-Light.ttf: Copyright (c) 2025-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Idiqlat\" and \"SIL\". Original fonts copyright (c) 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright (c) 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro). Idiqlat-Regular.ttf: Copyright (c) 2025-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Idiqlat\" and \"SIL\". Original fonts copyright (c) 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright (c) 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro)."
   },
   "imbue": {
     "id": "imbue",
@@ -10324,6 +10372,18 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2016 The Rounded M+ Project Authors. MPLUSRounded1c-Light.ttf: Copyright 2016 The Rounded M+ Project Authors. MPLUSRounded1c-Regular.ttf: Copyright 2016 The Rounded M+ Project Authors. MPLUSRounded1c-Medium.ttf: Copyright 2016 The Rounded M+ Project Authors. MPLUSRounded1c-Bold.ttf: Copyright 2016 The Rounded M+ Project Authors. MPLUSRounded1c-ExtraBold.ttf: Copyright 2016 The Rounded M+ Project Authors. MPLUSRounded1c-Black.ttf: Copyright 2016 The Rounded M+ Project Authors."
+  },
+  "m-plus-u": {
+    "id": "m-plus-u",
+    "authors": {
+      "copyright": "Copyright 2025 The M+ FONTS Project Authors",
+      "website": "https://github.com/coz-m/MPLUS_FONTS"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2025 The M+ FONTS Project Authors (https://github.com/coz-m/MPLUS_FONTS)"
   },
   "ma-shan-zheng": {
     "id": "ma-shan-zheng",
@@ -17613,14 +17673,14 @@
   "ramsina": {
     "id": "ramsina",
     "authors": {
-      "copyright": "Original fonts copyright 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright 2018 The Crimson Pro Project Authors Copyright 2025, SIL Global with Reserved Font Names \"Ramsina\" and \"SIL\".",
+      "copyright": "Original fonts copyright 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright 2018 The Crimson Pro Project Authors Copyright 2025-2026, SIL Global with Reserved Font Names \"Ramsina\" and \"SIL\".",
       "website": "https://github.com/Fonthausen/CrimsonPro., https://www.sil.org/"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Original fonts copyright (c) 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright (c) 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro). Copyright (c) 2025, SIL Global (https://www.sil.org/), with Reserved Font Names \"Ramsina\" and \"SIL\"."
+    "original": "Original fonts copyright (c) 1997-2025, Sparksoft Systems, with Reserved Font Names \"Marcus\" and \"Nohadra\". Latin glyphs copyright (c) 2018 The Crimson Pro Project Authors (https://github.com/Fonthausen/CrimsonPro). Copyright (c) 2025-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Ramsina\" and \"SIL\"."
   },
   "ranchers": {
     "id": "ranchers",
@@ -18669,6 +18729,18 @@
     },
     "original": "Copyright 2024 The SN Pro Project Authors (https://github.com/supernotes/sn-pro) SNPro-Italic[wght].ttf: Copyright 2024 The SN Pro Project Authors (https://github.com/supernotes/sn-pro)"
   },
+  "stix-two-math": {
+    "id": "stix-two-math",
+    "authors": {
+      "copyright": "Copyright 2001-2021 The STIX Fonts Project Authors",
+      "website": "https://github.com/stipub/stixfonts"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2001-2021 The STIX Fonts Project Authors (https://github.com/stipub/stixfonts)"
+  },
   "stix-two-text": {
     "id": "stix-two-text",
     "authors": {
@@ -18800,18 +18872,6 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2020 The Saira Project Authors (https://github.com/Omnibus-Type/Saira) SairaStencil-Italic[wdth,wght].ttf: Copyright 2020 The Saira Project Authors (https://github.com/Omnibus-Type/Saira)"
-  },
-  "saira-stencil-one": {
-    "id": "saira-stencil-one",
-    "authors": {
-      "copyright": "Copyright 2019 The Saira Stencil Project Authors",
-      "website": "https://github.com/Omnibus-Type/Saira"
-    },
-    "license": {
-      "type": "SIL Open Font License, 1.1",
-      "url": "https://openfontlicense.org"
-    },
-    "original": "Copyright 2019 The Saira Stencil Project Authors (https://github.com/Omnibus-Type/Saira)"
   },
   "salsa": {
     "id": "salsa",
@@ -19017,14 +19077,14 @@
   "scheherazade-new": {
     "id": "scheherazade-new",
     "authors": {
-      "copyright": "Copyright 1994-2025, SIL Global with Reserved Font Names \"Scheherazade\" and \"SIL\". This Font Software is licensed under the SIL Open Font License, Version 1.1. ScheherazadeNew-Medium.ttf",
+      "copyright": "Copyright 1994-2026, SIL Global with Reserved Font Names \"Scheherazade\" and \"SIL\". This Font Software is licensed under the SIL Open Font License, Version 1.1. ScheherazadeNew-Medium.ttf",
       "website": "https://www.sil.org/, https://www.sil.org/, https://www.sil.org/, https://www.sil.org/"
     },
     "license": {
       "type": "SIL Open Font License, 1.1",
       "url": "https://openfontlicense.org"
     },
-    "original": "Copyright (c) 1994-2025, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1. ScheherazadeNew-Medium.ttf: Copyright (c) 1994-2025, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1. ScheherazadeNew-SemiBold.ttf: Copyright (c) 1994-2025, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1. ScheherazadeNew-Bold.ttf: Copyright (c) 1994-2025, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1."
+    "original": "Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1. ScheherazadeNew-Medium.ttf: Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1. ScheherazadeNew-SemiBold.ttf: Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1. ScheherazadeNew-Bold.ttf: Copyright (c) 1994-2026, SIL Global (https://www.sil.org/), with Reserved Font Names \"Scheherazade\" and \"SIL\".\n\nThis Font Software is licensed under the SIL Open Font License, Version 1.1."
   },
   "schibsted-grotesk": {
     "id": "schibsted-grotesk",
@@ -20287,6 +20347,18 @@
     },
     "original": "Copyright 2012 The Strait Project Authors (https://github.com/etunni/strait), with Reserved Font Name 'Strait'"
   },
+  "strichpunkt-sans": {
+    "id": "strichpunkt-sans",
+    "authors": {
+      "copyright": "Copyright 2026 The Strichpunkt Sans Project Authors",
+      "website": "https://github.com/strichpunkt-design/Strichpunkt_Sans"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2026 The Strichpunkt Sans Project Authors (https://github.com/strichpunkt-design/Strichpunkt_Sans)"
+  },
   "style-script": {
     "id": "style-script",
     "authors": {
@@ -20829,6 +20901,18 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright (c) 2012 Andhrapradesh Society for Knowledge Networks (fonts.siliconandhra.org). Copyright (c) 2011, Sergiy Tkachenko (www.4thfebruary.com.ua info@4thfebruary.com.ua), with Reserved Font Names 'Sansus', 'Webissimo'."
+  },
+  "tinos": {
+    "id": "tinos",
+    "authors": {
+      "copyright": "Copyright 2026 The Tinos Project Authors Tinos-Italic.ttf",
+      "website": "https://github.com/googlefonts/tinos, https://github.com/googlefonts/tinos, https://github.com/googlefonts/tinos, https://github.com/googlefonts/tinos"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2026 The Tinos Project Authors (https://github.com/googlefonts/tinos) Tinos-Italic.ttf: Copyright 2026 The Tinos Project Authors (https://github.com/googlefonts/tinos) Tinos-Bold.ttf: Copyright 2026 The Tinos Project Authors (https://github.com/googlefonts/tinos) Tinos-BoldItalic.ttf: Copyright 2026 The Tinos Project Authors (https://github.com/googlefonts/tinos)"
   },
   "tiny5": {
     "id": "tiny5",

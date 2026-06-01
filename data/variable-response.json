@@ -1171,14 +1171,6 @@
     }
   },
   {
-    "family": "Finlandica",
-    "id": "finlandica",
-    "axes": {
-      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
-      "wght": {"default": "400", "min": "400", "max": "700", "step": "1"}
-    }
-  },
-  {
     "family": "Fira Code",
     "id": "fira-code",
     "axes": {
@@ -1259,6 +1251,7 @@
     "family": "Geist",
     "id": "geist",
     "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
@@ -1266,6 +1259,7 @@
     "family": "Geist Mono",
     "id": "geist-mono",
     "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
