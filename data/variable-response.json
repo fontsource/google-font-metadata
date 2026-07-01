@@ -45,6 +45,13 @@
     }
   },
   {
+    "family": "Akt",
+    "id": "akt",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Alan Sans",
     "id": "alan-sans",
     "axes": {
@@ -1123,6 +1130,13 @@
     }
   },
   {
+    "family": "Estedad",
+    "id": "estedad",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Exo",
     "id": "exo",
     "axes": {
@@ -1168,6 +1182,22 @@
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Finlandica Headline",
+    "id": "finlandica-headline",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Finlandica Text",
+    "id": "finlandica-text",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
   {
@@ -1832,6 +1862,13 @@
     "axes": {
       "wdth": {"default": "100", "min": "100", "max": "125", "step": "0.1"},
       "wght": {"default": "400", "min": "100", "max": "700", "step": "1"}
+    }
+  },
+  {
+    "family": "M PLUS U",
+    "id": "m-plus-u",
+    "axes": {
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
     }
   },
   {
@@ -3360,6 +3397,15 @@
     }
   },
   {
+    "family": "Pliant",
+    "id": "pliant",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "100", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Plus Jakarta Sans",
     "id": "plus-jakarta-sans",
     "axes": {
@@ -3918,6 +3964,14 @@
     "id": "stick-no-bills",
     "axes": {
       "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
+    "family": "Strichpunkt Sans",
+    "id": "strichpunkt-sans",
+    "axes": {
+      "wdth": {"default": "100", "min": "100", "max": "200", "step": "0.1"},
+      "wght": {"default": "400", "min": "400", "max": "900", "step": "1"}
     }
   },
   {

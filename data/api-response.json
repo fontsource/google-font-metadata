@@ -75,8 +75,8 @@
     "family": "Acme",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v27",
-    "lastModified": "2025-09-16",
+    "version": "v29",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -362,8 +362,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v39",
-    "lastModified": "2025-09-08",
+    "version": "v41",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -389,8 +389,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v26",
-    "lastModified": "2025-09-05",
+    "version": "v28",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -420,8 +420,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v26",
-    "lastModified": "2025-09-10",
+    "version": "v28",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -451,8 +451,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v24",
-    "lastModified": "2025-09-16",
+    "version": "v26",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -523,6 +523,14 @@
     "version": "v21",
     "lastModified": "2025-09-08",
     "category": "serif"
+  },
+  {
+    "family": "Alien Block",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-06-08",
+    "category": "display"
   },
   {
     "family": "Alike",
@@ -882,8 +890,8 @@
       "800italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v24",
-    "lastModified": "2025-09-10",
+    "version": "v26",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -2600,8 +2608,8 @@
       "900italic"
     ],
     "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext", "vietnamese"],
-    "version": "v40",
-    "lastModified": "2025-09-05",
+    "version": "v42",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -3097,8 +3105,8 @@
     "family": "Caladea",
     "variants": ["regular", "italic", "700", "700italic"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v8",
-    "lastModified": "2025-09-11",
+    "version": "v10",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -3129,8 +3137,8 @@
     "family": "Cambo",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v19",
-    "lastModified": "2025-09-16",
+    "version": "v21",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -4124,8 +4132,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v30",
-    "lastModified": "2026-05-18",
+    "version": "v31",
+    "lastModified": "2026-06-30",
     "category": "monospace"
   },
   {
@@ -4696,8 +4704,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v32",
-    "lastModified": "2025-09-16",
+    "version": "v33",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -4975,8 +4983,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v11",
-    "lastModified": "2025-09-11",
+    "version": "v13",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -4993,8 +5001,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v12",
-    "lastModified": "2025-09-16",
+    "version": "v15",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -5029,8 +5037,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v11",
-    "lastModified": "2025-09-11",
+    "version": "v13",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -5047,8 +5055,8 @@
       "900"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v20",
-    "lastModified": "2025-09-08",
+    "version": "v23",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -6172,9 +6180,17 @@
       "symbols2",
       "vietnamese"
     ],
-    "version": "v5",
-    "lastModified": "2026-05-13",
+    "version": "v6",
+    "lastModified": "2026-06-08",
     "category": "monospace"
+  },
+  {
+    "family": "Geist Pixel",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2026-06-30",
+    "category": "display"
   },
   {
     "family": "Gelasio",
@@ -6224,8 +6240,8 @@
       "900italic"
     ],
     "subsets": ["cherokee", "latin", "latin-ext", "vietnamese"],
-    "version": "v16",
-    "lastModified": "2025-09-16",
+    "version": "v17",
+    "lastModified": "2026-06-29",
     "category": "sans-serif"
   },
   {
@@ -6502,8 +6518,8 @@
     "family": "Gochi Hand",
     "variants": ["regular"],
     "subsets": ["latin"],
-    "version": "v25",
-    "lastModified": "2025-09-10",
+    "version": "v27",
+    "lastModified": "2026-06-30",
     "category": "handwriting"
   },
   {
@@ -6888,9 +6904,9 @@
   {
     "family": "Gurajada",
     "variants": ["regular"],
-    "subsets": ["latin", "latin-ext", "telugu"],
-    "version": "v22",
-    "lastModified": "2025-06-25",
+    "subsets": ["latin", "telugu"],
+    "version": "v24",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -7653,8 +7669,8 @@
       "700italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v4",
-    "lastModified": "2025-09-10",
+    "version": "v5",
+    "lastModified": "2026-06-29",
     "category": "sans-serif"
   },
   {
@@ -8178,9 +8194,9 @@
   {
     "family": "Jomhuria",
     "variants": ["regular"],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v22",
-    "lastModified": "2025-06-02",
+    "subsets": ["arabic", "latin", "latin-ext"],
+    "version": "v23",
+    "lastModified": "2026-06-30",
     "category": "display"
   },
   {
@@ -8389,8 +8405,8 @@
     "family": "Kadwa",
     "variants": ["regular", "700"],
     "subsets": ["devanagari", "latin"],
-    "version": "v13",
-    "lastModified": "2025-09-10",
+    "version": "v15",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -10040,8 +10056,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v20",
-    "lastModified": "2026-01-07",
+    "version": "v22",
+    "lastModified": "2026-06-08",
     "category": "sans-serif"
   },
   {
@@ -10379,8 +10395,8 @@
     "family": "Material Symbols",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v70",
-    "lastModified": "2026-05-28",
+    "version": "v82",
+    "lastModified": "2026-06-30",
     "category": "monospace"
   },
   {
@@ -10887,6 +10903,14 @@
     "version": "v13",
     "lastModified": "2025-09-11",
     "category": "handwriting"
+  },
+  {
+    "family": "Montenegrin Gothic One",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-06-30",
+    "category": "serif"
   },
   {
     "family": "Montez",
@@ -14180,8 +14204,8 @@
     "family": "Ole",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v3",
-    "lastModified": "2025-05-30",
+    "version": "v6",
+    "lastModified": "2026-06-10",
     "category": "handwriting"
   },
   {
@@ -14737,8 +14761,8 @@
       "900italic"
     ],
     "subsets": ["latin", "latin-ext", "vietnamese"],
-    "version": "v36",
-    "lastModified": "2025-09-11",
+    "version": "v38",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -14796,8 +14820,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v40",
-    "lastModified": "2025-09-11",
+    "version": "v42",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -15843,6 +15867,40 @@
     "version": "v1",
     "lastModified": "2025-05-30",
     "category": "handwriting"
+  },
+  {
+    "family": "Pliant",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext"
+    ],
+    "version": "v1",
+    "lastModified": "2026-06-08",
+    "category": "sans-serif"
   },
   {
     "family": "Plus Jakarta Sans",
@@ -17605,8 +17663,8 @@
     "family": "Sahitya",
     "variants": ["regular", "700"],
     "subsets": ["devanagari", "latin"],
-    "version": "v20",
-    "lastModified": "2025-09-05",
+    "version": "v22",
+    "lastModified": "2026-06-30",
     "category": "serif"
   },
   {
@@ -17819,8 +17877,8 @@
     "family": "Sarala",
     "variants": ["regular", "700"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v14",
-    "lastModified": "2025-09-05",
+    "version": "v16",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -19354,8 +19412,8 @@
     "family": "Telex",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v18",
-    "lastModified": "2025-09-16",
+    "version": "v20",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -19452,8 +19510,8 @@
       "latin-ext",
       "vietnamese"
     ],
-    "version": "v7",
-    "lastModified": "2025-09-11",
+    "version": "v8",
+    "lastModified": "2026-06-17",
     "category": "sans-serif"
   },
   {
@@ -19525,40 +19583,40 @@
     "family": "Tiro Bangla",
     "variants": ["regular", "italic"],
     "subsets": ["bengali", "latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2025-05-30",
+    "version": "v8",
+    "lastModified": "2026-06-29",
     "category": "serif"
   },
   {
     "family": "Tiro Devanagari Hindi",
     "variants": ["regular", "italic"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v5",
-    "lastModified": "2025-05-30",
+    "version": "v7",
+    "lastModified": "2026-06-29",
     "category": "serif"
   },
   {
     "family": "Tiro Devanagari Marathi",
     "variants": ["regular", "italic"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v5",
-    "lastModified": "2025-05-30",
+    "version": "v7",
+    "lastModified": "2026-06-29",
     "category": "serif"
   },
   {
     "family": "Tiro Devanagari Sanskrit",
     "variants": ["regular", "italic"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v5",
-    "lastModified": "2025-05-30",
+    "version": "v7",
+    "lastModified": "2026-06-29",
     "category": "serif"
   },
   {
     "family": "Tiro Gurmukhi",
     "variants": ["regular", "italic"],
     "subsets": ["gurmukhi", "latin", "latin-ext"],
-    "version": "v6",
-    "lastModified": "2025-05-30",
+    "version": "v8",
+    "lastModified": "2026-06-29",
     "category": "serif"
   },
   {
@@ -20603,8 +20661,8 @@
       "symbols",
       "vietnamese"
     ],
-    "version": "v32",
-    "lastModified": "2025-09-16",
+    "version": "v34",
+    "lastModified": "2026-06-30",
     "category": "sans-serif"
   },
   {
@@ -20901,9 +20959,25 @@
     "family": "Yusei Magic",
     "variants": ["regular"],
     "subsets": ["japanese", "latin", "latin-ext"],
-    "version": "v16",
-    "lastModified": "2025-09-08",
+    "version": "v17",
+    "lastModified": "2026-06-29",
     "category": "sans-serif"
+  },
+  {
+    "family": "Yuyu",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2026-06-30",
+    "category": "handwriting"
+  },
+  {
+    "family": "Yuyu Short",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2026-06-30",
+    "category": "handwriting"
   },
   {
     "family": "ZCOOL KuaiLe",
