@@ -6701,6 +6701,18 @@
     },
     "original": "Copyright 2022 The Geom Project Authors (https://github.com/ThanosPoulakidas/Geom) Geom-Italic[wght].ttf: Copyright 2022 The Geom Project Authors (https://github.com/ThanosPoulakidas/Geom)"
   },
+  "geomini": {
+    "id": "geomini",
+    "authors": {
+      "copyright": "Copyright 2026 The Geomini Project Authors",
+      "website": "https://github.com/fontbob/geomini"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2026 The Geomini Project Authors (https://github.com/fontbob/geomini)"
+  },
   "georama": {
     "id": "georama",
     "authors": {
@@ -7531,6 +7543,18 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright (c) YoonDesign Inc. All Rights Reserved."
+  },
+  "hibur-mono": {
+    "id": "hibur-mono",
+    "authors": {
+      "copyright": "Copyright 2025-2026 The Hibur Mono Font Project Authors",
+      "website": "https://github.com/typehabesha/HiburMono."
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Copyright 2025-2026 The Hibur Mono Font Project Authors (https://github.com/typehabesha/HiburMono)."
   },
   "hina-mincho": {
     "id": "hina-mincho",

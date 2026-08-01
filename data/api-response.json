@@ -3642,8 +3642,8 @@
       "symbols2",
       "vietnamese"
     ],
-    "version": "v5",
-    "lastModified": "2026-03-11",
+    "version": "v6",
+    "lastModified": "2026-07-23",
     "category": "sans-serif"
   },
   {
@@ -3676,8 +3676,8 @@
       "symbols2",
       "vietnamese"
     ],
-    "version": "v2",
-    "lastModified": "2026-01-07",
+    "version": "v3",
+    "lastModified": "2026-07-23",
     "category": "serif"
   },
   {
@@ -6333,6 +6333,14 @@
     "category": "sans-serif"
   },
   {
+    "family": "Geomini",
+    "variants": ["200", "300", "regular", "500", "600", "700", "800"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-07-09",
+    "category": "sans-serif"
+  },
+  {
     "family": "Georama",
     "variants": [
       "100",
@@ -6577,8 +6585,8 @@
       "thai",
       "vietnamese"
     ],
-    "version": "v69",
-    "lastModified": "2026-05-21",
+    "version": "v70",
+    "lastModified": "2026-07-23",
     "category": "sans-serif"
   },
   {
@@ -6639,8 +6647,8 @@
       "tifinagh",
       "vietnamese"
     ],
-    "version": "v21",
-    "lastModified": "2026-05-21",
+    "version": "v22",
+    "lastModified": "2026-07-30",
     "category": "sans-serif"
   },
   {
@@ -7171,6 +7179,14 @@
     "version": "v19",
     "lastModified": "2025-09-05",
     "category": "handwriting"
+  },
+  {
+    "family": "Hibur Mono",
+    "variants": ["regular"],
+    "subsets": ["ethiopic", "latin", "latin-ext"],
+    "version": "v1",
+    "lastModified": "2026-07-09",
+    "category": "monospace"
   },
   {
     "family": "Hina Mincho",
@@ -10395,8 +10411,8 @@
     "family": "Material Symbols",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v82",
-    "lastModified": "2026-06-30",
+    "version": "v91",
+    "lastModified": "2026-07-30",
     "category": "monospace"
   },
   {
@@ -13802,8 +13818,8 @@
     "family": "Noto Serif Old Uyghur",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "old-uyghur"],
-    "version": "v4",
-    "lastModified": "2024-09-23",
+    "version": "v5",
+    "lastModified": "2026-07-09",
     "category": "serif"
   },
   {
