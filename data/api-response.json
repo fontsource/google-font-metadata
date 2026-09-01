@@ -273,9 +273,9 @@
   {
     "family": "Alan Sans",
     "variants": ["300", "regular", "500", "600", "700", "800", "900"],
-    "subsets": ["latin", "latin-ext"],
-    "version": "v5",
-    "lastModified": "2025-11-20",
+    "subsets": ["arabic", "latin", "latin-ext"],
+    "version": "v7",
+    "lastModified": "2026-08-25",
     "category": "sans-serif"
   },
   {
@@ -1369,6 +1369,33 @@
     "subsets": ["latin", "latin-ext", "vietnamese"],
     "version": "v18",
     "lastModified": "2025-09-02",
+    "category": "sans-serif"
+  },
+  {
+    "family": "Asap Sharp",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v2",
+    "lastModified": "2026-08-25",
     "category": "sans-serif"
   },
   {
@@ -3013,6 +3040,14 @@
     "version": "v1",
     "lastModified": "2025-05-30",
     "category": "sans-serif"
+  },
+  {
+    "family": "Caacupe One",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-08-25",
+    "category": "display"
   },
   {
     "family": "Cabin",
@@ -7184,8 +7219,8 @@
     "family": "Hibur Mono",
     "variants": ["regular"],
     "subsets": ["ethiopic", "latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2026-07-09",
+    "version": "v3",
+    "lastModified": "2026-08-25",
     "category": "monospace"
   },
   {
@@ -8590,16 +8625,16 @@
     "family": "Karla Tamil Inclined",
     "variants": ["regular", "700"],
     "subsets": ["tamil"],
-    "version": "v2",
-    "lastModified": "2024-10-29",
+    "version": "v3",
+    "lastModified": "2026-08-10",
     "category": "sans-serif"
   },
   {
     "family": "Karla Tamil Upright",
     "variants": ["regular", "700"],
     "subsets": ["tamil"],
-    "version": "v2",
-    "lastModified": "2024-10-29",
+    "version": "v3",
+    "lastModified": "2026-08-10",
     "category": "sans-serif"
   },
   {
@@ -9007,8 +9042,8 @@
     "family": "LINE Seed JP",
     "variants": ["100", "regular", "700", "800"],
     "subsets": ["cyrillic", "greek-ext", "japanese", "latin", "latin-ext"],
-    "version": "v3",
-    "lastModified": "2026-03-11",
+    "version": "v5",
+    "lastModified": "2026-08-25",
     "category": "sans-serif"
   },
   {
@@ -10098,8 +10133,8 @@
     "family": "Ma Shan Zheng",
     "variants": ["regular"],
     "subsets": ["chinese-simplified", "latin"],
-    "version": "v17",
-    "lastModified": "2026-02-17",
+    "version": "v18",
+    "lastModified": "2026-08-25",
     "category": "handwriting"
   },
   {
@@ -10411,8 +10446,8 @@
     "family": "Material Symbols",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v91",
-    "lastModified": "2026-07-30",
+    "version": "v95",
+    "lastModified": "2026-08-25",
     "category": "monospace"
   },
   {
@@ -11215,8 +11250,8 @@
       "latin",
       "latin-ext"
     ],
-    "version": "v17",
-    "lastModified": "2025-09-08",
+    "version": "v18",
+    "lastModified": "2026-08-25",
     "category": "sans-serif"
   },
   {
@@ -11570,8 +11605,8 @@
     "family": "Noto Color Emoji",
     "variants": ["regular"],
     "subsets": ["emoji"],
-    "version": "v39",
-    "lastModified": "2026-02-17",
+    "version": "v40",
+    "lastModified": "2026-08-10",
     "category": "sans-serif"
   },
   {
@@ -11774,8 +11809,8 @@
     "family": "Noto Sans Batak",
     "variants": ["regular"],
     "subsets": ["batak", "latin", "latin-ext"],
-    "version": "v23",
-    "lastModified": "2025-08-26",
+    "version": "v24",
+    "lastModified": "2026-08-25",
     "category": "sans-serif"
   },
   {
@@ -12602,8 +12637,8 @@
     "family": "Noto Sans Miao",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "miao"],
-    "version": "v19",
-    "lastModified": "2026-01-20",
+    "version": "v20",
+    "lastModified": "2026-08-25",
     "category": "sans-serif"
   },
   {
@@ -14253,9 +14288,17 @@
       "800",
       "900"
     ],
-    "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
-    "version": "v9",
-    "lastModified": "2025-09-10",
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "latin",
+      "latin-ext",
+      "math",
+      "symbols",
+      "vietnamese"
+    ],
+    "version": "v11",
+    "lastModified": "2026-08-25",
     "category": "sans-serif"
   },
   {
@@ -16302,8 +16345,8 @@
     "family": "Qahiri",
     "variants": ["regular"],
     "subsets": ["arabic", "latin"],
-    "version": "v11",
-    "lastModified": "2025-09-10",
+    "version": "v13",
+    "lastModified": "2026-08-25",
     "category": "sans-serif"
   },
   {
@@ -17958,8 +18001,8 @@
     "family": "Sawarabi Gothic",
     "variants": ["regular"],
     "subsets": ["cyrillic", "japanese", "latin", "latin-ext", "vietnamese"],
-    "version": "v16",
-    "lastModified": "2025-06-25",
+    "version": "v17",
+    "lastModified": "2026-08-25",
     "category": "sans-serif"
   },
   {
@@ -18040,6 +18083,29 @@
     "version": "v15",
     "lastModified": "2025-09-10",
     "category": "serif"
+  },
+  {
+    "family": "Scoutie Sans",
+    "variants": [
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic"
+    ],
+    "subsets": ["latin", "latin-ext", "vietnamese"],
+    "version": "v1",
+    "lastModified": "2026-08-25",
+    "category": "sans-serif"
   },
   {
     "family": "Seaweed Script",
@@ -18337,9 +18403,9 @@
   {
     "family": "Single Day",
     "variants": ["regular"],
-    "subsets": ["korean"],
-    "version": "v19",
-    "lastModified": "2025-09-08",
+    "subsets": ["korean", "latin"],
+    "version": "v20",
+    "lastModified": "2026-08-10",
     "category": "display"
   },
   {
@@ -18656,9 +18722,9 @@
   {
     "family": "Song Myung",
     "variants": ["regular"],
-    "subsets": ["korean"],
-    "version": "v22",
-    "lastModified": "2025-09-08",
+    "subsets": ["korean", "latin"],
+    "version": "v23",
+    "lastModified": "2026-08-10",
     "category": "serif"
   },
   {
@@ -19142,9 +19208,9 @@
   {
     "family": "Stylish",
     "variants": ["regular"],
-    "subsets": ["korean"],
-    "version": "v25",
-    "lastModified": "2025-06-25",
+    "subsets": ["korean", "latin"],
+    "version": "v26",
+    "lastModified": "2026-08-10",
     "category": "sans-serif"
   },
   {
@@ -19182,9 +19248,9 @@
   {
     "family": "Sunflower",
     "variants": ["300", "500", "700"],
-    "subsets": ["korean"],
-    "version": "v18",
-    "lastModified": "2025-09-16",
+    "subsets": ["korean", "latin"],
+    "version": "v19",
+    "lastModified": "2026-08-10",
     "category": "sans-serif"
   },
   {
@@ -20148,6 +20214,33 @@
     "category": "monospace"
   },
   {
+    "family": "Valley Sans",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-08-25",
+    "category": "sans-serif"
+  },
+  {
     "family": "Vampiro One",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -20983,16 +21076,16 @@
     "family": "Yuyu",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2026-06-30",
+    "version": "v2",
+    "lastModified": "2026-08-25",
     "category": "handwriting"
   },
   {
     "family": "Yuyu Short",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
-    "version": "v1",
-    "lastModified": "2026-06-30",
+    "version": "v2",
+    "lastModified": "2026-08-25",
     "category": "handwriting"
   },
   {

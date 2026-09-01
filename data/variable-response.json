@@ -303,6 +303,15 @@
     }
   },
   {
+    "family": "Asap Sharp",
+    "id": "asap-sharp",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wdth": {"default": "100", "min": "75", "max": "125", "step": "0.1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
     "family": "Assistant",
     "id": "assistant",
     "axes": {
@@ -1294,6 +1303,11 @@
     }
   },
   {
+    "family": "Geist Pixel",
+    "id": "geist-pixel",
+    "axes": {"ELSH": {"default": "0", "min": "0", "max": "100", "step": "0.1"}}
+  },
+  {
     "family": "Gelasio",
     "id": "gelasio",
     "axes": {
@@ -1332,6 +1346,13 @@
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "300", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Geomini",
+    "id": "geomini",
+    "axes": {
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
     }
   },
   {
@@ -3762,6 +3783,14 @@
     }
   },
   {
+    "family": "Scoutie Sans",
+    "id": "scoutie-sans",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "200", "max": "800", "step": "1"}
+    }
+  },
+  {
     "family": "Sen",
     "id": "sen",
     "axes": {
@@ -4114,6 +4143,14 @@
   {
     "family": "Urbanist",
     "id": "urbanist",
+    "axes": {
+      "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
+      "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
+    }
+  },
+  {
+    "family": "Valley Sans",
+    "id": "valley-sans",
     "axes": {
       "ital": {"default": "0", "min": "0", "max": "1", "step": "1"},
       "wght": {"default": "400", "min": "100", "max": "900", "step": "1"}
