@@ -6,6 +6,7 @@ import { describe, expect, it, vi } from 'vitest';
 import type { FontObjectV2 } from '../src';
 import { fetchAllCSS, parsev2, processCSS } from '../src/api-parser-v2';
 import * as data from '../src/data';
+import { validate } from '../src/validate';
 import APIResponse from './fixtures/api-response.json';
 import APIv2 from './fixtures/google-fonts-v2.json';
 import { apiParseV2Handlers, setupAPIServer } from './mocks/index';
@@ -44,6 +45,37 @@ describe('API Parser v2', () => {
 	});
 
 	describe('Process CSS', () => {
+		it('Preserves unrestricted fonts without inventing Latin coverage', () => {
+			const font = {
+				family: 'Noto Sans Math',
+				lastModified: '2026-05-05',
+				version: 'v19',
+				category: 'sans-serif',
+				variants: ['regular'],
+				subsets: ['latin'],
+			};
+			const result = processCSS(
+				[
+					`@font-face {
+  font-family: 'Noto Sans Math';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notosansmath/v19/7Aump_cpkSecTWaHRlH2hyV5UHkD.woff2) format('woff2');
+}`,
+					`@font-face {
+  font-family: 'Noto Sans Math';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notosansmath/v19/7Aump_cpkSecTWaHRlH2hyV5UHkF-Vs48Q.woff) format('woff');
+}`,
+					'',
+				],
+				font,
+			);
+			validate('v2', result);
+			expect(result).toMatchSnapshot();
+		});
+
 		it('Returns valid font object', async () => {
 			for (const font of APIResponse) {
 				const css = await fetchAllCSS(font);
