@@ -2,7 +2,7 @@ import stringify from 'json-stringify-pretty-compact';
 import colors from 'picocolors';
 import { type ZodError, z } from 'zod';
 
-import type { FontObject, FontObjectV2, FontObjectVariable } from './types';
+import type { FontObject, FontObjectVariable } from './types';
 import { isAxesKey } from './types';
 
 type Version = 'v1' | 'v2' | 'variable';
@@ -66,6 +66,7 @@ const fontObjectV2Schema = z
 		subsets: z.array(z.string().min(1)).min(1),
 		weights: z.array(z.number().int()).min(1),
 		styles: z.array(z.string().min(1)).min(1),
+		// Empty when Google serves unrestricted faces without unicode-range.
 		unicodeRange: z.record(z.string().min(1)),
 		variants: fontVariantsSchema,
 		defSubset: z.string().min(1),
@@ -190,13 +191,6 @@ const fontObjectValidate = (
 					);
 				}
 			}
-		}
-
-		// V2 has additional unicodeRange records
-		if (version === 'v2') {
-			const dataId2 = dataId as unknown as FontObjectV2; // Type assertion as TS doesn't know the connection between version and data
-			const unicodeRangeKeys = Object.keys(dataId2.unicodeRange);
-			checkKeys(dataId, unicodeRangeKeys, 'unicodeRange', version);
 		}
 	}
 };

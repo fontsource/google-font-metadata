@@ -250,16 +250,12 @@ describe('Validate', () => {
 				}).toThrow('Invalid url');
 			});
 
-			it('Catches missing unicode-range', () => {
+			it('Catches invalid unicode-range records', () => {
 				const unicodeObj = clone(validV2Obj);
 				unicodeObj.abel.unicodeRange = 'test';
 				expect(() => {
 					validate('v2', unicodeObj);
 				}).toThrow('Expected object, received string');
-				unicodeObj.abel.unicodeRange = {};
-				expect(() => {
-					validate('v2', unicodeObj);
-				}).toThrow('No unicodeRange variants found for Abel');
 			});
 		});
 
