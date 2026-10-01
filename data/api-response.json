@@ -232,8 +232,8 @@
     "family": "Akshar",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["devanagari", "latin", "latin-ext"],
-    "version": "v17",
-    "lastModified": "2025-09-08",
+    "version": "v19",
+    "lastModified": "2026-09-29",
     "category": "sans-serif"
   },
   {
@@ -3816,6 +3816,33 @@
     "category": "display"
   },
   {
+    "family": "Clarity City",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900",
+      "100italic",
+      "200italic",
+      "300italic",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic",
+      "800italic",
+      "900italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-09-29",
+    "category": "sans-serif"
+  },
+  {
     "family": "Clicker Script",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext"],
@@ -6653,8 +6680,8 @@
       "syriac",
       "vietnamese"
     ],
-    "version": "v17",
-    "lastModified": "2026-04-14",
+    "version": "v21",
+    "lastModified": "2026-09-29",
     "category": "monospace"
   },
   {
@@ -7143,16 +7170,16 @@
     "family": "Hedvig Letters Sans",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v2",
-    "lastModified": "2025-05-30",
+    "version": "v4",
+    "lastModified": "2026-09-29",
     "category": "sans-serif"
   },
   {
     "family": "Hedvig Letters Serif",
     "variants": ["regular"],
     "subsets": ["latin", "latin-ext", "math", "symbols"],
-    "version": "v4",
-    "lastModified": "2025-09-11",
+    "version": "v6",
+    "lastModified": "2026-09-29",
     "category": "serif"
   },
   {
@@ -7985,6 +8012,14 @@
     "version": "v8",
     "lastModified": "2025-09-11",
     "category": "handwriting"
+  },
+  {
+    "family": "Isometra",
+    "variants": ["regular"],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-09-29",
+    "category": "serif"
   },
   {
     "family": "Istok Web",
@@ -8920,6 +8955,24 @@
     "category": "serif"
   },
   {
+    "family": "Kripa",
+    "variants": [
+      "100",
+      "200",
+      "300",
+      "regular",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+    ],
+    "subsets": ["devanagari", "latin", "latin-ext", "vietnamese"],
+    "version": "v2",
+    "lastModified": "2026-09-29",
+    "category": "sans-serif"
+  },
+  {
     "family": "Kristi",
     "variants": ["regular"],
     "subsets": ["latin"],
@@ -9596,6 +9649,23 @@
     "subsets": ["latin", "latin-ext", "vietnamese"],
     "version": "v9",
     "lastModified": "2025-09-16",
+    "category": "serif"
+  },
+  {
+    "family": "Libre Caslon Condensed",
+    "variants": [
+      "regular",
+      "500",
+      "600",
+      "700",
+      "italic",
+      "500italic",
+      "600italic",
+      "700italic"
+    ],
+    "subsets": ["latin", "latin-ext"],
+    "version": "v2",
+    "lastModified": "2026-09-29",
     "category": "serif"
   },
   {
@@ -10446,8 +10516,8 @@
     "family": "Material Symbols",
     "variants": ["100", "200", "300", "regular", "500", "600", "700"],
     "subsets": ["latin"],
-    "version": "v95",
-    "lastModified": "2026-08-25",
+    "version": "v101",
+    "lastModified": "2026-09-22",
     "category": "monospace"
   },
   {
@@ -11605,16 +11675,16 @@
     "family": "Noto Color Emoji",
     "variants": ["regular"],
     "subsets": ["emoji"],
-    "version": "v40",
-    "lastModified": "2026-08-10",
+    "version": "v47",
+    "lastModified": "2026-09-16",
     "category": "sans-serif"
   },
   {
     "family": "Noto Emoji",
     "variants": ["300", "regular", "500", "600", "700"],
     "subsets": ["emoji"],
-    "version": "v62",
-    "lastModified": "2025-11-26",
+    "version": "v65",
+    "lastModified": "2026-09-17",
     "category": "sans-serif"
   },
   {
@@ -14020,8 +14090,8 @@
     "family": "Noto Serif Toto",
     "variants": ["regular", "500", "600", "700"],
     "subsets": ["latin", "latin-ext", "toto"],
-    "version": "v7",
-    "lastModified": "2025-09-16",
+    "version": "v9",
+    "lastModified": "2026-09-29",
     "category": "serif"
   },
   {

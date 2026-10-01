@@ -41,7 +41,8 @@
     "family": "Akshar",
     "id": "akshar",
     "axes": {
-      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"}
+      "wght": {"default": "400", "min": "300", "max": "700", "step": "1"},
+      "CTRS": {"default": "0", "min": "0", "max": "100", "step": "1"}
     }
   },
   {
