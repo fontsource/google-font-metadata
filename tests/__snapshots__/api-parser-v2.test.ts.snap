@@ -1,5 +1,40 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`API Parser v2 > Process CSS > Preserves unrestricted fonts without inventing Latin coverage 1`] = `
+{
+  "noto-sans-math": {
+    "category": "sans-serif",
+    "defSubset": "latin",
+    "family": "Noto Sans Math",
+    "id": "noto-sans-math",
+    "lastModified": "2026-05-05",
+    "styles": [
+      "normal",
+    ],
+    "subsets": [
+      "latin",
+    ],
+    "unicodeRange": {},
+    "variants": {
+      "400": {
+        "normal": {
+          "latin": {
+            "url": {
+              "woff": "https://fonts.gstatic.com/s/notosansmath/v19/7Aump_cpkSecTWaHRlH2hyV5UHkF-Vs48Q.woff",
+              "woff2": "https://fonts.gstatic.com/s/notosansmath/v19/7Aump_cpkSecTWaHRlH2hyV5UHkD.woff2",
+            },
+          },
+        },
+      },
+    },
+    "version": "v19",
+    "weights": [
+      400,
+    ],
+  },
+}
+`;
+
 exports[`API Parser v2 > Process CSS > Returns valid font object 1`] = `
 {
   "abel": {
