@@ -3658,6 +3658,28 @@
     },
     "original": "Copyright (c) 2011 by vernon adams. All rights reserved."
   },
+  "cascadia-code": {
+    "id": "cascadia-code",
+    "authors": {
+      "copyright": "© 2021 Microsoft Corporation. All Rights Reserved. CascadiaCode-Italic[wght].ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2021 Microsoft Corporation. All Rights Reserved. CascadiaCode-Italic[wght].ttf: © 2021 Microsoft Corporation. All Rights Reserved."
+  },
+  "cascadia-mono": {
+    "id": "cascadia-mono",
+    "authors": {
+      "copyright": "© 2021 Microsoft Corporation. All Rights Reserved. CascadiaMono-Italic[wght].ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2021 Microsoft Corporation. All Rights Reserved. CascadiaMono-Italic[wght].ttf: © 2021 Microsoft Corporation. All Rights Reserved."
+  },
   "castoro": {
     "id": "castoro",
     "authors": {
@@ -4653,6 +4675,17 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2020 The Cuprum Project Authors (https://github.com/alexeiva/cuprum), with Reserved Font Name \"Cuprum\". Cuprum-Italic[wght].ttf: Copyright 2020 The Cuprum Project Authors (https://github.com/alexeiva/cuprum), with Reserved Font Name \"Cuprum\"."
+  },
+  "cute-font": {
+    "id": "cute-font",
+    "authors": {
+      "copyright": "COPYRIGHT 2004-2017 by TypoDesign Lab. Inc. All rights reserved. Font designed by TypoDesign Lab. Inc."
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "COPYRIGHT  2004-2017 by TypoDesign Lab. Inc. All rights reserved. Font designed by TypoDesign Lab. Inc."
   },
   "cutive": {
     "id": "cutive",
@@ -6072,6 +6105,50 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2014-2020 The Fira Code Project Authors (https://github.com/tonsky/FiraCode)"
+  },
+  "fira-mono": {
+    "id": "fira-mono",
+    "authors": {
+      "copyright": "Digitized data copyright 2012-2015, The Mozilla Foundation and Telefonica S.A. FiraMono-Medium.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Digitized data copyright  2012-2015, The Mozilla Foundation and Telefonica S.A. FiraMono-Medium.ttf: Digitized data copyright  2012-2015, The Mozilla Foundation and Telefonica S.A. FiraMono-Bold.ttf: Digitized data copyright  2012-2015, The Mozilla Foundation and Telefonica S.A."
+  },
+  "fira-sans": {
+    "id": "fira-sans",
+    "authors": {
+      "copyright": "Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-ThinItalic.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-ThinItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-ExtraLight.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-ExtraLightItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-Light.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-LightItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-Regular.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-Italic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-Medium.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-MediumItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-SemiBold.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-SemiBoldItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-Bold.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-BoldItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-ExtraBold.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-ExtraBoldItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-Black.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSans-BlackItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A."
+  },
+  "fira-sans-condensed": {
+    "id": "fira-sans-condensed",
+    "authors": {
+      "copyright": "Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-ThinItalic.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-ThinItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-ExtraLight.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-ExtraLightItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-Light.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-LightItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-Regular.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-Italic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-Medium.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-MediumItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-SemiBold.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-SemiBoldItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-Bold.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-BoldItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-ExtraBold.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-ExtraBoldItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-Black.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansCondensed-BlackItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A."
+  },
+  "fira-sans-extra-condensed": {
+    "id": "fira-sans-extra-condensed",
+    "authors": {
+      "copyright": "Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-ThinItalic.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-ThinItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-ExtraLight.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-ExtraLightItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-Light.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-LightItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-Regular.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-Italic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-Medium.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-MediumItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-SemiBold.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-SemiBoldItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-Bold.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-BoldItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-ExtraBold.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-ExtraBoldItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-Black.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A. FiraSansExtraCondensed-BlackItalic.ttf: Digitized data copyright 2012-2016, The Mozilla Foundation and Telefonica S.A."
   },
   "fjalla-one": {
     "id": "fjalla-one",
@@ -7904,6 +7981,116 @@
     },
     "original": "Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-ThinItalic.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-ExtraLight.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-ExtraLightItalic.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-Light.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-LightItalic.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-Regular.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-Italic.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-Medium.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-MediumItalic.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-SemiBold.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-SemiBoldItalic.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-Bold.ttf: Copyright 2020 IBM Corp. All rights reserved. IBMPlexSerif-BoldItalic.ttf: Copyright 2020 IBM Corp. All rights reserved."
   },
+  "im-fell-dw-pica": {
+    "id": "im-fell-dw-pica",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL DW Pica Roman IMFePIit28P.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL DW Pica Roman IMFePIit28P.ttf: © 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL DW Pica Italic"
+  },
+  "im-fell-dw-pica-sc": {
+    "id": "im-fell-dw-pica-sc",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL DW Pica SC"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL DW Pica SC"
+  },
+  "im-fell-double-pica": {
+    "id": "im-fell-double-pica",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL Double Pica Roman IMFeDPit28P.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL Double Pica Roman IMFeDPit28P.ttf: © 2007 Igino Marini (www.iginomarini.com) with reserved name IM FELL Double Pica Italic"
+  },
+  "im-fell-double-pica-sc": {
+    "id": "im-fell-double-pica-sc",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL Double Pica SC"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL Double Pica SC"
+  },
+  "im-fell-english": {
+    "id": "im-fell-english",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL English Roman IMFeENit28P.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL English Roman IMFeENit28P.ttf: © 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL English Italic"
+  },
+  "im-fell-english-sc": {
+    "id": "im-fell-english-sc",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL English SC"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL English SC"
+  },
+  "im-fell-french-canon": {
+    "id": "im-fell-french-canon",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL French Canon Roman IMFeFCit28P.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL French Canon Roman IMFeFCit28P.ttf: © 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL French Canon Italic"
+  },
+  "im-fell-french-canon-sc": {
+    "id": "im-fell-french-canon-sc",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL French Canon SC"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL French Canon SC"
+  },
+  "im-fell-great-primer": {
+    "id": "im-fell-great-primer",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL Great Primer Roman IMFeGPit28P.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL Great Primer Roman IMFeGPit28P.ttf: © 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL Great Primer Italic"
+  },
+  "im-fell-great-primer-sc": {
+    "id": "im-fell-great-primer-sc",
+    "authors": {
+      "copyright": "© 2007 Igino Marini www.iginomarini.com With Reserved Font Name IM FELL Great Primer SC"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL Great Primer SC"
+  },
   "iansui": {
     "id": "iansui",
     "authors": {
@@ -9474,6 +9661,15 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2013 The Kurale Project Authors (edu@tipo.net.ar)"
+  },
+  "line-seed-jp": {
+    "id": "line-seed-jp",
+    "authors": {"copyright": "© LY Corporation LINESeedJP-Regular.ttf"},
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© LY Corporation LINESeedJP-Regular.ttf: © LY Corporation LINESeedJP-Bold.ttf: © LY Corporation LINESeedJP-ExtraBold.ttf: © LY Corporation"
   },
   "lxgw-marker-gothic": {
     "id": "lxgw-marker-gothic",
@@ -11220,6 +11416,18 @@
     },
     "original": "Copyright 2015 The Mina Project Authors, with Reserved Font Name 'Exo' Mina-Bold.ttf: Copyright 2015 The Mina Project Authors, with Reserved Font Name 'Exo'"
   },
+  "mingzat": {
+    "id": "mingzat",
+    "authors": {
+      "copyright": "Lepcha glyph design copyright 2001, GlavyFonts and copyright 2006 Athinkra, LLC. OpenType code copyright 2010-2026, SIL Global Latin glyph design copyright 1994-2026, SIL Global",
+      "website": "https://www.sil.org/., https://www.sil.org/."
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Lepcha glyph design copyright (c) 2001, GlavyFonts and copyright (c) 2006 Athinkra, LLC. OpenType code copyright (c) 2010-2026, SIL Global (https://www.sil.org/). Latin glyph design copyright (c) 1994-2026, SIL Global (https://www.sil.org/)."
+  },
   "miniver": {
     "id": "miniver",
     "authors": {
@@ -12013,6 +12221,19 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright © 2010 NHN Corporation. All rights reserved. Font designed by Sandoll Communications Inc."
+  },
+  "narnoor": {
+    "id": "narnoor",
+    "authors": {
+      "copyright": "Original font copyright 2014-2017 CDAST, University of Hyderabad, Hyderabad and modifications copyright 2015-2023 SIL International glyphs copyright 2010, 2012, 2014, 2021 Adobe Systems with Reserved Font Name 'Source'. Narnoor-Medium.ttf",
+      "website": "https://www.sil.org/.\nLatin, Incorporated\nhttp://www.adobe.com/, https://www.sil.org/.\nLatin, Incorporated\nhttp://www.adobe.com/, https://www.sil.org/.\nLatin, Incorporated\nhttp://www.adobe.com/, https://www.sil.org/.\nLatin, Incorporated\nhttp://www.adobe.com/, https://www.sil.org/.\nLatin, Incorporated\nhttp://www.adobe.com/",
+      "email": "cdast@uohyd.ernet.in.\nAdditions, cdast@uohyd.ernet.in.\nAdditions, cdast@uohyd.ernet.in.\nAdditions, cdast@uohyd.ernet.in.\nAdditions, cdast@uohyd.ernet.in.\nAdditions"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "Original font copyright (c) 2014-2017 CDAST, University of Hyderabad, Hyderabad (cdast@uohyd.ernet.in).\nAdditions and modifications copyright (c) 2015-2023 SIL International (https://www.sil.org/).\nLatin glyphs copyright (c) 2010, 2012, 2014, 2021 Adobe Systems Incorporated\n(http://www.adobe.com/), with Reserved Font Name 'Source'. Narnoor-Medium.ttf: Original font copyright (c) 2014-2017 CDAST, University of Hyderabad, Hyderabad (cdast@uohyd.ernet.in).\nAdditions and modifications copyright (c) 2015-2023 SIL International (https://www.sil.org/).\nLatin glyphs copyright (c) 2010, 2012, 2014, 2021 Adobe Systems Incorporated\n(http://www.adobe.com/), with Reserved Font Name 'Source'. Narnoor-SemiBold.ttf: Original font copyright (c) 2014-2017 CDAST, University of Hyderabad, Hyderabad (cdast@uohyd.ernet.in).\nAdditions and modifications copyright (c) 2015-2023 SIL International (https://www.sil.org/).\nLatin glyphs copyright (c) 2010, 2012, 2014, 2021 Adobe Systems Incorporated\n(http://www.adobe.com/), with Reserved Font Name 'Source'. Narnoor-Bold.ttf: Original font copyright (c) 2014-2017 CDAST, University of Hyderabad, Hyderabad (cdast@uohyd.ernet.in).\nAdditions and modifications copyright (c) 2015-2023 SIL International (https://www.sil.org/).\nLatin glyphs copyright (c) 2010, 2012, 2014, 2021 Adobe Systems Incorporated\n(http://www.adobe.com/), with Reserved Font Name 'Source'. Narnoor-ExtraBold.ttf: Original font copyright (c) 2014-2017 CDAST, University of Hyderabad, Hyderabad (cdast@uohyd.ernet.in).\nAdditions and modifications copyright (c) 2015-2023 SIL International (https://www.sil.org/).\nLatin glyphs copyright (c) 2010, 2012, 2014, 2021 Adobe Systems Incorporated\n(http://www.adobe.com/), with Reserved Font Name 'Source'."
   },
   "nata-sans": {
     "id": "nata-sans",
@@ -12846,6 +13067,18 @@
     },
     "original": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/gurmukhi)"
   },
+  "noto-sans-hong-kong": {
+    "id": "noto-sans-hong-kong",
+    "authors": {
+      "copyright": "2014-2021 Adobe with Reserved Font Name 'Source'.",
+      "website": "http://www.adobe.com/"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+  },
   "noto-sans-hanifi-rohingya": {
     "id": "noto-sans-hanifi-rohingya",
     "authors": {
@@ -12942,6 +13175,18 @@
     },
     "original": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/inscriptional-parthian)"
   },
+  "noto-sans-japanese": {
+    "id": "noto-sans-japanese",
+    "authors": {
+      "copyright": "2014-2021 Adobe with Reserved Font Name 'Source'.",
+      "website": "http://www.adobe.com/"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+  },
   "noto-sans-javanese": {
     "id": "noto-sans-javanese",
     "authors": {
@@ -12953,6 +13198,18 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/javanese)"
+  },
+  "noto-sans-korean": {
+    "id": "noto-sans-korean",
+    "authors": {
+      "copyright": "2014-2021 Adobe with Reserved Font Name 'Source'.",
+      "website": "http://www.adobe.com/"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
   },
   "noto-sans-kaithi": {
     "id": "noto-sans-kaithi",
@@ -13728,6 +13985,18 @@
     },
     "original": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/runic)"
   },
+  "noto-sans-simplified-chinese": {
+    "id": "noto-sans-simplified-chinese",
+    "authors": {
+      "copyright": "2014-2021 Adobe with Reserved Font Name 'Source'.",
+      "website": "http://www.adobe.com/"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+  },
   "noto-sans-samaritan": {
     "id": "noto-sans-samaritan",
     "authors": {
@@ -13943,6 +14212,18 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/syriac)"
+  },
+  "noto-sans-traditional-chinese": {
+    "id": "noto-sans-traditional-chinese",
+    "authors": {
+      "copyright": "2014-2021 Adobe with Reserved Font Name 'Source'.",
+      "website": "http://www.adobe.com/"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
   },
   "noto-sans-tagalog": {
     "id": "noto-sans-tagalog",
@@ -14375,6 +14656,18 @@
     },
     "original": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/gurmukhi)"
   },
+  "noto-serif-hong-kong": {
+    "id": "noto-serif-hong-kong",
+    "authors": {
+      "copyright": "2017-2024 Adobe",
+      "website": "http://www.adobe.com/."
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2017-2024 Adobe (http://www.adobe.com/)."
+  },
   "noto-serif-hebrew": {
     "id": "noto-serif-hebrew",
     "authors": {
@@ -14398,6 +14691,30 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2023 The Noto Project Authors (https://github.com/notofonts/hentaigana)"
+  },
+  "noto-serif-japanese": {
+    "id": "noto-serif-japanese",
+    "authors": {
+      "copyright": "2017-2024 Adobe",
+      "website": "http://www.adobe.com/."
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2017-2024 Adobe (http://www.adobe.com/)."
+  },
+  "noto-serif-korean": {
+    "id": "noto-serif-korean",
+    "authors": {
+      "copyright": "2017-2024 Adobe",
+      "website": "http://www.adobe.com/."
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2017-2024 Adobe (http://www.adobe.com/)."
   },
   "noto-serif-kannada": {
     "id": "noto-serif-kannada",
@@ -14536,6 +14853,18 @@
     },
     "original": "Copyright 2022 Google LLC. All Rights Reserved."
   },
+  "noto-serif-simplified-chinese": {
+    "id": "noto-serif-simplified-chinese",
+    "authors": {
+      "copyright": "2017-2024 Adobe",
+      "website": "http://www.adobe.com/."
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2017-2024 Adobe (http://www.adobe.com/)."
+  },
   "noto-serif-sinhala": {
     "id": "noto-serif-sinhala",
     "authors": {
@@ -14547,6 +14876,18 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/sinhala)"
+  },
+  "noto-serif-traditional-chinese": {
+    "id": "noto-serif-traditional-chinese",
+    "authors": {
+      "copyright": "2017-2024 Adobe",
+      "website": "http://www.adobe.com/."
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2017-2024 Adobe (http://www.adobe.com/)."
   },
   "noto-serif-tamil": {
     "id": "noto-serif-tamil",
@@ -20107,6 +20448,42 @@
     },
     "original": "Copyright 2018 The Sour Gummy Project Authors (https://github.com/eifetx/Sour-Gummy-Fonts) SourGummy-Italic[wdth,wght].ttf: Copyright 2018 The Sour Gummy Project Authors (https://github.com/eifetx/Sour-Gummy-Fonts)"
   },
+  "source-code-pro": {
+    "id": "source-code-pro",
+    "authors": {
+      "copyright": "© 2010 - 2020 Adobe Systems Incorporated with Reserved Font Name ‘Source’. SourceCodePro-Italic[wght].ttf",
+      "website": "http://www.adobe.com/, http://www.adobe.com/"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2010 - 2020 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’. SourceCodePro-Italic[wght].ttf: © 2010 - 2020 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’."
+  },
+  "source-sans-3": {
+    "id": "source-sans-3",
+    "authors": {
+      "copyright": "© 2023 Adobe with Reserved Font Name ‘Source’ SourceSans3-Italic[wght].ttf",
+      "website": "http://www.adobe.com/, http://www.adobe.com/"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’ SourceSans3-Italic[wght].ttf: © 2023 Adobe (http://www.adobe.com/), with Reserved Font Name ‘Source’"
+  },
+  "source-serif-4": {
+    "id": "source-serif-4",
+    "authors": {
+      "copyright": "© 2014 - 2021 Adobe Systems Incorporated with Reserved Font Name ‘Source’. SourceSerif4-Italic[opsz,wght].ttf",
+      "website": "http://www.adobe.com/, http://www.adobe.com/"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "© 2014 - 2021 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’. SourceSerif4-Italic[opsz,wght].ttf: © 2014 - 2021 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’."
+  },
   "space-grotesk": {
     "id": "space-grotesk",
     "authors": {
@@ -20781,6 +21158,17 @@
       "url": "https://openfontlicense.org"
     },
     "original": "Copyright (c) 1995-2017, SIL International (www.sil.org) TaiHeritagePro-Bold.ttf: Copyright (c) 1995-2017, SIL International (www.sil.org)"
+  },
+  "tajawal": {
+    "id": "tajawal",
+    "authors": {
+      "copyright": "2017 by Boutros International. All rights reserved. Tajawal-Light.ttf"
+    },
+    "license": {
+      "type": "SIL Open Font License, 1.1",
+      "url": "https://openfontlicense.org"
+    },
+    "original": "(c) 2017 by Boutros International. All rights reserved. Tajawal-Light.ttf: (c) 2017 by Boutros International. All rights reserved. Tajawal-Regular.ttf: (c) 2017 by Boutros International. All rights reserved. Tajawal-Medium.ttf: (c) 2017 by Boutros International. All rights reserved. Tajawal-Bold.ttf: (c) 2017 by Boutros International. All rights reserved. Tajawal-ExtraBold.ttf: (c) 2017 by Boutros International. All rights reserved. Tajawal-Black.ttf: (c) 2017 by Boutros International. All rights reserved."
   },
   "tangerine": {
     "id": "tangerine",

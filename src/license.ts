@@ -14,6 +14,7 @@ const EMAIL_REGEX = /\S+@\S+\.\S+\b/g;
 const URL_REGEX = /\bhttps?:\/\/\S+/gi;
 const BRACKETS_REGEX = /(\s\(c\)|[()<>|])/g;
 const DOUBLE_SPACE_REGEX = /\s\s+/g;
+const COPYRIGHT_REGEX = /copyright|©|\(c\)/i;
 
 const processTable = (tableHTML: string) => {
 	const { document } = parseHTML(tableHTML);
@@ -58,7 +59,7 @@ const processTable = (tableHTML: string) => {
 
 		for (const pElement of copyrightElements) {
 			const text = pElement.textContent?.trim();
-			if (text?.includes('Copyright')) {
+			if (text && COPYRIGHT_REGEX.test(text)) {
 				copyrightTexts.push(text);
 			}
 		}
